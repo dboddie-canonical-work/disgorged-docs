@@ -60,16 +60,16 @@ It is important to note several additional details:
 * A snap may contain one or more applications
 * Parts can be pre-assembled binaries or they may be compiled as part of the build process.
 * The parts section of the snapcraft.yaml file uses Snapcraft build system or language-specific plugins to simplify the build process.
-* The parts section may also include a list of [build packages](/t/build-and-staging-dependencies/11451) (build-packages) that will be used to create the snap applications but will not be included in the final snap. For instance, gcc or make.
+* The parts section may also include a list of [build packages](build-and-staging-dependencies.md) (build-packages) that will be used to create the snap applications but will not be included in the final snap. For instance, gcc or make.
 
-The parts section may also include a list of [stage packages](/t/build-and-staging-dependencies/11451) (stage-packages) that will be used by the snap’s applications at runtime, e.g.: python-bcrypt. These will be obtained from the repository archives in the build instance.
+The parts section may also include a list of [stage packages](build-and-staging-dependencies.md) (stage-packages) that will be used by the snap’s applications at runtime, e.g.: python-bcrypt. These will be obtained from the repository archives in the build instance.
 
 <h2 id='heading--build'>Snapcraft build lifecycle</h2>
 
-Snaps are [built](/t/parts-lifecycle/12231) in several steps, collectively known as the “lifecycle”:
+Snaps are [built](parts-lifecycle.md) in several steps, collectively known as the “lifecycle”:
 
 * **Pull** - At this step of the snap build process, Snapcraft downloads or retrieves the components needed to build the relevant part. For instance, if source points to a Git repository, the pull step will clone that repository.
-* **Build** - Snapcraft constructs the part from the previously pulled components. Since the snap ecosystem supports multiple types of applications (C, Java, Go, Rust, Python, etc.), the build definition also needs to include a specification on how to construct the part. This is done by declaring a [Snapcraft plugin](/t/snapcraft-plugins/4284). Parts are processed linearly, unless there is a dependency order declared.
+* **Build** - Snapcraft constructs the part from the previously pulled components. Since the snap ecosystem supports multiple types of applications (C, Java, Go, Rust, Python, etc.), the build definition also needs to include a specification on how to construct the part. This is done by declaring a [Snapcraft plugin](snapcraft-plugins.md). Parts are processed linearly, unless there is a dependency order declared.
 * **Stage** - Snapcraft copies the built parts into the staging area. Parts are not ordered at this point, and there might be an additional level of processing to ensure the snap contains the required files, and that there are no conflicts between parts. This is an advanced topic beyond the scope of this tutorial.
 * **Prime** - Snapcraft copies the staged components into the priming area, where the files will be placed in their final locations (folder and files path hierarchy) for the resulting snap. The prime step is similar to the stage step, but it may exclude certain components from the stage step.
 * **Pack** - Snapcraft packs the assembled components in the prime directory into a single archive.

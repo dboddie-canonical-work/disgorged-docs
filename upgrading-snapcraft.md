@@ -8,7 +8,7 @@
 
 In particular, snaps are now built within an isolated build environments that's tuned for a desired target. This provides API and ABI compatibility for every binary built within the environment, and ensures a build isn't affected by outside dependencies and system configuration.
 
-Build environments work by leveraging [base snaps](/t/base-snaps/11198). A base snap offers a run-time environment with a minimal set of libraries that are common to most applications. At build time, the *snapcraft* tool ensures you are creating a snap inside an environment specifically tailored for its base.
+Build environments work by leveraging [base snaps](base-snaps.md). A base snap offers a run-time environment with a minimal set of libraries that are common to most applications. At build time, the *snapcraft* tool ensures you are creating a snap inside an environment specifically tailored for its base.
 
 During normal operation, the build environment is isolated from the user, but there are ways to step into the environment to help with debugging:
 
@@ -35,7 +35,7 @@ When the `base` keyword is used within `snapcraft.yaml` the following, long-depr
 - `cleanbuild` and triggering builds using LXD from certain environment variables. See [Build on LXD](/t/build-on-lxd) for more details.
 - `prepare`, `build` and `install` keywords, used in parts, have been replaced by `override-build` and `snapcraftctl`. This means you can use `override-` for `pull`, `stage` and `prime` stages too.
 - the `snap` keyword has been superseded by the `prime` keyword.
-- when calling build commands through snapcraft, `--disable-parallel-build` is no longer available. It can be setup per-part using the [build-attributes](/t/snapcraft-parts-metadata/8336#heading--build-attributes) property.
+- when calling build commands through snapcraft, `--disable-parallel-build` is no longer available. It can be setup per-part using the [build-attributes](snapcraft-parts-metadata.md#heading--build-attributes) property.
 - similarly, when calling build commands through snapcraft, `--use-geoip` (which affected `stage-packages`) is no longer available.
 
 ## Migrating from *deb* to *snap*

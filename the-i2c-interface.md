@@ -10,9 +10,9 @@
 **Attributes**:
  * `path` (slot): path to i2c device node e.g. `/dev/i2c-0`
 
-[Hardware IO interfaces](/t/hardware-io-interfaces/35421) covers some general considerations common to these kinds of devices.
+[Hardware IO interfaces](hardware-io-interfaces.md) covers some general considerations common to these kinds of devices.
 
-To use a i2c device, the snap developer must add `plugs: [ i2c ]` to a snap's [snapcraft.yaml](/t/the-snapcraft-format/8337). The snap user can then access a specific i2c device with an [interface connection](/t/interface-management/6154#heading--manual-connections).
+To use a i2c device, the snap developer must add `plugs: [ i2c ]` to a snap's [snapcraft.yaml](the-snapcraft-yaml-schema.md). The snap user can then access a specific i2c device with an [interface connection](interface-management.md#heading--manual-connections).
 
 Use  `snap interface i2c` to see which i2c devices are available on the system:
 
@@ -28,4 +28,4 @@ slots:
 
 Once connected, the consuming snap can use the device via the path specified by the connected slot.
 
-> ⓘ  This is a snap interface. See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+> ⓘ  This is a snap interface. See [Interface management](interface-management.md) and [Supported interfaces](supported-interfaces.md) for further details on how interfaces are used.

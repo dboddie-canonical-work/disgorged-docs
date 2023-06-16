@@ -8,28 +8,28 @@ The team behind Snapcraft is pleased to announce the release of [Snapcraft 4.4](
 
 Highlights for this release include:
 
-* improved font generation performance when [desktop extensions](/t/supported-extensions/20521)
+* improved font generation performance when [desktop extensions](supported-extensions.md)
 * updates to package repository definitions and behaviour
-* metrics for [Progressive Releases](/t/progressive-releases/20913)
+* metrics for [Progressive Releases](progressive-releases.md)
 * many small but significant bug fixes
 
-For general details, including installation instructions, see [Snapcraft overview](https://forum.snapcraft.io/t/snapcraft-overview/8940), or take a look at [Snapcraft release notes](https://forum.snapcraft.io/t/snapcraft-release-notes/10721) for other  *Snapcraft*  releases.
+For general details, including installation instructions, see [Snapcraft overview](snapcraft-overview.md), or take a look at [Snapcraft release notes](snapcraft-release-notes.md) for other  *Snapcraft*  releases.
 
 ## New Features
 
 ### Command Line
 
-Custom CA certificates can now be added to the build environments created by Snapcraft by using  `--add-ca-certificates`  with the [lifecycle](/t/parts-lifecycle/12231) related commands.
+Custom CA certificates can now be added to the build environments created by Snapcraft by using  `--add-ca-certificates`  with the [lifecycle](parts-lifecycle.md) related commands.
 
 ### Extensions
 
-This release includes a new mechanism to pre-generate font caches with [desktop-related extensions](/t/supported-extensions/20521). This enables system font cache generation at install time, isolated from the potentially (ABI) incompatible host-generated cache.
+This release includes a new mechanism to pre-generate font caches with [desktop-related extensions](supported-extensions.md). This enables system font cache generation at install time, isolated from the potentially (ABI) incompatible host-generated cache.
 
 To benefit from this feature, extension snaps will need to be rebuilt. More details about this feature can be found in the [specification](https://github.com/snapcore/snapcraft/blob/master/specifications/desktop-extensions-font-hook.org).
 
 ### Package repositories
 
-The  *experimental*  [package repositories](/t/snapcraft-package-repositories/15475) has the following changes:
+The  *experimental*  [package repositories](snapcraft-package-repositories.md) has the following changes:
 
 * the undocumented `$SNAPCRAFT_APT` variables have been removed.
 * improved error handling and schema validation.
@@ -42,7 +42,7 @@ Additionally, the package repository [specification](https://github.com/snapcore
 
 Metrics have been added to our progressive releases feature, as defined by the [specification](https://github.com/snapcore/snapcraft/blob/master/specifications/progressive-releases.org). Input on this feature is welcome on the [forum](https://forum.snapcraft.io/new-topic?title=Progressive%20Releases%20Feedback&category=snapcraft).
 
-See [Progressive releases](/t/progressive-releases/20913) for more details.
+See [Progressive releases](progressive-releases.md) for more details.
 
 #### Snap Revisions
 

@@ -4,23 +4,23 @@
 
 # The go plugin
 
-The Go plugin integrates projects written in [Go](https://golang.org/). This plugin uses the common plugin keywords as well as those for [sources](/t/snapcraft-parts-metadata/8336#heading--source). For more information, see [Snapcraft parts metadata](/t/snapcraft-parts-metadata/8336).
+The Go plugin integrates projects written in [Go](https://golang.org/). This plugin uses the common plugin keywords as well as those for [sources](snapcraft-parts-metadata.md#heading--source). For more information, see [Snapcraft parts metadata](snapcraft-parts-metadata.md).
 
-Plugin-specific features and syntax are dependent on which [base](/t/base-snaps/11198) is being used, as outlined below:
+Plugin-specific features and syntax are dependent on which [base](base-snaps.md) is being used, as outlined below:
 
 - [base: core22](#heading--core22)
 - [base: core20](#heading--core20)
 - [base: core18 | core](#heading--core18)
 
-See [Go applications](/t/go-applications/7818) for a simple example, or search [GitHub](https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+go%22&type=Code) for projects already using the plugin.
+See [Go applications](go-applications.md) for a simple example, or search [GitHub](https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+go%22&type=Code) for projects already using the plugin.
 
-> ⓘ  This is a *snapcraft* plugin. See [Snapcraft plugins](/t/snapcraft-plugins/4284) and [Supported plugins](/t/supported-plugins/8080) for further details on how plugins are used.
+> ⓘ  This is a *snapcraft* plugin. See [Snapcraft plugins](snapcraft-plugins.md) and [Supported plugins](supported-plugins.md) for further details on how plugins are used.
 
 <h3 id='heading--core22'>base: core22</h3>
 
 The `go` plugin in `core22` exclusively requires the use of [go.mod](https://golang.org/ref/mod).
 
-Additionally, the build environment does not include `go` by default. To install the latest version, add `go` to a [build-snaps](/t/build-and-staging-dependencies/11451#heading--package) section for the part:
+Additionally, the build environment does not include `go` by default. To install the latest version, add `go` to a [build-snaps](build-and-staging-dependencies.md#heading--package) section for the part:
 
 ```yaml
 build-snaps:

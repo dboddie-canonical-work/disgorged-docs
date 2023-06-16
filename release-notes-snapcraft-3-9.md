@@ -6,7 +6,7 @@
 
 These are the release notes for [Snapcraft 3.9](https://github.com/snapcore/snapcraft/releases/tag/3.9).
 
-For general details, including installation instructions, see [Snapcraft overview](/t/snapcraft-overview/8940), or take a look at [Snapcraft release notes](/t/snapcraft-release-notes/10721) for other *Snapcraft* releases.
+For general details, including installation instructions, see [Snapcraft overview](snapcraft-overview.md), or take a look at [Snapcraft release notes](snapcraft-release-notes.md) for other *Snapcraft* releases.
 
 ## Remote Build
 
@@ -14,7 +14,7 @@ With `snapcraft remote-build`, Snapcraft gains the ability to run a multi-archit
 
 While remote build is still considered a preview in this release, it's now fully accessible. Setup has also been simplified thanks to using HTTPS for *git transport* to push assets to the build server (removing the reliance on ssh).
 
-For more details, see the documentation for [Remote build](/t/remote-build/14400).
+For more details, see the documentation for [Remote build](remote-build.md).
 
 ## New *core* features
 
@@ -60,13 +60,13 @@ Creating KDE application snaps is now even easier, thanks to a new KDE Neon exte
 
 This new extension integrates seamlessly with the KDE Neon content snap and builds on the foundations of the work done for the Gnome extension.
 
-Documentation for this extension is being worked. See [KDE Neon extension](/t/the-kde-neon-extension/13752) for further details.
+Documentation for this extension is being worked. See [KDE Neon extension](the-kde-neon-extension.md) for further details.
 
 ###  Gnome 3.28 improvements
 
 The Gnome extension has been fixed when using only a snap name as the default provider, and launch performance has also been improved.
 
-For documentation, see [Gnome 3.28 extension](/t/the-gnome-3-28-extension/13485).
+For documentation, see [Gnome 3.28 extension](the-gnome-3-28-extension.md).
 
 ## CLI
 

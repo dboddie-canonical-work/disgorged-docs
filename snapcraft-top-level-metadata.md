@@ -4,9 +4,9 @@
 
 # Snapcraft top-level metadata
 
-The top-level keys and values in [snapcraft.yaml](/t/the-snapcraft-format/8337) provide the snap build process, and the store, with the overarching details of a snap.
+The top-level keys and values in [snapcraft.yaml](the-snapcraft-yaml-schema.md) provide the snap build process, and the store, with the overarching details of a snap.
 
-> See [Snapcraft app metadata](/t/snapcraft-app-and-service-metadata/8335) and [Snapcraft parts metadata](/t/snapcraft-parts-metadata/8336) for details on how apps and parts are configured within *snapcraft.yaml*.
+> See [Snapcraft app metadata](snapcraft-app-and-service-metadata.md) and [Snapcraft parts metadata](snapcraft-parts-metadata.md) for details on how apps and parts are configured within *snapcraft.yaml*.
 
 Top-level details include a snap's name, version and description, alongside operational values such as its confinement level and supported architecture.
 
@@ -17,7 +17,7 @@ Type:  `string`
 
 Incorporate external metadata via the referenced part.
 
-See [Using external metadata](/t/using-external-metadata/4642) for more details.
+See [Using external metadata](using-external-metadata.md) for more details.
 
 
 ### architectures
@@ -27,7 +27,7 @@ Type: `list[object]`
 
 List of build and run architectures.
 
-For more details, see [Architectures](/t/architectures/4972).
+For more details, see [Architectures](architectures.md).
 
 
 <h3 id="heading--assumes">assumes<sup><a href=#heading--assumes>⚓</a></sup></h3>
@@ -46,14 +46,14 @@ Other potential values for _assumes_ include:
 - `common-data-dir`: support for common data directory across revisions of a snap
 - `snap-env`: support for the "Environment:" feature in snap.yaml
 - `command-chain`: support for the "command-chain" feature for apps and hooks in snap.yaml
-- `kernel-assets`: support for kernel assets in [gadget.yaml](/t/gadget-snaps/696#heading--specification), such as to include volume content in the style `$kernel:ref`
+- `kernel-assets`: support for kernel assets in [gadget.yaml](gadget-snaps.md#heading--specification), such as to include volume content in the style `$kernel:ref`
 
 <h3 id="heading--base">base</h3>
 
 Type: `string`
 (*optional*)
 
-A snap of type `base` to be used as the execution environment for this snap.  See [Base snaps](/t/base-snaps/11198) for further details.
+A snap of type `base` to be used as the execution environment for this snap.  See [Base snaps](base-snaps.md) for further details.
 
 Values:
 | | |
@@ -105,7 +105,7 @@ Type: `enum`
 
 Determines if the snap should be restricted in access or not.
 
-Possible values are `strict` (for no access outside of declared `interfaces` through `plugs`), `devmode` (for unrestricted access) or `classic`. For more information, refer to [Confinement](/t/snap-confinement/6233).
+Possible values are `strict` (for no access outside of declared `interfaces` through `plugs`), `devmode` (for unrestricted access) or `classic`. For more information, refer to [Confinement](snap-confinement.md).
 
 Examples: `strict`, or `devmode`
 
@@ -139,7 +139,7 @@ Controls when users receive a configuration-breaking application release.
 
 Applications and their data formats are constantly evolving, and this requires applications to periodically break data compatibility with older versions. When this happens, applications and users often need to carefully manage data migration from one version to another, and this is where epochs can help. By default, snaps have an epoch of ‘0’. When a new version breaks data compatibility with this old version, incrementing the epoch in the new release stops those old users automatically refreshing to the new version.
 
-See [Snap epochs](/t/snap-epochs/10316) for further details.
+See [Snap epochs](snap-epochs.md) for further details.
 
 <h3 id="heading--grade">grade</h3>
 
@@ -169,7 +169,7 @@ hooks: # Top-level YAML attribute, parallel to `apps`
     plugs: [network] # Or any other plugs required by this hook
 ```
 
-See [Snapcraft hook support](/t/snapcraft-hook-support/19069) for more details.
+See [Snapcraft hook support](snapcraft-hook-support.md) for more details.
 
 ### issues
 Type: `list[string] | string`
@@ -186,7 +186,7 @@ Path to icon image that represents the snap in the snapcraft.io store pages and 
 
 *Note that the [desktop menu](https://en.wikipedia.org/wiki/Start_menu) does not use this icon. It uses the icon in the  `.desktop` file of the application.*
 
-It is a relative path to a `.png`/`.svg` file from the source tree root. The [recommended](https://forum.snapcraft.io/t/restrictions-on-screenshots-and-videos-in-snap-listings/3087/24) size is 256x256 pixels. Aspect ratio needs to be 1:1. Image size can vary from 40x40 to 512x512 px and the file size should not be larger than 256 KB.
+It is a relative path to a `.png`/`.svg` file from the source tree root. The [recommended](https://snapcraft.io/docs/restrictions-on-screenshots-and-videos-in-snap-listings24) size is 256x256 pixels. Aspect ratio needs to be 1:1. Image size can vary from 40x40 to 512x512 px and the file size should not be larger than 256 KB.
 
 Examples: `_package_name_.svg`, or `snap/gui/logo.png`
 
@@ -195,11 +195,11 @@ Examples: `_package_name_.svg`, or `snap/gui/logo.png`
 Type: `list[dict]`
 (*optional*)
 
-Layouts modify the execution environment of a [strictly-confined](/t/snap-confinement/6233) snap.
+Layouts modify the execution environment of a [strictly-confined](snap-confinement.md) snap.
 
 With layouts, you can make elements in `$SNAP` , `$SNAP_DATA` , `$SNAP_COMMON` accessible from locations such as `/usr` , `/var` and `/etc` . This helps when using pre-compiled binaries and libraries that expect to find files and directories outside of locations referenced by `$SNAP` or `$SNAP_DATA` .
 
-See [Snap layouts](/t/snap-layouts/7207) for more details.
+See [Snap layouts](snap-layouts.md) for more details.
 
 Example:
 ```yaml
@@ -219,7 +219,7 @@ Type: `string`
 
 A license for the snap in the form of an [SPDX expression](https://spdx.org/licenses/) for the license.
 
-In the legacy Snapcraft syntax (not using the `base` key), this key is only available [through the `passthrough` key](https://forum.snapcraft.io/t/using-in-development-features-in-snapcraft-yaml/5766).
+In the legacy Snapcraft syntax (not using the `base` key), this key is only available [through the `passthrough` key](using-in-development-features-in-snapcraft-yaml.md).
 
 Currently, only [SPDX 2.1 expressions](https://spdx.org/spdx-specification-21-web-version) are supported.  A list of supported values are also available at  [snapd/licenses.go at master · snapcore/snapd](https://github.com/snapcore/snapd/blob/master/spdx/licenses.go).
 
@@ -233,9 +233,9 @@ Type: `string`
 
 The identifying name of the snap.
 
-It must start with an ASCII character and can only contain letters in lower case, numbers, and hyphens, and it can’t start or end with a hyphen. The name must be unique if you want to [publish to the Snap Store](/t/releasing-your-app/6795).
+It must start with an ASCII character and can only contain letters in lower case, numbers, and hyphens, and it can’t start or end with a hyphen. The name must be unique if you want to [publish to the Snap Store](releasing-your-app.md).
 
-For help on choosing a name and registering it on the Snap Store, see [Registering your app name](/t/registering-your-app-name/6793).
+For help on choosing a name and registering it on the Snap Store, see [Registering your app name](registering-your-app-name.md).
 
 Example: `my-awesome-app`
 
@@ -246,7 +246,7 @@ Type:  `list[dict]`
 
 Adds package repositories as sources for build-packages and stage-packages, including those hosted on a PPA, the Personal Package Archive, which serves personally hosted non-standard packages.
 
-See [Snapcraft package repositories](/t/snapcraft-package-repositories/15475) for more details.
+See [Snapcraft package repositories](snapcraft-package-repositories.md) for more details.
 
 Example:
 
@@ -266,7 +266,7 @@ Type:  `type[object]`
 
 Attributes to passthrough to `snap.yaml` without validation from snapcraft.
 
-See [Using development features in snapcraft](/t/using-in-development-features-in-snapcraft-yaml/5766) for more details.
+See [Using development features in snapcraft](using-in-development-features-in-snapcraft-yaml.md) for more details.
 
 ### source-code
 Type: `string`
@@ -291,7 +291,7 @@ Example: `The super cat generator`
 Type: `dict`
 (*optional*)
 
-Common example is `snap_daemon: shared` to use a daemon user, see [sytem-usernames](/t/system-usernames/13386) for more details.
+Common example is `snap_daemon: shared` to use a daemon user, see [sytem-usernames](system-usernames.md) for more details.
 
 ### title
 
@@ -302,7 +302,7 @@ The canonical title of the application, displayed in the software centre graphic
 
 Max length 40 characters.
 
-In the legacy Snapcraft syntax (not using the `base` key), this key is only available [through the `passthrough` key](https://forum.snapcraft.io/t/using-in-development-features-in-snapcraft-yaml/5766).
+In the legacy Snapcraft syntax (not using the `base` key), this key is only available [through the `passthrough` key](using-in-development-features-in-snapcraft-yaml.md).
 
 Example: `My Awesome Application`
 
@@ -314,7 +314,7 @@ Type: `enum`
 
 The type of snap, implicitly set to `app` if not set.
 
-For more details, see: [gadget](/t/the-gadget-snap/696), [kernel](/t/the-kernel-snap/697), [base](/t/base-snaps/11198).
+For more details, see: [gadget](gadget-snaps.md), [kernel](the-kernel-snap.md), [base](base-snaps.md).
 
 Example: `[app|core|gadget|kernel|base]`
 
@@ -326,7 +326,7 @@ Type: `string`
 
 A user facing version to display.
 
-This field is mandatory unless version information is provided by  `adopt-info` . See [Using external metadata](https://forum.snapcraft.io/t/using-external-metadata/4642) for details.
+This field is mandatory unless version information is provided by  `adopt-info` . See [Using external metadata](using-external-metadata.md) for details.
 
 Max len. 32 chars. Needs to be wrapped with single-quotes when the value will be interpreted by the YAML parser as non-string.
 
@@ -335,7 +335,7 @@ Examples: `'1'`, `'1.2'`, `'1.2.3'`, `git` (will be replaced by a `git describe`
 
 <h2 id="heading--plugs-and-slots-for-an-entire-snap">Plugs and slots for an entire snap</h2>
 
-Plugs and slots for an [interface](/t/supported-interfaces/7744) are usually configured per-app or per-daemon within *snapcraft.yaml*. See [Snapcraft app metadata](/t/snapcraft-app-and-service-metadata/8335) for more details. However, `snapcraft.yaml` also enables global *plugs* and *slots* configuration for an entire snap:
+Plugs and slots for an [interface](supported-interfaces.md) are usually configured per-app or per-daemon within *snapcraft.yaml*. See [Snapcraft app metadata](snapcraft-app-and-service-metadata.md) for more details. However, `snapcraft.yaml` also enables global *plugs* and *slots* configuration for an entire snap:
 
 ### plugs
 

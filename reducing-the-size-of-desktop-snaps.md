@@ -8,12 +8,12 @@ One way to improve the user experience of your snaps is by reducing their size. 
 
 ## Using content snaps and extensions
 
-Snaps can provide content to other snaps using the [content interface](https://forum.snapcraft.io/t/the-content-interface/1074). Many popular runtimes and libraries such as GNOME, Qt and Wine are packaged in content snaps. Instead of adding those libraries to your snap, you can connect to the relevant content snaps. The easiest way to use content snaps is to use one of the [Snapcraft desktop extensions](/t/snapcraft-extensions/13486).
+Snaps can provide content to other snaps using the [content interface](the-content-interface.md). Many popular runtimes and libraries such as GNOME, Qt and Wine are packaged in content snaps. Instead of adding those libraries to your snap, you can connect to the relevant content snaps. The easiest way to use content snaps is to use one of the [Snapcraft desktop extensions](snapcraft-extensions.md).
 
-* Snaps using KDE Frameworks or Qt5 can use the [`kde-neon` extension](/t/the-kde-neon-extension/13752) which adds content snaps for themes, the Qt5 runtime and KDE frameworks.
-* Most other desktop snaps can use the [`gnome-3-28` extension](/t/the-gnome-3-28-extension/13485).
+* Snaps using KDE Frameworks or Qt5 can use the [`kde-neon` extension](the-kde-neon-extension.md) which adds content snaps for themes, the Qt5 runtime and KDE frameworks.
+* Most other desktop snaps can use the [`gnome-3-28` extension](the-gnome-3-28-extension.md).
 * Snaps using Wine can use the [`wine-platform-runtime`](https://snapcraft.io/wine-platform-runtime) and [`wine-platform-5-stable`](https://snapcraft.io/wine-platform-5-stable) snaps.
-* The [`gtk-common-themes`](/t/how-to-use-the-system-gtk-theme-via-the-gtk-common-themes-snap/6235) bundles many popular GTK, cursor and icon themes.
+* The [`gtk-common-themes`](how-to-use-the-system-gtk-theme-via-the-gtk-common-themes-snap.md) bundles many popular GTK, cursor and icon themes.
 
 > ⚠ Updating an existing snap to use a content snap or extension will not automatically reduce the size of your snap. You also need to manually remove the relevant libraries from your snap by removing them from `stage-packages`, for example. The [cleanup part]() can help you do this automatically.
 
@@ -37,7 +37,7 @@ You can remove those libraries manually by excluding them using the [`stage`]() 
     # at runtime from the content and base snaps, they do not need to be
     # included in this snap itself.
     #
-    # More info: https://forum.snapcraft.io/t/reducing-the-size-of-desktop-snaps/17280#heading--cleanup-part
+    # More info: reducing-the-size-of-desktop-snaps.md#heading--cleanup-part
     #
     cleanup:
       after:  # Make this part run last; list all your other parts here
@@ -60,4 +60,4 @@ You can remove those libraries manually by excluding them using the [`stage`]() 
 
 > ℹ If your snap uses extensions, you can use the `snapcraft expand-extensions` command to see which content snaps the extension will add.
 
-> ⓘ See [Desktop applications](/t/desktop-applications/13034) for more information on how to snap a desktop application.
+> ⓘ See [Desktop applications](desktop-applications.md) for more information on how to snap a desktop application.

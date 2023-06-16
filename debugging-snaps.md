@@ -12,9 +12,9 @@ This topic is currently under construction. In particular, we want to add usage 
 □  --strace
 [/quote]
 
-Each snap runs inside its own [confined environment](/t/snap-confinement/6233), also called "sandbox". The policy of each sandbox describes what the application is allowed to do. When an application tries to do something that is not allowed, the system logs a policy violation. The following techniques can help you investigate and solve these policy violations.
+Each snap runs inside its own [confined environment](snap-confinement.md), also called "sandbox". The policy of each sandbox describes what the application is allowed to do. When an application tries to do something that is not allowed, the system logs a policy violation. The following techniques can help you investigate and solve these policy violations.
 
-- Use [`snap try`](/t/debug-snaps-with-snap-try/22938) to quickly test changes without rebuilding your snap.
+- Use [`snap try`](debug-snaps-with-snap-try.md) to quickly test changes without rebuilding your snap.
 - Use [`snap run --shell`](#heading--shell) to inspect and test the confined environment.
 - Use [developer mode](#heading--developer) to try your snap without confinement.
 
@@ -24,9 +24,9 @@ Each snap runs inside its own [confined environment](/t/snap-confinement/6233), 
   - [Understanding AppArmor](#heading--apparmor) violations.
   - [Understanding seccomp](#heading--seccomp) violations.
 - Investigate [file permissions and cgroup device access](#heading--permissions) violations.
-- Use [GDB and gdbserver from within a snap's environment](/t/using-gdb-and-gdbserver/20718) to isolate and identify potential issues.
+- Use [GDB and gdbserver from within a snap's environment](using-gdb-and-gdbserver.md) to isolate and identify potential issues.
 
-For more details on how AppArmor, seccomp and device permission security policies are implemented, see [Security policy and sandboxing](/t/security-policy-and-sandboxing/554).
+For more details on how AppArmor, seccomp and device permission security policies are implemented, see [Security policy and sandboxing](https://snapcraft.io/docs/security-policy-and-sandboxing).
 
 <h2 id='heading--shell'>Run a shell in the confined environment</h2>
 
@@ -38,7 +38,7 @@ To run a command as administrator (user "root"), use "sudo <command>".
 See "man sudo_root" for details.
 ```
 
-This will create the confined environment of the Snap, execute the [command-chain](/t/snapcraft-app-and-service-metadata/8335#heading--command-chain) and then run `bash` inside that environment.
+This will create the confined environment of the Snap, execute the [command-chain](snapcraft-app-and-service-metadata.md#heading--command-chain) and then run `bash` inside that environment.
 
 You can then investigate which files your snap has access to by running commands such as `ls` and `cat`.
 
@@ -131,7 +131,7 @@ To better understand AppArmor policy for a strictly installed snap, modify the A
 For example:
 
 1. build the  snap
-1. copy the snap to the target device and install it (or use [snap try](/t/debug-snaps-with-snap-try/22938))
+1. copy the snap to the target device and install it (or use [snap try](debug-snaps-with-snap-try.md))
 1. use the snap (perhaps using [`snap run --shell <name>.<command>`](#heading--shell)), monitoring via journalctl for denials
 1. modifying `/var/lib/snapd/apparmor/profiles/snap.<name>.<command>` as needed (eg, adding rules before the final `'}'`)and running `sudo apparmor_parser -r /var/lib/snapd/apparmor/profiles/snap.<name>.<command>` to compile and load the policy into the kernel
 1. use `sudo service snap.<name>.<command> stop/start/etc` as needed for daemons
@@ -232,7 +232,7 @@ In addition to the above, here are some other useful techniques when debugging/d
     unix,
     ```
  * look at existing policy in `interfaces/apparmor/template.go`, `interfaces/seccomp/template.go` and `interfaces/builtin/*` for examples of the policy language
- * [stracing snaps](https://forum.snapcraft.io/t/stracing-snap-commands/1433). In addition to simply stracing the app, it can also be helpful to strace the app in both devmode and strict confinement and comparing the results.
+ * [stracing snaps](stracing-snap-commands.md). In addition to simply stracing the app, it can also be helpful to strace the app in both devmode and strict confinement and comparing the results.
  * when testing new versions of snappy-app-dev, if re-exec is enabled you will need to copy the new version to the location udev expects it (eg, `/lib/udev`) and then bind mount it over where the re-exec'd snap-confine expects it (eg, `mount --bind /lib/udev/snappy-app-dev /snap/core/<version>/lib/udev/snappy-app-dev`)
 
 The above command has changed to snap-device-helper
@@ -246,4 +246,4 @@ The above command has changed to snap-device-helper
 - https://github.com/snapcore/snapd/wiki/snap-confine-Overview
 - https://assets.ubuntu.com/v1/66fcd858-ubuntu-core-security-whitepaper.pdf
 - https://github.com/snapcore/snapd/wiki/Snap-Execution-Environment
-- https://forum.snapcraft.io/t/stracing-snap-commands/1433
+- stracing-snap-commands.md

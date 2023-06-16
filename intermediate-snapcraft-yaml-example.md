@@ -6,7 +6,7 @@
 
 We will examine a complete snapcraft.yaml file for an application called _wethr_, a command line weather tool.
 
-Below, we will look at blocks of code that were not previously covered in the [Basic snapcraft.yaml example](/t/basic-snapcraft-yaml-example/33074),  or those that differ significantly from what we already discussed.
+Below, we will look at blocks of code that were not previously covered in the [Basic snapcraft.yaml example](basic-snapcraft-yaml-example.md),  or those that differ significantly from what we already discussed.
 
 The full snapcraft.yaml file is available on the [project GitHub page](https://github.com/snapcrafters/wethr/blob/master/snap/snapcraft.yaml). The contents may change and slightly differ from the example shown below.
 
@@ -63,7 +63,7 @@ The metadata, base, and confinement declarations are rather similar to our basic
 
 <h2 id='heading--adopt'>adopt-info</h2>
 
-This keyword instructs Snapcraft to “adopt” metadata information using [external metadata](/t/using-external-metadata/4642) sources. Such use can be useful for CI systems, where the declarations in the snapcraft.yaml file can be obtained from scripts rather than manually.
+This keyword instructs Snapcraft to “adopt” metadata information using [external metadata](using-external-metadata.md) sources. Such use can be useful for CI systems, where the declarations in the snapcraft.yaml file can be obtained from scripts rather than manually.
 
 * There are multiple ways that information can be obtained.
 * Multiple metadata fields can be populated using this keyword.
@@ -72,7 +72,7 @@ In this example, the wethr snap application version is obtained from the Git rep
 
 * adopt-info keyword instructs Snapcraft to populate fields not explicitly specified.
 * In the parts section at the end of the snapcraft.yaml file (which will be discussed below):
-  * A portion of the default snap lifecycle definition is manually [overridden](/t/override-build-steps/4892) (override-pull).
+  * A portion of the default snap lifecycle definition is manually [overridden](override-build-steps.md) (override-pull).
   * A set of commands in the BASH shell syntax is used to derive the version string.
   * The version string is set using the snapcraftctl scriptlet.
 
@@ -92,7 +92,7 @@ grade: stable
 
 <h2 id='heading--architectures'>Architectures</h2>
 
-This section defines the target [architectures](/t/4972) for which the snap should be built. It requires the build system that is running the Snapcraft tool to be able to compile and build the snap for the listed platforms.
+This section defines the target [architectures](architectures.md) for which the snap should be built. It requires the build system that is running the Snapcraft tool to be able to compile and build the snap for the listed platforms.
 
 ```yaml
 architectures:
@@ -136,7 +136,7 @@ parts:
 
 The wethr snap also only has one part. However, here, it is built using the npm plugin, which is a Snapcraft plugin designed to simplify the building of Node.js and JavaScript-based applications.
 
-* **plugin**: This block defines the use of the Snapcraft [npm plugin](/t/the-npm-plugin/17591) that will perform various language-specific commands in the background. The npm plugin creates parts that use Node.js and/or the JavaScript package manager npm. The plugin declaration has several sub-sections:
+* **plugin**: This block defines the use of the Snapcraft [npm plugin](the-npm-plugin.md) that will perform various language-specific commands in the background. The npm plugin creates parts that use Node.js and/or the JavaScript package manager npm. The plugin declaration has several sub-sections:
   * **npm-node-version:** defines the specific version of Node to be used.
   * **source**: defines the URL or a path of the application code that needs to be downloaded for the build. It can be a local or remote path, and can refer to a directory tree, a compressed archive or a revision control repository.
   * **source-type**: defines the type of the online source. This allows the plugin to perform relevant source-specific actions to successfully complete the download of the necessary data for the part.

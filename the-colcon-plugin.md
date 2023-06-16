@@ -6,17 +6,17 @@
 
 The `colcon` plugin is useful when building [ROS 2](http://www.ros.org/) parts that use [colcon](https://colcon.readthedocs.io/en/released/).
 
-Plugin-specific features and syntax are dependent on which [base](/t/base-snaps/11198) is being used, as outlined below:
+Plugin-specific features and syntax are dependent on which [base](base-snaps.md) is being used, as outlined below:
 
 - [base: core22](#heading--core22)
 - [base: core20](#heading--core20)
 - [base: core18 | core](#heading--core18)
 
-This plugin uses the common plugin keywords as well as those for "sources". For more information, see [Snapcraft parts metadata](/t/snapcraft-parts-metadata/8336).
+This plugin uses the common plugin keywords as well as those for "sources". For more information, see [Snapcraft parts metadata](snapcraft-parts-metadata.md).
 
 ## <h3 id='heading--core22'>base: core22</h3>
 
-For core22, this plugin is designed to work with the [ROS 2 Humble extension](/t/the-ros-2-humble-extension/30809).  If not using this extension, it is required to set the `ROS_DISTRO` environment variable to `humble` using `build-environment`.
+For core22, this plugin is designed to work with the [ROS 2 Humble extension](the-ros-2-humble-extension.md).  If not using this extension, it is required to set the `ROS_DISTRO` environment variable to `humble` using `build-environment`.
 
 This plugin enables the following plugin-specific keywords on core22:
 
@@ -41,7 +41,7 @@ List of packages for colcon to ignore.
 
 ## <h3 id='heading--core20'>base: core20</h3>
 
-For core20, this plugin is designed to work with the [ROS 2 Foxy extension](/t/the-ros2-foxy-extension/19639).  If not using this extension, it is required to set the `ROS_DISTRO` environment variable to `foxy` using `build-environment`.
+For core20, this plugin is designed to work with the [ROS 2 Foxy extension](the-ros2-foxy-extension.md).  If not using this extension, it is required to set the `ROS_DISTRO` environment variable to `foxy` using `build-environment`.
 
 This plugin enables the following plugin-specific keywords on core20:
 
@@ -93,8 +93,8 @@ quoting each argument with a leading space.
 
 # Related Information
 
-See the [catkin plugin](/t/the-catkin-plugin/8644) for building ROS 1 parts.
+See the [catkin plugin](the-catkin-plugin.md) for building ROS 1 parts.
 
-For a simple example, see [ROS 2 applications](/t/ros2-applications/7823), or search [GitHub](https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+colcon%22&type=Code) for projects already using the plugin.
+For a simple example, see [ROS 2 applications](ros-2-deployment-with-snaps.md), or search [GitHub](https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+colcon%22&type=Code) for projects already using the plugin.
 
-> ⓘ  This is a *snapcraft* plugin. See [Snapcraft plugins](/t/snapcraft-plugins/4284) and [Supported plugins](/t/supported-plugins/8080) for further details on how plugins are used.
+> ⓘ  This is a *snapcraft* plugin. See [Snapcraft plugins](snapcraft-plugins.md) and [Supported plugins](supported-plugins.md) for further details on how plugins are used.

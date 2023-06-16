@@ -12,6 +12,6 @@ The `version-script` keyword could be used to define a command to run from the w
 
 This functionality has been replaced by the `snapcraftctl set-version` part scriptlet.
 
-For more details, see [Part scriptlets](/t/using-external-metadata/4642#meta-scriptlet).
+For more details, see [Part scriptlets](using-external-metadata.md#meta-scriptlet).
 
-See [Deprecation notices](/t/deprecation-notices/8396)  for further announcements.
+See [Deprecation notices](deprecation-notices.md)  for further announcements.

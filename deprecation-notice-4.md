@@ -25,4 +25,4 @@ In order to better correspond with its purpose,
 the `history` command has now been deprecated and replaced with
 `list-revisions` (with a shorter `revisions` alias).
 
-See [Deprecation notices](/t/deprecation-notices/8396/2)  for further announcements.
+See [Deprecation notices](deprecation-notices.md)  for further announcements.

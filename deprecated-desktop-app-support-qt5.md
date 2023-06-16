@@ -4,11 +4,11 @@
 
 # [Deprecated] Desktop App support - Qt5
 
-> ⚠ **This tutorial is outdated.** See [Qt 5 and KDE Frameworks applications](/t/qt5-and-kde-frameworks-applications/13753) for a much easier way to snap Qt 5 applications.
+> ⚠ **This tutorial is outdated.** See [Qt 5 and KDE Frameworks applications](qt5-and-kde-frameworks-applications.md) for a much easier way to snap Qt 5 applications.
 >
 > This tutorial should only be used when you want to support architectures other than amd64, or for classic snaps.
 
-This guide explains the recommended way to make a qt5 application function correctly inside a snap. **These instructions need to be applied in addition to the instructions for [creating a snap](/t/creating-a-snap/6799) in your programming language.** For example, if your application uses the C programming language and Qt5, you also need to follow the instructions for [snapping a C/C++ application](/t/c-c-applications/7817).
+This guide explains the recommended way to make a qt5 application function correctly inside a snap. **These instructions need to be applied in addition to the instructions for [creating a snap](creating-a-snap.md) in your programming language.** For example, if your application uses the C programming language and Qt5, you also need to follow the instructions for [snapping a C/C++ application](c-c-applications.md).
 
 The [Snapcraft Desktop Helpers project](https://github.com/ubuntu/snapcraft-desktop-helpers) provides the `desktop-qt5` part to include the Qt5 dependencies in your snap. It also includes the `desktop-launch` script to initialise the desktop-specific functionality before your application launches.
 
@@ -85,7 +85,7 @@ In the `plugs` stanza, add the following plug definition:
 ```yaml
 plugs:
   # Support for common GTK themes
-  # https://forum.snapcraft.io/t/how-to-use-the-system-gtk-theme-via-the-gtk-common-themes-snap/6235
+  # how-to-use-the-system-gtk-theme-via-the-gtk-common-themes-snap.md
   gsettings:
   gtk-3-themes:
     interface: content
@@ -109,4 +109,4 @@ You can take a look at the [`snapcraft.yaml` file of `keepassxc`](https://github
 
 ## References
 
-- https://forum.snapcraft.io/t/qt-apps-and-gtk-themes-an-investigation-with-partial-success/10513/15
+- https://snapcraft.io/docs/qt-apps-and-gtk-themes-an-investigation-with-partial-success15

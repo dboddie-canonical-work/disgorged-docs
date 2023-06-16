@@ -4,7 +4,7 @@
 
 # Creating docker images for snapcraft
 
-[Snapcraft](/t/snapcraft-overview/8940) is delivered as a snap and this creates a few complications when used with Docker. In particular, incompatible design constraints imposed by Docker affect the way snaps are intended to run. Fortunately, there are workarounds that can be used to create Docker images that will build snaps using Snapcraft.
+[Snapcraft](snapcraft-overview.md) is delivered as a snap and this creates a few complications when used with Docker. In particular, incompatible design constraints imposed by Docker affect the way snaps are intended to run. Fortunately, there are workarounds that can be used to create Docker images that will build snaps using Snapcraft.
 
 What follows is a `Dockerfile` that can creates a docker image for Snapcraft from the stable channel:
 https://raw.githubusercontent.com/snapcore/snapcraft/master/docker/Dockerfile
@@ -13,6 +13,6 @@ The above `Dockerfile` can be used to build snaps with a `snapcraft.yaml` that e
 
 To create a `Dockerfile` that can be used with `base: core18` in `snapcraft.yaml` (the current default), change the line `FROM ubuntu:xenial` to `FROM ubuntu:bionic` in [Dockerfile]( https://raw.githubusercontent.com/snapcore/snapcraft/master/docker/Dockerfile):
 
-For more information on bases, see [Base snaps](/t/base-snaps/11198).
+For more information on bases, see [Base snaps](base-snaps.md).
 
 > ℹ Reduce a snap's build time by extending your project-specific Docker image to pre-install most of a snap's dependencies, as defined by its `snapcraft.yaml`.

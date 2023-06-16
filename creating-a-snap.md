@@ -6,17 +6,17 @@
 
 You can create snaps from apps you've already built and zipped, or from your preferred programming language or framework.
 
-For a brief overview of the snap creation process, including how to install *snapcraft* and how it's used, see [Snapcraft overview](/t/snapcraft-overview/8940).
+For a brief overview of the snap creation process, including how to install *snapcraft* and how it's used, see [Snapcraft overview](snapcraft-overview.md).
 
 The following is an outline of the typical snap build process, which you can step through to create your snap:
 
-1. [Create a checklist](/t/snapcraft-checklist/10926)
+1. [Create a checklist](snapcraft-checklist.md)
    Better understand your snap's requirements.
-1. [Create a snapcraft.yaml file](/t/creating-snapcraft-yaml/11666)
+1. [Create a snapcraft.yaml file](creating-snapcraft-yaml.md)
    Describes your snap's build dependencies and run-time requirements
-1. [Add interfaces to your snap](/t/snapcraft-interfaces/13123)
+1. [Add interfaces to your snap](adding-interfaces.md)
     Share system resources with your snap, and from one snap to another
-1. [Publish and share](/t/using-the-snap-store/12379)
+1. [Publish and share](https://snapcraft.io/docs/using-the-snap-store)
     Put your snap on the [Snap Store](https://snapcraft.io/store) to reach an audience of millions
 
 ## Platform walkthroughs
@@ -25,11 +25,11 @@ To get a quick hands-on synopsis of the snapcraft build process for your platfor
 
 | Common languages | Platforms | Desktop toolkits |
 | -- | -- | -- |
-| [Python](/t/python-apps/6741)| [Pre-built apps](/t/pre-built-apps/6739)  | [Electron](/t/electron-apps/6748) |
-| [Go](/t/go-applications/7818) | [MOOS](/t/moos-applications/7820) | [GTK+ 4](/t/gtk4-applications/32266) |
-| [.NET](/t/net-apps/34730) |  [ROS](/t/ros-applications/7822) | [GTK+ 3](/t/gtk3-applications/13483) |
-| [Node.js](/t/node-apps/6747) |  [ROS2](/t/ros2-applications/7823)|  [GTK+ 2](/t/gtk2-applications/13508)|
-| [Ruby](/t/ruby-applications/7824) | |  [Java Swing](/t/java-applications/7819)|
-| [Rust](/t/rust-applications/7826) | |  [Qt 5  & KDE Frameworks](/t/qt5-and-kde-frameworks-applications/13753) |
-| [C/C++](/t/c-c-applications/7817) | | [Flutter](https://forum.snapcraft.io/t/flutter-applications/18768) |
-| [Java](/t/java-applications/7819/1) | | |
+| [Python](python-apps.md)| [Pre-built apps](https://snapcraft.io/docs/pre-built-apps)  | [Electron](electron-apps.md) |
+| [Go](go-applications.md) | [MOOS](moos-applications.md) | [GTK+ 4](gtk4-applications.md) |
+| [.NET](net-apps.md) |  [ROS](ros-deployment-with-snaps.md) | [GTK+ 3](gtk3-applications.md) |
+| [Node.js](node-apps.md) |  [ROS2](ros-2-deployment-with-snaps.md)|  [GTK+ 2](gtk2-applications.md)|
+| [Ruby](ruby-applications.md) | |  [Java Swing](java-applications.md)|
+| [Rust](rust-applications.md) | |  [Qt 5  & KDE Frameworks](qt5-and-kde-frameworks-applications.md) |
+| [C/C++](c-c-applications.md) | | [Flutter](flutter-applications.md) |
+| [Java](java-applications.md) | | |

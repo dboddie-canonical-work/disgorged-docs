@@ -6,19 +6,19 @@
 
 The `acrn` interface  allows access to, and control of, user virtual machines using the [ACRN hypervisor](https://projectacrn.org/).
 
-**This interface is primarily intended to be used with [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core) devices.**
+**This interface is primarily intended to be used with [Ubuntu Core](glossary.md#heading--ubuntu-core) devices.**
 
 [note type="positive" status="Interface documentation"]
 
-See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+See [Interface management](interface-management.md) and [Supported interfaces](supported-interfaces.md) for further details on how interfaces are used.
 [/note]
 
 ---
 
 <h2 id='heading--dev-details'>Developer details </h2>
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
-**[Super-privileged](/t/the-interface-connection-mechanism/20179#heading--super)**: no</br>
+**[Auto-connect](interface-management.md#heading--auto-connections)**: no</br>
+**[Super-privileged](the-interface-auto-connection-mechanism.md#heading--super)**: no</br>
 
 ### Code examples
 

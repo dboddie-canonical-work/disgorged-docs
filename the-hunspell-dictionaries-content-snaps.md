@@ -31,9 +31,9 @@ For maximum compatibility, pick the one that targets the same base.
 * Packaging recipe source code
   <https://code.launchpad.net/hunspell-dictionaries-snaps>
 * Desktop: allow access to host hunspell dictionaries - snapd - snapcraft.io
-  <https://forum.snapcraft.io/t/desktop-allow-access-to-host-hunspell-dictionaries/2598>
+  <https://snapcraft.io/docs/desktop-allow-access-to-host-hunspell-dictionaries>
 * The content interface documentation
-  <https://forum.snapcraft.io/t/the-content-interface/1074>
+  <the-content-interface.md>
 
 ### Support ###
 Please refer our project's issue tracker
@@ -43,4 +43,4 @@ or create a new topic under `snap` category in the Snapcraft Forums
 <https://forum.snapcraft.io>
 
 ### Join Snapcrafters ###
-<https://forum.snapcraft.io/t/join-snapcrafters/1325>
+<join-snapcrafters.md>

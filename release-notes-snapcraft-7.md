@@ -38,11 +38,11 @@ The following are not currently supported with `core22` :
 
 Missing features will be ported and added to upcoming 7.x releases. If your snap relies on any of these features, please wait for the next releases to port them to use `base: core22`.
 
-See [How to migrate from core20 to core22 10](/t/micro-howto-migrate-from-core20-to-core22/30188) for help on migrating your snaps to the new base.
+See [How to migrate from core20 to core22 10](micro-howto-migrate-from-core20-to-core22.md) for help on migrating your snaps to the new base.
 
 ## Build Providers
 
-The build environment is now created through a new API called [Craft Providers](https://craft-providers.readthedocs.io/en/latest/), and consequently, Snapcraft now defaults to using [LXD](/t/build-on-lxd/4157).
+The build environment is now created through a new API called [Craft Providers](https://craft-providers.readthedocs.io/en/latest/), and consequently, Snapcraft now defaults to using [LXD](build-providers.md).
 
 ## Command Line Interface
 

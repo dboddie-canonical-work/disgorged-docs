@@ -6,9 +6,9 @@
 
 Environment variables are widely used across Linux to provide convenient access to system and application properties.
 
-Both [Snapcraft](/t/snapcraft-overview/8940) and snapd consume, set, and pass-through specific environment variables to support building and running snaps.
+Both [Snapcraft](snapcraft-overview.md) and snapd consume, set, and pass-through specific environment variables to support building and running snaps.
 
-See below for the various environment variables available to snap applications. For environment variables connected to Snapcraft, see [Parts environment variables](/t/parts-environment-variables/12271).
+See below for the various environment variables available to snap applications. For environment variables connected to Snapcraft, see [Parts environment variables](parts-environment-variables.md).
 
 ## Snap specific environment variables
 
@@ -77,7 +77,7 @@ Typical value `/var/snap/hello-world/27`
 
 This variable contains the _effective_ user ID (euid) of the user running the snap instance. See also [SNAP_UID](#heading--snap-uid).
 
-For this variable to be exposed by a snap, the snap developer will need to include the following [`assumes`](/t/snapcraft-top-level-metadata/8334#heading--assumes) value:
+For this variable to be exposed by a snap, the snap developer will need to include the following [`assumes`](snapcraft-top-level-metadata.md#heading--assumes) value:
 
 ```yaml
 assumes: [snap-uid-envvars]
@@ -117,7 +117,7 @@ Typical value: `hello-world`
 
 <h3 id='heading--snap-real-home'><pre>SNAP_REAL_HOME</pre></h3>
 
-The vanilla `HOME` environment variable before snapd-induced remapping, refer [Any way to acquire the originally set `HOME` environment variable? - snapcraft - snapcraft.io](https://forum.snapcraft.io/t/any-way-to-acquire-the-originally-set-home-environment-variable/19475) for more info.
+The vanilla `HOME` environment variable before snapd-induced remapping, refer [Any way to acquire the originally set `HOME` environment variable? - snapcraft - snapcraft.io](https://snapcraft.io/docs/any-way-to-acquire-the-originally-set-home-environment-variable) for more info.
 
 Available [since snapd 2.46](https://github.com/snapcore/snapd/pull/9189/commits/37d0a229).
 
@@ -131,7 +131,7 @@ Typical value: `27` or `x1`
 
 <h3 id='heading--snap-save-data'><pre>SNAP_SAVE_DATA</pre></h3>
 
-This variable is only exposed on [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core) systems, and was introduced with snapd 2.57.
+This variable is only exposed on [Ubuntu Core](glossary.md#heading--ubuntu-core) systems, and was introduced with snapd 2.57.
 
 It points to a snap-specific location on the ubuntu-save partition where the snap is allowed to store persistent files (like certificates or configuration files) that will survive a [factory reset](https://ubuntu.com/core/docs/recovery-modes#heading--factory) of the Ubuntu Core device.
 
@@ -141,7 +141,7 @@ See [ubuntu-save](https://ubuntu.com/core/docs/storage-layout#heading--save) in 
 
 This variable contains the user ID (uid) of the user running this snap instance. See also [SNAP_EUID](#heading--snap-euid).
 
-For this variable to be exposed by a snap, the snap developer will need to include the following [`assumes`](/t/snapcraft-top-level-metadata/8334#heading--assumes) value:
+For this variable to be exposed by a snap, the snap developer will need to include the following [`assumes`](snapcraft-top-level-metadata.md#heading--assumes) value:
 
 ```yaml
 assumes: [snap-uid-envvars]

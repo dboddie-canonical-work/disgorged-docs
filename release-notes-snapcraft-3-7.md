@@ -4,9 +4,9 @@
 
 # Release notes: Snapcraft 3.7
 
-These are the release notes for [Snapcraft 3.7](https://github.com/snapcore/snapcraft/releases/tag/3.7), a significant update to [Snapcraft 3](/t/snapcraft-overview/8940).
+These are the release notes for [Snapcraft 3.7](https://github.com/snapcore/snapcraft/releases/tag/3.7), a significant update to [Snapcraft 3](snapcraft-overview.md).
 
-For general details, including installation instructions, see [Snapcraft overview](/t/snapcraft-overview/8940), or take a look at [Snapcraft release notes](/t/snapcraft-release-notes/10721) for other *Snapcraft* releases.
+For general details, including installation instructions, see [Snapcraft overview](snapcraft-overview.md), or take a look at [Snapcraft release notes](snapcraft-release-notes.md) for other *Snapcraft* releases.
 
 > ℹ Many of the improvements in this release are thanks to the great work done in collaboration with the attendees of the [2019 Snapcraft Summit](https://snapcraft.io/blog/snapcraft-summit-montreal) that took place in Montreal.
 
@@ -52,7 +52,7 @@ build-base: core18
 
 ### Extended metadata
 
-The [snapcraft.yaml](/t/the-snapcraft-format/8337) schema has been extended to support new app properties added to [snap.yaml](/t/the-snap-format/698), alongside better error handling and schema checks.
+The [snapcraft.yaml](the-snapcraft-yaml-schema.md) schema has been extended to support new app properties added to [snap.yaml](the-snap-format.md), alongside better error handling and schema checks.
 
 - It's now possible to specify the *type* string for the following existing options with an unspecified type:
     -   `stop-command`
@@ -71,7 +71,7 @@ The [snapcraft.yaml](/t/the-snapcraft-format/8337) schema has been extended to s
 
 ### Faster LXD build iterations
 
-When using [Snapcraft with LXD](t/build-on-lxd/4157) and [iterating over a build](/t/iterating-over-a-build/12143), a significant reduction in network overhead has resulted in much faster build times.
+When using [Snapcraft with LXD](t/build-on-lxd/4157) and [iterating over a build](iterating-over-a-build.md), a significant reduction in network overhead has resulted in much faster build times.
 
 This is thanks to *snapd 2.39* supporting API snap retrieval, and is used to avoid a root requirement when adding snaps to the build environment. It means snap don't need to be re-downloaded as frequently.
 
@@ -111,7 +111,7 @@ This plugin uses the following plugin-specific keywords:
 
 ### rust
 
-The [Rust plugin](/t/the-rust-plugin/8588) has been reviewed by a Rust developer and their suggestions incorporated into this release.
+The [Rust plugin](the-rust-plugin.md) has been reviewed by a Rust developer and their suggestions incorporated into this release.
 
 One such improvement is defaulting to use the `rust-toolchain` file (if present), unless explicitly overridden by use of `rust-channel` or `rust-revision`.
 
@@ -119,17 +119,17 @@ Rebuilding is now also possible using this plugin.
 
 ### ant
 
-The [Ant](https://ant.apache.org/) publisher has released an [Ant snap](https://snapcraft.io/ant) and reviewed the [Ant plugin](/t/the-ant-plugin/8507). Consequently, the Ant plugin has been updated to support the use of this new snap for building Ant-based projects.
+The [Ant](https://ant.apache.org/) publisher has released an [Ant snap](https://snapcraft.io/ant) and reviewed the [Ant plugin](the-ant-plugin.md). Consequently, the Ant plugin has been updated to support the use of this new snap for building Ant-based projects.
 
 The following new keywords are now accepted by the plugin:
 
 -   **`ant-channel`** (string)
-    If not using the Ant tarball from the Ant archive (see [ant-version and ant-version-checksum](/t/the-ant-plugin/8507), this keyword specifies the channel to use for *ant* in the Snap Store.
+    If not using the Ant tarball from the Ant archive (see [ant-version and ant-version-checksum](the-ant-plugin.md), this keyword specifies the channel to use for *ant* in the Snap Store.
    Default: `latest/stable`
 
 ### colcon
 
-Support for [ROS 2 Dashing Diademata](https://index.ros.org//doc/ros2/Releases/Release-Dashing-Diademata/) was added to the [colcon](/t/the-colcon-plugin/11895) plugin in order to support this latest ROS release.
+Support for [ROS 2 Dashing Diademata](https://index.ros.org//doc/ros2/Releases/Release-Dashing-Diademata/) was added to the [colcon](the-colcon-plugin.md) plugin in order to support this latest ROS release.
 
 ## Bug fixes
 

@@ -8,13 +8,13 @@ Building snaps can be a new experience for many developers. Here's some tips whi
 
 <h2 id="heading--build-environment">Build Environment</h2>
 
-Snaps are built to run on top of a [base snap](/t/base-snaps/11198) runtime. This base is provided by an automatically-installed snap. Currently the most widely used core image is based on Ubuntu 22.04 LTS.
+Snaps are built to run on top of a [base snap](base-snaps.md) runtime. This base is provided by an automatically-installed snap. Currently the most widely used core image is based on Ubuntu 22.04 LTS.
 
 <h2 id="heading--missing-libraries">Missing libraries</h2>
 
 Most applications will need additional libraries added to the snap in order to function correctly. As the developer of the application, you're best placed to know which libraries you need to stage in the snap.
 
-Sometimes  when a snap is initially built, libraries are missing because they were not explicitly specified by the developer. There's a couple of ways to bundle required libraries in a snap, both of which are covered below, but more details can be found in [Build and staging dependencies](/t/build-and-staging-dependencies/11451).
+Sometimes  when a snap is initially built, libraries are missing because they were not explicitly specified by the developer. There's a couple of ways to bundle required libraries in a snap, both of which are covered below, but more details can be found in [Build and staging dependencies](build-and-staging-dependencies.md).
 
 <h3 id="heading--staging-packages">Staging Packages</h3>
 
@@ -32,7 +32,7 @@ When applications are confined in a snap, they have a restricted view of the wor
 
 <h3 id="heading--identifying-missing-interfaces">Identifying missing interfaces</h3>
 
-The full list of [interfaces](/t/supported-interfaces/7744) details the capabilities enabled by each. Developers should consult this list to identify the necessary interfaces required by their application. When an interface is omitted, this may result in the application misbehaving.
+The full list of [interfaces](supported-interfaces.md) details the capabilities enabled by each. Developers should consult this list to identify the necessary interfaces required by their application. When an interface is omitted, this may result in the application misbehaving.
 
 The Snap security team have provided a tool to debug these situations. Install the tool with `snap install snappy-debug`. This helps identify missing interfaces by reporting on application security failures, and will make suggestions on how to improve the snap, perhaps by adding interfaces.
 
@@ -47,4 +47,4 @@ Typically the output will report on failed attempts to access system resources, 
 
 It can be time consuming to iterate over a snap via tweaking the `snapcraft.yaml` or application itself, then rebuild and re-install.
 
-To speed a build up, see [Iterating over a build](/t/iterating-over-a-build/12143) for build and testing best-practices.
+To speed a build up, see [Iterating over a build](iterating-over-a-build.md) for build and testing best-practices.

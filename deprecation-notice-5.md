@@ -17,6 +17,6 @@ Originally aliases were something declared by the snap developer by actually cod
 
 To solve these issues, aliases are no longer carried within the snap itself with the `aliases` property, but handled completely by the Snap Store. Users are free to setup aliases under their control (via `snap alias`), and automatic aliases are also handled as a block, being enabled or disabled together.
 
-To get aliases in the Snap Store, the developer needs to request them and get approval from the developer community. This process happens in the Snapcraft forum; see the [request guidelines](https://forum.snapcraft.io/t/process-for-aliases-auto-connections-and-tracks/455).
+To get aliases in the Snap Store, the developer needs to request them and get approval from the developer community. This process happens in the Snapcraft forum; see the [request guidelines](https://snapcraft.io/docs/process-for-aliases-auto-connections-and-tracks).
 
-See [Deprecation notices](/t/deprecation-notices/8396/2)  for further announcements.
+See [Deprecation notices](deprecation-notices.md)  for further announcements.

@@ -8,11 +8,11 @@ This plugin is used for building parts that use gradle.
 
 The gradle build system is a popular build tool used to build Java projects. The plugin requires that gradle's build.gradle file exists in the root of the source tree.
 
-> ⓘ This plugin is only available to _core_ and _core18_ based snaps. See [Base snaps](/t/base-snaps/11198) for details.
+> ⓘ This plugin is only available to _core_ and _core18_ based snaps. See [Base snaps](base-snaps.md) for details.
 
-See the [Java Applications](/t/java-applications/7819) tutorial for a complete and annotated example.
+See the [Java Applications](java-applications.md) tutorial for a complete and annotated example.
 
-This plugin uses the common plugin keywords as well as those for "sources". For more information, see [Snapcraft parts metadata](/t/snapcraft-parts-metadata/8336).
+This plugin uses the common plugin keywords as well as those for "sources". For more information, see [Snapcraft parts metadata](snapcraft-parts-metadata.md).
 
 Additionally, this plugin uses the following plugin-specific keywords
 
@@ -100,4 +100,4 @@ parts:
 
 [Examples on GitHub](https://github.com/search?o=desc&q=path%3Asnapcraft.yaml+%22plugin%3A+gradle%22+&s=indexed&type=Code&utf8=%E2%9C%93)
 
-> ⓘ  This is a *snapcraft* plugin. See [Snapcraft plugins](/t/snapcraft-plugins/4284) and [Supported plugins](/t/supported-plugins/8080) for further details on how plugins are used.
+> ⓘ  This is a *snapcraft* plugin. See [Snapcraft plugins](snapcraft-plugins.md) and [Supported plugins](supported-plugins.md) for further details on how plugins are used.

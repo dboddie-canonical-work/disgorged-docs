@@ -24,7 +24,7 @@ Merge the following part definition to your Snapcraft recipe:
 ```yaml
 parts:
   # The wxWidgets SDK Stage Snaps
-  # https://forum.snapcraft.io/t/the-wxwidgets-sdk-stage-snaps/10877
+  # the-wxwidgets-sdk-stage-snaps.md
   wxwidgets-sdk:
     plugin: nil
     stage-snaps:

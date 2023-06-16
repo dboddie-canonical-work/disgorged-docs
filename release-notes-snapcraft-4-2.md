@@ -11,7 +11,7 @@ Highlights for this release include:
 * cmake Ninja generator with `core20`
 * improved track and channel listing
 
-For general details, including installation instructions, see [Snapcraft overview](https://forum.snapcraft.io/t/snapcraft-overview/8940), or take a look at [Snapcraft release notes](https://forum.snapcraft.io/t/snapcraft-release-notes/10721) for other  *Snapcraft*  releases.
+For general details, including installation instructions, see [Snapcraft overview](snapcraft-overview.md), or take a look at [Snapcraft release notes](snapcraft-release-notes.md) for other  *Snapcraft*  releases.
 
 Special thanks to the contributors that helped to make this release happen: [@GamePad64](https://github.com/GamePad64), [@Saviq](https://github.com/Saviq), [@cjp256](https://github.com/cjp256), [@igorljubuncic](https://github.com/igorljubuncic) and [@sergiusens](https://github.com/sergiusens).
 
@@ -19,7 +19,7 @@ Special thanks to the contributors that helped to make this release happen: [@Ga
 
 ### ROS 2 Foxy Fitzroy extension and updated colcon plugin
 
-Snapcraft 4.2 includes experimental support for Robot Operating System  (ROS 2) [Foxy Fitzroy LTS](https://index.ros.org/doc/ros2/Releases/Release-Foxy-Fitzroy)  with a new [extension](/t/the-ros2-foxy-extension/19639) and colcon plugin when used with [`core20`](/t/base-snaps/11198).
+Snapcraft 4.2 includes experimental support for Robot Operating System  (ROS 2) [Foxy Fitzroy LTS](https://index.ros.org/doc/ros2/Releases/Release-Foxy-Fitzroy)  with a new [extension](the-ros2-foxy-extension.md) and colcon plugin when used with [`core20`](base-snaps.md).
 
 For example, ROS 2 applications can now be built with a  `snapcraft.yaml` as simple as:
 
@@ -54,7 +54,7 @@ For a walkthrough on how to work with the plugin and extension, see [https://sna
 
 ### Ninja file generation with cmake
 
-By default, the [cmake plugin](t/the-cmake-plugin/8621) creates a Makefile when used with with  [`core20`](/t/base-snaps/11198) . This release adds the `cmake-generator` plugin property to optionally generate of a Ninja file:
+By default, the [cmake plugin](t/the-cmake-plugin/8621) creates a Makefile when used with with  [`core20`](base-snaps.md) . This release adds the `cmake-generator` plugin property to optionally generate of a Ninja file:
 
 ```yaml
 hello:
@@ -66,7 +66,7 @@ hello:
 ```
 ### List channel tracks from Snapcraft
 
-You can now view the available [channel tracks](/t/using-tracks/6230) for a given snap with the new `snapcraft list-tracks <snap-name>` command (or with its alias, _tracks_).
+You can now view the available [channel tracks](https://snapcraft.io/docs/using-tracks) for a given snap with the new `snapcraft list-tracks <snap-name>` command (or with its alias, _tracks_).
 
 The command output shows a list of tracks together with their status, creation date, and assigned version pattern, which is required by a given snap revision to be able to release to a given track:
 

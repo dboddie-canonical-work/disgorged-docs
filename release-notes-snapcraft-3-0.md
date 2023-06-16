@@ -6,13 +6,13 @@
 
 These are the release notes for [Snapcraft 3.0](https://github.com/snapcore/snapcraft/releases/tag/3.0), a major overhaul of the snap build environment.
 
-For general details, including installation instructions, see [Snapcraft overview](/t/snapcraft-overview/8940), or take a look at [Snapcraft release notes](/t/snapcraft-release-notes/10721) for other *Snapcraft* releases.
+For general details, including installation instructions, see [Snapcraft overview](snapcraft-overview.md), or take a look at [Snapcraft release notes](snapcraft-release-notes.md) for other *Snapcraft* releases.
 
 ## Build environments
 
 This release adds specific build environments for each snapcraft project you work on. These environments are tuned for each project, and ensure both API and ABI compatibility are in place for every binary built within each respective environment.
 
-Snapcraft's build environments leverage a snap architecture feature called [bases](/t/base-snaps/11198). At build time, the *snapcraft* tool ensures you are creating your applications inside an environment specifically tailored for the specified base.
+Snapcraft's build environments leverage a snap architecture feature called [bases](base-snaps.md). At build time, the *snapcraft* tool ensures you are creating your applications inside an environment specifically tailored for the specified base.
 
 To make the transition to Snapcraft 3.0 easy, the entire functionality for this new tool behavior is triggered by making use of the `base` keyword in `snapcraft.yaml`.
 
@@ -20,8 +20,8 @@ Snapcraft 3.0 also remains backwards compatible. This means you can omit the `ba
 
 The environment runs in a container, which means it's isolated from the user during normal operation. However, the following commands enable you to step into this encapsulated environment:
 
--   `--shell`: builds your snap to the [lifecycle step](/t/parts-lifecycle/12231#heading--steps) prior to that specified and opens a shell into the environment (e.g. running `snapcraft prime --shell` will run up to the `stage` step and open a shell).
--   `--shell-after`: builds your snap to the [lifecycle step](/t/parts-lifecycle/12231#heading--steps) specified and opens a shell into the environment. (eg. running `snapcraft prime --shell-after` will run up to the `prime` step and then drop into a shell).
+-   `--shell`: builds your snap to the [lifecycle step](parts-lifecycle.md#heading--steps) prior to that specified and opens a shell into the environment (e.g. running `snapcraft prime --shell` will run up to the `stage` step and open a shell).
+-   `--shell-after`: builds your snap to the [lifecycle step](parts-lifecycle.md#heading--steps) specified and opens a shell into the environment. (eg. running `snapcraft prime --shell-after` will run up to the `prime` step and then drop into a shell).
 -   `--debug`, opens a shell inside the environment after an error occur.
 
 The below video shows an example of how the system behaves with the new functionality in place:
@@ -32,7 +32,7 @@ The below video shows an example of how the system behaves with the new function
 
 With this release of Snapcraft 3.0, we are happy to announce support for macOS via [Homebrew](https://formulae.brew.sh/formula/snapcraft). Moreover, the experience is transparent thanks to the use of build environments and its underlying technology.
 
-See [Install snapcraft on macOS](/t/installing-snapcraft/20334#heading--macos) for further details.
+See [Install snapcraft on macOS](installing-snapcraft.md#heading--macos) for further details.
 
 <h3 id='heading--base-exceptions'>Features incompatible with bases</h3>
 

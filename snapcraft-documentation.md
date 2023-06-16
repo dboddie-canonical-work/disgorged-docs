@@ -27,8 +27,8 @@ From desktop applications, servers and cloud deployments, to embedded devices an
 
 | | |
 |--|--|
-|  [Tutorials](/t/snapcraft-tutorials/31037)</br>  Get started - a hands-on introduction to building snaps with Snapcraft </br> |  [How-to guides](/t/snapcraft-how-to-guides/31049/2) </br> Step-by-step guides covering key operations and common tasks |
-|  [Reference](/t/snapcraft-reference/31051/2) </br> Technical information - plugins, extensions and architecture | [Explanation](/t/snapcraft-explanation-guides/31050/2) </br> Concepts - discussion and clarification of key topics  |
+|  [Tutorials](snapcraft-tutorials.md)</br>  Get started - a hands-on introduction to building snaps with Snapcraft </br> |  [How-to guides](snapcraft-how-to-guides.md) </br> Step-by-step guides covering key operations and common tasks |
+|  [Reference](snapcraft-reference.md) </br> Technical information - plugins, extensions and architecture | [Explanation](snapcraft-explanation-guides.md) </br> Concepts - discussion and clarification of key topics  |
 
 ---
 
@@ -39,7 +39,7 @@ Snap and Snapcraft are members of the Ubuntu family. They're both open source pr
 * [Our Code of Conduct](https://ubuntu.com/community/code-of-conduct)
 * [Get support](https://forum.snapcraft.io/c/snap/14)
 * [Join the Discourse forum](https://forum.snapcraft.io/)
-* [How to contribute](/t/documentation-guidelines/3798)
-* [Roadmap](/t/the-snapd-roadmap/1973)
+* [How to contribute](documentation-guidelines.md)
+* [Roadmap](https://snapcraft.io/docs/the-snapd-roadmap)
 
 Thinking about using snap for your next project? [Get in touch!](https://forum.snapcraft.io/)

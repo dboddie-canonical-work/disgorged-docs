@@ -4,18 +4,18 @@
 
 # Validation sets
 
-A validation set is an [assertion](/t/assertions/6155) that lists specific snaps that are either required to be installed together or are permitted to be installed together on a device or system.
+A validation set is an [assertion](https://snapcraft.io/docs/assertions) that lists specific snaps that are either required to be installed together or are permitted to be installed together on a device or system.
 
-One or more validation sets can be used to ensure only specific snaps are installed, and optionally, only specific snaps at fixed [revisions](/t/glossary/14612#heading--revision). They can help a set of interdependent snaps maintain their testing and certification integrity, as well as help orchestrate their updates. But they can equally be used to simplify dependency deployment and to help manage devices.
+One or more validation sets can be used to ensure only specific snaps are installed, and optionally, only specific snaps at fixed [revisions](glossary.md#heading--revision). They can help a set of interdependent snaps maintain their testing and certification integrity, as well as help orchestrate their updates. But they can equally be used to simplify dependency deployment and to help manage devices.
 
 ## Prerequisites
 
 Validation set functionality is currently under active development and there are several considerations that need to be made before using it:
 - A developer account is also required, along with your developer id.</br>
-  (_see [Create a developer account](/t/create-a-developer-account/6760#heading--developer-id) for further details_)
-- Snapd version 2.50 and [Snapcraft](/t/snapcraft-overview/8940) version [4.7](/t/release-notes-snapcraft-4-7/24252), or newer, are required.
+  (_see [Create a developer account](create-a-developer-account.md#heading--developer-id) for further details_)
+- Snapd version 2.50 and [Snapcraft](snapcraft-overview.md) version [4.7](release-notes-snapcraft-4-7.md), or newer, are required.
 - **Currently, in order to enforce a validation set, the following is also required:**
-  - a [brand store](/t/glossary/14612#heading--brand-store) account
+  - a [brand store](glossary.md#heading--brand-store) account
   - the validation set's `name`, `account-id` and listed snaps, need to be added to an allowlist in the store backends (this is done by filing a brand store support ticket).
   - Snapd version 2.54
 
@@ -73,7 +73,7 @@ The template validation set assertion needs to be populated with the details of 
    `required` snaps need to be installed, `optional` snaps are permitted to be installed and `invalid` snaps explicitly must not be installed.
    Defaults to _required_.
 - **`revision`** (*optional*):
-   Specifies which [revision](/t/glossary/14612#heading--revision) of the snap needs to be installed.
+   Specifies which [revision](glossary.md#heading--revision) of the snap needs to be installed.
 
 The following is a populated example of a validation set assertion:
 

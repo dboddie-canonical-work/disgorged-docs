@@ -6,11 +6,11 @@
 
 Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap.
 
-These requirements can include build and staging packages, plugs and interfaces, file layouts and environments, and whatever other [snapcraft.yaml](/t/the-snapcraft-format/8337) elements may be required to build a functioning system.
+These requirements can include build and staging packages, plugs and interfaces, file layouts and environments, and whatever other [snapcraft.yaml](the-snapcraft-yaml-schema.md) elements may be required to build a functioning system.
 
-**For a full list of supported extensions, see [Supported extensions](/t/supported-extensions/20521).**
+**For a full list of supported extensions, see [Supported extensions](supported-extensions.md).**
 
-A snap developer creating a GTK 3 application snap, for example, can use the `gnome-3-28` extension to expose the GTK 3 libraries to a snap at build and runtime without the snap developer needing specific deep knowledge about GTK 3. There are extensions for building robotics (ROS 2) applications too, including the [ROS2 Humble Extension](/t/the-ros-2-humble-extension/30809).
+A snap developer creating a GTK 3 application snap, for example, can use the `gnome-3-28` extension to expose the GTK 3 libraries to a snap at build and runtime without the snap developer needing specific deep knowledge about GTK 3. There are extensions for building robotics (ROS 2) applications too, including the [ROS2 Humble Extension](the-ros-2-humble-extension.md).
 
 Extensions help:
 - avoid repetitive tasks in the snap building process
@@ -18,11 +18,11 @@ Extensions help:
 - create a standard template for common application requirements
 - reduce the testing and security burden, as they're tested and updated independently
 
-> ⓘ  For more details on the snap building process, see [Creating a snap](/t/creating-a-snap/6799).
+> ⓘ  For more details on the snap building process, see [Creating a snap](creating-a-snap.md).
 
 ## Using Extensions
 
-To use an extension, the [app](/t/snapcraft-app-and-service-metadata/8335#heading--extension) metadata section of the snap's [snapcraft.yaml](/t/the-snapcraft-format/8337) needs include the `extensions` definition. The following snippet, for example, shows how the [Firefox](https://github.com/mozilla/gecko-dev/blob/d36cf98aa85f24ceefd07521b3d16b9edd2abcb7/taskcluster/docker/firefox-snap/firefox.snapcraft.yaml.in#L15) snap uses the `gnome-3-34` extension to add Gnome desktop support:
+To use an extension, the [app](snapcraft-app-and-service-metadata.md#heading--extension) metadata section of the snap's [snapcraft.yaml](the-snapcraft-yaml-schema.md) needs include the `extensions` definition. The following snippet, for example, shows how the [Firefox](https://github.com/mozilla/gecko-dev/blob/d36cf98aa85f24ceefd07521b3d16b9edd2abcb7/taskcluster/docker/firefox-snap/firefox.snapcraft.yaml.in#L15) snap uses the `gnome-3-34` extension to add Gnome desktop support:
 
 ```bash
 apps:
@@ -46,7 +46,7 @@ kde-neon          core18, core20
 [...]
 ```
 
-See [Supported Extensions](/t/supported-extensions/20521) for the full list of extensions.
+See [Supported Extensions](supported-extensions.md) for the full list of extensions.
 
 Further information about any specific extension can be obtained by typing `snapcraft extension` followed by the extension name:
 

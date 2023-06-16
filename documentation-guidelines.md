@@ -8,7 +8,7 @@ Our documentation is a community effort, [published](https://docs.snapcraft.io) 
 
 The navigational structure, style, and content of our documentation follows the [Diátaxis](https://diataxis.fr/) systematic framework for technical documentation authoring. This splits documentation pages into tutorials, how-to guides, reference material and explanatory text.
 
-Our [Documentation roadmap](/t/documentation-roadmap/8763) outlines both our short-term and long-term goals for Snap-related documentation.
+Our [Documentation roadmap](https://snapcraft.io/docs/documentation-roadmap) outlines both our short-term and long-term goals for Snap-related documentation.
 
 Feel free to modify any [documentation topic](https://forum.snapcraft.io/c/doc) with updated or more insightful information. If you already  participate in the snap community, you don't need additional permissions; pages are freely editable within the forum itself. Of course, feel free to ask and discuss when appropriate.
 
@@ -92,7 +92,7 @@ Improving our documentation and applying the principles of Diátaxis are on-goin
 
 <h2 id='heading--navigation'>Navigation menu</h2>
 
-The navigation menu on the published docs site ([https://snapcraft.io/docs](https://snapcraft.io/docs)) is generated automatically from a table in that page's forum post ([https://forum.snapcraft.io/t/snap-documentation/11127](https://forum.snapcraft.io/t/snap-documentation/11127)).
+The navigation menu on the published docs site ([https://snapcraft.io/docs](https://snapcraft.io/docs)) is generated automatically from a table in that page's forum post ([https://snapcraft.io/docs/snap-documentation](https://snapcraft.io/docs/snap-documentation)).
 
 Unlike every other page in our documentation, the page hosting the navigation menu cannot be edited. This is because we need to retain some gateway control over which pages are published and where. A small error in the navigation table can completely break the final output and the redirects it contains could break the rendering of other pages too.
 
@@ -199,10 +199,10 @@ For links to internal files or external URLs, use the following format:
 
 The `visible text` is what will appear in the documentation. The `url` is either the full URL of a link outside of the documentation, or the topic reference without the domain name for a page within the documentation.
 
-To link to `https://forum.snapcraft.io/t/snapcraft-overview/8940`, for example, you would use the following:
+To link to `snapcraft-overview.md`, for example, you would use the following:
 
 ```markdown
-For more details, see [Snapcraft overview](/t/snapcraft-overview/8940).
+For more details, see [Snapcraft overview](snapcraft-overview.md).
 ```
 The Discourse topic identifier, _8940_ in the above example, is optional and can be omitted.
 

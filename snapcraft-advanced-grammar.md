@@ -4,7 +4,7 @@
 
 # Snapcraft advanced grammar
 
-Several fields in [snapcraft.yaml](/t/the-snapcraft-format/8337) are dependent on the architecture or the operating system being exposed to Snapcraft. This is accomplished using specific and advanced syntax within the YAML consumed by the *snapcraft* command.
+Several fields in [snapcraft.yaml](the-snapcraft-yaml-schema.md) are dependent on the architecture or the operating system being exposed to Snapcraft. This is accomplished using specific and advanced syntax within the YAML consumed by the *snapcraft* command.
 
 This *advanced grammar* is made up of three nestable statements: `on`, `to` and `try`:
 
@@ -52,7 +52,7 @@ Optionally an '`on`' statement can precede a `'to'` in the same line to form a c
 
 
 [note type="caution" status="Warning"]
-The *try* statement does not work with builds using a [base snap](/t/base-snaps/11198) of `core22` or later.
+The *try* statement does not work with builds using a [base snap](base-snaps.md) of `core22` or later.
 [/note]
 
 

@@ -23,4 +23,4 @@ The new way to create a snap from a directory has the following syntax:
 snapcraft pack <directory>
 ```
 
-See [Deprecation notices](/t/deprecation-notices/8396/2)  for further announcements.
+See [Deprecation notices](deprecation-notices.md)  for further announcements.

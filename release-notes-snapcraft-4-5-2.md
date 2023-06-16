@@ -13,7 +13,7 @@ Highlights for this release include:
 * build providers will now clean the build environment when the project directory changes
 
 
-For general details, including installation instructions, see [Snapcraft overview](https://forum.snapcraft.io/t/snapcraft-overview/8940), or take a look at [Snapcraft release notes](https://forum.snapcraft.io/t/snapcraft-release-notes/10721) for other  *Snapcraft*  releases.
+For general details, including installation instructions, see [Snapcraft overview](snapcraft-overview.md), or take a look at [Snapcraft release notes](snapcraft-release-notes.md) for other  *Snapcraft*  releases.
 
 ## Full list of changes
 

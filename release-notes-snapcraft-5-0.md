@@ -16,7 +16,7 @@ For general details, including installation instructions, see [Snapcraft overvie
 
 The `snapcraft metrics` command can be used to track installation and usage statistics for snaps published with your developer account.
 
-For further details, see [Snapcraft metrics](/t/snapcraft-metrics/25732).
+For further details, see [Snapcraft metrics](snapcraft-metrics.md).
 
 ## Metadata links added to _snapcraft.yaml_
 
@@ -24,17 +24,17 @@ You can now add user-friendly bespoke links, such as a donation URL, a contact l
 
 These links are translated into a more _wire protocol_ friendly syntax for `snap.yaml` which can then be consumed by the Snap Store to enhance your snap's listing.
 
-See [Snapcraft.yaml reference](/t/snapcraft-yaml-reference/4276) for further details.
+See [Snapcraft.yaml reference](snapcraft-yaml-reference.md) for further details.
 
 ## Removal of legacy code base
 
-For a long time, since the creation of [base snaps](/t/base-snaps/11198), Snapcraft has maintained two code bases inside the same product - when no base was detected, Snapcraft would re-execute itself into the old code base.
+For a long time, since the creation of [base snaps](base-snaps.md), Snapcraft has maintained two code bases inside the same product - when no base was detected, Snapcraft would re-execute itself into the old code base.
 
 The absence of a base in `snapcraft.yaml` triggered this behaviour for backwards compatibility, and this absence essentially meant building for an Ubuntu 16.04 target.
 
 Ubuntu 16.04 is now in its ESM phase, and it's support has been dropped from Snapcraft 5+.  Publishers needing continued support for `base: core` can now use Snapcraft's 4.x track which maintains the old Ubuntu 16.04 compatible code base.
 
-See [Snapcraft and Extended Security Maintenance](/t/snapcraft-and-extended-security-maintenance/24297) for more details.
+See [Snapcraft and Extended Security Maintenance](snapcraft-and-extended-security-maintenance.md) for more details.
 
 ## Full list of changes
 

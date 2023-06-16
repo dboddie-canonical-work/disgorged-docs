@@ -27,7 +27,7 @@ Here are some snap advantages that will benefit many GTK applications:
 
 Typically this guide will take around 20 minutes and will result in a working GTK application in a snap. Once complete, you'll understand how to package GTK3 applications as snaps and deliver them to millions of Linux users. After making the snap available in the store, you'll get access to installation metrics and tools to directly manage the delivery of updates to Linux users.
 
-> ⓘ For a brief overview of the snap creation process, including how to install *snapcraft* and how it's used, see [Snapcraft overview](/t/snapcraft-overview/8940). For a more comprehensive breakdown of the steps involved, take a look at [Creating a snap](/t/creating-a-snap/6799).
+> ⓘ For a brief overview of the snap creation process, including how to install *snapcraft* and how it's used, see [Snapcraft overview](snapcraft-overview.md). For a more comprehensive breakdown of the steps involved, take a look at [Creating a snap](creating-a-snap.md).
 
 ## Getting started
 
@@ -100,7 +100,7 @@ base: core20
 
 #### Security model
 
-We're going to use _strict_ [confinement](/t/snap-confinement/6233) for Foliate. Strictly confined snaps run in complete isolation, up to a minimal access level that’s deemed always safe.
+We're going to use _strict_ [confinement](snap-confinement.md) for Foliate. Strictly confined snaps run in complete isolation, up to a minimal access level that’s deemed always safe.
 
 ```yaml
 confinement: strict
@@ -111,7 +111,7 @@ Unconfined applications, specified with `devmode`, are useful while you build a 
 
 Apps are the commands and services exposed to end users. If your command name matches the snap `name`, users will be able run the command directly. If the names differ, then apps are prefixed with the snap `name` (`foliate.command-name`, for example). This is to avoid conflicting with apps defined by other installed snaps.
 
-If you don’t want your command prefixed you can request an alias for it on the [Snapcraft forum](https://forum.snapcraft.io/t/process-for-reviewing-aliases-auto-connections-and-track-requests/455). These are set up automatically when your snap is installed from the Snap Store.
+If you don’t want your command prefixed you can request an alias for it on the [Snapcraft forum](https://snapcraft.io/docs/process-for-aliases-auto-connections-and-tracks). These are set up automatically when your snap is installed from the Snap Store.
 
 ```yaml
 apps:
@@ -125,7 +125,7 @@ apps:
     common-id: com.github.johnfactotum.Foliate
 ```
 
-This application uses the [`gnome-3-38` extension](/t/the-gnome-3-38-extension/22923). This will make GTK and Gnome libraries available to the snap at runtime and it will configure the runtime environment of the application so that all desktop functionality is correctly initialised.
+This application uses the [`gnome-3-38` extension](the-gnome-3-38-extension.md). This will make GTK and Gnome libraries available to the snap at runtime and it will configure the runtime environment of the application so that all desktop functionality is correctly initialised.
 
 The `common-id` property is used to link this application to the AppStream metadata specified further down below. This will cause this `app` to use the `.desktop` launcher specified in the AppStream file.
 
@@ -133,7 +133,7 @@ The `common-id` property is used to link this application to the AppStream metad
 
 Parts define how to build your app. Parts can be anything: programs, libraries, or other assets needed to create and run your application. In this case we have one: the Foliate source release tarball. In other cases these can point to local directories, remote git repositories or other revision control systems.
 
-Before building the part, the dependencies listed as `build-packages` are installed. [The Meson plugin](/t/the-meson-plugin/8623) then uses `meson`, `ninja build` and `ninja install` to build the part.
+Before building the part, the dependencies listed as `build-packages` are installed. [The Meson plugin](the-meson-plugin.md) then uses `meson`, `ninja build` and `ninja install` to build the part.
 
 ```yaml
 parts:
@@ -156,13 +156,13 @@ parts:
 
 ```
 
-`override-pull` isn't often needed but it replaces the default [pull lifecycle step](https://forum.snapcraft.io/t/parts-lifecycle/12231#heading--steps) with our own actions. We're using it to augment the default _snapcraftctl pull_ step with a _sed_ command to replace the GJS path embedded within the launch file with the path to _gjs_ after it's installed as a _stage-package_ within the snap.
+`override-pull` isn't often needed but it replaces the default [pull lifecycle step](parts-lifecycle.md#heading--steps) with our own actions. We're using it to augment the default _snapcraftctl pull_ step with a _sed_ command to replace the GJS path embedded within the launch file with the path to _gjs_ after it's installed as a _stage-package_ within the snap.
 
 `built-packages` are the packages needed for a project to successfully build. This will be listed in a project's documentation, or known by the development team.
 
 `stage-packages` are required by Foliate to run, and mirror the same packages required by the binary on a standard distribution installation. We only need to install the _gjs_ package, as mentioned earlier.
 
-`parse-info` points to the AppStream metadata file. Since we used `adopt-info: foliate` in the top-level metadata, the AppStream file of the `foliate` part will be used to fill in the `summary`, `description` and `icon` of this snap. See [Using AppStream metadata](/t/using-external-metadata/4642#heading--appstream) for more information.
+`parse-info` points to the AppStream metadata file. Since we used `adopt-info: foliate` in the top-level metadata, the AppStream file of the `foliate` part will be used to fill in the `summary`, `description` and `icon` of this snap. See [Using AppStream metadata](using-external-metadata.md#heading--appstream) for more information.
 
 ### Slots
 
@@ -178,7 +178,7 @@ slots:
 
 ### Layouts
 
-The final section uses [Snap layouts](/t/snap-layouts/7207) to make the _gjs_ executable appear in the correct location within the snap:
+The final section uses [Snap layouts](snap-layouts.md) to make the _gjs_ executable appear in the correct location within the snap:
 
 ```yaml
 layout:
@@ -269,4 +269,4 @@ $ snapcraft upload --release=edge mysnap_*.snap
 
 If you’re happy with the result, you can commit the snapcraft.yaml to your GitHub repo and [turn on automatic builds](https://build.snapcraft.io) so any further commits automatically get released to edge, without requiring you to manually build locally.
 
-Congratulations! You've just built and published your first GTK 3 snap. For a more in-depth overview of the snap building process, see [Creating a snap](/t/creating-a-snap/6799).
+Congratulations! You've just built and published your first GTK 3 snap. For a more in-depth overview of the snap building process, see [Creating a snap](creating-a-snap.md).

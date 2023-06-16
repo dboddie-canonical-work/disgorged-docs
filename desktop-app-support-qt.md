@@ -8,14 +8,14 @@
 
 Use the following guides to create a new snap for a graphical application which uses [Qt](https://www.qt.io/). These guides use the stable Qt versions which are shipped with Ubuntu 16.04 and 18.04 LTS and are recommended for most applications and new snaps.
 
-* [Desktop App support - Qt5](/t/desktop-app-support-qt5/11703)
-* [Desktop App support - Qt4](/t/desktop-app-support-qt4/11711)
+* [Desktop App support - Qt5](deprecated-desktop-app-support-qt5.md)
+* [Desktop App support - Qt4](desktop-app-support-qt4.md)
 
 ## [legacy] snaps that don't use `base`
 
 If you have an existing snap that does not use the [base](https://snapcraft.io/docs/base-snaps) functionality, please use the following guide.
 
-* [[Legacy] Desktop App support - Qt for snaps without bases](/t/desktop-app-support-qt-for-snaps-without-bases/11702)
+* [[Legacy] Desktop App support - Qt for snaps without bases](desktop-app-support-qt-for-snaps-without-bases.md)
 
 ## Snapping KDE applications
 

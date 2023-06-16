@@ -4,7 +4,7 @@
 
 # The serial-port interface
 
-The `serial-port` interface enables input and output access to a specific serial port on a device typically running [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core). As a result, and because it provides such privileged access to configure serial port hardware,  `serial-port` is considered a restricted interface.
+The `serial-port` interface enables input and output access to a specific serial port on a device typically running [Ubuntu Core](glossary.md#heading--ubuntu-core). As a result, and because it provides such privileged access to configure serial port hardware,  `serial-port` is considered a restricted interface.
 
 Use  `snap interface serial-port` to see which serial-port devices are available on the system:
 
@@ -21,7 +21,7 @@ Once connected, the consuming snap can use the device via the path specified by 
 
 [note type="positive" status="Interface documentation"]
 
-See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+See [Interface management](interface-management.md) and [Supported interfaces](supported-interfaces.md) for further details on how interfaces are used.
 [/note]
 
 ---
@@ -38,10 +38,10 @@ See [Interface management](/t/interface-management/6154) and [Supported interfac
     * `usb-product` (slot): integer representing the USB Product ID, must be in range 0 <= vid <= 65535
     * `path` (slot): path of the form `/dev/serial-port-...` where a symlink will be created to the device e.g. `/dev/serial-port-mydevice`
 
-[Hardware IO interfaces](/t/hardware-io-interfaces/35421) covers some general considerations common to these kinds of devices.
+[Hardware IO interfaces](hardware-io-interfaces.md) covers some general considerations common to these kinds of devices.
 
 
-To use a serial-port device, the snap developer must add `plugs: [ serial-port ]` to a snap's [snapcraft.yaml](/t/the-snapcraft-format/8337). The snap user can then access a specific serial-port device with an [interface connection](/t/interface-management/6154#heading--manual-connections).
+To use a serial-port device, the snap developer must add `plugs: [ serial-port ]` to a snap's [snapcraft.yaml](the-snapcraft-yaml-schema.md). The snap user can then access a specific serial-port device with an [interface connection](interface-management.md#heading--manual-connections).
 
 <h3 id='heading--code-examples'>Code examples</h3>
 

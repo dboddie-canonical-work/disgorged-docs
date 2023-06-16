@@ -6,7 +6,7 @@
 
 These are the release notes for [Snapcraft 3.1.1](https://github.com/snapcore/snapcraft/releases/tag/3.1.1), which is primarily a bugifx release.
 
-For general details, including installation instructions, see [Snapcraft overview](/t/snapcraft-overview/8940), or take a look at [Snapcraft release notes](/t/snapcraft-release-notes/10721) for other *Snapcraft* releases.
+For general details, including installation instructions, see [Snapcraft overview](snapcraft-overview.md), or take a look at [Snapcraft release notes](snapcraft-release-notes.md) for other *Snapcraft* releases.
 
 The issues and features worked on for 3.1.1:
 -   ant, maven and gradle plugins: use correct defaults for jre ([#2453](https://github.com/snapcore/snapcraft/pull/2453))\

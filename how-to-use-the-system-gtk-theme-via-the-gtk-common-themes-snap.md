@@ -4,7 +4,7 @@
 
 # How to use the system GTK theme via the gtk-common-themes snap
 
-A common request is to [allow applications to follow the GTK theme of the host system desktop](https://forum.snapcraft.io/t/use-the-system-gtk-theme/496?u=jamesh).  While we don't yet have all the infrastructure in place for arbitrary themes, we do now have one that will automatically handle the default themes of common Linux distributions.  This will be sufficient for applications based on GTK 3, and Qt 5 apps using the `libqgtk3.so` platform theme.
+A common request is to [allow applications to follow the GTK theme of the host system desktop](https://snapcraft.io/docs/use-the-system-gtk-theme?u=jamesh).  While we don't yet have all the infrastructure in place for arbitrary themes, we do now have one that will automatically handle the default themes of common Linux distributions.  This will be sufficient for applications based on GTK 3, and Qt 5 apps using the `libqgtk3.so` platform theme.
 
 I've put together a short Snapcraft project that demonstrates how everything fits together:
 
@@ -34,7 +34,7 @@ This will cause various pieces of theme data to be mounted under `$SNAP/share`, 
 
 In addition to the plug definitions, I've also made sure one of the parts will create the directories used as content interface mount points and ensure they are primed.
 
-In the future, we hope to remove the need for much of this boilerplate through the use of [Snapcraft templates](https://forum.snapcraft.io/t/proposal-templates/6019?u=jamesh).
+In the future, we hope to remove the need for much of this boilerplate through the use of [Snapcraft templates](https://snapcraft.io/docs/proposal-templates?u=jamesh).
 
 ## Allowing GTK to detect the selected system theme
 

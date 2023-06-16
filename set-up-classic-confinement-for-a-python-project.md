@@ -4,7 +4,7 @@
 
 # Set up classic confinement for a Python project
 
-Some snaps need to have access to system resources outside the scope allowed by strict confinement, and they are unable to do this via the available interfaces. These snaps are configured to use classic confinement and will [need to be reviewed](/t/process-for-reviewing-classic-confinement-snaps/1460) before publication in the Snap Store.
+Some snaps need to have access to system resources outside the scope allowed by strict confinement, and they are unable to do this via the available interfaces. These snaps are configured to use classic confinement and will [need to be reviewed](process-for-reviewing-classic-confinement-snaps.md) before publication in the Snap Store.
 
 This guide shows how to enable classic confinement for a snap built with the [python plugin](/t/the-python-plugin). The example project used in this guide can be found in the [example repository](https://github.com/snapcraft-docs/python-ctypes-example).
 
@@ -55,6 +55,6 @@ This can be removed when automatic patching is enabled for `core22` classic snap
 
 ## Rebuild the snap
 
-Run Snapcraft again to rebuild the snap, consulting the [Classic linter](/t/32228) documentation to resolve further issues.
+Run Snapcraft again to rebuild the snap, consulting the [Classic linter](classic-linter.md) documentation to resolve further issues.
 
 See also [this article](https://snapcraft.io/blog/the-new-classic-confinement-in-snaps-even-the-classics-need-a-change) for an overview of the classic linter and a discussion of the issues involved in building snaps for classic confinement.

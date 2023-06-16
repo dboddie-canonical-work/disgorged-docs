@@ -4,13 +4,13 @@
 
 # Release notes: Snapcraft 3.1
 
-These are the release notes for [Snapcraft 3.1](https://github.com/snapcore/snapcraft/releases/tag/3.1), a minor release that builds on the foundations of [Snapcraft 3.0](/t/release-notes-snapcraft-3-0/10704).
+These are the release notes for [Snapcraft 3.1](https://github.com/snapcore/snapcraft/releases/tag/3.1), a minor release that builds on the foundations of [Snapcraft 3.0](release-notes-snapcraft-3-0.md).
 
-For general details, including installation instructions, see [Snapcraft overview](/t/snapcraft-overview/8940), or take a look at [Snapcraft release notes](/t/snapcraft-release-notes/10721) for other *Snapcraft* releases.
+For general details, including installation instructions, see [Snapcraft overview](snapcraft-overview.md), or take a look at [Snapcraft release notes](snapcraft-release-notes.md) for other *Snapcraft* releases.
 
 ## Build environments
 
-When using the [base](/t/snapcraft-overview/8940#base-snap) keyword, it is once again possible to clean parts:
+When using the [base](snapcraft-overview.md#base-snap) keyword, it is once again possible to clean parts:
 
 
 ```bash

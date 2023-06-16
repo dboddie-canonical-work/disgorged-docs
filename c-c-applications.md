@@ -27,7 +27,7 @@ Here are some snap advantages that will benefit many C/C++ projects:
 
 Typically this guide will take around 20 minutes and will result in a working C++ application in a snap. Once complete, you'll understand how to package C/C++ applications as snaps and deliver them to millions of Linux users. After making the snap available in the store, you'll get access to installation metrics and tools to directly manage the delivery of updates to Linux users.
 
-> ℹ For a brief overview of the snap creation process, including how to install *snapcraft* and how it's used, see [Snapcraft overview](/t/snapcraft-overview/8940). For a more comprehensive breakdown of the steps involved, take a look at [Creating a snap](/t/creating-a-snap/6799).
+> ℹ For a brief overview of the snap creation process, including how to install *snapcraft* and how it's used, see [Snapcraft overview](snapcraft-overview.md). For a more comprehensive breakdown of the steps involved, take a look at [Creating a snap](creating-a-snap.md).
 
 ## Getting started
 
@@ -159,7 +159,7 @@ base: core18
 
 #### Security model
 
-To get started, we won’t [confine](/t/snap-confinement/6233) this application. Unconfined applications, specified with `devmode`, can only be released to the hidden “edge” channel where you and other developers can install them.
+To get started, we won’t [confine](snap-confinement.md) this application. Unconfined applications, specified with `devmode`, can only be released to the hidden “edge” channel where you and other developers can install them.
 
 ```yaml
 confinement: devmode
@@ -200,13 +200,13 @@ There's also a large `stage-packages` section.
 
 These are the packages required by DOSBox to run, and mirror the same packages required by the binary on a standard distribution installation.
 
-For more details on autotools-specific metadata, see [The autotools plugin](/t/the-autotools-plugin/8616).
+For more details on autotools-specific metadata, see [The autotools plugin](the-autotools-plugin.md).
 
 #### Apps
 
 Apps are the commands and services exposed to end users. If your command name matches the snap name, users will be able run the command directly; that is, if the installed snap application has the name `dosbox.dosbox`, you can run it as merely `dosbox`. If the names differ, then apps must be prefixed with the snap name (`dosbox.somethingelse`, for example). This is to avoid conflicting with apps defined by other installed snaps.
 
-If you don’t want your command prefixed, you can request an alias for it on the [Snapcraft forum](https://forum.snapcraft.io/t/process-for-reviewing-aliases-auto-connections-and-track-requests/455). These are set up automatically when your snap is installed from the Snap Store.
+If you don’t want your command prefixed, you can request an alias for it on the [Snapcraft forum](https://snapcraft.io/docs/process-for-aliases-auto-connections-and-tracks). These are set up automatically when your snap is installed from the Snap Store.
 
 ```yaml
 apps:
@@ -296,4 +296,4 @@ $ snapcraft upload --release=edge mysnap_*.snap
 
 If you’re happy with the result, you can commit the snapcraft.yaml to your GitHub repo and [turn on automatic builds](https://build.snapcraft.io) so any further commits automatically get released to edge, without requiring you to manually build locally.
 
-Congratulations! You've just built and published your first C/C++ snap. For a more in-depth overview of the snap building process, see [Creating a snap](/t/creating-a-snap/6799).
+Congratulations! You've just built and published your first C/C++ snap. For a more in-depth overview of the snap building process, see [Creating a snap](creating-a-snap.md).

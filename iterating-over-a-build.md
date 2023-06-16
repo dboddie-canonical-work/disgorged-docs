@@ -4,15 +4,15 @@
 
 # Iterating over a build
 
-When building a snap with [Snapcraft](/t/snapcraft-overview/8940), and using the [base](/t/base-snaps/11198) keyword, snapcraft by default builds within a [Multipass](https://multipass.run/) container environment tailored for the specified base.
+When building a snap with [Snapcraft](snapcraft-overview.md), and using the [base](base-snaps.md) keyword, snapcraft by default builds within a [Multipass](https://multipass.run/) container environment tailored for the specified base.
 
-> ℹ See [Build options](/t/build-options/14250) for an outline of alternative build environments.
+> ℹ See [Build options](build-options.md) for an outline of alternative build environments.
 
 To help speed up testing, it's possible to open a shell within this environment to check the state of a build, view logs, probe the value of environment variables, locate missing binaries and install missing dependencies.
 
 The following commands enable you to step into this encapsulated environment:
--   `--shell`: builds your snap to the [lifecycle step](/t/parts-lifecycle/12231#heading--steps) prior to that specified and opens a shell into the environment (e.g. running `snapcraft prime --shell` will run up to the `stage` step and open a shell).
--   `--shell-after`: builds your snap to the [lifecycle step](/t/parts-lifecycle/12231#heading--steps) specified and opens a shell into the environment. (eg. running `snapcraft prime --shell-after` will run up to the `prime` step and then drop into a shell).
+-   `--shell`: builds your snap to the [lifecycle step](parts-lifecycle.md#heading--steps) prior to that specified and opens a shell into the environment (e.g. running `snapcraft prime --shell` will run up to the `stage` step and open a shell).
+-   `--shell-after`: builds your snap to the [lifecycle step](parts-lifecycle.md#heading--steps) specified and opens a shell into the environment. (eg. running `snapcraft prime --shell-after` will run up to the `prime` step and then drop into a shell).
 -   `--debug`, opens a shell inside the environment after an error occurs.
 
 For example, to open a shell just before the *prime* phase, use the following command:
@@ -59,4 +59,4 @@ Here are a couple of approaches that can expedite the build process:
 
       These commands are useful when testing because files from the *prime* directory become easily viewable and modifiable without requiring a complete *snapcraft* rebuild. In-place fixes can then be migrated to the snap's snapcraft.yaml for a final build.
 
-For more details on using the _try_ commands, see [Debug snaps with snap try](/t/debug-snaps-with-snap-try/22938) and for further help on common build issues, see [Troubleshoot snap building](/t/troubleshoot-snap-building/11938).
+For more details on using the _try_ commands, see [Debug snaps with snap try](debug-snaps-with-snap-try.md) and for further help on common build issues, see [Troubleshoot snap building](troubleshoot-snap-building.md).

@@ -24,7 +24,7 @@ In most Ubuntu bases (except `core`), _snapd_ and its associated tools are provi
 
 ## Defining a base
 
-Bases are defined by adding the `base:` keyword to a snap's [snapcraft.yaml](/t/the-snapcraft-format/8337) followed by the base name.
+Bases are defined by adding the `base:` keyword to a snap's [snapcraft.yaml](the-snapcraft-yaml-schema.md) followed by the base name.
 
 For example, to specify core 18, use the following:
 
@@ -38,22 +38,22 @@ To specify *core22*, use the following
 base: core22
 ```
 
-Snapcraft no longer supports building snaps with the older *core* base. Snapcraft 4 needs to be used instead. Snapcraft 4 is still being supported and can be installed from Snapcraft's _4.x_ [track](/t/channels/551#heading--tracks):
+Snapcraft no longer supports building snaps with the older *core* base. Snapcraft 4 needs to be used instead. Snapcraft 4 is still being supported and can be installed from Snapcraft's _4.x_ [track](https://snapcraft.io/docs/channels#heading--tracks):
 
 ```
 $ snap install snapcraft --channel 4.x
 ```
 
-For snaps using *core*, we highly recommend reading [Snapcraft and Extended Security Maintenance](/t/snapcraft-and-extended-security-maintenance/24297) for essential support details.
+For snaps using *core*, we highly recommend reading [Snapcraft and Extended Security Maintenance](snapcraft-and-extended-security-maintenance.md) for essential support details.
 
 The base snap mounts itself as the root filesystem within your snap such that when your application runs, the base's library paths are searched directly after the paths for your specific snap.
 
 [note type="caution" status="Warning"]
 Compatibility mode and ESM Support
 
-When building a snap with no specified base, [Snapcraft](/t/snapcraft-overview/8940) will operate in compatibility mode. This is essentially a prior (2.43-era) version of Snapcraft and, consequently, _snapcraft_ will lose the functionality of newer releases. See [Features incompatible with bases](/t/release-notes-snapcraft-3-0/10704#heading--base-exceptions) for details.
+When building a snap with no specified base, [Snapcraft](snapcraft-overview.md) will operate in compatibility mode. This is essentially a prior (2.43-era) version of Snapcraft and, consequently, _snapcraft_ will lose the functionality of newer releases. See [Features incompatible with bases](release-notes-snapcraft-3-0.md#heading--base-exceptions) for details.
 
-This compatibility mode is no longer supported in Snapcraft 5.0. Snapcraft 4 can be installed from the 4.x track on the Snap Store (`snap install snapcraft --channel 4.x`). See [Snapcraft and Extended Security Maintenance](/t/snapcraft-and-extended-security-maintenance/24297) for essential support details.
+This compatibility mode is no longer supported in Snapcraft 5.0. Snapcraft 4 can be installed from the 4.x track on the Snap Store (`snap install snapcraft --channel 4.x`). See [Snapcraft and Extended Security Maintenance](snapcraft-and-extended-security-maintenance.md) for essential support details.
 
 [/note]
 
@@ -63,11 +63,11 @@ This compatibility mode is no longer supported in Snapcraft 5.0. Snapcraft 4 can
 
 `core22` is the currently recommended base for the majority of snaps. But much like choosing a distribution base for a project or server, the best base for an application is dependent on an application's requirements and which plugins or extensions a base supports. If there are specific dependencies that cannot be easily met with `core22` then `core20` is a valid and supported alternative, as is the older `core18`.
 
-[Snapcraft extensions](/t/snapcraft-extensions/13486) are a great way to easily bundle a set of common requirements into a snap, such as for running KDE Plasma or GNOME applications, but you need to select a base that's supported by the extension you require. See [Supported extensions](/t/supported-extensions/20521) for a list of which extensions support which bases.
+[Snapcraft extensions](snapcraft-extensions.md) are a great way to easily bundle a set of common requirements into a snap, such as for running KDE Plasma or GNOME applications, but you need to select a base that's supported by the extension you require. See [Supported extensions](supported-extensions.md) for a list of which extensions support which bases.
 
-Base support was added with the release of [Snapcraft 3](/t/release-notes-snapcraft-3-0/10704). As noted above, snaps created before this, and snaps not using the `base:` keyword, can still be built but they cannot use [specific new features](/t/release-notes-snapcraft-3-0/10704#heading--base-exceptions). Instead, snaps built without bases inherit attributes from their respective build environments.
+Base support was added with the release of [Snapcraft 3](release-notes-snapcraft-3-0.md). As noted above, snaps created before this, and snaps not using the `base:` keyword, can still be built but they cannot use [specific new features](release-notes-snapcraft-3-0.md#heading--base-exceptions). Instead, snaps built without bases inherit attributes from their respective build environments.
 
-Snaps that don't use bases can often migrate to one without too much difficulty. See [Upgrading snapcraft](/t/upgrading-snapcraft/11658) for more details on potential differences.
+Snaps that don't use bases can often migrate to one without too much difficulty. See [Upgrading snapcraft](upgrading-snapcraft.md) for more details on potential differences.
 
 ## Building a base snap
 

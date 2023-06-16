@@ -16,7 +16,7 @@ The _gdb_ debugging tool is widely used by developers to introspect the executio
 
 <h2 id='heading--gdb'>Local debugging with gdb</h2>
 
-As snaps are run within a [confined environment](/t/snap-confinement/6233), running _gdb_ directly against a snap executable would introspect both the snap environment and the application itself, making the identification of any issues specific to the snap application much more difficult.
+As snaps are run within a [confined environment](snap-confinement.md), running _gdb_ directly against a snap executable would introspect both the snap environment and the application itself, making the identification of any issues specific to the snap application much more difficult.
 
 For this reason, the snap daemon embeds _gdb_ within its own framework, allowing developers to call it directly against an installed snap with the run argument:
 
@@ -26,7 +26,7 @@ sudo snap run --gdb <snapname>
 
 When GDB is instantiated in this way, it behaves just as it would were it called against the same executable outside of the snap environment.
 
-> ℹ  For general advice on fixing potential issues in running snaps, see [Debugging snaps](/t/debugging-snaps/18420). Guidance on using GDB is outside the scope of our documentation, but a good place to start is the [Sample GDB Session](https://sourceware.org/gdb/current/onlinedocs/gdb/Sample-Session.html#Sample-Session) in the [official documentation](https://sourceware.org/gdb/current/onlinedocs/gdb/).
+> ℹ  For general advice on fixing potential issues in running snaps, see [Debugging snaps](debugging-snaps.md). Guidance on using GDB is outside the scope of our documentation, but a good place to start is the [Sample GDB Session](https://sourceware.org/gdb/current/onlinedocs/gdb/Sample-Session.html#Sample-Session) in the [official documentation](https://sourceware.org/gdb/current/onlinedocs/gdb/).
 
 <h2 id='heading--debug-symbols'>Generate debug symbols</h2>
 
@@ -34,7 +34,7 @@ The majority of snaps do not ship with binaries that include debug symbols, and 
 
 One solution is to build your own snaps with debug symbols enabled, and install them locally with the `--devmode` argument.
 
-For example, to debug a typical C-based project using the [CMake plugin](/t/the-cmake-plugin/8621), add `set(CMAKE_BUILD_TYPE Debug)` to its _CMakeLists.txt_ and rebuild the snap.
+For example, to debug a typical C-based project using the [CMake plugin](the-cmake-plugin.md), add `set(CMAKE_BUILD_TYPE Debug)` to its _CMakeLists.txt_ and rebuild the snap.
 
 After installing the snap and running GDB, the symbols will be located and the source code can be referenced, as shown below:
 
@@ -65,7 +65,7 @@ GDB from a snap is working
 (gdb) quit
 ```
 
-See [Collecting debug symbols](/t/collecting-debug-symbols/7017) for the forum discussion related to how snaps might bundle debug symbols.
+See [Collecting debug symbols](https://snapcraft.io/docs/collecting-debug-symbols) for the forum discussion related to how snaps might bundle debug symbols.
 
 <h2 id='heading--gdbserver'>Local debugging with gdbserver</h2>
 

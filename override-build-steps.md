@@ -4,7 +4,7 @@
 
 # Override build steps
 
-You can override and customise steps of a [part's lifecycle](/t/parts-lifecycle/12231) (pull, build, stage, and prime) using _overrides_; shell scripts directly sourced from `snapcraft.yaml`. These scripts are run with `/bin/sh`, which by default on Ubuntu is [`dash`](https://en.wikipedia.org/wiki/Almquist_shell).
+You can override and customise steps of a [part's lifecycle](parts-lifecycle.md) (pull, build, stage, and prime) using _overrides_; shell scripts directly sourced from `snapcraft.yaml`. These scripts are run with `/bin/sh`, which by default on Ubuntu is [`dash`](https://en.wikipedia.org/wiki/Almquist_shell).
 
 An override is declared with the following syntax:
 

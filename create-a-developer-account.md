@@ -31,9 +31,9 @@ Once you have accepted the terms, your developer account is immediately ready to
 
 <h2 id='heading--developer-id'>Developer account id</h2>
 
-It's useful to know your developer account id when building [Ubuntu Core devices](https://ubuntu.com/core/docs/system-user),  interacting with the  Snap Store [review team](https://forum.snapcraft.io/c/store-requests/19) and using the [snapd API](/t/snapd-rest-api/17954).
+It's useful to know your developer account id when building [Ubuntu Core devices](https://ubuntu.com/core/docs/system-user),  interacting with the  Snap Store [review team](https://forum.snapcraft.io/c/store-requests/19) and using the [snapd API](https://snapcraft.io/docs/snapd-rest-api).
 
-It can be retrieved with the [snapcraft](/t/snapcraft-overview/8940) command by first logging in to your Ubuntu One account:
+It can be retrieved with the [snapcraft](snapcraft-overview.md) command by first logging in to your Ubuntu One account:
 
 ```bash
 $ snapcraft login

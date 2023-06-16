@@ -8,11 +8,11 @@ These are the release notes for [Snapcraft 3.6](https://github.com/snapcore/snap
 
 This is a minor release to fix some outstanding issues and to add an improvement to the *ant* plugin.
 
-For general details, including installation instructions, see [Snapcraft overview](/t/snapcraft-overview/8940), or take a look at [Snapcraft release notes](/t/snapcraft-release-notes/10721) for other *Snapcraft* releases.
+For general details, including installation instructions, see [Snapcraft overview](snapcraft-overview.md), or take a look at [Snapcraft release notes](snapcraft-release-notes.md) for other *Snapcraft* releases.
 
 ## New *core* features
 
-### Updates to the [ant](/t/the-ant-plugin/8507) plugin
+### Updates to the [ant](the-ant-plugin.md) plugin
 
 It is now possible to specify the build file location with the `ant-buildfile` keyword.
 

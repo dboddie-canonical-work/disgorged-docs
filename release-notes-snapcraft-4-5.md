@@ -13,7 +13,7 @@ Highlights for this release include:
 * enable 7z, bzr, hg, svn, zip for non-linux sources
 * port of the _qmake_ plugin to v2 of the plugin spec
 
-For general details, including installation instructions, see [Snapcraft overview](https://forum.snapcraft.io/t/snapcraft-overview/8940), or take a look at [Snapcraft release notes](https://forum.snapcraft.io/t/snapcraft-release-notes/10721) for other  *Snapcraft*  releases.
+For general details, including installation instructions, see [Snapcraft overview](snapcraft-overview.md), or take a look at [Snapcraft release notes](snapcraft-release-notes.md) for other  *Snapcraft*  releases.
 
 ## Full list of changes
 

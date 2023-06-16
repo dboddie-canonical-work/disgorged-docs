@@ -29,4 +29,4 @@ override-build: |
   echo "This runs after build!"
 ```
 
-See [Deprecation notices](/t/deprecation-notices/8396/2)  for further announcements.
+See [Deprecation notices](deprecation-notices.md)  for further announcements.

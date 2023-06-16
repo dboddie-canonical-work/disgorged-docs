@@ -17,9 +17,9 @@ Our explanatory and conceptual guides are written to provide a better understand
 
 | **Explanation guides** | Why it does what it does |
 |--|--|
-| [Troubleshoot snap building](/t/troubleshoot-snap-building/11938) | Help with the most common snap building problems
-| [Migrate between bases](/t/migrating-between-bases/23455) | Inside a snap's run-time environment and update process |
-| [Using the snapctl tool](/t/using-the-snapctl-tool/15002) | A tool for helping introspect and control a snap's execution environment |
+| [Troubleshoot snap building](troubleshoot-snap-building.md) | Help with the most common snap building problems
+| [Migrate between bases](migrating-between-bases.md) | Inside a snap's run-time environment and update process |
+| [Using the snapctl tool](https://snapcraft.io/docs/using-the-snapctl-tool) | A tool for helping introspect and control a snap's execution environment |
 
 For a simpler place to start your Snapcraft journey, our tutorials section contains step-by-step tutorials to help outline what Snapcraft is capable of while helping you achieve specific aims, such as installing Snapcraft or building your first snap.
 

@@ -30,7 +30,7 @@ $  snap connect app:activity-led gadget:led-1
 
 [note type="positive" status="Interface documentation"]
 
-See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+See [Interface management](interface-management.md) and [Supported interfaces](supported-interfaces.md) for further details on how interfaces are used.
 [/note]
 
 ---
@@ -42,7 +42,7 @@ See [Interface management](/t/interface-management/6154) and [Supported interfac
 * `channel` (slot): PWM device channel number to export and expose to consuming snaps
 * `chip-number` (slot): chip base number to export
 
-To use a PWM device, the snap developer must add `plugs:[pwm]` to a snap’s[ snapcraft.yaml](/t/the-snapcraft-format/8337). The snap user can then access a specific pwm device with an[ interface connection](/t/interface-management/6154#heading--manual-connections).
+To use a PWM device, the snap developer must add `plugs:[pwm]` to a snap’s[ snapcraft.yaml](the-snapcraft-yaml-schema.md). The snap user can then access a specific pwm device with an[ interface connection](interface-management.md#heading--manual-connections).
 
 Unless the snap is expected to actually use a set of PWM channels that is not predefined, it is recommended to define distinct plugs for each used pwm channel, like:
 
@@ -54,7 +54,7 @@ plugs:
     interface: pwm
 ```
 
-This has the advantage of being self-documenting and 1-1 connections like these are easier to track and setup with[ auto-connections](/t/the-interface-auto-connection-mechanism/20179), if the latter is needed.
+This has the advantage of being self-documenting and 1-1 connections like these are easier to track and setup with[ auto-connections](the-interface-auto-connection-mechanism.md), if the latter is needed.
 
 When the interface is connected, `"echo (channel number) > /sys/class/pwm/pwmchipN/export"` is run internally to enable access to the PWM channel.
 

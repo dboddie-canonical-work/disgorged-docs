@@ -16,7 +16,7 @@ Access to `/mnt` requires snapd version *2.36+*.
 
 **Auto-connect**: no
 
-This interface is typically [not granted](https://forum.snapcraft.io/t/process-for-aliases-auto-connections-and-tracks/455) the ability to [auto-connect](/t/interface-management/6154#heading--auto-connections) because doing so will permit access to potentially sensitive data such as photos, documents and encryption keys.
+This interface is typically [not granted](https://snapcraft.io/docs/process-for-aliases-auto-connections-and-tracks) the ability to [auto-connect](interface-management.md#heading--auto-connections) because doing so will permit access to potentially sensitive data such as photos, documents and encryption keys.
 
 Certain application types may be granted an exception for the following reasons:
 
@@ -29,4 +29,4 @@ Certain application types may be granted an exception for the following reasons:
 
 `removable-media` is considered a _transitional_ interface because, when connected, only traditional UNIX permissions are considered for file access. This allows a background service in a snap to setup _inotify_, for example, to monitor, catalogue and modify files on external media.
 
-> ⓘ  This is a snap interface. See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+> ⓘ  This is a snap interface. See [Interface management](interface-management.md) and [Supported interfaces](supported-interfaces.md) for further details on how interfaces are used.

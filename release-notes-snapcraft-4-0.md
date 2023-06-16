@@ -13,7 +13,7 @@ Among its many updates, fixes and additions, the following are what we consider 
 - improved plugins for `core20`
 - support for adding external repositories
 
-For general details, including installation instructions, see [Snapcraft overview](/t/snapcraft-overview/8940), or take a look at [Snapcraft release notes](/t/snapcraft-release-notes/10721) for other *Snapcraft* releases.
+For general details, including installation instructions, see [Snapcraft overview](snapcraft-overview.md), or take a look at [Snapcraft release notes](snapcraft-release-notes.md) for other *Snapcraft* releases.
 
 ## Plugins V2
 

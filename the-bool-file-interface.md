@@ -6,7 +6,7 @@
 
 The `bool-file` interface allows access to a specific class of file that contains boolean semantics, typically used to toggle or represent the state of binary hardware values.
 
-This interface is primarily intended to be used with [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core) devices, it's also restricted because it provides privileged access to hardware.
+This interface is primarily intended to be used with [Ubuntu Core](glossary.md#heading--ubuntu-core) devices, it's also restricted because it provides privileged access to hardware.
 
 These kinds of file are located within specific directories inside the [sysfs](https://man7.org/linux/man-pages/man5/sysfs.5.html) filesystem (`/sys`) and this  interface allows a file to be _read_, to obtaining a current value, or _written to_, setting a new value.
 
@@ -26,7 +26,7 @@ slots:
 
 [note type="positive" status="Interface documentation"]
 
-See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+See [Interface management](interface-management.md) and [Supported interfaces](supported-interfaces.md) for further details on how interfaces are used.
 [/note]
 
 ---
@@ -34,7 +34,7 @@ See [Interface management](/t/interface-management/6154) and [Supported interfac
 <h2 id='heading--dev-details'>Developer details </h2>
 
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](interface-management.md#heading--auto-connections)**: no</br>
 
 **Attributes**:
  * `path` (slot): path to the file in _sysfs_</br>
@@ -45,9 +45,9 @@ See [Interface management](/t/interface-management/6154) and [Supported interfac
  `^/sys/class/gpio/gpio[0-9]+/value$`</br>
    - For LED devices: `^/sys/class/leds/[^/]+/brightness$`
 
-The [gpio interface](/t/the-gpio-interface/7829)  provides another option for accessing GPIO devices.
+The [gpio interface](the-gpio-interface.md)  provides another option for accessing GPIO devices.
 
-To use a boolean file, the snap developer must add `plugs: [ bool-file ]` to a snap's [snapcraft.yaml](/t/the-snapcraft-format/8337). The snap user can then access a specific boolean file with an [interface connection](/t/interface-management/6154#heading--manual-connections).
+To use a boolean file, the snap developer must add `plugs: [ bool-file ]` to a snap's [snapcraft.yaml](the-snapcraft-yaml-schema.md). The snap user can then access a specific boolean file with an [interface connection](interface-management.md#heading--manual-connections).
 
 Unless a snap specifically expects a set of boolean files that cannot be predefined, the recommended approach is to define distinct plugs for each boolean file the snap wishes to use:
 
@@ -59,7 +59,7 @@ plugs:
     interface: bool-file
 ```
 
-Defining distinct plugs for each boolean file has the advantage of being self-documenting, and 1:1  connections like these are easier to track and setup with [auto-connections](/t/the-interface-auto-connection-mechanism/20179), if needed.
+Defining distinct plugs for each boolean file has the advantage of being self-documenting, and 1:1  connections like these are easier to track and setup with [auto-connections](the-interface-auto-connection-mechanism.md), if needed.
 
 Once connected, the consuming snap can use the boolean file via the path mentioned in the `path` attribute specified by the connected slot.
 
@@ -83,4 +83,4 @@ The test code for this interface can be found in the snapd repository:</br>
 The source code for the interface is in the snapd repository:</br>
 [https://github.com/snapcore/snapd/blob/master/interfaces/builtin/bool_file.go](https://github.com/snapcore/snapd/blob/master/interfaces/builtin/bool_file.go)
 
-> ⓘ  This is a snap interface. See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+> ⓘ  This is a snap interface. See [Interface management](interface-management.md) and [Supported interfaces](supported-interfaces.md) for further details on how interfaces are used.

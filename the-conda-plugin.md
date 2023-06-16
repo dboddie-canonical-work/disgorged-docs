@@ -6,9 +6,9 @@
 
 The `conda` plugin is useful, primarily, for Python parts using the [Conda](https://docs.conda.io) open source package management system.
 
-This plugin uses the common plugin keywords as well as those for "sources". For more information, see [Snapcraft parts metadata](/t/snapcraft-parts-metadata/8336).
+This plugin uses the common plugin keywords as well as those for "sources". For more information, see [Snapcraft parts metadata](snapcraft-parts-metadata.md).
 
-Additional features and syntax are dependent on which [base](/t/base-snaps/11198) is being used, as outlined below:
+Additional features and syntax are dependent on which [base](base-snaps.md) is being used, as outlined below:
 
 - [base: core22](#heading--core22)
 - [base: core20](#heading--core20)
@@ -16,7 +16,7 @@ Additional features and syntax are dependent on which [base](/t/base-snaps/11198
 
 For examples, search [GitHub](https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+conda%22&type=Code) for projects already using the plugin.
 
-> ⓘ  This is a *snapcraft* plugin. See [Snapcraft plugins](/t/snapcraft-plugins/4284) and [Supported plugins](/t/supported-plugins/8080) for further details on how plugins are used.
+> ⓘ  This is a *snapcraft* plugin. See [Snapcraft plugins](snapcraft-plugins.md) and [Supported plugins](supported-plugins.md) for further details on how plugins are used.
 
 <h3 id='heading--core22'>base: core22</h3>
 

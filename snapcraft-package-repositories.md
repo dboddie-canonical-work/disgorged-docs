@@ -4,9 +4,9 @@
 
 # Snapcraft package repositories
 
-When building a snap and constructing a part, package dependencies are listed as either package names or snaps for the snap’s build environment. This is covered in [Build and staging dependencies](/t/build-and-staging-dependencies/11451).
+When building a snap and constructing a part, package dependencies are listed as either package names or snaps for the snap’s build environment. This is covered in [Build and staging dependencies](build-and-staging-dependencies.md).
 
-For a default [Snapcraft](/t/snapcraft-overview/8940) installation running [Multipass](https://multipass.run/), the build environment is invariably [Ubuntu 22.04 LTS](http://releases.ubuntu.com/22.04/) (Jammy Jellyfish) or [Ubuntu 20.04 LTS](http://releases.ubuntu.com/20.04/) (Focal Fossa). Consequently, dependencies are listed using their *apt* package names and are retrieved from the set of repositories officially supported by the distribution.
+For a default [Snapcraft](snapcraft-overview.md) installation running [Multipass](https://multipass.run/), the build environment is invariably [Ubuntu 22.04 LTS](http://releases.ubuntu.com/22.04/) (Jammy Jellyfish) or [Ubuntu 20.04 LTS](http://releases.ubuntu.com/20.04/) (Focal Fossa). Consequently, dependencies are listed using their *apt* package names and are retrieved from the set of repositories officially supported by the distribution.
 
 However, it's also possible to add your own _apt_ repositories as sources for `build-packages` and `stage-packages`, including those hosted on a PPA, the Personal Package Archive, which serves personally hosted non-standard packages.
 
@@ -38,7 +38,7 @@ However, it's also possible to add your own _apt_ repositories as sources for `b
 
 <h2 id='heading--adding'>Adding repositories</h2>
 
-Third-party _apt_ repositories can be added to a snap's [snapcraft.yaml](/t/the-snapcraft-format/8337) by using the top-level `package-repositories` keyword with either a PPA-type repository, or a deb-type repository:
+Third-party _apt_ repositories can be added to a snap's [snapcraft.yaml](the-snapcraft-yaml-schema.md) by using the top-level `package-repositories` keyword with either a PPA-type repository, or a deb-type repository:
 
 **[PPA-type repository](#heading--ppa-properties):**
 ```yaml

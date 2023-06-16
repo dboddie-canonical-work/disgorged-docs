@@ -8,7 +8,7 @@ The `posix-mq` interface enables inter-process communication (IPC) messages to b
 
 [note type="positive" status="Interface documentation"]
 
-See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+See [Interface management](interface-management.md) and [Supported interfaces](supported-interfaces.md) for further details on how interfaces are used.
 [/note]
 
 ---
@@ -17,8 +17,8 @@ See [Interface management](/t/interface-management/6154) and [Supported interfac
 
 | Permissions |  |  |
 |--|--|--|
-| **[Auto-connect](/t/interface-management/6154#heading--auto-connections)** | **no** by default | **yes** with snaps from the same publisher |
-| **[Super-privileged](/t/super-privileged-interfaces/34740)** | **no** for plugs | **yes** for slots |
+| **[Auto-connect](interface-management.md#heading--auto-connections)** | **no** by default | **yes** with snaps from the same publisher |
+| **[Super-privileged](super-privileged-interfaces.md)** | **no** for plugs | **yes** for slots |
 
 **Attributes**:
 

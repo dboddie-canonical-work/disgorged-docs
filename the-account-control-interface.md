@@ -10,11 +10,11 @@ This interface enables the management of the `extrausers` table in the Name Serv
 
 The interface **does not** allow the management of users and groups for the system NSS databases in */etc*.
 
-Due to the privileged nature of access enabled by this interface, its use is reserved exclusively for "management snaps" from [brand stores](/t/glossary/14612#heading--brand-store).
+Due to the privileged nature of access enabled by this interface, its use is reserved exclusively for "management snaps" from [brand stores](glossary.md#heading--brand-store).
 
 [note type="positive" status="Interface documentation"]
 
-See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+See [Interface management](interface-management.md) and [Supported interfaces](supported-interfaces.md) for further details on how interfaces are used.
 [/note]
 
 

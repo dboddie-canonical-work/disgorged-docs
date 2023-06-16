@@ -12,15 +12,15 @@ Requires snapd version *2.54+*.
 
 [note type="positive" status="Interface documentation"]
 
-See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+See [Interface management](interface-management.md) and [Supported interfaces](supported-interfaces.md) for further details on how interfaces are used.
 [/note]
 
 ---
 
 <h2 id=`heading--dev-details`>Developer details </h2>
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
-**[Super-privileged](/t/super-privileged-interfaces/34740)**: yes</br>
+**[Auto-connect](interface-management.md#heading--auto-connections)**: no</br>
+**[Super-privileged](super-privileged-interfaces.md)**: yes</br>
 
 **Attributes**:
 * `persistent` (plug): defines whether the mount can be persistent or not.</br>
@@ -40,7 +40,7 @@ See [AppArmor globbing syntax](https://gitlab.com/apparmor/apparmor/-/wikis/AppA
 It's the responsibility of the snapped application or service to create and maintain a mount point, using either of the following:
 - the [mount](https://man7.org/linux/man-pages/man8/mount.8.html) command
 - the [mount()](https://man7.org/linux/man-pages/man2/mount.2.html) system call
-- an accompanying [snapctl mount](/t/using-the-snapctl-tool/15002#heading--mount)
+- an accompanying [snapctl mount](https://snapcraft.io/docs/using-the-snapctl-tool#heading--mount)
 
 The `snapctl mount` command is the only option for creating a persistent mount point via its `--persistent` mount option.
 

@@ -6,7 +6,7 @@
 
 `alsa` allows access to raw ALSA audio playback and recording devices. This is equivalent to direct driver access to your audio hardware and may block other applications from recording or playing sound.
 
-To provide better audio sharing and input and output configuration, it's  recommended that most snaps access audio functionality through the system audio layer, such as PulseAudio, via the [audio-playback](/t/the-audio-playback-interface/13089) and [audio-record](/t/the-audio-record-interface/13090) interfaces.
+To provide better audio sharing and input and output configuration, it's  recommended that most snaps access audio functionality through the system audio layer, such as PulseAudio, via the [audio-playback](the-audio-playback-interface.md) and [audio-record](the-audio-record-interface.md) interfaces.
 
 However, raw access to ALSA devices using this interface can provide a slight performance advantage with input and output latency and avoid resampling which can reduce audio quality.
 
@@ -22,7 +22,7 @@ $ sudo snap connect <snap name>:alsa
 
 [note type="positive" status="Interface documentation"]
 
-See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+See [Interface management](interface-management.md) and [Supported interfaces](supported-interfaces.md) for further details on how interfaces are used.
 [/note]
 
 ---

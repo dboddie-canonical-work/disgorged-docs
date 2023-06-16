@@ -17,9 +17,9 @@ Our Snapcraft *Reference section* is for when you need to know which plugins we 
 
 | **Reference** | How Snapcraft works|
 |--|--|
-| [Snapcraft.yaml reference](/t/snapcraft-yaml-reference/4276) | Every _snapcraft.yaml_ keyword listed, described and defined |
-| [Supported plugins](/t/supported-plugins/8080) | All currently supported language, platform, and tookit plugins |
-| [Parts environment variables](/t/parts-environment-variables/12271) |  Variables that can be used within a part's build environment |
+| [Snapcraft.yaml reference](snapcraft-yaml-reference.md) | Every _snapcraft.yaml_ keyword listed, described and defined |
+| [Supported plugins](supported-plugins.md) | All currently supported language, platform, and tookit plugins |
+| [Parts environment variables](parts-environment-variables.md) |  Variables that can be used within a part's build environment |
 
 Alternatively, the Snapcraft tutorials section contain step-by-step tutorials to help outline what Snapcraft is capable of while helping you achieve specific aims, such as installing Snapcraft and building your first snap.
 

@@ -4,7 +4,7 @@
 
 # Progressive releases
 
-When a snap [has been published](/t/releasing-your-app/6795) and has an established user base, tracks and channels help balance the risk of a release containing unexpected issues against user expectations for new features. This is covered in [Release management](/t/release-management/12442).
+When a snap [has been published](releasing-your-app.md) and has an established user base, tracks and channels help balance the risk of a release containing unexpected issues against user expectations for new features. This is covered in [Release management](https://snapcraft.io/docs/release-management).
 
 Progressive releases offer an additional strategy to help mitigate the risk of unexpected issues affecting users. They help by making a release available only to a specific percentage of a snap's user base. This percentage can be initially small, perhaps 10% or 20%, and increases as confidence in a release grows.
 
@@ -22,7 +22,7 @@ The percentage value defines the proportion of devices a progressive release wil
 
 <h2 id='heading--creating'>Creating a progressive release</h2>
 
-First, ensure there is a revision of the target snap available on the [Snap Store](https://snapcraft.io/store). See [Releasing your app](/t/releasing-your-app/6795) for details on building and uploading locally, or [Remote build](/t/remote-build/14400) to create a revision on remote servers using [Launchpad](https://launchpad.net/).
+First, ensure there is a revision of the target snap available on the [Snap Store](https://snapcraft.io/store). See [Releasing your app](releasing-your-app.md) for details on building and uploading locally, or [Remote build](remote-build.md) to create a revision on remote servers using [Launchpad](https://launchpad.net/).
 
 The `snapcraft revisions` command can be used to see which revisions have been uploaded and available:
 
@@ -80,4 +80,4 @@ After the assigned percentage of devices have received the release, there are tw
 
    `snapcraft release <snap-name> 356 stable`
 
-After a non-progressive release, a snap will revert to standard [Release management](/t/release-management/12442) processes and procedures.
+After a non-progressive release, a snap will revert to standard [Release management](https://snapcraft.io/docs/release-management) processes and procedures.

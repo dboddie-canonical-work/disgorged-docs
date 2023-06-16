@@ -12,7 +12,7 @@ To continue using the core base, Snapcraft has opened a legacy `4.x` track that 
  `snap refresh snapcraft --channel=4.x/stable`
 
 We highly recommend migrating your snap to core20.  For more information on migrating to core20, check out:
-https://forum.snapcraft.io/t/migrating-to-core20/23455
+migrating-between-bases.md
 
 For more information on ESM and Snaps, check out:
 https://ubuntu.com/blog/how-does-ubuntu-16-04-entering-extended-security-maintenance-esm-affect-snap-publishers

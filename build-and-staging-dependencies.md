@@ -4,7 +4,7 @@
 
 # Build and staging dependencies
 
-When building a snap and constructing a [part](/t/adding-parts/11473), you commonly need to specify build and staging dependencies. Build dependencies are required for your part to successfully build or compile on the development host, while staging dependencies are required for your snap to run.
+When building a snap and constructing a [part](adding-parts.md), you commonly need to specify build and staging dependencies. Build dependencies are required for your part to successfully build or compile on the development host, while staging dependencies are required for your snap to run.
 
 How these dependencies are identified and added is covered below.
 
@@ -15,13 +15,13 @@ How these dependencies are identified and added is covered below.
    - [Staging](#heading--missing-staging)
 - [Removing stage package duplication](#heading--filtering)
 
-For further help on solving build dependencies, see [Iterating over a build](/t/iterating-over-a-build/12143) for build and testing best-practices and  [Troubleshoot snap building](/t/troubleshoot-snap-building/11938) for help  resolving build errors.
+For further help on solving build dependencies, see [Iterating over a build](iterating-over-a-build.md) for build and testing best-practices and  [Troubleshoot snap building](troubleshoot-snap-building.md) for help  resolving build errors.
 
 ---
 
 <h2 id='heading--package'>Package types</h2>
 
-Build and staging dependencies are added to a snap's [snapcraft.yaml](/t/the-snapcraft-format/8337) within a part definition. They can be added as standard
+Build and staging dependencies are added to a snap's [snapcraft.yaml](the-snapcraft-yaml-schema.md) within a part definition. They can be added as standard
 packages for the chosen build environment, such as _deb_ packages for Ubuntu, or as a cross-platform snap using the following _snapcraft.yaml_ keywords:
 
 For packages:
@@ -53,7 +53,7 @@ For staged snaps, the `meta` and `snap` directories from the snap will be availa
 
 [note type="positive" status="Adding additional repositories"]
 
-See [Snapcraft package repositories](https://forum.snapcraft.io/t/snapcraft-package-repositories/15475) for details on how  to add *apt* repositories as sources for `build-packages` and `stage-packages`, including those hosted on a PPA.
+See [Snapcraft package repositories](snapcraft-package-repositories.md) for details on how  to add *apt* repositories as sources for `build-packages` and `stage-packages`, including those hosted on a PPA.
 
 [/note]
 
@@ -61,13 +61,13 @@ See [Snapcraft package repositories](https://forum.snapcraft.io/t/snapcraft-pack
 
 Package dependencies are listed as package names for the snap's build environment.
 
-For a default [Snapcraft](/t/snapcraft-overview/8940) installation running [Multipass](https://multipass.run/) or [LXD](https://linuxcontainers.org/lxd/introduction/), see [Build options](/t/build-options/14250) for further details, the build environment is dependent on whatever [base snap](/t/base-snaps/11198) is being used, usually either [Ubuntu 20.04 LTS](http://releases.ubuntu.com/20.04/) (Focal Fossa) or [Ubuntu 18.04 LTS](http://releases.ubuntu.com/18.04/) (Bionic Beaver). Consequently, dependencies are listed using their respective *apt* package names.
+For a default [Snapcraft](snapcraft-overview.md) installation running [Multipass](https://multipass.run/) or [LXD](https://linuxcontainers.org/lxd/introduction/), see [Build options](build-options.md) for further details, the build environment is dependent on whatever [base snap](base-snaps.md) is being used, usually either [Ubuntu 20.04 LTS](http://releases.ubuntu.com/20.04/) (Focal Fossa) or [Ubuntu 18.04 LTS](http://releases.ubuntu.com/18.04/) (Bionic Beaver). Consequently, dependencies are listed using their respective *apt* package names.
 
 It's also feasible to have a build environment built on Fedora for example, using Fedora packages, or those of your own host environment.
 
 The required packages are likely to be identical to those needed to either build the project (`build-packages`) or install your project (`stage-packages`) natively. You'll often find them listed in a project's README.md, or alongside any build instructions.
 
-Snap names are identical to the names used to install the snap outside of the build environment, and those listed by the [Snap Store](https://snapcraft.io/store).  If a specific channel is required, the syntax is of the form `<snap-name>/<channel>` (see [Channels](/t/channels/551) for more details on the syntax).
+Snap names are identical to the names used to install the snap outside of the build environment, and those listed by the [Snap Store](https://snapcraft.io/store).  If a specific channel is required, the syntax is of the form `<snap-name>/<channel>` (see [Channels](https://snapcraft.io/docs/channels) for more details on the syntax).
 
 <h2 id='heading--missing'>Identifying missing packages</h2>
 
@@ -123,7 +123,7 @@ The following are the most common solutions for these kind of errors:
        environment:
           LD_LIBRARY_PATH: $LD_LIBRARY_PATH:$SNAP/usr/lib
        ```
-- The missing library might be installed by another snap and shared to this snap by a [content interface](/t/the-content-interface/1074), but the content interface is not connected.
+- The missing library might be installed by another snap and shared to this snap by a [content interface](the-content-interface.md), but the content interface is not connected.
   * Connect the snapd interface (manually for testing, or automatically for production).
 
 <h2 id='heading--filtering'>Removing stage package duplication</h2>

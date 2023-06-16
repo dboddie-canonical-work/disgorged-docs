@@ -6,13 +6,13 @@
 
 These are the release notes for [Snapcraft 3.10](https://github.com/snapcore/snapcraft/releases/tag/3.10).
 
-For general details, including installation instructions, see [Snapcraft overview](/t/snapcraft-overview/8940), or take a look at [Snapcraft release notes](/t/snapcraft-release-notes/10721) for other *Snapcraft* releases.
+For general details, including installation instructions, see [Snapcraft overview](snapcraft-overview.md), or take a look at [Snapcraft release notes](snapcraft-release-notes.md) for other *Snapcraft* releases.
 
 ## New _core_ features
 
 ### Configurable system usernames
 
-Snapcraft now supports the configuration of [system usernames](/t/system-usernames/13386) for daemons. This functionality was recently added to snapd, and enables a daemon to run as the user specified within an application’s ‘command’ entry, for example, among other functions.
+Snapcraft now supports the configuration of [system usernames](system-usernames.md) for daemons. This functionality was recently added to snapd, and enables a daemon to run as the user specified within an application’s ‘command’ entry, for example, among other functions.
 
 ### Primed stage packages
 
@@ -55,7 +55,7 @@ snapcraft --use-lxd \
 
 ### Remote Build
 
-Many improvements have been made to [Remote build](/t/remote-build/14400), including the removal of unnecessary options such as entering a Launchpad ID, which is provided via the login process.
+Many improvements have been made to [Remote build](remote-build.md), including the removal of unnecessary options such as entering a Launchpad ID, which is provided via the login process.
 
 To build snaps, `remote build` previously used snapcraft from the `edge`channel. From this release, snaps are created using snapcraft from the `stable` channel.
 

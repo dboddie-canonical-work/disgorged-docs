@@ -38,13 +38,13 @@ Classic requests generally fall under a number of categories. Below lists catego
 * debug tools
 * IDEs
 * juju helpers
-* kubernetes tools requiring [arbitrary authentication agents](https://forum.snapcraft.io/t/classic-confinement-for-kontena-lens/13729/18)
-* [nautilus scripts](https://forum.snapcraft.io/t/synchrorep-need-classic-confinement/13347/8)
+* kubernetes tools requiring [arbitrary authentication agents](https://snapcraft.io/docs/classic-confinement-for-kontena-lens18)
+* [nautilus scripts](https://snapcraft.io/docs/synchrorep-need-classic-confinement8)
 * programming languages
 * public cloud agents
 * tools for local, non-root user driven configuration of/switching to development workspaces/environments
 * terminal emulators, multiplexers and shells
-* HPC or orchestration agents/software for running workloads on systems without traditional users where the systems are otherwise managed outside of the agent (ie, the software simply orchestrates running workloads on systems and doesn't manage the systems themselves). Note: many HPC/orchestration applications can run with strict confinement and classic should only be granted if snapd does not support the specific use case (eg, the [need for user accounting](https://forum.snapcraft.io/t/request-for-classic-confinement-slurm/18309/11)).
+* HPC or orchestration agents/software for running workloads on systems without traditional users where the systems are otherwise managed outside of the agent (ie, the software simply orchestrates running workloads on systems and doesn't manage the systems themselves). Note: many HPC/orchestration applications can run with strict confinement and classic should only be granted if snapd does not support the specific use case (eg, the [need for user accounting](https://snapcraft.io/docs/request-for-classic-confinement-slurm11)).
 
 #### Unsupported
 * management snaps
@@ -55,13 +55,13 @@ Classic requests generally fall under a number of categories. Below lists catego
 * access to /etc (use layouts, system-files)
 * hard-coded paths (use snapcraft-preload, layouts)
 * ability to run other snaps directly (as opposed to defined interfaces)
-* access to arbitrary files on the system because the application isn't designed with confinement in mind (if a desktop application, use portals or [xdg-open](https://forum.snapcraft.io/t/allowing-xdg-open-to-open-files/3789/11))
-* access to arbitrary files on the system due to developer/user inertia (home and removable-media is almost always sufficient, though [personal-files](https://forum.snapcraft.io/t/the-personal-files-interface/9357) and [system-files](https://forum.snapcraft.io/t/the-system-files-interface/9358) may be used under certain circumstances.
+* access to arbitrary files on the system because the application isn't designed with confinement in mind (if a desktop application, use portals or [xdg-open](https://snapcraft.io/docs/allowing-xdg-open-to-open-files11))
+* access to arbitrary files on the system due to developer/user inertia (home and removable-media is almost always sufficient, though [personal-files](the-personal-files-interface.md) and [system-files](the-system-files-interface.md) may be used under certain circumstances.
 * access to arbitrary files on the system to avoid increasing a snap's size
-* [GNOME shell extensions](https://forum.snapcraft.io/t/yaru-dark-theme-toggle-review-request/13169/7)
-* [nautilus extensions](https://forum.snapcraft.io/t/synchrorep-need-classic-confinement/13347/8)
-* access to [org.kde.PlasmaShell.evaluateScript](https://forum.snapcraft.io/t/issue-establishing-dbus-interface-with-org-kde-plasmashell/14908/4)
-* access to [org.kde.klauncher5 (klauncher)](https://forum.snapcraft.io/t/18377) ([modify application](https://forum.snapcraft.io/t/18377/3) to launch programs directly)
+* [GNOME shell extensions](https://snapcraft.io/docs/yaru-dark-theme-toggle-review-request7)
+* [nautilus extensions](https://snapcraft.io/docs/synchrorep-need-classic-confinement8)
+* access to [org.kde.PlasmaShell.evaluateScript](https://snapcraft.io/docs/issue-establishing-dbus-interface-with-org-kde-plasmashell4)
+* access to [org.kde.klauncher5 (klauncher)](https://snapcraft.io/docs/kde-error-unable-to-create-io-slave-cannot-talk-to-klauncher) ([modify application](3.md) to launch programs directly)
 * direct access to sudo (modify program (eg, check if root and if not, alert user to run under sudo))
 * direct access to pkexec (modify program (eg, check if root and if not, alert user to run under sudo; note a polkit backend is planned but not roadmapped, so a snap may one day be able to use pkexec, but this is TBD)).
 
@@ -84,4 +84,4 @@ Because of '2', great care must be taken for the snap to work reliably across al
 
 
 #### Additional
-Sometimes it might make sense for a snap to be allowed the use of classic (eg, for classic distro) but be usable in strict mode (eg, for Ubuntu Core). In these cases, rather than having two separate snaps, it is considered best to have [two separate tracks](https://forum.snapcraft.io/t/new-track-classic-request-for-the-nano-snap/10762/11), the default track and another called `classicmode`.
+Sometimes it might make sense for a snap to be allowed the use of classic (eg, for classic distro) but be usable in strict mode (eg, for Ubuntu Core). In these cases, rather than having two separate snaps, it is considered best to have [two separate tracks](https://snapcraft.io/docs/new-track-classic-request-for-the-nano-snap11), the default track and another called `classicmode`.

@@ -6,13 +6,13 @@
 
 These are the release notes for [Snapcraft 3.2](https://github.com/snapcore/snapcraft/releases/tag/3.2), which includes new features and essential bug fixes.
 
-For general details, including installation instructions, see [Snapcraft overview](/t/snapcraft-overview/8940), or take a look at [Snapcraft release notes](/t/snapcraft-release-notes/10721) for other *Snapcraft* releases.
+For general details, including installation instructions, see [Snapcraft overview](snapcraft-overview.md), or take a look at [Snapcraft release notes](snapcraft-release-notes.md) for other *Snapcraft* releases.
 
 ## New in this release
 
 ## stage-snaps
 
-This feature is equivalent to the [stage-packages](/t/snapcraft-parts-metadata/8336) keyword, but instead of using packages from the build environment's repositories, it uses snaps hosted on the [Snap Store](https://snapcraft.io/store).
+This feature is equivalent to the [stage-packages](snapcraft-parts-metadata.md) keyword, but instead of using packages from the build environment's repositories, it uses snaps hosted on the [Snap Store](https://snapcraft.io/store).
 
 The semantics are the same as those for `build-snaps`; when declaring a snap to be staged, the snap will be retrieved from the *Snap Store* and unpacked into the snap being built.
 
@@ -22,11 +22,11 @@ The `meta` and `snap` directories from the snap will be available as `meta.<snap
 
 This makes our scheme easier to reuse in editors such as [Visual Studio Code](https://snapcraft.io/vscode) with syntax and error highlighting in-place.
 
-See [Snapcraft scheme validation in VSCode](https://forum.snapcraft.io/t/snapcraft-schema-validation-in-vscode/9609) for an early preview.
+See [Snapcraft scheme validation in VSCode](https://snapcraft.io/docs/snapcraft-schema-validation-in-vscode) for an early preview.
 
 ### New colcon plugin
 
-This plugin enables the new build system that targets [ROS2](/t/ros2-applications/7823). It's currently classed as *experimental*, as the build system is actively being worked on by the [Open Source Robotics Foundation](https://www.openrobotics.org/).
+This plugin enables the new build system that targets [ROS2](ros-2-deployment-with-snaps.md). It's currently classed as *experimental*, as the build system is actively being worked on by the [Open Source Robotics Foundation](https://www.openrobotics.org/).
 
 These are the options the plugin offers for a part needing to build with `colcon`:
 

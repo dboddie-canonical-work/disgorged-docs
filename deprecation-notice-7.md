@@ -10,7 +10,7 @@ _introduced in snapcraft 2.41_
 
 The `prepare` scriptlet was originally introduced as a way to "prepare" for a build. However, as part of an effort to add support for Snapcraft to have this for _all_ lifecycle steps (i.e. not just build), a new scriptlet has been added that encompasses this functionality called `override-build`.
 
->  ⓘ  It's also possible to replace `prepare` with [`override-pull`](/t/scriptlets/4892), depending on your requirements.
+>  ⓘ  It's also possible to replace `prepare` with [`override-pull`](override-build-steps.md), depending on your requirements.
 
 `override-build` allows you to override the default `build` step with your own logic, from which you can call `snapcraftctl build` to run the default `build` step.
 
@@ -29,4 +29,4 @@ override-build: |
   snapcraftctl build
 ```
 
-See [Deprecation notices](/t/deprecation-notices/8396/2)  for further announcements.
+See [Deprecation notices](deprecation-notices.md)  for further announcements.

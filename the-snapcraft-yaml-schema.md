@@ -6,7 +6,7 @@
 
 The *snapcraft.yaml* file is the main entry point to create a snap through Snapcraft. It contains all the details the *snapcraft* command needs to build a snap.
 
-> ℹ See [Snapcraft checklist](/t/snapcraft-checklist/10926) for an overview of the typical project details needed before creating *snapcraft.yaml*.
+> ℹ See [Snapcraft checklist](snapcraft-checklist.md) for an overview of the typical project details needed before creating *snapcraft.yaml*.
 
 In general, snapcraft.yaml can be organised into three principle sections:
 
@@ -41,12 +41,12 @@ parts:
 
 For further details on the metadata contained within each of the above sections, see one of the following:
 
-1. [Snapcraft top-level metadata](/t/snapcraft-top-level-metadata/8334)
-1. [Snapcraft parts metadata](/t/snapcraft-parts-metadata/8336)
-1. [Snapcraft app and service metadata](/t/snapcraft-app-and-service-metadata/8335)
+1. [Snapcraft top-level metadata](snapcraft-top-level-metadata.md)
+1. [Snapcraft parts metadata](snapcraft-parts-metadata.md)
+1. [Snapcraft app and service metadata](snapcraft-app-and-service-metadata.md)
 
-A set of environment variables is also available during the build process. See [Environment variables that Snapcraft exposes](/t/environment-variables-that-snapcraft-exposes/7569) for further details.
+A set of environment variables is also available during the build process. See [Environment variables that Snapcraft exposes](environment-variables-that-snapcraft-exposes.md) for further details.
 
-Additionally, see [Snapcraft.yaml reference](/t/snapcraft-yaml-reference/4276) for a complete overview of the metadata supported by snapcraft.yaml, and [Snapcraft advanced grammar](/t/snapcraft-advanced-grammar/8349/2) to learn how to check for specific conditions for certain YAML keys.
+Additionally, see [Snapcraft.yaml reference](snapcraft-yaml-reference.md) for a complete overview of the metadata supported by snapcraft.yaml, and [Snapcraft advanced grammar](snapcraft-advanced-grammar.md) to learn how to check for specific conditions for certain YAML keys.
 
 For the technical definition of the format, the schema for snapcraft.yaml can be found in the Snapcraft source tree: [snapcraft/snapcraft.json at master · snapcore/snapcraft](https://github.com/snapcore/snapcraft/blob/master/schema/snapcraft.json).

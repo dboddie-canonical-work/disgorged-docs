@@ -14,13 +14,13 @@ For general details, including installation instructions, see [Snapcraft overvie
 
 ## Login mechanism
 
-A new option, `--experimental-login` can now be used when using `snapcraft login` or `snapcraft export-login` and when signing assertions (see [Create a developer account](/t/create-a-developer-account/6760)).
+A new option, `--experimental-login` can now be used when using `snapcraft login` or `snapcraft export-login` and when signing assertions (see [Create a developer account](create-a-developer-account.md)).
 
 Using this option will trigger a web based authentication flow. To go back to the previous login method you must first `snapcraft logout`.
 
 ## Conda plugin
 
-The [conda](/t/the-conda-plugin/12530) plugin has been ported to [core20](/t/base-snaps/11198). These are the available plugin options:
+The [conda](the-conda-plugin.md) plugin has been ported to [core20](base-snaps.md). These are the available plugin options:
 
 * **`conda-packages`** (list of strings)
 List of *conda* packages to install.
@@ -36,7 +36,7 @@ Defaults to the latest release.
 
 The road to making this feature stable is closer, although a breaking change lands with 4.6 for this experimental feature. Keys are now using the suffix and not prefix of the key id.
 
-See [Package repositories](/t/snapcraft-package-repositories/15475) for further details.
+See [Package repositories](snapcraft-package-repositories.md) for further details.
 
 ## Metadata
 
@@ -49,17 +49,17 @@ The `install-mode` option for applications is now supported with this release.
 
 ### Gnome 3.38
 
-The [gnome-3-38 extension](/t/the-gnome-3-38-extension/22923) is now considered stable.
+The [gnome-3-38 extension](the-gnome-3-38-extension.md) is now considered stable.
 
 ### KDE Neon
 
 
-The [KDE Neon extension](/t/the-kde-neon-extension/13752) now supports `core20` as an experimental extension.
+The [KDE Neon extension](the-kde-neon-extension.md) now supports `core20` as an experimental extension.
 
 ### Flutter
 
 
-New variants of the [Flutter extension](/t/the-flutter-extension/19166) are now available for _stable_ and _beta_. The same documentation applies as for the master and dev variant.
+New variants of the [Flutter extension](the-flutter-extension.md) are now available for _stable_ and _beta_. The same documentation applies as for the master and dev variant.
 
 Full list of changes
 --------------------

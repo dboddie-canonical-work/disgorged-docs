@@ -8,4 +8,4 @@ The `snapcraft push` and `snapcraft push-metadata` keywords, used to upload snap
 
 _introduced in snapcraft 4.0_
 
-See [Deprecation notices](/t/deprecation-notices/8396)  for further announcements.
+See [Deprecation notices](deprecation-notices.md)  for further announcements.

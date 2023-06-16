@@ -7,10 +7,10 @@
 [quote]
  **NOTE TO EDITORS** 
 
-This topic is currently superseded by https://forum.snapcraft.io/t/build-on-docker/4158/7.
+This topic is currently superseded by build-on-docker.md7.
 
 [/quote]
 
 [quote]
-⚠ This documentation has moved to [Build on Docker](/t/build-on-docker/4158).
+⚠ This documentation has moved to [Build on Docker](build-on-docker.md).
 [/quote]

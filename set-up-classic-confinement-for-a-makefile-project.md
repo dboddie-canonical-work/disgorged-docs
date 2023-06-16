@@ -6,10 +6,10 @@
 
 Some snaps need to have access to system resources outside the scope allowed by
 strict confinement, and are unable to do this via the available interfaces.
-These snaps are configured to use classic confinement and will [need to be reviewed](/t/process-for-reviewing-classic-confinement-snaps/1460) before publication in the Snap Store.
+These snaps are configured to use classic confinement and will [need to be reviewed](process-for-reviewing-classic-confinement-snaps.md) before publication in the Snap Store.
 
 This guide shows how to enable classic confinement for a snap built with the
-[make plugin](/t/8622). The example project used in this guide can be found in [this repository](https://github.com/snapcraft-doc-samples-unofficial/makefile-lib-example).
+[make plugin](the-make-plugin.md). The example project used in this guide can be found in [this repository](https://github.com/snapcraft-doc-samples-unofficial/makefile-lib-example).
 
 ## Change the confinement to classic
 

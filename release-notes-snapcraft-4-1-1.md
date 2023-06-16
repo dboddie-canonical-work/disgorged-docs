@@ -8,7 +8,7 @@ The team behind Snapcraft is pleased to announce the release of [Snapcraft 4.1.1
 
 This is a general bug fix and stability release - see below for details.
 
-For general details, including installation instructions, see [Snapcraft overview](/t/snapcraft-overview/8940), or take a look at [Snapcraft release notes](/t/snapcraft-release-notes/10721) for other *Snapcraft* releases.
+For general details, including installation instructions, see [Snapcraft overview](snapcraft-overview.md), or take a look at [Snapcraft release notes](snapcraft-release-notes.md) for other *Snapcraft* releases.
 
 ## Full list of changes
 

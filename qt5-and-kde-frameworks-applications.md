@@ -25,7 +25,7 @@ Here are some snap advantages that will benefit many Qt applications:
 
 Typically this guide will take around 20 minutes and will result in a working Qt5 application in a snap. Once complete, you'll understand how to package Qt5 applications as snaps and deliver them to millions of Linux users. After making the snap available in the store, you'll get access to installation metrics and tools to directly manage the delivery of updates to Linux users.
 
-> ⓘ For a brief overview of the snap creation process, including how to install *snapcraft* and how it's used, see [Snapcraft overview](/t/snapcraft-overview/8940). For a more comprehensive breakdown of the steps involved, take a look at [Creating a snap](/t/creating-a-snap/6799).
+> ⓘ For a brief overview of the snap creation process, including how to install *snapcraft* and how it's used, see [Snapcraft overview](snapcraft-overview.md). For a more comprehensive breakdown of the steps involved, take a look at [Creating a snap](creating-a-snap.md).
 
 ## Getting started
 
@@ -122,7 +122,7 @@ base: core18
 
 #### Security model
 
-To get started, we won’t [confine](/t/snap-confinement/6233) this application. Unconfined applications, specified with `devmode`, can only be released to the hidden “edge” channel where you and other developers can install them. After you get the snap working in `devmode` confinement, you can switch to strict mode and figure out which interfaces (plugs) the snap uses.
+To get started, we won’t [confine](snap-confinement.md) this application. Unconfined applications, specified with `devmode`, can only be released to the hidden “edge” channel where you and other developers can install them. After you get the snap working in `devmode` confinement, you can switch to strict mode and figure out which interfaces (plugs) the snap uses.
 
 ```yaml
 confinement: devmode
@@ -132,7 +132,7 @@ confinement: devmode
 
 Parts define how to build your app. Parts can be anything: programs, libraries, or other assets needed to create and run your application. In this case we have two: the KCalc source release tarball and a number of runtime dependencies of KCalc. In other cases these can point to local directories, remote git repositories or other revision control systems.
 
-Before building the part, the build dependencies listed as `build-packages` and `build-snaps` are installed. [The CMake plugin](/t/the-cmake-plugin/8621) then uses `cmake` to build the part. The `kde-frameworks-5-core18-sdk` snap contains most build dependencies to build Qt5 and KDE applications. However, this snap also requires some tools from the `kde-frameworks-5-core18` runtime itself.
+Before building the part, the build dependencies listed as `build-packages` and `build-snaps` are installed. [The CMake plugin](the-cmake-plugin.md) then uses `cmake` to build the part. The `kde-frameworks-5-core18-sdk` snap contains most build dependencies to build Qt5 and KDE applications. However, this snap also requires some tools from the `kde-frameworks-5-core18` runtime itself.
 
 ```yaml
 parts:
@@ -162,13 +162,13 @@ parts:
 
 `stage-packages` are the packages required by KCalc to run, and mirror the same packages required by the binary on a standard distribution installation.
 
-`parse-info` points to the AppStream metadata file. Since we used `adopt-info: kcalc` in the metadata, the AppStream file of the `kcalc` part will be used to fill in the `title`, `summary` and `description` of this snap. See [Using AppStream metadata](/t/using-external-metadata/4642#heading--appstream) for more information.
+`parse-info` points to the AppStream metadata file. Since we used `adopt-info: kcalc` in the metadata, the AppStream file of the `kcalc` part will be used to fill in the `title`, `summary` and `description` of this snap. See [Using AppStream metadata](using-external-metadata.md#heading--appstream) for more information.
 
 #### Apps
 
 Apps are the commands and services exposed to end users. If your command name matches the snap `name`, users will be able run the command directly. If the names differ, then apps are prefixed with the snap `name` (`KCalc.command-name`, for example). This is to avoid conflicting with apps defined by other installed snaps.
 
-If you don’t want your command prefixed you can request an alias for it on the [Snapcraft forum](https://forum.snapcraft.io/t/process-for-reviewing-aliases-auto-connections-and-track-requests/455). These are set up automatically when your snap is installed from the Snap Store.
+If you don’t want your command prefixed you can request an alias for it on the [Snapcraft forum](https://snapcraft.io/docs/process-for-aliases-auto-connections-and-tracks). These are set up automatically when your snap is installed from the Snap Store.
 
 ```yaml
 apps:
@@ -185,9 +185,9 @@ apps:
       - pulseaudio
 ```
 
-You can see we use the [`kde-neon` extension](/t/the-kde-neon-extension/13752). This extension will make Qt5 and KDE libraries available to the snap at run time and it will configure the run time environment of the application so that all desktop functionality is correctly initialised.
+You can see we use the [`kde-neon` extension](the-kde-neon-extension.md). This extension will make Qt5 and KDE libraries available to the snap at run time and it will configure the run time environment of the application so that all desktop functionality is correctly initialised.
 
-The `common-id` field is used to link the AppStream metadata to this application. As a result, we don't need to [manually specify the `.desktop` entry file](/t/desktop-files-for-menu-integration/13115) because it's already defined in AppStream. See [Using AppStream metadata](/t/using-external-metadata/4642#heading--appstream) for more information.
+The `common-id` field is used to link the AppStream metadata to this application. As a result, we don't need to [manually specify the `.desktop` entry file](desktop-files-for-menu-integration.md) because it's already defined in AppStream. See [Using AppStream metadata](using-external-metadata.md#heading--appstream) for more information.
 
 
 ### Building the snap
@@ -268,4 +268,4 @@ $ snapcraft upload --release=edge mysnap_*.snap
 
 If you’re happy with the result, you can commit the snapcraft.yaml to your GitHub repo and [turn on automatic builds](https://build.snapcraft.io) so any further commits automatically get released to edge, without requiring you to manually build locally.
 
-Congratulations! You've just built and published your first Go snap. For a more in-depth overview of the snap building process, see [Creating a snap](/t/creating-a-snap/6799).
+Congratulations! You've just built and published your first Go snap. For a more in-depth overview of the snap building process, see [Creating a snap](creating-a-snap.md).

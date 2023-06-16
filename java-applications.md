@@ -25,7 +25,7 @@ Snaps solve these problems and ensure the correct JRE is shipped alongside the a
 
 Ready to get started? By the end of this guide, you'll understand how to make a snap of your Java app that can be published in the [Snap Store](https://snapcraft.io/store), showcasing it to millions of Linux users.
 
-> ℹ For a brief overview of the snap creation process, including how to install *snapcraft* and how it's used, see [Snapcraft overview](/t/snapcraft-overview/8940). For a more comprehensive breakdown of the steps involved, take a look at [Creating a snap](/t/creating-a-snap/6799).
+> ℹ For a brief overview of the snap creation process, including how to install *snapcraft* and how it's used, see [Snapcraft overview](snapcraft-overview.md). For a more comprehensive breakdown of the steps involved, take a look at [Creating a snap](creating-a-snap.md).
 
 ## Getting started
 
@@ -124,7 +124,7 @@ base: core18
 ```
 As used above, [`core18`](https://snapcraft.io/core18) is the current standard base for snap building and is based on [Ubuntu 18.04 LTS](http://releases.ubuntu.com/18.04/).
 
-See [Base snaps](/t/base-snaps/11198) for more details.
+See [Base snaps](base-snaps.md) for more details.
 
 ## Security model
 
@@ -144,7 +144,7 @@ Because devmode is only intended for development, snaps must be set to strict co
 
 Apps are the commands and services exposed to end users. If your command name matches the snap `name`, users will be able run the command directly. If the names differ, then apps are prefixed with the snap `name` (`freeplane.command-name`, for example). This is to avoid conflicting with apps defined by other installed snaps.
 
-If you don’t want your command prefixed you can request an alias for it on the [Snapcraft forum](https://forum.snapcraft.io/t/process-for-reviewing-aliases-auto-connections-and-track-requests/455). These are set up automatically when your snap is installed from the Snap Store.
+If you don’t want your command prefixed you can request an alias for it on the [Snapcraft forum](https://snapcraft.io/docs/process-for-aliases-auto-connections-and-tracks). These are set up automatically when your snap is installed from the Snap Store.
 
 ```yaml
 apps:
@@ -161,13 +161,13 @@ apps:
       - cups-control
 ```
 
-Since Freeplane is a desktop application, we use the [`gnome-3-28` extension](/t/the-gnome-3-28-extension/13485) to configure and setup the desktop integration and permissions for the snap. Although Freeplane is a Java Swing application which doesn't need acces to GTK or GNOME, the GNOME extension is stil useful because it sets up many toolkit-independent libraries and functionality such as mouse cursor themes, locales and the XDG runtime environment.
+Since Freeplane is a desktop application, we use the [`gnome-3-28` extension](the-gnome-3-28-extension.md) to configure and setup the desktop integration and permissions for the snap. Although Freeplane is a Java Swing application which doesn't need acces to GTK or GNOME, the GNOME extension is stil useful because it sets up many toolkit-independent libraries and functionality such as mouse cursor themes, locales and the XDG runtime environment.
 
 ## Parts
 
 Parts define how to build your app. Parts can be anything: programs, libraries, or other assets needed to create and run your application. In this case we have only one: the Freeplane source. In other cases these can point to local directories, remote git repositories or other revision control systems.
 
-The gradle plugin can build the application using standard parameters. In this case, however, the default build logic of the gradle plugin is not sufficient. While gradle by default build the `jar` target, Freeplane has a `binZip` target which build a handy zip file. We use `gradle-options` to specify that we want to build the `binZip` target and use an [`override-build` scriptlet to add additional logic](/t/scriptlets/4892#heading--overriding-the-build-step) to the build step to extract the zip in the directory which will later get added to the final snap. See the [parts lifecycle docs](/t/parts-lifecycle/12231#heading--parts-directories) for more information on these directories. Since we use the `unzip` command in the build script, we specify it in `build-packages` so it is installed before the build script runs. Finally, we use the `gradle-output-dir` key to point the snapcraft plugin to the location of the built `jar` files for Freeplane.
+The gradle plugin can build the application using standard parameters. In this case, however, the default build logic of the gradle plugin is not sufficient. While gradle by default build the `jar` target, Freeplane has a `binZip` target which build a handy zip file. We use `gradle-options` to specify that we want to build the `binZip` target and use an [`override-build` scriptlet to add additional logic](override-build-steps.md#heading--overriding-the-build-step) to the build step to extract the zip in the directory which will later get added to the final snap. See the [parts lifecycle docs](parts-lifecycle.md#heading--parts-directories) for more information on these directories. Since we use the `unzip` command in the build script, we specify it in `build-packages` so it is installed before the build script runs. Finally, we use the `gradle-output-dir` key to point the snapcraft plugin to the location of the built `jar` files for Freeplane.
 
 ```yaml
 parts:
@@ -185,7 +185,7 @@ parts:
       - unzip
 ```
 
-For more details on Gradle-specific metadata, see [The Gradle plugin](/t/the-gradle-plugin/5390).
+For more details on Gradle-specific metadata, see [The Gradle plugin](the-gradle-plugin.md).
 
 ## Building the snap
 
@@ -251,4 +251,4 @@ $ snapcraft upload --release=edge myjavasnap_*.snap
 
 If you’re happy with the result, you can commit the snapcraft.yaml to your GitHub repo and [turn on automatic builds](https://build.snapcraft.io) so any further commits automatically get released to edge, without requiring you to manually build locally.
 
-Congratulations! You've just built and published your first Java snap. For a more in-depth overview of the snap building process, see [Creating a snap](/t/creating-a-snap/6799).
+Congratulations! You've just built and published your first Java snap. For a more in-depth overview of the snap building process, see [Creating a snap](creating-a-snap.md).

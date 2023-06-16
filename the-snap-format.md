@@ -4,7 +4,7 @@
 
 # The snap format
 
-> ℹ This page documents the format of the **built** snaps. See [The snapcraft format](/t/the-snapcraft-format/8337) for more information about the `snapcraft.yaml` file used to build these snaps.
+> ℹ This page documents the format of the **built** snaps. See [The snapcraft format](the-snapcraft-yaml-schema.md) for more information about the `snapcraft.yaml` file used to build these snaps.
 
 A snap is a *SquashFS* file carrying content alongside metadata to tell the system how it should be manipulated. When installed, the SquashFS file for the snap is mounted read-only at the following location:
 
@@ -100,13 +100,13 @@ assumes:
     - <feature>
 
 # The epoch this release is intended for. For further details, see:
-# https://forum.snapcraft.io/t/snap-epochs/10316
+# snap-epochs.md
 # (snapd 2.38+)
 epoch: <value>
 
 # Additional usernames the snap may use. Currently, the only supported
 # value for <name> is 'snap_daemon'. For details, see:
-# https://forum.snapcraft.io/t/system-usernames/13386
+# system-usernames.md
 # (snapd 2.41+)
 system-usernames:
   <name>: shared
@@ -136,7 +136,7 @@ apps:
 
       # Path to a bash snippet to use for tab completion.
       # (snapcraft 2.33+, snapd 2.30+)
-      # See https://forum.snapcraft.io/t/2261
+      # See https://snapcraft.io/docs/tab-completion-for-snaps
       completer: <path to file>
 
       # List of plug names the application is associated with.
@@ -243,7 +243,7 @@ apps:
 
 ## Hooks
 
-Hooks provide a mechanism for snapd to alert snaps that something has happened, or to ask the snap to provide its opinion about an operation that is in progress. See the topic on [supported hooks](/t/supported-hooks/3795) for more details.
+Hooks provide a mechanism for snapd to alert snaps that something has happened, or to ask the snap to provide its opinion about an operation that is in progress. See the topic on [supported hooks](supported-snap-hooks.md) for more details.
 
 <a name="interfaces"></a>
 
@@ -251,7 +251,7 @@ Hooks provide a mechanism for snapd to alert snaps that something has happened, 
 
 Interfaces allow snaps to communicate or share resources according to the protocol established by the interface. They play an important part in security policy configuration.
 
-See [Supported interfaces](/t/supported-interfaces/7744) for more details.
+See [Supported interfaces](supported-interfaces.md) for more details.
 
 <a name="layouts"></a>
 
@@ -259,7 +259,7 @@ See [Supported interfaces](/t/supported-interfaces/7744) for more details.
 
 Layouts enable snap developers to modify the execution environment of their snap. They simplify the process of using pre-compiled binaries and libraries that expect to find files and directories outside of locations referenced by $SNAP or $SNAP_DATA.
 
-For more details, see [Snap layouts](/t/snap-layouts/7207).
+For more details, see [Snap layouts](snap-layouts.md).
 
 <a name="desktop-files"></a>
 

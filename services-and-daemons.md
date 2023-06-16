@@ -4,19 +4,19 @@
 
 # Services and daemons
 
-When [creating snapcraft.yaml](/t/creating-snapcraft-yaml/11666) to build a new snap, a snap's executable  component can be either exposed as a command or run as a background service or daemon.
+When [creating snapcraft.yaml](creating-snapcraft-yaml.md) to build a new snap, a snap's executable  component can be either exposed as a command or run as a background service or daemon.
 
-For details on how to expose an executable from its constituent parts, see [Defining a command](/t/defining-a-command/12060).
+For details on how to expose an executable from its constituent parts, see [Defining a command](defining-a-command.md).
 
 A snap daemon or service behaves the same as a native daemon or service, and will either start automatically at boot time and end when the machine is shutdown, or start and stop on demand through socket activation.
 
-Snap confinement prohibits a system’s users and groups from running as traditional services might, such as under a user's ownership. But a *snap_daemon* user and group can alternatively be created within a snap to provide similar user and group level control outside of a snap’s confinement. See [System usernames](/t/system-usernames/13386) for more details.
+Snap confinement prohibits a system’s users and groups from running as traditional services might, such as under a user's ownership. But a *snap_daemon* user and group can alternatively be created within a snap to provide similar user and group level control outside of a snap’s confinement. See [System usernames](system-usernames.md) for more details.
 
- See [Service management](https://forum.snapcraft.io/t/service-management/3965) for details on starting and stopping services from the _snap_ command. Services and daemons can also be managed from within a snap, such as via a hook, with the [snapctl](/t/using-the-snapctl-tool/15002#heading--services).
+ See [Service management](https://snapcraft.io/docs/service-management) for details on starting and stopping services from the _snap_ command. Services and daemons can also be managed from within a snap, such as via a hook, with the [snapctl](https://snapcraft.io/docs/using-the-snapctl-tool#heading--services).
 
-To set memory and CPU resource limits for a service or daemon, see [Quota groups](/t/quota-groups/25553/3)
+To set memory and CPU resource limits for a service or daemon, see [Quota groups](https://snapcraft.io/docs/quota-groups)
 
-If you need to add user configurable options to your service or daemon, such as which port it should use, see [Adding snap configuration](/t/adding-snap-configuration/15246).
+If you need to add user configurable options to your service or daemon, such as which port it should use, see [Adding snap configuration](https://snapcraft.io/docs/adding-snap-configuration).
 
 ## Defining a daemon
 
@@ -38,7 +38,7 @@ The value for `daemon:` can be one of the following:
 - **forking**
    The configured command calls `fork()` as part of its start-up and the parent process is then expected to exit when start-up is complete. This isn't the recommended behaviour on a modern Linux system.
 - **notify**
-   Assumes the command will send a signal to *systemd* to indicate its running state. Note this requires usage of the [daemon-notify interface](/t/the-daemon-notify-interface/7809).
+   Assumes the command will send a signal to *systemd* to indicate its running state. Note this requires usage of the [daemon-notify interface](the-daemon-notify-interface.md).
 
 In addition to the above types of daemon or service, the following can be set to help manage how a service is run, how it can be stopped, and what should happen after it stops:
 - **after**
@@ -46,7 +46,7 @@ In addition to the above types of daemon or service, the following can be set to
 - **before**
   An ordered list of applications the daemon is to be started _before_. Applications must be part of the same snap.
 - **install-mode**
-   Defines whether a freshly installed daemon is started automatically, or whether startup control is deferred to the snap. The snap could then use [snapctl](/t/using-the-snapctl-tool/15002) with a [hook](/t/supported-snap-hooks/3795), for instance, or another management agent. Can be `enable` (default) or `disable`.
+   Defines whether a freshly installed daemon is started automatically, or whether startup control is deferred to the snap. The snap could then use [snapctl](https://snapcraft.io/docs/using-the-snapctl-tool) with a [hook](supported-snap-hooks.md), for instance, or another management agent. Can be `enable` (default) or `disable`.
 - **post-stop-command**
    Sets the command to run from inside the snap _after_ a service stops.
 - **refresh-mode**
@@ -60,7 +60,7 @@ In addition to the above types of daemon or service, the following can be set to
    The delay between service restarts. Defaults to unset. See the systemd.service manual on RestartSec for details.
    Time duration units can be `10ns`, `10us`, `10ms`, `10s`, `10m`.
 - **sockets**
-   Requires an activated daemon socket, and works with the [network-bind interface](/t/the-network-bind-interface/7881) to map a daemon’s socket to a service and activate it.
+   Requires an activated daemon socket, and works with the [network-bind interface](the-network-bind-interface.md) to map a daemon’s socket to a service and activate it.
 - **socket-mode**
    The mode of a socket in octal.
 - **start-timeout**
@@ -74,9 +74,9 @@ In addition to the above types of daemon or service, the following can be set to
    The length of time to wait before terminating a service.
    Time duration units can be `10ns`, `10us`, `10ms`, `10s`, `10m`. Termination is via `SIGTERM` (and `SIGKILL` if that doesn't work).
 - **timer**
-   Declares that the service is activated by a timer and that the app must be a daemon. See [Timer string format](/t/timer-string-format/6562) for syntax examples.
+   Declares that the service is activated by a timer and that the app must be a daemon. See [Timer string format](https://snapcraft.io/docs/timer-string-format) for syntax examples.
 - **watchdog-timeout**
    This value declares the service watchdog timeout. For watchdog to work, the application requires access to the *systemd* notification socket, which can be declared by listing a daemon-notify plug in the plugs section.
    Time duration units can be `10ns`, `10us`, `10ms`, `10s`, `10m`.
 
-For further details, see [Snapcraft app and service metadata](/t/snapcraft-app-and-service-metadata/8335).
+For further details, see [Snapcraft app and service metadata](snapcraft-app-and-service-metadata.md).

@@ -6,7 +6,7 @@
 
 The `snap try` command installs a snap from its unpackaged components within a directory. After installation, most changes to the components in that directory will immediately by visible in the installed snap.
 
-Ordinarily, snaps cannot be modified. They are distributed as, and executed from, read-only SquashFS files whose integrity is guaranteed via [assertions](/t/assertions/6155) and the [store](/t/using-the-snap-store/12379).
+Ordinarily, snaps cannot be modified. They are distributed as, and executed from, read-only SquashFS files whose integrity is guaranteed via [assertions](https://snapcraft.io/docs/assertions) and the [store](https://snapcraft.io/docs/using-the-snap-store).
 
 But it’s sometimes useful to be able to experiment with a snap locally, to help debug an issue, or to make changes to a snap when you don’t have upstream access to the packaging process. This is when `snap try` is useful.
 
@@ -26,7 +26,7 @@ snap ack hello-world_29.assert
 snap install hello-world_29.snap
 ```
 
-The download includes the snap itself and a signed set of [assertions](/t/assertions/6155) from the store to validate the snap’s default state.
+The download includes the snap itself and a signed set of [assertions](https://snapcraft.io/docs/assertions) from the store to validate the snap’s default state.
 
 Alternatively, _.snap_ files for any installed snaps can be found at `/var/lib/snapd/snaps/`, from where they can be copied across to your current working directory.
 
@@ -76,13 +76,13 @@ Hello Everyone!
 
 <h2 id='heading--snapcrafttry'>Using snapcraft try</h2>
 
-When developing a snap with [snapcraft](/t/snapcraft-overview/8940), the `snapcraft try` command can be used in combination with `snap try` to quickly test a snap and fix issues.
+When developing a snap with [snapcraft](snapcraft-overview.md), the `snapcraft try` command can be used in combination with `snap try` to quickly test a snap and fix issues.
 
-The `snapcraft try` command runs through the build process to the completion of the _prime_ stage (see [Parts lifecycle](/t/parts-lifecycle/12231) for further details). It then exposes the resultant _prime_ directory to the snapcraft directory, even from within a virtual machine or container.
+The `snapcraft try` command runs through the build process to the completion of the _prime_ stage (see [Parts lifecycle](parts-lifecycle.md) for further details). It then exposes the resultant _prime_ directory to the snapcraft directory, even from within a virtual machine or container.
 
 This _prime_ directory includes all the staged components of a snap, which can then be installed and tested with the `snap try <prime directory>` command.
 
-The following,  example, will build a _hello-world_ snap within [LXD](/t/build-options/14250) and offer its _prime_ directory locally:
+The following,  example, will build a _hello-world_ snap within [LXD](build-options.md) and offer its _prime_ directory locally:
 
 ```bash
 
@@ -106,4 +106,4 @@ $ snap try /home/user/hello-world/prime
 hello-world 0.1 mounted from /home/user/hello-world/prime
 ```
 
-For further help on testing and debugging a snap, see [Iterating over a build](/t/iterating-over-a-build/12143) and [Debugging snaps](/t/debugging-snaps/18420).
+For further help on testing and debugging a snap, see [Iterating over a build](iterating-over-a-build.md) and [Debugging snaps](debugging-snaps.md).

@@ -8,7 +8,7 @@ This extension helps you snap desktop applications that use GTK 3, GNOME 3.28 an
 
 ## How to use it
 
-Add `extensions: [ gnome-3-28 ]` to the application definition in your `snapcraft.yaml` file. See [GTK3 applications](/t/gtk3-applications/13483) for a complete tutorial on how to use this extension.
+Add `extensions: [ gnome-3-28 ]` to the application definition in your `snapcraft.yaml` file. See [GTK3 applications](gtk3-applications.md) for a complete tutorial on how to use this extension.
 
 ```yaml
 apps:
@@ -24,13 +24,13 @@ Although this extensions adds support for the GTK 3 runtime, it also includes ba
 
 Some examples:
 
-* [GTK3 applications](/t/gtk3-applications/13483)
-* [Java Swing applications](/t/java-applications/7819), except when they use [GTK+ 2 integration](https://forum.snapcraft.io/t/gtk2-applications/13508).
+* [GTK3 applications](gtk3-applications.md)
+* [Java Swing applications](java-applications.md), except when they use [GTK+ 2 integration](gtk2-applications.md).
 * Games
 
-This extension will _not_ work for [GTK+ 2 applications](https://forum.snapcraft.io/t/gtk2-applications/13508) and 32-bit applications.
+This extension will _not_ work for [GTK+ 2 applications](gtk2-applications.md) and 32-bit applications.
 
-See [Desktop Applications](/t/desktop-applications/13034) for more information on how to snap a desktop application.
+See [Desktop Applications](desktop-applications.md) for more information on how to snap a desktop application.
 
 ## What it does
 
@@ -44,9 +44,9 @@ To do this, it connects each application to the following content snaps at run t
 
 It also configures each application entry with these additional plugs:
 
-- [desktop](/t/the-desktop-interface/7783)
-- [desktop-legacy](/t/the-desktop-interface/7783)
-- [wayland](/t/the-wayland-interface/7784)
-- [x11](/t/the-x11-interface/7785)
+- [desktop](the-desktop-interface.md)
+- [desktop-legacy](the-desktop-interface.md)
+- [wayland](the-wayland-interface.md)
+- [x11](the-x11-interface.md)
 
-> ℹ  Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See [Snapcraft extensions](/t/snapcraft-extensions/13486) for further details.
+> ℹ  Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See [Snapcraft extensions](snapcraft-extensions.md) for further details.

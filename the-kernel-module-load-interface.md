@@ -6,16 +6,16 @@
 
 `kernel-module-load` provides the ability to load, or deny loading, specific kernel modules. This interface gives privileged access to the device.
 
-See also the [kernel-module-control interface](/t/the-kernel-module-control-interface/7853) for inserting, removing and querying kernel modules.
+See also the [kernel-module-control interface](the-kernel-module-control-interface.md) for inserting, removing and querying kernel modules.
 
-> ⓘ  This is a snap interface. See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+> ⓘ  This is a snap interface. See [Interface management](interface-management.md) and [Supported interfaces](supported-interfaces.md) for further details on how interfaces are used.
 
 ---
 
 <h2 id='heading--dev-details'>Developer details </h2>
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no<br />
-**[Super-privileged](/t/super-privileged-interfaces/34740)**: yes</br>
+**[Auto-connect](interface-management.md#heading--auto-connections)**: no<br />
+**[Super-privileged](super-privileged-interfaces.md)**: yes</br>
 
 **Attributes**:
   * `name` (plug, required): provides the name of the kernel module to be loaded (eg, '`name: pcspkr`')
@@ -26,7 +26,7 @@ See also the [kernel-module-control interface](/t/the-kernel-module-control-inte
 
 **In addition to the `name` attribute being required, either `options` or `load` must also be specified.**
 
-Consumers of this interface require a [snap declaration](/t/process-for-aliases-auto-connections-and-tracks/455/) for distribution via the Snap Store.
+Consumers of this interface require a [snap declaration](https://snapcraft.io/docs/process-for-aliases-auto-connections-and-tracks) for distribution via the Snap Store.
 
 Requires snapd version _2.54+_.
 

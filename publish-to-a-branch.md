@@ -4,7 +4,7 @@
 
 # Publish to a branch
 
-A branch is an optional finer subdivision of a [channel](/t/channels/551) which allows for the creation of a temporary and short-lived sequence of snaps. They're typically used by snap developers to push fixes or temporary experimental builds on-demand.
+A branch is an optional finer subdivision of a [channel](https://snapcraft.io/docs/channels) which allows for the creation of a temporary and short-lived sequence of snaps. They're typically used by snap developers to push fixes or temporary experimental builds on-demand.
 
 Branch names convey their purpose, such as `fix-for-bug123`, but the name isn’t exposed in the normal way, such as with `snap info`. Instead, they can only be installed by someone who knows the branch name, and this is usually only shared by the snap developer to test a specific fix or release.
 
@@ -19,14 +19,14 @@ After 30 days with no further updates, a branch will be closed automatically. Th
 
 <h2 id='heading--creating'>Creating a branch</h2>
 
-To publish a built and tested snap to a new branch, the snap developer can use the same _snapcraft upload_ process used to publish the snap, but with a full [channel description](/t/channels/551) that includes track, risk-level and a new arbitrary branch name:
+To publish a built and tested snap to a new branch, the snap developer can use the same _snapcraft upload_ process used to publish the snap, but with a full [channel description](https://snapcraft.io/docs/channels) that includes track, risk-level and a new arbitrary branch name:
 
 ```bash
 snapcraft upload <snap-name.snap> --release=<track>/<risk>/<branch>
 ```
 The branch name cannot contain "`_`" or "`/`" character.
 
-See [Releasing your app](/t/releasing-your-app/6795) for more general details on publishing a snap.
+See [Releasing your app](releasing-your-app.md) for more general details on publishing a snap.
 
 Many snaps will have only a _latest_ track, while others may use different tracks for each supported release, such as [Node.js](https://snapcraft.io/node) or separate tracks for stable and insider builds, such as [Skype](https://snapcraft.io/skype). These details can be retrieved with the `snap info` command:
 
@@ -118,7 +118,7 @@ latest   amd64   stable             0.6.0-1    45
 
 After a snap has been promoted, the branch will remain in-place until its expiry.
 
-For more details on promoting snaps to different channels, see [Release management](/t/release-management/12442).
+For more details on promoting snaps to different channels, see [Release management](https://snapcraft.io/docs/release-management).
 
 <h2 id='heading--default'>Setting a default track</h2>
 

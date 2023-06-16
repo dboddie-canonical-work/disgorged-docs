@@ -14,4 +14,4 @@ However, as part of an effort to add support for Snapcraft to have this for _all
 
 The biggest difference is that you can now call `snapcraftctl build` to run the default `build` step.
 
-See [Deprecation notices](/t/deprecation-notices/8396/2)  for further announcements.
+See [Deprecation notices](deprecation-notices.md)  for further announcements.

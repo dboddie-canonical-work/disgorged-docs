@@ -4,13 +4,13 @@
 
 # Build on Docker
 
-[Snapcraft](/t/snapcraft-overview/8940), the snap-building tool, is designed to use [Multipass](https://community.ubuntu.com/t/installing-multipass-on-linux/8328) and [bases](/t/base-snaps/11198) to both simplify the build process and to confine the build environment within a virtual machine. This mostly removes the need to use Docker.
+[Snapcraft](snapcraft-overview.md), the snap-building tool, is designed to use [Multipass](https://community.ubuntu.com/t/installing-multipass-on-linux/8328) and [bases](base-snaps.md) to both simplify the build process and to confine the build environment within a virtual machine. This mostly removes the need to use Docker.
 
 However, Docker can still be used, and is particularly useful when you're already using Docker within your build and test infrastructure.
-All you need is a working *snapcraft.yaml* (see [Creating a snap](/t/creating-a-snap/6799) for more details).
+All you need is a working *snapcraft.yaml* (see [Creating a snap](creating-a-snap.md) for more details).
 
 [quote]
-ℹ Electron apps are built slightly differently, and do not use a `snapcraft.yaml` file.  [Follow this guide](/t/electron-apps/6748) to build a snap of an Electron app using electron-builder.
+ℹ Electron apps are built slightly differently, and do not use a `snapcraft.yaml` file.  [Follow this guide](electron-apps.md) to build a snap of an Electron app using electron-builder.
 [/quote]
 
 To create a snap with Docker, first make sure you have [Docker installed](https://docs.docker.com/install/). You can test that Docker is correctly set up with:
@@ -26,9 +26,9 @@ If you don't see the "Hello from Docker!" message, consult the [Docker documenta
 
 ### Snaps using bases
 
-When using a [base snaps](/t/base-snaps/11198) other than `core`, a custom Docker image will need to be built. For details, see [Creating docker images for snapcraft](/t/creating-docker-images-for-snapcraft/11739).
+When using a [base snaps](base-snaps.md) other than `core`, a custom Docker image will need to be built. For details, see [Creating docker images for snapcraft](creating-docker-images-for-snapcraft.md).
 
-The process for building a `core18` compatible image, the default for [Snapcraft 3.x](/t/release-notes-snapcraft-3-0/10704), is outlined below.
+The process for building a `core18` compatible image, the default for [Snapcraft 3.x](release-notes-snapcraft-3-0.md), is outlined below.
 
 Docker images are built from a [Dockerfile](https://docs.docker.com/engine/reference/builder/). This is a script that  Docker interprets to assemble whatever is required to generate the image.
 
@@ -141,4 +141,4 @@ $ unsquashfs -l *.snap
 
 ### Next steps
 
-After creating a snap, you should upload it to the [Snap Store](https://snapcraft.io/store), from where it can reach a potential audience of millions. See [Releasing your app](/t/releasing-your-app/6795) for further details.
+After creating a snap, you should upload it to the [Snap Store](https://snapcraft.io/store), from where it can reach a potential audience of millions. See [Releasing your app](releasing-your-app.md) for further details.

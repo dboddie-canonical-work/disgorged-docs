@@ -14,11 +14,11 @@ However, _snapd_ considers world-writable permissions for `/dev/uinput` to be un
 
 This means snapd does not install additional _udev_ rules to modify device permissions on behalf of snaps, and consequently, will not interfere with the permissions set by third-party software. As a result, snaps that use this interface will have the same `/dev/uinput` access as other processes on the system.
 
-See [the joystick interface](https://forum.snapcraft.io/t/the-joystick-interface/7849) and [the raw-usb interface](/t/the-raw-usb-interface/7908) for potential alternatives.
+See [the joystick interface](the-joystick-interface.md) and [the raw-usb interface](the-raw-usb-interface.md) for potential alternatives.
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
-**[Super-privileged](/t/super-privileged-interfaces/34740)**: yes</br>
+**[Auto-connect](interface-management.md#heading--auto-connections)**: no</br>
+**[Super-privileged](super-privileged-interfaces.md)**: yes</br>
 
 Requires snapd version  *2.46+* .
 
-> ⓘ  This is a snap interface. See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+> ⓘ  This is a snap interface. See [Interface management](interface-management.md) and [Supported interfaces](supported-interfaces.md) for further details on how interfaces are used.

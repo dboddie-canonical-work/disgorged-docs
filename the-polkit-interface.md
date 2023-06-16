@@ -8,14 +8,14 @@ The `polkit` interface provides daemons with the permission to use the [polkit a
 
 [note type="positive" status="Interface documentation"]
 
-See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+See [Interface management](interface-management.md) and [Supported interfaces](supported-interfaces.md) for further details on how interfaces are used.
 [/note]
 
 ---
 
 <h2 id='heading--dev-details'>Developer details </h2>
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](interface-management.md#heading--auto-connections)**: no</br>
 
 
 **Attributes**:
@@ -32,7 +32,7 @@ There are two primary ways a daemon can describe the subject of the check:
 1. For D-Bus daemons they can use a `system-bus-name` subject, sending the unique bus name of the client app.
 2. For non-D-Bus daemons, they can use a `unix-process` subject, sending the process ID (as retrieved through `SO_PEERCRED` or `SCM_CREDENTIALS`).
 
-See https://forum.snapcraft.io/t/proposal-add-polkit-and-polkit-agent-interfaces-to-snapd/23876 for the original interface proposal and reasoning.
+See https://snapcraft.io/docs/proposal-add-polkit-and-polkit-agent-interfaces-to-snapd for the original interface proposal and reasoning.
 
 ### Code examples
 

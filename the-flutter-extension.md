@@ -11,20 +11,20 @@ There are currently four Flutter extensions.  They each track a different [Flutt
 - **flutter-master** tracks Flutter's master channel
 - **flutter-dev** tracks Flutter's dev channel
 
-> ⓘ The Flutter extension does not currently support [core22](/t/base-snaps/11198). Snaps using `core22` should instead use the [flutter](/t/the-flutter-plugin/18746) plugin with the [gnome](/t/the-gnome-extension/31449) extension.
+> ⓘ The Flutter extension does not currently support [core22](base-snaps.md). Snaps using `core22` should instead use the [flutter](the-flutter-plugin.md) plugin with the [gnome](the-gnome-extension.md) extension.
 
-Each Flutter extension uses the [gnome-3-28 extension](/t/the-gnome-3-28-extension/13485) to provide many of the components needed to build Flutter desktop applications.
+Each Flutter extension uses the [gnome-3-28 extension](the-gnome-3-28-extension.md) to provide many of the components needed to build Flutter desktop applications.
 
-Use of the [flutter plugin](/t/the-flutter-plugin/18746) is optional. The plugin drives the build process while the extension handles its dependencies.
+Use of the [flutter plugin](the-flutter-plugin.md) is optional. The plugin drives the build process while the extension handles its dependencies.
 
 - [Using the extensions](#heading--how): adding the necessary keywords to your snapcraft.yaml
 - [Interface connections](#heading--plugs): which interfaces are accessible from the extension
 
-> ℹ  Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See [Snapcraft extensions](/t/snapcraft-extensions/13486) for further details.
+> ℹ  Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See [Snapcraft extensions](snapcraft-extensions.md) for further details.
 
 <h2 id='heading--how'>Using the extensions</h2>
 
-Each Flutter extension works with the `core18` base snap (see [Base snaps](/t/base-snaps/11198) for details). To use either extension, add `extensions: [flutter-master]` or `extensions: [flutter-dev]` to the application definition in your [snapcraft.yaml](/t/creating-snapcraft-yaml/11666) file. For instance:
+Each Flutter extension works with the `core18` base snap (see [Base snaps](base-snaps.md) for details). To use either extension, add `extensions: [flutter-master]` or `extensions: [flutter-dev]` to the application definition in your [snapcraft.yaml](creating-snapcraft-yaml.md) file. For instance:
 
 ```yaml
 apps:
@@ -34,7 +34,7 @@ apps:
 [...]
 ```
 
-See [Flutter applications](/t/flutter-applications/18768) for a comprehensive overview of using extensions with Flutter applications.
+See [Flutter applications](flutter-applications.md) for a comprehensive overview of using extensions with Flutter applications.
 
 <h2 id='heading--plugs'>Interface connections</h2>
 
@@ -66,4 +66,4 @@ Your app may still need additional plugs, but you can expect the following plugs
 plugs: [ desktop, desktop-legacy, gsettings, opengl, wayland, x11 ]
 ```
 
-See [Adding interfaces](/t/adding-interfaces/13123) for more details.
+See [Adding interfaces](adding-interfaces.md) for more details.

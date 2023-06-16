@@ -6,7 +6,7 @@
 
 The `audio-playback` interface allows a snap to play sounds and music, via the supporting audio service running on the system, such as PulseAudio. It's used by many applications and utilities, and as such, is enabled by default.
 
-Audio recording is enabled with the companion [audio-record](/t/the-audio-record-interface/13090) interface, and unlike `audio-playback`, is not enabled (auto-connected) by default.
+Audio recording is enabled with the companion [audio-record](the-audio-record-interface.md) interface, and unlike `audio-playback`, is not enabled (auto-connected) by default.
 
 <h2 id='heading--example'>Example</h2>
 
@@ -34,7 +34,7 @@ snap connect vlc:audio-playback
 
 [note type="positive" status="Interface documentation"]
 
-See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+See [Interface management](interface-management.md) and [Supported interfaces](supported-interfaces.md) for further details on how interfaces are used.
 [/note]
 
 ---

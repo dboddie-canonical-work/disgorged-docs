@@ -12,7 +12,7 @@ Highlights for this release include:
 * the ability to set a default track for a snap
 * a new  `--enable-experimental-extensions` option for expand-extensions
 
-For general details, including installation instructions, see [Snapcraft overview](https://forum.snapcraft.io/t/snapcraft-overview/8940), or take a look at [Snapcraft release notes](https://forum.snapcraft.io/t/snapcraft-release-notes/10721) for other  *Snapcraft*  releases.
+For general details, including installation instructions, see [Snapcraft overview](snapcraft-overview.md), or take a look at [Snapcraft release notes](snapcraft-release-notes.md) for other  *Snapcraft*  releases.
 
 Special thanks to the contributors that helped to make this release happen: [@cjp256](https://github.com/cjp256), [@flexiondotorg](https://github.com/flexiondotorg), [@kyrofa](https://github.com/kyrofa) and [@sergiusens](https://github.com/sergiusens).
 
@@ -20,7 +20,7 @@ Special thanks to the contributors that helped to make this release happen: [@cj
 
 ### ROS 1 Extension
 
-The new ROS 1 [extension](/t/snapcraft-extensions/13486) allows you to target `core20` with ROS 1 _Noetic Ninjemys_, the latest (and last) ROS 1 LTS that runs on Ubuntu 20.04 LTS (Focal Fossa).
+The new ROS 1 [extension](snapcraft-extensions.md) allows you to target `core20` with ROS 1 _Noetic Ninjemys_, the latest (and last) ROS 1 LTS that runs on Ubuntu 20.04 LTS (Focal Fossa).
 
 You can now build a ROS 1 application with a  `snapcraft.yaml`  as simple as:
 
@@ -47,18 +47,18 @@ parts:
     build-packages: [g++, make]
 ```
 
-It's operation and functionality is similar to the newly introduced [ROS 2 extension](/t/the-ros2-foxy-extension/19639), and the associated colcon plugin, added in [Snapcraft 4.2](/t/release-notes-snapcraft-4-2/19644).
+It's operation and functionality is similar to the newly introduced [ROS 2 extension](the-ros2-foxy-extension.md), and the associated colcon plugin, added in [Snapcraft 4.2](release-notes-snapcraft-4-2.md).
 
 ### Set the default Channel Track
 
-It is now possible to set a [default track](/t/using-tracks/6230) for your snap:
+It is now possible to set a [default track](https://snapcraft.io/docs/using-tracks) for your snap:
 
 ```bash
 $ snapcraft set-default-track <snap-name> 17
 Default track for '<snap-name>' set to '17'
 ```
 
-This features complements the ability to list channel tracks, which as added in [Snapcraft 4.2](/t/release-notes-snapcraft-4-2/19644).
+This features complements the ability to list channel tracks, which as added in [Snapcraft 4.2](release-notes-snapcraft-4-2.md).
 
 ### New v2 plugins
 

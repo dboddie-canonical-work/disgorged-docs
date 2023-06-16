@@ -10,7 +10,7 @@
 
 [note type="positive" status="Interface documentation"]
 
-See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+See [Interface management](interface-management.md) and [Supported interfaces](supported-interfaces.md) for further details on how interfaces are used.
 [/note]
 
 ---
@@ -23,7 +23,7 @@ Requires snapd version _2.41+_.
 
 <h3 id='heading-code'>Code examples</h3>
 
-[Using external metadata](/t/using-external-metadata/4642) describes how to access AppStream metadata.
+[Using external metadata](using-external-metadata.md) describes how to access AppStream metadata.
 
 The source code for this interface is in the *snapd* repository:
 <https://github.com/snapcore/snapd/blob/master/interfaces/builtin/appstream_metadata.go>

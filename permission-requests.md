@@ -10,7 +10,7 @@ By design, snaps run in isolation from one another and the host system. However,
 - **interfaces** allow a snap to access specific system resource, such as the network or an audio device. Individual interfaces are either enabled automatically or after the user requests a specific connection
 - **classic confinement** is a special case reserved for snaps that are unsuitable for strict confinement. Its access to the system is synonymous with the full system access of traditionally packaged applications and requires users to append `--classic` during installation.
 
-See [Snap confinement](/t/snap-confinement/6233) for further details on confinement, and [Interface management](/t/interface-management/6154) for how interfaces interact with system resources.
+See [Snap confinement](snap-confinement.md) for further details on confinement, and [Interface management](interface-management.md) for how interfaces interact with system resources.
 
 ## Extra permissions
 
@@ -22,8 +22,8 @@ However, there are specific circumstances when a manual review and approval proc
 1.  automatic alias creation for an executable with a different name to the snap name
   (see [Application aliases](https://snapcraft.io/docs/commands-and-aliases#heading--aliases) for more details)
 1. automatic interfaces connection with an interface that defaults to no auto-connection
-1. a new [track](/t/channels/551#heading--tracks), often used to provide a stable version path with production grade applications
-1. use of a more permissive interfaces, such as [personal-files](/t/the-personal-files-interface/9357)
+1. a new [track](https://snapcraft.io/docs/channels#heading--tracks), often used to provide a stable version path with production grade applications
+1. use of a more permissive interfaces, such as [personal-files](the-personal-files-interface.md)
 
 In all of the above cases, a snap's publisher needs to make a permission request in the [store-requests](https://forum.snapcraft.io/c/store-requests) category of [https://forum.snapcraft.io](https://forum.snapcraft.io).
 
@@ -33,10 +33,10 @@ In general, the approval process requires a forum post making a request by descr
 
 For next steps, and for more information on what's required for each type of request, see one of the following forum posts:
 
-1. [classic confinement](https://forum.snapcraft.io/t/process-for-reviewing-classic-confinement-snaps/1460)
-1. [automatic alias creation](https://forum.snapcraft.io/t/process-for-aliases-auto-connections-and-tracks/455)
-1. [automatic interface connections](https://forum.snapcraft.io/t/process-for-aliases-auto-connections-and-tracks/455)
+1. [classic confinement](process-for-reviewing-classic-confinement-snaps.md)
+1. [automatic alias creation](https://snapcraft.io/docs/process-for-aliases-auto-connections-and-tracks)
+1. [automatic interface connections](https://snapcraft.io/docs/process-for-aliases-auto-connections-and-tracks)
 1.  Tracks:
-    - [one-off track creation](https://forum.snapcraft.io/t/process-for-aliases-auto-connections-and-tracks/455)
-    - [repeating track creation for versions with a predictable release cadence](https://forum.snapcraft.io/t/simplified-track-request-process-for-snaps-with-predictable-cadence/3136)
-1. [permissive interfaces](https://forum.snapcraft.io/t/process-for-aliases-auto-connections-and-tracks/455)
+    - [one-off track creation](https://snapcraft.io/docs/process-for-aliases-auto-connections-and-tracks)
+    - [repeating track creation for versions with a predictable release cadence](https://snapcraft.io/docs/simplified-track-request-process-for-snaps-with-predictable-cadence)
+1. [permissive interfaces](https://snapcraft.io/docs/process-for-aliases-auto-connections-and-tracks)

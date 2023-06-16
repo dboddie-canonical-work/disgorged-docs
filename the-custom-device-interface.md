@@ -4,7 +4,7 @@
 
 # The custom-device interface
 
-The `custom-device` interface permits access to a device of a specific class and model without requiring the creation of an interface for that device alone. It’s intended to be used with [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core) and its scope and specification are defined as part of the [gadget snap](/t/gadget-snaps/696) for the deployed Ubuntu Core image.
+The `custom-device` interface permits access to a device of a specific class and model without requiring the creation of an interface for that device alone. It’s intended to be used with [Ubuntu Core](glossary.md#heading--ubuntu-core) and its scope and specification are defined as part of the [gadget snap](gadget-snaps.md) for the deployed Ubuntu Core image.
 
 The slot-side of the interface is used to derive which _udev_ rules are provided to the plug-side of the connection:
 
@@ -43,15 +43,15 @@ Requires snapd version *2.55+*.
 
 [note type="positive" status="Interface documentation"]
 
-See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+See [Interface management](interface-management.md) and [Supported interfaces](supported-interfaces.md) for further details on how interfaces are used.
 [/note]
 
 ---
 
 <h2 id=`heading--dev-details`>Developer details</h2>
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
-**[Super-privileged](/t/super-privileged-interfaces/34740)**: yes</br>
+**[Auto-connect](interface-management.md#heading--auto-connections)**: no</br>
+**[Super-privileged](super-privileged-interfaces.md)**: yes</br>
 
 **Attributes**:
 * `custom-device` (plug, slot): label for the custom device.</br>

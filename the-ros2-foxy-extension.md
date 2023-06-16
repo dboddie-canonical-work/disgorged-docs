@@ -36,4 +36,4 @@ apps:
 * For an example of this extension being used, see the _core20_ section of the [ROS 2 applications](https://snapcraft.io/docs/ros2-applications#heading--core20) page.
 * For a complete picture of what this extension does, add it to your app definition and run `snapcraft expand-extensions`.
 
-> ℹ  Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See [Snapcraft extensions](/t/snapcraft-extensions/13486) for further details.
+> ℹ  Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See [Snapcraft extensions](snapcraft-extensions.md) for further details.

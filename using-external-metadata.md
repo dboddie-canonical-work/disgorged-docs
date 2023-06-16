@@ -4,7 +4,7 @@
 
 # Using external metadata
 
-To help avoid unnecessary duplication, and for convenience, Snapcraft can process and incorporate external metadata from within *snapcraft.yaml* by using `parse-info` within a [part](/t/adding-parts/11473) and a corresponding `adopt-info` key.
+To help avoid unnecessary duplication, and for convenience, Snapcraft can process and incorporate external metadata from within *snapcraft.yaml* by using `parse-info` within a [part](adding-parts.md) and a corresponding `adopt-info` key.
 
 For example, the following `snapcraft.yaml` will parse a file called `metadata-file`. Snapcraft will attempt to extract `version`, `summary` and `description` metadata for the snap, all of which are mandatory:
 
@@ -19,7 +19,7 @@ parts:
     parse-info: [metadata-file]
 ```
 
-See [The snapcraft format](/t/the-snapcraft-format/8337) for further details on Snapcraft metadata and how it's used.
+See [The snapcraft format](the-snapcraft-yaml-schema.md) for further details on Snapcraft metadata and how it's used.
 
 ## Source types
 
@@ -32,7 +32,7 @@ See below for details on incorporating each of the above into your *snapcraft.ya
 
 <h3 id='heading--appstream'>AppStream<sup><a href=#heading--appstream name="meta-appstream">⚓</a></sup></h3>
 
-[AppStream](https://www.freedesktop.org/software/appstream/docs/) is a metadata standard used to describe a common set software components. It can be parsed by *snapcraft* to provide the `title`, `version`, `summary`, `description` and `icon` for a snap, along with the location of an app's [desktop](/t/desktop-files-for-menu-integration/13115) file.
+[AppStream](https://www.freedesktop.org/software/appstream/docs/) is a metadata standard used to describe a common set software components. It can be parsed by *snapcraft* to provide the `title`, `version`, `summary`, `description` and `icon` for a snap, along with the location of an app's [desktop](desktop-files-for-menu-integration.md) file.
 
 The following is a typical example from an upstream project. It's an *AppStream* file called `sampleapp.metainfo.xml`:
 
@@ -74,7 +74,7 @@ parts:
     parse-info: [usr/share/metainfo/com.example.sampleapp.appdata.xml]
 ```
 
-> ⓘ The path in `parse-info` is a relative path from the part source, build or install directory ([SNAPCRAFT_PART_SRC, SNAPCRAFT_PART_BUILD, SNAPCRAFT_PART_INSTALL](/t/parts-lifecycle/12231#heading--parts-directories)).
+> ⓘ The path in `parse-info` is a relative path from the part source, build or install directory ([SNAPCRAFT_PART_SRC, SNAPCRAFT_PART_BUILD, SNAPCRAFT_PART_INSTALL](parts-lifecycle.md#heading--parts-directories)).
 
 The resulting snap will use the title, version, summary and description from the AppStream file.
 
@@ -101,7 +101,7 @@ parts:
       snapcraftctl set-grade "devel"
 ```
 
-See [Scriptlets](/t/scriptlets/4892) for more details on using scripting elements within *snapcraft.yaml*.
+See [Scriptlets](override-build-steps.md) for more details on using scripting elements within *snapcraft.yaml*.
 
 <h3 id='heading--setup-py'>[not recommended] `setup.py`<sup><a href=#heading--setup-py name="meta-setup">⚓</a></sup></h3>
 

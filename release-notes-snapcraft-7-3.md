@@ -15,8 +15,8 @@ For general details, including installation instructions, see [Snapcraft overvie
 ## Extensions
 
 -   Removed experimental flag  [#3988](https://github.com/snapcore/snapcraft/pull/3988)
--   New `core22` extension for  [kde-neon](/t/the-kde-neon-extension/13752/7) , with new content  [kde-neon](/t/the-kde-neon-extension/13752/7) and KDE Frameworks (kf5 5.98 and qt 5.15.6) content snaps [#3991](https://github.com/snapcore/snapcraft/pull/3991)
--  Minimum necessary build packages are now being used for the [ROS2 Foxy extension](/t/the-ros2-foxy-extension/19639) (core20) [#4019](https://github.com/snapcore/snapcraft/pull/4019)
+-   New `core22` extension for  [kde-neon](the-kde-neon-extension.md) , with new content  [kde-neon](the-kde-neon-extension.md) and KDE Frameworks (kf5 5.98 and qt 5.15.6) content snaps [#3991](https://github.com/snapcore/snapcraft/pull/3991)
+-  Minimum necessary build packages are now being used for the [ROS2 Foxy extension](the-ros2-foxy-extension.md) (core20) [#4019](https://github.com/snapcore/snapcraft/pull/4019)
 
 ## Build Providers
 
@@ -25,8 +25,8 @@ For general details, including installation instructions, see [Snapcraft overvie
 
 ## Parts
 
--   Added `core22` support to the [SCons](/t/the-scons-plugin/8629) plugin
--   Added `core22` support to the [Ant plugin](/t/the-ant-plugin/8507)
+-   Added `core22` support to the [SCons](the-scons-plugin.md) plugin
+-   Added `core22` support to the [Ant plugin](the-ant-plugin.md)
 -   Added `core22` support to the [Maven plugin](t/the-maven-plugin/4282)
 -   Fixed lifecycle work directory cleaning
 -   Made stage package tracking optional
@@ -65,7 +65,7 @@ For general details, including installation instructions, see [Snapcraft overvie
 -   Pass `--verbose` and `-v` to snapcraft_legacy [#4024](https://github.com/snapcore/snapcraft/pull/4024)
 -   Improved _docstring_ for `get_build_provider_flags` [#4025](https://github.com/snapcore/snapcraft/pull/4025)
 -   Fixed `StoreLegacyRegisterKeyCommand` overview [#3984](https://github.com/snapcore/snapcraft/pull/3984)
--   [snapcraft try](/t/iterating-over-a-build/12143) for core22 [#3981](https://github.com/snapcore/snapcraft/pull/3981)
+-   [snapcraft try](iterating-over-a-build.md) for core22 [#3981](https://github.com/snapcore/snapcraft/pull/3981)
 
 ## Classic
 

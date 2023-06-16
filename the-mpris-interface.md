@@ -15,4 +15,4 @@ Consuming snaps can access media players implementing mpris via the providing sn
    * `name` (slot): optional, media player name to use for DBus well-known name
       (ie, `org.mpris.MediaPlayer2.$name`). If omitted, use the snap's name.
 
-> ⓘ  This is a snap interface. See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+> ⓘ  This is a snap interface. See [Interface management](interface-management.md) and [Supported interfaces](supported-interfaces.md) for further details on how interfaces are used.

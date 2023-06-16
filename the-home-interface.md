@@ -4,9 +4,9 @@
 
 # The home interface
 
-The `home` [interface](/t/interface-management/6154) allows access to non-hidden files owned by the user in the user's home ($HOME) directory where a user normally stores their personal files and documents.
+The `home` [interface](interface-management.md) allows access to non-hidden files owned by the user in the user's home ($HOME) directory where a user normally stores their personal files and documents.
 
-The majority of snaps use [strict confinement](/t/snap-confinement/6233) and do not have arbitrary access a system's resources, including file and directories in the _\/home_ directory. Without this access, _home_ will not be visible in file requesters, or as a destination from within the snap application.
+The majority of snaps use [strict confinement](snap-confinement.md) and do not have arbitrary access a system's resources, including file and directories in the _\/home_ directory. Without this access, _home_ will not be visible in file requesters, or as a destination from within the snap application.
 
 To check whether a snap can connect to $HOME, use the _snap connections_ command:
 
@@ -25,22 +25,22 @@ $ snap connect <snap-name>:home :home
 ```
 The `:home` slot, with no \<snap-name\>  before the colon (`:`) is equivalent to directing the plug to connect to the system, which in this case is the $HOME directory.
 
-A snap developer can [request permission](https://forum.snapcraft.io/t/permission-requests/12822) to have the `home` interface connected automatically. In this case, non-hidden files and directories will be accessible from that snap without any further configuration being necessary.
+A snap developer can [request permission](permission-requests.md) to have the `home` interface connected automatically. In this case, non-hidden files and directories will be accessible from that snap without any further configuration being necessary.
 
 Requires snapd version _2.33+_.
 
 [note type="positive" status="Interface documentation"]
 
-This is a snap interface. See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+This is a snap interface. See [Interface management](interface-management.md) and [Supported interfaces](supported-interfaces.md) for further details on how interfaces are used.
 [/note]
 
 ---
 
 <h2 id='heading--dev'>Developer details</h2>
 
-**[Auto-Connect](/t/the-interface-connection-mechanism/20179#heading--autoconnect)**:
+**[Auto-Connect](the-interface-auto-connection-mechanism.md#heading--autoconnect)**:
 -  **yes** on traditional distributions
--  **no** on all other systems, including [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core)
+-  **no** on all other systems, including [Ubuntu Core](glossary.md#heading--ubuntu-core)
 
 **Transitional**: yes</br>
 **Attributes**:

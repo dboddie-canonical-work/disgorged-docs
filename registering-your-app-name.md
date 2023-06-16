@@ -4,7 +4,7 @@
 
 # Registering your app name
 
-Now that you've [created a developer account](/t/creating-your-developer-account/6760) on the Snap Store and [built your snap](/t/building-the-snap/6800) you can register a name for your app.
+Now that you've [created a developer account](create-a-developer-account.md) on the Snap Store and [built your snap](building-the-snap.md) you can register a name for your app.
 
 ## What name to choose
 
@@ -12,7 +12,7 @@ Pick the name that most represents your app and use lowercase. As an example, a 
 
 Snap names are globally unique and cannot be changed. For example, only one snap can be named "firefox" and it can never be renamed. Ultimately, **each name should be owned and published by members of the relevant project.** For example, the snap named "firefox" should be owned and published by the developers of Firefox: the Mozilla project.
 
-However, if you are not associated with the project but want to help them create a snap, we welcome you to [join snapcrafters](https://forum.snapcraft.io/t/join-snapcrafters/1325), create the snap yourself, register the name and hand off to upstream projects when asked.
+However, if you are not associated with the project but want to help them create a snap, we welcome you to [join snapcrafters](join-snapcrafters.md), create the snap yourself, register the name and hand off to upstream projects when asked.
 
 ## How to register the name
 
@@ -24,7 +24,7 @@ You also have a choice over whether a snap is _public_ or _private_:
 - **Public**: the snap will appear in local `snap find` searches, in the Snap Store, and other application installers that access the store
 - **Private**: the snap is hidden from search results, and can only be installed from your account and from accounts linked to your account
 
-To change a snap's visibility after registering, see [Release management](/t/release-management/12442#heading--private-snaps).
+To change a snap's visibility after registering, see [Release management](https://snapcraft.io/docs/release-management#heading--private-snaps).
 
 A name can be registered from either the web UI or with the _snapcraft_ command:
 
@@ -91,4 +91,4 @@ This should be done with extreme caution because we don't want to end up in a si
 
 ### Next steps
 
-See  [Releasing your snap](/t/releasing-your-app/6795)  to learn how to upload your app to the Snap Store.
+See  [Releasing your snap](releasing-your-app.md)  to learn how to upload your app to the Snap Store.

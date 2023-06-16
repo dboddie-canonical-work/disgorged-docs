@@ -23,7 +23,7 @@ activation.
 
 Note: when developing snaps using devmode for DBus system services, the slot implementation must use this interface so that snapd may adjust the DBus bus policy so the snap may use the system bus.
 
-> ⓘ  This is a snap interface. See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+> ⓘ  This is a snap interface. See [Interface management](interface-management.md) and [Supported interfaces](supported-interfaces.md) for further details on how interfaces are used.
 
 ## Using the D-Bus interface
 

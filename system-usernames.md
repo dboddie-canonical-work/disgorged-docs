@@ -4,7 +4,7 @@
 
 # System usernames
 
-System usernames can be used by snap developers to enable them to run [services and daemons](https://forum.snapcraft.io/t/services-and-daemons/12601) as a user other than the default `root`.
+System usernames can be used by snap developers to enable them to run [services and daemons](services-and-daemons.md) as a user other than the default `root`.
 
 Outside of snaps, applications traditionally adopt the concept of users and groups from the host operating system to use as a security mechanism that grants access to specific system and software resources.
 
@@ -16,7 +16,7 @@ From version 2.41 onwards, snapd supports the creation of a `snap_daemon` user a
 
 > ℹ Future releases of snapd will support more users and groups.
 
-To create the `snap_daemon` user/group inside a snap, add the following `system-usernames` section to the snap's [snapcraft.yaml](/t/snapcraft-yaml-reference/4276) (or
+To create the `snap_daemon` user/group inside a snap, add the following `system-usernames` section to the snap's [snapcraft.yaml](snapcraft-yaml-reference.md) (or
 `snap.yaml`):
 
 ```yaml
@@ -110,4 +110,4 @@ Snapd takes great care to avoid overlapping with other container technologies (o
 Some administrators may adjust their non-snap container runtimes to use non-default values (eg, via `/etc/subuid`, `/etc/subgid`, etc). While it is non-fatal for other container ranges to overlap with snapd's range, best practice dictates that a different range should always be used to ensure a clean separation between snapd and other container ranges in the kernel on the system.
 
 # References
-* https://forum.snapcraft.io/t/multiple-users-and-groups-in-snaps/1461
+* https://snapcraft.io/docs/multiple-users-and-groups-in-snaps

@@ -4,7 +4,7 @@
 
 # Build and publishing example
 
-After creating the [Intermediate snapcraft.yaml example](/t/intermediate-snapcraft-yaml-example/33076), the snap is ready to be built. The following is based on the [wethr snap](https://github.com/snapcrafters/wethr/blob/master/snap/snapcraft.yaml).
+After creating the [Intermediate snapcraft.yaml example](intermediate-snapcraft-yaml-example.md), the snap is ready to be built. The following is based on the [wethr snap](https://github.com/snapcrafters/wethr/blob/master/snap/snapcraft.yaml).
 
 <h2 id='heading--build'>Snap build process</h2>
 
@@ -73,6 +73,6 @@ Branch names convey their purpose, such as fix-for-bug123, but the name isn’t 
 
 <h2 id='heading--next'>Next steps</h2>
 
-During our [Build your own snap with Snapcraft](/t/build-your-own-snap-with-snapcraft/32983) series of How-tos, we've been through an overview of the snap ecosystem, focused on the Snapcraft tool, the contents and syntax of the snapcraft.yaml, we built a simple and then an intermediate-difficulty snap example illustrating the use of different components and keywords, and finally, we published the built snaps into the Snap Store.
+During our [Build your own snap with Snapcraft](snapcraft-quickstart.md) series of How-tos, we've been through an overview of the snap ecosystem, focused on the Snapcraft tool, the contents and syntax of the snapcraft.yaml, we built a simple and then an intermediate-difficulty snap example illustrating the use of different components and keywords, and finally, we published the built snaps into the Snap Store.
 
-We've covered the required basics, and provided a baseline for developers looking to get started with the snaps. The next step is to build a snap of your own project, and one of the best places to start is with a [Platform walkthrough](/t/creating-a-snap/6799). These step through the same process for your chosen platform, whether that's Rust, Python, cmake or Golang (among many others).
+We've covered the required basics, and provided a baseline for developers looking to get started with the snaps. The next step is to build a snap of your own project, and one of the best places to start is with a [Platform walkthrough](creating-a-snap.md). These step through the same process for your chosen platform, whether that's Rust, Python, cmake or Golang (among many others).

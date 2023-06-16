@@ -18,7 +18,7 @@ Part of this convenience is whether an interface is permitted to be automaticall
 
 <h2 id='heading--autoconnect'>Auto-connections</h2>
 
-The snapd [interface auto-connection](https://forum.snapcraft.io/t/interface-management/6154#heading--auto-connections) mechanism has been designed to remove the need for a manual connection when:
+The snapd [interface auto-connection](interface-management.md#heading--auto-connections) mechanism has been designed to remove the need for a manual connection when:
 
 - An interface is commonly required and has no or low security implications
 - A snap provides, or accesses, libraries or other content vital to the operation of a snap

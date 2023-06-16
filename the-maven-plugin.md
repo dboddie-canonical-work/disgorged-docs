@@ -8,7 +8,7 @@ This plugin is useful for building parts that use maven.
 
 The maven build system is commonly used to build Java projects. The plugin requires a pom.xml in the root of the source tree.
 
-This plugin is only available to *core22* and *core18* based snaps. See [Base snaps](https://forum.snapcraft.io/t/base-snaps/11198) for details.
+This plugin is only available to *core22* and *core18* based snaps. See [Base snaps](base-snaps.md) for details.
 
 <h3 id='heading--core22'>base: core22 and base: core18</h3>
 
@@ -32,4 +32,4 @@ This plugin uses the following plugin-specific keywords:
 
 For examples, search [GitHub](https://github.com/search?q=path%3A**%2Fsnapcraft.yaml+gopath&type=code) for projects already using the plugin.
 
-> ⓘ  This is a *snapcraft* plugin. See [Snapcraft plugins](/t/snapcraft-plugins/4284) and [Supported plugins](/t/supported-plugins/8080) for further details on how plugins are used.
+> ⓘ  This is a *snapcraft* plugin. See [Snapcraft plugins](snapcraft-plugins.md) and [Supported plugins](supported-plugins.md) for further details on how plugins are used.

@@ -25,4 +25,4 @@ $ mv parts/plugins snap/
 
 ...and apply those changes to your VCS if you are using one.
 
-See [Deprecation notices](/t/deprecation-notices/8396/2)  for further announcements.
+See [Deprecation notices](deprecation-notices.md)  for further announcements.

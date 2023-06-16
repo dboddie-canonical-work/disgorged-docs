@@ -6,11 +6,11 @@
 
 A *base* snap is a special kind of snap that provides a run-time environment with a minimal set of libraries that are common to most applications. They're transparent to users, but they need to be considered and specified when building a snap.
 
-See [Base snaps](/t/base-snaps/11198) for details on how use and specify them.
+See [Base snaps](base-snaps.md) for details on how use and specify them.
 
-Each base snap is built from a [corresponding Ubuntu LTS ](/t/base-snaps/11198#heading--supported) release and migrating a snap from one base to the next gives the snap access to newer packages, extended support, and the latest [Snapcraft](/t/snapcraft-overview/8940) features, including [plugins](/t/supported-plugins/8080) and [extensions](/t/snapcraft-extensions/13486).
+Each base snap is built from a [corresponding Ubuntu LTS ](base-snaps.md#heading--supported) release and migrating a snap from one base to the next gives the snap access to newer packages, extended support, and the latest [Snapcraft](snapcraft-overview.md) features, including [plugins](supported-plugins.md) and [extensions](snapcraft-extensions.md).
 
-The complexity of the migration process is directly linked to both dependencies in the snap's [snapcraft.yaml](/t/the-snapcraft-format/8337) and the base snap versions being migrated between.
+The complexity of the migration process is directly linked to both dependencies in the snap's [snapcraft.yaml](the-snapcraft-yaml-schema.md) and the base snap versions being migrated between.
 
 At its simplest, migrating from one base snap to another requires only that the  _base_ keyword is updated:
 
@@ -43,11 +43,11 @@ Migrating a snap from having no base, or `base: core`, to `core18` or `core20`, 
 
 This is because when building a snap with an old base, Snapcraft will operate in compatibility mode.
 
-Compatibility mode is essentially a prior (2.43-era) version of Snapcraft, and will lose the functionality of newer releases. See [Features incompatible with bases](/t/release-notes-snapcraft-3-0/10704#heading--base-exceptions) for details.
+Compatibility mode is essentially a prior (2.43-era) version of Snapcraft, and will lose the functionality of newer releases. See [Features incompatible with bases](release-notes-snapcraft-3-0.md#heading--base-exceptions) for details.
 
 <h2 id='heading--names'>Package names</h2>
 
-The `build-packages` and `stage-packages` sections in a snap's [snapcraft.yaml](/t/the-snapcraft-format/8337) specify which packages need to be incorporated during the build and stage parts of the [Parts lifecycle](/t/parts-lifecycle/12231), and described in [Build and staging dependencies](/t/build-and-staging-dependencies/11451).
+The `build-packages` and `stage-packages` sections in a snap's [snapcraft.yaml](the-snapcraft-yaml-schema.md) specify which packages need to be incorporated during the build and stage parts of the [Parts lifecycle](parts-lifecycle.md), and described in [Build and staging dependencies](build-and-staging-dependencies.md).
 
 When no base or _core_ is specified, packages from the Ubuntu 16.04 LTS archive are used at build and stage time. The `core18` base will use packages from the Ubuntu 18.04 LTS archive, whereas the `core20` base will consume packages from the Ubuntu 20.04 LTS archive, and package names can change between releases.
 
@@ -84,7 +84,7 @@ architectures:
   - build-on: s390x
 ```
 
-For potential approaches to maintain an i386 build of a snap, see [How best to handle i386 when moving to core20](https://forum.snapcraft.io/t/how-to-best-handle-i386-when-moving-a-snap-to-base-core20/17680).
+For potential approaches to maintain an i386 build of a snap, see [How best to handle i386 when moving to core20](17680.md).
 
 <h2 id='heading--environment'>Environment variables</h2>
 
@@ -102,7 +102,7 @@ When a package name changes or is updated, it's worth checking to make sure no e
 
 <h2 id='heading--remote'>Remote parts and Extensions</h2>
 
-In some snaps [remote parts](/t/remote-reusable-parts/4233) may have been used to share configuration across multiple snaps and to reduce the local `snapcraft.yaml` complexity.
+In some snaps [remote parts](remote-reusable-parts.md) may have been used to share configuration across multiple snaps and to reduce the local `snapcraft.yaml` complexity.
 
 These parts are defined elsewhere, and would be incorporated at build time. This functionality is deprecated, so remote parts should be pasted directly into the `snapcraft.yaml` or referenced from their source repository.
 
@@ -123,7 +123,7 @@ Example of pasted remote part: [Mr Rescue](https://github.com/snapcrafters/mrres
 +	     - libglib2.0-bin
 ```
 
-Alternatively for some desktop applications it may be appropriate to switch to using an extension, which simplifies the `snapcraft.yaml` further. This is covered in [Snapcraft Extensions](/t/snapcraft-extensions/13486).
+Alternatively for some desktop applications it may be appropriate to switch to using an extension, which simplifies the `snapcraft.yaml` further. This is covered in [Snapcraft Extensions](snapcraft-extensions.md).
 
 Example migration to an Extension: [Xonotic](https://github.com/snapcrafters/xonotic/pull/6)
 
@@ -144,7 +144,7 @@ In the above example, we remove the reference to a remote part `desktop-glib-onl
 
 ### Extension naming
 
-Not all extensions work on all bases. For example, on `core18` , use the `gnome-3-34` extension and on `core20` use `gnome-3-38`. See [Supported extensions](/t/supported-extensions/20521) for further details.
+Not all extensions work on all bases. For example, on `core18` , use the `gnome-3-34` extension and on `core20` use `gnome-3-38`. See [Supported extensions](supported-extensions.md) for further details.
 
 Example showing `core20`-only Gnome extension: [Dwarf Fortress](https://github.com/ultraviolet-1986/df/pull/3)
 
@@ -161,8 +161,8 @@ Example showing `core20`-only Gnome extension: [Dwarf Fortress](https://github.c
 
 <h2 id='heading--audio'>Audio <i>interfaces</i></h2>
 
-For applications which play or record audio, the [interface](/t/interface-management/6154) names have changed.
-Previously the [pulseaudio](/t/the-pulseaudio-interface/7906) interface was used for both playback and recording of audio. This has been replaced by [audio-playback](/t/the-audio-playback-interface/13089) and [audio-record](t/the-audio-record-interface/13090):
+For applications which play or record audio, the [interface](interface-management.md) names have changed.
+Previously the [pulseaudio](the-pulseaudio-interface.md) interface was used for both playback and recording of audio. This has been replaced by [audio-playback](the-audio-playback-interface.md) and [audio-record](t/the-audio-record-interface/13090):
 
 Example audio interface update: [Xonotic](https://github.com/snapcrafters/xonotic/pull/6)
 
@@ -180,7 +180,7 @@ Application publishers who believe `audio-record` *should* be automatically conn
 
 <h2 id='heading--version'>Version scripts</h2>
 
-The top level `version-script` option has been [deprecated](/t/deprecation-notice-10/12463) in favour of `adopt-info`. This requires that you specify `adopt-info` with a reference to the part in which the version data (and some other metadata) may be set.
+The top level `version-script` option has been [deprecated](deprecation-notice-10.md) in favour of `adopt-info`. This requires that you specify `adopt-info` with a reference to the part in which the version data (and some other metadata) may be set.
 
 Within the `parts` section, use `snapcraftctl set-version` to define the snapcraft project version number used at build time.
 
@@ -196,7 +196,7 @@ Example replacing _version-script_ with _adopt-info_: [Cointop](https://github.c
 +      snapcraftctl set-version $(git rev-parse --short HEAD)
 ```
 
-See [Using external metadata](/t/using-external-metadata/4642) for further details.
+See [Using external metadata](using-external-metadata.md) for further details.
 
 <h2 id='#heading--name'>Plugin name changes</h2>
 
@@ -238,7 +238,7 @@ The following plugins have changed their syntax across Snapcraft releases.
 
 ### npm
 
-The [npm plugin](/t/the-npm-plugin/17591) uses `npm-node-version` instead of `node-engine` to specify the version of upstream npm to be used at build time.
+The [npm plugin](the-npm-plugin.md) uses `npm-node-version` instead of `node-engine` to specify the version of upstream npm to be used at build time.
 
 Example npm plugin syntax change: [wethr](https://github.com/snapcrafters/wethr/commit/678ac026fb03d42925eb585f376245ee073747ad)
 
@@ -251,7 +251,7 @@ Example npm plugin syntax change: [wethr](https://github.com/snapcrafters/wethr/
 
 ### autotools
 
-The [Autotools plugin](/t/the-autotools-plugin/8616) has migrated options from `configflags` to `autotools-configure-parameters`.
+The [Autotools plugin](the-autotools-plugin.md) has migrated options from `configflags` to `autotools-configure-parameters`.
 
 Example Autotools plugin syntax changes: [Inadyn](https://github.com/snapcrafters/inadyn/commit/ba4f114eb07a3295e40798869c9cf7ce476e8037)
 
@@ -294,7 +294,7 @@ Example update adding explicit paths: [wethr](https://github.com/snapcrafters/we
 
 <h3 id='heading--command-chain'>command-chain</h3>
 
-Rather than specify `command` followed by a long list of space-separated executables, they can now be listed with the [command-chain](/t/snapcraft-app-and-service-metadata/8335#heading--command-chain) option:
+Rather than specify `command` followed by a long list of space-separated executables, they can now be listed with the [command-chain](snapcraft-app-and-service-metadata.md#heading--command-chain) option:
 
 Example of command being replaced by command-chain: [Atom](https://github.com/snapcrafters/atom/pull/64)
 

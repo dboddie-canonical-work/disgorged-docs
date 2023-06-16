@@ -10,4 +10,4 @@ _list-registered_ was simply an alias for _registered_.
 
 _introduced in snapcraft 4.0_
 
-See [Deprecation notices](/t/deprecation-notices/8396)  for further announcements.
+See [Deprecation notices](deprecation-notices.md)  for further announcements.

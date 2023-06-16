@@ -4,7 +4,7 @@
 
 # Data locations
 
-Most snaps use strict confinement to isolate both their execution environments and their data from your system (see [Snap Confinement](/t/snap-confinement/6233) for further details).
+Most snaps use strict confinement to isolate both their execution environments and their data from your system (see [Snap Confinement](snap-confinement.md) for further details).
 
 This confinement is an important security feature, but it can affect how and where you access a snap's files, including:
 
@@ -12,7 +12,7 @@ This confinement is an important security feature, but it can affect how and whe
 - user documents
 - internal databases
 
-A snap which needs user-access to files should use an [interface](/t/interface-management/6154), such as the [home interface](/t/the-home-interface/7838), to bridge this confinement gap.
+A snap which needs user-access to files should use an [interface](interface-management.md), such as the [home interface](the-home-interface.md), to bridge this confinement gap.
 
 But it can also be helpful to understand how snaps operate on and access data, even without an interface, and this is outlined below:
 
@@ -26,24 +26,24 @@ But it can also be helpful to understand how snaps operate on and access data, e
 
 <h2 id='heading--installation'>Snap installation</h2>
 
-When a user [installs a snap](/t/getting-started/3876#heading--install-snap) from the [Snap Store](https://snapcraft.io/store), the following happens:
+When a user [installs a snap](https://snapcraft.io/docs/quickstart-guide#heading--install-snap) from the [Snap Store](https://snapcraft.io/store), the following happens:
 
-1. The [snapd services](/t/glossary/14612#heading--snapd) downloads the snap as a single file – a compressed SquashFS archive with a _.snap_ suffix.
-1. The snap file is uncompressed and mounted as a read-only filesystem under _/snap._   See [The snap format](/t/the-snap-format/698) for further details on what is included in a snap.
+1. The [snapd services](glossary.md#heading--snapd) downloads the snap as a single file – a compressed SquashFS archive with a _.snap_ suffix.
+1. The snap file is uncompressed and mounted as a read-only filesystem under _/snap._   See [The snap format](the-snap-format.md) for further details on what is included in a snap.
 
 By design, the read-only filesystem cannot provide a persistent experience between application launches, which is why snaps also have writable parts for system data and for user data.
 
 <h2 id='heading--system'>System data</h2>
 
-Within the snap environment, [environment variables](/t/environment-variables/7983) are used to reference different accessible locations.  The following variables and default referenced locations are used to store system data:
+Within the snap environment, [environment variables](environment-variables.md) are used to reference different accessible locations.  The following variables and default referenced locations are used to store system data:
 
 * **SNAP_COMMON**: `/var/snap/<snap name>/common`
-This directory is owned and writable by root and is used to store data that is common across multiple [revisions](/t/glossary/14612#heading--revision) of the snap (e.g.: revision 6, revision 7, etc.).
+This directory is owned and writable by root and is used to store data that is common across multiple [revisions](glossary.md#heading--revision) of the snap (e.g.: revision 6, revision 7, etc.).
 
 * **SNAP_ DATA**: `/var/snap/<snap name>/<revision number>`
 This location it is also used to store data, mostly information utilised by background application and services, for logging, and other tasks that require persistence between snap launches.
 
-A [snapshot](/t/snapshots/9468) of `SNAP_DATA` and `SNAP_COMMON` is created and restored when performing a snap update (refresh) or revert operation. The contents of `SNAP_DATA` is specific to the snap revision, while the contents of `SNAP_COMMON` is applicable to all revisions and will overwrite the contents of `SNAP_COMMON` when restored. See [What a snapshot stores](/t/snapshots/9468#heading--what-is-stored) for more details.
+A [snapshot](https://snapcraft.io/docs/snapshots) of `SNAP_DATA` and `SNAP_COMMON` is created and restored when performing a snap update (refresh) or revert operation. The contents of `SNAP_DATA` is specific to the snap revision, while the contents of `SNAP_COMMON` is applicable to all revisions and will overwrite the contents of `SNAP_COMMON` when restored. See [What a snapshot stores](https://snapcraft.io/docs/snapshots#heading--what-is-stored) for more details.
 
 <h2 id='heading--user'>User data</h2>
 
@@ -85,7 +85,7 @@ There are several other directories you should be aware of:
 * **`/var/lib/snapd/snaps`**
  Contains all the versions of snaps installed on your system.
 * **`/var/lib/snapd/snapshots/`**
-  Contains both the manually generated and automatically generated [snapshots](/t/snapshots/9468).
+  Contains both the manually generated and automatically generated [snapshots](https://snapcraft.io/docs/snapshots).
 
 
 <h2 id='heading--delete'>Deleting a snap</h2>
@@ -93,9 +93,9 @@ There are several other directories you should be aware of:
 When deleting and removing a snap from a system, the following will happen:
 
 * The snap will be unmounted and no longer shown under `/snap`.
-* The data under `/var/snap/<snap name>/` and `/home/<username>/snap/` will be deleted. However, a copy is be retained as a [snapshot](/t/snapshots/9468) for 30-days (except on Ubuntu Core systems), allowing data to be restored or manually retrieved.
+* The data under `/var/snap/<snap name>/` and `/home/<username>/snap/` will be deleted. However, a copy is be retained as a [snapshot](https://snapcraft.io/docs/snapshots) for 30-days (except on Ubuntu Core systems), allowing data to be restored or manually retrieved.
 
-[Snapshot management](/t/snapshots/9468) can be used to restore data, or unzip the archives, and only copy the data you consider necessary. With the right permissions, you can also create your own backup routine, which copies the important data like application databases, configurations or similar content to a backup path.
+[Snapshot management](https://snapcraft.io/docs/snapshots) can be used to restore data, or unzip the archives, and only copy the data you consider necessary. With the right permissions, you can also create your own backup routine, which copies the important data like application databases, configurations or similar content to a backup path.
 
 To remove a snap without generating a snapshot, use the additional ‘–purge’ argument:
 

@@ -4,9 +4,9 @@
 
 # Architectures
 
-By default, [Snapcraft](/t/snapcraft-overview/8940) builds a snap to run on the same architecture as the build environment. This behaviour can be modified with an optional root `architectures` keyword in the snap's [snapcraft.yaml](/t/the-snapcraft-format/8337).
+By default, [Snapcraft](snapcraft-overview.md) builds a snap to run on the same architecture as the build environment. This behaviour can be modified with an optional root `architectures` keyword in the snap's [snapcraft.yaml](the-snapcraft-yaml-schema.md).
 
-Architecture features and syntax are dependent on which [base](/t/base-snaps/11198) is being used, as outlined below:
+Architecture features and syntax are dependent on which [base](base-snaps.md) is being used, as outlined below:
 - [base: core22](#heading--core22)
 - [base: core20 | core18 | core](#heading--core20-core18)
 
@@ -119,7 +119,7 @@ architectures:
 
 - valid architectures include `arm64`, `armhf`, `amd64`, `i386`, `ppc64el`, and `s390x`
 - snaps using a base of `core` and `core18` can additionally support `i386`
-- support for `i386` was removed in `core20` (see [Migrating bases](/t/migrating-bases/23455#heading--arch) for details)
+- support for `i386` was removed in `core20` (see [Migrating bases](migrating-between-bases.md#heading--arch) for details)
 - the default value for `run-on` is the value of `build-on`
 - `run-on:` supports a value of `all` to denote a snap that can run everywhere (e.g. a snap that is only shell scripts or python)
 - if the value list is a single item, it can be simplified to a scalar (e.g. `build-on: amd64`)
@@ -276,4 +276,4 @@ Rather than manage build revisions separately, a build-set's revisions can be ma
 
 For example,  without `build-error: ignore`, and given a build set of `[amd64, i386, armhf]`. If the `armhf` build fails, the entire build-set is considered to have failed, regardless of whether or not `amd64` and `i386` builds succeeded.
 
-Even without local access to a specific hardware architecture, `snapcraft remote-build` enables anyone to run a multi-architecture snap build process on remote servers using [Launchpad](https://launchpad.net/). See [Remote build](/t/remote-build/14400) for more details.
+Even without local access to a specific hardware architecture, `snapcraft remote-build` enables anyone to run a multi-architecture snap build process on remote servers using [Launchpad](https://launchpad.net/). See [Remote build](remote-build.md) for more details.

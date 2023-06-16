@@ -6,7 +6,7 @@
 
 The `audio-record` interface allows an application to access your audio recording hardware, such as a microphone, via your system's audio service, such as PulseAudio. It's disabled by default.
 
-This interface is a companion interface to the [audio-playback](/t/the-audio-playback-interface/13089) interface, and is not intended to be used without it.
+This interface is a companion interface to the [audio-playback](the-audio-playback-interface.md) interface, and is not intended to be used without it.
 
 <h2 id='heading--example'>Example</h2>
 
@@ -18,7 +18,7 @@ $ sudo snap connect obs-studio:audio-record
 
 [note type="positive" status="Interface documentation"]
 
-See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+See [Interface management](interface-management.md) and [Supported interfaces](supported-interfaces.md) for further details on how interfaces are used.
 [/note]
 
 ---
@@ -27,7 +27,7 @@ See [Interface management](/t/interface-management/6154) and [Supported interfac
 
 **Auto-connect**: no
 
-The design of this interface is based on the principle that the slot implementation of the audio service, such as [PulseAudio](/t/the-pulseaudio-interface/7906), queries whether its audio-record slot is connected, leaving the audio service to mediate recording if it is.
+The design of this interface is based on the principle that the slot implementation of the audio service, such as [PulseAudio](the-pulseaudio-interface.md), queries whether its audio-record slot is connected, leaving the audio service to mediate recording if it is.
 
 On systems with snapd integration, PulseAudio's mediation is limited and will only verify that the *snap* is connected to `audio-record` and not if the specific snap command plugs the interface.
 

@@ -6,7 +6,7 @@
 
 The `snapcraft metrics` command is used to track installation and usage statistics for snaps published with your developer account.
 
-A selection of metrics are also visible from the [Snap Store](https://snapcraft.io/store) web UI. See [Snap Store metrics](/t/snap-store-metrics/12556) for details.
+A selection of metrics are also visible from the [Snap Store](https://snapcraft.io/store) web UI. See [Snap Store metrics](https://snapcraft.io/docs/snap-store-metrics) for details.
 
 To ensure you have the correct and updated permissions to access _metrics_, we recommend using `snapcraft logout` and `snapcraft login` the first time this feature is used. See [Credentials](#heading--credentials) for more details.
 

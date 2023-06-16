@@ -29,7 +29,7 @@ With *snapcraft*, it’s one command to produce a bundle that works anywhere and
 
 Ready to get started? By the end of this guide, you'll understand how to make a snap of your app that can be published in the [Snap Store](https://snapcraft.io/store), showcasing it to millions of Linux users.
 
-> ℹ For a brief overview of the snap creation process, including how to install *snapcraft* and how it's used, see [Snapcraft overview](/t/snapcraft-overview/8940). For a more comprehensive breakdown of the steps involved, take a look at [Creating a snap](/t/creating-a-snap/6799).
+> ℹ For a brief overview of the snap creation process, including how to install *snapcraft* and how it's used, see [Snapcraft overview](snapcraft-overview.md). For a more comprehensive breakdown of the steps involved, take a look at [Creating a snap](creating-a-snap.md).
 
 ## Getting started
 
@@ -117,7 +117,7 @@ parts:
     build-packages: [g++]
 ```
 
-For more details on CMake-specific metadata, see [The CMake plugin](/t/the-cmake-plugin/8621).
+For more details on CMake-specific metadata, see [The CMake plugin](the-cmake-plugin.md).
 
 #### Apps
 
@@ -135,7 +135,7 @@ If your command name matches the snap  `name`, users will be able run the comman
 
 If your application is intended to run as a service you simply add the line `daemon: simple` after the command keyword. This will automatically keep the service running on install, update and reboot.
 
-You can request an alias on the  [Snapcraft forum](https://forum.snapcraft.io/t/process-for-reviewing-aliases-auto-connections-and-track-requests/455) if your command name and snap name do not match but you don’t want your command prefixed. These aliases are set up automatically when your snap is installed from the Snap Store.
+You can request an alias on the  [Snapcraft forum](https://snapcraft.io/docs/process-for-aliases-auto-connections-and-tracks) if your command name and snap name do not match but you don’t want your command prefixed. These aliases are set up automatically when your snap is installed from the Snap Store.
 
 ### Building the snap
 
@@ -212,4 +212,4 @@ $ snapcraft upload --release=edge mymoossnap_*.snap
 
 If you’re happy with the result, you can commit the snapcraft.yaml to your GitHub repo and [turn on automatic builds](https://build.snapcraft.io) so any further commits automatically get released to edge, without requiring you to manually build locally.
 
-Congratulations! You've just built and published your first Go snap. For a more in-depth overview of the snap building process, see [Creating a snap](/t/creating-a-snap/6799).
+Congratulations! You've just built and published your first Go snap. For a more in-depth overview of the snap building process, see [Creating a snap](creating-a-snap.md).

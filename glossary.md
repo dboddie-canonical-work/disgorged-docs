@@ -25,7 +25,7 @@ dangerous
 
 There are a significant number of terms and definitions that are unique to the snap, snapd, and snapcraft ecosystem. This page defines the terminology and other terms touched by these tools and links to further information when required.
 
-If you're new to using snaps, take a look at [Getting started](/t/getting-started/3876), and if you're looking to build your own snaps, take a look at the [Snapcraft overview](/t/snapcraft-overview/8940).
+If you're new to using snaps, take a look at [Getting started](https://snapcraft.io/docs/quickstart-guide), and if you're looking to build your own snaps, take a look at the [Snapcraft overview](snapcraft-overview.md).
 
 ## Terms and definitions
 
@@ -41,19 +41,19 @@ An assertion is a digitally signed document that either verifies the validity of
 
 Snapcraft, snapd, Ubuntu Core and the Snap Store all use assertions to handle a variety of functions and processes, including authentication, policy setting, identification and validation.
 
-See [Assertions](/t/assertions/6155) for more details.
+See [Assertions](https://snapcraft.io/docs/assertions) for more details.
 
 <h3 id='heading--base'>base</h3>
 
 A  base is a special kind of snap that provides a run-time environment with a minimal set of libraries that are common to most applications. They’re transparent to users, but they need to be considered, and specified, when building a snap.
 
-See [Base snaps](/t/base-snaps/11198) for more details.
+See [Base snaps](base-snaps.md) for more details.
 
 <h3 id='heading--branch'>branch</h3>
 
 A branch is an optional finer subdivision of a channel for a published snap that allows for the creation of a short-lived sequences of snaps that can be pushed on demand by snap developers to help with fixes or temporary experimentation.
 
-See [Branches](/t/channels/551#heading--branches) for more details.
+See [Branches](https://snapcraft.io/docs/channels#heading--branches) for more details.
 
 <h3 id='heading--brand-store'>brand store</h3>
 
@@ -63,43 +63,43 @@ See [dedicated Snap Store](#heading--dedicated)
 
 Channels define which release of a snap is installed and tracked for updates. They consist of, and are subdivided by, tracks (`latest`, or developer defined, e.g `1.0`), risk-levels (stable, candidate, beta and edge), and optional branches. The _tracking_ value for an installed snap shows which channel is being installed and followed.
 
-See [Channels](/t/channels/551) for more details.
+See [Channels](https://snapcraft.io/docs/channels) for more details.
 
 <h3 id='heading--classic'>classic</h3>
 
 _Classic_ is a snap confinement level that allows access to your system’s resources in much the same way traditional packages do. It's used sparingly and only after a manual review.
 
-See [Snap confinement](/t/snap-confinement/6233) for more details.
+See [Snap confinement](snap-confinement.md) for more details.
 
 <h3 id='heading--confinement'>confinement</h3>
 
 A snap’s confinement level is the degree of isolation it has from your system. There are three levels of snap confinement: strict, classic and devmode. The majority of snaps use _strict_ confinement, and run in complete isolation up to a level of minimal access that's always deemed safe, or through access given via explicit interface connections.
 
-See [Snap confinement](/t/snap-confinement/6233) for more details.
+See [Snap confinement](snap-confinement.md) for more details.
 
 <h3 id='heading--core'>core</h3>
 
 _core_ is a base snap built from [Ubuntu 16.04 LTS](http://releases.ubuntu.com/16.04/). It's different from _core16_ (see below) because it bundles _snapd_ and its associated tools whereas core16 does not.
 
-See [Base snaps](/t/base-snaps/11198) for more details.
+See [Base snaps](base-snaps.md) for more details.
 
 <h3 id='heading--core16'>core16</h3>
 
 _core16_ is still under development, and is a base snap built from [Ubuntu 16.04 LTS](http://releases.ubuntu.com/16.04/). It's different from _core_ (see above) because it does not include _snapd_ and its associated tools.
 
-See [Base snaps](/t/base-snaps/11198) for more details.
+See [Base snaps](base-snaps.md) for more details.
 
 <h3 id='heading--core18'>core18</h3>
 
-_core18_ is a base snap built from [Ubuntu 18.04 LTS](http://releases.ubuntu.com/18.04/). It's the current standard base for snap building and is the recommended base for the majority of snaps. It’s what the [snapcraft init](/t/snapcraft-overview/8940#heading--creating-snapcraft) command includes when generating a new project’s template  *snapcraft.yaml* .
+_core18_ is a base snap built from [Ubuntu 18.04 LTS](http://releases.ubuntu.com/18.04/). It's the current standard base for snap building and is the recommended base for the majority of snaps. It’s what the [snapcraft init](snapcraft-overview.md#heading--creating-snapcraft) command includes when generating a new project’s template  *snapcraft.yaml* .
 
-See [Base snaps](/t/base-snaps/11198) for more details.
+See [Base snaps](base-snaps.md) for more details.
 
 <h3 id='heading--core20'>core20</h3>
 
 _core20_ is under active development. It's a base snap built from [ Ubuntu 20.04 LTS (Focal Fossa)](https://releases.ubuntu.com/20.04/), released April 23, 2020.
 
-See [Base snaps](/t/base-snaps/11198) for more details on base snaps.
+See [Base snaps](base-snaps.md) for more details on base snaps.
 
 <h3 id='heading--dedicated'>Dedicated Snap Store</h3>
 
@@ -114,7 +114,7 @@ See [Store overview](https://core.docs.ubuntu.com/en/build-store/#brand-stores) 
 
 _devmode_ is a snap confinement level used by snap developers when creating their snaps. With *devmode*, a snap runs as a strictly confined snap with full access to system resources, and produces debug output to identify unspecified interfaces.
 
-See [Snap confinement](/t/snap-confinement/6233) for more details.
+See [Snap confinement](snap-confinement.md) for more details.
 
 <h3 id='heading--epoch'>epoch</h3>
 
@@ -122,33 +122,33 @@ Epochs enable snap developers to control how users receive a new application rel
 
 When a new release breaks data compatibility with an older version, incrementing the epoch in the new release stops old users automatically refreshing to the new version.
 
-See [Epochs](/t/snap-epochs/10316) for more details.
+See [Epochs](snap-epochs.md) for more details.
 
 <h3 id='heading--extension'>extension</h3>
 
 Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. There are extensions to help with the packaging of both Gnome and KDE Plasma applications.
 
-See [Snapcraft extensions](/t/snapcraft-extensions/13486) for more details.
+See [Snapcraft extensions](snapcraft-extensions.md) for more details.
 
 <h3 id='heading--gadget'>gadget</h3>
 
 A gadget is a device or other deployment running Ubuntu Core alongside a vendor-specified, managed and maintained set of snaps. A gadget could be a router, for example, a home automation device or even a VM cloud instance. Its properties are defined within an embedded _gadget snap_.
 
-See [The gadget snap](/t/the-gadget-snap/696) for more details.
+See [The gadget snap](gadget-snaps.md) for more details.
 
 <h3 id='heading--hook'>hook</h3>
 
 A hook is an executable that runs within a snap’s confined environment when a certain action occurs. Actions include snap installation and removal, changes to its configuration or connection state, and before or after a refresh.
 
-For more details, see [Supported snap hooks](/t/supported-snap-hooks/3795).
+For more details, see [Supported snap hooks](supported-snap-hooks.md).
 
 <h3 id='heading--interfaces'>interface</h3>
 
 An interfaces enables resources from one snap to be shared with another and with the system. Interfaces require a connection, which is commonly made automatically, or manually with the `snap connect` command.
 
-For a snap to use an interface, its developer needs to have first defined its corresponding plugs and slots within a snap’s [snapcraft.yaml](/t/creating-snapcraft-yaml/11666) file.
+For a snap to use an interface, its developer needs to have first defined its corresponding plugs and slots within a snap’s [snapcraft.yaml](creating-snapcraft-yaml.md) file.
 
-See [Interface management](/t/interface-management/6154) for more details.
+See [Interface management](interface-management.md) for more details.
 
 <h3 id='heading--layout'>Launchpad</h3>
 
@@ -156,7 +156,7 @@ Launchpad is a code collaboration and secure build system for open source projec
 
 Launchpad provides the ability to build your snap for multiple architectures - x86, ARM, RISC-V, POWER, s390. If you use Launchpad for snap building then you need to provide it with your source code and snapcraft. It will build and publish new revisions of your snap, which you can test and release. If you do not already have a good multi-arch CI/CD system up and running then we recommend you use Launchpad to support all devices with your snap.
 
-See [Remote build](/t/remote-build/14400) for more details.
+See [Remote build](remote-build.md) for more details.
 
 <h3 id='heading--layout'>layout</h3>
 
@@ -164,13 +164,13 @@ Layouts help snap developers make snap-confined elements accessible from locatio
 
 They cannot be used to expose elements to non-permitted locations on the host environment (such as exposing a file to `/etc/` on the host filesystem).
 
-See [Snap layouts](/t/snap-layouts/7207) for more details.
+See [Snap layouts](snap-layouts.md) for more details.
 
 <h3 id='heading--lxd'>LXD</h3>
 
 [LXD](https://linuxcontainers.org/lxd/introduction/) is a next generation system container manager. It offers a user experience similar to virtual machines but using Linux containers instead. It can be used by the _snapcraft_ command to isolate the build process from the host system.
 
-See [Building with LXD](/t/build-on-lxd/4157) for details.
+See [Building with LXD](build-providers.md) for details.
 
 <h3 id='heading--model'>Model</h3>
 
@@ -184,13 +184,13 @@ Each machine where snaps are installed has its own sense of type - a model. This
 
 By default, the  _snapcraft_ command uses Multipass to isolate the build process from the host system.
 
-See [Building your snap](/t/snapcraft-overview/8940#heading--building-your-snap) for further details.
+See [Building your snap](snapcraft-overview.md#heading--building-your-snap) for further details.
 
 <h3 id='heading--parallel-installs'>parallel installs</h3>
 
 Parallel installs enable you to run multiple instances of the same snap on the same system. Each instance is completely isolated from all other instances, including its name, configuration, interface connections, data locations, services, applications and aliases.
 
-See [Parallel installs](/t/parallel-installs/7679) for more information.
+See [Parallel installs](https://snapcraft.io/docs/parallel-installs) for more information.
 
 <h3 id='heading--part'>part</h3>
 
@@ -204,7 +204,7 @@ A platform snap contains the parts, packages, interface connections and environm
 
 Examples include kde-frameworks to provide KDE Plasma compatibility, and WINE to help snaps more easily run Microsoft Windows executables.
 
-A platform snap cannot be installed directly by users. They are instead invoked by snap developers as the [default-provider](/t/the-content-interface/1074#heading--default) in a [content interface](/t/the-content-interface).
+A platform snap cannot be installed directly by users. They are instead invoked by snap developers as the [default-provider](the-content-interface.md#heading--default) in a [content interface](/t/the-content-interface).
 
 <h3 id='heading--preseeding'>preseeding</h3>
 
@@ -220,13 +220,13 @@ Snaps update automatically, and by default, the snapd daemon checks for updates 
 
 When, and how often, these updates occur can be modified with the snap command. Updates can be set to occur on Friday at midnight, for example, or for specific days of the month, such as only the third Monday, or even the last Friday of the month, between 23:00 to 01:00 the next day.
 
-See [Managing updates](/t/managing-updates/7022) for further details.
+See [Managing updates](https://snapcraft.io/docs/managing-updates) for further details.
 
 <h3 id='heading--remote-build'>remote build</h3>
 
 Remote build is a feature in [Snapcraft](https://snapcraft.io/docs/snapcraft-overview) (from  *[Snapcraft 3.9+](/t/snapcraft-release-notes)* onwards) that enables anyone to run a multi-architecture snap build process on remote servers using [Launchpad](https://launchpad.net/). With remote build, you can build snaps for hardware you don’t have access to and free up your local machine for other tasks.
 
-See [Remote build](/t/remote-build/14400) for further details.
+See [Remote build](remote-build.md) for further details.
 
 <h3 id='heading--revision'>revision</h3>
 
@@ -251,7 +251,7 @@ In the above example output, the latest/edge snap has a revision of `26758` and 
 
 However, neither the revision number (nor its version) enforce an order of release. The local system will simply attempt to install whatever snap is recommended by the publisher in the channel being tracked.
 
-See [Revisions](/t/revisions/35613) for further details.
+See [Revisions](revisions.md) for further details.
 
 <h3 id='heading--seeding'>seeding</h3>
 
@@ -284,13 +284,13 @@ A snap series **is not correlated** to an Ubuntu series, such as _18_ for Ubuntu
 
 Snaps are app packages for desktop, cloud and IoT that are easy to install, secure, cross-platform and dependency-free, and _snap_ is both the command line interface and the application package format. The command is used to install and remove snaps and interact with the wider snap ecosystem.
 
-See [Getting started](/t/getting-started/3876) for more details.
+See [Getting started](https://snapcraft.io/docs/quickstart-guide) for more details.
 
 <h3 id='heading--snapcraft'>snapcraft</h3>
 
 Snapcraft is both the command and the framework used to build your own snaps. The command and framework are cross-platform and can help you to easily build and publish your snaps to the [Snap Store](https://snapcraft.io/store)
 
-See [Snapcraft overview](/t/snapcraft-overview/8940) for more details.
+See [Snapcraft overview](snapcraft-overview.md) for more details.
 
 <h3 id='heading--snapd'>snapd</h3>
 
@@ -312,7 +312,7 @@ A  *snapshot*  is a copy of the user, system and configuration data stored by  *
 
 Snapshots are generated manually with the  `snap save`  command and automatically when a snap is removed. A snapshot can be used to backup the state of your snaps, revert snaps to a previous state and to restore a fresh snapd installation to a previously saved state.
 
-See [Snapshots](/t/snapshots/9468) for further details.
+See [Snapshots](https://snapcraft.io/docs/snapshots) for further details.
 
 <h3 id='heading--snap-store'>Snap Store</h3>
 
@@ -330,17 +330,17 @@ See [https://github.com/snapcore/spread](https://github.com/snapcore/spread) for
 
 _Strict_ is the default snap confinement level. It runs snaps in complete isolation, and consequently, with no access your files, network, processes or any other system resource without requesting specific access via an interface.
 
-See [Snap confinement](/t/snap-confinement/6233) for more details.
+See [Snap confinement](snap-confinement.md) for more details.
 
 <h3 id='heading--tracks'>tracks</h3>
 
 Tracks enable snap developers to publish multiple supported releases of their application under the same snap name. They are one of the levels of channel subdivision.
 
-See [Tracks](/t/channels/551#heading--tracks) for more details.
+See [Tracks](https://snapcraft.io/docs/channels#heading--tracks) for more details.
 
 <h3 id='heading--transitional-interfaces'>Transitional interface</h3>
 
-A _transitional interface_ is an [interface](/t/interface-management/6154) that can be used by a trusted snap to access traditional Linux desktop environments that were not designed to integrate with [snap confinement](/t/snap-confinement/6233). These interfaces will become deprecated as replacement or modified technologies that enforce strong application isolation become available.
+A _transitional interface_ is an [interface](interface-management.md) that can be used by a trusted snap to access traditional Linux desktop environments that were not designed to integrate with [snap confinement](snap-confinement.md). These interfaces will become deprecated as replacement or modified technologies that enforce strong application isolation become available.
 
 <h3 id='heading--ubuntu-core'>Ubuntu Core</h3>
 
@@ -362,4 +362,4 @@ The version string typically reflects the general release version of a snap's pr
 
 The version string for the [Nextcloud snap](https://snapcraft.io/nextcloud) in its latest/stable channel, for example, tracks the version of the latest stable release, such as `20.0.7`. The version string for Nextcloud in its latest/edge channel represents its source code branch and build date, such as `master-2021-03-09`.
 
-See [Getting started](https://forum.snapcraft.io/t/getting-started/3876) for more details.
+See [Getting started](https://snapcraft.io/docs/quickstart-guide) for more details.

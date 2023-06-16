@@ -19,10 +19,10 @@ Our How-to guides help you achieve an end result but may require you to understa
 
 | **How-to-guides** | Get stuff done|
 |--|--|
-| [Snapcraft quickstart](/t/snapcraft-quickstart/32983) | The steps required to create , build and publish a snap  |
-| [Build a checklist](/t/snapcraft-checklist/10926) | Gather everything you need to build a snap |
-| [Iterate over a build](/t/iterating-over-a-build/12143) |  Check build state, view logs, and probe  environment variables |
-| [Classic confinement](/t/34416) | Build snaps with classic confinement |
+| [Snapcraft quickstart](snapcraft-quickstart.md) | The steps required to create , build and publish a snap  |
+| [Build a checklist](snapcraft-checklist.md) | Gather everything you need to build a snap |
+| [Iterate over a build](iterating-over-a-build.md) |  Check build state, view logs, and probe  environment variables |
+| [Classic confinement](how-to-guides-for-classic-confinement.md) | Build snaps with classic confinement |
 
 Alternatively, our tutorials section contain step-by-step tutorials to help outline what Snapcraft is capable of while helping you achieve specific aims, such as installing Snapcraft and building your first snap.
 

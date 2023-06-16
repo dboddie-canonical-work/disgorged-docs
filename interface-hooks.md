@@ -4,9 +4,9 @@
 
 # Interface hooks
 
-Interface hooks are [hooks](/t/supported-snap-hooks/3795) that can be executed when an interface is either connected or disconnected via the interface's plugs and slots mechanism. They can be used to read or write attributes from a connection and, for example, acquire new resources, update internal options or update databases.
+Interface hooks are [hooks](supported-snap-hooks.md) that can be executed when an interface is either connected or disconnected via the interface's plugs and slots mechanism. They can be used to read or write attributes from a connection and, for example, acquire new resources, update internal options or update databases.
 
-> ⓘ An interface consists of a connection between a slot and a plug. The slot is the provider of the interface while the plug is the consumer, and a slot can support multiple plug connections. For more details, see [Interface management](/t/interface-management/6154).
+> ⓘ An interface consists of a connection between a slot and a plug. The slot is the provider of the interface while the plug is the consumer, and a slot can support multiple plug connections. For more details, see [Interface management](interface-management.md).
 
 ## Connect hooks
 
@@ -27,7 +27,7 @@ If an interface connection fails, all changes are undone and an *undo* hook is r
 - `unprepare-slot-<slotname>`
 - `unprepare-plug-<plugname>`
 
-Interface hooks can read the attributes of the affected plug and slot by using the *snapctl* command, as defined by the snap's  [snap.yaml](/t/the-snap-format/698).
+Interface hooks can read the attributes of the affected plug and slot by using the *snapctl* command, as defined by the snap's  [snap.yaml](the-snap-format.md).
 
 When executed by slot hooks:
 - `snapctl get :<slotname> <attribute name>` to read attributes of the local slot

@@ -4,7 +4,7 @@
 
 # Parts environment variables
 
-When building a part to construct a snap,  [Snapcraft](/t/snapcraft-overview/8940) creates the following sets of environment variables that can optionally be used by a part's build mechanism:
+When building a part to construct a snap,  [Snapcraft](snapcraft-overview.md) creates the following sets of environment variables that can optionally be used by a part's build mechanism:
 
 - [Locating directories](#heading--locating-directories)
   - [core | core18 | core20](#heading--locating-directories-core18-core20)
@@ -15,15 +15,15 @@ When building a part to construct a snap,  [Snapcraft](/t/snapcraft-overview/894
 - [Build flags](#heading--build-flags)
 - [Plugin variables](#heading--plugin-variables)
 
-Environment variables can be accessed via the [*override-*](/t/snapcraft-parts-metadata/8336) keywords with shell commands and [Scriptlets](/t/scriptlets/4892), or more generally within your project's build infrastructure.
+Environment variables can be accessed via the [*override-*](snapcraft-parts-metadata.md) keywords with shell commands and [Scriptlets](override-build-steps.md), or more generally within your project's build infrastructure.
 
-See [Adding parts](/t/adding-parts/11473) for a general overview of what parts are and how to use them, and for more details on how parts are built within the *snapcraft* environment, including build stages and the directories they use, see [Parts lifecycle](/t/parts-lifecycle/12231).
+See [Adding parts](adding-parts.md) for a general overview of what parts are and how to use them, and for more details on how parts are built within the *snapcraft* environment, including build stages and the directories they use, see [Parts lifecycle](parts-lifecycle.md).
 
-> ⓘ For the various environment variables available to running snap applications, see [Environment variables](/t/environment-variables/7983).
+> ⓘ For the various environment variables available to running snap applications, see [Environment variables](environment-variables.md).
 
 <h3 id='heading--locating-directories'>Locating directories</h3>
 
-See [Parts lifecycle](/t/parts-lifecycle/12231) and [Parts directories](/t/parts-lifecycle/12231#heading--parts-directories) for details on which directories are created and used when building a part.
+See [Parts lifecycle](parts-lifecycle.md) and [Parts directories](parts-lifecycle.md#heading--parts-directories) for details on which directories are created and used when building a part.
 
 <h4 id='heading--locating-directories-core18-core20'>core | core18 | core20</h4>
 
@@ -97,7 +97,7 @@ The following specific _build flags_ are also set:
 
 <h3 id='heading--plugin-variables'>Plugin variables</h3>
 
-A part's [plugin](/t/snapcraft-plugins/4284) can add its own set of environment variables, or expand on the above _build_ related flags.
+A part's [plugin](snapcraft-plugins.md) can add its own set of environment variables, or expand on the above _build_ related flags.
 
 The `build-environment` keyword can be used to either override the default environment variables or define new ones. Here is a basic example:
 
@@ -112,4 +112,4 @@ parts:
 ```
 The above example will override default flags and search for libraries in a non-standard path.
 
-For a complete list of environment variables, see [Environment variables exposed by Snapcraft](/t/environment-variables-that-snapcraft-exposes/7569).
+For a complete list of environment variables, see [Environment variables exposed by Snapcraft](environment-variables-that-snapcraft-exposes.md).

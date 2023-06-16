@@ -10,9 +10,9 @@ This plugin installs the specified version of *ant* and runs the configured buil
 
 `CLASSPATH` will be set to the list of jars in `${SNAP}/jar` and `bin/java` is available as a symlink to the installed version of OpenJDK.
 
-This plugin uses the common plugin keywords as well as those for "sources". For more information, see [Snapcraft parts metadata](/t/snapcraft-parts-metadata/8336).
+This plugin uses the common plugin keywords as well as those for "sources". For more information, see [Snapcraft parts metadata](snapcraft-parts-metadata.md).
 
-This plugin is only available to *core22* and *core18* based snaps. See [Base snaps](https://forum.snapcraft.io/t/base-snaps/11198) for details.
+This plugin is only available to *core22* and *core18* based snaps. See [Base snaps](base-snaps.md) for details.
 
 <h3 id='heading--core22'>base: core22 and base: core18</h3>
 
@@ -47,4 +47,4 @@ This plugin uses the following plugin-specific keywords:
 
 For examples, search [GitHub](https://github.com/search?q=path%3A**%2Fsnapcraft.yaml+maven&type=code) for projects already using the plugin.
 
-> ⓘ  This is a *snapcraft* plugin. See [Snapcraft plugins](/t/snapcraft-plugins/4284) and [Supported plugins](/t/supported-plugins/8080) for further details on how plugins are used.
+> ⓘ  This is a *snapcraft* plugin. See [Snapcraft plugins](snapcraft-plugins.md) and [Supported plugins](supported-plugins.md) for further details on how plugins are used.

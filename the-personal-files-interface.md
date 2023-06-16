@@ -6,8 +6,8 @@
 
 The `personal-files` interface provides access to the specified files in the user's home. This interface gives privileged access to the user's data.
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
-**[Super-privileged](/t/super-privileged-interfaces/34740)**: yes</br>
+**[Auto-connect](interface-management.md#heading--auto-connections)**: no</br>
+**[Super-privileged](super-privileged-interfaces.md)**: yes</br>
 **Transitional**: no</br>
 **Attributes**:</br>
   * `read` (plug): list of files and/or directories for read-only access (eg, '`read: [ $HOME/.file-read, $HOME/.dir-read ]`'
@@ -23,7 +23,7 @@ Snaps by default have access to everything under `$SNAP_USER_DATA` (eg, `~/snap/
 
 The `personal-files` interface is typically used to provide read-only access to top-level hidden data directories within a user's real home directory in order to support importing data from existing applications where the snap is the clear owner of the target directory.
 
-For distribution via the [Snap store](https://snapcraft.io/store), consumers of this interface require an approved [snap declaration](/t/process-for-aliases-auto-connections-and-tracks/455/). For acceptance, you will need to make a descriptive interface reference, as used by `snap connections|interfaces|connect|disconnect` commands.
+For distribution via the [Snap store](https://snapcraft.io/store), consumers of this interface require an approved [snap declaration](https://snapcraft.io/docs/process-for-aliases-auto-connections-and-tracks). For acceptance, you will need to make a descriptive interface reference, as used by `snap connections|interfaces|connect|disconnect` commands.
 
 For example, if a *foo* application is being packaged as a snap and its publisher wants the snap to import an existing configuration from `~/.config/foo` into `$SNAP_USER_DATA/.config/foo` (ie, `$HOME/.config/foo` within the snap's runtime environment or `~/snap/foo/<revision>/.config/foo`) on the host), the *snapcraft.yaml* could include the following:
 
@@ -51,4 +51,4 @@ With the above built snap, you would then be able to use the following to enable
 $ snap connect foo:dot-config-foo
 ```
 
-> ⓘ  This is a snap interface. See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+> ⓘ  This is a snap interface. See [Interface management](interface-management.md) and [Supported interfaces](supported-interfaces.md) for further details on how interfaces are used.

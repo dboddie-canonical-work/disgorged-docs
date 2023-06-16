@@ -4,19 +4,19 @@
 
 # Snapcraft installation and setup
 
-[Snapcraft](/t/snapcraft-overview/8940) is a command line tool that allows developers to build and publish their applications as snaps.
+[Snapcraft](snapcraft-overview.md) is a command line tool that allows developers to build and publish their applications as snaps.
 
 Snapcraft can be installed and used on any supported system, including various Linux distributions as well as the macOS and Windows operating systems.
 
 <h2 id='heading--store'>Installation from the Snap Store</h2>
 
-On Linux distributions [with snap support](/t/installing-snapd/6735), the easiest way to install *snapcraft* is via its snap:
+On Linux distributions [with snap support](https://snapcraft.io/docs/installing-snapd), the easiest way to install *snapcraft* is via its snap:
 
 ```
 sudo snap install snapcraft --classic
 ```
 
-The `--classic` argument is required because snapcraft uses [classic confinement](/t/snap-confinement/6233).
+The `--classic` argument is required because snapcraft uses [classic confinement](snap-confinement.md).
 
 <h2 id='heading--respository'>Repository version or snap</h2>
 

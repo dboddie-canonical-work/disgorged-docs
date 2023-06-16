@@ -22,7 +22,7 @@ See the [Portal API reference](https://flatpak.github.io/xdg-desktop-portal/port
 ## How to use portals in your snap
 
 1. **Use the Portal API's in your application**
-  Unlike regular [Snapcraft interfaces](/t/supported-interfaces/7744), *portals require applications to use a new API* in order to access resources. Toolkits like GTK 3 and Qt5, however, provide transparent support for portals. See [Portal support in GTK 3](https://docs.flatpak.org/en/latest/portals-gtk.html) or [Portal support in Qt5 and KDE](https://docs.flatpak.org/en/latest/portals-qt.html) for detailed information.
+  Unlike regular [Snapcraft interfaces](supported-interfaces.md), *portals require applications to use a new API* in order to access resources. Toolkits like GTK 3 and Qt5, however, provide transparent support for portals. See [Portal support in GTK 3](https://docs.flatpak.org/en/latest/portals-gtk.html) or [Portal support in Qt5 and KDE](https://docs.flatpak.org/en/latest/portals-qt.html) for detailed information.
 If your application is not using one of those toolkits, you will need to use the Portals API directly. See [the Portals API documentation](https://flatpak.github.io/xdg-desktop-portal/portal-docs.html) for more information.
 
 2. **Add the `desktop` interface to your snap**
@@ -43,7 +43,7 @@ If your application is not using one of those toolkits, you will need to use the
 
 <h2 id="heading--portal-vs-home">File chooser portal vs home interface<sup><a href=#heading--portal-vs-home>⚓</a></sup></h2>
 
-It is recommended to use the file chooser portal instead of the [`home`](/t/the-home-interface/7838) and [`removable-media`](/t/the-removable-media-interface/7910) interfaces for the following reasons:
+It is recommended to use the file chooser portal instead of the [`home`](the-home-interface.md) and [`removable-media`](the-removable-media-interface.md) interfaces for the following reasons:
 
 * The portal gives the user complete control over what exact files your application should access while the interfaces are all-or-nothing toggles.
 * The portal works with hidden files and folders in the home directory. If a user chooses a hidden file, the portal will give your application access to it. The `home` interface does not give your app access to hidden files and folders in the home directory for security reasons. Note that the `home` interface does give access to hidden files and folders elsewhere, just not in the home directory itself.
@@ -58,11 +58,11 @@ The FileChooser portal also contains a few bugs:
 
 * ["Executable" permissions are currently not retained](https://github.com/flatpak/xdg-desktop-portal/issues/517). All files will appear as non-executable to your application.
 * Support for selecting folders instead of files [has recently been merged](https://github.com/flatpak/xdg-desktop-portal/pull/456) and is not released yet. This will only work on distributions using `xdg-desktop-portal` > 1.8.0.
-* Currently, the files are mounted even if your application has access to the file using another interface. See [Improving XDG Desktop Support](https://forum.snapcraft.io/t/improving-xdg-desktop-portal-support/13035) for the current status on fixing this issue.
+* Currently, the files are mounted even if your application has access to the file using another interface. See [Improving XDG Desktop Support](https://snapcraft.io/docs/improving-xdg-desktop-portal-support) for the current status on fixing this issue.
 
 ## Known Limitations
 
-* `org.freedesktop.portal.Flatpak.Spawn` only works in a Flatpak. If your application needs to run abritrary binaries on the host system, you can use [classic confinement](/t/snap-confinement/6233).
+* `org.freedesktop.portal.Flatpak.Spawn` only works in a Flatpak. If your application needs to run abritrary binaries on the host system, you can use [classic confinement](snap-confinement.md).
 * Portal support depends on the version of `xdg-desktop-portal` in the host system. Older versions do not support all portals. [Repology](https://repology.org/project/xdg-desktop-portal/versions) shows what version of `xdg-desktop-portal` each distribution has and the [portals NEWS](https://github.com/flatpak/xdg-desktop-portal/blob/master/NEWS) file explains what portals each version supports.
 
-> ⓘ See [Desktop applications](/t/desktop-applications/13034) for more information on how to snap a desktop application.
+> ⓘ See [Desktop applications](desktop-applications.md) for more information on how to snap a desktop application.

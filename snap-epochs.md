@@ -19,7 +19,7 @@ Epochs require snap version _2.38+_.
 
 Applications and their data formats are constantly evolving, and this requires applications to periodically break data compatibility with older versions. When this happens, applications and users often need to carefully manage data migration from one version to another, and this is where epochs can help.
 
-By default, snaps have  an epoch of ‘0’. When a new version breaks data compatibility with this old version, incrementing the epoch in the new release stops those old users automatically refreshing to the new version. To do this, add the following to your snap’s [snapcraft.yaml](/t/the-snapcraft-format/8337):
+By default, snaps have  an epoch of ‘0’. When a new version breaks data compatibility with this old version, incrementing the epoch in the new release stops those old users automatically refreshing to the new version. To do this, add the following to your snap’s [snapcraft.yaml](the-snapcraft-yaml-schema.md):
 
 ```yaml
 epoch: 1
@@ -33,7 +33,7 @@ Epochs alone track the format used but do not automatically migrate user data be
 
 > ⓘ *snapd* does not track which users have accessed a snap, or whether a user’s home directory is still accessible, or even if a user’s home directory is located in `/home/<user>`. Similarly, epochs cannot automatically safeguard migrating version-dependent data in `$SNAP_COMMON` because, if a refresh fails, there’s no guaranteed way to retrieve the old data; `snap revert` will not bring the data back
 
-Your own data migration strategy could use [hooks](/t/supported-snap-hooks/3795) within your *snapcraft.yaml*, or rely on functionality within your application at run-time.
+Your own data migration strategy could use [hooks](supported-snap-hooks.md) within your *snapcraft.yaml*, or rely on functionality within your application at run-time.
 
 When you have confidence in a migration process, you can then label the new epoch with an asterisk (*) to indicate its compatibility with old data versions.
 
@@ -42,9 +42,9 @@ For example, to create a snap that says it knows how to read both epoch 0 data a
 ```yaml
 epoch: 1*
 ```
-The resulting snap acts as a bridge between epoch 0 and epoch 1. Users of the old version migrate automatically when they refresh. They will then upgrade to any newer releases in epoch 1, just like any new user. You can use [revert](/t/getting-started/3876#heading--revert) to switch back to releases from a previous epoch, discarding any data changes done by the latest revision.
+The resulting snap acts as a bridge between epoch 0 and epoch 1. Users of the old version migrate automatically when they refresh. They will then upgrade to any newer releases in epoch 1, just like any new user. You can use [revert](https://snapcraft.io/docs/quickstart-guide#heading--revert) to switch back to releases from a previous epoch, discarding any data changes done by the latest revision.
 
-If users need to test data compatibility with the new epoch version, and the snap is not a `confinement: classic` snap, you can install both epoch 0 and epoch 1 snaps at the same time using [Parallel installs](/t/parallel-installs/7679/8). This allows your users to migrate only when they have the confidence to do so.
+If users need to test data compatibility with the new epoch version, and the snap is not a `confinement: classic` snap, you can install both epoch 0 and epoch 1 snaps at the same time using [Parallel installs](https://snapcraft.io/docs/parallel-installs). This allows your users to migrate only when they have the confidence to do so.
 
 A big advantage with automatic migration is that the data transformation process needs to be supported only for a limited number of revisions.  If a user neglects to update their system across epochs, for example, when they eventually refresh, they will be stepped through each epoch:  0 to 1*, 1 to 2*, and 2 onwards, for instance, by performing the migration process for each step as necessary. You don’t need to push old migration code to new versions of your application.
 

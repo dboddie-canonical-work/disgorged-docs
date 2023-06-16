@@ -12,7 +12,7 @@ Snaps address these gaps, while building upon the work you've already done to te
 
 [note type="positive" status="Snapcraft overview"]
 
-For a brief overview of the snap creation process, including how to install *snapcraft* and how it's used, see [Snapcraft overview](/t/snapcraft-overview/8940). For a more comprehensive breakdown of the steps involved, take a look at [Creating a snap](/t/creating-a-snap/6799).
+For a brief overview of the snap creation process, including how to install *snapcraft* and how it's used, see [Snapcraft overview](snapcraft-overview.md). For a more comprehensive breakdown of the steps involved, take a look at [Creating a snap](creating-a-snap.md).
 [/note]
 
 ## Getting started
@@ -70,7 +70,7 @@ The base keyword declares which _base snap_ to use with  your project.  A base s
 ```yaml
 base: core20
 ```
-As used above, [`core20`](https://snapcraft.io/core20) is the current standard base for snap building and is based on [Ubuntu 20.04 LTS](http://releases.ubuntu.com/20.04/). See [Base snaps](/t/base-snaps/11198) for more details.
+As used above, [`core20`](https://snapcraft.io/core20) is the current standard base for snap building and is based on [Ubuntu 20.04 LTS](http://releases.ubuntu.com/20.04/). See [Base snaps](base-snaps.md) for more details.
 
 #### Security model
 
@@ -103,13 +103,13 @@ The Python plugin can be used by either Python 2 or Python 3 based parts using a
 - a requirements.txt file used to import Python modules
 - packages installed directly from pip
 
-Our example project uses neither of the above but they can be added to your own project with the `python-requirement` and `python-packages` keywords, as described in our [Python plugin documentation](/t/the-python-plugin/8529).
+Our example project uses neither of the above but they can be added to your own project with the `python-requirement` and `python-packages` keywords, as described in our [Python plugin documentation](the-python-plugin.md).
 
 The `source` keyword points to the root of your Python project and can be a local directory or remote Git repository. Note that **your Python project should be using setuptools** and you should be able to run `python setup.py bdist_wheel` without errors. If either of these are not true, please consult the [setuptools documentation](https://setuptools.readthedocs.io/en/latest/).
 
 If you need additional packages, the `stage-packages` keyword simply lists any package dependencies needed to run your app. A corresponding `build-packages` keyword can also be used to specify packages only needed during the build phase.
 
-For more details on Python-specific metadata, see [The Python plugin](/t/the-python-plugin/8529).
+For more details on Python-specific metadata, see [The Python plugin](the-python-plugin.md).
 
 #### Apps
 
@@ -126,7 +126,7 @@ apps:
 
 If your command name matches the snap  `name`, users will be able run the command directly. If the names differ, then apps are prefixed with the snap  `name`  (`yt-dlp.command-name`, for example). This is to avoid conflicting with apps defined by other installed snaps.
 
-You can request an alias on the  [Snapcraft forum](https://forum.snapcraft.io/t/process-for-reviewing-aliases-auto-connections-and-track-requests/455) if your command name and snap name do not match but you don’t want your command prefixed. These aliases are set up automatically when your snap is installed from the Snap Store.
+You can request an alias on the  [Snapcraft forum](https://snapcraft.io/docs/process-for-aliases-auto-connections-and-tracks) if your command name and snap name do not match but you don’t want your command prefixed. These aliases are set up automatically when your snap is installed from the Snap Store.
 
 ### Building the snap
 
@@ -210,4 +210,4 @@ snapcraft upload --release=edge mypythonsnap_*.snap
 
 If you’re happy with the result, you can commit the snapcraft.yaml to your GitHub repo and [turn on automatic builds](https://build.snapcraft.io) so any further commits automatically get released to edge, without requiring you to manually build locally.
 
-Congratulations! You've just built and published your first Python snap. For a more in-depth overview of the snap building process, see [Creating a snap](/t/creating-a-snap/6799).
+Congratulations! You've just built and published your first Python snap. For a more in-depth overview of the snap building process, see [Creating a snap](creating-a-snap.md).

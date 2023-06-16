@@ -7,16 +7,16 @@
 There are two methods for building snaps on Canonical-hosted servers, and both are available to every snap publisher:
 
 - **Snapcraft remote-build**
-  The `snapcraft remote-build` command offloads the snap build process to the [Launchpad build farm](https://launchpad.net/builders), pushing the potentially multi-architecture snap back to your machine. See  [Remote build](/t/remote-build/14400) for further details.
+  The `snapcraft remote-build` command offloads the snap build process to the [Launchpad build farm](https://launchpad.net/builders), pushing the potentially multi-architecture snap back to your machine. See  [Remote build](remote-build.md) for further details.
 
 - **Build from GitHub**
-This is a build service integrated into every publisher's [Developer Account](/t/create-a-developer-account/6760) on [snapcraft.io](https://snapcraft.io/). It works by linking a snap's GitHub repository with our Launchpad build service. See below for further details.
+This is a build service integrated into every publisher's [Developer Account](create-a-developer-account.md) on [snapcraft.io](https://snapcraft.io/). It works by linking a snap's GitHub repository with our Launchpad build service. See below for further details.
 
-With _Build from GitHub_, a snap is rebuilt whenever a change is merged into the main branch of its respective GitHub repository. When a build successfully completes, it's automatically released to a snap's [edge channel](/t/channels/551#heading--risk-levels).
+With _Build from GitHub_, a snap is rebuilt whenever a change is merged into the main branch of its respective GitHub repository. When a build successfully completes, it's automatically released to a snap's [edge channel](https://snapcraft.io/docs/channels#heading--risk-levels).
 
 Supported build architectures are: **amd64** , **arm64** , **armhf** , **i386** , **ppc64el** and **s390x** .
 
-> ℹ See [Creating a snap](/t/creating-a-snap/6799) for details on creating the metadata required to build a snap. For other ways to build a snap, see [Build options](/t/build-options/14250).
+> ℹ See [Creating a snap](creating-a-snap.md) for details on creating the metadata required to build a snap. For other ways to build a snap, see [Build options](build-options.md).
 
 
 - [Prerequisites](#heading--prerequisites)
@@ -29,11 +29,11 @@ Supported build architectures are: **amd64** , **arm64** , **armhf** , **i386** 
 
 <h2 id='heading--prerequisites'>Prerequisites</h2>
 
-You will need a [Developer account](/t/create-a-developer-account/6760) and accept that the source code for a prospective snap will be publicly accessible while on the build server. Projects also need to be hosted on a public [GitHub](https://github.com/) repository.
+You will need a [Developer account](create-a-developer-account.md) and accept that the source code for a prospective snap will be publicly accessible while on the build server. Projects also need to be hosted on a public [GitHub](https://github.com/) repository.
 
-The GitHub repository must contain at least a [snapcraft.yaml](/t/the-snapcraft-format/8337) file, and the snap build from a clone of the repository. The snap name needs to be [registered](/t/registering-your-app-name/6793) with the Snap Store, and the same name needs to be declared in the _snapcraft.yaml_.
+The GitHub repository must contain at least a [snapcraft.yaml](the-snapcraft-yaml-schema.md) file, and the snap build from a clone of the repository. The snap name needs to be [registered](registering-your-app-name.md) with the Snap Store, and the same name needs to be declared in the _snapcraft.yaml_.
 
-Build architectures can be defined within a snap’s [snapcraft.yaml](https://forum.snapcraft.io/t/the-snapcraft-format/8337) using the [architectures](https://forum.snapcraft.io/t/architectures/4972/) keyword. To target all architectures, for example, use the following:
+Build architectures can be defined within a snap’s [snapcraft.yaml](the-snapcraft-yaml-schema.md) using the [architectures](architectures.md) keyword. To target all architectures, for example, use the following:
 
 ```
 architectures:
@@ -45,7 +45,7 @@ architectures:
   - build-on: i386
 ```
 
-A [snap base](/t/base-snaps/11198) of `core18` is assumed by default, unless specified otherwise. If a snap’s base doesn’t support a specified architecture, it will not be built. If no architecture is specified, snaps for all base-compatible architectures will attempt to be built.
+A [snap base](base-snaps.md) of `core18` is assumed by default, unless specified otherwise. If a snap’s base doesn’t support a specified architecture, it will not be built. If no architecture is specified, snaps for all base-compatible architectures will attempt to be built.
 
 <h2 id='heading--github'>Link to GitHub</h2>
 
@@ -79,7 +79,7 @@ When a build succeeds, it's automatically released to the edge channel. The rele
 
 ![image|672x341](https://forum-snapcraft-io.s3.dualstack.us-east-1.amazonaws.com/original/2X/3/330e0d32ed9fb1496246f2db38548c417274e214.png)
 
-See [Release management](/t/release-management/12442) for more details on how to promote and monitor release revisions and their channels.
+See [Release management](https://snapcraft.io/docs/release-management) for more details on how to promote and monitor release revisions and their channels.
 
 <h2 id='heading--unlink'>Unlink and disable GitHub builds</h2>
 

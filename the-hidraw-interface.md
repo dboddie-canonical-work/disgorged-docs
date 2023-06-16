@@ -15,10 +15,10 @@
   * `usb-product` (slot): integer representing the USB Product ID, must be in range  0 <= vid <= 65535
   * `path` (slot): path where a symlink will be created to the device e.g. `/dev/hidraw-mydevice`
 
-To use a hidraw device, the snap developer must add `plugs: [ hidraw ]` to a snap's [snapcraft.yaml](/t/the-snapcraft-format/8337). The snap user can then access a specific hidraw device with an [interface connection](/t/interface-management/6154#heading--manual-connections).
+To use a hidraw device, the snap developer must add `plugs: [ hidraw ]` to a snap's [snapcraft.yaml](the-snapcraft-yaml-schema.md). The snap user can then access a specific hidraw device with an [interface connection](interface-management.md#heading--manual-connections).
 
 Use  `snap interface hidraw` to see which hidraw devices are available on the system.
 
 Once connected, the consuming snap can use the device via the path specified by the connected slot.
 
-> ⓘ  This is a snap interface. See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+> ⓘ  This is a snap interface. See [Interface management](interface-management.md) and [Supported interfaces](supported-interfaces.md) for further details on how interfaces are used.

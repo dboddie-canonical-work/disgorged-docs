@@ -4,7 +4,7 @@
 
 # Classic linter
 
-The _classic_ linter is a [Snapcraft linter](/t/snapcraft-linters/32211) that is used to verify binary file parameters to ensure they are set appropriately for snaps using [classic confinement](https://forum.snapcraft.io/t/snap-confinement/6233).
+The _classic_ linter is a [Snapcraft linter](snapcraft-linters.md) that is used to verify binary file parameters to ensure they are set appropriately for snaps using [classic confinement](snap-confinement.md).
 
 The classic linter is only invoked when snap confinement is set to `classic`, or if _libc_ is staged.
 
@@ -15,7 +15,7 @@ The classic linter is only invoked when snap confinement is set to `classic`, or
   - [binary patching](#heading--issues-binary)
   - [automatic ELF patching](#heading--issues-auto)
 
-See [Disabling linters](/t/snapcraft-linters/32211#heading--disable) for details on how to stop this linter running.
+See [Disabling linters](snapcraft-linters.md#heading--disable) for details on how to stop this linter running.
 
 ---
 

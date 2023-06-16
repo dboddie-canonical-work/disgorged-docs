@@ -6,7 +6,7 @@
 
 These are the release notes for [Snapcraft 3.3](https://github.com/snapcore/snapcraft/releases/tag/3.3).
 
-For general details, including installation instructions, see [Snapcraft overview](/t/snapcraft-overview/8940), or take a look at [Snapcraft release notes](/t/snapcraft-release-notes/10721) for other *Snapcraft* releases.
+For general details, including installation instructions, see [Snapcraft overview](snapcraft-overview.md), or take a look at [Snapcraft release notes](snapcraft-release-notes.md) for other *Snapcraft* releases.
 
 ## New *core* features
 
@@ -14,7 +14,7 @@ For general details, including installation instructions, see [Snapcraft overvie
 
 Support for `base: core` has been added.
 
-This enables you to take advantage of the many new Snapcraft 3 features while using 16.04 as a [base](/t/snapcraft-overview/8940#base-snap). Previously, you needed to use the 18.04 base.
+This enables you to take advantage of the many new Snapcraft 3 features while using 16.04 as a [base](snapcraft-overview.md#base-snap). Previously, you needed to use the 18.04 base.
 
 ### Alternate directory for *snapcraft.yaml*
 

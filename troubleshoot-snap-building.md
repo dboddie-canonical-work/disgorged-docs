@@ -4,7 +4,7 @@
 
 # Troubleshoot snap building
 
-When creating [snapcraft.yaml](/t/creating-snapcraft-yaml/11666) and building a new snap, it's not uncommon to encounter build issues when running *snapcraft*.
+When creating [snapcraft.yaml](creating-snapcraft-yaml.md) and building a new snap, it's not uncommon to encounter build issues when running *snapcraft*.
 
 For this reason, it can be helpful to build the snap early, even before adding interfaces. It makes finding the culprit easier, and stops early issues affecting later stages of the build, complicating any debugging that needs to be done.
 
@@ -16,7 +16,7 @@ With `--debug`, if snapcraft encounters an error it will open a shell  within th
 
 This enables you to view logs within the environment, check the value of environment variables, locate missing binaries and install missing dependencies. You can even edit *snapcraft.yaml* outside of the shell, and then run *snapcraft* within, to continue the build.
 
-Build issues are linked to the stage that *snapcraft* is working through (see [Snapcraft lifecycle](/t/parts-lifecycle/12231)) when it generates an error, and the most common problems associated with each step are outlined below.
+Build issues are linked to the stage that *snapcraft* is working through (see [Snapcraft lifecycle](parts-lifecycle.md)) when it generates an error, and the most common problems associated with each step are outlined below.
 
 ###  **1. Snapcraft.yaml**
 
@@ -38,7 +38,7 @@ but that part is lacking the 'parse-info' property.
 
 To resolve this, make sure your part includes `parse-info` or runs a command to define the version details (such as `snapcraftctl set-version`).
 
-For more information on the keywords most affected by this error, see [Adding global metadata](/t/adding-global-metadata/11486).
+For more information on the keywords most affected by this error, see [Adding global metadata](adding-global-metadata.md).
 
 ### 2. Build phase
 
@@ -62,7 +62,7 @@ build-packages:
    - libncursesw5-dev
 ```
 
-For more details on package names and build dependencies, see [Build and staging dependencies](/t/build-and-staging-dependencies/11451).
+For more details on package names and build dependencies, see [Build and staging dependencies](build-and-staging-dependencies.md).
 
 ### 3. Staging phase
 
@@ -85,6 +85,6 @@ stage-packages:
 - git
 ```
 
-As with build dependencies, for more details on working out staging dependencies see [Build and staging dependencies](/t/build-and-staging-dependencies/11451).
+As with build dependencies, for more details on working out staging dependencies see [Build and staging dependencies](build-and-staging-dependencies.md).
 
-For further tips on common build issues, see [Debugging building snaps](/t/debugging-building-snaps/6274).
+For further tips on common build issues, see [Debugging building snaps](debugging-building-snaps.md).

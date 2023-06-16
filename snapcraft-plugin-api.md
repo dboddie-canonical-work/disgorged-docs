@@ -4,7 +4,7 @@
 
 # Snapcraft plugin API
 
-The process of creating a snap follows a specific [lifecycle](/t/parts-lifecycle/12231) for each part. What happens during each step in the lifecycle depends on the plugin being used for that part.
+The process of creating a snap follows a specific [lifecycle](parts-lifecycle.md) for each part. What happens during each step in the lifecycle depends on the plugin being used for that part.
 
 
 ## `BasePlugin`

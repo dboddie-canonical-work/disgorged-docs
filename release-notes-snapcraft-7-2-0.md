@@ -16,12 +16,12 @@ For general details, including installation instructions, see [Snapcraft overvie
 
 ## Snapcraft linting
 
-Snapcraft now includes its own linter functionality when working with snaps using the `core22` [base](https://forum.snapcraft.io/t/base-snaps/11198). Snapcraft linters run automatically when a snap is packed, and will report any detected errors unless otherwise [disabled](/t/snapcraft-linters/32211#heading--disabled).
+Snapcraft now includes its own linter functionality when working with snaps using the `core22` [base](base-snaps.md). Snapcraft linters run automatically when a snap is packed, and will report any detected errors unless otherwise [disabled](snapcraft-linters.md#heading--disabled).
 
 The following two linters are currently supported:
 
-* **[`classic`](/t/classic-linter/32228)**: verifies binary file parameters for snaps using [classic confinement](https://forum.snapcraft.io/t/snap-confinement/6233)
-* **[`library`](/t/library-linter/32229)**: verifies that no ELF file dependencies, such as libraries, are missing
+* **[`classic`](classic-linter.md)**: verifies binary file parameters for snaps using [classic confinement](snap-confinement.md)
+* **[`library`](library-linter.md)**: verifies that no ELF file dependencies, such as libraries, are missing
 
 ## Default provider switching
 
@@ -37,7 +37,7 @@ To go back to LXD, run:
 snap set snapcraft provider=lxd
 ```
 
-See [Build providers](/t/build-providers/4157) for more details.
+See [Build providers](build-providers.md) for more details.
 
 ## Store changes
 

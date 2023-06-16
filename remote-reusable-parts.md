@@ -9,7 +9,7 @@
 
 Remote parts no longer work with recent versions of Snapcraft, and are not recommended.
 
-New versions of Snapcraft use Extensions to bundle a common set of parts and their dependencies. See [Snapcraft Extensions](/t/snapcraft-extensions/13486) for further details.
+New versions of Snapcraft use Extensions to bundle a common set of parts and their dependencies. See [Snapcraft Extensions](snapcraft-extensions.md) for further details.
 [/quote]
 
 Developers using snapcraft to build snaps can leverage pre-existing 'remote parts' in their snap, to save time re-implementing existing components.

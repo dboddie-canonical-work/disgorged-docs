@@ -25,7 +25,7 @@ Here are some snap advantages that will benefit many Go projects:
 
 Ready to get started? By the end of this guide, you'll understand how to make a snap of your Go app that can be published in the [Snap Store](https://snapcraft.io/store), showcasing it to millions of Linux users.
 
-> ℹ For a brief overview of the snap creation process, including how to install *snapcraft* and how it's used, see [Snapcraft overview](/t/snapcraft-overview/8940). For a more comprehensive breakdown of the steps involved, take a look at [Creating a snap](/t/creating-a-snap/6799).
+> ℹ For a brief overview of the snap creation process, including how to install *snapcraft* and how it's used, see [Snapcraft overview](snapcraft-overview.md). For a more comprehensive breakdown of the steps involved, take a look at [Creating a snap](creating-a-snap.md).
 
 ## Getting started
 
@@ -89,7 +89,7 @@ base: core20
 ```
 As used above, [`core20`](https://snapcraft.io/core20) is the current standard base for snap building and is based on [Ubuntu 20.04 LTS](http://releases.ubuntu.com/20.04/).
 
-See [Base snaps](/t/base-snaps/11198) for more details.
+See [Base snaps](base-snaps.md) for more details.
 
 #### Security model
 
@@ -119,13 +119,13 @@ parts:
     source: https://github.com/get-woke/woke
 ```
 
-For more details on Go-specific metadata, see [The go plugin](/t/the-go-plugin/8505).
+For more details on Go-specific metadata, see [The go plugin](the-go-plugin.md).
 
 #### Apps
 
 Apps are the commands and services exposed to end users. If your command name matches the snap `name`, users will be able run the command directly. If the names differ, then apps are prefixed with the snap `name` (`woke.command-name`, for example). This is to avoid conflicting with apps defined by other installed snaps.
 
-If you don’t want your command prefixed you can request an alias for it on the [Snapcraft forum](https://forum.snapcraft.io/t/process-for-reviewing-aliases-auto-connections-and-track-requests/455). These are set up automatically when your snap is installed from the Snap Store.
+If you don’t want your command prefixed you can request an alias for it on the [Snapcraft forum](https://snapcraft.io/docs/process-for-aliases-auto-connections-and-tracks). These are set up automatically when your snap is installed from the Snap Store.
 
 ```yaml
 apps:
@@ -224,4 +224,4 @@ $ snapcraft upload --release=edge mygosnap_*.snap
 
 If you’re happy with the result, you can commit the snapcraft.yaml to your GitHub repo and [turn on automatic builds](https://build.snapcraft.io) so any further commits automatically get released to edge, without requiring you to manually build locally.
 
-Congratulations! You've just built and published your first Go snap. For a more in-depth overview of the snap building process, see [Creating a snap](/t/creating-a-snap/6799).
+Congratulations! You've just built and published your first Go snap. For a more in-depth overview of the snap building process, see [Creating a snap](creating-a-snap.md).

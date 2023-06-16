@@ -97,4 +97,4 @@ You should now see a `.snap` file in the `dist/` directory.
 
 ### Next steps
 
-That's it. You now have a package.json file that can be used to build a snap. To upload your snap and share it with your users, see [Releasing your app](/t/releasing-your-app/6795).
+That's it. You now have a package.json file that can be used to build a snap. To upload your snap and share it with your users, see [Releasing your app](releasing-your-app.md).

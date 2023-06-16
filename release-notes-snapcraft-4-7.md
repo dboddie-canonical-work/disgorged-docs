@@ -15,14 +15,14 @@ For general details, including installation instructions, see [Snapcraft overvie
 
 ## Validation sets
 
-A validation set is an [assertion](https://forum.snapcraft.io/t/assertions/6155) that lists specific snaps that are either required to be installed together or are permitted to be installed together on a device or system.
+A validation set is an [assertion](https://snapcraft.io/docs/assertions) that lists specific snaps that are either required to be installed together or are permitted to be installed together on a device or system.
 
 This release of Snapcraft adds two commands for working with validation sets:
 
 * list-validation-sets
 * edit-validation-sets
 
-For more details, see [Validation sets](/t/validation-sets/23801).
+For more details, see [Validation sets](validation-sets.md).
 
 ## UA Token
 
@@ -36,7 +36,7 @@ With this release of snapcraft, a new `--ua-token` argument can be used to speci
 snapcraft <step> --ua-token <token>
 ```
 
-See [Snapcraft and Extended Security Maintenance](/t/snapcraft-and-extended-security-maintenance/24297) for further details.
+See [Snapcraft and Extended Security Maintenance](snapcraft-and-extended-security-maintenance.md) for further details.
 
 ## Conda plugin
 
@@ -48,7 +48,7 @@ When using _core20_, the recently introduced [conda](h/t/the-conda-plugin/12530#
 
 ## Extension improvements
 
-[Extensions](/t/snapcraft-extensions/13486) now have better font handling by integrating a new snapd feature to not expose the host font cache to the snap
+[Extensions](snapcraft-extensions.md) now have better font handling by integrating a new snapd feature to not expose the host font cache to the snap
 when using the desktop related extensions.
 
 General cleanup into the *launcher* script which ensures a proper environment has been setup is also part of this release.
@@ -59,7 +59,7 @@ The `snapcraft whoami` command has fully migrated to the store `whoami` endpoint
 
 ## Stage Snaps
 
-The [stage-snaps](/t/build-and-staging-dependencies/11451) keyword now allows specifying channel branches. This solves a long standing request.
+The [stage-snaps](build-and-staging-dependencies.md) keyword now allows specifying channel branches. This solves a long standing request.
 
 ## Full list of changes
 

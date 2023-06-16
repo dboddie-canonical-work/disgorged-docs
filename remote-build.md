@@ -7,19 +7,19 @@
 There are two methods for building snaps on Canonical-hosted servers, and both are available to every snap publisher:
 
 - **Build from GitHub**
-This is a build service integrated into every publisher's [Developer Account](/t/create-a-developer-account/6760) on [snapcraft.io](https://snapcraft.io/). It works by linking a snap's GitHub repository with our Launchpad build service. See [Build from GitHub](/t/build-from-github/26004) for further details.
+This is a build service integrated into every publisher's [Developer Account](create-a-developer-account.md) on [snapcraft.io](https://snapcraft.io/). It works by linking a snap's GitHub repository with our Launchpad build service. See [Build from GitHub](build-from-github.md) for further details.
 
 - **Snapcraft remote-build**
   The `snapcraft remote-build` command offloads the snap build process to the [Launchpad build farm](https://launchpad.net/builders), pushing the potentially multi-architecture snap back to your machine. See below for further details.
 
 
-Remote build is a feature in [Snapcraft](/t/snapcraft-overview/8940) that enables anyone to run a multi-architecture snap build process on remote servers using [Launchpad](https://launchpad.net/).
+Remote build is a feature in [Snapcraft](snapcraft-overview.md) that enables anyone to run a multi-architecture snap build process on remote servers using [Launchpad](https://launchpad.net/).
 
 With remote build, you can build snaps for hardware you don't have access to and free up your local machine for other tasks.
 
 Supported build architectures are: **amd64**, **arm64**, **armhf**, **i386**, **ppc64el** and **s390x**.
 
-> ℹ See [Creating a snap](/t/creating-a-snap/6799) for details on creating the metadata required to build a snap. For other ways to build a snap, see [Build options](/t/build-options/14250).
+> ℹ See [Creating a snap](creating-a-snap.md) for details on creating the metadata required to build a snap. For other ways to build a snap, see [Build options](build-options.md).
 
 - [Prerequisites](#heading--prerequisites)
 - [Using remote build](#heading--using)
@@ -30,7 +30,7 @@ Supported build architectures are: **amd64**, **arm64**, **armhf**, **i386**, **
 
 Prospective snaps need to be open source, as the code will be publicly available, and you'll need a [Launchpad account](https://login.launchpad.net/+new_account).
 
-Build architectures can be defined within a snap's [snapcraft.yaml](/t/the-snapcraft-format/8337) using the _architectures_ keyword. To target all architectures, for example, use the following:
+Build architectures can be defined within a snap's [snapcraft.yaml](the-snapcraft-yaml-schema.md) using the _architectures_ keyword. To target all architectures, for example, use the following:
 
 ```yaml
 architectures:
@@ -48,7 +48,7 @@ If _architectures_ is not defined within snapcraft.yaml, target architectures ca
 snapcraft remote-build --build-on=amd64,arm64
 ```
 
-If no architecture is specified, remote build will default to `amd64`. For more details on how snaps handle build and run architectures, see [Architectures](/t/architectures/4972/).
+If no architecture is specified, remote build will default to `amd64`. For more details on how snaps handle build and run architectures, see [Architectures](architectures.md).
 
 <h2 id='heading--using'>Using remote build</h2>
 

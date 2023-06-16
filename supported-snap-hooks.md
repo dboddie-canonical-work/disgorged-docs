@@ -14,7 +14,7 @@ Common examples of actions requiring hooks include:
 - **notifying a snap that a specific operation is in progress**
      Example: A snap may need to know when a specific interface connects or disconnects.
 
-A hook is defined as an executable within a snap's `meta/hooks/` directory, and consequently, also within `snap/hooks/` when building with *snapcraft*. See [Snapcraft hook support](/t/snapcraft-hook-support/19069) for more information.
+A hook is defined as an executable within a snap's `meta/hooks/` directory, and consequently, also within `snap/hooks/` when building with *snapcraft*. See [Snapcraft hook support](snapcraft-hook-support.md) for more information.
 
 The filename of the executable is based on the name of the hook. If this file exists, *snapd* will execute the file when required by that hook's action.
 
@@ -35,11 +35,11 @@ The following hooks are currently implemented:
 
 ## Accessing resources
 
-If a hook requires access to system resources outside of a snap's confined environment, it will need to use [slots and plugs](/t/interface-management/6154#slots-plugs) via the [interface](/t/interface-management/6154) mechanism to access those resources.
+If a hook requires access to system resources outside of a snap's confined environment, it will need to use [slots and plugs](interface-management.md#slots-plugs) via the [interface](interface-management.md) mechanism to access those resources.
 
-When using *Snapcraft* to build the snap, the interface definition will go inside [snapcraft.yaml](/t/the-snapcraft-format/8337), and the *snapcraft* command create a [snap.yaml](/t/the-snap-format/698) within the snap to hold the required metadata.
+When using *Snapcraft* to build the snap, the interface definition will go inside [snapcraft.yaml](the-snapcraft-yaml-schema.md), and the *snapcraft* command create a [snap.yaml](the-snap-format.md) within the snap to hold the required metadata.
 
-For example, the following excerpt registers an _install_ hook making use of a [network](/t/the-network-interface/7880) plug:
+For example, the following excerpt registers an _install_ hook making use of a [network](the-network-interface.md) plug:
 
 ```yaml
 apps:
@@ -50,7 +50,7 @@ hooks:
         plugs: [network]
 ```
 
-Hooks are called with no parameters. When a hook needs to request or modify information within *snapd*,  they can do so via the *snapctl* tool, which is always available within a snap's environment. See [Using the snapctl tool](/t/using-the-snapctl-tool/15002) for further details.
+Hooks are called with no parameters. When a hook needs to request or modify information within *snapd*,  they can do so via the *snapctl* tool, which is always available within a snap's environment. See [Using the snapctl tool](https://snapcraft.io/docs/using-the-snapctl-tool) for further details.
 
 A hook is executed as a single transaction, where a transaction object holds all the configuration changes for that hook. These changes are invisible to the running system until the hook completely finishes. This allows for changes to be rolled back or *unset* if errors occur during the execution of a hook.
 
@@ -94,13 +94,13 @@ echo "username: $username" > $SNAP_DATA/options/credentials
 echo "password: $password" >> $SNAP_DATA/options/credentials
 ```
 
-The same hook can also modify the configuration of a snap within the context of the current transaction. This is accomplished using `snapctl set` and `snapctl unset`. For more information see [Adding Snap configuration](/t/adding-snap-configuration/15246) and [Using the snapctl tool](/t/using-the-snapctl-tool/15002).
+The same hook can also modify the configuration of a snap within the context of the current transaction. This is accomplished using `snapctl set` and `snapctl unset`. For more information see [Adding Snap configuration](https://snapcraft.io/docs/adding-snap-configuration) and [Using the snapctl tool](https://snapcraft.io/docs/using-the-snapctl-tool).
 
 > ⓘ Note that configuration options do not need to be defined anywhere. `snapctl set` and `snap set` will accept any (valid) option name.
 
 <h2 id='heading--default-configure'>The default-configure hook</h2>
 
-The default-configure-hook is an optional extension to the [configure hook](/t/supported-snap-hooks/3795#heading--the-configure-hook) that executes only on snap installation and _before_ services are started to provide access to the default configuration values stored in a device’s [gadget snap](/t/gadget-snaps/696).
+The default-configure-hook is an optional extension to the [configure hook](supported-snap-hooks.md#heading--the-configure-hook) that executes only on snap installation and _before_ services are started to provide access to the default configuration values stored in a device’s [gadget snap](gadget-snaps.md).
 
 The default-configure hook should be located within ‘meta/hooks’ and requires a configure hook to be present. A missing configure hook will result in an error.
 
@@ -122,7 +122,7 @@ mkdir -m 0600 $SNAP_DATA/options
 echo "option: $gadget_option" > $SNAP_DATA/options/gadget
 ```
 
-For more information see [Adding Snap configuration](/t/adding-snap-configuration/15246) and [Using the snapctl tool](/t/using-the-snapctl-tool/15002).
+For more information see [Adding Snap configuration](https://snapcraft.io/docs/adding-snap-configuration) and [Using the snapctl tool](https://snapcraft.io/docs/using-the-snapctl-tool).
 
 <h2 id='heading--fde'>The full-disk-encryption hook</h2>
 
@@ -130,7 +130,7 @@ For more information see [Adding Snap configuration](/t/adding-snap-configuratio
 
 Creating a verifiable boot process on a non-standard (non-UEFI+TPM platform) FDE platform, such as a Raspberry Pi or other ARM devices, is board-specific and will typically involve creating custom gadget and kernel snaps. UC20, however, does provide a helper mechanism, via a hook interface, to ensure the integrity of any subsequently executed or accessed data.
 
-See [UC20 full-disk-encryption hook interface](/t/uc20-full-disk-encryption-hook-interface/24439) for details on how this hook is implemented.
+See [UC20 full-disk-encryption hook interface](https://snapcraft.io/docs/uc20-uc22-full-disk-encryption-hook-interface) for details on how this hook is implemented.
 
 <h2 id='heading--gate-auto-refresh'>The gate-auto-refresh hook</h2>
 
@@ -138,7 +138,7 @@ The gate-auto-refresh hook is executed by snapd for every snap that will be upda
 
 This hook is capable of executing the snapctl refresh command with 3 specific arguments, hold, proceed and pending.
 
-This feature is currently considered experimental. See [Refresh control](/t/refresh-control/27213) for more details.
+This feature is currently considered experimental. See [Refresh control](https://snapcraft.io/docs/refresh-control) for more details.
 
 <h2 id='heading--install'>The install hook</h2>
 
@@ -158,13 +158,13 @@ Interface hooks are executed when an interface is either connected or disconnect
 
 They can be used to read or write attributes from a connection and, for example, acquire new resources, update internal options or update databases.
 
-For further details, see [Interface hooks](/t/interface-hooks/8214).
+For further details, see [Interface hooks](interface-hooks.md).
 
 <h2 id='heading--prepare-device'>The prepare-device hook</h2>
 
 This hook is only supported in gadget snaps.
 
-See [The gadget snap](/t/the-gadget-snap/696) documentation for more details.
+See [The gadget snap](gadget-snaps.md) documentation for more details.
 
 <h2 id='heading--pre-refresh'>The pre-refresh hook</h2>
 
