@@ -67,7 +67,7 @@ To instantiate a remote build, use the ``remote-build`` argument with snapcraft:
 
 1. You are first asked to confirm that you’re happy for your local project to be transferred to a remote build server and become publicly available:
 
-   .. code:: no-highlight
+   .. code:: text
 
       All data sent to remote builders will be publicly available. Are you sure
       you want to continue? [y/N]: y
@@ -76,7 +76,7 @@ To instantiate a remote build, use the ``remote-build`` argument with snapcraft:
 
 2. Snapcraft will now launch your default browser with an authorisation URL. The URL is also output to the terminal to allow you to copy and paste it.
 
-   .. code:: no-highlight
+   .. code:: text
 
       The authorization page:
        (https://launchpad.net/+authorize-token?

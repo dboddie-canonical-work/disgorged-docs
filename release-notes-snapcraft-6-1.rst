@@ -44,7 +44,7 @@ More fine grained source fetching, three new scenarios are supported:
 
 1. fetching only listed submodules, in the defined ``source-submodules``
 
-.. code:: source-yaml
+.. code:: yaml
 
    parts:
      git-test:
@@ -57,7 +57,7 @@ More fine grained source fetching, three new scenarios are supported:
 
 1. excluding all submodules with an empty list
 
-.. code:: source-yaml
+.. code:: yaml
 
    parts:
      git-test:
@@ -133,7 +133,7 @@ core22 parts lifecycle opt-in for core20
 
 To make use of this feature, something like this is needed
 
-.. code:: source-yaml
+.. code:: yaml
 
    parts:
        part1:

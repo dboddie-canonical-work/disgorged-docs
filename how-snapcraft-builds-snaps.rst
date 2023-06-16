@@ -99,7 +99,7 @@ A snap may contain one or more files that allow the applications to run without 
 
 Typically, the content of a snap will resemble a Linux filesystem layout:
 
-.. code:: no-highlight
+.. code:: text
 
    drwxr-xr-x 10 igor igor  4096 Jun 10  2020 ./
    drwxrwxrwx 14 igor igor 16384 Oct 17 16:40 ../

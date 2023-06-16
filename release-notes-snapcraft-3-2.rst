@@ -35,7 +35,7 @@ This plugin enables the new build system that targets :ref:`ROS2 <ros-2-deployme
 
 These are the options the plugin offers for a part needing to build with ``colcon``:
 
-.. code:: no-highlight
+.. code:: text
 
        - colcon-packages:
          (list of strings)

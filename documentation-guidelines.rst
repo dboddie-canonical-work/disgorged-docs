@@ -302,7 +302,7 @@ This produces:
 
 You can omit the status header.
 
-.. code:: plain
+.. code:: text
 
 .. note::
 
@@ -319,7 +319,7 @@ And its output:
 
 The ``type`` parameter is optional, but recommended:
 
-.. code:: plain
+.. code:: text
 
 .. note::
 

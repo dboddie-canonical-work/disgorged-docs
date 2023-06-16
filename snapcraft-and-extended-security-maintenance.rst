@@ -74,7 +74,7 @@ The build environment needs the ``ua`` command installed, provided by the ``ubun
 
 When the snapcraft command is run, the provisioning of the ESM packages will be done seamlessly in the background.
 
-.. code:: no-highlight
+.. code:: text
 
    Launching a container.
    Waiting for container to be ready

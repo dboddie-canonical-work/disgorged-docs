@@ -27,7 +27,7 @@ These errors typically occur early, before any processing, and they’re usually
 
 For example:
 
-.. code:: no-highlight
+.. code:: text
 
    Issues while validating snapcraft.yaml: 'adopt-info' is a required
    property or 'version' is a required property:
@@ -36,7 +36,7 @@ The above issue is caused by a mandatory keyword, ``version``, not being defined
 
 However, ``version`` isn’t actually mandatory when paired with ``adopt-info``, because ``adopt-info`` pushes version details into snapcraft from its specified part. This isn’t processed until later in the build, which means any error in ``adopt-info`` isn’t generated until the ‘prime’ phase:
 
-.. code:: no-highlight
+.. code:: text
 
    Failed to generate snap metadata: 'adopt-info' refers to part 'mypart',
    but that part is lacking the 'parse-info' property.
@@ -54,7 +54,7 @@ Any issues that do occur are likely to be similar to those associated with compi
 
 For example:
 
-.. code:: no-highlight
+.. code:: text
 
    Package ncursesw was not found in the pkg-config search path.
    Perhaps you should add the directory containing `ncursesw.pc'
@@ -82,7 +82,7 @@ A git client, for example, might not use the *git* command directly until it nee
 
 For example:
 
-.. code:: no-highlight
+.. code:: text
 
    Unable to successfully call git binary. If git is not in $PATH then please
    set the config variable git-binary-file-path

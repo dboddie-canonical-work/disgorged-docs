@@ -80,7 +80,7 @@ Next, initialise LXD with the following command and accept all the default optio
 
 If you try to run ``lxd init`` on a system that is connected to a network with a ``10.x.x.x`` subnet, then the final step of the init\* may fail with the following error:
 
-.. code:: no-highlight
+.. code:: text
 
    Error: Failed to create network 'lxdbr0': Failed to automatically find an unused IPv4 subnet, manual configuration required
 
@@ -92,7 +92,7 @@ To resolve this issue, you must manually create the network with the following c
 
 You can then re-run ``lxd init``. When you are prompted to create a new network bridge you must respond ``no``.
 
-.. code:: no-highlight
+.. code:: text
 
    Would you like to create a new network bridge (yes/no) [default=yes]? no
 

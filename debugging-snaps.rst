@@ -147,7 +147,7 @@ Understanding AppArmor violations
 
 An AppArmor violation will look something like the following and include ``apparmor=DENIED``:
 
-.. code:: log
+.. code:: text
 
    audit: type=1400 audit(1431384420.408:319): apparmor="DENIED" operation="mkdir" profile="snap.foo.bar" name="/var/lib/foo" pid=637 comm="bar" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
 
@@ -172,7 +172,7 @@ Understanding seccomp violations
 
 A seccomp violation will look something like:
 
-.. code:: log
+.. code:: text
 
    audit: type=1326 audit(1430766107.122:16): auid=1000 uid=1000 gid=1000 ses=15 pid=1491 comm="env" exe="/bin/bash" sig=31 arch=40000028 syscall=983045 compat=0 ip=0xb6fb0bd6 code=0x0
 

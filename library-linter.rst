@@ -47,7 +47,7 @@ Example
 
 The example below shows two missing libraries (``libcaca`` and ``libslang``) and one unused library (``libpng16``).
 
-.. code:: log
+.. code:: text
 
    Running linter: library
    Lint warnings:
