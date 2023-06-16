@@ -15,15 +15,11 @@ This plugin uses the common plugin keywords as well as those for “sources”. 
 
 This plugin is only available to *core22* and *core18* based snaps. See :ref:`Base snaps <base-snaps>` for details.
 
-.. raw:: html
 
-   <h3 id="the-ant-plugin-heading--core22">
+.. _the-ant-plugin-heading--core22:
 
 base: core22 and base: core18
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This plugin uses the following plugin-specific keywords:
 

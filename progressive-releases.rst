@@ -15,23 +15,19 @@ To deploy a progressive releases, add an additional argument to the ``snapcraft 
 
 The percentage value defines the proportion of devices a progressive release will be deployed to.
 
--  `Creating a progressive release <#progressive-releases-heading--creating>`__
--  `Monitoring a progressive release <#progressive-releases-heading--monitoring>`__
--  `Finalising a progressive release <#progressive-releases-heading--finalising>`__
+-  `Creating a progressive release <progressive-releases-heading--creating_>`__
+-  `Monitoring a progressive release <progressive-releases-heading--monitoring_>`__
+-  `Finalising a progressive release <progressive-releases-heading--finalising_>`__
 
 ..
 
    ℹ Snapcraft 7.x or newer is required to use progressive releases.
 
-.. raw:: html
 
-   <h2 id="progressive-releases-heading--creating">
+.. _progressive-releases-heading--creating:
 
 Creating a progressive release
-
-.. raw:: html
-
-   </h2>
+------------------------------
 
 First, ensure there is a revision of the target snap available on the `Snap Store <https://snapcraft.io/store>`__. See :ref:`Releasing your app <releasing-your-app>` for details on building and uploading locally, or :ref:`Remote build <remote-build>` to create a revision on remote servers using `Launchpad <https://launchpad.net/>`__.
 
@@ -59,15 +55,11 @@ To release revision 356 to the stable channel of the default (latest) track as a
 
 The command above will release the snap to 30% of devices, chosen pseudo-randomly based in part on a hash of their device ID, with the snap installed from its stable channel. This means that roughly every third device will get the update when it next requests a refresh.
 
-.. raw:: html
 
-   <h2 id="progressive-releases-heading--monitoring">
+.. _progressive-releases-heading--monitoring:
 
 Monitoring a release
-
-.. raw:: html
-
-   </h2>
+--------------------
 
 The *snapcraft status* command can be used to monitor the progress of a progressive release:
 
@@ -85,15 +77,11 @@ The above output shows that the progressive release of the *stable* channel has 
 
 If an issue is discovered with a revision deployed as a progressive release, a new revision can be built and uploaded to address the issue without further deployment. When the new revision is itself published as a progressive release to the same channel, the devices that received the earlier release will be prioritised.
 
-.. raw:: html
 
-   <h2 id="progressive-releases-heading--finalising">
+.. _progressive-releases-heading--finalising:
 
 Finalising a progressive release
-
-.. raw:: html
-
-   </h2>
+--------------------------------
 
 After the assigned percentage of devices have received the release, there are two ways the snap publisher can proceed:
 

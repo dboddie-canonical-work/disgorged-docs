@@ -20,15 +20,11 @@ Virtual machines rely on KVM for virtualisation acceleration and the vhost frame
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-microstack-support-interface-heading--dev-details">
+.. _the-microstack-support-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 `Auto-connect <interface-management.md#the-microstack-support-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
 

@@ -7,15 +7,11 @@ Base snaps
 
 A *base* snap is a special kind of snap that provides a run-time environment with a minimal set of libraries that are common to most applications. They’re transparent to users, but they need to be considered and specified when building a snap.
 
-.. raw:: html
 
-   <h2 id="base-snaps-heading--supported">
+.. _base-snaps-heading--supported:
 
 Supported base snaps
-
-.. raw:: html
-
-   </h2>
+--------------------
 
 There are currently five supported bases: - ```core22`` <https://snapcraft.io/core22>`__: the newest base, built from `Ubuntu 22.04 LTS <https://releases.ubuntu.com/22.04/>`__. - ```core20`` <https://snapcraft.io/core20>`__: built from `Ubuntu 20.04 LTS <https://releases.ubuntu.com/20.04/>`__. - ```core18`` <https://snapcraft.io/core18>`__: the previous standard base for snap building, based on `Ubuntu 18.04 LTS <http://releases.ubuntu.com/18.04/>`__. - ```core`` <https://snapcraft.io/core>`__: based on `Ubuntu 16.04 ESM <http://releases.ubuntu.com/16.04/>`__, not to be confused with ``core16`` (see below). - ```bare`` <https://snapcraft.io/bare>`__: an empty base that’s useful with fully statically linked snaps and when testing.
 
@@ -83,15 +79,11 @@ While it is possible to build your own base snap, its publisher needs to take re
 
 Base snaps can be either bootable or non-bootable. The former needs to include *systemd* while the latter can be leaner.
 
-.. raw:: html
 
-   <h2 id="base-snaps-heading--base-snap">
+.. _base-snaps-heading--base-snap:
 
 build-base
-
-.. raw:: html
-
-   </h2>
+----------
 
 The ``base`` keyword on its own does not not take into account the *creation* of bases. Instead, with older versions of snapcraft, the ``name`` keyword was arbitrarily used to determine the build environment:
 

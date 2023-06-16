@@ -16,15 +16,11 @@ See also :ref:`netlink-driver <the-netlink-driver-interface>` and :ref:`netlink-
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-netlink-connector-interface-heading--dev-details">
+.. _the-netlink-connector-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 **Auto-connect**: no
 
@@ -32,15 +28,11 @@ As NETLINK_CONNECTOR is not finely mediated and app-specific, use of this interf
 
 Requires snapd version *2.26+*.
 
-.. raw:: html
 
-   <h3 id="the-netlink-connector-interface-heading-code">
+.. _the-netlink-connector-interface-heading-code:
 
 Code examples
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~
 
 The snap of the `usbtop <>`__ kernel module, used to monitor the bandwidth of USB buses and devices, uses the *netlink-audit* interface: `https://github.com/ogra1/usbtop/blob/master/snap/snapcraft.yaml <https://github.com/ogra1/usbtop/blob/3743b5a55e6df70e6dd95292121279f1013ba570/snap/snapcraft.yaml#L50>`__
 

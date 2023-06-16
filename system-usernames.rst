@@ -11,15 +11,11 @@ Outside of snaps, applications traditionally adopt the concept of users and grou
 
 Snap confinement prohibits a system’s users and groups from being used in this way within a snap but a *snap_daemon* user and group can alternatively be created within a snap to provide similar user and group level control outside of a snap’s confinement.
 
-.. raw:: html
 
-   <h2 id="system-usernames-heading--snap_daemon">
+.. _system-usernames-heading--snap_daemon:
 
 snap_daemon user and group
-
-.. raw:: html
-
-   </h2>
+--------------------------
 
 From version 2.41 onwards, snapd supports the creation of a ``snap_daemon`` user and group within a snap, exposed as user ID (UID) and group ID (GID) ``584788`` on the host system.
 

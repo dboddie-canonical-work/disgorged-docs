@@ -15,15 +15,11 @@ The plugin uses *node* to install dependencies from ``package.json``. It also se
 
 This plugin uses the common plugin keywords as well as those for “sources”. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
 
-.. raw:: html
 
-   <h3 id="the-nodejs-plugin-heading--core18">
+.. _the-nodejs-plugin-heading--core18:
 
 base: core18 \| core
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~~~~~~~~
 
 This plugin uses the following plugin-specific keywords:
 

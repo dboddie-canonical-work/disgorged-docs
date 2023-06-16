@@ -16,15 +16,11 @@ This interface needs to be manually connected because *gconf* is a global databa
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-gconf-interface-heading--dev-details">
+.. _the-gconf-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 **Auto-connect**: no
 

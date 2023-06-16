@@ -29,15 +29,11 @@ List of build and run architectures.
 
 For more details, see :ref:`Architectures <architectures>`.
 
-.. raw:: html
 
-   <h3 id="snapcraft-top-level-metadata-heading--assumes">
+.. _snapcraft-top-level-metadata-heading--assumes:
 
-assumes⚓
-
-.. raw:: html
-
-   </h3>
+assumes
+~~~~~~~
 
 Type: ``list[string]`` (*optional*)
 
@@ -50,15 +46,11 @@ A list of features that must be supported by the core in order for this snap to 
 
 Other potential values for *assumes* include: - ``common-data-dir``: support for common data directory across revisions of a snap - ``snap-env``: support for the “Environment:” feature in snap.yaml - ``command-chain``: support for the “command-chain” feature for apps and hooks in snap.yaml - ``kernel-assets``: support for kernel assets in `gadget.yaml <gadget-snaps.md#snapcraft-top-level-metadata-heading--specification>`__, such as to include volume content in the style ``$kernel:ref``
 
-.. raw:: html
 
-   <h3 id="snapcraft-top-level-metadata-heading--base">
+.. _snapcraft-top-level-metadata-heading--base:
 
 base
-
-.. raw:: html
-
-   </h3>
+~~~~
 
 Type: ``string`` (*optional*)
 
@@ -66,15 +58,11 @@ A snap of type :ref:``base`` to be used as the execution environment for this sn
 
 Values: \| \| \| \|–|–\| \| ``bare``\ \| Empty base snap, useful for fully statically linked snaps and testing \| \| ``core`` \| Ubuntu Core 16 \| \| ``core18`` \| Ubuntu Core 18 \| \| ``core20`` \| Ubuntu Core 20 \| \| ``core22`` \| Ubuntu Core 22 \|
 
-.. raw:: html
 
-   <h3 id="snapcraft-top-level-metadata-heading--compression">
+.. _snapcraft-top-level-metadata-heading--compression:
 
 compression
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~
 
 Type: ``string`` (*optional*)
 
@@ -141,15 +129,11 @@ Type: ``list[string] | string`` (Introduced: Snapcraft 5.0 *optional*)
 
 A link or list of links to receive donations for the snap.
 
-.. raw:: html
 
-   <h3 id="snapcraft-top-level-metadata-heading--epoch">
+.. _snapcraft-top-level-metadata-heading--epoch:
 
 epoch
-
-.. raw:: html
-
-   </h3>
+~~~~~
 
 type: ``integer`` (*optional*)
 
@@ -159,15 +143,11 @@ Applications and their data formats are constantly evolving, and this requires a
 
 See :ref:`Snap epochs <snap-epochs>` for further details.
 
-.. raw:: html
 
-   <h3 id="snapcraft-top-level-metadata-heading--grade">
+.. _snapcraft-top-level-metadata-heading--grade:
 
 grade
-
-.. raw:: html
-
-   </h3>
+~~~~~
 
 Type: ``enum`` (*optional*)
 
@@ -179,15 +159,11 @@ A snap of ``type`` ``app`` (default) cannot be set to ``stable`` if the ``base``
 
 Example: ``[stable`` or ``devel``]
 
-.. raw:: html
 
-   <h3 id="snapcraft-top-level-metadata-heading--hooks">
+.. _snapcraft-top-level-metadata-heading--hooks:
 
 hooks
-
-.. raw:: html
-
-   </h3>
+~~~~~
 
 Type: ``list[dict]`` (*optional*)
 
@@ -210,15 +186,11 @@ Type: ``list[string] | string`` (Introduced: Snapcraft 5.0 *optional*)
 
 A link or list of links to report issues for the snap.
 
-.. raw:: html
 
-   <h3 id="snapcraft-top-level-metadata-heading--icon">
+.. _snapcraft-top-level-metadata-heading--icon:
 
-icon⚓
-
-.. raw:: html
-
-   </h3>
+icon
+~~~~
 
 Type: ``string`` (*optional*)
 
@@ -230,15 +202,11 @@ It is a relative path to a ``.png``/``.svg`` file from the source tree root. The
 
 Examples: ``_package_name_.svg``, or ``snap/gui/logo.png``
 
-.. raw:: html
 
-   <h3 id="snapcraft-top-level-metadata-heading--layout">
+.. _snapcraft-top-level-metadata-heading--layout:
 
-layout⚓
-
-.. raw:: html
-
-   </h3>
+layout
+~~~~~~
 
 Type: ``list[dict]`` (*optional*)
 
@@ -260,15 +228,11 @@ Example:
      /etc/foo.conf:
        bind-file: $SNAP_DATA/etc/foo.conf
 
-.. raw:: html
 
-   <h3 id="snapcraft-top-level-metadata-heading--license">
+.. _snapcraft-top-level-metadata-heading--license:
 
-license⚓
-
-.. raw:: html
-
-   </h3>
+license
+~~~~~~~
 
 Type: ``string`` (*optional*)
 
@@ -386,15 +350,11 @@ Max len. 32 chars. Needs to be wrapped with single-quotes when the value will be
 
 Examples: ``'1'``, ``'1.2'``, ``'1.2.3'``, ``git`` (will be replaced by a ``git describe`` based version string)
 
-.. raw:: html
 
-   <h2 id="snapcraft-top-level-metadata-heading--plugs-and-slots-for-an-entire-snap">
+.. _snapcraft-top-level-metadata-heading--plugs-and-slots-for-an-entire-snap:
 
 Plugs and slots for an entire snap
-
-.. raw:: html
-
-   </h2>
+----------------------------------
 
 Plugs and slots for an :ref:`interface <supported-interfaces>` are usually configured per-app or per-daemon within *snapcraft.yaml*. See :ref:`Snapcraft app metadata <snapcraft-app-and-service-metadata>` for more details. However, ``snapcraft.yaml`` also enables global *plugs* and *slots* configuration for an entire snap:
 

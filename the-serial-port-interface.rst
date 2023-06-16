@@ -27,15 +27,11 @@ Once connected, the consuming snap can use the device via the path specified by 
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-serial-port-interface-heading--dev-details">
+.. _the-serial-port-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 **Auto-Connect**: no **Attributes**: - Should specify a single path attribute: \* ``path`` (slot): path to serial device node e.g. ``/dev/ttyS1``
 
@@ -49,15 +45,11 @@ Developer details
 
 To use a serial-port device, the snap developer must add :ref:``plugs: [ serial-port ]`` to a snap’s `snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific serial-port device with an `interface connection <interface-management.md#the-serial-port-interface-heading--manual-connections>`__.
 
-.. raw:: html
 
-   <h3 id="the-serial-port-interface-heading--code-examples">
+.. _the-serial-port-interface-heading--code-examples:
 
 Code examples
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~
 
 The following example shows the slot configuration, such as from the gadget snap, and includes which snaps are permitted to connect automatically:
 

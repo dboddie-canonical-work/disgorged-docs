@@ -20,15 +20,11 @@ Use ``snap interface gpio`` to see which gpio devices are available on the syste
      - pi:bcm-gpio-10
    [...]
 
-.. raw:: html
 
-   <h2 id="the-gpio-interface-heading--example">
+.. _the-gpio-interface-heading--example:
 
 Example
-
-.. raw:: html
-
-   </h2>
+-------
 
 The `pi-fancontrol <https://snapcraft.io/pi-fancontrol>`__ snap provides simple fan control on a Raspberry Pi with a fan connected to GPIO 14 (pin 8). With the snap installed, the following command will connect the interface to the pin:
 
@@ -43,15 +39,11 @@ The `pi-fancontrol <https://snapcraft.io/pi-fancontrol>`__ snap provides simple 
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-gpio-interface-heading--dev-details">
+.. _the-gpio-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 **Auto-connect**: no **Attributes**: \* ``number`` (slot): GPIO pin number to export and expose to consuming snaps
 
@@ -77,15 +69,11 @@ Once connected, the consuming snap can use the device via ``/sys/class/gpio/gpio
 
 Finally, when the interface is disconnected, ``"echo (pin number) > /sys/class/gpio/unexport"`` is run internally to disable access to the GPIO pin.
 
-.. raw:: html
 
-   <h3 id="the-gpio-interface-heading-code">
+.. _the-gpio-interface-heading-code:
 
 Code examples
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~
 
 The hook and control scripts for *pi-fancontrol* can be found in the project’s GitHub repository: https://github.com/ogra1/pi-fancontrol-snap
 

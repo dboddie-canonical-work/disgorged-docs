@@ -15,22 +15,18 @@ For examples, search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+
 
 Plugin-specific features and syntax are dependent on which :ref:`base <base-snaps>` is being used, as outlined below:
 
--  `base: core20 <#the-catkin-tools-plugin-heading--core20>`__
--  `base: core18 \| core <#the-catkin-tools-plugin-heading--core18>`__
+-  `base: core20 <the-catkin-tools-plugin-heading--core20_>`__
+-  `base: core18 \| core <the-catkin-tools-plugin-heading--core18_>`__
 
 This plugin uses the common plugin keywords as well as those for “sources”. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
 
 ##
 
-.. raw:: html
 
-   <h3 id="the-catkin-tools-plugin-heading--core20">
+.. _the-catkin-tools-plugin-heading--core20:
 
 base: core20
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~
 
 For core20, this plugin is designed to work with the :ref:`ROS 1 Noetic Extension <the-ros-1-noetic-extension>`. If not using this extension, it is required to set the ``ROS_DISTRO`` environment variable to ``noetic`` using ``build-environment``.
 
@@ -42,14 +38,10 @@ This plugin enables the following plugin-specific keywords on core20:
 
 ##
 
-.. raw:: html
 
-   <h3 id="the-catkin-tools-plugin-heading--core18">
+.. _the-catkin-tools-plugin-heading--core18:
 
 base: core|core18
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~~~~~
 
 This plugin enables core|core18 properties of the `catkin plugin </t/the-catkin-plugin/8644#the-catkin-tools-plugin-heading--core18>`__.

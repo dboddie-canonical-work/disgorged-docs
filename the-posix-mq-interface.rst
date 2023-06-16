@@ -14,15 +14,11 @@ The ``posix-mq`` interface enables inter-process communication (IPC) messages to
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-posix-mq-interface-heading--dev-details">
+.. _the-posix-mq-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 +---------------------------------------------------------------------------------------------+-----------------------+--------------------------------------------+
 | Permissions                                                                                 |                       |                                            |

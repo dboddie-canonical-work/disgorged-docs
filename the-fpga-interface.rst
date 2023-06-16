@@ -14,15 +14,11 @@ The ``fpga`` interface allows access to the `FPGA subsystem <https://www.kernel.
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-fpga-interface-heading--dev-details">
+.. _the-fpga-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 **Auto-connect**: no **Allow-installation**: yes
 

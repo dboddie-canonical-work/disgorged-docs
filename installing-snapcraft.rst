@@ -9,18 +9,14 @@ Installing snapcraft
 
 For a general overview of what Snapcraft is capable of, and how to build your first snap, take a look at our :ref:`Quickstart guide <snapcraft-overview>`, and see below for installation instructions:
 
--  `Linux distributions <#installing-snapcraft-heading--linux>`__
--  `macOS <#installing-snapcraft-heading--macos>`__
+-  `Linux distributions <installing-snapcraft-heading--linux_>`__
+-  `macOS <installing-snapcraft-heading--macos_>`__
 
-.. raw:: html
 
-   <h2 id="installing-snapcraft-heading--linux">
+.. _installing-snapcraft-heading--linux:
 
 Install snapcraft on Linux
-
-.. raw:: html
-
-   </h2>
+--------------------------
 
 On Linux distributions `with snap support <https://snapcraft.io/docs/installing-snapd>`__, the easiest way to install *snapcraft* is via its snap:
 
@@ -32,15 +28,11 @@ The :ref:``--classic`` argument is required because snapcraft uses `classic conf
 
    ⓘ If you’re using an **apt** installed version of snapcraft, such as the package for `Ubuntu 18.04 LTS <http://releases.ubuntu.com/18.04/>`__, you need to remove this (``sudo apt remove snapcraft``) and install snapcraft from its snap to access the latest features.
 
-.. raw:: html
 
-   <h2 id="installing-snapcraft-heading--macos">
+.. _installing-snapcraft-heading--macos:
 
 Install snapcraft on macOS
-
-.. raw:: html
-
-   </h2>
+--------------------------
 
 Snapcraft can also be installed and run on Apple’s macOS. See `Install snapcraft on macOS <https://snapcraft.io/docs/install-snapcraft-on-macos>`__ for details.
 

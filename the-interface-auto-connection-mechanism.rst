@@ -11,23 +11,19 @@ Part of this convenience is whether an interface is permitted to be automaticall
 
 --------------
 
--  `Auto-connections <#the-interface-auto-connection-mechanism-heading--autoconnect>`__
+-  `Auto-connections <the-interface-auto-connection-mechanism-heading--autoconnect_>`__
 
-   -  `Auto-connection process <#the-interface-auto-connection-mechanism-heading--process>`__
-   -  `Auto-connection constraints <#the-interface-auto-connection-mechanism-heading--constraints>`__
-   -  `Auto-connection with a default-provider <#the-interface-auto-connection-mechanism-heading--default--provider>`__
+   -  `Auto-connection process <the-interface-auto-connection-mechanism-heading--process_>`__
+   -  `Auto-connection constraints <the-interface-auto-connection-mechanism-heading--constraints_>`__
+   -  `Auto-connection with a default-provider <the-interface-auto-connection-mechanism-heading--default--provider_>`__
 
--  `Super-privileged interfaces <#the-interface-auto-connection-mechanism-heading--super>`__
+-  `Super-privileged interfaces <the-interface-auto-connection-mechanism-heading--super_>`__
 
-.. raw:: html
 
-   <h2 id="the-interface-auto-connection-mechanism-heading--autoconnect">
+.. _the-interface-auto-connection-mechanism-heading--autoconnect:
 
 Auto-connections
-
-.. raw:: html
-
-   </h2>
+----------------
 
 The snapd `interface auto-connection <interface-management.md#the-interface-auto-connection-mechanism-heading--auto-connections>`__ mechanism has been designed to remove the need for a manual connection when:
 
@@ -36,15 +32,11 @@ The snapd `interface auto-connection <interface-management.md#the-interface-auto
 -  There is a need to connect snaps that are designed to work together
 -  Store-set policy applies to let a given snap use an interface that would not be generally auto-connected.
 
-.. raw:: html
 
-   <h3 id="the-interface-auto-connection-mechanism-heading--process">
+.. _the-interface-auto-connection-mechanism-heading--process:
 
 Auto-connection process
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Whenever a snap is installed or refreshed, snapd will review its unconnected plugs and their candidate slots for auto-connection potential. It does the same for its slots and candidate plugs.
 
@@ -70,15 +62,11 @@ Built-in rules embody the general policy of whether and when an interface should
 
 A user can also issue “snap connect” and “snap disconnect” commands. In particular, a manual “snap disconnect” of an auto-connection will inhibit a subsequent refresh from re-establishing the auto-connection.
 
-.. raw:: html
 
-   <h3 id="the-interface-auto-connection-mechanism-heading--constraints">
+.. _the-interface-auto-connection-mechanism-heading--constraints:
 
 Auto-connection constraints
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following is an example built-in auto-connection rule (attached to the slot-side) for the content interface:
 
@@ -110,15 +98,11 @@ Further lists of constraints or values can be used in the rule language to expre
 
    ℹ The same language rules can be used to define rules other than interface auto-connections, including default policy for ordinary connections and installations, and to override policy for the more sensitive interfaces.
 
-.. raw:: html
 
-   <h3 id="the-interface-auto-connection-mechanism-heading--default-provider">
+.. _the-interface-auto-connection-mechanism-heading--default-provider:
 
 Auto-connection with a default-provider
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A content interface plug can specify a default-provider. This is the name of a snap that can be installed to fulfil the plug’s need. If there isn’t a slot with the content label of the plug on the system the specified snap will be installed before the snap with the plug. However, if there is a slot on the system that already has the content label, any default-provider specified by a content interface plug is ignored. If the specified snap is already installed but there is no slot with the content label, the specified snap will be upgraded instead under the assumption that a newer version may start providing the label.
 

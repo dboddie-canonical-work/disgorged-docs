@@ -14,15 +14,11 @@ The ``calendar-service`` interface enables communication with Evolution Data Ser
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-calendar-service-interface-heading--dev-details">
+.. _the-calendar-service-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 **Auto-connect**: no
 

@@ -16,15 +16,11 @@ Only the Steam snap may establish this interface. See `Introducing early access 
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-steam-support-interface-heading--dev-details">
+.. _the-steam-support-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 `Auto-connect <interface-management.md#the-steam-support-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
 

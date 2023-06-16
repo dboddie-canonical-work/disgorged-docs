@@ -9,41 +9,33 @@ The *classic* linter is a :ref:`Snapcraft linter <snapcraft-linters>` that is us
 
 The classic linter is only invoked when snap confinement is set to ``classic``, or if *libc* is staged.
 
--  `How the classic linter helps <#classic-linter-heading--help>`__
--  `Linter warnings <#classic-linter-heading--warnings>`__
--  `Addressing linter issues <#classic-linter-heading--issues>`__
+-  `How the classic linter helps <classic-linter-heading--help_>`__
+-  `Linter warnings <classic-linter-heading--warnings_>`__
+-  `Addressing linter issues <classic-linter-heading--issues_>`__
 
-   -  `at build time <#classic-linter-heading--issues-build>`__
-   -  `binary patching <#classic-linter-heading--issues-binary>`__
-   -  `automatic ELF patching <#classic-linter-heading--issues-auto>`__
+   -  `at build time <classic-linter-heading--issues-build_>`__
+   -  `binary patching <classic-linter-heading--issues-binary_>`__
+   -  `automatic ELF patching <classic-linter-heading--issues-auto_>`__
 
 See `Disabling linters <snapcraft-linters.md#classic-linter-heading--disable>`__ for details on how to stop this linter running.
 
 --------------
 
-.. raw:: html
 
-   <h2 id="classic-linter-heading--help">
+.. _classic-linter-heading--help:
 
 How the linter helps
-
-.. raw:: html
-
-   </h2>
+--------------------
 
 Unlike un-snapped applications, snaps using classic confinement require dynamic executables to load shared libraries from the appropriate `base snap <t/base-snaps/11198>`__ rather from than the host’s root filesystem.
 
 To prevent version and platform incompatibly issues, snap-based binaries need to be either built with appropriate linker parameters, or patched to allow loading shared libraries from their base snap. The classic linter helps with this by warning about libraries that need to be patched.
 
-.. raw:: html
 
-   <h2 id="classic-linter-heading--warnings">
+.. _classic-linter-heading--warnings:
 
 Linter warnings
-
-.. raw:: html
-
-   </h2>
+---------------
 
 The classic linter will issue a warning if the ELF binary it is testing:
 
@@ -71,27 +63,19 @@ The classic linter will issue a warning if the ELF binary it is testing:
 
 
 
-.. raw:: html
 
-   <h2 id="classic-linter-heading--issues">
+.. _classic-linter-heading--issues:
 
 Addressing issues
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 To address classic linter issues, the appropriate *rpath* can be set during build time, or existing binaries can be patched to have their rpath changed.
 
-.. raw:: html
 
-   <h3 id="classic-linter-heading--issues-build">
+.. _classic-linter-heading--issues-build:
 
 At build time
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~
 
 Setting *rpath* at build time requires linker parameters to be used. The linker is typically invoked indirectly via a compiler driver; with *gcc*, for example, case parameters can be passed to the linker using the ``-Wl`` option:
 
@@ -116,15 +100,11 @@ A similar strategy can be used to set rpath in a `cgo <https://pkg.go.dev/cmd/cg
 
 Linker argument ``-Wl,-dynamic-linker=...`` can be used to set the ELF interpreter.
 
-.. raw:: html
 
-   <h3 id="classic-linter-heading--issues-binary">
+.. _classic-linter-heading--issues-binary:
 
 Binary patching
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~~~
 
 A snap payload may also contain pre-built ELF binaries installed from arbitrary sources (typically from the distribution archive, after installing stage packages).
 
@@ -140,15 +120,11 @@ Or, to set the ELF interpreter, the following command can be used:
 
    patchelf --set-interpreter /snap/core22/current/lib64/ld-linux-x86-64.so.2 foo
 
-.. raw:: html
 
-   <h3 id='classic-linter-heading--issues-auto'>
+.. _classic-linter-heading--issues-auto:
 
 Automatic ELF file patching
-
-.. raw:: html
-
-   </h2>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Snapcraft 7.2 does not currently perform automatic ELF patching for ``base: core22`` classic snaps, however this feature is now available in edge. To use it, declare:
 

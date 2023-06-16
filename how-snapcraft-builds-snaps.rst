@@ -25,15 +25,11 @@ The list of available global options and commands can be checked with:
 
    snapcraft help
 
-.. raw:: html
 
-   <h2 id="how-snapcraft-builds-snaps-heading--snapcraft">
+.. _how-snapcraft-builds-snaps-heading--snapcraft:
 
 snapcraft.yaml
-
-.. raw:: html
-
-   </h2>
+--------------
 
 Snaps are created using a build recipe defined in a file called ``snapcraft.yaml``.
 
@@ -53,15 +49,11 @@ A minimal valid snapcraft.yaml file that can be built into a working snap requir
 -  Confinement level.
 -  Build definition.
 
-.. raw:: html
 
-   <h3 id="how-snapcraft-builds-snaps-heading--definitions">
+.. _how-snapcraft-builds-snaps-heading--definitions:
 
 Main definitions inside snapcraft.yaml
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There is no one way for how a snap ought to be assembled. However, most snapcraft.yaml files have the same common elements, including a number of mandatory declarations. Below is a short list of these keys, which will be further explained in the Examples sections later in the tutorial.
 
@@ -81,15 +73,11 @@ It is important to note several additional details:
 
 The parts section may also include a list of :ref:`stage packages <build-and-staging-dependencies>` (stage-packages) that will be used by the snap’s applications at runtime, e.g.: python-bcrypt. These will be obtained from the repository archives in the build instance.
 
-.. raw:: html
 
-   <h2 id="how-snapcraft-builds-snaps-heading--build">
+.. _how-snapcraft-builds-snaps-heading--build:
 
 Snapcraft build lifecycle
-
-.. raw:: html
-
-   </h2>
+-------------------------
 
 Snaps are :ref:`built <parts-lifecycle>` in several steps, collectively known as the “lifecycle”:
 
@@ -99,15 +87,11 @@ Snaps are :ref:`built <parts-lifecycle>` in several steps, collectively known as
 -  **Prime** - Snapcraft copies the staged components into the priming area, where the files will be placed in their final locations (folder and files path hierarchy) for the resulting snap. The prime step is similar to the stage step, but it may exclude certain components from the stage step.
 -  **Pack** - Snapcraft packs the assembled components in the prime directory into a single archive.
 
-.. raw:: html
 
-   <h2 id="how-snapcraft-builds-snaps-heading--output">
+.. _how-snapcraft-builds-snaps-heading--output:
 
 Snapcraft build output
-
-.. raw:: html
-
-   </h2>
+----------------------
 
 The artifact of a successful Snapcraft build run is a snap file, which is itself a compressed Squashfs archive distinguished by the .snap suffix.
 

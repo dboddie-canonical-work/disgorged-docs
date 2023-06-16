@@ -13,15 +13,11 @@ See also the :ref:`kernel-module-control interface <the-kernel-module-control-in
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-kernel-module-load-interface-heading--dev-details">
+.. _the-kernel-module-load-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 `Auto-connect <interface-management.md#the-kernel-module-load-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
 
@@ -33,15 +29,11 @@ Consumers of this interface require a `snap declaration <https://snapcraft.io/do
 
 Requires snapd version *2.54+*.
 
-.. raw:: html
 
-   <h3 id="the-kernel-module-load-interface-heading-code">
+.. _the-kernel-module-load-interface-heading-code:
 
 Code examples
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~
 
 The following is an example snippet for an application snap to load the module ``foo`` with options ``param=2``, and to deny loading the module ``bar``:
 

@@ -9,29 +9,25 @@ The ``snapcraft metrics`` command is used to track installation and usage statis
 
 A selection of metrics are also visible from the `Snap Store <https://snapcraft.io/store>`__ web UI. See `Snap Store metrics <https://snapcraft.io/docs/snap-store-metrics>`__ for details.
 
-To ensure you have the correct and updated permissions to access *metrics*, we recommend using ``snapcraft logout`` and ``snapcraft login`` the first time this feature is used. See `Credentials <#snapcraft-metrics-heading--credentials>`__ for more details.
+To ensure you have the correct and updated permissions to access *metrics*, we recommend using ``snapcraft logout`` and ``snapcraft login`` the first time this feature is used. See `Credentials <snapcraft-metrics-heading--credentials_>`__ for more details.
 
--  `Usage <#snapcraft-metrics-heading--usage>`__
+-  `Usage <snapcraft-metrics-heading--usage_>`__
 
-   -  `Supported metrics <#snapcraft-metrics-heading--supported>`__
+   -  `Supported metrics <snapcraft-metrics-heading--supported_>`__
 
--  `Output format <#snapcraft-metrics-heading--output>`__
+-  `Output format <snapcraft-metrics-heading--output_>`__
 
-   -  `JSON output <#snapcraft-metrics-heading--json>`__
-   -  `Table output <#snapcraft-metrics-heading--table>`__
+   -  `JSON output <snapcraft-metrics-heading--json_>`__
+   -  `Table output <snapcraft-metrics-heading--table_>`__
 
--  .. rubric:: `Credentials <#snapcraft-metrics-heading--credentials>`__
+-  .. rubric:: `Credentials <snapcraft-metrics-heading--credentials_>`__
       :name: credentials
 
-.. raw:: html
 
-   <h2 id="snapcraft-metrics-heading--usage">
+.. _snapcraft-metrics-heading--usage:
 
 Usage
-
-.. raw:: html
-
-   </h2>
+-----
 
 The *snapcraft metrics* command takes the following arguments:
 
@@ -54,41 +50,29 @@ The *snapcraft metrics* command takes the following arguments:
 | ``format``            | required          | string                        | Output format.                                                                                         |
 +-----------------------+-------------------+-------------------------------+--------------------------------------------------------------------------------------------------------+
 
-.. raw:: html
 
-   <h3 id="snapcraft-metrics-heading--supported">
+.. _snapcraft-metrics-heading--supported:
 
 Supported metrics
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~~~~~
 
 The following metrics (``<metric-name>``) are supported: \* **daily_device_change**: contains the 3 series representing the number of **new**, **continued** and **lost** devices with the given snap installed compared to the previous day. \* **installed_base_by_channel**: contains one series per channel representing the number of devices with the given snap installed, channels with no data across the entire interval are omitted. \* **installed_base_by_country**: contains one series per country representing the number of devices with the given snap installed. \* **installed_base_by_operating_system**: contains one series per operating_system representing the number of devices with the given snap installed. \* **installed_base_by_version**: contains one series per version representing the number of devices with the given snap installed. \* **weekly_device_change**: similar to the ‘daily_device_change’ metric but operates on a 7 day window. i.e. **new** contains the number of devices that were seen during the last 7 days but not in the previous 7 day and so on for **continued** and **lost**. \* **weekly_installed_base_by_channel**: similar to the **installed_base_by_channel** metric but operates in a 7 day window. \* **weekly_installed_base_by_country**: similar to the **installed_base_by_country** metric but operates in a 7 day window. \* **weekly_installed_base_by_operating_system**: similar to the **installed_base_by_operating_system** metric but operates in a 7 day window. \* **weekly_installed_base_by_version**: similar to the **installed_base_by_version** metric but operates in a 7 day window.
 
 Each metric has a query that includes a start and end date. The returned data, if available, will include all the days in-between. Weekly installed numbers still generated daily with the provided numbers being the averages for the 7 day window ending on the specified day.
 
-.. raw:: html
 
-   <h2 id="snapcraft-metrics-heading--output">
+.. _snapcraft-metrics-heading--output:
 
 Output format
-
-.. raw:: html
-
-   </h2>
+-------------
 
 The *snapcraft metrics* command outputs either as JSON string or a table.
 
-.. raw:: html
 
-   <h3 id="snapcraft-metrics-heading--json">
+.. _snapcraft-metrics-heading--json:
 
 JSON output
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~
 
 When using ``--format=json``, a JSON string matching the response from the Snap Store API server for the given metric is output.
 
@@ -106,15 +90,11 @@ Example **daily_device_change** output:
 
 If the JSON object returned from the API is ``response``, *snapcraft* will output the pertinent data at ``response["metrics"][0]``. The relevant API documentation can be found on `dashboard.snapcraft.io <https://dashboard.snapcraft.io/docs/reference/v1/snap.html#the-metrics-response>`__.
 
-.. raw:: html
 
-   <h3 id="snapcraft-metrics-heading--table">
+.. _snapcraft-metrics-heading--table:
 
 Table output
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~
 
 When using ``--format=table``, a table-based interpretation of the returned data, with columns for the requested date ranges and rows of the requested data series, is output.
 
@@ -240,15 +220,11 @@ Example **installed_base_by_version** output:
 
 
 
-.. raw:: html
 
-   <h2 id="snapcraft-metrics-heading--credentials">
+.. _snapcraft-metrics-heading--credentials:
 
 Handling credentials
-
-.. raw:: html
-
-   </h2>
+--------------------
 
 The `Snap Store metrics API <https://dashboard.snapcraft.io/docs/reference/v1/snap.html#fetch-metrics-for-snaps>`__, used by the *snapcraft metrics* command, requires the ``package_metrics`` permission granted for the given credentials of the current snapcraft user.
 

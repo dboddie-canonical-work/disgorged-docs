@@ -14,15 +14,11 @@ The ``dsp`` interface allows for the control of digital signal processors (DSPs)
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-dsp-interface-heading--dev-details">
+.. _the-dsp-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 **Auto-connect**: no
 
@@ -30,14 +26,10 @@ This interface allows privileged access to hardware and kernel drivers related t
 
 Requires snapd version *2.51+*.
 
-.. raw:: html
 
-   <h3 id="the-dsp-interface-heading-code">
+.. _the-dsp-interface-heading-code:
 
 Code examples
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~
 
 The source code for this interface is in the *snapd* repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/dsp.go

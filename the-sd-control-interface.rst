@@ -14,15 +14,11 @@ The ``sd-control`` interface allows for the management and control of SD cards o
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-sd-control-interface-heading--dev-details">
+.. _the-sd-control-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 `Auto-connect <interface-management.md#the-sd-control-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
 
@@ -30,14 +26,10 @@ The main DualSD device node (``/dev/DualSD``) is used to control certain aspects
 
 Requires snapd version *2.51.3+*.
 
-.. raw:: html
 
-   <h3 id="the-sd-control-interface-heading-code">
+.. _the-sd-control-interface-heading-code:
 
 Code examples
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~
 
 The source code for this interface is in the *snapd* repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/sd_control.go

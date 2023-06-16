@@ -9,28 +9,24 @@ When building a snap and constructing a :ref:`part <adding-parts>`, you commonly
 
 How these dependencies are identified and added is covered below.
 
--  `Package types <#build-and-staging-dependencies-heading--package>`__
--  `Package and snap names <#build-and-staging-dependencies-heading--package-names>`__
--  `Identify missing packages <#build-and-staging-dependencies-heading--missing>`__
+-  `Package types <build-and-staging-dependencies-heading--package_>`__
+-  `Package and snap names <build-and-staging-dependencies-heading--package-names_>`__
+-  `Identify missing packages <build-and-staging-dependencies-heading--missing_>`__
 
-   -  `Building <#build-and-staging-dependencies-heading--missing-building>`__
-   -  `Staging <#build-and-staging-dependencies-heading--missing-staging>`__
+   -  `Building <build-and-staging-dependencies-heading--missing-building_>`__
+   -  `Staging <build-and-staging-dependencies-heading--missing-staging_>`__
 
--  `Removing stage package duplication <#build-and-staging-dependencies-heading--filtering>`__
+-  `Removing stage package duplication <build-and-staging-dependencies-heading--filtering_>`__
 
 For further help on solving build dependencies, see :ref:`Iterating over a build <iterating-over-a-build>` for build and testing best-practices and :ref:`Troubleshoot snap building <troubleshoot-snap-building>` for help resolving build errors.
 
 --------------
 
-.. raw:: html
 
-   <h2 id="build-and-staging-dependencies-heading--package">
+.. _build-and-staging-dependencies-heading--package:
 
 Package types
-
-.. raw:: html
-
-   </h2>
+-------------
 
 Build and staging dependencies are added to a snap’s :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>` within a part definition. They can be added as standard packages for the chosen build environment, such as *deb* packages for Ubuntu, or as a cross-platform snap using the following *snapcraft.yaml* keywords:
 
@@ -64,15 +60,11 @@ For staged snaps, the ``meta`` and ``snap`` directories from the snap will be av
 
 
 
-.. raw:: html
 
-   <h2 id="build-and-staging-dependencies-heading--package-names">
+.. _build-and-staging-dependencies-heading--package-names:
 
 Package and snap names
-
-.. raw:: html
-
-   </h2>
+----------------------
 
 Package dependencies are listed as package names for the snap’s build environment.
 
@@ -84,27 +76,19 @@ The required packages are likely to be identical to those needed to either build
 
 Snap names are identical to the names used to install the snap outside of the build environment, and those listed by the `Snap Store <https://snapcraft.io/store>`__. If a specific channel is required, the syntax is of the form ``<snap-name>/<channel>`` (see `Channels <https://snapcraft.io/docs/channels>`__ for more details on the syntax).
 
-.. raw:: html
 
-   <h2 id="build-and-staging-dependencies-heading--missing">
+.. _build-and-staging-dependencies-heading--missing:
 
 Identifying missing packages
-
-.. raw:: html
-
-   </h2>
+----------------------------
 
 Working out your project’s dependencies can be an iterative process, much like compiling a third-party package, with the process split into identifying the dependencies a snap needs to be built, and those required for running the resultant application.
 
-.. raw:: html
 
-   <h3 id="build-and-staging-dependencies-heading--missing-building">
+.. _build-and-staging-dependencies-heading--missing-building:
 
 Building
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~
 
 1. when you have a workable framework *snapcraft.yaml* for your snap, run ``snapcraft --debug`` until you hit an error
 2. If that error is a build dependency, use the *debug* interactive shell to work out which package is required
@@ -121,15 +105,11 @@ In most cases, the error will provide some indication of what needs to be instal
 
 If the package is unknown, it’s correct name can normally be found with a search from within the build environment, or via a search engine.
 
-.. raw:: html
 
-   <h3 id="build-and-staging-dependencies-heading--missing-staging">
+.. _build-and-staging-dependencies-heading--missing-staging:
 
 Staging
-
-.. raw:: html
-
-   </h3>
+~~~~~~~
 
 After a snap has been successfully built, if snapcraft detects that the resultant executable will require further packages, it will attempt to guess these and output a list that can be copied and pasted into the snapcraft.yaml. The output will look similar to the following:
 
@@ -163,15 +143,11 @@ The following are the most common solutions for these kind of errors:
 
    -  Connect the snapd interface (manually for testing, or automatically for production).
 
-.. raw:: html
 
-   <h2 id="build-and-staging-dependencies-heading--filtering">
+.. _build-and-staging-dependencies-heading--filtering:
 
 Removing stage package duplication
-
-.. raw:: html
-
-   </h2>
+----------------------------------
 
 Snapcraft minimises the size of a target snap by filtering out stage-package dependencies, if they are available in the base, e.g. core18.
 

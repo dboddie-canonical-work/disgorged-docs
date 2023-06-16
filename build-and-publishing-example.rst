@@ -7,15 +7,11 @@ Build and publishing example
 
 After creating the :ref:`Intermediate snapcraft.yaml example <intermediate-snapcraft-yaml-example>`, the snap is ready to be built. The following is based on the `wethr snap <https://github.com/snapcrafters/wethr/blob/master/snap/snapcraft.yaml>`__.
 
-.. raw:: html
 
-   <h2 id="build-and-publishing-example-heading--build">
+.. _build-and-publishing-example-heading--build:
 
 Snap build process
-
-.. raw:: html
-
-   </h2>
+------------------
 
 From the project directory, run the following command:
 
@@ -31,15 +27,11 @@ The virtual machine or container will not be deleted, and will be reused for any
    :alt: Snapcraft building the wethr snap in Konsole
 
 
-.. raw:: html
 
-   <h2 id="build-and-publishing-example-heading--publish">
+.. _build-and-publishing-example-heading--publish:
 
 Snap publication process
-
-.. raw:: html
-
-   </h2>
+------------------------
 
 The process consists of the following steps:
 
@@ -58,15 +50,11 @@ Once the first two steps are complete, the developer can upload the snap to the 
 
    snapcraft upload --release=<channel> <file>.snap
 
-.. raw:: html
 
-   <h2 id="build-and-publishing-example-heading--channels">
+.. _build-and-publishing-example-heading--channels:
 
 Snap Store channels
-
-.. raw:: html
-
-   </h2>
+-------------------
 
 The Snap Store comes with a high level of release management flexibility, achieved by using multiple `channels <https://snapcraft.io/docs/channels>`__, which allow developers to publish their applications in a staged, controlled manner. The channels can be treated as a multi-dimensional version control. Each channel consists of three components:
 
@@ -101,15 +89,11 @@ Branches are optional. They allow the creation of short-lived sequences of snaps
 
 Branch names convey their purpose, such as fix-for-bug123, but the name isn’t exposed in the Snap Store. Instead, they can be tracked by developers and users who know the exact name. After 30 days with no further updates, a branch will be closed automatically.
 
-.. raw:: html
 
-   <h2 id="build-and-publishing-example-heading--next">
+.. _build-and-publishing-example-heading--next:
 
 Next steps
-
-.. raw:: html
-
-   </h2>
+----------
 
 During our :ref:`Build your own snap with Snapcraft <snapcraft-quickstart>` series of How-tos, we’ve been through an overview of the snap ecosystem, focused on the Snapcraft tool, the contents and syntax of the snapcraft.yaml, we built a simple and then an intermediate-difficulty snap example illustrating the use of different components and keywords, and finally, we published the built snaps into the Snap Store.
 

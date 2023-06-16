@@ -9,15 +9,11 @@ The ``audio-playback`` interface allows a snap to play sounds and music, via the
 
 Audio recording is enabled with the companion :ref:`audio-record <the-audio-record-interface>` interface, and unlike ``audio-playback``, is not enabled (auto-connected) by default.
 
-.. raw:: html
 
-   <h2 id="the-audio-playback-interface-heading--example">
+.. _the-audio-playback-interface-heading--example:
 
 Example
-
-.. raw:: html
-
-   </h2>
+-------
 
 The `VLC snap <https://snapcraft.io/vlc>`__ is a good example of an application using the audio-playback interface:
 
@@ -47,27 +43,19 @@ The connect command can be used to re-enable audio playback:
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-audio-playback-interface-heading--dev-details">
+.. _the-audio-playback-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 **Auto-connect**: yes
 
-.. raw:: html
 
-   <h3 id="the-audio-playback-interface-heading-code">
+.. _the-audio-playback-interface-heading-code:
 
 Code examples
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~
 
 The snapcraft.yaml for `VLC <https://github.com/videolan/vlc>`__ includes audio-playback configuration: `https://github.com/videolan/vlc/blob/master/extras/package/snap/snapcraft.yaml <https://github.com/videolan/vlc/blob/75bca603749d8bfb7048a84ea811cbdb19447596/extras/package/snap/snapcraft.yaml#L36>`__
 

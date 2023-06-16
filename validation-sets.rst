@@ -14,19 +14,15 @@ Prerequisites
 
 Validation set functionality is currently under active development and there are several considerations that need to be made before using it: - A developer account is also required, along with your developer id. (*see*\ `Create a developer account <create-a-developer-account.md#validation-sets-heading--developer-id>`__\ *for further details*) - Snapd version 2.50 and :ref:`Snapcraft <snapcraft-overview>` version :ref:`4.7 <release-notes-snapcraft-4-7>`, or newer, are required. - **Currently, in order to enforce a validation set, the following is also required:** - a `brand store <glossary.md#validation-sets-heading--brand-store>`__ account - the validation set’s ``name``, ``account-id`` and listed snaps, need to be added to an allowlist in the store backends (this is done by filing a brand store support ticket). - Snapd version 2.54
 
-See below for further details on the following: - `Creating a validation set <#validation-sets-heading--creating>`__ - `Listing a validation set <#validation-sets-heading--listing>`__ - `Monitoring assertion validity <#validation-sets-heading--using>`__ - `Enforcing assertion validity <#validation-sets-heading--enforcing>`__
+See below for further details on the following: - `Creating a validation set <validation-sets-heading--creating_>`__ - `Listing a validation set <validation-sets-heading--listing_>`__ - `Monitoring assertion validity <validation-sets-heading--using_>`__ - `Enforcing assertion validity <validation-sets-heading--enforcing_>`__
 
 --------------
 
-.. raw:: html
 
-   <h2 id="validation-sets-heading--creating">
+.. _validation-sets-heading--creating:
 
 Creating a validation set
-
-.. raw:: html
-
-   </h2>
+-------------------------
 
 To create a validation set, use the ``snapcraft edit-validation-sets`` command:
 
@@ -90,15 +86,11 @@ We recommend making a copy of the saved validation set assertion before closing 
 
 To modify the assertion at a later point, run the same ``snapcraft edit-validation-sets`` command with the same name but an incremented sequence number and/or revision.
 
-.. raw:: html
 
-   <h2 id="validation-sets-heading--listing">
+.. _validation-sets-heading--listing:
 
 Listing validation sets
-
-.. raw:: html
-
-   </h2>
+-----------------------
 
 Use the ``snapcraft list-validation-sets`` command to check which validation sets area available in the store:
 
@@ -127,15 +119,11 @@ An additional ``--sequence`` argument can be used to list validation sets with a
 
 By default, only the most *latest* validation sets are listed. To list every validation set available, add the ``--all`` argument.
 
-.. raw:: html
 
-   <h2 id="validation-sets-heading--using">
+.. _validation-sets-heading--using:
 
 Monitoring assertion validity
-
-.. raw:: html
-
-   </h2>
+-----------------------------
 
 The ``snap validate --monitor`` command is used to enable monitoring of a validation assertion on the system; in this mode the constraints of the assertion are not enforced (e.g. snaps may get automatically refreshed to newer revisions that make the assertion invalid as show in the next example):
 
@@ -177,15 +165,11 @@ Finally, to remove a validation set from the system, use the ``--forget`` argume
 
    snap validate --forget xSfWKGdLoQBoQx88vIM1MpbFNMq53t1f/myset1
 
-.. raw:: html
 
-   <h2 id="validation-sets-heading--enforcing">
+.. _validation-sets-heading--enforcing:
 
 Enforcing assertion validity
-
-.. raw:: html
-
-   </h2>
+----------------------------
 
 When enforcing a validation set, snapd will ensure that:
 

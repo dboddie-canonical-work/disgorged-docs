@@ -13,37 +13,29 @@ This plugin uses the common plugin keywords as well as those for `sources <snapc
 
 Additional features and syntax are dependent on which :ref:`base <base-snaps>` is being used, as outlined below:
 
--  `base: core20 <#the-qmake-plugin-heading--core20>`__
--  `base: core18 \| core <#the-qmake-plugin-heading--core18>`__
+-  `base: core20 <the-qmake-plugin-heading--core20_>`__
+-  `base: core18 \| core <the-qmake-plugin-heading--core18_>`__
 
 For examples, search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+qmake%22&type=Code>`__ for projects already using the plugin.
 
    ⓘ This is a *snapcraft* plugin. See :ref:`Snapcraft plugins <snapcraft-plugins>` and :ref:`Supported plugins <supported-plugins>` for further details on how plugins are used.
 
-.. raw:: html
 
-   <h3 id="the-qmake-plugin-heading--core20">
+.. _the-qmake-plugin-heading--core20:
 
 base: core20
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~
 
 This plugin uses the following plugin-specific keywords:
 
 -  **``qmake-parameters``** (list of strings) additional options to pass to the qmake invocation.
 -  **``qmake-project-file``** (string) the qmake project file to use. This is usually only needed if qmake can not determine what project file to use on its own.
 
-.. raw:: html
 
-   <h3 id="the-qmake-plugin-heading--core18">
+.. _the-qmake-plugin-heading--core18:
 
 base: core18 \| core
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~~~~~~~~
 
 This plugin uses the following plugin-specific keywords:
 

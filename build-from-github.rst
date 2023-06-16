@@ -17,23 +17,19 @@ Supported build architectures are: **amd64** , **arm64** , **armhf** , **i386** 
 
    ℹ See :ref:`Creating a snap <creating-a-snap>` for details on creating the metadata required to build a snap. For other ways to build a snap, see :ref:`Build options <build-options>`.
 
--  `Prerequisites <#build-from-github-heading--prerequisites>`__
--  `Link to GitHub <#build-from-github-heading--github>`__
--  `Select a repository <#build-from-github-heading--repo>`__
--  `Monitor the build process <#build-from-github-heading--monitor>`__
--  `Unlink and disable GitHub builds <#build-from-github-heading--unlink>`__
+-  `Prerequisites <build-from-github-heading--prerequisites_>`__
+-  `Link to GitHub <build-from-github-heading--github_>`__
+-  `Select a repository <build-from-github-heading--repo_>`__
+-  `Monitor the build process <build-from-github-heading--monitor_>`__
+-  `Unlink and disable GitHub builds <build-from-github-heading--unlink_>`__
 
 --------------
 
-.. raw:: html
 
-   <h2 id="build-from-github-heading--prerequisites">
+.. _build-from-github-heading--prerequisites:
 
 Prerequisites
-
-.. raw:: html
-
-   </h2>
+-------------
 
 You will need a :ref:`Developer account <create-a-developer-account>` and accept that the source code for a prospective snap will be publicly accessible while on the build server. Projects also need to be hosted on a public `GitHub <https://github.com/>`__ repository.
 
@@ -53,29 +49,21 @@ Build architectures can be defined within a snap’s :ref:`snapcraft.yaml <the-s
 
 A :ref:`snap base <base-snaps>` of ``core18`` is assumed by default, unless specified otherwise. If a snap’s base doesn’t support a specified architecture, it will not be built. If no architecture is specified, snaps for all base-compatible architectures will attempt to be built.
 
-.. raw:: html
 
-   <h2 id="build-from-github-heading--github">
+.. _build-from-github-heading--github:
 
 Link to GitHub
-
-.. raw:: html
-
-   </h2>
+--------------
 
 To link your snap’s GitHub repository to your snap developer account, make sure you’re logged in to the developer account and go to the `My snaps <https://snapcraft.io/snaps>`__ overview page. This is the default landing page when you log in.
 
 Select the target snap and open its ‘Builds’ tab in the web UI. Use the *GitHub login* button to connect to GitHub. You will be asked to authorise read and write access for webhook creation, which is the mechanism used to trigger builds. Your GitHub account is now connected.
 
-.. raw:: html
 
-   <h2 id="build-from-github-heading--repo">
+.. _build-from-github-heading--repo:
 
 Select a repository
-
-.. raw:: html
-
-   </h2>
+-------------------
 
 With the GitHub account connected, the next step is to choose a repository.
 
@@ -91,15 +79,11 @@ Click on *Start building* to instantiate the build process and complete the link
    :alt: 352253a18ea8e99a914ce6697d83cddfc9d3dc89|648x146
 
 
-.. raw:: html
 
-   <h2 id="build-from-github-heading--monitor">
+.. _build-from-github-heading--monitor:
 
 Monitor the build process
-
-.. raw:: html
-
-   </h2>
+-------------------------
 
 The *Builds* tab in the web UI will always show the build status for each supported architecture:
 
@@ -121,15 +105,11 @@ When a build succeeds, it’s automatically released to the edge channel. The re
 
 See `Release management <https://snapcraft.io/docs/release-management>`__ for more details on how to promote and monitor release revisions and their channels.
 
-.. raw:: html
 
-   <h2 id="build-from-github-heading--unlink">
+.. _build-from-github-heading--unlink:
 
 Unlink and disable GitHub builds
-
-.. raw:: html
-
-   </h2>
+--------------------------------
 
 To unlink your GitHub repo and disable automatic snap builds, navigate to the *Builds* tab in the web UI and click on *Disconnect repo* at the top of the page and confirm the action:
 

@@ -16,15 +16,11 @@ The ``snap-refresh-control`` interface allows extended control, via `snapctl <ht
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-snap-refresh-control-interface-heading--dev-details">
+.. _the-snap-refresh-control-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 `Auto-connect <interface-management.md#the-snap-refresh-control-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
 

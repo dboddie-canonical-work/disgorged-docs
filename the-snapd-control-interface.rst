@@ -18,15 +18,11 @@ Consequently, consumers of this interface require `approval <https://snapcraft.i
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-snapd-control-interface-heading--dev-details">
+.. _the-snapd-control-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 `Auto-connect <interface-management.md#the-snapd-control-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
 

@@ -28,15 +28,11 @@ Snaps build on the bases ``core``, ``core18``, and ``core20`` default to using M
 
    ⓘ See :ref:`this page <build-providers>` for details on how to configure snapcraft to use either LXD or Multipass and other build provider-specific details.
 
-.. raw:: html
 
-   <h2 id="build-options-heading--snapcraft">
+.. _build-options-heading--snapcraft:
 
 Build environment options
-
-.. raw:: html
-
-   </h2>
+-------------------------
 
 Snapcraft can optionally use the following arguments to modify the build environment.
 
@@ -60,15 +56,11 @@ Snapcraft can optionally use the following arguments to modify the build environ
 | ``--enable-manifest``            | Add the build manifest to the snap package in ``snap/manifest.yaml``. This contains the specific sources and packages used to build the snap and allows the Snap Store to `automatically check your Snap for security issues <https://snapcraft.io/blog/introducing-developer-notifications-for-snap-security-updates>`__. This is identical to setting the environment variable ``SNAPCRAFT_BUILD_INFO=1``. Snaps built on Launchpad will have this set automatically. | None                                                                                                        |
 +----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
 
-.. raw:: html
 
-   <h2 id="build-options-heading--deprecated">
+.. _build-options-heading--deprecated:
 
 Deprecated build options
-
-.. raw:: html
-
-   </h2>
+------------------------
 
 +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
 | Command                   | Description                                                                                                                                                                                                                                                                                                                   | Requirements                                                                                                                |

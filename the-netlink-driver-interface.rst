@@ -16,15 +16,11 @@ See also :ref:`netlink-audit <the-netlink-audit-interface>` and :ref:`netlink-co
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-netlink-driver-interface-heading--dev-details">
+.. _the-netlink-driver-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 **Auto-connect**: no
 
@@ -32,14 +28,10 @@ Further confinement for particular families/protocols is implemented via Seccomp
 
 Requires snapd version *2.51.1+*.
 
-.. raw:: html
 
-   <h3 id="the-netlink-driver-interface-heading-code">
+.. _the-netlink-driver-interface-heading-code:
 
 Code examples
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~
 
 The source code for this interface is in the *snapd* repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/netlink_driver.go

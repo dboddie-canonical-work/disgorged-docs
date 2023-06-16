@@ -7,15 +7,11 @@ The accounts-service interface
 
 ``accounts-service`` allows communication with the *accounts* service, such as `GNOME Online Accounts <https://wiki.gnome.org/Projects/GnomeOnlineAccounts>`__.
 
-.. raw:: html
 
-   <h2 id="the-accounts-service-interface-heading--example">
+.. _the-accounts-service-interface-heading--example:
 
 Example
-
-.. raw:: html
-
-   </h2>
+-------
 
 This interface automatically connected by the `ONLY OFFICE Document Server <https://snapcraft.io/onlyoffice-ds>`__ snap to provide better integration with pre-configured accounts.
 
@@ -26,27 +22,19 @@ This interface automatically connected by the `ONLY OFFICE Document Server <http
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-accounts-service-interface-heading--dev-details">
+.. _the-accounts-service-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 **Auto-connect**: no
 
-.. raw:: html
 
-   <h3 id="the-accounts-service-interface-heading-code">
+.. _the-accounts-service-interface-heading-code:
 
 Code examples
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~
 
 The snapcraft.yaml for ONLY OFFICE Document Server can be found in the project’s GitHub repository: `https://github.com/ONLYOFFICE/snap-documentserver/blob/master/snap/snapcraft.yaml <https://github.com/ONLYOFFICE/snap-documentserver/blob/d6ab8c34d3601d177b08c2ebaa68eb8fc98b8898/snap/snapcraft.yaml#L52>`__
 

@@ -21,15 +21,11 @@ Use ``snap interface pwm`` to see which PWM devices are available on the system:
    - gadget:fan-2
    [...]
 
-.. raw:: html
 
-   <h2 id="the-pwm-interface-heading--example">
+.. _the-pwm-interface-heading--example:
 
 Example
-
-.. raw:: html
-
-   </h2>
+-------
 
 With an example snap application called *app* installed, the following command will connect its PWM interface to the specified PWM device channel:
 
@@ -44,15 +40,11 @@ With an example snap application called *app* installed, the following command w
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-pwm-interface-heading--dev-details">
+.. _the-pwm-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 **Auto-connect**: no **Attributes**: \* ``channel`` (slot): PWM device channel number to export and expose to consuming snaps \* ``chip-number`` (slot): chip base number to export
 

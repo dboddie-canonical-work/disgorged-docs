@@ -14,15 +14,11 @@ The ``media-control`` interface permits access to media control devices and Vide
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-media-control-interface-heading--dev-details">
+.. _the-media-control-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 **Auto-connect**: no
 

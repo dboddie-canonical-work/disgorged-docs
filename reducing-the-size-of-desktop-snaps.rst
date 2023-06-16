@@ -28,15 +28,11 @@ The Ubuntu archives include many packages with development files whose name ends
 
 To avoid this, move all ``stage-packages`` which end in ``-dev`` to ``build-packages`` and add their regular counterpart to ``stage-packages``. See `Build and staging dependencies <https://snapcraft.io/docs/build-and-staging-dependencies>`__ for more information.
 
-.. raw:: html
 
-   <h2 id="reducing-the-size-of-desktop-snaps-heading--cleanup-part">
+.. _reducing-the-size-of-desktop-snaps-heading--cleanup-part:
 
-Using the cleanup part⚓
-
-.. raw:: html
-
-   </h2>
+Using the cleanup part
+----------------------
 
 Snaps often ship libraries that are already available in the base snap or connected content snaps. This is because ``stage-packages`` currently pulls in all the dependencies of the packages you list, even if those dependencies are already available from content snaps.
 

@@ -9,18 +9,14 @@ Hardware IO (input/output) interfaces, including the :ref:`serial-port <the-seri
 
 This approach is more robust because it allows the gadget snap providing the slot to centralise and arbitrate the connection conditions. These conditions include which other snaps, identified by their snap ID, can connect to the slots the gadget offers and, consequently, gain privileged access to the hardware. For the application snap, usually no change is required other than to declare and use an appropriately-configured plug.
 
--  `Interface considerations <#hardware-io-interfaces-heading--considerations>`__
--  `Code examples <#hardware-io-interfaces-heading--examples>`__
+-  `Interface considerations <hardware-io-interfaces-heading--considerations_>`__
+-  `Code examples <hardware-io-interfaces-heading--examples_>`__
 
-.. raw:: html
 
-   <h2 id="hardware-io-interfaces-heading--considerations">
+.. _hardware-io-interfaces-heading--considerations:
 
 Interface considerations
-
-.. raw:: html
-
-   </h2>
+------------------------
 
 The extent of access an interface has is granted through both *connection permissions* and the specifics of the *interface connections* being requested.
 
@@ -49,15 +45,11 @@ The extent of access an interface has is granted through both *connection permis
 
    -  **Other interfaces**: For more system level access, slots are provided by the system snap.
 
-.. raw:: html
 
-   <h3 id="hardware-io-interfaces-heading--code-examples">
+.. _hardware-io-interfaces-heading--code-examples:
 
 Code examples
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~
 
 The `gadget snap <https://github.com/snapcore/pi-gadget/tree/20-arm64>`__ definition for the reference `Raspberry Pi Ubuntu Core <https://ubuntu.com/core/docs/install-raspberry-pi>`__ image contains interface definitions for various hardware IO interfaces on the system, including slots for each specific GPIO pin, i2c connections, the Bluetooth serial port, and the generic serial ports:
 

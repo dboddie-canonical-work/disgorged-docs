@@ -20,15 +20,11 @@ The ``dm-crypt`` interface enables the following access functions to `dm-crypt <
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-dm-crypt-interface-heading--dev-details">
+.. _the-dm-crypt-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 `Auto-connect <interface-management.md#the-dm-crypt-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
 

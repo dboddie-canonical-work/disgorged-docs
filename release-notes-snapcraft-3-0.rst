@@ -37,15 +37,11 @@ With this release of Snapcraft 3.0, we are happy to announce support for macOS v
 
 See `Install snapcraft on macOS <installing-snapcraft.md#release-notes-snapcraft-3-0-heading--macos>`__ for further details.
 
-.. raw:: html
 
-   <h3 id="release-notes-snapcraft-3-0-heading--base-exceptions">
+.. _release-notes-snapcraft-3-0-heading--base-exceptions:
 
 Features incompatible with bases
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When using the ``base`` keyword in ``snapcraft.yaml`` the following (long deprecated) features become unavailable:
 
@@ -85,15 +81,11 @@ The recording below shows how the original ``command``, defined in ``snapcraft.y
 
 |image1|
 
-.. raw:: html
 
-   <h3 id="release-notes-snapcraft-3-0-heading--extensions">
+.. _release-notes-snapcraft-3-0-heading--extensions:
 
 Extensions
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~
 
 The architecture and framework has been cemented into the ``snapcraft`` tool to help *snapcraft.yaml* grow declarative\* functionality we’re calling *Extensions*. We have done this to avoid repetitive tasks, and to avoid snap builders needing deep knowledge of a target software stack.
 

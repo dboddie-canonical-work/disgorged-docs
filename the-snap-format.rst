@@ -31,15 +31,11 @@ The following files control the behaviour of a snap:
 -  ``meta/gui/icon.{svg,png}``: Icon for the snap
 -  ``meta/gui/*.desktop``: Desktop files for the snap (see below)
 
-.. raw:: html
 
-   <h3 id="the-snap-format-heading--snapyaml">
+.. _the-snap-format-heading--snapyaml:
 
 snap.yaml
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~
 
 Every snap package contains a ``meta/snap.yaml`` file that holds the basic metadata for the snap.
 
@@ -294,15 +290,11 @@ For example, assuming this content in ``snap.yaml``:
    Name=My Downloader
    Exec=http.get %U
 
-.. raw:: html
 
-   <h3 id="the-snap-format-heading--autostart">
+.. _the-snap-format-heading--autostart:
 
-Autostart desktop files⚓
-
-.. raw:: html
-
-   </h3>
+Autostart desktop files
+~~~~~~~~~~~~~~~~~~~~~~~
 
 An application may put a desktop file under ``$SNAP_USER_DATA/.config/autostart`` in order to be automatically started with the user’s desktop session. The file is matched with a corresponding application based on the ``autostart`` property of an app inside ``meta/snap.yaml``. For example:
 

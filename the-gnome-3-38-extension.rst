@@ -14,25 +14,21 @@ The *gnome-3-38* extension helps with the creation of snaps that use GTK 3, GNOM
 
 This extension provides many of the components needed for general desktop applications making it useful for a broader set of applications outside of those tailored for the GNOME desktop.
 
--  `How to use it <#the-gnome-3-38-extension-heading--how>`__: adding the necessary keywords to your snapcraft.yaml
--  `Interface connections <#the-gnome-3-38-extension-heading--plugs>`__: which interfaces are accessible from the extension
--  `Included packages <#the-gnome-3-38-extension-heading--packages>`__: a list of the packages the extension is build from and provides
--  `Environment variables <#the-gnome-3-38-extension-heading--environment>`__: variables used during build and snap runntime
--  `Layout set <#the-gnome-3-38-extension-heading--layouts>`__: layouts used by this extension to access files on the host
+-  `How to use it <the-gnome-3-38-extension-heading--how_>`__: adding the necessary keywords to your snapcraft.yaml
+-  `Interface connections <the-gnome-3-38-extension-heading--plugs_>`__: which interfaces are accessible from the extension
+-  `Included packages <the-gnome-3-38-extension-heading--packages_>`__: a list of the packages the extension is build from and provides
+-  `Environment variables <the-gnome-3-38-extension-heading--environment_>`__: variables used during build and snap runntime
+-  `Layout set <the-gnome-3-38-extension-heading--layouts_>`__: layouts used by this extension to access files on the host
 
 ..
 
    ℹ Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See :ref:`Snapcraft extensions <snapcraft-extensions>` for further details.
 
-.. raw:: html
 
-   <h2 id="the-gnome-3-38-extension-heading--how">
+.. _the-gnome-3-38-extension-heading--how:
 
 How to use it
-
-.. raw:: html
-
-   </h2>
+-------------
 
 This extension currently only works with the :ref:``core20`` base snap (see `Base snaps <base-snaps>` for details). To use it, add :ref:``extensions: [gnome-3-38]`` to the application definition in your `snapcraft.yaml <creating-snapcraft-yaml>` file. For instance:
 
@@ -46,15 +42,11 @@ This extension currently only works with the :ref:``core20`` base snap (see `Bas
 
 See :ref:`GTK3 applications <gtk3-applications>` for a comprehensive overview of using extensions with GNOME applications.
 
-.. raw:: html
 
-   <h2 id="the-gnome-3-38-extension-heading--plugs">
+.. _the-gnome-3-38-extension-heading--plugs:
 
 Interface connections
-
-.. raw:: html
-
-   </h2>
+---------------------
 
 The following plugs are provided by the extension and implicitly included in your snapcraft.yaml:
 
@@ -86,15 +78,11 @@ Your app may still need additional plugs, but you can expect the following plugs
 
 See :ref:`Adding interfaces <adding-interfaces>` for more details.
 
-.. raw:: html
 
-   <h2 id="the-gnome-3-38-extension-heading--packages">
+.. _the-gnome-3-38-extension-heading--packages:
 
 Included packages
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 The GNOME extension is derived from two separate snaps; a `build snap <https://github.com/ubuntu/gnome-sdk/blob/gnome-3-38-2004-sdk/snapcraft.yaml>`__ and a `platform snap <https://github.com/ubuntu/gnome-sdk/blob/gnome-3-38-2004/snapcraft.yaml>`__.
 
@@ -104,15 +92,11 @@ It is common for GNOME applications to release a gnome-3-38 branch of their proj
 
 The **platform snap** takes the build snap and makes all of those libraries available to your snap at build time without needing to include the pieces of the build snap that are unnecessary at runtime (like compilers) in your final snap.
 
-.. raw:: html
 
-   <h2 id="the-gnome-3-38-extension-heading--environment">
+.. _the-gnome-3-38-extension-heading--environment:
 
 Environment variables
-
-.. raw:: html
-
-   </h2>
+---------------------
 
 In addition to using the build and platform snaps, the *gnome-3-38 extension* also sets a collection of environment variables, links, default plugs for the app to use, and a default build-environment for each part in your snap to use.
 
@@ -146,15 +130,11 @@ The following environment is set when your application is run:
      GTK_USE_PORTAL: '1'
      SNAP_DESKTOP_RUNTIME: $SNAP/gnome-platform
 
-.. raw:: html
 
-   <h2 id="the-gnome-3-38-extension-heading--layouts">
+.. _the-gnome-3-38-extension-heading--layouts:
 
 Layouts set
-
-.. raw:: html
-
-   </h2>
+-----------
 
 The host’s gjs, webkit2gtk-4.0, and iso-codes are used so they don’t need to be packaged as part of the snap (would greatly inflate the size).
 

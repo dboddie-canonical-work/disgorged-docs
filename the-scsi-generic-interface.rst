@@ -14,15 +14,11 @@ The ``scsi-generic`` interface allows read and write access to `SCSI Generic dri
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-scsi-generic-interface-heading--dev-details">
+.. _the-scsi-generic-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 `Auto-connect <interface-management.md#the-scsi-generic-interface-heading--auto-connections>`__: no
 

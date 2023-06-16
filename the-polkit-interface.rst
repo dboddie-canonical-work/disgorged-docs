@@ -14,15 +14,11 @@ The ``polkit`` interface provides daemons with the permission to use the `polkit
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-polkit-interface-heading--dev-details">
+.. _the-polkit-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 `Auto-connect <interface-management.md#the-polkit-interface-heading--auto-connections>`__: no
 

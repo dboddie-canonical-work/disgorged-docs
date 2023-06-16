@@ -14,15 +14,11 @@ The ``hugepages-control`` interface allows controlling `HugePages <https://www.k
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-hugepages-control-interface-heading--dev-details">
+.. _the-hugepages-control-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 **Auto-connect**: no
 

@@ -20,27 +20,19 @@ Due to the privileged nature of access enabled by this interface, its use is res
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-account-control-interface-heading--dev-details">
+.. _the-account-control-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 **Auto-connect**: no
 
-.. raw:: html
 
-   <h3 id="the-account-control-interface-heading-code">
+.. _the-account-control-interface-heading-code:
 
 Code examples
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~
 
 The account-control interface is used in the *usbtop* snap to help monitor USB traffic: https://github.com/ogra1/usbtop/blob/master/snap/snapcraft.yaml
 

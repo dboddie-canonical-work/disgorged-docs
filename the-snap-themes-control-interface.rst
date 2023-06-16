@@ -14,15 +14,11 @@ The ``snap-themes-control`` interface permits the use of snapd’s theme install
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-snap-themes-control-interface-heading--dev-details">
+.. _the-snap-themes-control-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 `Auto-connect <interface-management.md#the-snap-themes-control-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
 

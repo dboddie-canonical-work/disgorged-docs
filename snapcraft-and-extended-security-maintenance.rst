@@ -18,23 +18,19 @@ To remain secure and supported, these snaps will need to either:
 
 See :ref:`Migrating between bases <migrating-between-bases>` for help switching to a newer base, and see below for details on Snapcraft changes and using ESM when building core-based snaps.
 
--  `Changes to Snapcraft <#snapcraft-and-extended-security-maintenance-heading--changes>`__
--  `Extended Security Maintenance <#snapcraft-and-extended-security-maintenance-heading--esm>`__
--  `Using the Ubuntu Advantage token <#snapcraft-and-extended-security-maintenance-heading--using>`__
--  `Remote build and Snapcraft build service <#snapcraft-and-extended-security-maintenance-heading--launchpad>`__
--  `Github Actions <#snapcraft-and-extended-security-maintenance-heading--github>`__
+-  `Changes to Snapcraft <snapcraft-and-extended-security-maintenance-heading--changes_>`__
+-  `Extended Security Maintenance <snapcraft-and-extended-security-maintenance-heading--esm_>`__
+-  `Using the Ubuntu Advantage token <snapcraft-and-extended-security-maintenance-heading--using_>`__
+-  `Remote build and Snapcraft build service <snapcraft-and-extended-security-maintenance-heading--launchpad_>`__
+-  `Github Actions <snapcraft-and-extended-security-maintenance-heading--github_>`__
 
 --------------
 
-.. raw:: html
 
-   <h2 id="snapcraft-and-extended-security-maintenance-heading--changes">
+.. _snapcraft-and-extended-security-maintenance-heading--changes:
 
 Changes to Snapcraft
-
-.. raw:: html
-
-   </h2>
+--------------------
 
 **16.04-based snaps will continue to work**
 
@@ -42,15 +38,11 @@ There will be no immediate impact to either Snapcraft developers or snap users. 
 
 If you’re building snaps locally or through your own CI/CD system: \* Snapcraft now has two `tracks <https://snapcraft.io/docs/channels#snapcraft-and-extended-security-maintenance-heading--tracks>`__: ``4.x`` and ``latest`` Both tracks will be maintained in parallel until the release of Snapcraft 5, after which ``4.x`` will be maintained for ESM compatibility. \* cores will be relabelled: - ``core`` becomes *ESM base* - ``core18`` and ``core20`` become *LTS bases*. \* Snap developers and publishers using the ESM base **will not** be able to use Snapcraft 5 or later. A notification will inform developers to use the ``4.x`` track.
 
-.. raw:: html
 
-   <h2 id="snapcraft-and-extended-security-maintenance-heading--esm">
+.. _snapcraft-and-extended-security-maintenance-heading--esm:
 
 Extended Security Maintenance
-
-.. raw:: html
-
-   </h2>
+-----------------------------
 
 The Extended Security Maintenance (ESM) programme extends Canonical’s LTS commitment of providing security updates to the Ubuntu base, and several other critical components, by a few more years. With ESM, Ubuntu 16.04 LTS gains three extra years of security updates, shifting its end of life date to `April 2024 <https://ubuntu.com/security/esm>`__.
 
@@ -66,15 +58,11 @@ Visit `ubuntu.com/advantage <https://ubuntu.com/advantage>`__ to create an accou
    :alt: image|616x500
 
 
-.. raw:: html
 
-   <h2 id="snapcraft-and-extended-security-maintenance-heading--using">
+.. _snapcraft-and-extended-security-maintenance-heading--using:
 
 Using the Ubuntu Advantage token
-
-.. raw:: html
-
-   </h2>
+--------------------------------
 
 The :ref:``--ua-token`` argument is used with the ```snapcraft`` <snapcraft-overview>` command to specify an Ubuntu Advantage token when building a snap (requires :ref:`Snapcraft 4.7+ <release-notes-snapcraft-4-7>`):
 
@@ -121,28 +109,20 @@ When the snapcraft command is run, the provisioning of the ESM packages will be 
 
 
 
-.. raw:: html
 
-   <h3 id="snapcraft-and-extended-security-maintenance-heading--launchpad">
+.. _snapcraft-and-extended-security-maintenance-heading--launchpad:
 
 Remote and Snapcraft build services
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In addition to running *snapcraft* locally, or inside a CI system, snaps can also be built using :ref:`remote build on Launchpad <remote-build>` and our `Snapcraft Build Service <https://snapcraft.io/build>`__. Both of these services will continue working as before.
 
 Launchpad will continue to build for the ESM base without restrictions. It will use the Snapcraft 4.x track for these builds. Similarly, the remote build feature will continue working as before.
 
-.. raw:: html
 
-   <h3 id="snapcraft-and-extended-security-maintenance-heading--github">
+.. _snapcraft-and-extended-security-maintenance-heading--github:
 
 GitHub Actions
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~~
 
 The GitHub `Snapcraft Build Action <https://github.com/snapcore/action-build>`__ can be used to automatically build a snap. Support for ESM builds via a UA token can be enabled by following https://github.com/snapcore/action-build#ua-token.

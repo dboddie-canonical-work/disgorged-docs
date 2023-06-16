@@ -9,23 +9,19 @@ The ``colcon`` plugin is useful when building `ROS 2 <http://www.ros.org/>`__ pa
 
 Plugin-specific features and syntax are dependent on which :ref:`base <base-snaps>` is being used, as outlined below:
 
--  `base: core22 <#the-colcon-plugin-heading--core22>`__
--  `base: core20 <#the-colcon-plugin-heading--core20>`__
--  `base: core18 \| core <#the-colcon-plugin-heading--core18>`__
+-  `base: core22 <the-colcon-plugin-heading--core22_>`__
+-  `base: core20 <the-colcon-plugin-heading--core20_>`__
+-  `base: core18 \| core <the-colcon-plugin-heading--core18_>`__
 
 This plugin uses the common plugin keywords as well as those for “sources”. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
 
 ##
 
-.. raw:: html
 
-   <h3 id="the-colcon-plugin-heading--core22">
+.. _the-colcon-plugin-heading--core22:
 
 base: core22
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~
 
 For core22, this plugin is designed to work with the :ref:`ROS 2 Humble extension <the-ros-2-humble-extension>`. If not using this extension, it is required to set the ``ROS_DISTRO`` environment variable to ``humble`` using ``build-environment``.
 
@@ -39,15 +35,11 @@ This plugin enables the following plugin-specific keywords on core22:
 
 ##
 
-.. raw:: html
 
-   <h3 id="the-colcon-plugin-heading--core20">
+.. _the-colcon-plugin-heading--core20:
 
 base: core20
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~
 
 For core20, this plugin is designed to work with the :ref:`ROS 2 Foxy extension <the-ros2-foxy-extension>`. If not using this extension, it is required to set the ``ROS_DISTRO`` environment variable to ``foxy`` using ``build-environment``.
 
@@ -61,15 +53,11 @@ This plugin enables the following plugin-specific keywords on core20:
 
 ##
 
-.. raw:: html
 
-   <h3 id="the-colcon-plugin-heading--core18">
+.. _the-colcon-plugin-heading--core18:
 
 base: core18
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~
 
 This plugin enables the following plugin-specific keywords on core18:
 

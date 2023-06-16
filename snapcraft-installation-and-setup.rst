@@ -9,15 +9,11 @@ Snapcraft installation and setup
 
 Snapcraft can be installed and used on any supported system, including various Linux distributions as well as the macOS and Windows operating systems.
 
-.. raw:: html
 
-   <h2 id="snapcraft-installation-and-setup-heading--store">
+.. _snapcraft-installation-and-setup-heading--store:
 
 Installation from the Snap Store
-
-.. raw:: html
-
-   </h2>
+--------------------------------
 
 On Linux distributions `with snap support <https://snapcraft.io/docs/installing-snapd>`__, the easiest way to install *snapcraft* is via its snap:
 
@@ -27,15 +23,11 @@ On Linux distributions `with snap support <https://snapcraft.io/docs/installing-
 
 The :ref:``--classic`` argument is required because snapcraft uses `classic confinement <snap-confinement>`.
 
-.. raw:: html
 
-   <h2 id="snapcraft-installation-and-setup-heading--respository">
+.. _snapcraft-installation-and-setup-heading--respository:
 
 Repository version or snap
-
-.. raw:: html
-
-   </h2>
+--------------------------
 
 The snap version of Snapcraft will typically receive more timely updates and thus support the full range of options and capabilities, which may not be the case with a potentially outdated repository version of the tool.
 
@@ -50,15 +42,11 @@ The ``which`` command can be used to check which version of snapcraft is run by 
    $ which snapcraft
    /snap/bin/snapcraft
 
-.. raw:: html
 
-   <h2 id="snapcraft-installation-and-setup-heading--backend">
+.. _snapcraft-installation-and-setup-heading--backend:
 
 Snapcraft backend
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 Snapcraft, regardless of the source of the installation, relies on a backend tooling to create isolated build environment instances inside which applications can be built and packaged as snaps without changing the host system. Two backends are supported:
 

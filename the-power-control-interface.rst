@@ -16,15 +16,11 @@ This interface is primarily intended to be used with `Ubuntu Core <glossary.md#t
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-power-control-interface-heading--dev-details">
+.. _the-power-control-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 **Auto-connect**: no
 

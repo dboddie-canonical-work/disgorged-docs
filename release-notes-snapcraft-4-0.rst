@@ -29,16 +29,16 @@ Plugins are now applicable only to Snapcraft’s *build* step. The *pull* step, 
 
 The following plugins have been updated to work with ``core20``:
 
--  `autotools <#orgf23feb5>`__
--  `cmake <#orgd2a3c0e>`__
--  `dump <#org3291d8f>`__
--  `go <#orgf09a235>`__
--  `make <#org0b0a82c>`__
--  `meson <#org51feefc>`__
--  `nil <#org426a14b>`__
--  `npm <#org7c77ebe>`__
--  `python <#orgf5d5516>`__
--  `rust <#orgd96325f>`__
+-  `autotools <orgf23feb5_>`__
+-  `cmake <orgd2a3c0e_>`__
+-  `dump <org3291d8f_>`__
+-  `go <orgf09a235_>`__
+-  `make <org0b0a82c_>`__
+-  `meson <org51feefc_>`__
+-  `nil <org426a14b_>`__
+-  `npm <org7c77ebe_>`__
+-  `python <orgf5d5516_>`__
+-  `rust <orgd96325f_>`__
 
 While the list of plugins is not as broad as for ``core`` or ``core18``, they offer a strong foundation for the majority of snaps, and the list will grow after this initial release.
 

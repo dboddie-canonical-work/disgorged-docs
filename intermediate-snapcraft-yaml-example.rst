@@ -62,15 +62,11 @@ The metadata, base, and confinement declarations are rather similar to our basic
 -  The wethr snap uses core20 as its base.
 -  The wethr snap uses strict confinement instead of devmode.
 
-.. raw:: html
 
-   <h2 id="intermediate-snapcraft-yaml-example-heading--adopt">
+.. _intermediate-snapcraft-yaml-example-heading--adopt:
 
 adopt-info
-
-.. raw:: html
-
-   </h2>
+----------
 
 This keyword instructs Snapcraft to “adopt” metadata information using :ref:`external metadata <using-external-metadata>` sources. Such use can be useful for CI systems, where the declarations in the snapcraft.yaml file can be obtained from scripts rather than manually.
 
@@ -92,15 +88,11 @@ In this example, the wethr snap application version is obtained from the Git rep
 
 Alternatively, in this particular example, the version field could also be manually defined, e.g.: version: ‘1.5’.
 
-.. raw:: html
 
-   <h2 id="intermediate-snapcraft-yaml-example-heading--grade">
+.. _intermediate-snapcraft-yaml-example-heading--grade:
 
 grade
-
-.. raw:: html
-
-   </h2>
+-----
 
 The optional grade keyword defines the quality level of the snap. Two levels are available: devel and stable. Snaps with the devel grade level cannot be uploaded to the stable channel in the Snap Store.
 
@@ -108,15 +100,11 @@ The optional grade keyword defines the quality level of the snap. Two levels are
 
    grade: stable
 
-.. raw:: html
 
-   <h2 id="intermediate-snapcraft-yaml-example-heading--architectures">
+.. _intermediate-snapcraft-yaml-example-heading--architectures:
 
 Architectures
-
-.. raw:: html
-
-   </h2>
+-------------
 
 This section defines the target :ref:`architectures <architectures>` for which the snap should be built. It requires the build system that is running the Snapcraft tool to be able to compile and build the snap for the listed platforms.
 
@@ -127,27 +115,19 @@ This section defines the target :ref:`architectures <architectures>` for which t
    - build-on: armhf
    - build-on: arm64
 
-.. raw:: html
 
-   <h2 id="intermediate-snapcraft-yaml-example-heading--build">
+.. _intermediate-snapcraft-yaml-example-heading--build:
 
 Build definition
-
-.. raw:: html
-
-   </h2>
+----------------
 
 While largely similar to the yt-dlp example, the wethr application does introduce some notable differences in the build definition section. We will discuss the parts section first.
 
-.. raw:: html
 
-   <h3 id="intermediate-snapcraft-yaml-example-heading--parts">
+.. _intermediate-snapcraft-yaml-example-heading--parts:
 
 The parts definition
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~~~~~~~~
 
 The parts definition consists of the following lines of code:
 
@@ -186,15 +166,11 @@ The wethr snap also only has one part. However, here, it is built using the npm 
 -  **override-pull**: opens a multi-line block inside which BASH-syntax commands are used to perform operations that cannot be satisfied by the default Snapcraft lifecycle pull operation. In the wethr example, the listed commands are used to derive the right version of the application, and set it using the snapcraftctl scriptlet.
 -  **build-packages**: defines the list of tools and libraries that are required to successfully build or compile the part. The build packages are obtained from the repository archives that match the snap base, and need to be written in the syntax that can be correctly interpreted by the apt package manager. For instance, a foo build package from the Ubuntu 20.04 archive would be installed (apt install foo) in the snap build environment during the build lifecycle. In this case, the snap needs the git tool to retrieve the sources from the Git repository (GitHub) and the sed tool to perform the string search and replace action on the commit tag.
 
-.. raw:: html
 
-   <h3 id="intermediate-snapcraft-yaml-example-heading--apps">
+.. _intermediate-snapcraft-yaml-example-heading--apps:
 
 The apps definition
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~~~~~~~
 
 The apps build definition consists of the following lines of code:
 

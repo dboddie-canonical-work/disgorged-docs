@@ -13,19 +13,15 @@ Neither the revision number (nor its version) enforce an order of release. The l
 
 --------------
 
--  `Viewing revision numbers <#revisions-heading--viewing>`__
--  `Revision package management <#revisions-heading--package>`__
--  `Data management <#revisions-heading--data-management>`__
+-  `Viewing revision numbers <revisions-heading--viewing_>`__
+-  `Revision package management <revisions-heading--package_>`__
+-  `Data management <revisions-heading--data-management_>`__
 
-.. raw:: html
 
-   <h2 id="revisions-heading--viewing">
+.. _revisions-heading--viewing:
 
 Viewing revision numbers
-
-.. raw:: html
-
-   </h2>
+------------------------
 
 The output to ``snap info <snapname>`` includes the revision number for each snap in each track and channel as a number in brackets after the publishing date:
 
@@ -50,15 +46,11 @@ The ``snap list`` command includes a column for each installed snap’s revision
    chromium     112.0    2424   latest/stable  canonical✓            -
    ffmpeg       4.3.1    1286   latest/stable  snapcrafters✪         -
 
-.. raw:: html
 
-   <h2 id="revisions-heading--package">
+.. _revisions-heading--package:
 
 Revision package management
-
-.. raw:: html
-
-   </h2>
+---------------------------
 
 The `Snap Store <glossary.md#revisions-heading--snap-store>`__ caches several older revisions of every snap, as does the local system. By default, 2 revisions are stored locally, while `Ubuntu Core <glossary.md#revisions-heading--ubuntu-core>`__ systems store 3. These defaults can be changed with the `refresh-retain <https://snapcraft.io/docs/managing-updates#revisions-heading--refresh-retain>`__ system option.
 
@@ -86,15 +78,11 @@ The revision number of the snap being operated upon will appear in the output du
 
 `Release management <https://snapcraft.io/docs/release-management>`__ details how a snap developer can publish or promote specific revisions of their snap.
 
-.. raw:: html
 
-   <h2 id="revisions-heading--data-management">
+.. _revisions-heading--data-management:
 
 Data management
-
-.. raw:: html
-
-   </h2>
+---------------
 
 The revision identity is used as a reference for revision-specific data. As described in :ref:`Data locations <data-locations>`, revision-specific data for a snap is stored in a either system-wide location, or a user-specific home location:
 

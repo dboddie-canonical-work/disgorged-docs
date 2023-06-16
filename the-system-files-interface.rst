@@ -9,15 +9,11 @@ The ``system-files`` interface enables a snap to access specific system files an
 
 This interface is typically used to provide read-only access to system configuration directories created by a non-snap version of an application now running from an equivalent snap.
 
-.. raw:: html
 
-   <h2 id="the-system-files-interface-heading--example">
+.. _the-system-files-interface-heading--example:
 
 Example
-
-.. raw:: html
-
-   </h2>
+-------
 
 The `Firefox <https://snapcraft.io/firefox>`__, `Chromium <https://snapcraft.io/chromium>`__ and `Thunderbird <https://snapcraft.io/thunderbird>`__ snaps use this interface to enable access to system-installed policies to customise each respective application.
 
@@ -28,15 +24,11 @@ The `Firefox <https://snapcraft.io/firefox>`__, `Chromium <https://snapcraft.io/
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-system-files-interface-heading--dev-details">
+.. _the-system-files-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 `Auto-connect <interface-management.md#the-system-files-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes **Transitional**: no **Attributes**: \* ``read`` (plug): list of files and/or directories for read-only access (eg, ‘``read: [ /etc/file-read, /etc/dir-read ]``’ \* ``write`` (plug): list of files and/or directories for read/write access (eg, ‘``write: [ /etc/file-write, /etc/dir-write ]``’
 
@@ -73,14 +65,10 @@ Note, when declaring an instance of the ``system-files`` plug as above, it shoul
 
 With the above, a ``snap connect`` command would look like: ``snap connect foo:etc-foo``.
 
-.. raw:: html
 
-   <h3 id="the-system-files-interface-heading-code">
+.. _the-system-files-interface-heading-code:
 
 Code examples
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~
 
 The source code for this interface is in the *snapd* repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/system_files.go

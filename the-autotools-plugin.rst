@@ -13,23 +13,19 @@ This plugin uses the common plugin keywords as well as those for `sources <snapc
 
 Additional features and syntax are dependent on which :ref:`base <base-snaps>` is being used, as outlined below:
 
--  `base: core22 <#the-autotools-plugin-heading--core22>`__
--  `base: core20 <#the-autotools-plugin-heading--core20>`__
--  `base: core18 \| core <#the-autotools-plugin-heading--core18>`__
+-  `base: core22 <the-autotools-plugin-heading--core22_>`__
+-  `base: core20 <the-autotools-plugin-heading--core20_>`__
+-  `base: core18 \| core <the-autotools-plugin-heading--core18_>`__
 
 See :ref:`C/C++ applications <c-c-applications>` for a simple example, or search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+autotools%22&type=Code>`__ for projects already using the plugin.
 
    ⓘ This is a *snapcraft* plugin. See :ref:`Snapcraft plugins <snapcraft-plugins>` and :ref:`Supported plugins <supported-plugins>` for further details on how plugins are used.
 
-.. raw:: html
 
-   <h3 id="the-autotools-plugin-heading--core22">
+.. _the-autotools-plugin-heading--core22:
 
 base: core22
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~
 
 1. the *autotools* plugin first attempts to build the project using ``./configure``
 2. if the *configure* script does not yet exist, it will attempt to run ``./autoconf --install``.
@@ -38,15 +34,11 @@ base: core22
 
 Requires Snapcraft version *7.0+*.
 
-.. raw:: html
 
-   <h3 id="the-autotools-plugin-heading--core20">
+.. _the-autotools-plugin-heading--core20:
 
 base: core20
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~
 
 1. the *autotools* plugin first attempts to build the project using ``./configure``
 2. if the *configure* script does not yet exist, it will attempt to run ``./autoconf --install``.
@@ -57,15 +49,11 @@ In addition, this plugin uses the following plugin-specific keywords:
 
 Requires Snapcraft version *4.0+*.
 
-.. raw:: html
 
-   <h3 id="the-autotools-plugin-heading--core18">
+.. _the-autotools-plugin-heading--core18:
 
 base: core18 \| core
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~~~~~~~~
 
 1. the *autotools* plugin first attempts to build the project using ``./configure``.
 2. if the *configure* script does not yet exist, it will attempt to run ``./autogen``.

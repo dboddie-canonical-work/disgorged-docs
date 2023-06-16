@@ -14,15 +14,11 @@ The ``kernel-crypto-api`` interface allows access to the `Linux kernel crypto AP
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-kernel-crypto-api-interface-heading--dev-details">
+.. _the-kernel-crypto-api-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 **Auto-connect**: no
 

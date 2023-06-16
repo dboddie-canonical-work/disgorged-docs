@@ -40,15 +40,11 @@ Type: ``enum`` Can be one of the following:
 
 Snapcraft normally creates a wrapper holding common environment variables. Disabling this could be useful for minimal base snaps without a shell, and for statically linked binaries with no use for an environment.
 
-.. raw:: html
 
-   <h3 id="snapcraft-app-and-service-metadata-heading--after">
+.. _snapcraft-app-and-service-metadata-heading--after:
 
 after
-
-.. raw:: html
-
-   </h3>
+~~~~~
 
 Type: Array of ``string``
 
@@ -56,17 +52,13 @@ A list of applications to be started after ``<app-name>``. Applications must be 
 
 Requires :ref:``daemon`` to be set in the *app* metadata. See `Services and daemons <services-and-daemons>` for details.
 
-See also `before <#snapcraft-app-and-service-metadata-heading--before>`__.
+See also `before <snapcraft-app-and-service-metadata-heading--before_>`__.
 
-.. raw:: html
 
-   <h3 id="snapcraft-app-and-service-metadata-heading--autostart">
+.. _snapcraft-app-and-service-metadata-heading--autostart:
 
-autostart⚓
-
-.. raw:: html
-
-   </h3>
+autostart
+~~~~~~~~~
 
 Type: ``string``
 
@@ -78,15 +70,11 @@ Example: ``autostart: my-chat.desktop``
 
 See `Autostart desktop files <the-snap-format.md#snapcraft-app-and-service-metadata-heading--autostart>`__ for an example of both the desktop file and the *Exec* file entry.
 
-.. raw:: html
 
-   <h3 id="snapcraft-app-and-service-metadata-heading--before">
+.. _snapcraft-app-and-service-metadata-heading--before:
 
 before
-
-.. raw:: html
-
-   </h3>
+~~~~~~
 
 Type: Array of ``string``
 
@@ -94,7 +82,7 @@ An ordered list of applications to be started before ``<app-name>`` . Applicatio
 
 Requires :ref:``daemon`` to be set in the *app* metadata. See `Services and daemons <services-and-daemons>` for details.
 
-See also `after <#snapcraft-app-and-service-metadata-heading--after>`__.
+See also `after <snapcraft-app-and-service-metadata-heading--after_>`__.
 
 command
 ~~~~~~~
@@ -109,15 +97,11 @@ If daemon is set, this will be the command to run the service. Only a snap with 
 
 Examples: ``app-launch`` for an excecutable placed under ``$SNAP/bin``. With ``classic`` confinement, ``bin/app-launch`` for an executable placed under ``$SNAP/bin``.
 
-.. raw:: html
 
-   <h3 id="snapcraft-app-and-service-metadata-heading--command-chain">
+.. _snapcraft-app-and-service-metadata-heading--command-chain:
 
 command-chain
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~
 
 Type: Array of ``string``
 
@@ -167,15 +151,11 @@ Key is the environment variable name; Value is the contents of the environment v
 
 Example: ``LANG: C.UTF-8``
 
-.. raw:: html
 
-   <h3 id="snapcraft-app-and-service-metadata-heading--extension">
+.. _snapcraft-app-and-service-metadata-heading--extension:
 
 extensions
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~
 
 Type: ``list[string] | string`` (*optional*)
 
@@ -185,15 +165,11 @@ For further details, see :ref:`Snapcraft extensions <snapcraft-extensions>`, and
 
 Example: ``[gnome-3-38]``
 
-.. raw:: html
 
-   <h3 id="snapcraft-app-and-service-metadata-heading--install-mode">
+.. _snapcraft-app-and-service-metadata-heading--install-mode:
 
 install-mode
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~
 
 Type: ``string``
 

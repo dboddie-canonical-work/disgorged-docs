@@ -16,15 +16,11 @@ This interface is primarily intended to be used with `Ubuntu Core <glossary.md#t
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-tee-interface-heading--dev-details">
+.. _the-tee-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 `Auto-connect <interface-management.md#the-tee-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
 

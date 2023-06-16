@@ -27,20 +27,16 @@ Source types
 
 An external metadata source can be one of the following:
 
--  `AppStream <#meta-appstream>`__: a standard for software components
--  `Scriptlets <#meta-scriptlet>`__: a *snapcraftctl*-driven command to generate ``version`` and ``grade``
+-  `AppStream <meta-appstream_>`__: a standard for software components
+-  `Scriptlets <meta-scriptlet_>`__: a *snapcraftctl*-driven command to generate ``version`` and ``grade``
 
 See below for details on incorporating each of the above into your *snapcraft.yaml*.
 
-.. raw:: html
 
-   <h3 id="using-external-metadata-heading--appstream">
+.. _using-external-metadata-heading--appstream:
 
-AppStream⚓
-
-.. raw:: html
-
-   </h3>
+AppStream
+~~~~~~~~~
 
 `AppStream <https://www.freedesktop.org/software/appstream/docs/>`__ is a metadata standard used to describe a common set software components. It can be parsed by *snapcraft* to provide the :ref:``title``, ``version``, ``summary``, ``description`` and ``icon`` for a snap, along with the location of an app’s `desktop <desktop-files-for-menu-integration>` file.
 
@@ -96,15 +92,11 @@ You can also link each app in your snap to specific AppStream metadata by pointi
 
 *Note: The process to get the ``.desktop`` file entry from the AppStream metadata goes as follows. First, Snapcraft searches for a parsed AppStream file with the same*\ component id\* as the app’s ``common-id`` and extracts the `Desktop File ID <https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html#desktop-file-id>`__ (``desktop-id``) from that component. If that component doesn’t specify a ``desktop-id``, Snapcraft will use the *component id* as the Desktop File ID. Snapcraft will then search for a desktop file matching the Desktop File ID in the ``usr/local/share`` and ``usr/share`` directories relative to the part source, and by following the `Desktop File ID <https://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html#desktop-file-id>`__ rules.\*
 
-.. raw:: html
 
-   <h3 id="using-external-metadata-heading--scriptlet">
+.. _using-external-metadata-heading--scriptlet:
 
-Part scriptlets⚓
-
-.. raw:: html
-
-   </h3>
+Part scriptlets
+~~~~~~~~~~~~~~~
 
 Individual parts in your ``snapcraft.yaml`` can set the ``version`` and ``grade`` by using ``snapcraftctl``. All you need to do is select which part to adopt using ``adopt-info``:
 
@@ -123,15 +115,11 @@ Individual parts in your ``snapcraft.yaml`` can set the ``version`` and ``grade`
 
 See :ref:`Scriptlets <override-build-steps>` for more details on using scripting elements within *snapcraft.yaml*.
 
-.. raw:: html
 
-   <h3 id="using-external-metadata-heading--setup-py">
+.. _using-external-metadata-heading--setup-py:
 
-[not recommended] ``setup.py``\ ⚓
-
-.. raw:: html
-
-   </h3>
+[not recommended] ``setup.py``\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..
 
@@ -172,15 +160,11 @@ You can *adopt* the relevant metadata in the above with the following snapcraft.
        source: http://github.com/example/sampleapp.git
        parse-info: [setup.py]
 
-.. raw:: html
 
-   <h2 id="using-external-metadata-heading--version">
+.. _using-external-metadata-heading--version:
 
-Snapcraft versions and compatibility⚓
-
-.. raw:: html
-
-   </h2>
+Snapcraft versions and compatibility
+------------------------------------
 
 ======================== =================
 Change                   snapcraft version

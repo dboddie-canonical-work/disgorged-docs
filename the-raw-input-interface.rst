@@ -14,28 +14,20 @@ The ``raw-input`` interface allows access to raw input devices.
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-raw-input-interface-heading--dev-details">
+.. _the-raw-input-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 **Auto-connect**: no
 
 Requires snapd version *2.51+*.
 
-.. raw:: html
 
-   <h3 id="the-raw-input-interface-heading-code">
+.. _the-raw-input-interface-heading-code:
 
 Code examples
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~
 
 The source code for this interface is in the *snapd* repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/raw_input.go

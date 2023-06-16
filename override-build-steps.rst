@@ -25,15 +25,11 @@ You can use a pipe on the first line to declare a multi-line script:
          <multi-line>
          <shell script>
 
-.. raw:: html
 
-   <h2 id="override-build-steps-heading--overriding-the-pull-step">
+.. _override-build-steps-heading--overriding-the-pull-step:
 
 Overriding the pull step
-
-.. raw:: html
-
-   </h2>
+------------------------
 
 This can be done by utilising the ``override-pull`` override. Its working directory is the part’s source directory in ``parts/<part name>/src/``. In order to run the default ``pull`` step, call ``snapcraftctl pull`` from within the override itself.
 
@@ -52,15 +48,11 @@ Let’s say you want to patch the source code of the part you’re pulling:
          snapcraftctl pull
          patch -p1 < $SNAPCRAFT_STAGE/my.patch
 
-.. raw:: html
 
-   <h2 id="override-build-steps-heading--overriding-the-build-step">
+.. _override-build-steps-heading--overriding-the-build-step:
 
 Overriding the build step
-
-.. raw:: html
-
-   </h2>
+-------------------------
 
 This can be done by utilising the ``override-build`` override. Its working directory is the part’s base build directory in ``parts/<part name>/build/``. In order to run the default ``build`` step, call ``snapcraftctl build`` from within the override itself.
 
@@ -81,15 +73,11 @@ Let’s say the default build/install process ends up installing files with abso
          snapcraftctl build
          sed -i 's|/usr/bin|$SNAP/usr/bin|g' $SNAPCRAFT_PART_INSTALL/my-bin-artifact.sh
 
-.. raw:: html
 
-   <h2 id="override-build-steps-heading--overriding-the-stage-step">
+.. _override-build-steps-heading--overriding-the-stage-step:
 
 Overriding the stage step
-
-.. raw:: html
-
-   </h2>
+-------------------------
 
 This can be done by utilising the ``override-stage`` override. Its working directory is the staging area in ``stage/``. In order to run the default ``stage`` step, call ``snapcraftctl stage`` from within the override itself.
 
@@ -111,15 +99,11 @@ Let’s say you wanted to tweak a file installed by another part:
          snapcraftctl stage
          sed -i 's|/usr/bin|$SNAP/usr/bin|g' other/parts/file
 
-.. raw:: html
 
-   <h2 id="override-build-steps-heading--overriding-the-prime-step">
+.. _override-build-steps-heading--overriding-the-prime-step:
 
 Overriding the prime step
-
-.. raw:: html
-
-   </h2>
+-------------------------
 
 This can be done by utilising the ``override-prime`` override. Its working directory is the primeing area in ``prime/``. In order to run the default ``prime`` step, call ``snapcraftctl prime`` from within the override itself.
 

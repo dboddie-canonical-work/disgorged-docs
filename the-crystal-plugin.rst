@@ -9,8 +9,8 @@ The ``crystal`` plugin is useful for parts using the `Crystal <https://crystal-l
 
 Plugin-specific features and syntax are dependent on which :ref:`base <base-snaps>` is being used, as outlined below:
 
--  `base: core20 <#the-crystal-plugin-heading--core20>`__
--  `base: core18 \| core <#the-crystal-plugin-heading--core18>`__
+-  `base: core20 <the-crystal-plugin-heading--core20_>`__
+-  `base: core18 \| core <the-crystal-plugin-heading--core18_>`__
 
 For examples, search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+crystal%22&type=Code>`__ for projects already using the plugin.
 
@@ -18,15 +18,11 @@ Brian J. Cardiff, one of Crystal’s developers, attended the 2019 Snapcraft Sum
 
    ⓘ This is a *snapcraft* plugin. See :ref:`Snapcraft plugins <snapcraft-plugins>` and :ref:`Supported plugins <supported-plugins>` for further details on how plugins are used.
 
-.. raw:: html
 
-   <h3 id="the-crystal-plugin-heading--core20">
+.. _the-crystal-plugin-heading--core20:
 
 base: core20
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~
 
 This plugin uses the following plugin-specific keywords: - **``crystal-channel``**: (string, default: *latest/stable*) The Snap Store channel to install Crystal from.
 
@@ -34,15 +30,11 @@ This plugin uses the following plugin-specific keywords: - **``crystal-channel``
 
 Requires Snapcraft version *7.0+*.
 
-.. raw:: html
 
-   <h3 id="the-crystal-plugin-heading--core18">
+.. _the-crystal-plugin-heading--core18:
 
 base: core18 \| core
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~~~~~~~~
 
 The following keyword is currently accepted by the plugin: - **``crystal-channel``**: (string, default: *latest/stable*) The Snap Store channel to install Crystal from.
 

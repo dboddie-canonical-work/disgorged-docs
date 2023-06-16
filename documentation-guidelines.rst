@@ -17,33 +17,29 @@ Documentation consistency is vital, which is why we’re listing some guidelines
 
 As `Voltaire <https://en.wikipedia.org/wiki/Voltaire>`__ wrote, “*Perfect is the enemy of good*,” and we’d rather have documentation we can fix than non-existent documentation we can’t.
 
--  `New Discourse users <#documentation-guidelines-heading--new-users>`__
--  `Style and language <#documentation-guidelines-heading--style>`__
--  `Diátaxis <#documentation-guidelines-heading--diataxis>`__
--  `Navigation menu <#documentation-guidelines-heading--navigation>`__
--  `Discourse markdown <#documentation-guidelines-heading--markdown>`__
+-  `New Discourse users <documentation-guidelines-heading--new-users_>`__
+-  `Style and language <documentation-guidelines-heading--style_>`__
+-  `Diátaxis <documentation-guidelines-heading--diataxis_>`__
+-  `Navigation menu <documentation-guidelines-heading--navigation_>`__
+-  `Discourse markdown <documentation-guidelines-heading--markdown_>`__
 
-   -  `Headings and titles <#documentation-guidelines-heading--headings>`__
-   -  `Lists <#documentation-guidelines-heading--lists>`__
-   -  `Code blocks <#documentation-guidelines-heading--code>`__
-   -  `Inline code <#documentation-guidelines-heading--inline>`__
-   -  `Anchors <#documentation-guidelines-heading--anchors>`__
-   -  `Notes <#documentation-guidelines-heading--notes>`__
-   -  `Comments <#documentation-guidelines-heading--comments>`__
-   -  `Foldouts <#documentation-guidelines-heading--foldouts>`__
-   -  `Images <#documentation-guidelines-heading--images>`__
+   -  `Headings and titles <documentation-guidelines-heading--headings_>`__
+   -  `Lists <documentation-guidelines-heading--lists_>`__
+   -  `Code blocks <documentation-guidelines-heading--code_>`__
+   -  `Inline code <documentation-guidelines-heading--inline_>`__
+   -  `Anchors <documentation-guidelines-heading--anchors_>`__
+   -  `Notes <documentation-guidelines-heading--notes_>`__
+   -  `Comments <documentation-guidelines-heading--comments_>`__
+   -  `Foldouts <documentation-guidelines-heading--foldouts_>`__
+   -  `Images <documentation-guidelines-heading--images_>`__
 
 --------------
 
-.. raw:: html
 
-   <h2 id="documentation-guidelines-heading--new-users">
+.. _documentation-guidelines-heading--new-users:
 
 New Discourse users
-
-.. raw:: html
-
-   </h2>
+-------------------
 
 Anyone can edit and contribute to our documentation, but you need to spend a little time with our Discourse forum first.
 
@@ -64,15 +60,11 @@ Users at Trust Level 1 can:
 -  Flag posts to alert moderators
 -  Mute other users
 
-.. raw:: html
 
-   <h2 id="documentation-guidelines-heading--style">
+.. _documentation-guidelines-heading--style:
 
 Style and language
-
-.. raw:: html
-
-   </h2>
+------------------
 
 One of our biggest challenges is accommodating an audience with a huge variation in experience, from beginners exploring the *snap* command, through snap creators experimenting with *snapcraft.yaml*, to experts harnessing the API and deploying snaps across thousands of IoT devices.
 
@@ -82,15 +74,11 @@ Some general tips: - use a spell checker - resist being overly formal - resist b
 
 We (mostly) adhere to the `Ubuntu style guide <https://docs.ubuntu.com/styleguide/en>`__. In particular: - we use British English (en-GB), for example: - the *ise* suffix in preference to *ize* (*capitalise* rather than *capitalize*) - *our* instead of *or* (as in *colour* and *color*) - license as a verb, licence as a noun - catalogue rather than catalog - dates take the format *1 January 2013*, *1-2 January 2013* and *1 January - 2 February 2013*
 
-.. raw:: html
 
-   <h2 id="documentation-guidelines-heading--diataxis">
+.. _documentation-guidelines-heading--diataxis:
 
 Diátaxis
-
-.. raw:: html
-
-   </h2>
+--------
 
 Our navigational structure, style, and the content of our documentation follows the `Diátaxis <https://diataxis.fr/>`__ systematic framework for technical documentation authoring. This splits documentation pages into tutorials, how-to guides, reference material and explanatory text:
 
@@ -103,15 +91,11 @@ For further details on our Diátaxis strategy, see `Diátaxis, a new foundation 
 
 Improving our documentation and applying the principles of Diátaxis are on-going tasks. There’s a lot to do, and we don’t want to deter anyone from contributing to our docs. If you don’t know whether something should be a tutorial, how-to, reference doc or explanatory text, either ask on the forum or publish what you’re thinking. Changes are easy to make, and every contribution helps.
 
-.. raw:: html
 
-   <h2 id="documentation-guidelines-heading--navigation">
+.. _documentation-guidelines-heading--navigation:
 
 Navigation menu
-
-.. raw:: html
-
-   </h2>
+---------------
 
 The navigation menu on the published docs site (https://snapcraft.io/docs) is generated automatically from a table in that page’s forum post (https://snapcraft.io/docs/snap-documentation).
 
@@ -121,29 +105,21 @@ If you think something should be added to our navigation, either leave a comment
 
 The code that creates the navigation and publishes our documentation from Discourse can be found here: `canonicalwebteam.discourse <https://github.com/canonical/canonicalwebteam.discourse>`__.
 
-.. raw:: html
 
-   <h2 id="documentation-guidelines-heading--markdown">
+.. _documentation-guidelines-heading--markdown:
 
 Discourse Markdown
-
-.. raw:: html
-
-   </h2>
+------------------
 
 Documentation is written in the `Markdown <https://daringfireball.net/projects/markdown/syntax>`__ format `supported by Discourse <https://meta.discourse.org/t/post-format-reference-documentation/19197/2>`__.
 
 Mostly, you don’t need to worry about the syntax. You can simply use the style toolbar in the Discourse topic editing window to mark the elements you need.
 
-.. raw:: html
 
-   <h3 id="documentation-guidelines-heading--headings">
+.. _documentation-guidelines-heading--headings:
 
 Headings and titles
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~~~~~~~
 
 .. code:: markdown
 
@@ -154,15 +130,11 @@ On ``snapcraft.io/docs``, we don’t use the top-level heading (``# Heading``) b
 
 Headings and subheadings need to use *sentence case*, which means the first letter is typically the only one capitalised, unless the title includes names, product names or acronyms.
 
-.. raw:: html
 
-   <h3 id="documentation-guidelines-heading--lists">
+.. _documentation-guidelines-heading--lists:
 
 Lists
-
-.. raw:: html
-
-   </h3>
+~~~~~
 
 For a bullet list, use the following syntax:
 
@@ -183,15 +155,11 @@ And for a numbered list, precede each item with ``1.`` (the numbering then becom
 
 Unless a list item is particularly long (which should be avoided) and includes punctuation, don’t end the item with a full stop. If one item needs a full stop, add the full stop to other items too.
 
-.. raw:: html
 
-   <h3 id="documentation-guidelines-heading--code">
+.. _documentation-guidelines-heading--code:
 
 Code blocks
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~
 
 Enclose a code block with three backticks and include the *type* of code:
 
@@ -218,11 +186,11 @@ Also, a little contentiously as it goes against the `style guide <https://docs.u
 
 In sympathy with the command line, we replace *$* with *#* when running commands from root.
 
-.. raw:: html
 
-   <h3 id='documentation-guidelines-heading--inline'>
+.. _documentation-guidelines-heading--inline:
 
 Inline code
+~~~~~~~~~~~
 
 .. raw:: html
 
@@ -254,15 +222,11 @@ In tutorials, provide the exact values that you want the user to use:
 
 ``docker-compose run web django-admin startproject myapp .``
 
-.. raw:: html
 
-   <h3 id="documentation-guidelines-heading--hyperlinks">
+.. _documentation-guidelines-heading--hyperlinks:
 
 Hyperlinks
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~
 
 For links to internal files or external URLs, use the following format:
 
@@ -280,15 +244,11 @@ To link to ``snapcraft-overview.md``, for example, you would use the following:
 
 The Discourse topic identifier, *8940* in the above example, is optional and can be omitted.
 
-.. raw:: html
 
-   <h3 id="documentation-guidelines-heading--anchors">
+.. _documentation-guidelines-heading--anchors:
 
 Anchors
-
-.. raw:: html
-
-   </h3>
+~~~~~~~
 
 Discourse Markdown does not support anchor links to a position *within* the same page or another document.
 
@@ -314,15 +274,11 @@ This can now be linked to with the following:
 
 Use HTML sparingly as it can make the raw text difficult to read.
 
-.. raw:: html
 
-   <h3 id="documentation-guidelines-heading--notes">
+.. _documentation-guidelines-heading--notes:
 
 Notes and admonishments
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Admonishments in Discourse use BBtext markup syntax. Using ``
 
@@ -445,15 +401,11 @@ Negative
 
 Hyperlinks cannot be word-wrapped within admonishments. Doing so will not format the links.
 
-.. raw:: html
 
-   <h3 id="documentation-guidelines-heading--comments">
+.. _documentation-guidelines-heading--comments:
 
 Comments
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~
 
 Sometimes it’s useful to provide information to documentation editors. For that, add the comment inside a block quote that includes the icon. These will be excluded from the dedicated documentation web site, but will be visible in the forum when editing. It may look similar to this:
 
@@ -466,15 +418,11 @@ Sometimes it’s useful to provide information to documentation editors. For tha
           This note is not visible in the dedicated documentation site.
           
 
-.. raw:: html
 
-   <h3 id="documentation-guidelines-heading--foldouts">
+.. _documentation-guidelines-heading--foldouts:
 
 Foldouts
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~
 
 When a page contains a lot of extraneous information such as walkthroughs or reference tables, a *foldout* can be used. This will create a collapsed header which, when clicked, will expand to display all the content below it.
 
@@ -493,15 +441,11 @@ If you try to run ``lxd init`` on a system that is connected to a network with a
 
 
 
-.. raw:: html
 
-   <h3 id="documentation-guidelines-heading--images">
+.. _documentation-guidelines-heading--images:
 
 Images
-
-.. raw:: html
-
-   </h3>
+~~~~~~
 
 Most of our documentation covers command line tools, editing and developing. However, if relevant, we highly encourage the use of images. An image should be easier to understand than text, reinforce concepts being discussed in the topic, and break the monotony of words following words.
 

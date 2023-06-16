@@ -13,17 +13,13 @@ See `Building a gadget snap <https://ubuntu.com/core/docs/gadget-building>`__ fo
 
 --------------
 
-A typical gadget snap will consist of the following: - `Setup files <#gadget-snaps-heading--setup>`__ - `Gadget.yaml <#gadget-snaps-heading--gadget>`__ - `Volumes <#gadget-snaps-heading--volumes>`__ - `Specification <#gadget-snaps-heading--specification>`__ - `Raspberry Pi example <#gadget-snaps-heading--piexample>`__ - `Prepare-device hook <#gadget-snaps-heading--prepare>`__ - `Example script <#gadget-snaps-heading--example-prepare>`__
+A typical gadget snap will consist of the following: - `Setup files <gadget-snaps-heading--setup_>`__ - `Gadget.yaml <gadget-snaps-heading--gadget_>`__ - `Volumes <gadget-snaps-heading--volumes_>`__ - `Specification <gadget-snaps-heading--specification_>`__ - `Raspberry Pi example <gadget-snaps-heading--piexample_>`__ - `Prepare-device hook <gadget-snaps-heading--prepare_>`__ - `Example script <gadget-snaps-heading--example-prepare_>`__
 
-.. raw:: html
 
-   <h2 id="gadget-snaps-heading--setup">
+.. _gadget-snaps-heading--setup:
 
 Setup files
-
-.. raw:: html
-
-   </h2>
+-----------
 
 In addition to traditional snap metadata, the gadget snap also holds some setup files fundamental to the initialisation and lifecycle of the device:
 
@@ -37,15 +33,11 @@ Sample configuration files may be found in the current reference gadget snaps: -
 
 In the near future, we expect to add a RISC-V reference gadget snap to this list.
 
-.. raw:: html
 
-   <h2 id="gadget-snaps-heading--gadget">
+.. _gadget-snaps-heading--gadget:
 
 The gadget.yaml file
-
-.. raw:: html
-
-   </h2>
+--------------------
 
 Two YAML keys are used to describe your target device:
 
@@ -60,15 +52,11 @@ Two YAML keys are used to describe your target device:
 
 -  **volumes** (YAML sub-section, required): the volumes layout, where each disk image is represented as a YAML sub-section.
 
-.. raw:: html
 
-   <h3 id="gadget-snaps-heading--volumes">
+.. _gadget-snaps-heading--volumes:
 
 The volumes mapping sub-section
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Each volume entry is described by: - a name as defined by the entry key - a partition structure (required) - a bootloader definition (``grub``, ``u-boot``) - a partitioning schema eg. ``mbr``. Defaults to ``gpt`` if unspecified.
 
@@ -87,15 +75,11 @@ Ubuntu Core 20 typically uses the following storage partitions:
 
 The structure section lists entities with gadget data inside the image, most of which are partitions with a file system inside, with the exception of structures of type: bare, which can describe a region of data without a corresponding entry in the partition table.
 
-.. raw:: html
 
-   <h3 id="gadget-snaps-heading--specification">
+.. _gadget-snaps-heading--specification:
 
 Specification
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~
 
 The ``meta/gadget.yaml`` file contains the basic metadata for gadget-specific functionality, including a detailed specification of which structure items compose an image. The latter is used both by snapd and by ubuntu-image when creating images for these devices.
 
@@ -234,15 +218,11 @@ The following specification defines what is supported in ``gadget.yaml``:
 
 
 
-.. raw:: html
 
-   <h3 id="gadget-snaps-heading--piexample">
+.. _gadget-snaps-heading--piexample:
 
 Example: Raspberry Pi 3 gadget.yaml
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code:: yaml
 
@@ -290,15 +270,11 @@ Example: Raspberry Pi 3 gadget.yaml
 
 
 
-.. raw:: html
 
-   <h2 id="gadget-snaps-heading--prepare">
+.. _gadget-snaps-heading--prepare:
 
 prepare-device hook
-
-.. raw:: html
-
-   </h2>
+-------------------
 
 The optional ``prepare-device`` hook will be called on the gadget at the start of the device initialisation process, after the gadget snap has been installed.
 
@@ -310,15 +286,11 @@ The ``prepare-device`` hook can for example redirect this exchange and dynamical
 
 One must ensure that ``registration.proposed-serial`` is set to a *unique value* across all devices of the brand and model and that it does not contain a ``/``. It is going to be used as the “serial number” (a string, not necessarily a number) part of the identification in case the device service supports setting it or **requires** it, as is the case with the *serial-vault*.
 
-.. raw:: html
 
-   <h3 id="gadget-snaps-heading--example-prepare">
+.. _gadget-snaps-heading--example-prepare:
 
 Example: prepare-device hook
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code:: bash
 

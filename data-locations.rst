@@ -17,23 +17,19 @@ A snap which needs user-access to files should use an :ref:`interface <interface
 
 But it can also be helpful to understand how snaps operate on and access data, even without an interface, and this is outlined below:
 
--  `Snap installation <#data-locations-heading--installation>`__
--  `System data <#data-locations-heading--system>`__
--  `User data <#data-locations-heading--user>`__
--  `Other locations <#data-locations-heading--other>`__
--  `Deleting a snap <#data-locations-heading--delete>`__
+-  `Snap installation <data-locations-heading--installation_>`__
+-  `System data <data-locations-heading--system_>`__
+-  `User data <data-locations-heading--user_>`__
+-  `Other locations <data-locations-heading--other_>`__
+-  `Deleting a snap <data-locations-heading--delete_>`__
 
 --------------
 
-.. raw:: html
 
-   <h2 id="data-locations-heading--installation">
+.. _data-locations-heading--installation:
 
 Snap installation
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 When a user `installs a snap <https://snapcraft.io/docs/quickstart-guide#data-locations-heading--install-snap>`__ from the `Snap Store <https://snapcraft.io/store>`__, the following happens:
 
@@ -42,15 +38,11 @@ When a user `installs a snap <https://snapcraft.io/docs/quickstart-guide#data-lo
 
 By design, the read-only filesystem cannot provide a persistent experience between application launches, which is why snaps also have writable parts for system data and for user data.
 
-.. raw:: html
 
-   <h2 id="data-locations-heading--system">
+.. _data-locations-heading--system:
 
 System data
-
-.. raw:: html
-
-   </h2>
+-----------
 
 Within the snap environment, :ref:`environment variables <environment-variables>` are used to reference different accessible locations. The following variables and default referenced locations are used to store system data:
 
@@ -60,15 +52,11 @@ Within the snap environment, :ref:`environment variables <environment-variables>
 
 A `snapshot <https://snapcraft.io/docs/snapshots>`__ of ``SNAP_DATA`` and ``SNAP_COMMON`` is created and restored when performing a snap update (refresh) or revert operation. The contents of ``SNAP_DATA`` is specific to the snap revision, while the contents of ``SNAP_COMMON`` is applicable to all revisions and will overwrite the contents of ``SNAP_COMMON`` when restored. See `What a snapshot stores <https://snapcraft.io/docs/snapshots#data-locations-heading--what-is-stored>`__ for more details.
 
-.. raw:: html
 
-   <h2 id="data-locations-heading--user">
+.. _data-locations-heading--user:
 
 User data
-
-.. raw:: html
-
-   </h2>
+---------
 
 Snaps can also contain user data. As with the system data environment variables, ``SNAP_COMMON`` and ``SNAP_DATA``, the following user-specific environment variables point to directories for user data:
 
@@ -98,15 +86,11 @@ The above environment variable references a mount point at the following locatio
    $ mount | grep "snapd/save"
    /dev/mapper/ubuntu-save on /var/lib/snapd/save type ext4 (rw,relatime)
 
-.. raw:: html
 
-   <h2 id="data-locations-heading--other">
+.. _data-locations-heading--other:
 
 Other locations
-
-.. raw:: html
-
-   </h2>
+---------------
 
 There are several other directories you should be aware of:
 
@@ -114,15 +98,11 @@ There are several other directories you should be aware of:
 -  **``/var/lib/snapd/snaps``** Contains all the versions of snaps installed on your system.
 -  **``/var/lib/snapd/snapshots/``** Contains both the manually generated and automatically generated `snapshots <https://snapcraft.io/docs/snapshots>`__.
 
-.. raw:: html
 
-   <h2 id="data-locations-heading--delete">
+.. _data-locations-heading--delete:
 
 Deleting a snap
-
-.. raw:: html
-
-   </h2>
+---------------
 
 When deleting and removing a snap from a system, the following will happen:
 

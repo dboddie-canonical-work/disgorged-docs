@@ -38,15 +38,11 @@ There are currently three supported bases for ROS 2, core18, core20 and core22.
 
 Let us explore the differences between the different bases.
 
-.. raw:: html
 
-   <h3 id="ros-2-deployment-with-snaps-heading--core18">
+.. _ros-2-deployment-with-snaps-heading--core18:
 
 core18
-
-.. raw:: html
-
-   </h3>
+~~~~~~
 
 Snaps are defined in a single YAML file placed in the root folder of your project. The following example shows the entire *snapcraft.yaml* file for an example project, `ros2-talker-listener <https://github.com/snapcraft-docs/ros2-talker-listener>`__. Don’t worry, we’ll break this down.
 
@@ -211,15 +207,11 @@ Once done developing your snap, you can easily clean up the build environment:
 
 ----------
 
-.. raw:: html
 
-   <h3 id="ros-2-deployment-with-snaps-heading--core20">
+.. _ros-2-deployment-with-snaps-heading--core20:
 
 core20
-
-.. raw:: html
-
-   </h3>
+~~~~~~
 
 Snaps are defined in a single YAML file placed in the root folder of your project. The following example shows the entire *snapcraft.yaml* file for an example project, `ros2-talker-listener-core20 <https://github.com/snapcraft-docs/ros2-talker-listener-core20>`__. Don’t worry, we’ll break this down.
 
@@ -400,15 +392,11 @@ Once done developing your snap, you can easily clean up the build environment:
 
 ----------
 
-.. raw:: html
 
-   <h3 id="ros-2-deployment-with-snaps-heading--core22">
+.. _ros-2-deployment-with-snaps-heading--core22:
 
 core22
-
-.. raw:: html
-
-   </h3>
+~~~~~~
 
 Snaps are defined in a single YAML file placed in the root folder of your project. The following example shows the entire *snapcraft.yaml* file for an example project, `ros2-talker-listener-core22 <https://github.com/snapcraft-docs/ros2-talker-listener-core22>`__. Don’t worry, we’ll break this down.
 

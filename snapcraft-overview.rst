@@ -30,15 +30,11 @@ At the heart of the snapcraft build process is a file called :ref:`snapcraft.yam
 
 Snapcraft offers a variety of options when using LXD and Multipass. See :ref:`Build options <build-options>` for details on build options and `build providers <t/build-on-lxd/4157>`__ for details on interacting with LXD and Multipass.
 
-.. raw:: html
 
-   <h3 id="snapcraft-overview-heading--creating-snapcraft">
+.. _snapcraft-overview-heading--creating-snapcraft:
 
 Creating snapcraft.yaml
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~~~~~~~~~~~
 
 To get started, run ``snapcraft init``. This creates a buildable snapcraft.yaml template within a snap sub-directory relative to your current filesystem location. If the command cannot be found, make sure ``/snap/bin`` is on your PATH.
 
@@ -50,15 +46,11 @@ The typical snap build process centres on iterating over the configuration of *p
 
 The following lists how you might want to approach building a new snap for your application with :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>`: 1. describe your application with :ref:`top-level metadata <snapcraft-top-level-metadata>` 1. use :ref:`parts metadata <snapcraft-parts-metadata>` to import and build your application and its dependencies - incorporate *plugins* within parts to easily integrate applications using specific languages and frameworks, or work with binary files directly. You can also :ref:`write your own <writing-local-plugins>` plugin. - use :ref:`plugin metadata <supported-plugins>` to locate your project, or sync with a remote repository - set build dependencies, if required, and any run-time dependencies 1. add :ref:`interface metadata <snapcraft-app-and-service-metadata>` to connect external system resources to your application
 
-.. raw:: html
 
-   <h2 id="snapcraft-overview-heading--building-your-snap">
+.. _snapcraft-overview-heading--building-your-snap:
 
 Building your snap
-
-.. raw:: html
-
-   </h2>
+------------------
 
 When you are ready to test the contents of snapcraft.yaml, simply run ``snapcraft --debug`` in the same directory where you initialised the snap.
 
@@ -96,15 +88,11 @@ To see snapcraft build the template created by *snapcraft init*, simply run ``sn
 
 The build process will proceed through the :ref:`Snapcraft lifecycle <parts-lifecycle>`, installing and building your project’s dependencies, as described by your snapcraft.yaml. The time this takes will depend on the complexity of your project and the capabilities of your system.
 
-.. raw:: html
 
-   <h2 id="snapcraft-overview-heading--testing">
+.. _snapcraft-overview-heading--testing:
 
 Testing your snap locally
-
-.. raw:: html
-
-   </h2>
+-------------------------
 
 After a snap has been built, it can be installed locally with the ``--devmode`` flag, enabling your unsigned and unconfined snap to be installed:
 

@@ -9,15 +9,11 @@ The ``audio-record`` interface allows an application to access your audio record
 
 This interface is a companion interface to the :ref:`audio-playback <the-audio-playback-interface>` interface, and is not intended to be used without it.
 
-.. raw:: html
 
-   <h2 id="the-audio-record-interface-heading--example">
+.. _the-audio-record-interface-heading--example:
 
 Example
-
-.. raw:: html
-
-   </h2>
+-------
 
 The brilliant `OBS Studio <https://snapcraft.io/obs-studio>`__ is a good example of an application that needs access to your microphone/audio recording hardware.
 
@@ -32,15 +28,11 @@ The brilliant `OBS Studio <https://snapcraft.io/obs-studio>`__ is a good example
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-audio-record-interface-heading--dev-details">
+.. _the-audio-record-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 **Auto-connect**: no
 
@@ -48,15 +40,11 @@ The design of this interface is based on the principle that the slot implementat
 
 On systems with snapd integration, PulseAudio’s mediation is limited and will only verify that the *snap* is connected to ``audio-record`` and not if the specific snap command plugs the interface.
 
-.. raw:: html
 
-   <h3 id="the-audio-record-interface-heading-code">
+.. _the-audio-record-interface-heading-code:
 
 Code examples
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~
 
 Mumble is a voice chat platform and a good example of an application using audio-record. Its snapcraft.yaml can be found here: `https://github.com/snapcrafters/mumble/blob/master/snap/snapcraft.yaml <https://github.com/snapcrafters/mumble/blob/b5f1644a72a14cacd17b862cd0265d21d8ce604a/snap/snapcraft.yaml#L21>`__
 

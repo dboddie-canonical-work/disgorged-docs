@@ -32,15 +32,11 @@ Use the ``snap interface bool-file`` command to see which boolean files are avai
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-bool-file-interface-heading--dev-details">
+.. _the-bool-file-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 `Auto-connect <interface-management.md#the-bool-file-interface-heading--auto-connections>`__: no
 

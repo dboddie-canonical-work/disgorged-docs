@@ -38,15 +38,11 @@ Requires snapd version *2.33+*.
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-home-interface-heading--dev">
+.. _the-home-interface-heading--dev:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 `Auto-Connect <the-interface-auto-connection-mechanism.md#the-home-interface-heading--autoconnect>`__: - **yes** on traditional distributions - **no** on all other systems, including `Ubuntu Core <glossary.md#the-home-interface-heading--ubuntu-core>`__
 

@@ -14,29 +14,21 @@ The appstream-metadata interface
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-appstream-metadata-interface-heading--dev-details">
+.. _the-appstream-metadata-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 **Auto-connect**: no
 
 Requires snapd version *2.41+*.
 
-.. raw:: html
 
-   <h3 id="the-appstream-metadata-interface-heading-code">
+.. _the-appstream-metadata-interface-heading-code:
 
 Code examples
-
-.. raw:: html
-
-   </h3>
+~~~~~~~~~~~~~
 
 :ref:`Using external metadata <using-external-metadata>` describes how to access AppStream metadata.
 

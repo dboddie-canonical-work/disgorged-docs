@@ -16,15 +16,11 @@ The ``acrn`` interface allows access to, and control of, user virtual machines u
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-acrn-interface-heading--dev-details">
+.. _the-acrn-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 `Auto-connect <interface-management.md#the-acrn-interface-heading--auto-connections>`__: no `Super-privileged <the-interface-auto-connection-mechanism.md#the-acrn-interface-heading--super>`__: no
 

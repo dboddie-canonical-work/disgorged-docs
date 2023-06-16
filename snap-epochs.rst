@@ -9,22 +9,18 @@ Snap epochs
 
 Epochs require snap version *2.38+*.
 
--  `Defining an epoch <#snap-epochs-heading--define>`__
--  `Migrating to a new epoch <#snap-epochs-heading--migrate>`__
--  `Epoch transitions <#snap-epochs-heading--transitions>`__
--  `Internal read/write configuration <#snap-epochs-heading--internal>`__
+-  `Defining an epoch <snap-epochs-heading--define_>`__
+-  `Migrating to a new epoch <snap-epochs-heading--migrate_>`__
+-  `Epoch transitions <snap-epochs-heading--transitions_>`__
+-  `Internal read/write configuration <snap-epochs-heading--internal_>`__
 
 --------------
 
-.. raw:: html
 
-   <h2 id="snap-epochs-heading--define">
+.. _snap-epochs-heading--define:
 
 Defining an epoch
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 Applications and their data formats are constantly evolving, and this requires applications to periodically break data compatibility with older versions. When this happens, applications and users often need to carefully manage data migration from one version to another, and this is where epochs can help.
 
@@ -36,15 +32,11 @@ By default, snaps have an epoch of ‘0’. When a new version breaks data compa
 
 The revisions with the new epoch are invisible to users on the original ``epoch: 0``; conversely, the old epoch is invisible to new users who always get the latest epoch with a fresh installation. You can still push updates to users of the old epoch by specifying ``epoch: 0`` (or omitting the epoch) in its *snapcraft.yaml*, while pushing updates to the new version using ``epoch: 1``. It’s a little like having subchannels.
 
-.. raw:: html
 
-   <h2 id="snap-epochs-heading--migrate">
+.. _snap-epochs-heading--migrate:
 
 Migrating to a new epoch
-
-.. raw:: html
-
-   </h2>
+------------------------
 
 Epochs alone track the format used but do not automatically migrate user data between application versions. This data is still copied, as it normally would, but snapd isn’t aware of its format, or how to migrate the data from an old epoch to a new one; the snap developer needs to manage and implement this process (e.g. run database migrations, etc.).
 
@@ -66,15 +58,11 @@ If users need to test data compatibility with the new epoch version, and the sna
 
 A big advantage with automatic migration is that the data transformation process needs to be supported only for a limited number of revisions. If a user neglects to update their system across epochs, for example, when they eventually refresh, they will be stepped through each epoch: 0 to 1\ *, 1 to 2*, and 2 onwards, for instance, by performing the migration process for each step as necessary. You don’t need to push old migration code to new versions of your application.
 
-.. raw:: html
 
-   <h2 id="snap-epochs-heading--transitions">
+.. _snap-epochs-heading--transitions:
 
 Epoch transitions
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 .. figure:: https://assets.ubuntu.com/v1/fa390985-Untitled+drawing.png
    :alt: Epoch transitions
@@ -716,15 +704,11 @@ R7E1
 
 (!) is used to show the influence of epochs on locally installed revisions.
 
-.. raw:: html
 
-   <h2 id="snap-epochs-heading--internal">
+.. _snap-epochs-heading--internal:
 
 Internal read/write configuration
-
-.. raw:: html
-
-   </h2>
+---------------------------------
 
 Internally, snapd maintains a list of which revisions of a snap can read and write to each epoch. You can set these from snapcraft using ```passthrough`` <https://snapcraft.io/docs/using-in-development-features>`__. For example, ``1*`` is equivalent to:
 

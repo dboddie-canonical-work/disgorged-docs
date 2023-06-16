@@ -39,15 +39,11 @@ Type: ``list[string]``
 
 Ensures that all the <part-names> listed in ``after`` are staged before this part begins its `lifecycle <parts-lifecycle.md#snapcraft-parts-metadata-heading--steps>`__.
 
-.. raw:: html
 
-   <h3 id="snapcraft-parts-metadata-heading--build-attributes">
+.. _snapcraft-parts-metadata-heading--build-attributes:
 
-build-attributes⚓
-
-.. raw:: html
-
-   </h3>
+build-attributes
+~~~~~~~~~~~~~~~~
 
 Type: ``enum``
 
@@ -63,15 +59,11 @@ Supported attributes:
 
 For more information, refer to the output of ``snapcraft help plugins``.
 
-.. raw:: html
 
-   <h3 id="snapcraft-parts-metadata-heading--build-environment">
+.. _snapcraft-parts-metadata-heading--build-environment:
 
-build-environment⚓
-
-.. raw:: html
-
-   </h3>
+build-environment
+~~~~~~~~~~~~~~~~~
 
 Type: Array
 
@@ -98,15 +90,11 @@ Packages are installed using the host’s package manager, such as ``apt`` or ``
 
 Example: ``[ libssl-dev, libssh-dev, libncursesw5-dev]``
 
-.. raw:: html
 
-   <h3 id="snapcraft-parts-metadata-heading--build-snaps">
+.. _snapcraft-parts-metadata-heading--build-snaps:
 
-build-snaps⚓
-
-.. raw:: html
-
-   </h3>
+build-snaps
+~~~~~~~~~~~
 
 Type: ``list[string]``
 
@@ -116,15 +104,11 @@ If a specific channel is required, the syntax is of the form ``<snap-name>/<chan
 
 Example: ``build-snaps: [go/1.13/stable]``
 
-.. raw:: html
 
-   <h3 id="snapcraft-parts-metadata-heading--disable-parallel">
+.. _snapcraft-parts-metadata-heading--disable-parallel:
 
-disable-parallel ⚓
-
-.. raw:: html
-
-   </h3>
+disable-parallel
+~~~~~~~~~~~~~~~~
 
 Type: ``boolean``
 
@@ -150,15 +134,11 @@ In the key/value pair, the key represents the path of a file inside the part and
 
 Example: ``bin/snapcraftctl: bin/scriptlet-bin/snapcraftctl``
 
-.. raw:: html
 
-   <h3 id="snapcraft-parts-metadata-heading--override-build">
+.. _snapcraft-parts-metadata-heading--override-build:
 
-override-build⚓
-
-.. raw:: html
-
-   </h3>
+override-build
+~~~~~~~~~~~~~~
 
 Type: ``multiline string``
 
@@ -168,15 +148,11 @@ The shell script defined here replaces the `build <parts-lifecycle.md#snapcraft-
 
 To run Snapcraft’s original build implementation from within *override-build*, run ``snapcraftctl build``. This can be run before or after any custom script or omitted entirely.
 
-.. raw:: html
 
-   <h3 id="snapcraft-parts-metadata-heading--override-prime">
+.. _snapcraft-parts-metadata-heading--override-prime:
 
-override-prime⚓
-
-.. raw:: html
-
-   </h3>
+override-prime
+~~~~~~~~~~~~~~
 
 Type: ``multiline string``
 
@@ -186,15 +162,11 @@ The shell script defined here replaces the `prime <parts-lifecycle.md#snapcraft-
 
 To run Snapcraft’s original prime step implementation from within *override-prime*, run ``snapcraftctl prime``. This can be run before or after any custom script or omitted entirely.
 
-.. raw:: html
 
-   <h3 id="snapcraft-parts-metadata-heading--override-pull">
+.. _snapcraft-parts-metadata-heading--override-pull:
 
-override-pull⚓
-
-.. raw:: html
-
-   </h3>
+override-pull
+~~~~~~~~~~~~~
 
 Type: ``multiline string``
 
@@ -204,15 +176,11 @@ The shell script defined here replaces the `pull <parts-lifecycle.md#snapcraft-p
 
 To run Snapcraft’s original pull stage implementation from within *override-pull*, run ``snapcraftctl pull``. This can be run before or after any custom script or omitted entirely.
 
-.. raw:: html
 
-   <h3 id="snapcraft-parts-metadata-heading--override-stage">
+.. _snapcraft-parts-metadata-heading--override-stage:
 
-override-stage⚓
-
-.. raw:: html
-
-   </h3>
+override-stage
+~~~~~~~~~~~~~~
 
 Type: ``multiline string``
 
@@ -251,7 +219,7 @@ Runs a script before the plugin’s `build <parts-lifecycle.md#snapcraft-parts-m
 
 The script is run before the build step defined for ``parts.<part-name>.plugin:ref:`` starts. The working directory is the base build directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``. A set of `Environment Variables <environment-variables>` will be available to the script.
 
-   ⚠ The release of :ref:`Snapcraft 3.0 <release-notes-snapcraft-3-0>` made this key obsolete. Use ```override-build`` <#snapcraft-parts-metadata-heading--override-build>`__ instead.
+   ⚠ The release of :ref:`Snapcraft 3.0 <release-notes-snapcraft-3-0>` made this key obsolete. Use ```override-build`` <snapcraft-parts-metadata-heading--override-build_>`__ instead.
 
 prime
 ~~~~~
@@ -262,15 +230,11 @@ A list of files from <part-name> to `prime <parts-lifecycle.md#snapcraft-parts-m
 
 Rules applying to the list here are the same as those of filesets. Referencing of fileset keys is done with a ``$`` prefixing the fileset key, which will expand with the value of such key.
 
-.. raw:: html
 
-   <h3 id="snapcraft-parts-metadata-heading--source">
+.. _snapcraft-parts-metadata-heading--source:
 
-source⚓
-
-.. raw:: html
-
-   </h3>
+source
+~~~~~~
 
 Type: ``string``
 
@@ -366,15 +330,11 @@ Used when the type of ``source`` entry cannot be detected.
 
 Can be one of the following: ``[bzr|deb|git|hg|local|mercurial|rpm|subversion|svn|tar|zip|7z]``
 
-.. raw:: html
 
-   <h3 id="snapcraft-parts-metadata-heading--stage">
+.. _snapcraft-parts-metadata-heading--stage:
 
-stage⚓
-
-.. raw:: html
-
-   </h3>
+stage
+~~~~~
 
 Type: ``list[string]``
 

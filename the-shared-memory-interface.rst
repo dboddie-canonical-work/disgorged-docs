@@ -16,15 +16,11 @@ Requires snapd version *2.54+* .
 
 --------------
 
-.. raw:: html
 
-   <h2 id="the-shared-memory-interface-heading--dev-details">
+.. _the-shared-memory-interface-heading--dev-details:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 +--------------------------------------------------------------------------------------------------+-----------------------+----------------------------------------------------------------------------+
 | Permissions                                                                                      |                       |                                                                            |

@@ -49,15 +49,11 @@ Requires snapd version *2.55+*.
 
 --------------
 
-.. raw:: html
 
-   <h2 id="`the-custom-device-interface-heading--dev-details`">
+.. _`the-custom-device-interface-heading--dev-details`:
 
 Developer details
-
-.. raw:: html
-
-   </h2>
+-----------------
 
 `Auto-connect <interface-management.md#the-custom-device-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
 

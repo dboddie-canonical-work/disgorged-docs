@@ -19,21 +19,17 @@ Supported build architectures are: **amd64**, **arm64**, **armhf**, **i386**, **
 
    ℹ See :ref:`Creating a snap <creating-a-snap>` for details on creating the metadata required to build a snap. For other ways to build a snap, see :ref:`Build options <build-options>`.
 
--  `Prerequisites <#remote-build-heading--prerequisites>`__
--  `Using remote build <#remote-build-heading--using>`__
--  `Monitor a build <#remote-build-heading--monitor>`__
+-  `Prerequisites <remote-build-heading--prerequisites_>`__
+-  `Using remote build <remote-build-heading--using_>`__
+-  `Monitor a build <remote-build-heading--monitor_>`__
 
 --------------
 
-.. raw:: html
 
-   <h2 id="remote-build-heading--prerequisites">
+.. _remote-build-heading--prerequisites:
 
 Prerequisites
-
-.. raw:: html
-
-   </h2>
+-------------
 
 Prospective snaps need to be open source, as the code will be publicly available, and you’ll need a `Launchpad account <https://login.launchpad.net/+new_account>`__.
 
@@ -57,15 +53,11 @@ If *architectures* is not defined within snapcraft.yaml, target architectures ca
 
 If no architecture is specified, remote build will default to :ref:``amd64``. For more details on how snaps handle build and run architectures, see `Architectures <architectures>`.
 
-.. raw:: html
 
-   <h2 id="remote-build-heading--using">
+.. _remote-build-heading--using:
 
 Using remote build
-
-.. raw:: html
-
-   </h2>
+------------------
 
 To instantiate a remote build, use the ``remote-build`` argument with snapcraft:
 
@@ -132,15 +124,11 @@ If your build is interrupted for any reason, it can be resumed with the ``--reco
 
    snapcraft remote-build --recover
 
-.. raw:: html
 
-   <h2 id="remote-build-heading--monitor">
+.. _remote-build-heading--monitor:
 
 Monitor a build
-
-.. raw:: html
-
-   </h2>
+---------------
 
 Command output from remote build will show build progress for each architecture. You can retrieve the same output from another terminal session within the build directory using the ``--status`` argument:
 

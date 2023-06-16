@@ -7,21 +7,17 @@ Create a developer account
 
 To upload your snap to the `Snap Store <https://snapcraft.io/store>`__ and access its management web interface, you will need a developer account. If you don’t already have one, creating one is easy.
 
--  `Ubuntu One details <#create-a-developer-account-heading--setup>`__
--  `Developer account id <#create-a-developer-account-heading--developer-id>`__
--  `Adding SSH keys to your account <#create-a-developer-account-heading--ssh-keys>`__
+-  `Ubuntu One details <create-a-developer-account-heading--setup_>`__
+-  `Developer account id <create-a-developer-account-heading--developer-id_>`__
+-  `Adding SSH keys to your account <create-a-developer-account-heading--ssh-keys_>`__
 
 --------------
 
-.. raw:: html
 
-   <h2 id="create-a-developer-account-heading--details">
+.. _create-a-developer-account-heading--details:
 
 Ubuntu One setup
-
-.. raw:: html
-
-   </h2>
+----------------
 
 The account is registered on `Ubuntu One <https://login.ubuntu.com/>`__, a single sign-on service for Ubuntu and affiliated projects. Head over to https://snapcraft.io/account and select the “I don’t have an Ubuntu One account” option.
 
@@ -40,15 +36,11 @@ Finally, you will be asked to review the terms of the developer programme. If yo
 
 Once you have accepted the terms, your developer account is immediately ready to start publishing snaps. The details of your account can be reviewed at any time from the menu on the top right.
 
-.. raw:: html
 
-   <h2 id="create-a-developer-account-heading--developer-id">
+.. _create-a-developer-account-heading--developer-id:
 
 Developer account id
-
-.. raw:: html
-
-   </h2>
+--------------------
 
 It’s useful to know your developer account id when building `Ubuntu Core devices <https://ubuntu.com/core/docs/system-user>`__, interacting with the Snap Store `review team <https://forum.snapcraft.io/c/store-requests/19>`__ and using the `snapd API <https://snapcraft.io/docs/snapd-rest-api>`__.
 
@@ -96,15 +88,11 @@ Following a successful login, the ``snapcraft whoami`` command reveals your *dev
 
 In the example output above, the developer-id is ``xSfWKGdLoQBoQx88vIM1MpbFNMq53t1f``.
 
-.. raw:: html
 
-   <h2 id="create-a-developer-account-heading--ssh-keys">
+.. _create-a-developer-account-heading--ssh-keys:
 
 Adding SSH keys to your account
-
-.. raw:: html
-
-   </h2>
+-------------------------------
 
 The contents of one or more `SSH public keys <https://help.ubuntu.com/community/SSH/OpenSSH/Keys>`__ can be added to, and associated with, your Ubuntu One account.
 
