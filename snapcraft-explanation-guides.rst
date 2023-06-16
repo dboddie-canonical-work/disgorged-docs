@@ -31,3 +31,12 @@ For a simpler place to start your Snapcraft journey, our tutorials section conta
 If you have a specific goal, but are already familiar with Snapcraft, our *How-to* guides have more in-depth detail than our tutorials and can be applied to a broader set of applications. They’ll help you achieve an end-result but may require you to understand and adapt the steps to fit your specific requirements.
 
 Take a look at our *Reference section* when you need to know which interfaces can be used and what plugins Snapcraft supports.
+
+.. toctree::
+   :hidden:
+
+   parts-lifecycle
+   troubleshoot-snap-building
+   migrating-between-bases
+   using-the-snapctl-tool
+   explanation-robotics

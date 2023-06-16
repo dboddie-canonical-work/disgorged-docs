@@ -31,3 +31,18 @@ Alternatively, the Snapcraft tutorials section contain step-by-step tutorials to
 If you have a specific goal, but are already familiar with Snapcraft, our How-to guides have more in-depth detail than our tutorials and can be applied to a broader set of applications. They’ll help you achieve an end-result but may require you to understand and adapt the steps to fit your specific requirements.
 
 Finally, for a better understanding of how Snapcraft works, and how it can be used and configured, our *Explanation* section enable you to expand your knowledge and become better at building snaps with Snapcraft.
+
+.. toctree::
+   :hidden:
+
+   supported-plugins
+   supported-extensions
+   supported-interfaces
+   supported-snap-hooks
+   parts-environment-variables
+   snapcraft-package-repositories
+   build-options
+   build-providers
+   snapcraft-linters
+   snapcraft-yaml-reference
+   snapcraft-release-notes

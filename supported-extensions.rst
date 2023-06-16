@@ -38,3 +38,10 @@ The following extensions are available in the latest version of :ref:`Snapcraft 
 +-------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------+-----------------+
 
 The *snapcraft extensions* command lists which extensions are supported by the installed version of snapcraft.
+
+.. toctree::
+   :hidden:
+
+   the-kde-neon-extension
+   the-flutter-extension
+   the-gnome-extension

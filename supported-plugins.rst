@@ -157,3 +157,10 @@ Tools
 +---------------------------------------------------------+--------------------------------------------------------------------------+-----------------------+
 | :ref:`plainbox-provider <the-plainbox-provider-plugin>` | create parts containing a Plainbox test collection known as a *provider* | core18                |
 +---------------------------------------------------------+--------------------------------------------------------------------------+-----------------------+
+
+.. toctree::
+   :hidden:
+
+   reference-core22
+   reference-core20
+   reference-core18

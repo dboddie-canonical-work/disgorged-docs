@@ -71,3 +71,12 @@ Step-by-step guide
    -  `Snap publication process <build-and-publishing-example.md#snapcraft-quickstart-heading--publish>`__
    -  `Snap Store channels <build-and-publishing-example.md#snapcraft-quickstart-heading--channels>`__
    -  `Next steps <build-and-publishing-example.md#snapcraft-quickstart-heading--next>`__
+
+.. toctree::
+   :hidden:
+
+   snapcraft-installation-and-setup
+   how-snapcraft-builds-a-snap
+   basic-snapcraft-yaml-example
+   intermediate-snapcraft-yaml-example
+   build-and-publishing-example

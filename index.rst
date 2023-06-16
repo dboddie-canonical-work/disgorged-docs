@@ -47,3 +47,11 @@ Snap and Snapcraft are members of the Ubuntu family. They’re both open source 
 -  `Roadmap <https://snapcraft.io/docs/the-snapd-roadmap>`__
 
 Thinking about using snap for your next project? `Get in touch! <https://forum.snapcraft.io/>`__
+
+.. toctree::
+   :hidden:
+
+   snapcraft-tutorials
+   snapcraft-how-to-guides
+   snapcraft-reference
+   snapcraft-explanation-guides

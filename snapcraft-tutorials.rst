@@ -31,3 +31,9 @@ If you have a specific goal, but are already familiar with Snapcraft, our How-to
 Take a look at our *Reference section* when you need to know which interfaces can be used and what plugins Snapcraft supports.
 
 Finally, for a better understanding of how Snapcraft works, and how it can be used and configured, our *Explanation* section enable you to expand your knowledge and become better at building snaps with Snapcraft.
+
+.. toctree::
+   :hidden:
+
+   snapcraft-overview.rst
+   creating-a-snap.rst

@@ -15,3 +15,11 @@ These guides show how classic confinement can be enabled for different types of 
 -  :ref:`Set up classic confinement for a Python project <set-up-classic-confinement-for-a-python-project>`
 -  :ref:`Set up classic confinement for a Makefile project <set-up-classic-confinement-for-a-makefile-project>`
 -  :ref:`Set up classic confinement for a CMake project <set-up-classic-confinement-for-a-cmake-project>`
+
+.. toctree::
+   :hidden:
+
+   set-up-classic-confinement-for-an-autotools-project
+   set-up-classic-confinement-for-a-go-project
+   set-up-classic-confinement-for-a-makefile-project
+   set-up-classic-confinement-for-a-python-project
