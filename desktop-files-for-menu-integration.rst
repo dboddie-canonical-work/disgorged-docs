@@ -1,6 +1,6 @@
 .. 13115.md
 
-.. \_desktop-files-for-menu-integration:
+.. _desktop-files-for-menu-integration:
 
 Desktop files for menu integration
 ==================================
@@ -97,4 +97,4 @@ During installation, snapd copies the desktop files of the snap to ``/var/lib/sn
 Further reading
 ---------------
 
--  `How to snap a desktop application <desktop-applications.md>`__
+-  :ref:`How to snap a desktop application <desktop-applications>`

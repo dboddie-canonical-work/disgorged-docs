@@ -1,6 +1,6 @@
 .. 26499.md
 
-.. \_the-gconf-interface:
+.. _the-gconf-interface:
 
 The gconf interface
 ===================
@@ -11,7 +11,7 @@ This interface needs to be manually connected because *gconf* is a global databa
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 

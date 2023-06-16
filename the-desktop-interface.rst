@@ -1,6 +1,6 @@
 .. 7783.md
 
-.. \_the-desktop-interface:
+.. _the-desktop-interface:
 
 The desktop interface
 =====================
@@ -9,6 +9,6 @@ The desktop interface
 
 **Auto-connect**: yes
 
-See `The desktop interfaces <the-desktop-interfaces.md>`__ for further details.
+See :ref:`The desktop interfaces <the-desktop-interfaces>` for further details.
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

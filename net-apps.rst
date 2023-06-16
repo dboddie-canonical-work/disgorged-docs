@@ -1,6 +1,6 @@
 .. 34730.md
 
-.. \_net-apps:
+.. _net-apps:
 
 .NET apps
 =========

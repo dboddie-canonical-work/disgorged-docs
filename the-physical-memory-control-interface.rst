@@ -1,6 +1,6 @@
 .. 7900.md
 
-.. \_the-physical-memory-control-interface:
+.. _the-physical-memory-control-interface:
 
 The physical-memory-control interface
 =====================================
@@ -15,4 +15,4 @@ This interface can write to all physical memory when the kernel is compiled with
 
 Requires snapd version *2.21+*.
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

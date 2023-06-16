@@ -1,6 +1,6 @@
 .. 7833.md
 
-.. \_the-hardware-observe-interface:
+.. _the-hardware-observe-interface:
 
 The hardware-observe interface
 ==============================
@@ -9,4 +9,4 @@ The hardware-observe interface
 
 **Auto-connect**: no
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

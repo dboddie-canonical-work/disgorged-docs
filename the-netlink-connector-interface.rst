@@ -1,17 +1,17 @@
 .. 7879.md
 
-.. \_the-netlink-connector-interface:
+.. _the-netlink-connector-interface:
 
 The netlink-connector interface
 ===============================
 
 The ``netlink-connector`` interface allows communication through the kernel Netlink connector.
 
-See also `netlink-driver <the-netlink-driver-interface.md>`__ and `netlink-audit <the-netlink-audit-interface.md>`__.
+See also :ref:`netlink-driver <the-netlink-driver-interface>` and :ref:`netlink-audit <the-netlink-audit-interface>`.
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 

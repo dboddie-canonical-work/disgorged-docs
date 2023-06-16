@@ -1,6 +1,6 @@
 .. 26504.md
 
-.. \_the-media-control-interface:
+.. _the-media-control-interface:
 
 The media-control interface
 ===========================
@@ -9,7 +9,7 @@ The ``media-control`` interface permits access to media control devices and Vide
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 

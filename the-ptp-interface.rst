@@ -1,6 +1,6 @@
 .. 26565.md
 
-.. \_the-ptp-interface:
+.. _the-ptp-interface:
 
 The ptp interface
 =================
@@ -11,7 +11,7 @@ This interface is primarily intended to be used with `Ubuntu Core <glossary.md#t
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 

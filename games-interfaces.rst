@@ -1,6 +1,6 @@
 .. 13125.md
 
-.. \_games-interfaces:
+.. _games-interfaces:
 
 Games interfaces
 ================

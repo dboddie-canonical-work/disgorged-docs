@@ -1,21 +1,21 @@
 .. 8588.md
 
-.. \_the-rust-plugin:
+.. _the-rust-plugin:
 
 The rust plugin
 ===============
 
-The ``rust`` plugin is useful for building `Rust <https://www.rust-lang.org/>`__-based parts using the `Cargo <https://crates.io/>`__ package manager to drive the build. This plugin uses the common plugin keywords as well as those for `sources <snapcraft-parts-metadata.md#the-rust-plugin-heading--source>`__. For more information, see `Snapcraft parts metadata <snapcraft-parts-metadata.md>`__.
+The ``rust`` plugin is useful for building `Rust <https://www.rust-lang.org/>`__-based parts using the `Cargo <https://crates.io/>`__ package manager to drive the build. This plugin uses the common plugin keywords as well as those for `sources <snapcraft-parts-metadata.md#the-rust-plugin-heading--source>`__. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
 
-Additional features and syntax are dependent on which `base <base-snaps.md>`__ is being used, as outlined below:
+Additional features and syntax are dependent on which :ref:`base <base-snaps>` is being used, as outlined below:
 
 -  `base: core22 <#the-rust-plugin-heading--core22>`__
 -  `base: core20 <#the-rust-plugin-heading--core20>`__
 -  `base: core18 \| core <#the-rust-plugin-heading--core18>`__
 
-See `Rust applications <rust-applications.md>`__ for a simple example, or search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+rust%22&type=Code>`__ for projects using the plugin.
+See :ref:`Rust applications <rust-applications>` for a simple example, or search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+rust%22&type=Code>`__ for projects using the plugin.
 
-   ⓘ This is a *snapcraft* plugin. See `Snapcraft plugins <snapcraft-plugins.md>`__ and `Supported plugins <supported-plugins.md>`__ for further details on how plugins are used.
+   ⓘ This is a *snapcraft* plugin. See :ref:`Snapcraft plugins <snapcraft-plugins>` and :ref:`Supported plugins <supported-plugins>` for further details on how plugins are used.
 
 .. raw:: html
 

@@ -1,6 +1,6 @@
 .. 3795.md
 
-.. \_supported-snap-hooks:
+.. _supported-snap-hooks:
 
 Supported snap hooks
 ====================
@@ -13,7 +13,7 @@ Common examples of actions requiring hooks include:
 
 -  **notifying a snap that a specific operation is in progress** Example: A snap may need to know when a specific interface connects or disconnects.
 
-A hook is defined as an executable within a snap’s ``meta/hooks/`` directory, and consequently, also within ``snap/hooks/`` when building with *snapcraft*. See `Snapcraft hook support <snapcraft-hook-support.md>`__ for more information.
+A hook is defined as an executable within a snap’s :ref:``meta/hooks/`` directory, and consequently, also within ``snap/hooks/`` when building with *snapcraft*. See `Snapcraft hook support <snapcraft-hook-support>` for more information.
 
 The filename of the executable is based on the name of the hook. If this file exists, *snapd* will execute the file when required by that hook’s action.
 
@@ -24,11 +24,11 @@ The following hooks are currently implemented: - `configure hook <#supported-sna
 Accessing resources
 -------------------
 
-If a hook requires access to system resources outside of a snap’s confined environment, it will need to use `slots and plugs <interface-management.md#slots-plugs>`__ via the `interface <interface-management.md>`__ mechanism to access those resources.
+If a hook requires access to system resources outside of a snap’s confined environment, it will need to use `slots and plugs <interface-management.md#slots-plugs>`__ via the :ref:`interface <interface-management>` mechanism to access those resources.
 
-When using *Snapcraft* to build the snap, the interface definition will go inside `snapcraft.yaml <the-snapcraft-yaml-schema.md>`__, and the *snapcraft* command create a `snap.yaml <the-snap-format.md>`__ within the snap to hold the required metadata.
+When using *Snapcraft* to build the snap, the interface definition will go inside :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>`, and the *snapcraft* command create a :ref:`snap.yaml <the-snap-format>` within the snap to hold the required metadata.
 
-For example, the following excerpt registers an *install* hook making use of a `network <the-network-interface.md>`__ plug:
+For example, the following excerpt registers an *install* hook making use of a :ref:`network <the-network-interface>` plug:
 
 .. code:: yaml
 
@@ -107,7 +107,7 @@ The default-configure hook
 
    </h2>
 
-The default-configure-hook is an optional extension to the `configure hook <supported-snap-hooks.md#supported-snap-hooks-heading--the-configure-hook>`__ that executes only on snap installation and *before* services are started to provide access to the default configuration values stored in a device’s `gadget snap <gadget-snaps.md>`__.
+The default-configure-hook is an optional extension to the `configure hook <supported-snap-hooks.md#supported-snap-hooks-heading--the-configure-hook>`__ that executes only on snap installation and *before* services are started to provide access to the default configuration values stored in a device’s :ref:`gadget snap <gadget-snaps>`.
 
 The default-configure hook should be located within ‘meta/hooks’ and requires a configure hook to be present. A missing configure hook will result in an error.
 
@@ -205,7 +205,7 @@ Interface hooks are executed when an interface is either connected or disconnect
 
 They can be used to read or write attributes from a connection and, for example, acquire new resources, update internal options or update databases.
 
-For further details, see `Interface hooks <interface-hooks.md>`__.
+For further details, see :ref:`Interface hooks <interface-hooks>`.
 
 .. raw:: html
 
@@ -219,7 +219,7 @@ The prepare-device hook
 
 This hook is only supported in gadget snaps.
 
-See `The gadget snap <gadget-snaps.md>`__ documentation for more details.
+See :ref:`The gadget snap <gadget-snaps>` documentation for more details.
 
 .. raw:: html
 

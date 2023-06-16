@@ -1,6 +1,6 @@
 .. 6760.md
 
-.. \_create-a-developer-account:
+.. _create-a-developer-account:
 
 Create a developer account
 ==========================
@@ -53,7 +53,7 @@ Developer account id
 
 It’s useful to know your developer account id when building `Ubuntu Core devices <https://ubuntu.com/core/docs/system-user>`__, interacting with the Snap Store `review team <https://forum.snapcraft.io/c/store-requests/19>`__ and using the `snapd API <https://snapcraft.io/docs/snapd-rest-api>`__.
 
-It can be retrieved with the `snapcraft <snapcraft-overview.md>`__ command by first logging in to your Ubuntu One account:
+It can be retrieved with the :ref:`snapcraft <snapcraft-overview>` command by first logging in to your Ubuntu One account:
 
 .. code:: bash
 

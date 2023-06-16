@@ -1,6 +1,6 @@
 .. 23801.md
 
-.. \_validation-sets:
+.. _validation-sets:
 
 Validation sets
 ===============
@@ -12,7 +12,7 @@ One or more validation sets can be used to ensure only specific snaps are instal
 Prerequisites
 -------------
 
-Validation set functionality is currently under active development and there are several considerations that need to be made before using it: - A developer account is also required, along with your developer id. (*see*\ `Create a developer account <create-a-developer-account.md#validation-sets-heading--developer-id>`__\ *for further details*) - Snapd version 2.50 and `Snapcraft <snapcraft-overview.md>`__ version `4.7 <release-notes-snapcraft-4-7.md>`__, or newer, are required. - **Currently, in order to enforce a validation set, the following is also required:** - a `brand store <glossary.md#validation-sets-heading--brand-store>`__ account - the validation set’s ``name``, ``account-id`` and listed snaps, need to be added to an allowlist in the store backends (this is done by filing a brand store support ticket). - Snapd version 2.54
+Validation set functionality is currently under active development and there are several considerations that need to be made before using it: - A developer account is also required, along with your developer id. (*see*\ `Create a developer account <create-a-developer-account.md#validation-sets-heading--developer-id>`__\ *for further details*) - Snapd version 2.50 and :ref:`Snapcraft <snapcraft-overview>` version :ref:`4.7 <release-notes-snapcraft-4-7>`, or newer, are required. - **Currently, in order to enforce a validation set, the following is also required:** - a `brand store <glossary.md#validation-sets-heading--brand-store>`__ account - the validation set’s ``name``, ``account-id`` and listed snaps, need to be added to an allowlist in the store backends (this is done by filing a brand store support ticket). - Snapd version 2.54
 
 See below for further details on the following: - `Creating a validation set <#validation-sets-heading--creating>`__ - `Listing a validation set <#validation-sets-heading--listing>`__ - `Monitoring assertion validity <#validation-sets-heading--using>`__ - `Enforcing assertion validity <#validation-sets-heading--enforcing>`__
 

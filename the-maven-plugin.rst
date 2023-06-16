@@ -1,6 +1,6 @@
 .. 4282.md
 
-.. \_the-maven-plugin:
+.. _the-maven-plugin:
 
 The maven plugin
 ================
@@ -9,7 +9,7 @@ This plugin is useful for building parts that use maven.
 
 The maven build system is commonly used to build Java projects. The plugin requires a pom.xml in the root of the source tree.
 
-This plugin is only available to *core22* and *core18* based snaps. See `Base snaps <base-snaps.md>`__ for details.
+This plugin is only available to *core22* and *core18* based snaps. See :ref:`Base snaps <base-snaps>` for details.
 
 .. raw:: html
 
@@ -40,4 +40,4 @@ This plugin uses the following plugin-specific keywords:
 
 For examples, search `GitHub <https://github.com/search?q=path%3A**%2Fsnapcraft.yaml+gopath&type=code>`__ for projects already using the plugin.
 
-   ⓘ This is a *snapcraft* plugin. See `Snapcraft plugins <snapcraft-plugins.md>`__ and `Supported plugins <supported-plugins.md>`__ for further details on how plugins are used.
+   ⓘ This is a *snapcraft* plugin. See :ref:`Snapcraft plugins <snapcraft-plugins>` and :ref:`Supported plugins <supported-plugins>` for further details on how plugins are used.

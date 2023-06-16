@@ -1,6 +1,6 @@
 .. 20116.md
 
-.. \_the-uinput-interface:
+.. _the-uinput-interface:
 
 The uinput interface
 ====================
@@ -15,10 +15,10 @@ However, *snapd* considers world-writable permissions for ``/dev/uinput`` to be 
 
 This means snapd does not install additional *udev* rules to modify device permissions on behalf of snaps, and consequently, will not interfere with the permissions set by third-party software. As a result, snaps that use this interface will have the same ``/dev/uinput`` access as other processes on the system.
 
-See `the joystick interface <the-joystick-interface.md>`__ and `the raw-usb interface <the-raw-usb-interface.md>`__ for potential alternatives.
+See :ref:`the joystick interface <the-joystick-interface>` and :ref:`the raw-usb interface <the-raw-usb-interface>` for potential alternatives.
 
-`Auto-connect <interface-management.md#the-uinput-interface-heading--auto-connections>`__: no `Super-privileged <super-privileged-interfaces.md>`__: yes
+`Auto-connect <interface-management.md#the-uinput-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
 
 Requires snapd version *2.46+* .
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

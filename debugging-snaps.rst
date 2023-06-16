@@ -1,6 +1,6 @@
 .. 18420.md
 
-.. \_debugging-snaps:
+.. _debugging-snaps:
 
 Debugging snaps
 ===============
@@ -11,9 +11,9 @@ This topic is currently under construction. In particular, we want to add usage 
 
 □ –strace [/quote]
 
-Each snap runs inside its own `confined environment <snap-confinement.md>`__, also called “sandbox”. The policy of each sandbox describes what the application is allowed to do. When an application tries to do something that is not allowed, the system logs a policy violation. The following techniques can help you investigate and solve these policy violations.
+Each snap runs inside its own :ref:`confined environment <snap-confinement>`, also called “sandbox”. The policy of each sandbox describes what the application is allowed to do. When an application tries to do something that is not allowed, the system logs a policy violation. The following techniques can help you investigate and solve these policy violations.
 
--  Use ```snap try`` <debug-snaps-with-snap-try.md>`__ to quickly test changes without rebuilding your snap.
+-  Use :ref:```snap try`` <debug-snaps-with-snap-try>` to quickly test changes without rebuilding your snap.
 
 -  Use ```snap run --shell`` <#debugging-snaps-heading--shell>`__ to inspect and test the confined environment.
 
@@ -28,7 +28,7 @@ Each snap runs inside its own `confined environment <snap-confinement.md>`__, al
 
 -  Investigate `file permissions and cgroup device access <#debugging-snaps-heading--permissions>`__ violations.
 
--  Use `GDB and gdbserver from within a snap’s environment <using-gdb-and-gdbserver.md>`__ to isolate and identify potential issues.
+-  Use :ref:`GDB and gdbserver from within a snap’s environment <using-gdb-and-gdbserver>` to isolate and identify potential issues.
 
 For more details on how AppArmor, seccomp and device permission security policies are implemented, see `Security policy and sandboxing <https://snapcraft.io/docs/security-policy-and-sandboxing>`__.
 
@@ -181,7 +181,7 @@ To better understand AppArmor policy for a strictly installed snap, modify the A
 For example:
 
 1. build the snap
-2. copy the snap to the target device and install it (or use `snap try <debug-snaps-with-snap-try.md>`__)
+2. copy the snap to the target device and install it (or use :ref:`snap try <debug-snaps-with-snap-try>`)
 3. use the snap (perhaps using ```snap run --shell <name>.<command>`` <#debugging-snaps-heading--shell>`__), monitoring via journalctl for denials
 4. modifying ``/var/lib/snapd/apparmor/profiles/snap.<name>.<command>`` as needed (eg, adding rules before the final ``'}'``)and running ``sudo apparmor_parser -r /var/lib/snapd/apparmor/profiles/snap.<name>.<command>`` to compile and load the policy into the kernel
 5. use ``sudo service snap.<name>.<command> stop/start/etc`` as needed for daemons

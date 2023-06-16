@@ -1,6 +1,6 @@
 .. 17331.md
 
-.. \_xdg-desktop-portals:
+.. _xdg-desktop-portals:
 
 XDG desktop portals
 ===================
@@ -23,7 +23,7 @@ See the `Portal API reference <https://flatpak.github.io/xdg-desktop-portal/port
 How to use portals in your snap
 -------------------------------
 
-1. **Use the Portal API’s in your application** Unlike regular `Snapcraft interfaces <supported-interfaces.md>`__, *portals require applications to use a new API* in order to access resources. Toolkits like GTK 3 and Qt5, however, provide transparent support for portals. See `Portal support in GTK 3 <https://docs.flatpak.org/en/latest/portals-gtk.html>`__ or `Portal support in Qt5 and KDE <https://docs.flatpak.org/en/latest/portals-qt.html>`__ for detailed information. If your application is not using one of those toolkits, you will need to use the Portals API directly. See `the Portals API documentation <https://flatpak.github.io/xdg-desktop-portal/portal-docs.html>`__ for more information.
+1. **Use the Portal API’s in your application** Unlike regular :ref:`Snapcraft interfaces <supported-interfaces>`, *portals require applications to use a new API* in order to access resources. Toolkits like GTK 3 and Qt5, however, provide transparent support for portals. See `Portal support in GTK 3 <https://docs.flatpak.org/en/latest/portals-gtk.html>`__ or `Portal support in Qt5 and KDE <https://docs.flatpak.org/en/latest/portals-qt.html>`__ for detailed information. If your application is not using one of those toolkits, you will need to use the Portals API directly. See `the Portals API documentation <https://flatpak.github.io/xdg-desktop-portal/portal-docs.html>`__ for more information.
 
 2. **Add the ``desktop`` interface to your snap** This interface gives your snap access to the portals.
 
@@ -49,7 +49,7 @@ File chooser portal vs home interface⚓
 
    </h2>
 
-It is recommended to use the file chooser portal instead of the ```home`` <the-home-interface.md>`__ and ```removable-media`` <the-removable-media-interface.md>`__ interfaces for the following reasons:
+It is recommended to use the file chooser portal instead of the :ref:```home`` <the-home-interface>` and :ref:```removable-media`` <the-removable-media-interface>` interfaces for the following reasons:
 
 -  The portal gives the user complete control over what exact files your application should access while the interfaces are all-or-nothing toggles.
 -  The portal works with hidden files and folders in the home directory. If a user chooses a hidden file, the portal will give your application access to it. The ``home`` interface does not give your app access to hidden files and folders in the home directory for security reasons. Note that the ``home`` interface does give access to hidden files and folders elsewhere, just not in the home directory itself.
@@ -68,9 +68,9 @@ The FileChooser portal also contains a few bugs:
 Known Limitations
 -----------------
 
--  ``org.freedesktop.portal.Flatpak.Spawn`` only works in a Flatpak. If your application needs to run abritrary binaries on the host system, you can use `classic confinement <snap-confinement.md>`__.
+-  :ref:``org.freedesktop.portal.Flatpak.Spawn`` only works in a Flatpak. If your application needs to run abritrary binaries on the host system, you can use `classic confinement <snap-confinement>`.
 -  Portal support depends on the version of ``xdg-desktop-portal`` in the host system. Older versions do not support all portals. `Repology <https://repology.org/project/xdg-desktop-portal/versions>`__ shows what version of ``xdg-desktop-portal`` each distribution has and the `portals NEWS <https://github.com/flatpak/xdg-desktop-portal/blob/master/NEWS>`__ file explains what portals each version supports.
 
 ..
 
-   ⓘ See `Desktop applications <desktop-applications.md>`__ for more information on how to snap a desktop application.
+   ⓘ See :ref:`Desktop applications <desktop-applications>` for more information on how to snap a desktop application.

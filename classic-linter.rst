@@ -1,11 +1,11 @@
 .. 32228.md
 
-.. \_classic-linter:
+.. _classic-linter:
 
 Classic linter
 ==============
 
-The *classic* linter is a `Snapcraft linter <snapcraft-linters.md>`__ that is used to verify binary file parameters to ensure they are set appropriately for snaps using `classic confinement <snap-confinement.md>`__.
+The *classic* linter is a :ref:`Snapcraft linter <snapcraft-linters>` that is used to verify binary file parameters to ensure they are set appropriately for snaps using :ref:`classic confinement <snap-confinement>`.
 
 The classic linter is only invoked when snap confinement is set to ``classic``, or if *libc* is staged.
 

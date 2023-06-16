@@ -1,6 +1,6 @@
 .. 31037.md
 
-.. \_snapcraft-tutorials:
+.. _snapcraft-tutorials:
 
 Snapcraft Tutorials
 ===================
@@ -20,9 +20,9 @@ Our tutorials have been written to make as few assumptions as possible, and to b
 +------------------------------------------------+-------------------------------------------------------------------+
 | Walkthroughs                                   | Step-by-step walkthroughs                                         |
 +================================================+===================================================================+
-| `Snapcraft overview <snapcraft-overview.md>`__ | Installation instructions and a quickstart guide                  |
+| :ref:`Snapcraft overview <snapcraft-overview>` | Installation instructions and a quickstart guide                  |
 +------------------------------------------------+-------------------------------------------------------------------+
-| `Platform walkthroughs <creating-a-snap.md>`__ | A quick hands-on tutorials on the build process for your platform |
+| :ref:`Platform walkthroughs <creating-a-snap>` | A quick hands-on tutorials on the build process for your platform |
 +------------------------------------------------+-------------------------------------------------------------------+
 
 If you have a specific goal, but are already familiar with Snapcraft, our How-to guides have more in-depth detail than our tutorials and can be applied to a broader set of applications. They’ll help you achieve an end-result but may require you to understand and adapt the steps to fit your specific requirements.

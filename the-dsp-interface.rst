@@ -1,6 +1,6 @@
 .. 25491.md
 
-.. \_the-dsp-interface:
+.. _the-dsp-interface:
 
 The dsp interface
 =================
@@ -9,7 +9,7 @@ The ``dsp`` interface allows for the control of digital signal processors (DSPs)
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 

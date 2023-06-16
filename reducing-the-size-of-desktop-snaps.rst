@@ -1,6 +1,6 @@
 .. 17280.md
 
-.. \_reducing-the-size-of-desktop-snaps:
+.. _reducing-the-size-of-desktop-snaps:
 
 Reducing the size of desktop snaps
 ==================================
@@ -10,12 +10,12 @@ One way to improve the user experience of your snaps is by reducing their size. 
 Using content snaps and extensions
 ----------------------------------
 
-Snaps can provide content to other snaps using the `content interface <the-content-interface.md>`__. Many popular runtimes and libraries such as GNOME, Qt and Wine are packaged in content snaps. Instead of adding those libraries to your snap, you can connect to the relevant content snaps. The easiest way to use content snaps is to use one of the `Snapcraft desktop extensions <snapcraft-extensions.md>`__.
+Snaps can provide content to other snaps using the :ref:`content interface <the-content-interface>`. Many popular runtimes and libraries such as GNOME, Qt and Wine are packaged in content snaps. Instead of adding those libraries to your snap, you can connect to the relevant content snaps. The easiest way to use content snaps is to use one of the :ref:`Snapcraft desktop extensions <snapcraft-extensions>`.
 
--  Snaps using KDE Frameworks or Qt5 can use the ```kde-neon`` extension <the-kde-neon-extension.md>`__ which adds content snaps for themes, the Qt5 runtime and KDE frameworks.
--  Most other desktop snaps can use the ```gnome-3-28`` extension <the-gnome-3-28-extension.md>`__.
+-  Snaps using KDE Frameworks or Qt5 can use the :ref:```kde-neon`` extension <the-kde-neon-extension>` which adds content snaps for themes, the Qt5 runtime and KDE frameworks.
+-  Most other desktop snaps can use the :ref:```gnome-3-28`` extension <the-gnome-3-28-extension>`.
 -  Snaps using Wine can use the ```wine-platform-runtime`` <https://snapcraft.io/wine-platform-runtime>`__ and ```wine-platform-5-stable`` <https://snapcraft.io/wine-platform-5-stable>`__ snaps.
--  The ```gtk-common-themes`` <how-to-use-the-system-gtk-theme-via-the-gtk-common-themes-snap.md>`__ bundles many popular GTK, cursor and icon themes.
+-  The :ref:```gtk-common-themes`` <how-to-use-the-system-gtk-theme-via-the-gtk-common-themes-snap>` bundles many popular GTK, cursor and icon themes.
 
 ..
 
@@ -77,4 +77,4 @@ You can remove those libraries manually by excluding them using the ```stage`` <
 
    ℹ If your snap uses extensions, you can use the ``snapcraft expand-extensions`` command to see which content snaps the extension will add.
 
-   ⓘ See `Desktop applications <desktop-applications.md>`__ for more information on how to snap a desktop application.
+   ⓘ See :ref:`Desktop applications <desktop-applications>` for more information on how to snap a desktop application.

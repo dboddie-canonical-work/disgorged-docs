@@ -1,6 +1,6 @@
 .. 7826.md
 
-.. \_rust-applications:
+.. _rust-applications:
 
 Rust applications
 =================
@@ -23,7 +23,7 @@ Build a snap in 20 minutes
 
 Ready to get started? By the end of this guide, you’ll understand how to make a snap of your app that can be published in the `Snap Store <https://snapcraft.io/store>`__, showcasing it to millions of Linux users.
 
-   ℹ For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see `Snapcraft overview <snapcraft-overview.md>`__. For a more comprehensive breakdown of the steps involved, take a look at `Creating a snap <creating-a-snap.md>`__.
+   ℹ For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see :ref:`Snapcraft overview <snapcraft-overview>`. For a more comprehensive breakdown of the steps involved, take a look at :ref:`Creating a snap <creating-a-snap>`.
 
 Getting started
 ---------------
@@ -120,7 +120,7 @@ This example will also bundle the current stable release of Rust in the snap usi
        plugin: rust
        source: .
 
-For more details on Rust-specific metadata, see `The Rust plugin <the-rust-plugin.md>`__.
+For more details on Rust-specific metadata, see :ref:`The Rust plugin <the-rust-plugin>`.
 
 Apps
 ~~~~
@@ -221,4 +221,4 @@ Use snapcraft to push the snap to the Snap Store.
 
 If you’re happy with the result, you can commit the snapcraft.yaml to your GitHub repo and `turn on automatic builds <https://build.snapcraft.io>`__ so any further commits automatically get released to edge, without requiring you to manually build locally.
 
-Congratulations! You’ve just built and published your first Rust snap. For a more in-depth overview of the snap building process, see `Creating a snap <creating-a-snap.md>`__.
+Congratulations! You’ve just built and published your first Rust snap. For a more in-depth overview of the snap building process, see :ref:`Creating a snap <creating-a-snap>`.

@@ -1,6 +1,6 @@
 .. 19644.md
 
-.. \_release-notes-snapcraft-4-2:
+.. _release-notes-snapcraft-4-2:
 
 Release notes: Snapcraft 4.2
 ============================
@@ -9,7 +9,7 @@ The team behind Snapcraft is pleased to announce the release of `Snapcraft 4.2 <
 
 Highlights for this release include: \* new ROS 2 (Foxy Fitzroy) support \* cmake Ninja generator with ``core20`` \* improved track and channel listing
 
-For general details, including installation instructions, see `Snapcraft overview <snapcraft-overview.md>`__, or take a look at `Snapcraft release notes <snapcraft-release-notes.md>`__ for other *Snapcraft* releases.
+For general details, including installation instructions, see :ref:`Snapcraft overview <snapcraft-overview>`, or take a look at :ref:`Snapcraft release notes <snapcraft-release-notes>` for other *Snapcraft* releases.
 
 Special thanks to the contributors that helped to make this release happen: `@GamePad64 <https://github.com/GamePad64>`__, `@Saviq <https://github.com/Saviq>`__, `@cjp256 <https://github.com/cjp256>`__, `@igorljubuncic <https://github.com/igorljubuncic>`__ and `@sergiusens <https://github.com/sergiusens>`__.
 
@@ -19,7 +19,7 @@ New Features
 ROS 2 Foxy Fitzroy extension and updated colcon plugin
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Snapcraft 4.2 includes experimental support for Robot Operating System (ROS 2) `Foxy Fitzroy LTS <https://index.ros.org/doc/ros2/Releases/Release-Foxy-Fitzroy>`__ with a new `extension <the-ros2-foxy-extension.md>`__ and colcon plugin when used with ```core20`` <base-snaps.md>`__.
+Snapcraft 4.2 includes experimental support for Robot Operating System (ROS 2) `Foxy Fitzroy LTS <https://index.ros.org/doc/ros2/Releases/Release-Foxy-Fitzroy>`__ with a new :ref:`extension <the-ros2-foxy-extension>` and colcon plugin when used with :ref:```core20`` <base-snaps>`.
 
 For example, ROS 2 applications can now be built with a ``snapcraft.yaml`` as simple as:
 
@@ -55,7 +55,7 @@ For a walkthrough on how to work with the plugin and extension, see https://snap
 Ninja file generation with cmake
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-By default, the `cmake plugin <t/the-cmake-plugin/8621>`__ creates a Makefile when used with with ```core20`` <base-snaps.md>`__ . This release adds the ``cmake-generator`` plugin property to optionally generate of a Ninja file:
+By default, the `cmake plugin <t/the-cmake-plugin/8621>`__ creates a Makefile when used with with :ref:```core20`` <base-snaps>` . This release adds the ``cmake-generator`` plugin property to optionally generate of a Ninja file:
 
 .. code:: yaml
 

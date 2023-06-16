@@ -1,6 +1,6 @@
 .. 19639.md
 
-.. \_the-ros2-foxy-extension:
+.. _the-ros2-foxy-extension:
 
 The ROS2 Foxy extension
 =======================
@@ -45,4 +45,4 @@ Further reading
 
 ..
 
-   ℹ Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See `Snapcraft extensions <snapcraft-extensions.md>`__ for further details.
+   ℹ Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See :ref:`Snapcraft extensions <snapcraft-extensions>` for further details.

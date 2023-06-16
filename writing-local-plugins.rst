@@ -1,6 +1,6 @@
 .. 5125.md
 
-.. \_writing-local-plugins:
+.. _writing-local-plugins:
 
 Writing local plugins
 =====================
@@ -47,7 +47,7 @@ Snapcraft plugins are written in Python, so we need to create a new Python modul
 Step 3: Write plugin
 --------------------
 
-Each plugin must adhere to the `Plugin API <snapcraft-plugin-api.md>`__. We won’t discuss it in depth here, but here’s our example:
+Each plugin must adhere to the :ref:`Plugin API <snapcraft-plugin-api>`. We won’t discuss it in depth here, but here’s our example:
 
 .. code:: python
 

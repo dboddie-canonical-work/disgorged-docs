@@ -1,15 +1,15 @@
 .. 25495.md
 
-.. \_the-desktop-launch-interface:
+.. _the-desktop-launch-interface:
 
 The desktop-launch interface
 ============================
 
-The ``desktop-launch`` interface allows `strictly confined <snap-confinement.md>`__ snaps to identify and launch desktop applications in (or from) other snaps.
+The :ref:``desktop-launch`` interface allows `strictly confined <snap-confinement>` snaps to identify and launch desktop applications in (or from) other snaps.
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 
@@ -23,7 +23,7 @@ Developer details
 
    </h2>
 
-`Auto-connect <interface-management.md#the-desktop-launch-interface-heading--auto-connections>`__: no `Super-privileged <super-privileged-interfaces.md>`__: yes
+`Auto-connect <interface-management.md#the-desktop-launch-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
 
 Requires snapd version *2.52+*.
 

@@ -1,13 +1,13 @@
 .. 13183.md
 
-.. \_release-notes-snapcraft-3-8:
+.. _release-notes-snapcraft-3-8:
 
 Release notes: Snapcraft 3.8
 ============================
 
 These are the release notes for `Snapcraft 3.8 <https://github.com/snapcore/snapcraft/releases/tag/3.8>`__.
 
-For general details, including installation instructions, see `Snapcraft overview <snapcraft-overview.md>`__, or take a look at `Snapcraft release notes <snapcraft-release-notes.md>`__ for other *Snapcraft* releases.
+For general details, including installation instructions, see :ref:`Snapcraft overview <snapcraft-overview>`, or take a look at :ref:`Snapcraft release notes <snapcraft-release-notes>` for other *Snapcraft* releases.
 
 New *core* features
 -------------------
@@ -28,7 +28,7 @@ The following snap types have been added to `build-base <base-snaps.md#release-n
 Extensions
 ----------
 
-Extensions replace `Remote parts <remote-reusable-parts.md>`__ to help developers easily incorporate a group of components with single package.
+Extensions replace :ref:`Remote parts <remote-reusable-parts>` to help developers easily incorporate a group of components with single package.
 
 They’re used at build and run time to ensure the inclusion of any necessary build and run dependencies.
 
@@ -56,10 +56,10 @@ The Gnome extension configures each application with the following plugs:
 
 For easier desktop integration, it also configures each application entry with these additional plugs:
 
--  `desktop <the-desktop-interface.md>`__
--  `desktop-legacy <the-desktop-legacy-interface.md>`__
--  `wayland <the-wayland-interface.md>`__
--  `x11 <the-x11-interface.md>`__
+-  :ref:`desktop <the-desktop-interface>`
+-  :ref:`desktop-legacy <the-desktop-legacy-interface>`
+-  :ref:`wayland <the-wayland-interface>`
+-  :ref:`x11 <the-x11-interface>`
 
 To add the Gnome extension to an existing ``snapcraft.yaml``, add ``gnome-3-28`` to the ``apps`` entry that requires it.
 
@@ -72,7 +72,7 @@ To see how it *extends* the ``snapcraft.yaml``, at the root of the project, run
 Plugins
 -------
 
-`colcon <the-colcon-plugin.md>`__
+:ref:`colcon <the-colcon-plugin>`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We’ve added a new syntax to ignore packages:
@@ -86,12 +86,12 @@ We’ve added a new syntax to ignore packages:
 
 There’s also a fix to enforce parallel building hints from snapcraft.
 
-`catkin <the-catkin-plugin.md>`__
+:ref:`catkin <the-catkin-plugin>`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Alongside colcon (above), the catkin plugin also includes a fix to enforce parallel building hints from snapcraft.
 
-### `rust <the-rust-plugin.md>`__
+### :ref:`rust <the-rust-plugin>`
 ---------------------------------
 
 Support for properly building on s390x (natively) has been added.

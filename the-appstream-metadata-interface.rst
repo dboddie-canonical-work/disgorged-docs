@@ -1,6 +1,6 @@
 .. 13050.md
 
-.. \_the-appstream-metadata-interface:
+.. _the-appstream-metadata-interface:
 
 The appstream-metadata interface
 ================================
@@ -9,7 +9,7 @@ The appstream-metadata interface
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 
@@ -37,6 +37,6 @@ Code examples
 
    </h3>
 
-`Using external metadata <using-external-metadata.md>`__ describes how to access AppStream metadata.
+:ref:`Using external metadata <using-external-metadata>` describes how to access AppStream metadata.
 
 The source code for this interface is in the *snapd* repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/appstream_metadata.go

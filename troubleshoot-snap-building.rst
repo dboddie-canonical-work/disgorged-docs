@@ -1,11 +1,11 @@
 .. 11938.md
 
-.. \_troubleshoot-snap-building:
+.. _troubleshoot-snap-building:
 
 Troubleshoot snap building
 ==========================
 
-When creating `snapcraft.yaml <creating-snapcraft-yaml.md>`__ and building a new snap, it’s not uncommon to encounter build issues when running *snapcraft*.
+When creating :ref:`snapcraft.yaml <creating-snapcraft-yaml>` and building a new snap, it’s not uncommon to encounter build issues when running *snapcraft*.
 
 For this reason, it can be helpful to build the snap early, even before adding interfaces. It makes finding the culprit easier, and stops early issues affecting later stages of the build, complicating any debugging that needs to be done.
 
@@ -18,7 +18,7 @@ With ``--debug``, if snapcraft encounters an error it will open a shell within t
 
 This enables you to view logs within the environment, check the value of environment variables, locate missing binaries and install missing dependencies. You can even edit *snapcraft.yaml* outside of the shell, and then run *snapcraft* within, to continue the build.
 
-Build issues are linked to the stage that *snapcraft* is working through (see `Snapcraft lifecycle <parts-lifecycle.md>`__) when it generates an error, and the most common problems associated with each step are outlined below.
+Build issues are linked to the stage that *snapcraft* is working through (see :ref:`Snapcraft lifecycle <parts-lifecycle>`) when it generates an error, and the most common problems associated with each step are outlined below.
 
 **1. Snapcraft.yaml**
 ~~~~~~~~~~~~~~~~~~~~~
@@ -43,7 +43,7 @@ However, ``version`` isn’t actually mandatory when paired with ``adopt-info``,
 
 To resolve this, make sure your part includes ``parse-info`` or runs a command to define the version details (such as ``snapcraftctl set-version``).
 
-For more information on the keywords most affected by this error, see `Adding global metadata <adding-global-metadata.md>`__.
+For more information on the keywords most affected by this error, see :ref:`Adding global metadata <adding-global-metadata>`.
 
 2. Build phase
 ~~~~~~~~~~~~~~
@@ -69,7 +69,7 @@ The above example is easily rectified by adding ``libncursesw5-dev`` under *buil
    build-packages:
       - libncursesw5-dev
 
-For more details on package names and build dependencies, see `Build and staging dependencies <build-and-staging-dependencies.md>`__.
+For more details on package names and build dependencies, see :ref:`Build and staging dependencies <build-and-staging-dependencies>`.
 
 3. Staging phase
 ~~~~~~~~~~~~~~~~
@@ -94,6 +94,6 @@ The solution is to add the packages for these missing dependencies under *stage-
    stage-packages:
    - git
 
-As with build dependencies, for more details on working out staging dependencies see `Build and staging dependencies <build-and-staging-dependencies.md>`__.
+As with build dependencies, for more details on working out staging dependencies see :ref:`Build and staging dependencies <build-and-staging-dependencies>`.
 
-For further tips on common build issues, see `Debugging building snaps <debugging-building-snaps.md>`__.
+For further tips on common build issues, see :ref:`Debugging building snaps <debugging-building-snaps>`.

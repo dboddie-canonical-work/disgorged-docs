@@ -1,13 +1,13 @@
 .. 9357.md
 
-.. \_the-personal-files-interface:
+.. _the-personal-files-interface:
 
 The personal-files interface
 ============================
 
 The ``personal-files`` interface provides access to the specified files in the user’s home. This interface gives privileged access to the user’s data.
 
-`Auto-connect <interface-management.md#the-personal-files-interface-heading--auto-connections>`__: no `Super-privileged <super-privileged-interfaces.md>`__: yes **Transitional**: no **Attributes**: \* ``read`` (plug): list of files and/or directories for read-only access (eg, ‘``read: [ $HOME/.file-read, $HOME/.dir-read ]``’ \* ``write`` (plug): list of files and/or directories for read/write access (eg, ‘``write: [ $HOME/.file-write, $HOME/.dir-write ]``’
+`Auto-connect <interface-management.md#the-personal-files-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes **Transitional**: no **Attributes**: \* ``read`` (plug): list of files and/or directories for read-only access (eg, ‘``read: [ $HOME/.file-read, $HOME/.dir-read ]``’ \* ``write`` (plug): list of files and/or directories for read/write access (eg, ‘``write: [ $HOME/.file-write, $HOME/.dir-write ]``’
 
 Specifying a directory in ``read`` and ``write`` allows access to the directory and all files under it.
 
@@ -47,4 +47,4 @@ With the above built snap, you would then be able to use the following to enable
 
 ..
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

@@ -1,6 +1,6 @@
 .. 30905.md
 
-.. \_snapcraft-documentation:
+.. _snapcraft-documentation:
 
 Snapcraft documentation
 =======================
@@ -27,9 +27,9 @@ In this documentation
 ---------------------
 
 +-----------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| `Tutorials <snapcraft-tutorials.md>`__\  Get started - a hands-on introduction to building snaps with Snapcraft | `How-to guides <snapcraft-how-to-guides.md>`__ Step-by-step guides covering key operations and common tasks |
+| :ref:`Tutorials <snapcraft-tutorials>`\  Get started - a hands-on introduction to building snaps with Snapcraft | :ref:`How-to guides <snapcraft-how-to-guides>` Step-by-step guides covering key operations and common tasks |
 +-----------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| `Reference <snapcraft-reference.md>`__ Technical information - plugins, extensions and architecture             | `Explanation <snapcraft-explanation-guides.md>`__ Concepts - discussion and clarification of key topics     |
+| :ref:`Reference <snapcraft-reference>` Technical information - plugins, extensions and architecture             | :ref:`Explanation <snapcraft-explanation-guides>` Concepts - discussion and clarification of key topics     |
 +-----------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
 
 --------------
@@ -42,7 +42,7 @@ Snap and Snapcraft are members of the Ubuntu family. They’re both open source 
 -  `Our Code of Conduct <https://ubuntu.com/community/code-of-conduct>`__
 -  `Get support <https://forum.snapcraft.io/c/snap/14>`__
 -  `Join the Discourse forum <https://forum.snapcraft.io/>`__
--  `How to contribute <documentation-guidelines.md>`__
+-  :ref:`How to contribute <documentation-guidelines>`
 -  `Roadmap <https://snapcraft.io/docs/the-snapd-roadmap>`__
 
 Thinking about using snap for your next project? `Get in touch! <https://forum.snapcraft.io/>`__

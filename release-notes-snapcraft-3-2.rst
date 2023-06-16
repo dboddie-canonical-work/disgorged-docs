@@ -1,13 +1,13 @@
 .. 10723.md
 
-.. \_release-notes-snapcraft-3-2:
+.. _release-notes-snapcraft-3-2:
 
 Release notes: Snapcraft 3.2
 ============================
 
 These are the release notes for `Snapcraft 3.2 <https://github.com/snapcore/snapcraft/releases/tag/3.2>`__, which includes new features and essential bug fixes.
 
-For general details, including installation instructions, see `Snapcraft overview <snapcraft-overview.md>`__, or take a look at `Snapcraft release notes <snapcraft-release-notes.md>`__ for other *Snapcraft* releases.
+For general details, including installation instructions, see :ref:`Snapcraft overview <snapcraft-overview>`, or take a look at :ref:`Snapcraft release notes <snapcraft-release-notes>` for other *Snapcraft* releases.
 
 New in this release
 -------------------
@@ -15,7 +15,7 @@ New in this release
 stage-snaps
 -----------
 
-This feature is equivalent to the `stage-packages <snapcraft-parts-metadata.md>`__ keyword, but instead of using packages from the build environment’s repositories, it uses snaps hosted on the `Snap Store <https://snapcraft.io/store>`__.
+This feature is equivalent to the :ref:`stage-packages <snapcraft-parts-metadata>` keyword, but instead of using packages from the build environment’s repositories, it uses snaps hosted on the `Snap Store <https://snapcraft.io/store>`__.
 
 The semantics are the same as those for ``build-snaps``; when declaring a snap to be staged, the snap will be retrieved from the *Snap Store* and unpacked into the snap being built.
 
@@ -31,7 +31,7 @@ See `Snapcraft scheme validation in VSCode <https://snapcraft.io/docs/snapcraft-
 New colcon plugin
 ~~~~~~~~~~~~~~~~~
 
-This plugin enables the new build system that targets `ROS2 <ros-2-deployment-with-snaps.md>`__. It’s currently classed as *experimental*, as the build system is actively being worked on by the `Open Source Robotics Foundation <https://www.openrobotics.org/>`__.
+This plugin enables the new build system that targets :ref:`ROS2 <ros-2-deployment-with-snaps>`. It’s currently classed as *experimental*, as the build system is actively being worked on by the `Open Source Robotics Foundation <https://www.openrobotics.org/>`__.
 
 These are the options the plugin offers for a part needing to build with ``colcon``:
 

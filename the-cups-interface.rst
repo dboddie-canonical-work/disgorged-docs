@@ -1,6 +1,6 @@
 .. 29873.md
 
-.. \_the-cups-interface:
+.. _the-cups-interface:
 
 The “cups” Interface
 ====================

@@ -1,6 +1,6 @@
 .. 32285.md
 
-.. \_release-notes-snapcraft-7-2-0:
+.. _release-notes-snapcraft-7-2-0:
 
 Release notes: Snapcraft 7.2.0
 ==============================
@@ -18,12 +18,12 @@ For general details, including installation instructions, see `Snapcraft overvie
 Snapcraft linting
 -----------------
 
-Snapcraft now includes its own linter functionality when working with snaps using the ``core22`` `base <base-snaps.md>`__. Snapcraft linters run automatically when a snap is packed, and will report any detected errors unless otherwise `disabled <snapcraft-linters.md#release-notes-snapcraft-7-2-0-heading--disabled>`__.
+Snapcraft now includes its own linter functionality when working with snaps using the :ref:``core22`` `base <base-snaps>`. Snapcraft linters run automatically when a snap is packed, and will report any detected errors unless otherwise `disabled <snapcraft-linters.md#release-notes-snapcraft-7-2-0-heading--disabled>`__.
 
 The following two linters are currently supported:
 
--  ```classic`` <classic-linter.md>`__: verifies binary file parameters for snaps using `classic confinement <snap-confinement.md>`__
--  ```library`` <library-linter.md>`__: verifies that no ELF file dependencies, such as libraries, are missing
+-  :ref:```classic`` <classic-linter>`: verifies binary file parameters for snaps using :ref:`classic confinement <snap-confinement>`
+-  :ref:```library`` <library-linter>`: verifies that no ELF file dependencies, such as libraries, are missing
 
 Default provider switching
 --------------------------
@@ -40,7 +40,7 @@ To go back to LXD, run:
 
    snap set snapcraft provider=lxd
 
-See `Build providers <build-providers.md>`__ for more details.
+See :ref:`Build providers <build-providers>` for more details.
 
 Store changes
 -------------

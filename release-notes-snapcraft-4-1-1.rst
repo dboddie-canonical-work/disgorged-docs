@@ -1,6 +1,6 @@
 .. 19011.md
 
-.. \_release-notes-snapcraft-4-1-1:
+.. _release-notes-snapcraft-4-1-1:
 
 Release notes: Snapcraft 4.1.1
 ==============================
@@ -9,7 +9,7 @@ The team behind Snapcraft is pleased to announce the release of `Snapcraft 4.1.1
 
 This is a general bug fix and stability release - see below for details.
 
-For general details, including installation instructions, see `Snapcraft overview <snapcraft-overview.md>`__, or take a look at `Snapcraft release notes <snapcraft-release-notes.md>`__ for other *Snapcraft* releases.
+For general details, including installation instructions, see :ref:`Snapcraft overview <snapcraft-overview>`, or take a look at :ref:`Snapcraft release notes <snapcraft-release-notes>` for other *Snapcraft* releases.
 
 Full list of changes
 --------------------

@@ -1,11 +1,11 @@
 .. 13386.md
 
-.. \_system-usernames:
+.. _system-usernames:
 
 System usernames
 ================
 
-System usernames can be used by snap developers to enable them to run `services and daemons <services-and-daemons.md>`__ as a user other than the default ``root``.
+System usernames can be used by snap developers to enable them to run :ref:`services and daemons <services-and-daemons>` as a user other than the default ``root``.
 
 Outside of snaps, applications traditionally adopt the concept of users and groups from the host operating system to use as a security mechanism that grants access to specific system and software resources.
 
@@ -25,7 +25,7 @@ From version 2.41 onwards, snapd supports the creation of a ``snap_daemon`` user
 
    ℹ Future releases of snapd will support more users and groups.
 
-To create the ``snap_daemon`` user/group inside a snap, add the following ``system-usernames`` section to the snap’s `snapcraft.yaml <snapcraft-yaml-reference.md>`__ (or ``snap.yaml``):
+To create the ``snap_daemon:ref:`` user/group inside a snap, add the following ``system-usernames`` section to the snap’s `snapcraft.yaml <snapcraft-yaml-reference>` (or ``snap.yaml``):
 
 .. code:: yaml
 

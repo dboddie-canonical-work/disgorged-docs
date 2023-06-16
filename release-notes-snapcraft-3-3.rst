@@ -1,13 +1,13 @@
 .. 10725.md
 
-.. \_release-notes-snapcraft-3-3:
+.. _release-notes-snapcraft-3-3:
 
 Release notes: Snapcraft 3.3
 ============================
 
 These are the release notes for `Snapcraft 3.3 <https://github.com/snapcore/snapcraft/releases/tag/3.3>`__.
 
-For general details, including installation instructions, see `Snapcraft overview <snapcraft-overview.md>`__, or take a look at `Snapcraft release notes <snapcraft-release-notes.md>`__ for other *Snapcraft* releases.
+For general details, including installation instructions, see :ref:`Snapcraft overview <snapcraft-overview>`, or take a look at :ref:`Snapcraft release notes <snapcraft-release-notes>` for other *Snapcraft* releases.
 
 New *core* features
 -------------------

@@ -1,15 +1,15 @@
 .. 19069.md
 
-.. \_snapcraft-hook-support:
+.. _snapcraft-hook-support:
 
 Snapcraft hook support
 ======================
 
 A hook is an executable file that runs within a snap’s confined environment when a specific action occurs.
 
-The filename of the executable is based on the name of the hook. If this file exists, *snapd* will execute the file when required by that hook’s action. See `Supported snap hooks <supported-snap-hooks.md>`__ for more details on which hooks are supported.
+The filename of the executable is based on the name of the hook. If this file exists, *snapd* will execute the file when required by that hook’s action. See :ref:`Supported snap hooks <supported-snap-hooks>` for more details on which hooks are supported.
 
-`Snapcraft <snapcraft-overview.md>`__ can integrate hooks into a snap using two methods:
+:ref:`Snapcraft <snapcraft-overview>` can integrate hooks into a snap using two methods:
 
 1. Using a project-wide ``snap/hooks`` directory
 ------------------------------------------------
@@ -24,12 +24,12 @@ The hook executable can be placed in a directory called ``snap/hooks`` relative 
        │   └── configure
        └── snapcraft.yaml
 
-Hook executables in ``snap/hooks`` are automatically copied into the snap during Snapcraft’s ``prime`` step (see `Parts lifecycle <12230.md>`__ for details).
+Hook executables in :ref:``snap/hooks`` are automatically copied into the snap during Snapcraft’s ``prime`` step (see `Parts lifecycle <12230>` for details).
 
 2. From within snapcraft.yaml
 -----------------------------
 
-A part within `snapcraft.yaml <the-snapcraft-yaml-schema.md>`__ can also generate and install hook executables into ``$SNAPCRAFT_PART_INSTALL/snap/hooks/``. These are automatically copied into the snap during the ``prime`` step.
+A part within :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>` can also generate and install hook executables into ``$SNAPCRAFT_PART_INSTALL/snap/hooks/``. These are automatically copied into the snap during the ``prime`` step.
 
 .. code:: yaml
 

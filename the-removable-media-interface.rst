@@ -1,6 +1,6 @@
 .. 7910.md
 
-.. \_the-removable-media-interface:
+.. _the-removable-media-interface:
 
 The removable-media interface
 =============================
@@ -30,4 +30,4 @@ Certain application types may be granted an exception for the following reasons:
 
 ``removable-media`` is considered a *transitional* interface because, when connected, only traditional UNIX permissions are considered for file access. This allows a background service in a snap to setup *inotify*, for example, to monitor, catalogue and modify files on external media.
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

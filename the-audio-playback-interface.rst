@@ -1,13 +1,13 @@
 .. 13089.md
 
-.. \_the-audio-playback-interface:
+.. _the-audio-playback-interface:
 
 The audio-playback interface
 ============================
 
 The ``audio-playback`` interface allows a snap to play sounds and music, via the supporting audio service running on the system, such as PulseAudio. It’s used by many applications and utilities, and as such, is enabled by default.
 
-Audio recording is enabled with the companion `audio-record <the-audio-record-interface.md>`__ interface, and unlike ``audio-playback``, is not enabled (auto-connected) by default.
+Audio recording is enabled with the companion :ref:`audio-record <the-audio-record-interface>` interface, and unlike ``audio-playback``, is not enabled (auto-connected) by default.
 
 .. raw:: html
 
@@ -42,7 +42,7 @@ The connect command can be used to re-enable audio playback:
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 

@@ -1,6 +1,6 @@
 .. 7816.md
 
-.. \_the-fuse-support-interface:
+.. _the-fuse-support-interface:
 
 The fuse-support interface
 ==========================
@@ -9,7 +9,7 @@ The fuse-support interface
 
 **Auto-connect**: no **NOTE**: \* Unprivileged fuse mounts(i.e. mounting directory outside of the snap-specific writable directories) `are NOT supported by this interface <https://github.com/snapcore/snapd/pull/1598#issuecomment-239952977>`__ \* Mountpoint can only exist in snap-specific writable directories: \* ``SNAP_USER_{DATA,COMMON}`` \* ``SNAP_{DATA,COMMON}``
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 Corresponding Source
 --------------------

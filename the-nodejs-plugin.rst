@@ -1,19 +1,19 @@
 .. 8514.md
 
-.. \_the-nodejs-plugin:
+.. _the-nodejs-plugin:
 
 The nodejs plugin
 =================
 
 The ``nodejs`` plugin is useful when working with `Node.js <https://nodejs.org/en/>`__ and `npm <https://www.npmjs.com/>`__ JavaScript based parts.
 
-This plugin can only be used with a `base <base-snaps.md>`__ of either ``core18`` and ``core``. For ``core20`` and ``core22``, use the `npm <the-npm-plugin.md>`__ plugin instead.
+This plugin can only be used with a :ref:`base <base-snaps>` of either :ref:``core18`` and ``core``. For ``core20`` and ``core22``, use the `npm <the-npm-plugin>` plugin instead.
 
-Additional features and syntax are dependent on which `base <base-snaps.md>`__ is being used, as outlined below:
+Additional features and syntax are dependent on which :ref:`base <base-snaps>` is being used, as outlined below:
 
 The plugin uses *node* to install dependencies from ``package.json``. It also sets up binaries defined in ``package.json`` by adding them to ``PATH``.
 
-This plugin uses the common plugin keywords as well as those for “sources”. For more information, see `Snapcraft parts metadata <snapcraft-parts-metadata.md>`__.
+This plugin uses the common plugin keywords as well as those for “sources”. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
 
 .. raw:: html
 
@@ -35,4 +35,4 @@ For examples, search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+
 
 Requires Snapcraft version *3.x*.
 
-   ⓘ This is a *snapcraft* plugin. See `Snapcraft plugins <snapcraft-plugins.md>`__ and `Supported plugins <supported-plugins.md>`__ for further details on how plugins are used.
+   ⓘ This is a *snapcraft* plugin. See :ref:`Snapcraft plugins <snapcraft-plugins>` and :ref:`Supported plugins <supported-plugins>` for further details on how plugins are used.

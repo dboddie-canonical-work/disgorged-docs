@@ -1,6 +1,6 @@
 .. 7890.md
 
-.. \_the-network-status-interface:
+.. _the-network-status-interface:
 
 The network-status interface
 ============================
@@ -11,4 +11,4 @@ The network-status interface
 
 Requires snapd version *2.25+*.
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

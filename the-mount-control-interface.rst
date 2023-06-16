@@ -1,6 +1,6 @@
 .. 28953.md
 
-.. \_the-mount-control-interface:
+.. _the-mount-control-interface:
 
 The mount-control interface
 ===========================
@@ -13,7 +13,7 @@ Requires snapd version *2.54+*.
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 
@@ -27,7 +27,7 @@ Developer details
 
    </h2>
 
-`Auto-connect <interface-management.md#the-mount-control-interface-heading--auto-connections>`__: no `Super-privileged <super-privileged-interfaces.md>`__: yes
+`Auto-connect <interface-management.md#the-mount-control-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
 
 **Attributes**: \* ``persistent`` (plug): defines whether the mount can be persistent or not. Either ``true`` or ``false``. Defaults to ``false``. \* ``type`` (plug): lists one or more `acceptable filesystems <#the-mount-control-interface-heading--filesystems>`__ for this mount. Example: ``[ext2, ext3, ext4]`` \* ``what`` (plug): absolute path of what to mount using a matching wildcard. Example: ``/dev/sd*`` \* ``where`` (plug): either an absolute destination path for the mount, or a starting reference to ``$SNAP_COMMON`` or ``$SNAP_DATA`` optionally followed by a path. Wildcards are also supported. Example: ``/media/$USER/**`` \* ``options`` (plug, required): a list of one or more `permitted options <#the-mount-control-interface-heading--options>`__. Example: ``[rw, sync]``\  \* ``namespace`` (plug): either ``snap``, for locations within the snap, ``host``, for locations outside the snap, or ``auto`` to set the namespace according to the *where* pattern. Defaults to ``auto``.
 

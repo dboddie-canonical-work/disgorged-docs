@@ -1,11 +1,11 @@
 .. 18485.md
 
-.. \_the-gnome-3-34-extension:
+.. _the-gnome-3-34-extension:
 
 The gnome-3-34 extension
 ========================
 
-The *gnome-3-34* extension helps with the creation of snaps that use GTK 3, GNOME 3.34, and/or GLib. It’s an updated version of the `gnome-3-28 extension <the-gnome-3-28-extension.md>`__ and depends on the ``core18`` `base snap <base-snaps.md>`__, built from `Ubuntu 18.04 LTS <http://releases.ubuntu.com/18.04/>`__. The more recent `gnome-3-38 extension <the-gnome-3-38-extension.md>`__ is built only for ``core20``.
+The *gnome-3-34* extension helps with the creation of snaps that use GTK 3, GNOME 3.34, and/or GLib. It’s an updated version of the :ref:`gnome-3-28 extension <the-gnome-3-28-extension>` and depends on the :ref:``core18`` `base snap <base-snaps>`, built from `Ubuntu 18.04 LTS <http://releases.ubuntu.com/18.04/>`__. The more recent :ref:`gnome-3-38 extension <the-gnome-3-38-extension>` is built only for ``core20``.
 
 This extension provides many of the components needed for general desktop applications making it useful for a broader set of applications outside of those tailored for the GNOME desktop.
 
@@ -17,7 +17,7 @@ This extension provides many of the components needed for general desktop applic
 
 ..
 
-   ℹ Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See `Snapcraft extensions <snapcraft-extensions.md>`__ for further details.
+   ℹ Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See :ref:`Snapcraft extensions <snapcraft-extensions>` for further details.
 
 .. raw:: html
 
@@ -29,7 +29,7 @@ How to use it
 
    </h2>
 
-This extension currently only works with the ``core18`` base snap (see `Base snaps <base-snaps.md>`__ for details). To use it, add ``extensions: [gnome-3-34]`` to the application definition in your `snapcraft.yaml <creating-snapcraft-yaml.md>`__ file. For instance:
+This extension currently only works with the :ref:``core18`` base snap (see `Base snaps <base-snaps>` for details). To use it, add :ref:``extensions: [gnome-3-34]`` to the application definition in your `snapcraft.yaml <creating-snapcraft-yaml>` file. For instance:
 
 .. code:: yaml
 
@@ -39,7 +39,7 @@ This extension currently only works with the ``core18`` base snap (see `Base sna
            command: usr/bin/tali
    [...]
 
-See `GTK3 applications <gtk3-applications.md>`__ for a comprehensive overview of using extensions with GNOME applications.
+See :ref:`GTK3 applications <gtk3-applications>` for a comprehensive overview of using extensions with GNOME applications.
 
 .. raw:: html
 
@@ -79,7 +79,7 @@ Your app may still need additional plugs, but you can expect the following plugs
 
    plugs: [ desktop, desktop-legacy, gsettings, wayland, x11 ]
 
-See `Adding interfaces <adding-interfaces.md>`__ for more details.
+See :ref:`Adding interfaces <adding-interfaces>` for more details.
 
 .. raw:: html
 
@@ -165,4 +165,4 @@ The host’s gjs, webkit2gtk-4.0, and iso-codes are used so they don’t need to
        /usr/share/xml/iso-codes:
            bind: $SNAP/gnome-platform/usr/share/xml/iso-codes
 
-See `Snap layouts <snap-layouts.md>`__ for further details.
+See :ref:`Snap layouts <snap-layouts>` for further details.

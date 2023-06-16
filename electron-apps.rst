@@ -1,6 +1,6 @@
 .. 6748.md
 
-.. \_electron-apps:
+.. _electron-apps:
 
 Electron apps
 =============
@@ -103,4 +103,4 @@ You should now see a ``.snap`` file in the ``dist/`` directory.
 Next steps
 ----------
 
-That’s it. You now have a package.json file that can be used to build a snap. To upload your snap and share it with your users, see `Releasing your app <releasing-your-app.md>`__.
+That’s it. You now have a package.json file that can be used to build a snap. To upload your snap and share it with your users, see :ref:`Releasing your app <releasing-your-app>`.

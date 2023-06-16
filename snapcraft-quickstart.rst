@@ -1,6 +1,6 @@
 .. 32983.md
 
-.. \_snapcraft-quickstart:
+.. _snapcraft-quickstart:
 
 Snapcraft quickstart
 ====================
@@ -27,13 +27,13 @@ The above requirements are specific to this tutorial. Other distributions can be
 Step-by-step guide
 ------------------
 
-1. `Snapcraft installation and setup <snapcraft-installation-and-setup.md>`__
+1. :ref:`Snapcraft installation and setup <snapcraft-installation-and-setup>`
 
    -  `Installation from the Snap Store <snapcraft-installation-and-setup.md#snapcraft-quickstart-heading--store>`__
    -  `Repository version or snap <snapcraft-installation-and-setup.md#snapcraft-quickstart-heading--repository>`__
    -  `Snapcraft LXD and Multipass backends <snapcraft-installation-and-setup.md#snapcraft-quickstart-heading--backend>`__
 
-2. `How Snapcraft builds a snap <how-snapcraft-builds-snaps.md>`__
+2. :ref:`How Snapcraft builds a snap <how-snapcraft-builds-snaps>`
 
    -  `snapcraft.yaml <how-snapcraft-builds-snaps.md#snapcraft-quickstart-heading--snapcraft>`__
 
@@ -42,7 +42,7 @@ Step-by-step guide
    -  `Snapcraft build lifecycle <how-snapcraft-builds-snaps.md#snapcraft-quickstart-heading--build>`__
    -  `Snapcraft build output <how-snapcraft-builds-snaps.md#snapcraft-quickstart-heading--output>`__
 
-3. `Basic snapcraft.yaml example <basic-snapcraft-yaml-example.md>`__
+3. :ref:`Basic snapcraft.yaml example <basic-snapcraft-yaml-example>`
 
    -  `Metadata <basic-snapcraft-yaml-example.md#snapcraft-quickstart-heading--metadata>`__
    -  `Base <basic-snapcraft-yaml-example.md#snapcraft-quickstart-heading--base>`__
@@ -55,7 +55,7 @@ Step-by-step guide
       -  `The parts definition <basic-snapcraft-yaml-example.md#snapcraft-quickstart-heading--parts>`__
       -  `The apps definition <basic-snapcraft-yaml-example.md#snapcraft-quickstart-heading--apps>`__
 
-4. `Intermediate snapcraft.yaml example <intermediate-snapcraft-yaml-example.md>`__
+4. :ref:`Intermediate snapcraft.yaml example <intermediate-snapcraft-yaml-example>`
 
    -  `adopt-info <intermediate-snapcraft-yaml-example.md#snapcraft-quickstart-heading--adopt>`__
    -  `grade <intermediate-snapcraft-yaml-example.md#snapcraft-quickstart-heading--grade>`__
@@ -65,7 +65,7 @@ Step-by-step guide
       -  `The parts definition <intermediate-snapcraft-yaml-example.md#snapcraft-quickstart-heading--parts>`__
       -  `The apps definition <intermediate-snapcraft-yaml-example.md#snapcraft-quickstart-heading--apps>`__
 
-5. `Build and publishing example <build-and-publishing-example.md>`__
+5. :ref:`Build and publishing example <build-and-publishing-example>`
 
    -  `Snap build process <build-and-publishing-example.md#snapcraft-quickstart-heading--build>`__
    -  `Snap publication process <build-and-publishing-example.md#snapcraft-quickstart-heading--publish>`__

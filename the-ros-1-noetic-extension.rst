@@ -1,6 +1,6 @@
 .. 20070.md
 
-.. \_the-ros-1-noetic-extension:
+.. _the-ros-1-noetic-extension:
 
 The ROS 1 Noetic Extension
 ==========================
@@ -42,4 +42,4 @@ Further reading
 
 ..
 
-   ℹ Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See `Snapcraft extensions <snapcraft-extensions.md>`__ for further details.
+   ℹ Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See :ref:`Snapcraft extensions <snapcraft-extensions>` for further details.

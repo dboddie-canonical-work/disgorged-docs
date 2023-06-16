@@ -1,6 +1,6 @@
 .. 7569.md
 
-.. \_environment-variables-that-snapcraft-exposes:
+.. _environment-variables-that-snapcraft-exposes:
 
 Environment variables that Snapcraft exposes
 ============================================

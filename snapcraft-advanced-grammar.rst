@@ -1,11 +1,11 @@
 .. 8349.md
 
-.. \_snapcraft-advanced-grammar:
+.. _snapcraft-advanced-grammar:
 
 Snapcraft advanced grammar
 ==========================
 
-Several fields in `snapcraft.yaml <the-snapcraft-yaml-schema.md>`__ are dependent on the architecture or the operating system being exposed to Snapcraft. This is accomplished using specific and advanced syntax within the YAML consumed by the *snapcraft* command.
+Several fields in :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>` are dependent on the architecture or the operating system being exposed to Snapcraft. This is accomplished using specific and advanced syntax within the YAML consumed by the *snapcraft* command.
 
 This *advanced grammar* is made up of three nestable statements: ``on``, ``to`` and ``try``:
 
@@ -55,7 +55,7 @@ The *try* statement
 
 ``<primitive>`` may be either a list or a scalar, depending on the keyword.
 
-[note type=“caution” status=“Warning”] The *try* statement does not work with builds using a `base snap <base-snaps.md>`__ of ``core22`` or later. [/note]
+[note type=“caution” status=“Warning”] The *try* statement does not work with builds using a :ref:`base snap <base-snaps>` of ``core22`` or later. [/note]
 
 The body of the ``try`` clause is taken into account only when all primitives contained within it are valid (primitive validity is determined on a keyword-specific basis). If they are not all valid, and are immediately followed by ``else`` clauses, those are tried in order, and one of them must be satisfied. A ``try`` clause with no ‘``else``’ clause is considered satisfied even if it contains invalid primitives.
 

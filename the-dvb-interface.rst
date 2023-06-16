@@ -1,6 +1,6 @@
 .. 7812.md
 
-.. \_the-dvb-interface:
+.. _the-dvb-interface:
 
 The dvb interface
 =================
@@ -11,4 +11,4 @@ The dvb interface
 
 Requires snapd version *2.34+*.
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

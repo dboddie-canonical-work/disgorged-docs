@@ -1,6 +1,6 @@
 .. 7803.md
 
-.. \_the-bool-file-interface:
+.. _the-bool-file-interface:
 
 The bool-file interface
 =======================
@@ -27,7 +27,7 @@ Use the ``snap interface bool-file`` command to see which boolean files are avai
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 
@@ -47,9 +47,9 @@ Developer details
 
 The path value must match one of the following regular expressions: - For GPIO devices: ``^/sys/class/gpio/gpio[0-9]+/value$``\  - For LED devices: ``^/sys/class/leds/[^/]+/brightness$``
 
-The `gpio interface <the-gpio-interface.md>`__ provides another option for accessing GPIO devices.
+The :ref:`gpio interface <the-gpio-interface>` provides another option for accessing GPIO devices.
 
-To use a boolean file, the snap developer must add ``plugs: [ bool-file ]`` to a snap’s `snapcraft.yaml <the-snapcraft-yaml-schema.md>`__. The snap user can then access a specific boolean file with an `interface connection <interface-management.md#the-bool-file-interface-heading--manual-connections>`__.
+To use a boolean file, the snap developer must add :ref:``plugs: [ bool-file ]`` to a snap’s `snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific boolean file with an `interface connection <interface-management.md#the-bool-file-interface-heading--manual-connections>`__.
 
 Unless a snap specifically expects a set of boolean files that cannot be predefined, the recommended approach is to define distinct plugs for each boolean file the snap wishes to use:
 
@@ -61,7 +61,7 @@ Unless a snap specifically expects a set of boolean files that cannot be predefi
      red-led:
        interface: bool-file
 
-Defining distinct plugs for each boolean file has the advantage of being self-documenting, and 1:1 connections like these are easier to track and setup with `auto-connections <the-interface-auto-connection-mechanism.md>`__, if needed.
+Defining distinct plugs for each boolean file has the advantage of being self-documenting, and 1:1 connections like these are easier to track and setup with :ref:`auto-connections <the-interface-auto-connection-mechanism>`, if needed.
 
 Once connected, the consuming snap can use the boolean file via the path mentioned in the ``path`` attribute specified by the connected slot.
 
@@ -84,4 +84,4 @@ The test code for this interface can be found in the snapd repository: https://g
 
 The source code for the interface is in the snapd repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/bool_file.go
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

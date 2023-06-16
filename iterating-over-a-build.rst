@@ -1,13 +1,13 @@
 .. 12143.md
 
-.. \_iterating-over-a-build:
+.. _iterating-over-a-build:
 
 Iterating over a build
 ======================
 
-When building a snap with `Snapcraft <snapcraft-overview.md>`__, and using the `base <base-snaps.md>`__ keyword, snapcraft by default builds within a `Multipass <https://multipass.run/>`__ container environment tailored for the specified base.
+When building a snap with :ref:`Snapcraft <snapcraft-overview>`, and using the :ref:`base <base-snaps>` keyword, snapcraft by default builds within a `Multipass <https://multipass.run/>`__ container environment tailored for the specified base.
 
-   ℹ See `Build options <build-options.md>`__ for an outline of alternative build environments.
+   ℹ See :ref:`Build options <build-options>` for an outline of alternative build environments.
 
 To help speed up testing, it’s possible to open a shell within this environment to check the state of a build, view logs, probe the value of environment variables, locate missing binaries and install missing dependencies.
 
@@ -54,4 +54,4 @@ Here are a couple of approaches that can expedite the build process:
 
    These commands are useful when testing because files from the *prime* directory become easily viewable and modifiable without requiring a complete *snapcraft* rebuild. In-place fixes can then be migrated to the snap’s snapcraft.yaml for a final build.
 
-For more details on using the *try* commands, see `Debug snaps with snap try <debug-snaps-with-snap-try.md>`__ and for further help on common build issues, see `Troubleshoot snap building <troubleshoot-snap-building.md>`__.
+For more details on using the *try* commands, see :ref:`Debug snaps with snap try <debug-snaps-with-snap-try>` and for further help on common build issues, see :ref:`Troubleshoot snap building <troubleshoot-snap-building>`.

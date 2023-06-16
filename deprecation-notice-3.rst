@@ -1,6 +1,6 @@
 .. 8403.md
 
-.. \_deprecation-notice-3:
+.. _deprecation-notice-3:
 
 Deprecation notice: 3
 =====================
@@ -28,4 +28,4 @@ And if empty:
 
 …and apply those changes to your VCS if you are using one.
 
-See `Deprecation notices <deprecation-notices.md>`__ for further announcements.
+See :ref:`Deprecation notices <deprecation-notices>` for further announcements.

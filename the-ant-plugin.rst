@@ -1,6 +1,6 @@
 .. 8507.md
 
-.. \_the-ant-plugin:
+.. _the-ant-plugin:
 
 The ant plugin
 ==============
@@ -11,9 +11,9 @@ This plugin installs the specified version of *ant* and runs the configured buil
 
 ``CLASSPATH`` will be set to the list of jars in ``${SNAP}/jar`` and ``bin/java`` is available as a symlink to the installed version of OpenJDK.
 
-This plugin uses the common plugin keywords as well as those for “sources”. For more information, see `Snapcraft parts metadata <snapcraft-parts-metadata.md>`__.
+This plugin uses the common plugin keywords as well as those for “sources”. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
 
-This plugin is only available to *core22* and *core18* based snaps. See `Base snaps <base-snaps.md>`__ for details.
+This plugin is only available to *core22* and *core18* based snaps. See :ref:`Base snaps <base-snaps>` for details.
 
 .. raw:: html
 
@@ -43,4 +43,4 @@ This plugin uses the following plugin-specific keywords:
 
 For examples, search `GitHub <https://github.com/search?q=path%3A**%2Fsnapcraft.yaml+maven&type=code>`__ for projects already using the plugin.
 
-   ⓘ This is a *snapcraft* plugin. See `Snapcraft plugins <snapcraft-plugins.md>`__ and `Supported plugins <supported-plugins.md>`__ for further details on how plugins are used.
+   ⓘ This is a *snapcraft* plugin. See :ref:`Snapcraft plugins <snapcraft-plugins>` and :ref:`Supported plugins <supported-plugins>` for further details on how plugins are used.

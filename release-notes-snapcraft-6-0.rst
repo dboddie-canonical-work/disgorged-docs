@@ -1,6 +1,6 @@
 .. 27762.md
 
-.. \_release-notes-snapcraft-6-0:
+.. _release-notes-snapcraft-6-0:
 
 Release notes: Snapcraft 6.0
 ============================
@@ -9,7 +9,7 @@ The team behind Snapcraft is pleased to announce the release of `Snapcraft 6.0 <
 
 Among its many updates, fixes and additions, the following are what we consider its highlights:
 
--  Snapcraft is itself now built on the core20 `base snap <base-snaps.md>`__
+-  Snapcraft is itself now built on the core20 :ref:`base snap <base-snaps>`
 -  Building on core20 means we now support RISC-V (riscv64)
 -  Experimental –offline mode for snap building without a network connection
 
@@ -34,7 +34,7 @@ By default, Snapcraft requires network connectivity to both source the Multipass
 
 It may sometimes be necessary, or helpful, to build snaps without this network dependency, such as when needing *Aeroplane mode* on a laptop, or in areas with restricted bandwidth. For those situations, Snapcraft has a (currently experimental) offline mode.
 
-See `Snapcraft offline mode <snapcraft-offline-mode.md>`__ for further details.
+See :ref:`Snapcraft offline mode <snapcraft-offline-mode>` for further details.
 
 Full list of changes
 --------------------

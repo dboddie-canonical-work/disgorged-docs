@@ -1,6 +1,6 @@
 .. 1460.md
 
-.. \_process-for-reviewing-classic-confinement-snaps:
+.. _process-for-reviewing-classic-confinement-snaps:
 
 Process for reviewing classic confinement snaps
 ===============================================
@@ -69,12 +69,12 @@ Unsupported
 -  hard-coded paths (use snapcraft-preload, layouts)
 -  ability to run other snaps directly (as opposed to defined interfaces)
 -  access to arbitrary files on the system because the application isn’t designed with confinement in mind (if a desktop application, use portals or `xdg-open <https://snapcraft.io/docs/allowing-xdg-open-to-open-files11>`__)
--  access to arbitrary files on the system due to developer/user inertia (home and removable-media is almost always sufficient, though `personal-files <the-personal-files-interface.md>`__ and `system-files <the-system-files-interface.md>`__ may be used under certain circumstances.
+-  access to arbitrary files on the system due to developer/user inertia (home and removable-media is almost always sufficient, though :ref:`personal-files <the-personal-files-interface>` and :ref:`system-files <the-system-files-interface>` may be used under certain circumstances.
 -  access to arbitrary files on the system to avoid increasing a snap’s size
 -  `GNOME shell extensions <https://snapcraft.io/docs/yaru-dark-theme-toggle-review-request7>`__
 -  `nautilus extensions <https://snapcraft.io/docs/synchrorep-need-classic-confinement8>`__
 -  access to `org.kde.PlasmaShell.evaluateScript <https://snapcraft.io/docs/issue-establishing-dbus-interface-with-org-kde-plasmashell4>`__
--  access to `org.kde.klauncher5 (klauncher) <https://snapcraft.io/docs/kde-error-unable-to-create-io-slave-cannot-talk-to-klauncher>`__ (`modify application <3.md>`__ to launch programs directly)
+-  access to `org.kde.klauncher5 (klauncher) <https://snapcraft.io/docs/kde-error-unable-to-create-io-slave-cannot-talk-to-klauncher>`__ (:ref:`modify application <3>` to launch programs directly)
 -  direct access to sudo (modify program (eg, check if root and if not, alert user to run under sudo))
 -  direct access to pkexec (modify program (eg, check if root and if not, alert user to run under sudo; note a polkit backend is planned but not roadmapped, so a snap may one day be able to use pkexec, but this is TBD)).
 

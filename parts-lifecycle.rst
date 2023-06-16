@@ -1,13 +1,13 @@
 .. 12231.md
 
-.. \_parts-lifecycle:
+.. _parts-lifecycle:
 
 Parts lifecycle
 ===============
 
-Parts, alongside `plugins <snapcraft-plugins.md>`__, are a key component in any `Snapcraft <snapcraft-overview.md>`__ project.
+Parts, alongside :ref:`plugins <snapcraft-plugins>`, are a key component in any :ref:`Snapcraft <snapcraft-overview>` project.
 
-See `Adding parts <adding-parts.md>`__ for a general overview of what parts are and how to use them and `Scriptlets <override-build-steps.md>`__ for details on how they can be scripted outside of *snapcraft.yaml*.
+See :ref:`Adding parts <adding-parts>` for a general overview of what parts are and how to use them and :ref:`Scriptlets <override-build-steps>` for details on how they can be scripted outside of *snapcraft.yaml*.
 
 All parts within a project, by means of the logic encoded the plugins they’re using, all go through the same series of steps. Knowing these steps, and which directories are used for each step, can help when creating more advanced snaps, and when troubleshooting build issues.
 
@@ -30,11 +30,11 @@ Lifecycle steps⚓
 The steps a part goes through are as follows:
 
 1. **pull**: downloads or otherwise retrieves the components needed to build the part. You can use the ```source-*`` keywords <snapcraft-parts-metadata.md#parts-lifecycle-heading--source>`__ of a part to specify which components to retrieve. If ``source`` points to a git repository, for example, the pull step will clone that repository.
-2. **build**: constructs the part from the previously pulled components. The ```plugin`` <snapcraft-plugins.md>`__ of a part specifies how it is constructed. The ```meson`` plugin <the-meson-plugin.md>`__, for example, executes ``meson`` and ``ninja`` to compile source code. Each part is built in a separate directory, but it can use the contents of the staging area if it specifies a dependency on other parts using the ``after`` keyword. See `Step dependencies <#parts-lifecycle-heading--step-dependencies>`__ for more information.
+2. **build**: constructs the part from the previously pulled components. The :ref:```plugin`` <snapcraft-plugins>` of a part specifies how it is constructed. The :ref:```meson`` plugin <the-meson-plugin>`, for example, executes ``meson`` and ``ninja`` to compile source code. Each part is built in a separate directory, but it can use the contents of the staging area if it specifies a dependency on other parts using the ``after`` keyword. See `Step dependencies <#parts-lifecycle-heading--step-dependencies>`__ for more information.
 3. **stage**: copies the built components into the staging area. This is the first time all the different parts that make up the snap are actually placed in the same directory. If multiple parts provide the same file with differing contents, you will get a conflict. You can avoid these conflicts by using the ```stage`` keyword <snapcraft-parts-metadata.md#parts-lifecycle-heading--stage>`__ to enable or block files coming from the part. You can also use this keyword to filter out files that are not required in the snap itself, for example build files specific to a single part.
 4. **prime**: copies the staged components into the priming area, to their final locations for the resulting snap. This is very similar to the stage step, but files go into the priming area instead of the staging area. The ``prime`` step exists because the staging area might still contain files that are required for the build but not for the snap. For example, if you have a part that downloads and installs a compiler, then you stage this part so other parts can use the compiler during building. You can then use the ``prime`` filter keyword to make sure that it doesn’t get copied to the priming area, so it’s not taking up space in the snap. Some extra checks are also run during this step to ensure that all dependencies are satisfied for a proper run time. If confinement was set to ``classic``, then files will be scanned and, if needed, patched to work with this confinement mode.
 
-Finally, **snap** takes the entire contents of the ``prime`` directory and packs it into `a snap <the-snap-format.md>`__.
+Finally, **snap** takes the entire contents of the :ref:``prime`` directory and packs it into `a snap <the-snap-format>`.
 
 Each of these lifecycle steps can be run from the command line, and the command can be part specific or apply to all parts in a project.
 
@@ -46,7 +46,7 @@ Each of these lifecycle steps can be run from the command line, and the command 
 
 Note that each command also executes the previous lifecycle steps, so ``snapcraft`` executes all the lifecycle steps chained together.
 
-To access the part environment at any stage, add the ``--shell`` argument. For example, ``snapcraft prime --shell`` will run up to the *prime* step and open a shell. See `Iterating over a build <iterating-over-a-build.md>`__ for more details.
+To access the part environment at any stage, add the :ref:``--shell`` argument. For example, ``snapcraft prime --shell`` will run up to the *prime* step and open a shell. See `Iterating over a build <iterating-over-a-build>` for more details.
 
 .. raw:: html
 
@@ -82,10 +82,10 @@ Overriding a step⚓
 
 Each plugin defines the default actions that happen during a step. This behavior can be changed in two ways.
 
--  By using ``override-<step-name>`` in ``snapcraft.yaml``. See `Overriding steps <override-build-steps.md>`__ for more details.
--  By using a local plugin. This can inherit the parent plugin or scaffolding from the original. See `Local plugins <writing-local-plugins.md>`__ for more details.
+-  By using ``override-<step-name>:ref:`` in ``snapcraft.yaml``. See `Overriding steps <override-build-steps>` for more details.
+-  By using a local plugin. This can inherit the parent plugin or scaffolding from the original. See :ref:`Local plugins <writing-local-plugins>` for more details.
 
-See `Parts environment variables <parts-environment-variables.md>`__ for a list of part-specific environment variables that can be accessed to help build a part.
+See :ref:`Parts environment variables <parts-environment-variables>` for a list of part-specific environment variables that can be accessed to help build a part.
 
 .. raw:: html
 

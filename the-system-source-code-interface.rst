@@ -1,6 +1,6 @@
 .. 20115.md
 
-.. \_the-system-source-code-interface:
+.. _the-system-source-code-interface:
 
 The system-source-code interface
 ================================
@@ -13,4 +13,4 @@ The interface it is not connected automatically because the interface reveals ke
 
 Requires snapd version *2.46+* .
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

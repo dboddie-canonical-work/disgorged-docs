@@ -1,6 +1,6 @@
 .. 6154.md
 
-.. \_interface-management:
+.. _interface-management:
 
 Interface management
 ====================
@@ -11,7 +11,7 @@ Most users don’t need to worry about interfaces. Snaps are designed for strong
 
 An interface is most commonly used to enable a snap to access OpenGL acceleration, sound playback or recording, your network, and your $HOME directory. But which interfaces a snap requires, and *provides*, is very much dependent on the type of snap and its own requirements.
 
-See `Supported interfaces <supported-interfaces.md>`__ for a comprehensive list of interfaces and what kind of access they permit.
+See :ref:`Supported interfaces <supported-interfaces>` for a comprehensive list of interfaces and what kind of access they permit.
 
 -  `Using a GUI <#interface-management-heading--snap-store>`__
 -  `Listing interfaces <#interface-management-heading--listing>`__
@@ -99,9 +99,9 @@ To see which interfaces a snap is using, and which interfaces it could use but i
    home            vlc:home               :home                -
    (...)
 
-In the above output, the ```camera`` <the-home-interface.md>`__ interface is not connected because its slot is empty. This means VLC cannot access any connected cameras.
+In the above output, the :ref:```camera`` <the-home-interface>` interface is not connected because its slot is empty. This means VLC cannot access any connected cameras.
 
-VLC can access the user’s */home* directory because the ```home`` <the-home-interface.md>`__ interface is connected to the system ``$HOME`` directory (denoted by the ``:home`` slot name).
+VLC can access the user’s */home* directory because the :ref:```home`` <the-home-interface>` interface is connected to the system ``$HOME`` directory (denoted by the ``:home`` slot name).
 
 To see all connected interfaces on your system, use the *snap connections* command without a snap name:
 
@@ -179,17 +179,17 @@ Auto-connections
 
 Many interfaces are automatically connected when a snap is installed, and this ability is a property of either the interface itself, or the snap.
 
-Automatically connecting interfaces include the `network <the-network-interface.md>`__, `audio-playback <the-audio-playback-interface.md>`__ and `opengl <the-opengl-interface.md>`__ interfaces. This *auto-connection* ability is carefully reviewed for each interface, where permissiveness, security and privacy implications, and the expectations of the user, are all considered.
+Automatically connecting interfaces include the :ref:`network <the-network-interface>`, :ref:`audio-playback <the-audio-playback-interface>` and :ref:`opengl <the-opengl-interface>` interfaces. This *auto-connection* ability is carefully reviewed for each interface, where permissiveness, security and privacy implications, and the expectations of the user, are all considered.
 
-A snap’s developer can also request that an interface is connected automatically through a `manual review process <permission-requests.md>`__. As above, these requests are carefully considered and reviewed before being granted or denied.
+A snap’s developer can also request that an interface is connected automatically through a :ref:`manual review process <permission-requests>`. As above, these requests are carefully considered and reviewed before being granted or denied.
 
-Interfaces not connected automatically require the user to make a manual connection (see below), such as the `camera <the-camera-interface.md>`__, `removable-media <the-removable-media-interface.md>`__ and `audio-record <the-audio-record-interface.md>`__ interfaces. Manual connections enable the user to have a complete control over what kind of access they allow.
+Interfaces not connected automatically require the user to make a manual connection (see below), such as the :ref:`camera <the-camera-interface>`, :ref:`removable-media <the-removable-media-interface>` and :ref:`audio-record <the-audio-record-interface>` interfaces. Manual connections enable the user to have a complete control over what kind of access they allow.
 
 If a snap is installed prior to an interface being granted auto-connect permission, and permission is subsequently granted and the snap updated, when the installed snap updates, the interface will be auto-connected.
 
-For more technical details on how interface auto-connections are processed, see `The interface auto-connection mechanism <the-interface-auto-connection-mechanism.md>`__.
+For more technical details on how interface auto-connections are processed, see :ref:`The interface auto-connection mechanism <the-interface-auto-connection-mechanism>`.
 
-   ⓘ See the *Auto-connect* column in the `Supported interfaces <supported-interfaces.md>`__ table for which interfaces are connected automatically.
+   ⓘ See the *Auto-connect* column in the :ref:`Supported interfaces <supported-interfaces>` table for which interfaces are connected automatically.
 
 .. raw:: html
 
@@ -201,7 +201,7 @@ Manual connections
 
    </h2>
 
-When you need to connect an interface manually, such as when you want to grant a snap access to `audio-record <the-audio-record-interface.md>`__ for audio input, use the ``snap connect`` command:
+When you need to connect an interface manually, such as when you want to grant a snap access to :ref:`audio-record <the-audio-record-interface>` for audio input, use the ``snap connect`` command:
 
 .. code:: bash
 

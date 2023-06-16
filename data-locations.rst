@@ -1,11 +1,11 @@
 .. 24905.md
 
-.. \_data-locations:
+.. _data-locations:
 
 Data locations
 ==============
 
-Most snaps use strict confinement to isolate both their execution environments and their data from your system (see `Snap Confinement <snap-confinement.md>`__ for further details).
+Most snaps use strict confinement to isolate both their execution environments and their data from your system (see :ref:`Snap Confinement <snap-confinement>` for further details).
 
 This confinement is an important security feature, but it can affect how and where you access a snap’s files, including:
 
@@ -13,7 +13,7 @@ This confinement is an important security feature, but it can affect how and whe
 -  user documents
 -  internal databases
 
-A snap which needs user-access to files should use an `interface <interface-management.md>`__, such as the `home interface <the-home-interface.md>`__, to bridge this confinement gap.
+A snap which needs user-access to files should use an :ref:`interface <interface-management>`, such as the :ref:`home interface <the-home-interface>`, to bridge this confinement gap.
 
 But it can also be helpful to understand how snaps operate on and access data, even without an interface, and this is outlined below:
 
@@ -38,7 +38,7 @@ Snap installation
 When a user `installs a snap <https://snapcraft.io/docs/quickstart-guide#data-locations-heading--install-snap>`__ from the `Snap Store <https://snapcraft.io/store>`__, the following happens:
 
 1. The `snapd services <glossary.md#data-locations-heading--snapd>`__ downloads the snap as a single file – a compressed SquashFS archive with a *.snap* suffix.
-2. The snap file is uncompressed and mounted as a read-only filesystem under */snap.* See `The snap format <the-snap-format.md>`__ for further details on what is included in a snap.
+2. The snap file is uncompressed and mounted as a read-only filesystem under */snap.* See :ref:`The snap format <the-snap-format>` for further details on what is included in a snap.
 
 By design, the read-only filesystem cannot provide a persistent experience between application launches, which is why snaps also have writable parts for system data and for user data.
 
@@ -52,7 +52,7 @@ System data
 
    </h2>
 
-Within the snap environment, `environment variables <environment-variables.md>`__ are used to reference different accessible locations. The following variables and default referenced locations are used to store system data:
+Within the snap environment, :ref:`environment variables <environment-variables>` are used to reference different accessible locations. The following variables and default referenced locations are used to store system data:
 
 -  **SNAP_COMMON**: ``/var/snap/<snap name>/common`` This directory is owned and writable by root and is used to store data that is common across multiple `revisions <glossary.md#data-locations-heading--revision>`__ of the snap (e.g.: revision 6, revision 7, etc.).
 

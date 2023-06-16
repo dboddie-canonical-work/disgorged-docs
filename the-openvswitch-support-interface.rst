@@ -1,6 +1,6 @@
 .. 7897.md
 
-.. \_the-openvswitch-support-interface:
+.. _the-openvswitch-support-interface:
 
 The openvswitch-support interface
 =================================
@@ -11,4 +11,4 @@ The openvswitch-support interface
 
 Requires snapd version *2.20+*.
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

@@ -1,6 +1,6 @@
 .. 32266.md
 
-.. \_gtk4-applications:
+.. _gtk4-applications:
 
 GTK4 applications
 =================
@@ -24,7 +24,7 @@ Build a snap in 20 minutes
 
 Typically this guide will take around 20 minutes and will result in a working GTK4 application in a snap. Once complete, you’ll understand how to package cutting edge GTK4 and GNOME 4 applications as snaps and deliver them to millions of Linux users. After making the snap available in the store, you’ll get access to installation metrics and tools to directly manage the delivery of updates to Linux users.
 
-   ⓘ For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see `Snapcraft overview <snapcraft-overview.md>`__. For a more comprehensive breakdown of the steps involved, take a look at `Creating a snap <creating-a-snap.md>`__.
+   ⓘ For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see :ref:`Snapcraft overview <snapcraft-overview>`. For a more comprehensive breakdown of the steps involved, take a look at :ref:`Creating a snap <creating-a-snap>`.
 
 Getting started
 ---------------
@@ -91,12 +91,12 @@ The ``snapcraft.yaml`` file starts with a small amount of human-readable metadat
 
 The ``name`` must be unique in the Snap Store. Valid snap names consist of lower-case alphanumeric characters and hyphens. They cannot be all numbers and they also cannot start or end with a hyphen.
 
-You can also fill in ``title``, ``version``, ``summary``, ``description`` and ``icon``. However, Text Editor already has this metadata defined using an `AppStream <https://www.freedesktop.org/wiki/Distributions/AppStream/>`__ metadata file ``org.gnome.TextEditor.appdata.xml``, so we don’t want to duplicate this data. We instead use `adopt-info <using-external-metadata.md>`__ to tell Snapcraft to get the metadata from the ``gnome-text-editor`` part further on in the yaml. More on this later.
+You can also fill in ``title``, ``version``, ``summary``, ``description`` and ``icon``. However, Text Editor already has this metadata defined using an `AppStream <https://www.freedesktop.org/wiki/Distributions/AppStream/>`__ metadata file :ref:``org.gnome.TextEditor.appdata.xml``, so we don’t want to duplicate this data. We instead use `adopt-info <using-external-metadata>` to tell Snapcraft to get the metadata from the ``gnome-text-editor`` part further on in the yaml. More on this later.
 
 Base
 ^^^^
 
-The `base <base-snaps.md>`__ keyword defines a special kind of snap that provides a run-time environment with a minimal set of libraries that are common to most applications. They’re transparent to users, but they need to be considered, and specified, when building a snap.
+The :ref:`base <base-snaps>` keyword defines a special kind of snap that provides a run-time environment with a minimal set of libraries that are common to most applications. They’re transparent to users, but they need to be considered, and specified, when building a snap.
 
 .. code:: yaml
 
@@ -107,7 +107,7 @@ The `base <base-snaps.md>`__ keyword defines a special kind of snap that provide
 Security model
 ^^^^^^^^^^^^^^
 
-We’re going to use *strict* `confinement <snap-confinement.md>`__ for Text Editor. Strictly confined snaps run in complete isolation, up to a minimal access level that’s deemed always safe.
+We’re going to use *strict* :ref:`confinement <snap-confinement>` for Text Editor. Strictly confined snaps run in complete isolation, up to a minimal access level that’s deemed always safe.
 
 .. code:: yaml
 
@@ -134,18 +134,18 @@ If you don’t want your command prefixed you can request an alias for it on the
          - gsettings
          - cups
 
-This application uses the `gnome extension <the-gnome-extension.md>`__. This will make GTK4 and GNOME libraries available to the snap at runtime. It will also configure the runtime environment of the application so that all desktop functionality is correctly initialised.
+This application uses the :ref:`gnome extension <the-gnome-extension>`. This will make GTK4 and GNOME libraries available to the snap at runtime. It will also configure the runtime environment of the application so that all desktop functionality is correctly initialised.
 
 The ``common-id`` property is used to link this application to the AppStream metadata specified further down below. This will cause this ``app`` to use the ``.desktop`` launcher specified in the AppStream file.
 
-Snaps use interfaces to access resources outside of their confinement and an interface consists of a connection between a slot and a plug. The slot is the provider of the interface while the plug is the consumer. With the ``plugs:`` section, Text Editor is requesting access to the `gsettings <the-gsettings-interface.md>`__ and `cups <i/t/the-cups-interface/26453>`__ interfaces to enable access to GNOME’s configuration and any configured printers.
+Snaps use interfaces to access resources outside of their confinement and an interface consists of a connection between a slot and a plug. The slot is the provider of the interface while the plug is the consumer. With the :ref:``plugs:`` section, Text Editor is requesting access to the `gsettings <the-gsettings-interface>` and `cups <i/t/the-cups-interface/26453>`__ interfaces to enable access to GNOME’s configuration and any configured printers.
 
 Parts
 ^^^^^
 
 Parts define how to build your app. Parts can be anything: programs, libraries, or other assets needed to create and run your application. In this case, we’re only using one to define the GitLab repository containing the GNOME Text Editor source code and how it’s to be built. In other cases these can point to local directories, local archives, other remote git repositories and other revision control systems.
 
-`The Meson plugin <the-meson-plugin.md>`__ is used to run ``meson``, ``ninja build`` and ``ninja install`` to build the part, and we pass a couple of options to set the install location within the snap, and for which release we wish to build:
+:ref:`The Meson plugin <the-meson-plugin>` is used to run ``meson``, ``ninja build`` and ``ninja install`` to build the part, and we pass a couple of options to set the install location within the snap, and for which release we wish to build:
 
 .. code:: yaml
 
@@ -270,4 +270,4 @@ Use snapcraft to push the snap to the Snap Store.
 
 If you’re happy with the result, you can commit the snapcraft.yaml to your GitHub repo and `turn on automatic builds <https://build.snapcraft.io>`__ so any further commits automatically get released to edge, without requiring you to manually build locally.
 
-Congratulations! You’ve just built and published your first GTK 4 snap. For a more in-depth overview of the snap building process, see `Creating a snap <creating-a-snap.md>`__.
+Congratulations! You’ve just built and published your first GTK 4 snap. For a more in-depth overview of the snap building process, see :ref:`Creating a snap <creating-a-snap>`.

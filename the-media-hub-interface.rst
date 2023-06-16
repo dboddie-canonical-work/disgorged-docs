@@ -1,6 +1,6 @@
 .. 7873.md
 
-.. \_the-media-hub-interface:
+.. _the-media-hub-interface:
 
 The media-hub interface
 =======================
@@ -11,4 +11,4 @@ The media-hub interface
 
 Requires snapd version *2.25+*.
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

@@ -1,13 +1,13 @@
 .. 7838.md
 
-.. \_the-home-interface:
+.. _the-home-interface:
 
 The home interface
 ==================
 
-The ``home`` `interface <interface-management.md>`__ allows access to non-hidden files owned by the user in the user’s home ($HOME) directory where a user normally stores their personal files and documents.
+The :ref:``home`` `interface <interface-management>` allows access to non-hidden files owned by the user in the user’s home ($HOME) directory where a user normally stores their personal files and documents.
 
-The majority of snaps use `strict confinement <snap-confinement.md>`__ and do not have arbitrary access a system’s resources, including file and directories in the */home* directory. Without this access, *home* will not be visible in file requesters, or as a destination from within the snap application.
+The majority of snaps use :ref:`strict confinement <snap-confinement>` and do not have arbitrary access a system’s resources, including file and directories in the */home* directory. Without this access, *home* will not be visible in file requesters, or as a destination from within the snap application.
 
 To check whether a snap can connect to $HOME, use the *snap connections* command:
 
@@ -27,13 +27,13 @@ Use the *snap connect* command to connect an interface:
 
 The ``:home`` slot, with no <snap-name> before the colon (``:``) is equivalent to directing the plug to connect to the system, which in this case is the $HOME directory.
 
-A snap developer can `request permission <permission-requests.md>`__ to have the ``home`` interface connected automatically. In this case, non-hidden files and directories will be accessible from that snap without any further configuration being necessary.
+A snap developer can :ref:`request permission <permission-requests>` to have the ``home`` interface connected automatically. In this case, non-hidden files and directories will be accessible from that snap without any further configuration being necessary.
 
 Requires snapd version *2.33+*.
 
 [note type=“positive” status=“Interface documentation”]
 
-This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 

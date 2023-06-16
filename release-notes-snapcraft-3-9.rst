@@ -1,13 +1,13 @@
 .. 14434.md
 
-.. \_release-notes-snapcraft-3-9:
+.. _release-notes-snapcraft-3-9:
 
 Release notes: Snapcraft 3.9
 ============================
 
 These are the release notes for `Snapcraft 3.9 <https://github.com/snapcore/snapcraft/releases/tag/3.9>`__.
 
-For general details, including installation instructions, see `Snapcraft overview <snapcraft-overview.md>`__, or take a look at `Snapcraft release notes <snapcraft-release-notes.md>`__ for other *Snapcraft* releases.
+For general details, including installation instructions, see :ref:`Snapcraft overview <snapcraft-overview>`, or take a look at :ref:`Snapcraft release notes <snapcraft-release-notes>` for other *Snapcraft* releases.
 
 Remote Build
 ------------
@@ -16,7 +16,7 @@ With ``snapcraft remote-build``, Snapcraft gains the ability to run a multi-arch
 
 While remote build is still considered a preview in this release, it’s now fully accessible. Setup has also been simplified thanks to using HTTPS for *git transport* to push assets to the build server (removing the reliance on ssh).
 
-For more details, see the documentation for `Remote build <remote-build.md>`__.
+For more details, see the documentation for :ref:`Remote build <remote-build>`.
 
 New *core* features
 -------------------
@@ -70,14 +70,14 @@ Creating KDE application snaps is now even easier, thanks to a new KDE Neon exte
 
 This new extension integrates seamlessly with the KDE Neon content snap and builds on the foundations of the work done for the Gnome extension.
 
-Documentation for this extension is being worked. See `KDE Neon extension <the-kde-neon-extension.md>`__ for further details.
+Documentation for this extension is being worked. See :ref:`KDE Neon extension <the-kde-neon-extension>` for further details.
 
 Gnome 3.28 improvements
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 The Gnome extension has been fixed when using only a snap name as the default provider, and launch performance has also been improved.
 
-For documentation, see `Gnome 3.28 extension <the-gnome-3-28-extension.md>`__.
+For documentation, see :ref:`Gnome 3.28 extension <the-gnome-3-28-extension>`.
 
 CLI
 ---

@@ -1,11 +1,11 @@
 .. 34099.md
 
-.. \_set-up-classic-confinement-for-an-autotools-project:
+.. _set-up-classic-confinement-for-an-autotools-project:
 
 Set up classic confinement for an autotools project
 ===================================================
 
-Some snaps need to have access to system resources outside the scope allowed by strict confinement, and are unable to do this via the available interfaces. These snaps are configured to use classic confinement and will `need to be reviewed <process-for-reviewing-classic-confinement-snaps.md>`__ before publication in the Snap Store.
+Some snaps need to have access to system resources outside the scope allowed by strict confinement, and are unable to do this via the available interfaces. These snaps are configured to use classic confinement and will :ref:`need to be reviewed <process-for-reviewing-classic-confinement-snaps>` before publication in the Snap Store.
 
 This guide shows how to enable classic confinement for a snap built with the autotools plugin. The example project used in this guide can be found in `this repository <https://github.com/snapcraft-doc-samples-unofficial/autotools-classic-example>`__.
 

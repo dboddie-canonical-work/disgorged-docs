@@ -1,21 +1,21 @@
 .. 26004.md
 
-.. \_build-from-github:
+.. _build-from-github:
 
 Build from GitHub
 =================
 
 There are two methods for building snaps on Canonical-hosted servers, and both are available to every snap publisher:
 
--  **Snapcraft remote-build** The ``snapcraft remote-build`` command offloads the snap build process to the `Launchpad build farm <https://launchpad.net/builders>`__, pushing the potentially multi-architecture snap back to your machine. See `Remote build <remote-build.md>`__ for further details.
+-  **Snapcraft remote-build** The ``snapcraft remote-build`` command offloads the snap build process to the `Launchpad build farm <https://launchpad.net/builders>`__, pushing the potentially multi-architecture snap back to your machine. See :ref:`Remote build <remote-build>` for further details.
 
--  **Build from GitHub** This is a build service integrated into every publisher’s `Developer Account <create-a-developer-account.md>`__ on `snapcraft.io <https://snapcraft.io/>`__. It works by linking a snap’s GitHub repository with our Launchpad build service. See below for further details.
+-  **Build from GitHub** This is a build service integrated into every publisher’s :ref:`Developer Account <create-a-developer-account>` on `snapcraft.io <https://snapcraft.io/>`__. It works by linking a snap’s GitHub repository with our Launchpad build service. See below for further details.
 
 With *Build from GitHub*, a snap is rebuilt whenever a change is merged into the main branch of its respective GitHub repository. When a build successfully completes, it’s automatically released to a snap’s `edge channel <https://snapcraft.io/docs/channels#build-from-github-heading--risk-levels>`__.
 
 Supported build architectures are: **amd64** , **arm64** , **armhf** , **i386** , **ppc64el** and **s390x** .
 
-   ℹ See `Creating a snap <creating-a-snap.md>`__ for details on creating the metadata required to build a snap. For other ways to build a snap, see `Build options <build-options.md>`__.
+   ℹ See :ref:`Creating a snap <creating-a-snap>` for details on creating the metadata required to build a snap. For other ways to build a snap, see :ref:`Build options <build-options>`.
 
 -  `Prerequisites <#build-from-github-heading--prerequisites>`__
 -  `Link to GitHub <#build-from-github-heading--github>`__
@@ -35,11 +35,11 @@ Prerequisites
 
    </h2>
 
-You will need a `Developer account <create-a-developer-account.md>`__ and accept that the source code for a prospective snap will be publicly accessible while on the build server. Projects also need to be hosted on a public `GitHub <https://github.com/>`__ repository.
+You will need a :ref:`Developer account <create-a-developer-account>` and accept that the source code for a prospective snap will be publicly accessible while on the build server. Projects also need to be hosted on a public `GitHub <https://github.com/>`__ repository.
 
-The GitHub repository must contain at least a `snapcraft.yaml <the-snapcraft-yaml-schema.md>`__ file, and the snap build from a clone of the repository. The snap name needs to be `registered <registering-your-app-name.md>`__ with the Snap Store, and the same name needs to be declared in the *snapcraft.yaml*.
+The GitHub repository must contain at least a :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>` file, and the snap build from a clone of the repository. The snap name needs to be :ref:`registered <registering-your-app-name>` with the Snap Store, and the same name needs to be declared in the *snapcraft.yaml*.
 
-Build architectures can be defined within a snap’s `snapcraft.yaml <the-snapcraft-yaml-schema.md>`__ using the `architectures <architectures.md>`__ keyword. To target all architectures, for example, use the following:
+Build architectures can be defined within a snap’s :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>` using the :ref:`architectures <architectures>` keyword. To target all architectures, for example, use the following:
 
 ::
 
@@ -51,7 +51,7 @@ Build architectures can be defined within a snap’s `snapcraft.yaml <the-snapcr
      - build-on: amd64
      - build-on: i386
 
-A `snap base <base-snaps.md>`__ of ``core18`` is assumed by default, unless specified otherwise. If a snap’s base doesn’t support a specified architecture, it will not be built. If no architecture is specified, snaps for all base-compatible architectures will attempt to be built.
+A :ref:`snap base <base-snaps>` of ``core18`` is assumed by default, unless specified otherwise. If a snap’s base doesn’t support a specified architecture, it will not be built. If no architecture is specified, snaps for all base-compatible architectures will attempt to be built.
 
 .. raw:: html
 

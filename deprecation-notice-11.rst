@@ -1,6 +1,6 @@
 .. 18046.md
 
-.. \_deprecation-notice-11:
+.. _deprecation-notice-11:
 
 Deprecation notice: 11
 ======================
@@ -9,4 +9,4 @@ The ``snapcraft push`` and ``snapcraft push-metadata`` keywords, used to upload 
 
 *introduced in snapcraft 4.0*
 
-See `Deprecation notices <deprecation-notices.md>`__ for further announcements.
+See :ref:`Deprecation notices <deprecation-notices>` for further announcements.

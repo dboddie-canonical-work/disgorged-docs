@@ -1,6 +1,6 @@
 .. 1074.md
 
-.. \_the-content-interface:
+.. _the-content-interface:
 
 The content interface
 =====================
@@ -23,7 +23,7 @@ The `Yaru MATE Icons <https://github.com/ubuntu-mate/icon-theme-yaru-mate-snap>`
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 
@@ -55,7 +55,7 @@ Sharing content
 
 By default, when multiple directories are shared from a producer snap, or when multiple slots are connected to a single plug, the shared content is merged under the ``target`` path of the consuming path’s plug definition. This behaviour can be modified with the ``source`` attribute.
 
-Read, write and target should start with either ``$SNAP``, ``$SNAP_DATA`` or ``$SNAP_COMMON`` to refer to the designated directory. See `Environment variables <environment-variables.md>`__ for details on where these point to on the filesystem.
+Read, write and target should start with either ``$SNAP``, ``$SNAP_DATA`` or ``$SNAP_COMMON:ref:`` to refer to the designated directory. See `Environment variables <environment-variables>` for details on where these point to on the filesystem.
 
 The *content identifier* specified by the consuming snap (plug) must match the *content* attribute of the producer snap (slot).
 
@@ -183,7 +183,7 @@ A consumer snap can link to libraries shared by a producer snap:
        content: lib0-1604
        target: $SNAP/extra-libs
 
-After `connecting the interface <interface-management.md>`__, the *consumer* snap can link to libraries from ``$SNAP/extra-libs``. The directory can be added to ``LD_LIBRARY_PATH`` in the wrapper script if desired.
+After :ref:`connecting the interface <interface-management>`, the *consumer* snap can link to libraries from ``$SNAP/extra-libs``. The directory can be added to ``LD_LIBRARY_PATH`` in the wrapper script if desired.
 
 The value of the ``content`` attribute can be anything, but it is good practice to follow the form ``nameAPI-BUILDENV`` to remind slot consumers of the API level and build tools used. This naming convention is also *required* when sharing content between snap publishers.
 
@@ -232,7 +232,7 @@ The optional ``default-provider`` attribute can be used to set to the name of a 
        target: $SNAP/extra-libs
        default-provider: lib01604
 
-If the system does not contain a snap providing a matching slot, installing a consumer snap with a default-provider will trigger the automatic installation of the named provider snap (from *snapd 2.32*). If the named snap is already installed, the absence of a matching slot will instead trigger an update of the named provider snap (from *snapd 2.53*). The plug and slot will be auto-connected assuming the `auto-connection mechanism <the-interface-auto-connection-mechanism.md>`__ is configured properly for this.
+If the system does not contain a snap providing a matching slot, installing a consumer snap with a default-provider will trigger the automatic installation of the named provider snap (from *snapd 2.32*). If the named snap is already installed, the absence of a matching slot will instead trigger an update of the named provider snap (from *snapd 2.53*). The plug and slot will be auto-connected assuming the :ref:`auto-connection mechanism <the-interface-auto-connection-mechanism>` is configured properly for this.
 
 For example, a snap consuming the GNOME content snap for GNOME 3.26 can set ``default-provider`` to ``gnome-3-26-1604``.
 
@@ -308,7 +308,7 @@ Technical details
 
 The content interface is implemented via an interplay between two systems: `AppArmor <https://wiki.ubuntu.com/AppArmor>`__ and bind mounts.
 
-By default, the AppArmor sandbox allows *writes* to ``$SNAP_DATA`` and *reads* from ``$SNAP`` (see `Environment variables <environment-variables.md>`__ for details).
+By default, the AppArmor sandbox allows *writes* to ``$SNAP_DATA:ref:`` and *reads* from ``$SNAP`` (see `Environment variables <environment-variables>` for details).
 
 The content interface takes advantage of this feature to map data from other locations to either ``$SNAP`` or ``$SNAP_DATA``.
 

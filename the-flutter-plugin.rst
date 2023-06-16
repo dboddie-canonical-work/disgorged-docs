@@ -1,22 +1,22 @@
 .. 18746.md
 
-.. \_the-flutter-plugin:
+.. _the-flutter-plugin:
 
 The flutter plugin
 ==================
 
-This ``flutter`` plugin is useful for building `Flutter <https://flutter.dev/>`__ based parts. This plugin uses the common plugin keywords as well as those for `sources <snapcraft-parts-metadata.md#the-flutter-plugin-heading--source>`__. For more information, see `Snapcraft parts metadata <snapcraft-parts-metadata.md>`__.
+This ``flutter`` plugin is useful for building `Flutter <https://flutter.dev/>`__ based parts. This plugin uses the common plugin keywords as well as those for `sources <snapcraft-parts-metadata.md#the-flutter-plugin-heading--source>`__. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
 
-Plugin-specific features and syntax are dependent on which `base <base-snaps.md>`__ is being used, as outlined below:
+Plugin-specific features and syntax are dependent on which :ref:`base <base-snaps>` is being used, as outlined below:
 
 -  `base: core22 <#the-flutter-plugin-heading--core22>`__
 -  `base: core18 <#the-flutter-plugin-heading--core18>`__
 
-See `Flutter applications <flutter-applications.md>`__ for a simple example, or search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+flutter%22&type=Code>`__ for projects using the plugin.
+See :ref:`Flutter applications <flutter-applications>` for a simple example, or search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+flutter%22&type=Code>`__ for projects using the plugin.
 
 Further examples can also be found in the `Ubuntu Flutter Community <https://github.com/ubuntu-flutter-community/>`__ on GitHub.
 
-   ⓘ This is a *snapcraft* plugin. See `Snapcraft plugins <snapcraft-plugins.md>`__ and `Supported plugins <supported-plugins.md>`__ for further details on how plugins are used.
+   ⓘ This is a *snapcraft* plugin. See :ref:`Snapcraft plugins <snapcraft-plugins>` and :ref:`Supported plugins <supported-plugins>` for further details on how plugins are used.
 
 .. raw:: html
 

@@ -1,13 +1,13 @@
 .. 32211.md
 
-.. \_snapcraft-linters:
+.. _snapcraft-linters:
 
 Snapcraft linters
 =================
 
 A *linter* is an analysis tool that checks for common errors or compatibility issues, usually automatically, or as part of some other process.
 
-Snapcraft (from version 7.2 onwards) includes its own linter functionality when working with snaps using the ``core22`` `base <base-snaps.md>`__.
+Snapcraft (from version 7.2 onwards) includes its own linter functionality when working with snaps using the :ref:``core22`` `base <base-snaps>`.
 
 Snapcraft linters run automatically when a snap is packed unless otherwise `disabled <#snapcraft-linters-heading--disabled>`__.
 
@@ -29,8 +29,8 @@ Available linters
 
 Snapcraft currently offers the following linters:
 
--  ```classic`` <classic-linter.md>`__: verifies binary file parameters for snaps using `classic confinement <snap-confinement.md>`__
--  ```library`` <library-linter.md>`__: verifies that no ELF file dependencies, such as libraries, are missing and that no extra libraries are included in the snap package
+-  :ref:```classic`` <classic-linter>`: verifies binary file parameters for snaps using :ref:`classic confinement <snap-confinement>`
+-  :ref:```library`` <library-linter>`: verifies that no ELF file dependencies, such as libraries, are missing and that no extra libraries are included in the snap package
 
 .. raw:: html
 

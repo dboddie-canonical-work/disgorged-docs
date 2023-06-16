@@ -1,19 +1,19 @@
 .. 6799.md
 
-.. \_creating-a-snap:
+.. _creating-a-snap:
 
 Creating a snap
 ===============
 
 You can create snaps from apps you’ve already built and zipped, or from your preferred programming language or framework.
 
-For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see `Snapcraft overview <snapcraft-overview.md>`__.
+For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see :ref:`Snapcraft overview <snapcraft-overview>`.
 
 The following is an outline of the typical snap build process, which you can step through to create your snap:
 
-1. `Create a checklist <snapcraft-checklist.md>`__ Better understand your snap’s requirements.
-2. `Create a snapcraft.yaml file <creating-snapcraft-yaml.md>`__ Describes your snap’s build dependencies and run-time requirements
-3. `Add interfaces to your snap <adding-interfaces.md>`__ Share system resources with your snap, and from one snap to another
+1. :ref:`Create a checklist <snapcraft-checklist>` Better understand your snap’s requirements.
+2. :ref:`Create a snapcraft.yaml file <creating-snapcraft-yaml>` Describes your snap’s build dependencies and run-time requirements
+3. :ref:`Add interfaces to your snap <adding-interfaces>` Share system resources with your snap, and from one snap to another
 4. `Publish and share <https://snapcraft.io/docs/using-the-snap-store>`__ Put your snap on the `Snap Store <https://snapcraft.io/store>`__ to reach an audience of millions
 
 Platform walkthroughs
@@ -24,19 +24,19 @@ To get a quick hands-on synopsis of the snapcraft build process for your platfor
 +---------------------------------+---------------------------------------------------------------+--------------------------------------------------------------------+
 | Common languages                | Platforms                                                     | Desktop toolkits                                                   |
 +=================================+===============================================================+====================================================================+
-| `Python <python-apps.md>`__     | `Pre-built apps <https://snapcraft.io/docs/pre-built-apps>`__ | `Electron <electron-apps.md>`__                                    |
+| :ref:`Python <python-apps>`     | `Pre-built apps <https://snapcraft.io/docs/pre-built-apps>`__ | :ref:`Electron <electron-apps>`                                    |
 +---------------------------------+---------------------------------------------------------------+--------------------------------------------------------------------+
-| `Go <go-applications.md>`__     | `MOOS <moos-applications.md>`__                               | `GTK+ 4 <gtk4-applications.md>`__                                  |
+| :ref:`Go <go-applications>`     | :ref:`MOOS <moos-applications>`                               | :ref:`GTK+ 4 <gtk4-applications>`                                  |
 +---------------------------------+---------------------------------------------------------------+--------------------------------------------------------------------+
-| `.NET <net-apps.md>`__          | `ROS <ros-deployment-with-snaps.md>`__                        | `GTK+ 3 <gtk3-applications.md>`__                                  |
+| :ref:`.NET <net-apps>`          | :ref:`ROS <ros-deployment-with-snaps>`                        | :ref:`GTK+ 3 <gtk3-applications>`                                  |
 +---------------------------------+---------------------------------------------------------------+--------------------------------------------------------------------+
-| `Node.js <node-apps.md>`__      | `ROS2 <ros-2-deployment-with-snaps.md>`__                     | `GTK+ 2 <gtk2-applications.md>`__                                  |
+| :ref:`Node.js <node-apps>`      | :ref:`ROS2 <ros-2-deployment-with-snaps>`                     | :ref:`GTK+ 2 <gtk2-applications>`                                  |
 +---------------------------------+---------------------------------------------------------------+--------------------------------------------------------------------+
-| `Ruby <ruby-applications.md>`__ |                                                               | `Java Swing <java-applications.md>`__                              |
+| :ref:`Ruby <ruby-applications>` |                                                               | :ref:`Java Swing <java-applications>`                              |
 +---------------------------------+---------------------------------------------------------------+--------------------------------------------------------------------+
-| `Rust <rust-applications.md>`__ |                                                               | `Qt 5 & KDE Frameworks <qt5-and-kde-frameworks-applications.md>`__ |
+| :ref:`Rust <rust-applications>` |                                                               | :ref:`Qt 5 & KDE Frameworks <qt5-and-kde-frameworks-applications>` |
 +---------------------------------+---------------------------------------------------------------+--------------------------------------------------------------------+
-| `C/C++ <c-c-applications.md>`__ |                                                               | `Flutter <flutter-applications.md>`__                              |
+| :ref:`C/C++ <c-c-applications>` |                                                               | :ref:`Flutter <flutter-applications>`                              |
 +---------------------------------+---------------------------------------------------------------+--------------------------------------------------------------------+
-| `Java <java-applications.md>`__ |                                                               |                                                                    |
+| :ref:`Java <java-applications>` |                                                               |                                                                    |
 +---------------------------------+---------------------------------------------------------------+--------------------------------------------------------------------+

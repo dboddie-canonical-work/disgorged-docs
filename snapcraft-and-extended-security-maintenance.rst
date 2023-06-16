@@ -1,22 +1,22 @@
 .. 24297.md
 
-.. \_snapcraft-and-extended-security-maintenance:
+.. _snapcraft-and-extended-security-maintenance:
 
 Snapcraft and Extended Security Maintenance
 ===========================================
 
 On the 30th April 2021, `Ubuntu 16.04 LTS (Xenial Xerus) <https://releases.ubuntu.com/16.04/>`__ reached the end of its five years of standard support and entered the `Extended Security Maintenance <https://ubuntu.com/security/esm>`__ (ESM) phase.
 
-The former default `base snap <base-snaps.md>`__ when building snaps with `Snapcraft <snapcraft-overview.md>`__ was ``core``, which uses Ubuntu 16.04 LTS as its build and runtime environment. This has since been superseded by ``core18`` and ``core20``, based on Ubuntu 18.04 LTS and Ubuntu 20.04 LTS respectively, which are now the default and recommended build and runtime environments for new snaps.
+The former default :ref:`base snap <base-snaps>` when building snaps with :ref:`Snapcraft <snapcraft-overview>` was ``core``, which uses Ubuntu 16.04 LTS as its build and runtime environment. This has since been superseded by ``core18`` and ``core20``, based on Ubuntu 18.04 LTS and Ubuntu 20.04 LTS respectively, which are now the default and recommended build and runtime environments for new snaps.
 
-However, there are still some snaps built using Ubuntu 16.04 LTS, either explicitly by including ``core`` in their `snapcraft.yaml <the-snapcraft-yaml-schema.md>`__, or implicitly by not defining any base at all.
+However, there are still some snaps built using Ubuntu 16.04 LTS, either explicitly by including :ref:``core`` in their `snapcraft.yaml <the-snapcraft-yaml-schema>`, or implicitly by not defining any base at all.
 
 To remain secure and supported, these snaps will need to either:
 
 -  migrate the snap to a later supported base
 -  use the Extended Security Maintenance (ESM) programme
 
-See `Migrating between bases <migrating-between-bases.md>`__ for help switching to a newer base, and see below for details on Snapcraft changes and using ESM when building core-based snaps.
+See :ref:`Migrating between bases <migrating-between-bases>` for help switching to a newer base, and see below for details on Snapcraft changes and using ESM when building core-based snaps.
 
 -  `Changes to Snapcraft <#snapcraft-and-extended-security-maintenance-heading--changes>`__
 -  `Extended Security Maintenance <#snapcraft-and-extended-security-maintenance-heading--esm>`__
@@ -77,7 +77,7 @@ Using the Ubuntu Advantage token
 
    </h2>
 
-The ``--ua-token`` argument is used with the ```snapcraft`` <snapcraft-overview.md>`__ command to specify an Ubuntu Advantage token when building a snap (requires `Snapcraft 4.7+ <release-notes-snapcraft-4-7.md>`__):
+The :ref:``--ua-token`` argument is used with the ```snapcraft`` <snapcraft-overview>` command to specify an Ubuntu Advantage token when building a snap (requires :ref:`Snapcraft 4.7+ <release-notes-snapcraft-4-7>`):
 
 .. code:: bash
 
@@ -134,7 +134,7 @@ Remote and Snapcraft build services
 
    </h3>
 
-In addition to running *snapcraft* locally, or inside a CI system, snaps can also be built using `remote build on Launchpad <remote-build.md>`__ and our `Snapcraft Build Service <https://snapcraft.io/build>`__. Both of these services will continue working as before.
+In addition to running *snapcraft* locally, or inside a CI system, snaps can also be built using :ref:`remote build on Launchpad <remote-build>` and our `Snapcraft Build Service <https://snapcraft.io/build>`__. Both of these services will continue working as before.
 
 Launchpad will continue to build for the ESM base without restrictions. It will use the Snapcraft 4.x track for these builds. Similarly, the remote build feature will continue working as before.
 

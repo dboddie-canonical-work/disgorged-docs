@@ -1,6 +1,6 @@
 .. 7775.md
 
-.. \_the-browser-support-interface:
+.. _the-browser-support-interface:
 
 The browser-support interface
 =============================
@@ -17,4 +17,4 @@ For some web applications, such those using Electron, it is often useful to disa
 
 When ``--no-sandbox`` is used, the snap is confined regardless of the ``--allow-sandbox`` attribute, which now only controls whether or not the browser’s internal sandbox can be used.
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

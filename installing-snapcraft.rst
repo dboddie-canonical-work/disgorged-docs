@@ -1,13 +1,13 @@
 .. 20334.md
 
-.. \_installing-snapcraft:
+.. _installing-snapcraft:
 
 Installing snapcraft
 ====================
 
 `Snapcraft <https://snapcraft.io/snapcraft>`__ is a powerful and easy to use command line tool for building `snaps <https://snapcraft.io/docs/quickstart-guide>`__. It helps you to both build and publish snaps, test and share them locally, and keep them all updated.
 
-For a general overview of what Snapcraft is capable of, and how to build your first snap, take a look at our `Quickstart guide <snapcraft-overview.md>`__, and see below for installation instructions:
+For a general overview of what Snapcraft is capable of, and how to build your first snap, take a look at our :ref:`Quickstart guide <snapcraft-overview>`, and see below for installation instructions:
 
 -  `Linux distributions <#installing-snapcraft-heading--linux>`__
 -  `macOS <#installing-snapcraft-heading--macos>`__
@@ -28,7 +28,7 @@ On Linux distributions `with snap support <https://snapcraft.io/docs/installing-
 
    $ sudo snap install snapcraft --classic
 
-The ``--classic`` argument is required because snapcraft uses `classic confinement <snap-confinement.md>`__.
+The :ref:``--classic`` argument is required because snapcraft uses `classic confinement <snap-confinement>`.
 
    ⓘ If you’re using an **apt** installed version of snapcraft, such as the package for `Ubuntu 18.04 LTS <http://releases.ubuntu.com/18.04/>`__, you need to remove this (``sudo apt remove snapcraft``) and install snapcraft from its snap to access the latest features.
 
@@ -54,4 +54,4 @@ To install *snapcraft*, open ’Terminal\` and enter the following:
 
    $ brew install snapcraft
 
-When the process completes, the *snapcraft* command will be installed and ready to go. See `Snapcraft overview <snapcraft-overview.md>`__ for help getting started.
+When the process completes, the *snapcraft* command will be installed and ready to go. See :ref:`Snapcraft overview <snapcraft-overview>` for help getting started.

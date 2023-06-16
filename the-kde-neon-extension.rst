@@ -1,6 +1,6 @@
 .. 13752.md
 
-.. \_the-kde-neon-extension:
+.. _the-kde-neon-extension:
 
 The kde-neon extension
 ======================
@@ -10,7 +10,7 @@ This extension helps you snap desktop applications that use Qt5 and/or `KDE Fram
 How to use it
 -------------
 
-Add ``extensions: [ kde-neon ]`` to the application definition in your ``snapcraft.yaml`` file. See `QT5 and KDE Frameworks applications <qt5-and-kde-frameworks-applications.md>`__ for a complete tutorial on how to use this extension.
+Add :ref:``extensions: [ kde-neon ]`` to the application definition in your ``snapcraft.yaml`` file. See `QT5 and KDE Frameworks applications <qt5-and-kde-frameworks-applications>` for a complete tutorial on how to use this extension.
 
 .. code:: yaml
 
@@ -40,11 +40,11 @@ To do this, it connects each application to the following content snaps at run t
 
 It also configures each application entry with these additional plugs.
 
--  `desktop <the-desktop-interface.md>`__
--  `desktop-legacy <the-desktop-interface.md>`__
--  `opengl <the-opengl-interface.md>`__
--  `wayland <the-wayland-interface.md>`__
--  `x11 <the-x11-interface.md>`__
+-  :ref:`desktop <the-desktop-interface>`
+-  :ref:`desktop-legacy <the-desktop-interface>`
+-  :ref:`opengl <the-opengl-interface>`
+-  :ref:`wayland <the-wayland-interface>`
+-  :ref:`x11 <the-x11-interface>`
 
 For a complete picture of what this extension does, add it to your app definition and run ``snapcraft expand-extensions``.
 
@@ -53,4 +53,4 @@ Limitation
 
 Currently, this extension only supports snaps *targeting the amd64 architecture*.
 
-   ℹ Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See `Snapcraft extensions <snapcraft-extensions.md>`__ for further details.
+   ℹ Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See :ref:`Snapcraft extensions <snapcraft-extensions>` for further details.

@@ -1,18 +1,18 @@
 .. 8644.md
 
-.. \_the-catkin-plugin:
+.. _the-catkin-plugin:
 
 The catkin plugin
 =================
 
 The ``catkin`` plugin is useful when building `ROS 1 <http://www.ros.org/>`__ parts.
 
-Plugin-specific features and syntax are dependent on which `base <base-snaps.md>`__ is being used, as outlined below:
+Plugin-specific features and syntax are dependent on which :ref:`base <base-snaps>` is being used, as outlined below:
 
 -  `base: core20 <#the-catkin-plugin-heading--core20>`__
 -  `base: core18 \| core <#the-catkin-plugin-heading--core18>`__
 
-This plugin uses the common plugin keywords as well as those for “sources”. For more information, see `Snapcraft parts metadata <snapcraft-parts-metadata.md>`__.
+This plugin uses the common plugin keywords as well as those for “sources”. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
 
 ##
 
@@ -26,7 +26,7 @@ base: core20
 
    </h3>
 
-For core20, this plugin is designed to work with the `ROS 1 Noetic extension <the-ros-1-noetic-extension.md>`__. If not using this extension, it is required to set the ``ROS_DISTRO`` environment variable to ``noetic`` using ``build-environment``.
+For core20, this plugin is designed to work with the :ref:`ROS 1 Noetic extension <the-ros-1-noetic-extension>`. If not using this extension, it is required to set the ``ROS_DISTRO`` environment variable to ``noetic`` using ``build-environment``.
 
 This plugin enables the following plugin-specific keywords on core20:
 
@@ -76,8 +76,8 @@ With core18, using the catkin plugin creates an external link that causes the se
       stage:
         - -lib/systemd/system/sudo.service
 
-See the `catkin-tools plugin <the-catkin-tools-plugin.md>`__ plugin for additional methods for building ROS 1 parts. Also see the `colcon plugin <the-colcon-plugin.md>`__ for building ROS 2 parts.
+See the :ref:`catkin-tools plugin <the-catkin-tools-plugin>` plugin for additional methods for building ROS 1 parts. Also see the :ref:`colcon plugin <the-colcon-plugin>` for building ROS 2 parts.
 
-For a simple example, see `ROS applications <ros-deployment-with-snaps.md>`__, or search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+catkin%22&type=Code>`__ for projects already using the plugin.
+For a simple example, see :ref:`ROS applications <ros-deployment-with-snaps>`, or search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+catkin%22&type=Code>`__ for projects already using the plugin.
 
-   ⓘ This is a *snapcraft* plugin. See `Snapcraft plugins <snapcraft-plugins.md>`__ and `Supported plugins <supported-plugins.md>`__ for further details on how plugins are used.
+   ⓘ This is a *snapcraft* plugin. See :ref:`Snapcraft plugins <snapcraft-plugins>` and :ref:`Supported plugins <supported-plugins>` for further details on how plugins are used.

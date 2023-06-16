@@ -1,6 +1,6 @@
 .. 7160.md
 
-.. \_the-hunspell-dictionaries-content-snaps:
+.. _the-hunspell-dictionaries-content-snaps:
 
 The Hunspell Dictionaries Content Snaps
 =======================================

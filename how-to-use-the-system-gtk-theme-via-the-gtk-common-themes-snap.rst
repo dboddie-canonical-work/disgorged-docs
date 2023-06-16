@@ -1,6 +1,6 @@
 .. 6235.md
 
-.. \_how-to-use-the-system-gtk-theme-via-the-gtk-common-themes-snap:
+.. _how-to-use-the-system-gtk-theme-via-the-gtk-common-themes-snap:
 
 How to use the system GTK theme via the gtk-common-themes snap
 ==============================================================

@@ -1,15 +1,15 @@
 .. 18769.md
 
-.. \_release-notes-snapcraft-4-1:
+.. _release-notes-snapcraft-4-1:
 
 Release notes: Snapcraft 4.1
 ============================
 
 The team behind Snapcraft is pleased to announce the release of `Snapcraft 4.1 <https://github.com/snapcore/snapcraft/releases/tag/4.1>`__.
 
-The most interesting feature in this release is the addition a `flutter <the-flutter-plugin.md>`__ plugin to help with the creation of snaps for Flutter based applications, and a flutter extension to help handle their dependencies.
+The most interesting feature in this release is the addition a :ref:`flutter <the-flutter-plugin>` plugin to help with the creation of snaps for Flutter based applications, and a flutter extension to help handle their dependencies.
 
-For general details, including installation instructions, see `Snapcraft overview <snapcraft-overview.md>`__, or take a look at `Snapcraft release notes <snapcraft-release-notes.md>`__ for other *Snapcraft* releases.
+For general details, including installation instructions, see :ref:`Snapcraft overview <snapcraft-overview>`, or take a look at :ref:`Snapcraft release notes <snapcraft-release-notes>` for other *Snapcraft* releases.
 
 Full list of changes
 --------------------

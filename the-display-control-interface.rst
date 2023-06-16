@@ -1,6 +1,6 @@
 .. 9723.md
 
-.. \_the-display-control-interface:
+.. _the-display-control-interface:
 
 The display-control interface
 =============================
@@ -11,4 +11,4 @@ The display-control interface
 
 Requires snapd version *2.37+*.\`
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

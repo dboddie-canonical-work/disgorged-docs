@@ -1,6 +1,6 @@
 .. 30809.md
 
-.. \_the-ros-2-humble-extension:
+.. _the-ros-2-humble-extension:
 
 The ROS 2 Humble extension
 ==========================
@@ -52,4 +52,4 @@ Further reading
 
 ..
 
-   ℹ Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See `Snapcraft extensions <snapcraft-extensions.md>`__ for further details.
+   ℹ Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See :ref:`Snapcraft extensions <snapcraft-extensions>` for further details.

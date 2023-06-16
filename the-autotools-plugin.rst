@@ -1,6 +1,6 @@
 .. 8616.md
 
-.. \_the-autotools-plugin:
+.. _the-autotools-plugin:
 
 The autotools plugin
 ====================
@@ -9,17 +9,17 @@ The ``autotools`` plugin is useful for `Automake/Autotools <https://www.gnu.org/
 
 Autotools-based projects are easy to recognise, as they’re typically built and installed with the following commands: ``./configure && make && make install``.
 
-This plugin uses the common plugin keywords as well as those for `sources <snapcraft-parts-metadata.md#the-autotools-plugin-heading--source>`__. For more information, see `Snapcraft parts metadata <snapcraft-parts-metadata.md>`__.
+This plugin uses the common plugin keywords as well as those for `sources <snapcraft-parts-metadata.md#the-autotools-plugin-heading--source>`__. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
 
-Additional features and syntax are dependent on which `base <base-snaps.md>`__ is being used, as outlined below:
+Additional features and syntax are dependent on which :ref:`base <base-snaps>` is being used, as outlined below:
 
 -  `base: core22 <#the-autotools-plugin-heading--core22>`__
 -  `base: core20 <#the-autotools-plugin-heading--core20>`__
 -  `base: core18 \| core <#the-autotools-plugin-heading--core18>`__
 
-See `C/C++ applications <c-c-applications.md>`__ for a simple example, or search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+autotools%22&type=Code>`__ for projects already using the plugin.
+See :ref:`C/C++ applications <c-c-applications>` for a simple example, or search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+autotools%22&type=Code>`__ for projects already using the plugin.
 
-   ⓘ This is a *snapcraft* plugin. See `Snapcraft plugins <snapcraft-plugins.md>`__ and `Supported plugins <supported-plugins.md>`__ for further details on how plugins are used.
+   ⓘ This is a *snapcraft* plugin. See :ref:`Snapcraft plugins <snapcraft-plugins>` and :ref:`Supported plugins <supported-plugins>` for further details on how plugins are used.
 
 .. raw:: html
 

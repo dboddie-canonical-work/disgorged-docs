@@ -1,6 +1,6 @@
 .. 23143.md
 
-.. \_release-notes-snapcraft-4-5-3:
+.. _release-notes-snapcraft-4-5-3:
 
 Release notes: Snapcraft 4.5.3
 ==============================
@@ -13,7 +13,7 @@ Highlights for this release include:
 -  a conditional for GNOME Makefile using bindtextdomain
 -  more Python and ``make`` plugin updates
 
-For general details, including installation instructions, see `Snapcraft overview <snapcraft-overview.md>`__, or take a look at `Snapcraft release notes <snapcraft-release-notes.md>`__ for other *Snapcraft* releases.
+For general details, including installation instructions, see :ref:`Snapcraft overview <snapcraft-overview>`, or take a look at :ref:`Snapcraft release notes <snapcraft-release-notes>` for other *Snapcraft* releases.
 
 Full list of changes
 --------------------

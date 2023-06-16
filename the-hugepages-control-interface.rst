@@ -1,6 +1,6 @@
 .. 26501.md
 
-.. \_the-hugepages-control-interface:
+.. _the-hugepages-control-interface:
 
 The hugepages-control interface
 ===============================
@@ -9,7 +9,7 @@ The ``hugepages-control`` interface allows controlling `HugePages <https://www.k
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 

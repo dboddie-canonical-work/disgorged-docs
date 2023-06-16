@@ -1,11 +1,11 @@
 .. 698.md
 
-.. \_the-snap-format:
+.. _the-snap-format:
 
 The snap format
 ===============
 
-   ℹ This page documents the format of the **built** snaps. See `The snapcraft format <the-snapcraft-yaml-schema.md>`__ for more information about the ``snapcraft.yaml`` file used to build these snaps.
+   ℹ This page documents the format of the **built** snaps. See :ref:`The snapcraft format <the-snapcraft-yaml-schema>` for more information about the ``snapcraft.yaml`` file used to build these snaps.
 
 A snap is a *SquashFS* file carrying content alongside metadata to tell the system how it should be manipulated. When installed, the SquashFS file for the snap is mounted read-only at the following location:
 
@@ -249,21 +249,21 @@ The following is the complete specification for the metadata in *snap.yaml*:
 Hooks
 -----
 
-Hooks provide a mechanism for snapd to alert snaps that something has happened, or to ask the snap to provide its opinion about an operation that is in progress. See the topic on `supported hooks <supported-snap-hooks.md>`__ for more details.
+Hooks provide a mechanism for snapd to alert snaps that something has happened, or to ask the snap to provide its opinion about an operation that is in progress. See the topic on :ref:`supported hooks <supported-snap-hooks>` for more details.
 
 Interfaces
 ----------
 
 Interfaces allow snaps to communicate or share resources according to the protocol established by the interface. They play an important part in security policy configuration.
 
-See `Supported interfaces <supported-interfaces.md>`__ for more details.
+See :ref:`Supported interfaces <supported-interfaces>` for more details.
 
 Layouts
 -------
 
 Layouts enable snap developers to modify the execution environment of their snap. They simplify the process of using pre-compiled binaries and libraries that expect to find files and directories outside of locations referenced by $SNAP or $SNAP_DATA.
 
-For more details, see `Snap layouts <snap-layouts.md>`__.
+For more details, see :ref:`Snap layouts <snap-layouts>`.
 
 Desktop files
 -------------

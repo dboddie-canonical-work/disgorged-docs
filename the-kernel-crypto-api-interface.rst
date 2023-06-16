@@ -1,6 +1,6 @@
 .. 26503.md
 
-.. \_the-kernel-crypto-api-interface:
+.. _the-kernel-crypto-api-interface:
 
 The kernel-crypto-api interface
 ===============================
@@ -9,7 +9,7 @@ The ``kernel-crypto-api`` interface allows access to the `Linux kernel crypto AP
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 

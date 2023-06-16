@@ -1,6 +1,6 @@
 .. 8397.md
 
-.. \_deprecation-notice-1:
+.. _deprecation-notice-1:
 
 Deprecation notice: 1
 =====================
@@ -27,4 +27,4 @@ Now write:
        plugin: nil
        prime: [bar]
 
-See `Deprecation notices <deprecation-notices.md>`__ for further announcements.
+See :ref:`Deprecation notices <deprecation-notices>` for further announcements.

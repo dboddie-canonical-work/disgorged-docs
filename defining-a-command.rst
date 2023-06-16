@@ -1,11 +1,11 @@
 .. 12060.md
 
-.. \_defining-a-command:
+.. _defining-a-command:
 
 Defining a command
 ==================
 
-When `creating snapcraft.yaml <creating-snapcraft-yaml.md>`__ to build a new snap, its executable components are built from `parts <adding-parts.md>`__, following the `Snapcraft lifecycle <parts-lifecycle.md>`__, and selectively made available to the host system.
+When :ref:`creating snapcraft.yaml <creating-snapcraft-yaml>` to build a new snap, its executable components are built from :ref:`parts <adding-parts>`, following the :ref:`Snapcraft lifecycle <parts-lifecycle>`, and selectively made available to the host system.
 
 Exposing executable components
 ------------------------------
@@ -46,12 +46,12 @@ Make sure the above script is executable by running the following command on the
 
    $ chmod +x os-release.sh
 
-The ``os-release.sh`` executable is brought into the snap via ``part-os-release``, which is a `part <adding-parts.md>`__ using the `dump plugin <the-dump-plugin.md>`__. It then uses ``organize`` to copy the *os-release.sh* file into the snap’s ``bin/`` directory before the top-level `apps <snapcraft-app-and-service-metadata.md>`__ section exposes the ``bin/os-release.sh`` executable to the host system
+The :ref:``os-release.sh`` executable is brought into the snap via ``part-os-release``, which is a `part <adding-parts>` using the :ref:`dump plugin <the-dump-plugin>`. It then uses :ref:``organize`` to copy the *os-release.sh* file into the snap’s ``bin/`` directory before the top-level `apps <snapcraft-app-and-service-metadata>` section exposes the ``bin/os-release.sh`` executable to the host system
 
-Services can be managed with a set of additional commands. See `Services and daemons <services-and-daemons.md>`__ for more information and for further details on other metadata, see `Snapcraft app and service metadata <snapcraft-app-and-service-metadata.md>`__.
+Services can be managed with a set of additional commands. See :ref:`Services and daemons <services-and-daemons>` for more information and for further details on other metadata, see :ref:`Snapcraft app and service metadata <snapcraft-app-and-service-metadata>`.
 
 If you need to add user configurable options to your service or daemon, such as which port it should use, see `Adding snap configuration <https://snapcraft.io/docs/adding-snap-configuration>`__.
 
 See `Tab completion <https://snapcraft.io/docs/tab-completion-for-snaps>`__ if you wish to add command line tab completion to your snap.
 
-   ℹ **Interfaces** enable an app to access system resources. Interfaces that are required for normal operation are specified at snap build-time within the above ``app`` metadata of a snap’s snapcraft.yaml. See `Adding Interfaces <adding-interfaces.md>`__ for more details.
+   ℹ **Interfaces** enable an app to access system resources. Interfaces that are required for normal operation are specified at snap build-time within the above :ref:``app`` metadata of a snap’s snapcraft.yaml. See `Adding Interfaces <adding-interfaces>` for more details.

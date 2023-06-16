@@ -1,6 +1,6 @@
 .. 5766.md
 
-.. \_using-in-development-features-in-snapcraft-yaml:
+.. _using-in-development-features-in-snapcraft-yaml:
 
 Using in-development features in ``snapcraft.yaml``
 ===================================================

@@ -1,6 +1,6 @@
 .. 26498.md
 
-.. \_the-fpga-interface:
+.. _the-fpga-interface:
 
 The fpga interface
 ==================
@@ -9,7 +9,7 @@ The ``fpga`` interface allows access to the `FPGA subsystem <https://www.kernel.
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 

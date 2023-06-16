@@ -1,6 +1,6 @@
 .. 31050.md
 
-.. \_snapcraft-explanation-guides:
+.. _snapcraft-explanation-guides:
 
 Snapcraft Explanation guides
 ============================
@@ -18,9 +18,9 @@ Our explanatory and conceptual guides are written to provide a better understand
 +-------------------------------------------------------------------------------+--------------------------------------------------------------------------+
 | **Explanation guides**                                                        | Why it does what it does                                                 |
 +===============================================================================+==========================================================================+
-| `Troubleshoot snap building <troubleshoot-snap-building.md>`__                | Help with the most common snap building problems                         |
+| :ref:`Troubleshoot snap building <troubleshoot-snap-building>`                | Help with the most common snap building problems                         |
 +-------------------------------------------------------------------------------+--------------------------------------------------------------------------+
-| `Migrate between bases <migrating-between-bases.md>`__                        | Inside a snap’s run-time environment and update process                  |
+| :ref:`Migrate between bases <migrating-between-bases>`                        | Inside a snap’s run-time environment and update process                  |
 +-------------------------------------------------------------------------------+--------------------------------------------------------------------------+
 | `Using the snapctl tool <https://snapcraft.io/docs/using-the-snapctl-tool>`__ | A tool for helping introspect and control a snap’s execution environment |
 +-------------------------------------------------------------------------------+--------------------------------------------------------------------------+

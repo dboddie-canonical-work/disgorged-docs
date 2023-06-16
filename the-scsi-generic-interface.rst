@@ -1,6 +1,6 @@
 .. 28409.md
 
-.. \_the-scsi-generic-interface:
+.. _the-scsi-generic-interface:
 
 The scsi-generic interface
 ==========================
@@ -9,7 +9,7 @@ The ``scsi-generic`` interface allows read and write access to `SCSI Generic dri
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 

@@ -1,17 +1,17 @@
 .. 23455.md
 
-.. \_migrating-between-bases:
+.. _migrating-between-bases:
 
 Migrating between bases
 =======================
 
 A *base* snap is a special kind of snap that provides a run-time environment with a minimal set of libraries that are common to most applications. They’re transparent to users, but they need to be considered and specified when building a snap.
 
-See `Base snaps <base-snaps.md>`__ for details on how use and specify them.
+See :ref:`Base snaps <base-snaps>` for details on how use and specify them.
 
-Each base snap is built from a `corresponding Ubuntu LTS <base-snaps.md#migrating-between-bases-heading--supported>`__ release and migrating a snap from one base to the next gives the snap access to newer packages, extended support, and the latest `Snapcraft <snapcraft-overview.md>`__ features, including `plugins <supported-plugins.md>`__ and `extensions <snapcraft-extensions.md>`__.
+Each base snap is built from a `corresponding Ubuntu LTS <base-snaps.md#migrating-between-bases-heading--supported>`__ release and migrating a snap from one base to the next gives the snap access to newer packages, extended support, and the latest :ref:`Snapcraft <snapcraft-overview>` features, including :ref:`plugins <supported-plugins>` and :ref:`extensions <snapcraft-extensions>`.
 
-The complexity of the migration process is directly linked to both dependencies in the snap’s `snapcraft.yaml <the-snapcraft-yaml-schema.md>`__ and the base snap versions being migrated between.
+The complexity of the migration process is directly linked to both dependencies in the snap’s :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>` and the base snap versions being migrated between.
 
 At its simplest, migrating from one base snap to another requires only that the *base* keyword is updated:
 
@@ -75,7 +75,7 @@ Package names
 
    </h2>
 
-The ``build-packages`` and ``stage-packages`` sections in a snap’s `snapcraft.yaml <the-snapcraft-yaml-schema.md>`__ specify which packages need to be incorporated during the build and stage parts of the `Parts lifecycle <parts-lifecycle.md>`__, and described in `Build and staging dependencies <build-and-staging-dependencies.md>`__.
+The :ref:``build-packages`` and ``stage-packages`` sections in a snap’s `snapcraft.yaml <the-snapcraft-yaml-schema>` specify which packages need to be incorporated during the build and stage parts of the :ref:`Parts lifecycle <parts-lifecycle>`, and described in :ref:`Build and staging dependencies <build-and-staging-dependencies>`.
 
 When no base or *core* is specified, packages from the Ubuntu 16.04 LTS archive are used at build and stage time. The ``core18`` base will use packages from the Ubuntu 18.04 LTS archive, whereas the ``core20`` base will consume packages from the Ubuntu 20.04 LTS archive, and package names can change between releases.
 
@@ -120,7 +120,7 @@ Publishers who want to move to ‘base: core20’ must drop builds for the i386 
      - build-on: ppc64el
      - build-on: s390x
 
-For potential approaches to maintain an i386 build of a snap, see `How best to handle i386 when moving to core20 <17680.md>`__.
+For potential approaches to maintain an i386 build of a snap, see :ref:`How best to handle i386 when moving to core20 <17680>`.
 
 .. raw:: html
 
@@ -154,7 +154,7 @@ Remote parts and Extensions
 
    </h2>
 
-In some snaps `remote parts <remote-reusable-parts.md>`__ may have been used to share configuration across multiple snaps and to reduce the local ``snapcraft.yaml`` complexity.
+In some snaps :ref:`remote parts <remote-reusable-parts>` may have been used to share configuration across multiple snaps and to reduce the local ``snapcraft.yaml`` complexity.
 
 These parts are defined elsewhere, and would be incorporated at build time. This functionality is deprecated, so remote parts should be pasted directly into the ``snapcraft.yaml`` or referenced from their source repository.
 
@@ -175,7 +175,7 @@ Example of pasted remote part: `Mr Rescue <https://github.com/snapcrafters/mrres
    +      stage-packages:
    +        - libglib2.0-bin
 
-Alternatively for some desktop applications it may be appropriate to switch to using an extension, which simplifies the ``snapcraft.yaml`` further. This is covered in `Snapcraft Extensions <snapcraft-extensions.md>`__.
+Alternatively for some desktop applications it may be appropriate to switch to using an extension, which simplifies the :ref:``snapcraft.yaml`` further. This is covered in `Snapcraft Extensions <snapcraft-extensions>`.
 
 Example migration to an Extension: `Xonotic <https://github.com/snapcrafters/xonotic/pull/6>`__
 
@@ -196,7 +196,7 @@ In the above example, we remove the reference to a remote part ``desktop-glib-on
 Extension naming
 ----------------
 
-Not all extensions work on all bases. For example, on ``core18`` , use the ``gnome-3-34`` extension and on ``core20`` use ``gnome-3-38``. See `Supported extensions <supported-extensions.md>`__ for further details.
+Not all extensions work on all bases. For example, on :ref:``core18`` , use the ``gnome-3-34`` extension and on ``core20`` use ``gnome-3-38``. See `Supported extensions <supported-extensions>` for further details.
 
 Example showing ``core20``-only Gnome extension: `Dwarf Fortress <https://github.com/ultraviolet-1986/df/pull/3>`__
 
@@ -221,7 +221,7 @@ Audio interfaces
 
    </h2>
 
-For applications which play or record audio, the `interface <interface-management.md>`__ names have changed. Previously the `pulseaudio <the-pulseaudio-interface.md>`__ interface was used for both playback and recording of audio. This has been replaced by `audio-playback <the-audio-playback-interface.md>`__ and `audio-record <t/the-audio-record-interface/13090>`__:
+For applications which play or record audio, the :ref:`interface <interface-management>` names have changed. Previously the :ref:`pulseaudio <the-pulseaudio-interface>` interface was used for both playback and recording of audio. This has been replaced by :ref:`audio-playback <the-audio-playback-interface>` and `audio-record <t/the-audio-record-interface/13090>`__:
 
 Example audio interface update: `Xonotic <https://github.com/snapcrafters/xonotic/pull/6>`__
 
@@ -247,7 +247,7 @@ Version scripts
 
    </h2>
 
-The top level ``version-script`` option has been `deprecated <deprecation-notice-10.md>`__ in favour of ``adopt-info``. This requires that you specify ``adopt-info`` with a reference to the part in which the version data (and some other metadata) may be set.
+The top level :ref:``version-script`` option has been `deprecated <deprecation-notice-10>` in favour of ``adopt-info``. This requires that you specify ``adopt-info`` with a reference to the part in which the version data (and some other metadata) may be set.
 
 Within the ``parts`` section, use ``snapcraftctl set-version`` to define the snapcraft project version number used at build time.
 
@@ -263,7 +263,7 @@ Example replacing *version-script* with *adopt-info*: `Cointop <https://github.c
    +      snapcraftctl pull
    +      snapcraftctl set-version $(git rev-parse --short HEAD)
 
-See `Using external metadata <using-external-metadata.md>`__ for further details.
+See :ref:`Using external metadata <using-external-metadata>` for further details.
 
 .. raw:: html
 
@@ -323,7 +323,7 @@ The following plugins have changed their syntax across Snapcraft releases.
 npm
 ---
 
-The `npm plugin <the-npm-plugin.md>`__ uses ``npm-node-version`` instead of ``node-engine`` to specify the version of upstream npm to be used at build time.
+The :ref:`npm plugin <the-npm-plugin>` uses ``npm-node-version`` instead of ``node-engine`` to specify the version of upstream npm to be used at build time.
 
 Example npm plugin syntax change: `wethr <https://github.com/snapcrafters/wethr/commit/678ac026fb03d42925eb585f376245ee073747ad>`__
 
@@ -337,7 +337,7 @@ Example npm plugin syntax change: `wethr <https://github.com/snapcrafters/wethr/
 autotools
 ---------
 
-The `Autotools plugin <the-autotools-plugin.md>`__ has migrated options from ``configflags`` to ``autotools-configure-parameters``.
+The :ref:`Autotools plugin <the-autotools-plugin>` has migrated options from ``configflags`` to ``autotools-configure-parameters``.
 
 Example Autotools plugin syntax changes: `Inadyn <https://github.com/snapcrafters/inadyn/commit/ba4f114eb07a3295e40798869c9cf7ce476e8037>`__
 

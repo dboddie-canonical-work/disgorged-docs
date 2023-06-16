@@ -1,6 +1,6 @@
 .. 7746.md
 
-.. \_the-account-control-interface:
+.. _the-account-control-interface:
 
 The account-control interface
 =============================
@@ -15,7 +15,7 @@ Due to the privileged nature of access enabled by this interface, its use is res
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 

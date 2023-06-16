@@ -1,6 +1,6 @@
 .. 7846.md
 
-.. \_the-iio-interface:
+.. _the-iio-interface:
 
 The iio interface
 =================
@@ -11,4 +11,4 @@ The iio interface
 
 Available IIO devices for the system can be seen with ``snap connections``. Once connected, the consuming snap can use the device via the path specified by the connected slot.
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

@@ -1,6 +1,6 @@
 .. 11702.md
 
-.. \_desktop-app-support-qt-for-snaps-without-bases:
+.. _desktop-app-support-qt-for-snaps-without-bases:
 
 Desktop App support - Qt (for snaps without bases)
 ==================================================

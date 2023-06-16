@@ -1,6 +1,6 @@
 .. 6545.md
 
-.. \_using-chromium-ffmpeg-in-third-party-browser-snaps:
+.. _using-chromium-ffmpeg-in-third-party-browser-snaps:
 
 Using chromium-ffmpeg in third-party browser snaps
 ==================================================

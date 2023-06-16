@@ -1,6 +1,6 @@
 .. 2038.md
 
-.. \_the-dbus-interface:
+.. _the-dbus-interface:
 
 The dbus interface
 ==================
@@ -18,7 +18,7 @@ This interface is particularly well-suited for leaf-style applications from GNOM
 
 Note: when developing snaps using devmode for DBus system services, the slot implementation must use this interface so that snapd may adjust the DBus bus policy so the snap may use the system bus.
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 Using the D-Bus interface
 -------------------------

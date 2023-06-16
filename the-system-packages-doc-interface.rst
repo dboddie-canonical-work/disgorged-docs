@@ -1,6 +1,6 @@
 .. 17788.md
 
-.. \_the-system-packages-doc-interface:
+.. _the-system-packages-doc-interface:
 
 The system-packages-doc interface
 =================================
@@ -17,4 +17,4 @@ The interface it is not connected automatically because the listed documentation
 
 Requires snapd version *2.46+*.
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

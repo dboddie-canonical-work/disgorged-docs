@@ -1,6 +1,6 @@
 .. 24083.md
 
-.. \_release-notes-snapcraft-4-6:
+.. _release-notes-snapcraft-4-6:
 
 Release notes: Snapcraft 4.6
 ============================
@@ -12,14 +12,14 @@ For general details, including installation instructions, see `Snapcraft overvie
 Login mechanism
 ---------------
 
-A new option, ``--experimental-login`` can now be used when using ``snapcraft login`` or ``snapcraft export-login`` and when signing assertions (see `Create a developer account <create-a-developer-account.md>`__).
+A new option, :ref:``--experimental-login`` can now be used when using ``snapcraft login`` or ``snapcraft export-login`` and when signing assertions (see `Create a developer account <create-a-developer-account>`).
 
 Using this option will trigger a web based authentication flow. To go back to the previous login method you must first ``snapcraft logout``.
 
 Conda plugin
 ------------
 
-The `conda <the-conda-plugin.md>`__ plugin has been ported to `core20 <base-snaps.md>`__. These are the available plugin options:
+The :ref:`conda <the-conda-plugin>` plugin has been ported to :ref:`core20 <base-snaps>`. These are the available plugin options:
 
 -  **``conda-packages``** (list of strings) List of *conda* packages to install.
 -  **``conda-python-version``** (string) The Python version to use for the *conda* packages. Python version major and minor version (e.g. 3.8).
@@ -30,7 +30,7 @@ Package Repositories
 
 The road to making this feature stable is closer, although a breaking change lands with 4.6 for this experimental feature. Keys are now using the suffix and not prefix of the key id.
 
-See `Package repositories <snapcraft-package-repositories.md>`__ for further details.
+See :ref:`Package repositories <snapcraft-package-repositories>` for further details.
 
 Metadata
 --------
@@ -45,17 +45,17 @@ Extensions
 Gnome 3.38
 ~~~~~~~~~~
 
-The `gnome-3-38 extension <the-gnome-3-38-extension.md>`__ is now considered stable.
+The :ref:`gnome-3-38 extension <the-gnome-3-38-extension>` is now considered stable.
 
 KDE Neon
 ~~~~~~~~
 
-The `KDE Neon extension <the-kde-neon-extension.md>`__ now supports ``core20`` as an experimental extension.
+The :ref:`KDE Neon extension <the-kde-neon-extension>` now supports ``core20`` as an experimental extension.
 
 Flutter
 ~~~~~~~
 
-New variants of the `Flutter extension <the-flutter-extension.md>`__ are now available for *stable* and *beta*. The same documentation applies as for the master and dev variant.
+New variants of the :ref:`Flutter extension <the-flutter-extension>` are now available for *stable* and *beta*. The same documentation applies as for the master and dev variant.
 
 Full list of changes
 --------------------

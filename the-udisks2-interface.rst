@@ -1,6 +1,6 @@
 .. 7930.md
 
-.. \_the-udisks2-interface:
+.. _the-udisks2-interface:
 
 The udisks2 interface
 =====================
@@ -11,4 +11,4 @@ When used on `Ubuntu Core <https://ubuntu.com/core/docs>`__, the *udisks2* inter
 
 **Auto-connect**: no
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

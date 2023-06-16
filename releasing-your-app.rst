@@ -1,20 +1,20 @@
 .. 6795.md
 
-.. \_releasing-your-app:
+.. _releasing-your-app:
 
 Releasing your app
 ==================
 
-After `creating a snap <creating-a-snap.md>`__, you should upload it to the `Snap Store <https://snapcraft.io/store>`__, from where it can reach a potential audience of millions, or remain *private* if registered as such.
+After :ref:`creating a snap <creating-a-snap>`, you should upload it to the `Snap Store <https://snapcraft.io/store>`__, from where it can reach a potential audience of millions, or remain *private* if registered as such.
 
-You will need the following: - a free Snapcraft `developer account <create-a-developer-account.md>`__ account - your own built and tested snap working with `strict <snap-confinement.md#strict>`__ or `classic <snap-confinement.md#classic>`__ confinement
+You will need the following: - a free Snapcraft :ref:`developer account <create-a-developer-account>` account - your own built and tested snap working with `strict <snap-confinement.md#strict>`__ or `classic <snap-confinement.md#classic>`__ confinement
 
-   ⓘ If your snap requires `classic confinement <snap-confinement.md#classic>`__, your snap will need manual approval before being released. See `Classic confinement review process <process-for-reviewing-classic-confinement-snaps.md>`__ for further details.
+   ⓘ If your snap requires `classic confinement <snap-confinement.md#classic>`__, your snap will need manual approval before being released. See :ref:`Classic confinement review process <process-for-reviewing-classic-confinement-snaps>` for further details.
 
 Publishing process
 ------------------
 
-To get started, first `register a name <registering-your-app-name.md>`__ for your snap in the Snap Store.
+To get started, first :ref:`register a name <registering-your-app-name>` for your snap in the Snap Store.
 
 Return to the terminal and the location of your ``.snap`` file. You now need to authenticate the *snapcraft* command using your Snapcraft developer account credentials. This can be accomplished with the following:
 
@@ -42,4 +42,4 @@ Congratulations, your snap has now been released and is available on the Snap St
 
 See `Store listing and branding <https://snapcraft.io/docs/store-listing-and-branding>`__ for help with making the most of a snap’s store entry, and `Release management <https://snapcraft.io/docs/release-management>`__ for controlling which revisions appear on which channels, and to switch a snap between *Public* and *Private* visibility and access.
 
-If you want to publish a snap temporarily, to address a fix or test a new feature, see `Publish to a branch <publish-to-a-branch.md>`__.
+If you want to publish a snap temporarily, to address a fix or test a new feature, see :ref:`Publish to a branch <publish-to-a-branch>`.

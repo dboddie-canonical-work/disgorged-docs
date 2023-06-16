@@ -1,6 +1,6 @@
 .. 27547.md
 
-.. \_snapcraft-offline-mode:
+.. _snapcraft-offline-mode:
 
 Snapcraft offline mode
 ======================
@@ -30,7 +30,7 @@ Preparation
 
 Before using Snapcraft’s offline mode, the build environment needs to be populated with everything necessary to build the snap.
 
-This requirement is the equivalent of running the build process up to and including the *pull* stage of the `Parts lifecycle <parts-lifecycle.md>`__, and with a network connection, this can be accomplished from within a pre-prepared `snapcraft <snapcraft-overview.md>`__ project directory with the ``snapcraft pull`` command:
+This requirement is the equivalent of running the build process up to and including the *pull* stage of the :ref:`Parts lifecycle <parts-lifecycle>`, and with a network connection, this can be accomplished from within a pre-prepared :ref:`snapcraft <snapcraft-overview>` project directory with the ``snapcraft pull`` command:
 
 .. code:: bash
 
@@ -70,4 +70,4 @@ To update the cache and add any new missing dependencies, rerun the ``snapcraft 
 
 The ``-offline`` argument can also be used while connected to the network. In its current *experimental* implementation, Snapcraft will re-order the build process to perform an initial download and cache step for the entire snap without requiring a *snapcraft pull* command.
 
-To learn more about other ways of building snaps with Snapcraft, see `Build options <build-options.md>`__.
+To learn more about other ways of building snaps with Snapcraft, see :ref:`Build options <build-options>`.

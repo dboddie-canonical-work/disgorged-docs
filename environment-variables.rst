@@ -1,15 +1,15 @@
 .. 7983.md
 
-.. \_environment-variables:
+.. _environment-variables:
 
 Environment variables
 =====================
 
 Environment variables are widely used across Linux to provide convenient access to system and application properties.
 
-Both `Snapcraft <snapcraft-overview.md>`__ and snapd consume, set, and pass-through specific environment variables to support building and running snaps.
+Both :ref:`Snapcraft <snapcraft-overview>` and snapd consume, set, and pass-through specific environment variables to support building and running snaps.
 
-See below for the various environment variables available to snap applications. For environment variables connected to Snapcraft, see `Parts environment variables <parts-environment-variables.md>`__.
+See below for the various environment variables available to snap applications. For environment variables connected to Snapcraft, see :ref:`Parts environment variables <parts-environment-variables>`.
 
 Snap specific environment variables
 -----------------------------------

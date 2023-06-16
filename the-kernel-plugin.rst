@@ -1,17 +1,17 @@
 .. 8642.md
 
-.. \_the-kernel-plugin:
+.. _the-kernel-plugin:
 
 The kernel plugin
 =================
 
-The ``kernel`` plugin adds to the configuration options provided by the generic `kbuild <the-kbuild-plugin.md>`__ plugin to help build kernel snaps.
+The :ref:``kernel`` plugin adds to the configuration options provided by the generic `kbuild <the-kbuild-plugin>` plugin to help build kernel snaps.
 
 **Warning:** The API for this plugin is currently is unstable, and cross-compiling support is consequently classed as *experimental*.
 
-   ⓘ This plugin is only available to *core* and *core18* based snaps. See `Base snaps <base-snaps.md>`__ for details.
+   ⓘ This plugin is only available to *core* and *core18* based snaps. See :ref:`Base snaps <base-snaps>` for details.
 
-This plugin uses the common plugin keywords as well as those for “sources”. For more information, see `Snapcraft parts metadata <snapcraft-parts-metadata.md>`__.
+This plugin uses the common plugin keywords as well as those for “sources”. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
 
 The following kernel specific options are provided by this plugin:
 
@@ -29,4 +29,4 @@ The following kernel specific options are provided by this plugin:
 
 For examples, search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+kernel%22&type=Code>`__ for projects already using the plugin.
 
-   ⓘ This is a *snapcraft* plugin. See `Snapcraft plugins <snapcraft-plugins.md>`__ and `Supported plugins <supported-plugins.md>`__ for further details on how plugins are used.
+   ⓘ This is a *snapcraft* plugin. See :ref:`Snapcraft plugins <snapcraft-plugins>` and :ref:`Supported plugins <supported-plugins>` for further details on how plugins are used.

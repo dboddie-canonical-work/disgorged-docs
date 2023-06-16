@@ -1,13 +1,13 @@
 .. 8336.md
 
-.. \_snapcraft-parts-metadata:
+.. _snapcraft-parts-metadata:
 
 Snapcraft parts metadata
 ========================
 
-The main building blocks of a snap are *parts*. They are used to declare pieces of code that will be pulled into your snap package. The *parts* keys and values in `snapcraft.yaml <the-snapcraft-yaml-schema.md>`__ detail how parts are configured and built by the *snapcraft* command.
+The main building blocks of a snap are *parts*. They are used to declare pieces of code that will be pulled into your snap package. The *parts* keys and values in :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>` detail how parts are configured and built by the *snapcraft* command.
 
-   See `Snapcraft top-level metadata <snapcraft-top-level-metadata.md>`__ and `Snapcraft apps and services metadata <snapcraft-app-and-service-metadata.md>`__ for details on how apps and parts are configured within *snapcraft.yaml*.
+   See :ref:`Snapcraft top-level metadata <snapcraft-top-level-metadata>` and :ref:`Snapcraft apps and services metadata <snapcraft-app-and-service-metadata>` for details on how apps and parts are configured within *snapcraft.yaml*.
 
 parts
 -----
@@ -59,7 +59,7 @@ Supported attributes:
 -  ``keep-execstack``: Do not remove the “executable stack” bit from ELF files.
 -  ``no-patchelf``: Do not patch ELF files, even when Snapcraft believes it is required (e.g. for classic snaps)
 -  ``enable-patchelf``: Do patch ELF files, even when Snapcraft does not believe it’s required (e.g. for strict snaps)
--  ``no-install``: Do not run the install target provided by the plugin’s build system. *(Only supported by the*\ `kbuild plugin <the-kbuild-plugin.md>`__\ *)*
+-  :ref:``no-install``: Do not run the install target provided by the plugin’s build system. *(Only supported by the*\ `kbuild plugin <the-kbuild-plugin>`\ *)*
 
 For more information, refer to the output of ``snapcraft help plugins``.
 
@@ -77,7 +77,7 @@ Type: Array
 
 A list of environment variable assignments that are applied during the build step, `it is exported in order which allows for later values to override (or modify) earlier values. <https://github.com/snapcore/snapcraft/pull/2322>`__
 
-This entry supports additional syntax, for more information refer to `Advanced grammar <snapcraft-advanced-grammar.md>`__.
+This entry supports additional syntax, for more information refer to :ref:`Advanced grammar <snapcraft-advanced-grammar>`.
 
 .. code:: yaml
 
@@ -94,7 +94,7 @@ Type: ``list[string]``
 
 A list of packages required to build a snap.
 
-Packages are installed using the host’s package manager, such as ``apt`` or ``dnf``, and are required for <part-name> to build correctly. This entry supports additional syntax, for more information refer to `Advanced grammar <snapcraft-advanced-grammar.md>`__.
+Packages are installed using the host’s package manager, such as ``apt`` or ``dnf``, and are required for <part-name> to build correctly. This entry supports additional syntax, for more information refer to :ref:`Advanced grammar <snapcraft-advanced-grammar>`.
 
 Example: ``[ libssl-dev, libssh-dev, libncursesw5-dev]``
 
@@ -112,7 +112,7 @@ Type: ``list[string]``
 
 A list of snap names to install that are necessary to build ``<part-name>``.
 
-If a specific channel is required, the syntax is of the form ``<snap-name>/<channel>``. This entry supports additional syntax, for more information refer to `Advanced grammar <snapcraft-advanced-grammar.md>`__
+If a specific channel is required, the syntax is of the form ``<snap-name>/<channel>:ref:``. This entry supports additional syntax, for more information refer to `Advanced grammar <snapcraft-advanced-grammar>`
 
 Example: ``build-snaps: [go/1.13/stable]``
 
@@ -137,7 +137,7 @@ Type: ``list[string]``
 
 A key to represent a group of files or a single file.
 
-See `Snapcraft filesets <snapcraft-filesets.md>`__ for further details.
+See :ref:`Snapcraft filesets <snapcraft-filesets>` for further details.
 
 organize
 ~~~~~~~~
@@ -164,7 +164,7 @@ Type: ``multiline string``
 
 Replaces a plugin’s default *build* process with a script.
 
-The shell script defined here replaces the `build <parts-lifecycle.md#snapcraft-parts-metadata-heading--steps>`__ step of the plugin, defined in ``parts.<part-name>.plugin``. The working directory is the base build directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``. A set of `Environment Variables <environment-variables.md>`__ will be available to the script.
+The shell script defined here replaces the `build <parts-lifecycle.md#snapcraft-parts-metadata-heading--steps>`__ step of the plugin, defined in ``parts.<part-name>.plugin:ref:``. The working directory is the base build directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``. A set of `Environment Variables <environment-variables>` will be available to the script.
 
 To run Snapcraft’s original build implementation from within *override-build*, run ``snapcraftctl build``. This can be run before or after any custom script or omitted entirely.
 
@@ -182,7 +182,7 @@ Type: ``multiline string``
 
 Replaces a plugin’s default *prime* process with a script.
 
-The shell script defined here replaces the `prime <parts-lifecycle.md#snapcraft-parts-metadata-heading--steps>`__ step of the plugin, defined in ``parts.<part-name>.plugin``. The working directory is the base prime directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``. A set of `Environment Variables <environment-variables.md>`__ will be available to the script.
+The shell script defined here replaces the `prime <parts-lifecycle.md#snapcraft-parts-metadata-heading--steps>`__ step of the plugin, defined in ``parts.<part-name>.plugin:ref:``. The working directory is the base prime directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``. A set of `Environment Variables <environment-variables>` will be available to the script.
 
 To run Snapcraft’s original prime step implementation from within *override-prime*, run ``snapcraftctl prime``. This can be run before or after any custom script or omitted entirely.
 
@@ -200,7 +200,7 @@ Type: ``multiline string``
 
 Replaces a plugin’s default *pull* process with a script.
 
-The shell script defined here replaces the `pull <parts-lifecycle.md#snapcraft-parts-metadata-heading--steps>`__ step of the plugin, defined in ``parts.<part-name>.plugin``. The working directory is the base pull directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``. A set of `Environment Variables <environment-variables.md>`__ will be available to the script.
+The shell script defined here replaces the `pull <parts-lifecycle.md#snapcraft-parts-metadata-heading--steps>`__ step of the plugin, defined in ``parts.<part-name>.plugin:ref:``. The working directory is the base pull directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``. A set of `Environment Variables <environment-variables>` will be available to the script.
 
 To run Snapcraft’s original pull stage implementation from within *override-pull*, run ``snapcraftctl pull``. This can be run before or after any custom script or omitted entirely.
 
@@ -218,7 +218,7 @@ Type: ``multiline string``
 
 Replaces a plugin’s default *stage* process with a script.
 
-The shell script defined here replaces the `stage <parts-lifecycle.md#snapcraft-parts-metadata-heading--steps>`__ step of the plugin, defined in ``parts.<part-name>.plugin``. The working directory is the base stage directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``. A set of `Environment Variables <environment-variables.md>`__ will be available to the script.
+The shell script defined here replaces the `stage <parts-lifecycle.md#snapcraft-parts-metadata-heading--steps>`__ step of the plugin, defined in ``parts.<part-name>.plugin:ref:``. The working directory is the base stage directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``. A set of `Environment Variables <environment-variables>` will be available to the script.
 
 To run Snapcraft’s original stage implementation from within *override-stage*, run ``snapcraftctl stage``. This can be run before or after any custom script or omitted entirely.
 
@@ -229,9 +229,9 @@ Type: ``list[string]``
 
 Defines content to adopt when using external metadata.
 
-Each entry is a relative path to a `supported metadata file <using-external-metadata.md>`__ from the part source, build or install directory (`SNAPCRAFT_PART_SRC, SNAPCRAFT_PART_BUILD, SNAPCRAFT_PART_INSTALL <parts-lifecycle.md#snapcraft-parts-metadata-heading--parts-directories>`__).
+Each entry is a relative path to a :ref:`supported metadata file <using-external-metadata>` from the part source, build or install directory (`SNAPCRAFT_PART_SRC, SNAPCRAFT_PART_BUILD, SNAPCRAFT_PART_INSTALL <parts-lifecycle.md#snapcraft-parts-metadata-heading--parts-directories>`__).
 
-See `Using external metadata <using-external-metadata.md>`__ for more details.
+See :ref:`Using external metadata <using-external-metadata>` for more details.
 
 plugin
 ~~~~~~
@@ -240,7 +240,7 @@ Type: ``string``
 
 The plugin to drive the build process.
 
-Every part drives its build through a plugin, this entry declares the plugin that will drive the build process for ``<part-name>``. Refer to `snapcraft plugins <snapcraft-plugins.md>`__ for more information on the available plugins and the specific attributes they add to the ``parts.<part-name>.`` namespace.
+Every part drives its build through a plugin, this entry declares the plugin that will drive the build process for ``<part-name>:ref:``. Refer to `snapcraft plugins <snapcraft-plugins>` for more information on the available plugins and the specific attributes they add to the ``parts.<part-name>.`` namespace.
 
 prepare (deprecated)
 ~~~~~~~~~~~~~~~~~~~~
@@ -249,9 +249,9 @@ Type: ``multiline string``
 
 Runs a script before the plugin’s `build <parts-lifecycle.md#snapcraft-parts-metadata-heading--steps>`__ step.
 
-The script is run before the build step defined for ``parts.<part-name>.plugin`` starts. The working directory is the base build directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``. A set of `Environment Variables <environment-variables.md>`__ will be available to the script.
+The script is run before the build step defined for ``parts.<part-name>.plugin:ref:`` starts. The working directory is the base build directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``. A set of `Environment Variables <environment-variables>` will be available to the script.
 
-   ⚠ The release of `Snapcraft 3.0 <release-notes-snapcraft-3-0.md>`__ made this key obsolete. Use ```override-build`` <#snapcraft-parts-metadata-heading--override-build>`__ instead.
+   ⚠ The release of :ref:`Snapcraft 3.0 <release-notes-snapcraft-3-0>` made this key obsolete. Use ```override-build`` <#snapcraft-parts-metadata-heading--override-build>`__ instead.
 
 prime
 ~~~~~
@@ -276,7 +276,7 @@ Type: ``string``
 
 A URL or path to a source tree to build.
 
-This can be a local path or remote and can refer to a directory tree, a compressed archive, or a revision control repository. This entry supports additional syntax, for more information refer to `Advanced grammar <snapcraft-advanced-grammar.md>`__
+This can be a local path or remote and can refer to a directory tree, a compressed archive, or a revision control repository. This entry supports additional syntax, for more information refer to :ref:`Advanced grammar <snapcraft-advanced-grammar>`
 
 source-branch
 ~~~~~~~~~~~~~
@@ -389,7 +389,7 @@ Type: ``list[string]``
 
 A list of packages required at runtime by a snap.
 
-Packages are required by <part-name> to run. They are fetched using the host’s package manager, such as ``apt`` or ``dnf``, and are unpacked into the snap being built. This entry supports additional syntax, for more information refer to `Advanced grammar <snapcraft-advanced-grammar.md>`__.
+Packages are required by <part-name> to run. They are fetched using the host’s package manager, such as :ref:``apt`` or ``dnf``, and are unpacked into the snap being built. This entry supports additional syntax, for more information refer to `Advanced grammar <snapcraft-advanced-grammar>`.
 
 Example: ``[python-zope.interface, python-bcrypt]``
 
@@ -400,6 +400,6 @@ Type: ``list[string]``
 
 A list of snaps required at runtime by a snap.
 
-Snaps are required by <part-name> to run. They are fetched using ``snap download``, and are unpacked into the snap being built. This entry supports additional syntax, for more information refer to `Advanced grammar <snapcraft-advanced-grammar.md>`__.
+Snaps are required by <part-name> to run. They are fetched using :ref:``snap download``, and are unpacked into the snap being built. This entry supports additional syntax, for more information refer to `Advanced grammar <snapcraft-advanced-grammar>`.
 
 Example: ``[hello, black/latest/edge]``

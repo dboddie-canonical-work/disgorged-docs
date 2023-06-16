@@ -1,11 +1,11 @@
 .. 29487.md
 
-.. \_the-custom-device-interface:
+.. _the-custom-device-interface:
 
 The custom-device interface
 ===========================
 
-The ``custom-device`` interface permits access to a device of a specific class and model without requiring the creation of an interface for that device alone. It’s intended to be used with `Ubuntu Core <glossary.md#the-custom-device-interface-heading--ubuntu-core>`__ and its scope and specification are defined as part of the `gadget snap <gadget-snaps.md>`__ for the deployed Ubuntu Core image.
+The ``custom-device`` interface permits access to a device of a specific class and model without requiring the creation of an interface for that device alone. It’s intended to be used with `Ubuntu Core <glossary.md#the-custom-device-interface-heading--ubuntu-core>`__ and its scope and specification are defined as part of the :ref:`gadget snap <gadget-snaps>` for the deployed Ubuntu Core image.
 
 The slot-side of the interface is used to derive which *udev* rules are provided to the plug-side of the connection:
 
@@ -44,7 +44,7 @@ Requires snapd version *2.55+*.
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 
@@ -58,7 +58,7 @@ Developer details
 
    </h2>
 
-`Auto-connect <interface-management.md#the-custom-device-interface-heading--auto-connections>`__: no `Super-privileged <super-privileged-interfaces.md>`__: yes
+`Auto-connect <interface-management.md#the-custom-device-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
 
 **Attributes**: \* ``custom-device`` (plug, slot): label for the custom device. Needs to be identical across the plug and slot connections. \* ``devices`` (slot): path to device node. Example: ``devices: [/dev/input/event[0-9], /dev/input/mice]`` \* ``files`` (slot): \* ``read`` (slot): list of files and/or directories for read-only access by the device. Example: ``read: [ /dev/input/by-id/* ]`` \* ``write`` (slot): list of files and/or directories for read/write access by the device. Example: ``write: [ /etc/file-write, /etc/dir-write ]`` \* ``udev-tagging`` (optional): used to tailor the generated udev rules. Can be one of the following: \* ``kernel``: (mandatory): maps to the string used as the udev ``KERNEL==`` filter rule. \* ``subsystem``: corresponds to the ``SUBSYSTEM==`` filters in a udev rule. \* ``environment``: a map of expected environment variables for the udev rule to match with ``ENV{...}=="..."`` \* ``attributes``: a map of attributes used with ``ATTR{...}=="..."``
 

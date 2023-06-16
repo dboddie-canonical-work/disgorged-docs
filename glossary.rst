@@ -1,6 +1,6 @@
 .. 14612.md
 
-.. \_glossary:
+.. _glossary:
 
 Glossary
 ========
@@ -28,7 +28,7 @@ Glossary
 
 There are a significant number of terms and definitions that are unique to the snap, snapd, and snapcraft ecosystem. This page defines the terminology and other terms touched by these tools and links to further information when required.
 
-If you’re new to using snaps, take a look at `Getting started <https://snapcraft.io/docs/quickstart-guide>`__, and if you’re looking to build your own snaps, take a look at the `Snapcraft overview <snapcraft-overview.md>`__.
+If you’re new to using snaps, take a look at `Getting started <https://snapcraft.io/docs/quickstart-guide>`__, and if you’re looking to build your own snaps, take a look at the :ref:`Snapcraft overview <snapcraft-overview>`.
 
 Terms and definitions
 ---------------------
@@ -75,7 +75,7 @@ base
 
 A base is a special kind of snap that provides a run-time environment with a minimal set of libraries that are common to most applications. They’re transparent to users, but they need to be considered, and specified, when building a snap.
 
-See `Base snaps <base-snaps.md>`__ for more details.
+See :ref:`Base snaps <base-snaps>` for more details.
 
 .. raw:: html
 
@@ -129,7 +129,7 @@ classic
 
 *Classic* is a snap confinement level that allows access to your system’s resources in much the same way traditional packages do. It’s used sparingly and only after a manual review.
 
-See `Snap confinement <snap-confinement.md>`__ for more details.
+See :ref:`Snap confinement <snap-confinement>` for more details.
 
 .. raw:: html
 
@@ -143,7 +143,7 @@ confinement
 
 A snap’s confinement level is the degree of isolation it has from your system. There are three levels of snap confinement: strict, classic and devmode. The majority of snaps use *strict* confinement, and run in complete isolation up to a level of minimal access that’s always deemed safe, or through access given via explicit interface connections.
 
-See `Snap confinement <snap-confinement.md>`__ for more details.
+See :ref:`Snap confinement <snap-confinement>` for more details.
 
 .. raw:: html
 
@@ -157,7 +157,7 @@ core
 
 *core* is a base snap built from `Ubuntu 16.04 LTS <http://releases.ubuntu.com/16.04/>`__. It’s different from *core16* (see below) because it bundles *snapd* and its associated tools whereas core16 does not.
 
-See `Base snaps <base-snaps.md>`__ for more details.
+See :ref:`Base snaps <base-snaps>` for more details.
 
 .. raw:: html
 
@@ -171,7 +171,7 @@ core16
 
 *core16* is still under development, and is a base snap built from `Ubuntu 16.04 LTS <http://releases.ubuntu.com/16.04/>`__. It’s different from *core* (see above) because it does not include *snapd* and its associated tools.
 
-See `Base snaps <base-snaps.md>`__ for more details.
+See :ref:`Base snaps <base-snaps>` for more details.
 
 .. raw:: html
 
@@ -185,7 +185,7 @@ core18
 
 *core18* is a base snap built from `Ubuntu 18.04 LTS <http://releases.ubuntu.com/18.04/>`__. It’s the current standard base for snap building and is the recommended base for the majority of snaps. It’s what the `snapcraft init <snapcraft-overview.md#glossary-heading--creating-snapcraft>`__ command includes when generating a new project’s template *snapcraft.yaml* .
 
-See `Base snaps <base-snaps.md>`__ for more details.
+See :ref:`Base snaps <base-snaps>` for more details.
 
 .. raw:: html
 
@@ -199,7 +199,7 @@ core20
 
 *core20* is under active development. It’s a base snap built from `Ubuntu 20.04 LTS (Focal Fossa) <https://releases.ubuntu.com/20.04/>`__, released April 23, 2020.
 
-See `Base snaps <base-snaps.md>`__ for more details on base snaps.
+See :ref:`Base snaps <base-snaps>` for more details on base snaps.
 
 .. raw:: html
 
@@ -229,7 +229,7 @@ devmode
 
 *devmode* is a snap confinement level used by snap developers when creating their snaps. With *devmode*, a snap runs as a strictly confined snap with full access to system resources, and produces debug output to identify unspecified interfaces.
 
-See `Snap confinement <snap-confinement.md>`__ for more details.
+See :ref:`Snap confinement <snap-confinement>` for more details.
 
 .. raw:: html
 
@@ -245,7 +245,7 @@ Epochs enable snap developers to control how users receive a new application rel
 
 When a new release breaks data compatibility with an older version, incrementing the epoch in the new release stops old users automatically refreshing to the new version.
 
-See `Epochs <snap-epochs.md>`__ for more details.
+See :ref:`Epochs <snap-epochs>` for more details.
 
 .. raw:: html
 
@@ -259,7 +259,7 @@ extension
 
 Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. There are extensions to help with the packaging of both Gnome and KDE Plasma applications.
 
-See `Snapcraft extensions <snapcraft-extensions.md>`__ for more details.
+See :ref:`Snapcraft extensions <snapcraft-extensions>` for more details.
 
 .. raw:: html
 
@@ -273,7 +273,7 @@ gadget
 
 A gadget is a device or other deployment running Ubuntu Core alongside a vendor-specified, managed and maintained set of snaps. A gadget could be a router, for example, a home automation device or even a VM cloud instance. Its properties are defined within an embedded *gadget snap*.
 
-See `The gadget snap <gadget-snaps.md>`__ for more details.
+See :ref:`The gadget snap <gadget-snaps>` for more details.
 
 .. raw:: html
 
@@ -287,7 +287,7 @@ hook
 
 A hook is an executable that runs within a snap’s confined environment when a certain action occurs. Actions include snap installation and removal, changes to its configuration or connection state, and before or after a refresh.
 
-For more details, see `Supported snap hooks <supported-snap-hooks.md>`__.
+For more details, see :ref:`Supported snap hooks <supported-snap-hooks>`.
 
 .. raw:: html
 
@@ -301,9 +301,9 @@ interface
 
 An interfaces enables resources from one snap to be shared with another and with the system. Interfaces require a connection, which is commonly made automatically, or manually with the ``snap connect`` command.
 
-For a snap to use an interface, its developer needs to have first defined its corresponding plugs and slots within a snap’s `snapcraft.yaml <creating-snapcraft-yaml.md>`__ file.
+For a snap to use an interface, its developer needs to have first defined its corresponding plugs and slots within a snap’s :ref:`snapcraft.yaml <creating-snapcraft-yaml>` file.
 
-See `Interface management <interface-management.md>`__ for more details.
+See :ref:`Interface management <interface-management>` for more details.
 
 .. raw:: html
 
@@ -319,7 +319,7 @@ Launchpad is a code collaboration and secure build system for open source projec
 
 Launchpad provides the ability to build your snap for multiple architectures - x86, ARM, RISC-V, POWER, s390. If you use Launchpad for snap building then you need to provide it with your source code and snapcraft. It will build and publish new revisions of your snap, which you can test and release. If you do not already have a good multi-arch CI/CD system up and running then we recommend you use Launchpad to support all devices with your snap.
 
-See `Remote build <remote-build.md>`__ for more details.
+See :ref:`Remote build <remote-build>` for more details.
 
 .. raw:: html
 
@@ -335,7 +335,7 @@ Layouts help snap developers make snap-confined elements accessible from locatio
 
 They cannot be used to expose elements to non-permitted locations on the host environment (such as exposing a file to ``/etc/`` on the host filesystem).
 
-See `Snap layouts <snap-layouts.md>`__ for more details.
+See :ref:`Snap layouts <snap-layouts>` for more details.
 
 .. raw:: html
 
@@ -349,7 +349,7 @@ LXD
 
 `LXD <https://linuxcontainers.org/lxd/introduction/>`__ is a next generation system container manager. It offers a user experience similar to virtual machines but using Linux containers instead. It can be used by the *snapcraft* command to isolate the build process from the host system.
 
-See `Building with LXD <build-providers.md>`__ for details.
+See :ref:`Building with LXD <build-providers>` for details.
 
 .. raw:: html
 
@@ -469,7 +469,7 @@ remote build
 
 Remote build is a feature in `Snapcraft <https://snapcraft.io/docs/snapcraft-overview>`__ (from `Snapcraft 3.9+ </t/snapcraft-release-notes>`__ onwards) that enables anyone to run a multi-architecture snap build process on remote servers using `Launchpad <https://launchpad.net/>`__. With remote build, you can build snaps for hardware you don’t have access to and free up your local machine for other tasks.
 
-See `Remote build <remote-build.md>`__ for further details.
+See :ref:`Remote build <remote-build>` for further details.
 
 .. raw:: html
 
@@ -502,7 +502,7 @@ In the above example output, the latest/edge snap has a revision of ``26758`` an
 
 However, neither the revision number (nor its version) enforce an order of release. The local system will simply attempt to install whatever snap is recommended by the publisher in the channel being tracked.
 
-See `Revisions <revisions.md>`__ for further details.
+See :ref:`Revisions <revisions>` for further details.
 
 .. raw:: html
 
@@ -573,7 +573,7 @@ snapcraft
 
 Snapcraft is both the command and the framework used to build your own snaps. The command and framework are cross-platform and can help you to easily build and publish your snaps to the `Snap Store <https://snapcraft.io/store>`__
 
-See `Snapcraft overview <snapcraft-overview.md>`__ for more details.
+See :ref:`Snapcraft overview <snapcraft-overview>` for more details.
 
 .. raw:: html
 
@@ -661,7 +661,7 @@ strict
 
 *Strict* is the default snap confinement level. It runs snaps in complete isolation, and consequently, with no access your files, network, processes or any other system resource without requesting specific access via an interface.
 
-See `Snap confinement <snap-confinement.md>`__ for more details.
+See :ref:`Snap confinement <snap-confinement>` for more details.
 
 .. raw:: html
 
@@ -687,7 +687,7 @@ Transitional interface
 
    </h3>
 
-A *transitional interface* is an `interface <interface-management.md>`__ that can be used by a trusted snap to access traditional Linux desktop environments that were not designed to integrate with `snap confinement <snap-confinement.md>`__. These interfaces will become deprecated as replacement or modified technologies that enforce strong application isolation become available.
+A *transitional interface* is an :ref:`interface <interface-management>` that can be used by a trusted snap to access traditional Linux desktop environments that were not designed to integrate with :ref:`snap confinement <snap-confinement>`. These interfaces will become deprecated as replacement or modified technologies that enforce strong application isolation become available.
 
 .. raw:: html
 

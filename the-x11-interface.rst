@@ -1,6 +1,6 @@
 .. 7785.md
 
-.. \_the-x11-interface:
+.. _the-x11-interface:
 
 The x11 interface
 =================
@@ -9,8 +9,8 @@ The x11 interface
 
 **Auto-connect**: yes **Transitional**: yes
 
-See `The desktop interfaces <the-desktop-interfaces.md>`__ for further details.
+See :ref:`The desktop interfaces <the-desktop-interfaces>` for further details.
 
 **Condition to Connect**: If your snap has a graphical user interface, you *should* connect to this interface.
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

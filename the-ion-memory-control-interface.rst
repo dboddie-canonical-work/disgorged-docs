@@ -1,6 +1,6 @@
 .. 26502.md
 
-.. \_the-ion-memory-control-interface:
+.. _the-ion-memory-control-interface:
 
 The ion-memory-control interface
 ================================
@@ -11,7 +11,7 @@ This interface is primarily intended to be used with `Ubuntu Core <glossary.md#t
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 
@@ -25,7 +25,7 @@ Developer details
 
    </h2>
 
-`Auto-connect <interface-management.md#the-ion-memory-control-interface-heading--auto-connections>`__: no `Super-privileged <super-privileged-interfaces.md>`__: yes
+`Auto-connect <interface-management.md#the-ion-memory-control-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
 
 The device is expected in the following location: - ``/dev/ion``
 

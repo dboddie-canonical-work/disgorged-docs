@@ -1,6 +1,6 @@
 .. 8529.md
 
-.. \_the-python-plugin:
+.. _the-python-plugin:
 
 The python plugin
 =================
@@ -10,17 +10,17 @@ The ``python`` plugin can be used by either Python 2 or Python 3 based parts usi
 -  a *requirements.txt* file used to import Python modules
 -  packages installed directly from *pip*
 
-This plugin uses the common plugin keywords as well as those for “sources”. For more information, see `Snapcraft parts metadata <snapcraft-parts-metadata.md>`__.
+This plugin uses the common plugin keywords as well as those for “sources”. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
 
-Plugin-specific features and syntax are dependent on which `base <base-snaps.md>`__ is being used, as outlined below:
+Plugin-specific features and syntax are dependent on which :ref:`base <base-snaps>` is being used, as outlined below:
 
 -  `base: core22 <#the-python-plugin-heading--core22>`__
 -  `base: core20 <#the-python-plugin-heading--core20>`__
 -  `base: core18 \| core <#the-python-plugin-heading--core18>`__
 
-See `Python applications <python-apps.md>`__ for a simple example, or search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+python%22&type=Code>`__ for projects already using the plugin.
+See :ref:`Python applications <python-apps>` for a simple example, or search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+python%22&type=Code>`__ for projects already using the plugin.
 
-   ⓘ This is a *snapcraft* plugin. See `Snapcraft plugins <snapcraft-plugins.md>`__ and `Supported plugins <supported-plugins.md>`__ for further details on how plugins are used.
+   ⓘ This is a *snapcraft* plugin. See :ref:`Snapcraft plugins <snapcraft-plugins>` and :ref:`Supported plugins <supported-plugins>` for further details on how plugins are used.
 
 .. raw:: html
 

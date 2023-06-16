@@ -1,6 +1,6 @@
 .. 25493.md
 
-.. \_the-raw-input-interface:
+.. _the-raw-input-interface:
 
 The raw-input interface
 =======================
@@ -9,7 +9,7 @@ The ``raw-input`` interface allows access to raw input devices.
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 

@@ -1,18 +1,18 @@
 .. 24944.md
 
-.. \_release-notes-snapcraft-4-8:
+.. _release-notes-snapcraft-4-8:
 
 Release notes: Snapcraft 4.8
 ============================
 
-The principle focus for Snapcraft 4.8 has been the removal of the experimental flag from `package repositories <snapcraft-package-repositories.md>`__, which has been completed.
+The principle focus for Snapcraft 4.8 has been the removal of the experimental flag from :ref:`package repositories <snapcraft-package-repositories>`, which has been completed.
 
 For general details, including installation instructions, see `Snapcraft overview <https://snapcraft.io/docs/snapcraft-overview>`__, or take a look at `Snapcraft release notes <https://snapcraft.io/docs/snapcraft-release-notes>`__ for other *Snapcraft* releases.
 
 Package repositories
 --------------------
 
-This feature is finally stable and is documented at `Snapcraft package repositories <snapcraft-package-repositories.md>`__.
+This feature is finally stable and is documented at :ref:`Snapcraft package repositories <snapcraft-package-repositories>`.
 
 -  `PR #3520 <https://github.com/snapcore/snapcraft/pull/3520>`__
 

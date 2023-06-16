@@ -1,6 +1,6 @@
 .. 8406.md
 
-.. \_deprecation-notice-6:
+.. _deprecation-notice-6:
 
 Deprecation notice: 6
 =====================
@@ -24,4 +24,4 @@ The new way to create a snap from a directory has the following syntax:
 
    snapcraft pack <directory>
 
-See `Deprecation notices <deprecation-notices.md>`__ for further announcements.
+See :ref:`Deprecation notices <deprecation-notices>` for further announcements.

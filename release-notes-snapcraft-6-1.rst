@@ -1,6 +1,6 @@
 .. 29407.md
 
-.. \_release-notes-snapcraft-6-1:
+.. _release-notes-snapcraft-6-1:
 
 Release notes: Snapcraft 6.1
 ============================

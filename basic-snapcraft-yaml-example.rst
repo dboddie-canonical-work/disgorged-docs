@@ -1,11 +1,11 @@
 .. 33074.md
 
-.. \_basic-snapcraft-yaml-example:
+.. _basic-snapcraft-yaml-example:
 
 Basic snapcraft.yaml example
 ============================
 
-The following is a complete example *snapcraft.yaml* file taken from our `Python documentation <python-apps.md>`__. It’s for an application called `yt-dlp <https://github.com/yt-dlp/yt-dlp>`__, a command line tool for parsing online videos.
+The following is a complete example *snapcraft.yaml* file taken from our :ref:`Python documentation <python-apps>`. It’s for an application called `yt-dlp <https://github.com/yt-dlp/yt-dlp>`__, a command line tool for parsing online videos.
 
 We will look at each section of the code separately and learn what it does:
 
@@ -42,7 +42,7 @@ Metadata
 
    </h2>
 
-Several `mandatory fields <snapcraft-top-level-metadata.md>`__ define and describe the application - name, version, summary and description. These fields allow end users to find snaps and install them.
+Several :ref:`mandatory fields <snapcraft-top-level-metadata>` define and describe the application - name, version, summary and description. These fields allow end users to find snaps and install them.
 
 -  **Name** - A string that defines the name of the snap. It must start with an ASCII character and can only use ASCII lowercase letters, numbers and hyphens. It must be between 1 and 40 characters in length. The name must be unique in the Snap Store.
 -  **Version** - A string that defines the version of the application to the user. Max. length is 32 characters.
@@ -72,9 +72,9 @@ Base
 
 As part of their security design, by default, snaps cannot see the root filesystem on the host. This prevents conflict with other applications and increases security. However, applications still need some location to act as their root filesystem. Furthermore, they would also benefit from common libraries (e.g. libc) being in this root filesystem rather than being bundled into each application.
 
-The `base keyword <base-snaps.md>`__ specifies a special kind of snap that provides a minimal set of libraries common to most applications. It is mounted and used as the root filesystem for the applications inside the snap. In essence, this means the snaps behave as though they were running on a system that matches the base declaration.
+The :ref:`base keyword <base-snaps>` specifies a special kind of snap that provides a minimal set of libraries common to most applications. It is mounted and used as the root filesystem for the applications inside the snap. In essence, this means the snaps behave as though they were running on a system that matches the base declaration.
 
-Several bases are available, including core18, core20, core22, etc. These bases match the Ubuntu LTS releases, e.g.: core20 library set is equivalent to Ubuntu 20.04. For most practical purposes, the use of either ``core20`` or ``core22`` is recommended, depending on the `Supported plugins <supported-plugins.md>`__ you wish to use.
+Several bases are available, including core18, core20, core22, etc. These bases match the Ubuntu LTS releases, e.g.: core20 library set is equivalent to Ubuntu 20.04. For most practical purposes, the use of either :ref:``core20`` or ``core22`` is recommended, depending on the `Supported plugins <supported-plugins>` you wish to use.
 
 .. code:: yaml
 
@@ -90,7 +90,7 @@ Confinement
 
    </h2>
 
-Security confinement distinguishes snaps from software distributed using the traditional repository methods. The `confinement mechanism <snap-confinement.md>`__ allows for a high level of isolation and security, and prevents snaps from being affected by underlying system changes, one snap another, or snaps affecting the host system.
+Security confinement distinguishes snaps from software distributed using the traditional repository methods. The :ref:`confinement mechanism <snap-confinement>` allows for a high level of isolation and security, and prevents snaps from being affected by underlying system changes, one snap another, or snaps affecting the host system.
 
 Different confinement levels describe what type of access the snap applications will have once installed on the user’s system. Confinement levels can be treated as filters that define what type of system resources the application can access outside the snap.
 
@@ -164,8 +164,8 @@ Build definition
 
 The build definition stanza comprises the apps and parts section of the snapcraft.yaml. These two sections describe how the application is going to be built, what sources and options will be used, and what permissions it will have to run (in relation to the snap’s security confinement).
 
--  The `parts <adding-parts.md>`__ section defines all the sources that will be used to build the applications inside the snaps.
--  The `apps <snapcraft-app-and-service-metadata.md>`__ section defines the command path for each application (how it will be run), optional parameters, as well as the list of permissions (plugs to interfaces) that will be granted to the application at runtime.
+-  The :ref:`parts <adding-parts>` section defines all the sources that will be used to build the applications inside the snaps.
+-  The :ref:`apps <snapcraft-app-and-service-metadata>` section defines the command path for each application (how it will be run), optional parameters, as well as the list of permissions (plugs to interfaces) that will be granted to the application at runtime.
 
 The parts definition
 --------------------
@@ -181,7 +181,7 @@ The parts definition consists of the following lines of code:
 
 The yt-dlp snap only has one part. It is built using the Python plugin, which is a Snapcraft plugin designed to simplify the building of Python applications.
 
--  plugin: This block defines the use of the Snapcraft Python plugin that will perform various language-specific commands in the background. The `python plugin <the-python-plugin.md>`__ handles Python building and its dependencies automatically. The plugin declaration has only one sub-section:
+-  plugin: This block defines the use of the Snapcraft Python plugin that will perform various language-specific commands in the background. The :ref:`python plugin <the-python-plugin>` handles Python building and its dependencies automatically. The plugin declaration has only one sub-section:
 
    -  source: defines the URL or a path of the application code that needs to be downloaded for the build. It can be a local or remote path, and can refer to a directory tree, a compressed archive or a revision control repository. In this particular case, the application is built the project’s upstream GitHub repository.
 

@@ -1,6 +1,6 @@
 .. 12463.md
 
-.. \_deprecation-notice-10:
+.. _deprecation-notice-10:
 
 Deprecation notice: 10
 ======================
@@ -15,4 +15,4 @@ This functionality has been replaced by the ``snapcraftctl set-version`` part sc
 
 For more details, see `Part scriptlets <using-external-metadata.md#meta-scriptlet>`__.
 
-See `Deprecation notices <deprecation-notices.md>`__ for further announcements.
+See :ref:`Deprecation notices <deprecation-notices>` for further announcements.

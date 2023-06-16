@@ -1,6 +1,6 @@
 .. 13097.md
 
-.. \_the-screencast-legacy-interface:
+.. _the-screencast-legacy-interface:
 
 The screencast-legacy interface
 ===============================
@@ -11,4 +11,4 @@ The screencast-legacy interface
 
 Can access common desktop screenshot, screencast and recording methods thus giving privileged access to screen output and microphone via the desktop session manager.
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

@@ -1,13 +1,13 @@
 .. 7766.md
 
-.. \_the-alsa-interface:
+.. _the-alsa-interface:
 
 The alsa interface
 ==================
 
 ``alsa`` allows access to raw ALSA audio playback and recording devices. This is equivalent to direct driver access to your audio hardware and may block other applications from recording or playing sound.
 
-To provide better audio sharing and input and output configuration, it’s recommended that most snaps access audio functionality through the system audio layer, such as PulseAudio, via the `audio-playback <the-audio-playback-interface.md>`__ and `audio-record <the-audio-record-interface.md>`__ interfaces.
+To provide better audio sharing and input and output configuration, it’s recommended that most snaps access audio functionality through the system audio layer, such as PulseAudio, via the :ref:`audio-playback <the-audio-playback-interface>` and :ref:`audio-record <the-audio-record-interface>` interfaces.
 
 However, raw access to ALSA devices using this interface can provide a slight performance advantage with input and output latency and avoid resampling which can reduce audio quality.
 
@@ -31,7 +31,7 @@ To connect a snap to the ALSA interface, run the following command:
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 

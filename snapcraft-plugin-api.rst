@@ -1,11 +1,11 @@
 .. 5124.md
 
-.. \_snapcraft-plugin-api:
+.. _snapcraft-plugin-api:
 
 Snapcraft plugin API
 ====================
 
-The process of creating a snap follows a specific `lifecycle <parts-lifecycle.md>`__ for each part. What happens during each step in the lifecycle depends on the plugin being used for that part.
+The process of creating a snap follows a specific :ref:`lifecycle <parts-lifecycle>` for each part. What happens during each step in the lifecycle depends on the plugin being used for that part.
 
 ``BasePlugin``
 --------------

@@ -1,13 +1,13 @@
 .. 10719.md
 
-.. \_release-notes-snapcraft-3-1:
+.. _release-notes-snapcraft-3-1:
 
 Release notes: Snapcraft 3.1
 ============================
 
-These are the release notes for `Snapcraft 3.1 <https://github.com/snapcore/snapcraft/releases/tag/3.1>`__, a minor release that builds on the foundations of `Snapcraft 3.0 <release-notes-snapcraft-3-0.md>`__.
+These are the release notes for `Snapcraft 3.1 <https://github.com/snapcore/snapcraft/releases/tag/3.1>`__, a minor release that builds on the foundations of :ref:`Snapcraft 3.0 <release-notes-snapcraft-3-0>`.
 
-For general details, including installation instructions, see `Snapcraft overview <snapcraft-overview.md>`__, or take a look at `Snapcraft release notes <snapcraft-release-notes.md>`__ for other *Snapcraft* releases.
+For general details, including installation instructions, see :ref:`Snapcraft overview <snapcraft-overview>`, or take a look at :ref:`Snapcraft release notes <snapcraft-release-notes>` for other *Snapcraft* releases.
 
 Build environments
 ------------------

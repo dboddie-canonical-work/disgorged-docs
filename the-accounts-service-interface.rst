@@ -1,6 +1,6 @@
 .. 7802.md
 
-.. \_the-accounts-service-interface:
+.. _the-accounts-service-interface:
 
 The accounts-service interface
 ==============================
@@ -21,7 +21,7 @@ This interface automatically connected by the `ONLY OFFICE Document Server <http
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 

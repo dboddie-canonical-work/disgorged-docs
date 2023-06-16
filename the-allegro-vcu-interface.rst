@@ -1,6 +1,6 @@
 .. 26452.md
 
-.. \_the-allegro-vcu-interface:
+.. _the-allegro-vcu-interface:
 
 The allegro-vcu interface
 =========================
@@ -11,7 +11,7 @@ This interface is intended primarily to be used with `Ubuntu Core <glossary.md#t
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 

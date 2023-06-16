@@ -1,6 +1,6 @@
 .. 7817.md
 
-.. \_c-c-applications:
+.. _c-c-applications:
 
 C/C++ applications
 ==================
@@ -25,7 +25,7 @@ Build a snap in 20 minutes
 
 Typically this guide will take around 20 minutes and will result in a working C++ application in a snap. Once complete, you’ll understand how to package C/C++ applications as snaps and deliver them to millions of Linux users. After making the snap available in the store, you’ll get access to installation metrics and tools to directly manage the delivery of updates to Linux users.
 
-   ℹ For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see `Snapcraft overview <snapcraft-overview.md>`__. For a more comprehensive breakdown of the steps involved, take a look at `Creating a snap <creating-a-snap.md>`__.
+   ℹ For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see :ref:`Snapcraft overview <snapcraft-overview>`. For a more comprehensive breakdown of the steps involved, take a look at :ref:`Creating a snap <creating-a-snap>`.
 
 Getting started
 ---------------
@@ -163,7 +163,7 @@ The base keyword defines a special kind of snap that provides a run-time environ
 Security model
 ^^^^^^^^^^^^^^
 
-To get started, we won’t `confine <snap-confinement.md>`__ this application. Unconfined applications, specified with ``devmode``, can only be released to the hidden “edge” channel where you and other developers can install them.
+To get started, we won’t :ref:`confine <snap-confinement>` this application. Unconfined applications, specified with ``devmode``, can only be released to the hidden “edge” channel where you and other developers can install them.
 
 .. code:: yaml
 
@@ -206,7 +206,7 @@ There’s also a large ``stage-packages`` section.
 
 These are the packages required by DOSBox to run, and mirror the same packages required by the binary on a standard distribution installation.
 
-For more details on autotools-specific metadata, see `The autotools plugin <the-autotools-plugin.md>`__.
+For more details on autotools-specific metadata, see :ref:`The autotools plugin <the-autotools-plugin>`.
 
 Apps
 ^^^^
@@ -313,4 +313,4 @@ Use snapcraft to push the snap to the Snap Store.
 
 If you’re happy with the result, you can commit the snapcraft.yaml to your GitHub repo and `turn on automatic builds <https://build.snapcraft.io>`__ so any further commits automatically get released to edge, without requiring you to manually build locally.
 
-Congratulations! You’ve just built and published your first C/C++ snap. For a more in-depth overview of the snap building process, see `Creating a snap <creating-a-snap.md>`__.
+Congratulations! You’ve just built and published your first C/C++ snap. For a more in-depth overview of the snap building process, see :ref:`Creating a snap <creating-a-snap>`.

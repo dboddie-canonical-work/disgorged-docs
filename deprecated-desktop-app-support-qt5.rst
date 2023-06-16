@@ -1,15 +1,15 @@
 .. 11703.md
 
-.. \_deprecated-desktop-app-support-qt5:
+.. _deprecated-desktop-app-support-qt5:
 
 [Deprecated] Desktop App support - Qt5
 ======================================
 
-   ⚠ **This tutorial is outdated.** See `Qt 5 and KDE Frameworks applications <qt5-and-kde-frameworks-applications.md>`__ for a much easier way to snap Qt 5 applications.
+   ⚠ **This tutorial is outdated.** See :ref:`Qt 5 and KDE Frameworks applications <qt5-and-kde-frameworks-applications>` for a much easier way to snap Qt 5 applications.
 
    This tutorial should only be used when you want to support architectures other than amd64, or for classic snaps.
 
-This guide explains the recommended way to make a qt5 application function correctly inside a snap. **These instructions need to be applied in addition to the instructions for**\ `creating a snap <creating-a-snap.md>`__\ **in your programming language.** For example, if your application uses the C programming language and Qt5, you also need to follow the instructions for `snapping a C/C++ application <c-c-applications.md>`__.
+This guide explains the recommended way to make a qt5 application function correctly inside a snap. **These instructions need to be applied in addition to the instructions for**\ :ref:`creating a snap <creating-a-snap>`\ **in your programming language.** For example, if your application uses the C programming language and Qt5, you also need to follow the instructions for :ref:`snapping a C/C++ application <c-c-applications>`.
 
 The `Snapcraft Desktop Helpers project <https://github.com/ubuntu/snapcraft-desktop-helpers>`__ provides the ``desktop-qt5`` part to include the Qt5 dependencies in your snap. It also includes the ``desktop-launch`` script to initialise the desktop-specific functionality before your application launches.
 

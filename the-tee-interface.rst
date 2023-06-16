@@ -1,6 +1,6 @@
 .. 26573.md
 
-.. \_the-tee-interface:
+.. _the-tee-interface:
 
 The tee interface
 =================
@@ -11,7 +11,7 @@ This interface is primarily intended to be used with `Ubuntu Core <glossary.md#t
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 
@@ -25,7 +25,7 @@ Developer details
 
    </h2>
 
-`Auto-connect <interface-management.md#the-tee-interface-heading--auto-connections>`__: no `Super-privileged <super-privileged-interfaces.md>`__: yes
+`Auto-connect <interface-management.md#the-tee-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
 
 Intended for snaps needing to access the the TEE subsystem over ``/dev/tee[0-9]*``, ``/dev/teepriv[0-0]*`` or the Qualcomm equivalent *qseecom* (Qualcomm Secure Execution Environment Communicator) at ``/dev/qseecom``.
 

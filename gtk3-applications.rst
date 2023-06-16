@@ -1,6 +1,6 @@
 .. 13483.md
 
-.. \_gtk3-applications:
+.. _gtk3-applications:
 
 GTK3 applications
 =================
@@ -24,7 +24,7 @@ Build a snap in 20 minutes
 
 Typically this guide will take around 20 minutes and will result in a working GTK application in a snap. Once complete, you’ll understand how to package GTK3 applications as snaps and deliver them to millions of Linux users. After making the snap available in the store, you’ll get access to installation metrics and tools to directly manage the delivery of updates to Linux users.
 
-   ⓘ For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see `Snapcraft overview <snapcraft-overview.md>`__. For a more comprehensive breakdown of the steps involved, take a look at `Creating a snap <creating-a-snap.md>`__.
+   ⓘ For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see :ref:`Snapcraft overview <snapcraft-overview>`. For a more comprehensive breakdown of the steps involved, take a look at :ref:`Creating a snap <creating-a-snap>`.
 
 Getting started
 ---------------
@@ -103,7 +103,7 @@ The ``base`` keyword defines a special kind of snap that provides a run-time env
 Security model
 ^^^^^^^^^^^^^^
 
-We’re going to use *strict* `confinement <snap-confinement.md>`__ for Foliate. Strictly confined snaps run in complete isolation, up to a minimal access level that’s deemed always safe.
+We’re going to use *strict* :ref:`confinement <snap-confinement>` for Foliate. Strictly confined snaps run in complete isolation, up to a minimal access level that’s deemed always safe.
 
 .. code:: yaml
 
@@ -130,7 +130,7 @@ If you don’t want your command prefixed you can request an alias for it on the
          - dbus-daemon
        common-id: com.github.johnfactotum.Foliate
 
-This application uses the ```gnome-3-38`` extension <the-gnome-3-38-extension.md>`__. This will make GTK and Gnome libraries available to the snap at runtime and it will configure the runtime environment of the application so that all desktop functionality is correctly initialised.
+This application uses the :ref:```gnome-3-38`` extension <the-gnome-3-38-extension>`. This will make GTK and Gnome libraries available to the snap at runtime and it will configure the runtime environment of the application so that all desktop functionality is correctly initialised.
 
 The ``common-id`` property is used to link this application to the AppStream metadata specified further down below. This will cause this ``app`` to use the ``.desktop`` launcher specified in the AppStream file.
 
@@ -139,7 +139,7 @@ Parts
 
 Parts define how to build your app. Parts can be anything: programs, libraries, or other assets needed to create and run your application. In this case we have one: the Foliate source release tarball. In other cases these can point to local directories, remote git repositories or other revision control systems.
 
-Before building the part, the dependencies listed as ``build-packages`` are installed. `The Meson plugin <the-meson-plugin.md>`__ then uses ``meson``, ``ninja build`` and ``ninja install`` to build the part.
+Before building the part, the dependencies listed as :ref:``build-packages`` are installed. `The Meson plugin <the-meson-plugin>` then uses ``meson``, ``ninja build`` and ``ninja install`` to build the part.
 
 .. code:: yaml
 
@@ -185,7 +185,7 @@ Many GTK3 applications require access to DBus in order to run correctly. However
 Layouts
 ~~~~~~~
 
-The final section uses `Snap layouts <snap-layouts.md>`__ to make the *gjs* executable appear in the correct location within the snap:
+The final section uses :ref:`Snap layouts <snap-layouts>` to make the *gjs* executable appear in the correct location within the snap:
 
 .. code:: yaml
 
@@ -282,4 +282,4 @@ Use snapcraft to push the snap to the Snap Store.
 
 If you’re happy with the result, you can commit the snapcraft.yaml to your GitHub repo and `turn on automatic builds <https://build.snapcraft.io>`__ so any further commits automatically get released to edge, without requiring you to manually build locally.
 
-Congratulations! You’ve just built and published your first GTK 3 snap. For a more in-depth overview of the snap building process, see `Creating a snap <creating-a-snap.md>`__.
+Congratulations! You’ve just built and published your first GTK 3 snap. For a more in-depth overview of the snap building process, see :ref:`Creating a snap <creating-a-snap>`.

@@ -1,6 +1,6 @@
 .. 13753.md
 
-.. \_qt5-and-kde-frameworks-applications:
+.. _qt5-and-kde-frameworks-applications:
 
 Qt5 and KDE Frameworks Applications
 ===================================
@@ -23,7 +23,7 @@ Build a snap in 20 minutes
 
 Typically this guide will take around 20 minutes and will result in a working Qt5 application in a snap. Once complete, you’ll understand how to package Qt5 applications as snaps and deliver them to millions of Linux users. After making the snap available in the store, you’ll get access to installation metrics and tools to directly manage the delivery of updates to Linux users.
 
-   ⓘ For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see `Snapcraft overview <snapcraft-overview.md>`__. For a more comprehensive breakdown of the steps involved, take a look at `Creating a snap <creating-a-snap.md>`__.
+   ⓘ For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see :ref:`Snapcraft overview <snapcraft-overview>`. For a more comprehensive breakdown of the steps involved, take a look at :ref:`Creating a snap <creating-a-snap>`.
 
 Getting started
 ---------------
@@ -125,7 +125,7 @@ The base keyword defines a special kind of snap that provides a run-time environ
 Security model
 ^^^^^^^^^^^^^^
 
-To get started, we won’t `confine <snap-confinement.md>`__ this application. Unconfined applications, specified with ``devmode``, can only be released to the hidden “edge” channel where you and other developers can install them. After you get the snap working in ``devmode`` confinement, you can switch to strict mode and figure out which interfaces (plugs) the snap uses.
+To get started, we won’t :ref:`confine <snap-confinement>` this application. Unconfined applications, specified with ``devmode``, can only be released to the hidden “edge” channel where you and other developers can install them. After you get the snap working in ``devmode`` confinement, you can switch to strict mode and figure out which interfaces (plugs) the snap uses.
 
 .. code:: yaml
 
@@ -136,7 +136,7 @@ Parts
 
 Parts define how to build your app. Parts can be anything: programs, libraries, or other assets needed to create and run your application. In this case we have two: the KCalc source release tarball and a number of runtime dependencies of KCalc. In other cases these can point to local directories, remote git repositories or other revision control systems.
 
-Before building the part, the build dependencies listed as ``build-packages`` and ``build-snaps`` are installed. `The CMake plugin <the-cmake-plugin.md>`__ then uses ``cmake`` to build the part. The ``kde-frameworks-5-core18-sdk`` snap contains most build dependencies to build Qt5 and KDE applications. However, this snap also requires some tools from the ``kde-frameworks-5-core18`` runtime itself.
+Before building the part, the build dependencies listed as :ref:``build-packages`` and ``build-snaps`` are installed. `The CMake plugin <the-cmake-plugin>` then uses ``cmake`` to build the part. The ``kde-frameworks-5-core18-sdk`` snap contains most build dependencies to build Qt5 and KDE applications. However, this snap also requires some tools from the ``kde-frameworks-5-core18`` runtime itself.
 
 .. code:: yaml
 
@@ -190,9 +190,9 @@ If you don’t want your command prefixed you can request an alias for it on the
          - network-bind
          - pulseaudio
 
-You can see we use the ```kde-neon`` extension <the-kde-neon-extension.md>`__. This extension will make Qt5 and KDE libraries available to the snap at run time and it will configure the run time environment of the application so that all desktop functionality is correctly initialised.
+You can see we use the :ref:```kde-neon`` extension <the-kde-neon-extension>`. This extension will make Qt5 and KDE libraries available to the snap at run time and it will configure the run time environment of the application so that all desktop functionality is correctly initialised.
 
-The ``common-id`` field is used to link the AppStream metadata to this application. As a result, we don’t need to `manually specify the ``.desktop`` entry file <desktop-files-for-menu-integration.md>`__ because it’s already defined in AppStream. See `Using AppStream metadata <using-external-metadata.md#qt5-and-kde-frameworks-applications-heading--appstream>`__ for more information.
+The :ref:``common-id`` field is used to link the AppStream metadata to this application. As a result, we don’t need to `manually specify the ``.desktop`` entry file <desktop-files-for-menu-integration>` because it’s already defined in AppStream. See `Using AppStream metadata <using-external-metadata.md#qt5-and-kde-frameworks-applications-heading--appstream>`__ for more information.
 
 Building the snap
 ~~~~~~~~~~~~~~~~~
@@ -278,4 +278,4 @@ Use snapcraft to push the snap to the Snap Store.
 
 If you’re happy with the result, you can commit the snapcraft.yaml to your GitHub repo and `turn on automatic builds <https://build.snapcraft.io>`__ so any further commits automatically get released to edge, without requiring you to manually build locally.
 
-Congratulations! You’ve just built and published your first Go snap. For a more in-depth overview of the snap building process, see `Creating a snap <creating-a-snap.md>`__.
+Congratulations! You’ve just built and published your first Go snap. For a more in-depth overview of the snap building process, see :ref:`Creating a snap <creating-a-snap>`.

@@ -1,13 +1,13 @@
 .. 4972.md
 
-.. \_architectures:
+.. _architectures:
 
 Architectures
 =============
 
-By default, `Snapcraft <snapcraft-overview.md>`__ builds a snap to run on the same architecture as the build environment. This behaviour can be modified with an optional root ``architectures`` keyword in the snap’s `snapcraft.yaml <the-snapcraft-yaml-schema.md>`__.
+By default, :ref:`Snapcraft <snapcraft-overview>` builds a snap to run on the same architecture as the build environment. This behaviour can be modified with an optional root :ref:``architectures`` keyword in the snap’s `snapcraft.yaml <the-snapcraft-yaml-schema>`.
 
-Architecture features and syntax are dependent on which `base <base-snaps.md>`__ is being used, as outlined below: - `base: core22 <#architectures-heading--core22>`__ - `base: core20 \| core18 \| core <#architectures-heading--core20-core18>`__
+Architecture features and syntax are dependent on which :ref:`base <base-snaps>` is being used, as outlined below: - `base: core22 <#architectures-heading--core22>`__ - `base: core20 \| core18 \| core <#architectures-heading--core20-core18>`__
 
 .. raw:: html
 
@@ -353,4 +353,4 @@ Rather than manage build revisions separately, a build-set’s revisions can be 
 
 For example, without ``build-error: ignore``, and given a build set of ``[amd64, i386, armhf]``. If the ``armhf`` build fails, the entire build-set is considered to have failed, regardless of whether or not ``amd64`` and ``i386`` builds succeeded.
 
-Even without local access to a specific hardware architecture, ``snapcraft remote-build`` enables anyone to run a multi-architecture snap build process on remote servers using `Launchpad <https://launchpad.net/>`__. See `Remote build <remote-build.md>`__ for more details.
+Even without local access to a specific hardware architecture, ``snapcraft remote-build`` enables anyone to run a multi-architecture snap build process on remote servers using `Launchpad <https://launchpad.net/>`__. See :ref:`Remote build <remote-build>` for more details.

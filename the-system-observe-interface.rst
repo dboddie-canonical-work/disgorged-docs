@@ -1,6 +1,6 @@
 .. 7921.md
 
-.. \_the-system-observe-interface:
+.. _the-system-observe-interface:
 
 The system-observe interface
 ============================
@@ -9,4 +9,4 @@ The system-observe interface
 
 **Auto-connect**: no
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

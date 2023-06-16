@@ -1,6 +1,6 @@
 .. 6273.md
 
-.. \_adding-opengl-gpu-support-to-a-snap:
+.. _adding-opengl-gpu-support-to-a-snap:
 
 Adding OpenGL/GPU support to a snap
 ===================================
@@ -28,7 +28,7 @@ You need to include the appropriate user space “drivers” in the snap to expo
 Configure environment
 ---------------------
 
-Graphical applications and GPU libraries require environment configuration to function correctly. The `desktop helpers project <https://github.com/ubuntu/snapcraft-desktop-helpers>`__ provides scripts that do additional setup to ensure toolkits, audio stacks and graphics drivers are correctly configured when your application starts. If your application uses `GTK <desktop-app-support-gtk.md>`__, `Qt <desktop-app-support-qt.md>`__, or `another desktop toolkit <desktop-applications.md>`__, then follow the instructions for that toolkit. The ``desktop-launch`` script for that toolkit will also take care of GPU library configuration.
+Graphical applications and GPU libraries require environment configuration to function correctly. The `desktop helpers project <https://github.com/ubuntu/snapcraft-desktop-helpers>`__ provides scripts that do additional setup to ensure toolkits, audio stacks and graphics drivers are correctly configured when your application starts. If your application uses :ref:`GTK <desktop-app-support-gtk>`, :ref:`Qt <desktop-app-support-qt>`, or :ref:`another desktop toolkit <desktop-applications>`, then follow the instructions for that toolkit. The ``desktop-launch`` script for that toolkit will also take care of GPU library configuration.
 
 If your application, like most games, does not use a common desktop toolkit, then you can use the ``desktop-glib-only`` helper to do the initialisation of desktop features such as GPU, sound and fonts. The first step is to include a dependency on the ``desktop-glib-only`` part in the part of your application.
 
@@ -63,7 +63,7 @@ If none if the prebuilt helpers are suitable for your application, you can creat
 Permit access to GPU hardware
 -----------------------------
 
-The `snap sandbox <snap-confinement.md>`__ doesn’t allow access to GPU hardware by default. You can enable this access by adding the ```opengl`` interface <the-opengl-interface.md>`__ to the ``plugs`` section of your application in ``apps``.
+The :ref:`snap sandbox <snap-confinement>` doesn’t allow access to GPU hardware by default. You can enable this access by adding the :ref:```opengl`` interface <the-opengl-interface>` to the ``plugs`` section of your application in ``apps``.
 
 .. code:: yaml
 
@@ -72,10 +72,10 @@ The `snap sandbox <snap-confinement.md>`__ doesn’t allow access to GPU hardwar
        plugs:
          - opengl
 
-Learn more about `interfaces and the available plugs <interface-management.md>`__. Including other `desktop interfaces <the-desktop-interfaces.md>`__ might be required, for example to connect to the X server.
+Learn more about :ref:`interfaces and the available plugs <interface-management>`. Including other :ref:`desktop interfaces <the-desktop-interfaces>` might be required, for example to connect to the X server.
 
 More information
 ----------------
 
--  `Overview of snapcraft support for graphical applications and toolkits <desktop-applications.md>`__
+-  :ref:`Overview of snapcraft support for graphical applications and toolkits <desktop-applications>`
 -  See the `snapcraft.yaml for Xonotic <https://github.com/snapcrafters/xonotic/blob/master/snap/snapcraft.yaml>`__ for a more complete example.

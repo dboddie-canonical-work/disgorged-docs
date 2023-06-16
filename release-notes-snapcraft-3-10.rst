@@ -1,13 +1,13 @@
 .. 15773.md
 
-.. \_release-notes-snapcraft-3-10:
+.. _release-notes-snapcraft-3-10:
 
 Release notes: Snapcraft 3.10
 =============================
 
 These are the release notes for `Snapcraft 3.10 <https://github.com/snapcore/snapcraft/releases/tag/3.10>`__.
 
-For general details, including installation instructions, see `Snapcraft overview <snapcraft-overview.md>`__, or take a look at `Snapcraft release notes <snapcraft-release-notes.md>`__ for other *Snapcraft* releases.
+For general details, including installation instructions, see :ref:`Snapcraft overview <snapcraft-overview>`, or take a look at :ref:`Snapcraft release notes <snapcraft-release-notes>` for other *Snapcraft* releases.
 
 New *core* features
 -------------------
@@ -15,7 +15,7 @@ New *core* features
 Configurable system usernames
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Snapcraft now supports the configuration of `system usernames <system-usernames.md>`__ for daemons. This functionality was recently added to snapd, and enables a daemon to run as the user specified within an application’s ‘command’ entry, for example, among other functions.
+Snapcraft now supports the configuration of :ref:`system usernames <system-usernames>` for daemons. This functionality was recently added to snapd, and enables a daemon to run as the user specified within an application’s ‘command’ entry, for example, among other functions.
 
 Primed stage packages
 ~~~~~~~~~~~~~~~~~~~~~
@@ -63,7 +63,7 @@ Matches:
 Remote Build
 ~~~~~~~~~~~~
 
-Many improvements have been made to `Remote build <remote-build.md>`__, including the removal of unnecessary options such as entering a Launchpad ID, which is provided via the login process.
+Many improvements have been made to :ref:`Remote build <remote-build>`, including the removal of unnecessary options such as entering a Launchpad ID, which is provided via the login process.
 
 To build snaps, ``remote build`` previously used snapcraft from the ``edge``\ channel. From this release, snaps are created using snapcraft from the ``stable`` channel.
 

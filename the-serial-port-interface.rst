@@ -1,6 +1,6 @@
 .. 7913.md
 
-.. \_the-serial-port-interface:
+.. _the-serial-port-interface:
 
 The serial-port interface
 =========================
@@ -22,7 +22,7 @@ Once connected, the consuming snap can use the device via the path specified by 
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 
@@ -44,9 +44,9 @@ Developer details
    -  ``usb-product`` (slot): integer representing the USB Product ID, must be in range 0 <= vid <= 65535
    -  ``path`` (slot): path of the form ``/dev/serial-port-...`` where a symlink will be created to the device e.g. ``/dev/serial-port-mydevice``
 
-`Hardware IO interfaces <hardware-io-interfaces.md>`__ covers some general considerations common to these kinds of devices.
+:ref:`Hardware IO interfaces <hardware-io-interfaces>` covers some general considerations common to these kinds of devices.
 
-To use a serial-port device, the snap developer must add ``plugs: [ serial-port ]`` to a snap’s `snapcraft.yaml <the-snapcraft-yaml-schema.md>`__. The snap user can then access a specific serial-port device with an `interface connection <interface-management.md#the-serial-port-interface-heading--manual-connections>`__.
+To use a serial-port device, the snap developer must add :ref:``plugs: [ serial-port ]`` to a snap’s `snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific serial-port device with an `interface connection <interface-management.md#the-serial-port-interface-heading--manual-connections>`__.
 
 .. raw:: html
 

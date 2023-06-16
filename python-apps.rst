@@ -1,6 +1,6 @@
 .. 6741.md
 
-.. \_python-apps:
+.. _python-apps:
 
 Python apps
 ===========
@@ -13,7 +13,7 @@ Snaps address these gaps, while building upon the work you’ve already done to 
 
 [note type=“positive” status=“Snapcraft overview”]
 
-For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see `Snapcraft overview <snapcraft-overview.md>`__. For a more comprehensive breakdown of the steps involved, take a look at `Creating a snap <creating-a-snap.md>`__. [/note]
+For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see :ref:`Snapcraft overview <snapcraft-overview>`. For a more comprehensive breakdown of the steps involved, take a look at :ref:`Creating a snap <creating-a-snap>`. [/note]
 
 Getting started
 ---------------
@@ -74,7 +74,7 @@ The base keyword declares which *base snap* to use with your project. A base sna
 
    base: core20
 
-As used above, ```core20`` <https://snapcraft.io/core20>`__ is the current standard base for snap building and is based on `Ubuntu 20.04 LTS <http://releases.ubuntu.com/20.04/>`__. See `Base snaps <base-snaps.md>`__ for more details.
+As used above, ```core20`` <https://snapcraft.io/core20>`__ is the current standard base for snap building and is based on `Ubuntu 20.04 LTS <http://releases.ubuntu.com/20.04/>`__. See :ref:`Base snaps <base-snaps>` for more details.
 
 Security model
 ~~~~~~~~~~~~~~
@@ -110,13 +110,13 @@ The Python plugin can be used by either Python 2 or Python 3 based parts using a
 -  a requirements.txt file used to import Python modules
 -  packages installed directly from pip
 
-Our example project uses neither of the above but they can be added to your own project with the ``python-requirement`` and ``python-packages`` keywords, as described in our `Python plugin documentation <the-python-plugin.md>`__.
+Our example project uses neither of the above but they can be added to your own project with the :ref:``python-requirement`` and ``python-packages`` keywords, as described in our `Python plugin documentation <the-python-plugin>`.
 
 The ``source`` keyword points to the root of your Python project and can be a local directory or remote Git repository. Note that **your Python project should be using setuptools** and you should be able to run ``python setup.py bdist_wheel`` without errors. If either of these are not true, please consult the `setuptools documentation <https://setuptools.readthedocs.io/en/latest/>`__.
 
 If you need additional packages, the ``stage-packages`` keyword simply lists any package dependencies needed to run your app. A corresponding ``build-packages`` keyword can also be used to specify packages only needed during the build phase.
 
-For more details on Python-specific metadata, see `The Python plugin <the-python-plugin.md>`__.
+For more details on Python-specific metadata, see :ref:`The Python plugin <the-python-plugin>`.
 
 Apps
 ~~~~
@@ -223,4 +223,4 @@ Use snapcraft to push the snap to the Snap Store.
 
 If you’re happy with the result, you can commit the snapcraft.yaml to your GitHub repo and `turn on automatic builds <https://build.snapcraft.io>`__ so any further commits automatically get released to edge, without requiring you to manually build locally.
 
-Congratulations! You’ve just built and published your first Python snap. For a more in-depth overview of the snap building process, see `Creating a snap <creating-a-snap.md>`__.
+Congratulations! You’ve just built and published your first Python snap. For a more in-depth overview of the snap building process, see :ref:`Creating a snap <creating-a-snap>`.

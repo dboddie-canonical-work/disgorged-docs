@@ -1,6 +1,6 @@
 .. 23142.md
 
-.. \_release-notes-snapcraft-4-5-2:
+.. _release-notes-snapcraft-4-5-2:
 
 Release notes: Snapcraft 4.5.2
 ==============================
@@ -13,7 +13,7 @@ Highlights for this release include:
 -  specify arch-specific bundle directories with the Flutter plugin
 -  build providers will now clean the build environment when the project directory changes
 
-For general details, including installation instructions, see `Snapcraft overview <snapcraft-overview.md>`__, or take a look at `Snapcraft release notes <snapcraft-release-notes.md>`__ for other *Snapcraft* releases.
+For general details, including installation instructions, see :ref:`Snapcraft overview <snapcraft-overview>`, or take a look at :ref:`Snapcraft release notes <snapcraft-release-notes>` for other *Snapcraft* releases.
 
 Full list of changes
 --------------------

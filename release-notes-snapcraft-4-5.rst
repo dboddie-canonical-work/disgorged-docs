@@ -1,6 +1,6 @@
 .. 22786.md
 
-.. \_release-notes-snapcraft-4-5:
+.. _release-notes-snapcraft-4-5:
 
 Release notes: Snapcraft 4.5
 ============================
@@ -14,7 +14,7 @@ Highlights for this release include:
 -  enable 7z, bzr, hg, svn, zip for non-linux sources
 -  port of the *qmake* plugin to v2 of the plugin spec
 
-For general details, including installation instructions, see `Snapcraft overview <snapcraft-overview.md>`__, or take a look at `Snapcraft release notes <snapcraft-release-notes.md>`__ for other *Snapcraft* releases.
+For general details, including installation instructions, see :ref:`Snapcraft overview <snapcraft-overview>`, or take a look at :ref:`Snapcraft release notes <snapcraft-release-notes>` for other *Snapcraft* releases.
 
 Full list of changes
 --------------------

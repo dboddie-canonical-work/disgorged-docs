@@ -1,6 +1,6 @@
 .. 697.md
 
-.. \_the-kernel-snap:
+.. _the-kernel-snap:
 
 The kernel snap
 ===============
@@ -21,6 +21,6 @@ The current layout for a kernel snap is straightforward:
 -  ``initrd.img`` - The respective initrd image
 -  ``modules/<version>/`` - Kernel modules; version must match the one in ``snap.yaml``
 -  ``firmware/`` - Optional firmware files.
--  ``dtbs/`` - Optional binary device-tree files, if `gadget.yaml <gadget-snaps.md>`__ states ``device-tree-origin: kernel``
+-  :ref:``dtbs/`` - Optional binary device-tree files, if `gadget.yaml <gadget-snaps>` states ``device-tree-origin: kernel``
 
 Sample configuration files may be found in the reference gadget snaps.

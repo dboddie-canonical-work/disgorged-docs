@@ -1,6 +1,6 @@
 .. 1325.md
 
-.. \_join-snapcrafters:
+.. _join-snapcrafters:
 
 Join Snapcrafters
 =================

@@ -1,6 +1,6 @@
 .. 2042.md
 
-.. \_the-desktop-interfaces:
+.. _the-desktop-interfaces:
 
 The desktop interfaces
 ======================
@@ -30,17 +30,17 @@ Other desktop interfaces
 
 Many other optional interfaces exist depending on what the app needs:
 
--  `audio-playback <the-audio-playback-interface.md>`__ and `audio-record <the-audio-record-interface.md>`__: play and/or record audio
--  `browser-support <the-browser-support-interface.md>`__: access required for browsers and applications built on top of browser technologies (eg, electron)
--  `cups-control <the-cups-control-interface.md>`__: for printing via CUPS directly
--  `dbus <the-dbus-interface.md>`__: allow access to app via a well-known DBus connection name
--  `gsettings <the-gsettings-interface.md>`__: read/write access to global session settings
--  `home <the-home-interface.md>`__: read/write access to non-hidden files in $HOME
--  `mpris <the-mpris-interface.md>`__: allow other processes to use this snap’s MPRIS DBus API to control media playback
--  `opengl <the-opengl-interface.md>`__: direct access of OpenGL and EGL devices
--  `password-manager-service <the-password-manager-service-interface.md>`__: read/write access to saved passwords
--  `removable-media <the-removable-media-interface.md>`__: access files on removable media
--  `screen-inhibit-control <the-screen-inhibit-control-interface.md>`__: prevent screen sleep/lock
+-  :ref:`audio-playback <the-audio-playback-interface>` and :ref:`audio-record <the-audio-record-interface>`: play and/or record audio
+-  :ref:`browser-support <the-browser-support-interface>`: access required for browsers and applications built on top of browser technologies (eg, electron)
+-  :ref:`cups-control <the-cups-control-interface>`: for printing via CUPS directly
+-  :ref:`dbus <the-dbus-interface>`: allow access to app via a well-known DBus connection name
+-  :ref:`gsettings <the-gsettings-interface>`: read/write access to global session settings
+-  :ref:`home <the-home-interface>`: read/write access to non-hidden files in $HOME
+-  :ref:`mpris <the-mpris-interface>`: allow other processes to use this snap’s MPRIS DBus API to control media playback
+-  :ref:`opengl <the-opengl-interface>`: direct access of OpenGL and EGL devices
+-  :ref:`password-manager-service <the-password-manager-service-interface>`: read/write access to saved passwords
+-  :ref:`removable-media <the-removable-media-interface>`: access files on removable media
+-  :ref:`screen-inhibit-control <the-screen-inhibit-control-interface>`: prevent screen sleep/lock
 
 While developers might choose to use any of the above interfaces as needed, it should be noted that many are so-called ‘transitional’ interfaces. For example, ``gsettings`` allows read/write access to all settings and ``home`` allows read/write access to all non-hidden user data. Like with the common services in ``desktop-legacy``, as these other services are made safe or new ones designed to replace them, they will be added to the ``desktop`` interface. `XDG desktop portals </t/xdg-desktop-portals/17331/t/xdg-desktop-portals/17331>`__, for example provide safe APIs for opening files and printing.
 
@@ -203,13 +203,13 @@ For the interfaces listed above that were not already discussed, see https://git
 Extra information
 -----------------
 
-Graphical applications also require additional libraries and environment configuration to function correctly inside a snap. Snapcraft has various tools to help you with that. Read the `snapping desktop applications <desktop-applications.md>`__ documentation for more information about these tools. Please feel free to ask questions in the `forum <https://forum.snapcraft.io>`__ or on `Rocketchat <https://rocket.ubuntu.com/channel/snapcraft>`__ if you are having trouble.
+Graphical applications also require additional libraries and environment configuration to function correctly inside a snap. Snapcraft has various tools to help you with that. Read the :ref:`snapping desktop applications <desktop-applications>` documentation for more information about these tools. Please feel free to ask questions in the `forum <https://forum.snapcraft.io>`__ or on `Rocketchat <https://rocket.ubuntu.com/channel/snapcraft>`__ if you are having trouble.
 
 The ``snappy-debug`` tool can help identify interfaces your snap needs. See the `forum <https://snapcraft.io/docs/security-policy-and-sandboxing>`__ for details.
 
 References
 ----------
 
--  `Supported Interfaces <supported-interfaces.md>`__
+-  :ref:`Supported Interfaces <supported-interfaces>`
 -  https://snapcraft.io/docs/desktop-interfaces-moving-forward
 -  https://github.com/ubuntu/snapcraft-desktop-helpers

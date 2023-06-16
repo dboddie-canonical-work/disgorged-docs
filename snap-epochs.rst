@@ -1,6 +1,6 @@
 .. 10316.md
 
-.. \_snap-epochs:
+.. _snap-epochs:
 
 Snap epochs
 ===========
@@ -28,7 +28,7 @@ Defining an epoch
 
 Applications and their data formats are constantly evolving, and this requires applications to periodically break data compatibility with older versions. When this happens, applications and users often need to carefully manage data migration from one version to another, and this is where epochs can help.
 
-By default, snaps have an epoch of ‘0’. When a new version breaks data compatibility with this old version, incrementing the epoch in the new release stops those old users automatically refreshing to the new version. To do this, add the following to your snap’s `snapcraft.yaml <the-snapcraft-yaml-schema.md>`__:
+By default, snaps have an epoch of ‘0’. When a new version breaks data compatibility with this old version, incrementing the epoch in the new release stops those old users automatically refreshing to the new version. To do this, add the following to your snap’s :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>`:
 
 .. code:: yaml
 
@@ -50,7 +50,7 @@ Epochs alone track the format used but do not automatically migrate user data be
 
    ⓘ *snapd* does not track which users have accessed a snap, or whether a user’s home directory is still accessible, or even if a user’s home directory is located in ``/home/<user>``. Similarly, epochs cannot automatically safeguard migrating version-dependent data in ``$SNAP_COMMON`` because, if a refresh fails, there’s no guaranteed way to retrieve the old data; ``snap revert`` will not bring the data back
 
-Your own data migration strategy could use `hooks <supported-snap-hooks.md>`__ within your *snapcraft.yaml*, or rely on functionality within your application at run-time.
+Your own data migration strategy could use :ref:`hooks <supported-snap-hooks>` within your *snapcraft.yaml*, or rely on functionality within your application at run-time.
 
 When you have confidence in a migration process, you can then label the new epoch with an asterisk (*) to indicate its compatibility with old data versions.
 

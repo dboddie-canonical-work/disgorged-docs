@@ -1,6 +1,6 @@
 .. 6747.md
 
-.. \_node-apps:
+.. _node-apps:
 
 Node apps
 =========
@@ -23,7 +23,7 @@ Build a snap in 20 minutes
 
 Ready to get started? By the end of this guide, you’ll understand how to make a snap of your Node.js app that can be published in the `Snap Store <https://snapcraft.io/store>`__, showcasing it to millions of Linux users.
 
-   ℹ For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see `Snapcraft overview <snapcraft-overview.md>`__. For a more comprehensive breakdown of the steps involved, take a look at `Creating a snap <creating-a-snap.md>`__.
+   ℹ For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see :ref:`Snapcraft overview <snapcraft-overview>`. For a more comprehensive breakdown of the steps involved, take a look at :ref:`Creating a snap <creating-a-snap>`.
 
 Getting started
 ---------------
@@ -91,7 +91,7 @@ The base keyword declares which *base snap* to use with your project. A base sna
 
 As used above, ```core20`` <https://snapcraft.io/core20>`__ is the current standard base for snap building and is based on `Ubuntu 20.04 LTS <http://releases.ubuntu.com/20.04/>`__.
 
-See `Base snaps <base-snaps.md>`__ for more details.
+See :ref:`Base snaps <base-snaps>` for more details.
 
 Security model
 ~~~~~~~~~~~~~~
@@ -121,7 +121,7 @@ Parts define what sources are needed to assemble your app. Parts can be anything
        npm-node-version: 14.16.1
        source: .
 
-The `npm plugin <the-npm-plugin.md>`__ builds upon the work you’ve already done to describe your app’s dependencies in your package.json. It will automatically include these in your snap.
+The :ref:`npm plugin <the-npm-plugin>` builds upon the work you’ve already done to describe your app’s dependencies in your package.json. It will automatically include these in your snap.
 
 The plugin also needs to know which version of Node to bundle. This is specified with the ``npm-node-version`` keyword.
 
@@ -268,4 +268,4 @@ Use snapcraft to push the snap to the Snap Store.
 
 If you’re happy with the result, you can commit the snapcraft.yaml to your GitHub repo and `turn on automatic builds <https://build.snapcraft.io>`__ so any further commits automatically get released to edge, without requiring you to manually build locally.
 
-Congratulations! You’ve just built and published your first Node snap. For a more in-depth overview of the snap building process, see `Creating a snap <creating-a-snap.md>`__.
+Congratulations! You’ve just built and published your first Node snap. For a more in-depth overview of the snap building process, see :ref:`Creating a snap <creating-a-snap>`.

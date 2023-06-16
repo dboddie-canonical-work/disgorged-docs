@@ -1,15 +1,15 @@
 .. 8973.md
 
-.. \_snapcraft-filesets:
+.. _snapcraft-filesets:
 
 Snapcraft filesets
 ==================
 
-A *fileset* is used within `snapcraft.yaml <the-snapcraft-yaml-schema.md>`__ to represent a group of files, or a single file, when `creating a snap <snapcraft-overview.md>`__.
+A *fileset* is used within :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>` to represent a group of files, or a single file, when :ref:`creating a snap <snapcraft-overview>`.
 
-[note type=“caution” status=“Snapcraft 7 and core22”] Filesets do not currently work when building snaps with ``core22`` `base snaps <base-snaps.md>`__ and Snapcraft 7.x . [/note]
+[note type=“caution” status=“Snapcraft 7 and core22”] Filesets do not currently work when building snaps with :ref:``core22`` `base snaps <base-snaps>` and Snapcraft 7.x . [/note]
 
-They’re useful when moving files into the *stage* and *prime* areas of the build process (see `Snapcraft lifecycle <parts-lifecycle.md>`__ for more details) as they can be referenced individually, rather than always having to construct a list of filenames.
+They’re useful when moving files into the *stage* and *prime* areas of the build process (see :ref:`Snapcraft lifecycle <parts-lifecycle>` for more details) as they can be referenced individually, rather than always having to construct a list of filenames.
 
 A fileset is implemented as a YAML map between the fileset name (the key) and a list of corresponding filenames for each fileset. This list can be built from any of the following:
 
@@ -27,7 +27,7 @@ The ``*`` (asterisk) wildcard glob returns all the files in that path. Conversel
 
 Filenames are relative to the part install directory, eg. ``parts/<part-name>/install``.
 
-If you have used the `organize <snapcraft-parts-metadata.md>`__ keyword to rename files from your snapcraft.yaml part, your fileset will be built from filenames *after* they’re renamed.
+If you have used the :ref:`organize <snapcraft-parts-metadata>` keyword to rename files from your snapcraft.yaml part, your fileset will be built from filenames *after* they’re renamed.
 
 Conflicting rules example
 -------------------------

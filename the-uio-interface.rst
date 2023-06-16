@@ -1,6 +1,6 @@
 .. 16041.md
 
-.. \_the-uio-interface:
+.. _the-uio-interface:
 
 The uio interface
 =================
@@ -13,7 +13,7 @@ The slot is intended to be implemented by a gadget snap and is not provided by t
 
 Requires snapd version *2.44+*.
 
-To use the uio device, the snap developer must add ``plugs: [ uio ]`` to a snap’s `snapcraft.yaml <the-snapcraft-yaml-schema.md>`__. The snap user can then access a specific disk partition with an `interface connection <interface-management.md#the-uio-interface-heading--manual-connections>`__.
+To use the uio device, the snap developer must add :ref:``plugs: [ uio ]`` to a snap’s `snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific disk partition with an `interface connection <interface-management.md#the-uio-interface-heading--manual-connections>`__.
 
 Use ``snap interface uio`` to see which disk partitions are available on the system for snaps to use:
 
@@ -28,4 +28,4 @@ Use ``snap interface uio`` to see which disk partitions are available on the sys
 
 Once connected, the consuming snap can use the device via the path specified by the connected slot.
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

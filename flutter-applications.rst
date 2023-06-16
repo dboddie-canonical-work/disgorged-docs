@@ -1,6 +1,6 @@
 .. 18768.md
 
-.. \_flutter-applications:
+.. _flutter-applications:
 
 Flutter applications
 ====================
@@ -21,7 +21,7 @@ Build a snap in 20 minutes
 
 Ready to get started? By the end of this guide, you’ll understand how to make a snap of your Flutter app that can be published in the `Snap Store <https://snapcraft.io/store>`__, showcasing it to millions of Linux users.
 
-   ℹ For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see `Snapcraft overview <snapcraft-overview.md>`__. For a more comprehensive breakdown of the steps involved, take a look at `Creating a snap <creating-a-snap.md>`__.
+   ℹ For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see :ref:`Snapcraft overview <snapcraft-overview>`. For a more comprehensive breakdown of the steps involved, take a look at :ref:`Creating a snap <creating-a-snap>`.
 
 Getting started
 ---------------
@@ -100,7 +100,7 @@ The base keyword declares which *base snap* to use with your project. A base sna
 
 As used above, ```core18`` <https://snapcraft.io/core18>`__ is the current standard base for snap building and is based on `Ubuntu 18.04 LTS <http://releases.ubuntu.com/18.04/>`__.
 
-See `Base snaps <base-snaps.md>`__ for more details.
+See :ref:`Base snaps <base-snaps>` for more details.
 
 Parts
 ~~~~~
@@ -115,9 +115,9 @@ Parts define what sources are needed to assemble your app. Parts can be anything
        source: https://github.com/snapcraft-docs/super-cool-app
        flutter-target: lib/main.dart
 
-In this case, we have one: the *super-cool-app* source code, which is going to be built using the `flutter <the-flutter-plugin.md>`__ plugin. Parts can retrieve data from local directories, remote git repositories, or tarballs, and the Flutter plugin performs all the tasks necessary to build the code.
+In this case, we have one: the *super-cool-app* source code, which is going to be built using the :ref:`flutter <the-flutter-plugin>` plugin. Parts can retrieve data from local directories, remote git repositories, or tarballs, and the Flutter plugin performs all the tasks necessary to build the code.
 
-See `Environment variables <environment-variables.md>`__ for details on locations you can use from within *snapcraft.yaml*.
+See :ref:`Environment variables <environment-variables>` for details on locations you can use from within *snapcraft.yaml*.
 
 Apps
 ~~~~
@@ -137,14 +137,14 @@ If the names differ, then apps are prefixed with the snap ``name`` (``flutter-ga
 
 If you don’t want your command prefixed you can request an alias for it on the `Snapcraft forum <https://snapcraft.io/docs/process-for-aliases-auto-connections-and-tracks>`__. These are set up automatically when your snap is installed from the Snap Store.
 
-The ``extensions`` keyword is used to easily incorporate Flutter’s common set of requirements. See `Snapcraft extensions <snapcraft-extensions.md>`__ for further details.
+The :ref:``extensions`` keyword is used to easily incorporate Flutter’s common set of requirements. See `Snapcraft extensions <snapcraft-extensions>` for further details.
 
 If your application is intended to run as a service you simply add the line ``daemon: simple`` after the command keyword. This will automatically keep the service running on install, update, and reboot.
 
 Building the snap
 ~~~~~~~~~~~~~~~~~
 
-First, make sure you’ve installed `Snapcraft <snapcraft-overview.md>`__ and create a new directory for your Flutter project.
+First, make sure you’ve installed :ref:`Snapcraft <snapcraft-overview>` and create a new directory for your Flutter project.
 
 Inside that directory, type ``snapcraft init``. This creates an additional subdirectory, called ``snap``, and inside that creates a template *snapcraft.yaml* file.
 
@@ -198,4 +198,4 @@ Removing the snap is simple too:
 
    sudo snap remove super-cool-app
 
-You now have a snap you can deploy and upload to the `Snap Store <https://snapcraft.io/store>`__. See `Releasing your app <releasing-your-app.md>`__ for more details, and to get a deeper insight into the snap building process, start with the `Snapcraft checklist <snapcraft-checklist.md>`__.
+You now have a snap you can deploy and upload to the `Snap Store <https://snapcraft.io/store>`__. See :ref:`Releasing your app <releasing-your-app>` for more details, and to get a deeper insight into the snap building process, start with the :ref:`Snapcraft checklist <snapcraft-checklist>`.

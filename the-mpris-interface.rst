@@ -1,6 +1,6 @@
 .. 7877.md
 
-.. \_the-mpris-interface:
+.. _the-mpris-interface:
 
 The mpris interface
 ===================
@@ -13,4 +13,4 @@ Consuming snaps can access media players implementing mpris via the providing sn
 
 **Auto-Connect**: no **Attributes**: \* ``name`` (slot): optional, media player name to use for DBus well-known name (ie, ``org.mpris.MediaPlayer2.$name``). If omitted, use the snap’s name.
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

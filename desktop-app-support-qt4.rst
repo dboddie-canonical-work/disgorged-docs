@@ -1,6 +1,6 @@
 .. 11711.md
 
-.. \_desktop-app-support-qt4:
+.. _desktop-app-support-qt4:
 
 Desktop App support - Qt4
 =========================

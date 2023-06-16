@@ -1,6 +1,6 @@
 .. 7923.md
 
-.. \_the-thumbnailer-service-interface:
+.. _the-thumbnailer-service-interface:
 
 The thumbnailer-service interface
 =================================
@@ -11,4 +11,4 @@ The thumbnailer-service interface
 
 Requires snapd version *2.22+*.
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

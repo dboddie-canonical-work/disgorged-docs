@@ -1,6 +1,6 @@
 .. 18047.md
 
-.. \_deprecation-notice-12:
+.. _deprecation-notice-12:
 
 Deprecation notice: 12
 ======================
@@ -11,4 +11,4 @@ The ``snapcraft registered`` and ``snapcraft list-registered`` keywords, used to
 
 *introduced in snapcraft 4.0*
 
-See `Deprecation notices <deprecation-notices.md>`__ for further announcements.
+See :ref:`Deprecation notices <deprecation-notices>` for further announcements.

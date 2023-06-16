@@ -1,13 +1,13 @@
 .. 10722.md
 
-.. \_release-notes-snapcraft-3-1-1:
+.. _release-notes-snapcraft-3-1-1:
 
 Release notes: Snapcraft 3.1.1
 ==============================
 
 These are the release notes for `Snapcraft 3.1.1 <https://github.com/snapcore/snapcraft/releases/tag/3.1.1>`__, which is primarily a bugifx release.
 
-For general details, including installation instructions, see `Snapcraft overview <snapcraft-overview.md>`__, or take a look at `Snapcraft release notes <snapcraft-release-notes.md>`__ for other *Snapcraft* releases.
+For general details, including installation instructions, see :ref:`Snapcraft overview <snapcraft-overview>`, or take a look at :ref:`Snapcraft release notes <snapcraft-release-notes>` for other *Snapcraft* releases.
 
 | The issues and features worked on for 3.1.1: - ant, maven and gradle plugins: use correct defaults for jre (`#2453 <https://github.com/snapcore/snapcraft/pull/2453>`__)
 | (LP: #1813637, #1813636) - rust plugin: new link for rustup (`#2438 <https://github.com/snapcore/snapcraft/pull/2438>`__) (LP: #1662960) - baseplugin: add a proper exception for cross-compilation support (`#2454 <https://github.com/snapcore/snapcraft/pull/2454>`__)

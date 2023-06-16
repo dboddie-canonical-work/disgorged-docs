@@ -1,17 +1,17 @@
 .. 7878.md
 
-.. \_the-netlink-audit-interface:
+.. _the-netlink-audit-interface:
 
 The netlink-audit interface
 ===========================
 
 The ``netlink-audit`` interface allows access to the kernel part of the Linux Audit Subsystem through Netlink.
 
-See also `netlink-driver <the-netlink-driver-interface.md>`__ and `netlink-connector <>`__.
+See also :ref:`netlink-driver <the-netlink-driver-interface>` and `netlink-connector <>`__.
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 

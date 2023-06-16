@@ -1,6 +1,6 @@
 .. 29544.md
 
-.. \_publish-to-a-branch:
+.. _publish-to-a-branch:
 
 Publish to a branch
 ===================
@@ -36,7 +36,7 @@ To publish a built and tested snap to a new branch, the snap developer can use t
 
 The branch name cannot contain “``_``” or “``/``” character.
 
-See `Releasing your app <releasing-your-app.md>`__ for more general details on publishing a snap.
+See :ref:`Releasing your app <releasing-your-app>` for more general details on publishing a snap.
 
 Many snaps will have only a *latest* track, while others may use different tracks for each supported release, such as `Node.js <https://snapcraft.io/node>`__ or separate tracks for stable and insider builds, such as `Skype <https://snapcraft.io/skype>`__. These details can be retrieved with the ``snap info`` command:
 

@@ -1,6 +1,6 @@
 .. 696.md
 
-.. \_gadget-snaps:
+.. _gadget-snaps:
 
 Gadget snaps
 ============
@@ -9,7 +9,7 @@ The gadget snap is responsible for defining and configuring system properties sp
 
 The gadget metadata and content defines: - The layout of the volumes that comprise the device storage and image - Configuration for the bootloader to use. The gadget also ships the bootloader itself and other boot assets. - Default configuration options to use when snaps are installed. - Interface connections configured in the ``connections:`` section are executed on the device’s first boot only. Later changes to this section – that is, changes added to the device at run time through gadget refreshes – are not applied. - Optional hooks that are invoked to control and customise the behaviour over the device lifecycle, e.g. installation, initialisation and establishing device identity, factory reset.
 
-See `Building a gadget snap <https://ubuntu.com/core/docs/gadget-building>`__ for details on how a gadget snap can be built. For store deployment, gadget snaps must be produced by the device `brand <glossary.md>`__, as defined in the `model assertion <https://ubuntu.com/core/docs/reference/assertions/model>`__, or a reference gadget must be used. It is perfectly possible for different models to share a gadget snap.
+See `Building a gadget snap <https://ubuntu.com/core/docs/gadget-building>`__ for details on how a gadget snap can be built. For store deployment, gadget snaps must be produced by the device :ref:`brand <glossary>`, as defined in the `model assertion <https://ubuntu.com/core/docs/reference/assertions/model>`__, or a reference gadget must be used. It is perfectly possible for different models to share a gadget snap.
 
 --------------
 
@@ -98,7 +98,7 @@ Specification
 
 The ``meta/gadget.yaml`` file contains the basic metadata for gadget-specific functionality, including a detailed specification of which structure items compose an image. The latter is used both by snapd and by ubuntu-image when creating images for these devices.
 
-A gadget snap’s boot assets can also be automatically updated when the snap is refreshed. See `Updating gadget boot assets <updating-gadget-boot-assets.md>`__ for further details.
+A gadget snap’s boot assets can also be automatically updated when the snap is refreshed. See :ref:`Updating gadget boot assets <updating-gadget-boot-assets>` for further details.
 
 The following specification defines what is supported in ``gadget.yaml``:
 

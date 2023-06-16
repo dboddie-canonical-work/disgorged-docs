@@ -1,6 +1,6 @@
 .. 7829.md
 
-.. \_the-gpio-interface:
+.. _the-gpio-interface:
 
 The gpio interface
 ==================
@@ -38,7 +38,7 @@ The `pi-fancontrol <https://snapcraft.io/pi-fancontrol>`__ snap provides simple 
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 
@@ -54,9 +54,9 @@ Developer details
 
 **Auto-connect**: no **Attributes**: \* ``number`` (slot): GPIO pin number to export and expose to consuming snaps
 
-`Hardware IO interfaces <hardware-io-interfaces.md>`__ covers some general considerations common to these kinds of devices.
+:ref:`Hardware IO interfaces <hardware-io-interfaces>` covers some general considerations common to these kinds of devices.
 
-To use a gpio device, the snap developer must add ``plugs: [ gpio ]`` to a snap’s `snapcraft.yaml <the-snapcraft-yaml-schema.md>`__. The snap user can then access a specific gpio device with an `interface connection <interface-management.md#the-gpio-interface-heading--manual-connections>`__.
+To use a gpio device, the snap developer must add :ref:``plugs: [ gpio ]`` to a snap’s `snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific gpio device with an `interface connection <interface-management.md#the-gpio-interface-heading--manual-connections>`__.
 
 Unless the snap is expected to actually use a set of gpio pins that is not predefined, it is recommended to define distinct plugs for each used gpio pin, like:
 
@@ -68,7 +68,7 @@ Unless the snap is expected to actually use a set of gpio pins that is not prede
      warning-led:
        interface: gpio
 
-This has the advantage of being self-documenting and 1-1 connections like these are easier to track and setup with `auto-connections <the-interface-auto-connection-mechanism.md>`__, if the latter is needed.
+This has the advantage of being self-documenting and 1-1 connections like these are easier to track and setup with :ref:`auto-connections <the-interface-auto-connection-mechanism>`, if the latter is needed.
 
 When the interface is connected, ``"echo (pin number) > /sys/class/gpio/export"`` is run internally to enable access to the GPIO pin.
 

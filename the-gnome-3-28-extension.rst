@@ -1,6 +1,6 @@
 .. 13485.md
 
-.. \_the-gnome-3-28-extension:
+.. _the-gnome-3-28-extension:
 
 The gnome-3-28 extension
 ========================
@@ -10,7 +10,7 @@ This extension helps you snap desktop applications that use GTK 3, GNOME 3.28 an
 How to use it
 -------------
 
-Add ``extensions: [ gnome-3-28 ]`` to the application definition in your ``snapcraft.yaml`` file. See `GTK3 applications <gtk3-applications.md>`__ for a complete tutorial on how to use this extension.
+Add :ref:``extensions: [ gnome-3-28 ]`` to the application definition in your ``snapcraft.yaml`` file. See `GTK3 applications <gtk3-applications>` for a complete tutorial on how to use this extension.
 
 .. code:: yaml
 
@@ -27,13 +27,13 @@ Although this extensions adds support for the GTK 3 runtime, it also includes ba
 
 Some examples:
 
--  `GTK3 applications <gtk3-applications.md>`__
--  `Java Swing applications <java-applications.md>`__, except when they use `GTK+ 2 integration <gtk2-applications.md>`__.
+-  :ref:`GTK3 applications <gtk3-applications>`
+-  :ref:`Java Swing applications <java-applications>`, except when they use :ref:`GTK+ 2 integration <gtk2-applications>`.
 -  Games
 
-This extension will *not* work for `GTK+ 2 applications <gtk2-applications.md>`__ and 32-bit applications.
+This extension will *not* work for :ref:`GTK+ 2 applications <gtk2-applications>` and 32-bit applications.
 
-See `Desktop Applications <desktop-applications.md>`__ for more information on how to snap a desktop application.
+See :ref:`Desktop Applications <desktop-applications>` for more information on how to snap a desktop application.
 
 What it does
 ------------
@@ -48,11 +48,11 @@ To do this, it connects each application to the following content snaps at run t
 
 It also configures each application entry with these additional plugs:
 
--  `desktop <the-desktop-interface.md>`__
--  `desktop-legacy <the-desktop-interface.md>`__
--  `wayland <the-wayland-interface.md>`__
--  `x11 <the-x11-interface.md>`__
+-  :ref:`desktop <the-desktop-interface>`
+-  :ref:`desktop-legacy <the-desktop-interface>`
+-  :ref:`wayland <the-wayland-interface>`
+-  :ref:`x11 <the-x11-interface>`
 
 ..
 
-   ℹ Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See `Snapcraft extensions <snapcraft-extensions.md>`__ for further details.
+   ℹ Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See :ref:`Snapcraft extensions <snapcraft-extensions>` for further details.

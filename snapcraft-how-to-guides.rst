@@ -1,6 +1,6 @@
 .. 31049.md
 
-.. \_snapcraft-how-to-guides:
+.. _snapcraft-how-to-guides:
 
 Snapcraft How-to guides
 =======================
@@ -20,13 +20,13 @@ Our How-to guides help you achieve an end result but may require you to understa
 +--------------------------------------------------------------------+---------------------------------------------------------------+
 | **How-to-guides**                                                  | Get stuff done                                                |
 +====================================================================+===============================================================+
-| `Snapcraft quickstart <snapcraft-quickstart.md>`__                 | The steps required to create , build and publish a snap       |
+| :ref:`Snapcraft quickstart <snapcraft-quickstart>`                 | The steps required to create , build and publish a snap       |
 +--------------------------------------------------------------------+---------------------------------------------------------------+
-| `Build a checklist <snapcraft-checklist.md>`__                     | Gather everything you need to build a snap                    |
+| :ref:`Build a checklist <snapcraft-checklist>`                     | Gather everything you need to build a snap                    |
 +--------------------------------------------------------------------+---------------------------------------------------------------+
-| `Iterate over a build <iterating-over-a-build.md>`__               | Check build state, view logs, and probe environment variables |
+| :ref:`Iterate over a build <iterating-over-a-build>`               | Check build state, view logs, and probe environment variables |
 +--------------------------------------------------------------------+---------------------------------------------------------------+
-| `Classic confinement <how-to-guides-for-classic-confinement.md>`__ | Build snaps with classic confinement                          |
+| :ref:`Classic confinement <how-to-guides-for-classic-confinement>` | Build snaps with classic confinement                          |
 +--------------------------------------------------------------------+---------------------------------------------------------------+
 
 Alternatively, our tutorials section contain step-by-step tutorials to help outline what Snapcraft is capable of while helping you achieve specific aims, such as installing Snapcraft and building your first snap.

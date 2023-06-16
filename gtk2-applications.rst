@@ -1,6 +1,6 @@
 .. 13508.md
 
-.. \_gtk2-applications:
+.. _gtk2-applications:
 
 GTK2 Applications
 =================
@@ -24,7 +24,7 @@ Build a snap in 20 minutes
 
 Typically this guide will take around 20 minutes and will result in a working GTK application in a snap. Once complete, you’ll understand how to package GTK+ 2 applications as snaps and deliver them to millions of Linux users. After making the snap available in the store, you’ll get access to installation metrics and tools to directly manage the delivery of updates to Linux users.
 
-   ⓘ For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see `Snapcraft overview <snapcraft-overview.md>`__. For a more comprehensive breakdown of the steps involved, take a look at `Creating a snap <creating-a-snap.md>`__.
+   ⓘ For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see :ref:`Snapcraft overview <snapcraft-overview>`. For a more comprehensive breakdown of the steps involved, take a look at :ref:`Creating a snap <creating-a-snap>`.
 
 Getting started
 ---------------
@@ -213,7 +213,7 @@ The ``base`` keyword defines a special kind of snap that provides a run-time env
 Security model
 --------------
 
-To get started, we won’t `confine <snap-confinement.md>`__ this application. Unconfined applications, specified with ``devmode``, can only be released to the hidden “edge” channel where you and other developers can install them. After you get the snap working in ``devmode`` confinement, you can switch to strict mode and figure out which interfaces (plugs) the snap uses.
+To get started, we won’t :ref:`confine <snap-confinement>` this application. Unconfined applications, specified with ``devmode``, can only be released to the hidden “edge” channel where you and other developers can install them. After you get the snap working in ``devmode`` confinement, you can switch to strict mode and figure out which interfaces (plugs) the snap uses.
 
 .. code:: yaml
 
@@ -430,4 +430,4 @@ Use snapcraft to push the snap to the Snap Store.
 
 If you’re happy with the result, you can commit the snapcraft.yaml to your GitHub repo and `turn on automatic builds <https://build.snapcraft.io>`__ so any further commits automatically get released to edge, without requiring you to manually build locally.
 
-Congratulations! You’ve just built and published your first GTK+ 2 snap. For a more in-depth overview of the snap building process, see `Creating a snap <creating-a-snap.md>`__.
+Congratulations! You’ve just built and published your first GTK+ 2 snap. For a more in-depth overview of the snap building process, see :ref:`Creating a snap <creating-a-snap>`.

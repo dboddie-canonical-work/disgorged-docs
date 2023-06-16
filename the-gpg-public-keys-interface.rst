@@ -1,6 +1,6 @@
 .. 7828.md
 
-.. \_the-gpg-public-keys-interface:
+.. _the-gpg-public-keys-interface:
 
 The gpg-public-keys interface
 =============================
@@ -11,4 +11,4 @@ The gpg-public-keys interface
 
 Requires snapd version *2.31+*.
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

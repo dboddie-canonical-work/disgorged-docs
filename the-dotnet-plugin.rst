@@ -1,6 +1,6 @@
 .. 8584.md
 
-.. \_the-dotnet-plugin:
+.. _the-dotnet-plugin:
 
 The dotnet plugin
 =================
@@ -9,14 +9,14 @@ The ``dotnet`` plugin is used to build `.NET Core <https://github.com/dotnet/cor
 
 The plugin uses the .NET SDK to install dependencies via the `NuGet <https://www.nuget.org/>`__ package manager, and follows the standard semantics for a .NET Core project.
 
-Plugin-specific features and syntax are dependent on which `base <base-snaps.md>`__ is being used, as outlined below:
+Plugin-specific features and syntax are dependent on which :ref:`base <base-snaps>` is being used, as outlined below:
 
 -  `base: core22 <#the-dotnet-plugin-heading--core22>`__
 -  `base: core18 \| core <#the-dotnet-plugin-heading--core18>`__
 
 For examples, search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+dotnet%22&type=Code>`__ for projects using the plugin.
 
-   ⓘ This is a *snapcraft* plugin. See `Snapcraft plugins <snapcraft-plugins.md>`__ and `Supported plugins <supported-plugins.md>`__ for further details on how plugins are used.
+   ⓘ This is a *snapcraft* plugin. See :ref:`Snapcraft plugins <snapcraft-plugins>` and :ref:`Supported plugins <supported-plugins>` for further details on how plugins are used.
 
 .. raw:: html
 

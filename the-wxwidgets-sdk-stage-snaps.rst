@@ -1,6 +1,6 @@
 .. 10877.md
 
-.. \_the-wxwidgets-sdk-stage-snaps:
+.. _the-wxwidgets-sdk-stage-snaps:
 
 The wxWidgets SDK Stage Snaps
 =============================

@@ -1,11 +1,11 @@
 .. 4157.md
 
-.. \_build-providers:
+.. _build-providers:
 
 Build providers
 ===============
 
-`Snapcraft <snapcraft-overview.md>`__, the snap-building tool, is designed to use `LXD <https://linuxcontainers.org/lxd/introduction/>`__ or `Multipass <https://multipass.run/docs>`__ to both simplify the build process and to confine the build environment.
+:ref:`Snapcraft <snapcraft-overview>`, the snap-building tool, is designed to use `LXD <https://linuxcontainers.org/lxd/introduction/>`__ or `Multipass <https://multipass.run/docs>`__ to both simplify the build process and to confine the build environment.
 
 LXD and Multipass are referred to as **providers** because they *provide* snapcraft with build environments.
 

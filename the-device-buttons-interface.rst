@@ -1,6 +1,6 @@
 .. 8598.md
 
-.. \_the-device-buttons-interface:
+.. _the-device-buttons-interface:
 
 The device-buttons interface
 ============================
@@ -13,4 +13,4 @@ The interface can access ``/dev/input/event*`` devices that are udev marked with
 
 Requires snapd version *2.37+*.
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

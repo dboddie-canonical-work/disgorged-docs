@@ -1,6 +1,6 @@
 .. 8404.md
 
-.. \_deprecation-notice-4:
+.. _deprecation-notice-4:
 
 Deprecation notice: 4
 =====================
@@ -22,4 +22,4 @@ This is really just a list of revisions rather than a full history of the snap (
 
 In order to better correspond with its purpose, the ``history`` command has now been deprecated and replaced with ``list-revisions`` (with a shorter ``revisions`` alias).
 
-See `Deprecation notices <deprecation-notices.md>`__ for further announcements.
+See :ref:`Deprecation notices <deprecation-notices>` for further announcements.

@@ -1,6 +1,6 @@
 .. 24252.md
 
-.. \_release-notes-snapcraft-4-7:
+.. _release-notes-snapcraft-4-7:
 
 Release notes: Snapcraft 4.7
 ============================
@@ -24,7 +24,7 @@ This release of Snapcraft adds two commands for working with validation sets:
 -  list-validation-sets
 -  edit-validation-sets
 
-For more details, see `Validation sets <validation-sets.md>`__.
+For more details, see :ref:`Validation sets <validation-sets>`.
 
 UA Token
 --------
@@ -39,7 +39,7 @@ With this release of snapcraft, a new ``--ua-token`` argument can be used to spe
 
    snapcraft <step> --ua-token <token>
 
-See `Snapcraft and Extended Security Maintenance <snapcraft-and-extended-security-maintenance.md>`__ for further details.
+See :ref:`Snapcraft and Extended Security Maintenance <snapcraft-and-extended-security-maintenance>` for further details.
 
 Conda plugin
 ------------
@@ -53,7 +53,7 @@ When using *core20*, the recently introduced `conda <h/t/the-conda-plugin/12530#
 Extension improvements
 ----------------------
 
-`Extensions <snapcraft-extensions.md>`__ now have better font handling by integrating a new snapd feature to not expose the host font cache to the snap when using the desktop related extensions.
+:ref:`Extensions <snapcraft-extensions>` now have better font handling by integrating a new snapd feature to not expose the host font cache to the snap when using the desktop related extensions.
 
 General cleanup into the *launcher* script which ensures a proper environment has been setup is also part of this release.
 
@@ -65,7 +65,7 @@ The ``snapcraft whoami`` command has fully migrated to the store ``whoami`` endp
 Stage Snaps
 -----------
 
-The `stage-snaps <build-and-staging-dependencies.md>`__ keyword now allows specifying channel branches. This solves a long standing request.
+The :ref:`stage-snaps <build-and-staging-dependencies>` keyword now allows specifying channel branches. This solves a long standing request.
 
 Full list of changes
 --------------------

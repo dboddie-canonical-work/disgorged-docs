@@ -1,6 +1,6 @@
 .. 8408.md
 
-.. \_deprecation-notice-8:
+.. _deprecation-notice-8:
 
 Deprecation notice: 8
 =====================
@@ -15,4 +15,4 @@ However, as part of an effort to add support for Snapcraft to have this for *all
 
 The biggest difference is that you can now call ``snapcraftctl build`` to run the default ``build`` step.
 
-See `Deprecation notices <deprecation-notices.md>`__ for further announcements.
+See :ref:`Deprecation notices <deprecation-notices>` for further announcements.

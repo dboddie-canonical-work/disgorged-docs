@@ -1,6 +1,6 @@
 .. 20179.md
 
-.. \_the-interface-auto-connection-mechanism:
+.. _the-interface-auto-connection-mechanism:
 
 The interface auto-connection mechanism
 =======================================

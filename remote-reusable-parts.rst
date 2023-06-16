@@ -1,6 +1,6 @@
 .. 4233.md
 
-.. \_remote-reusable-parts:
+.. _remote-reusable-parts:
 
 Remote (reusable) parts
 =======================
@@ -9,7 +9,7 @@ Remote (reusable) parts
 
 Remote parts no longer work with recent versions of Snapcraft, and are not recommended.
 
-New versions of Snapcraft use Extensions to bundle a common set of parts and their dependencies. See `Snapcraft Extensions <snapcraft-extensions.md>`__ for further details. [/quote]
+New versions of Snapcraft use Extensions to bundle a common set of parts and their dependencies. See :ref:`Snapcraft Extensions <snapcraft-extensions>` for further details. [/quote]
 
 Developers using snapcraft to build snaps can leverage pre-existing ‘remote parts’ in their snap, to save time re-implementing existing components.
 

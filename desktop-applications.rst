@@ -1,6 +1,6 @@
 .. 13034.md
 
-.. \_desktop-applications:
+.. _desktop-applications:
 
 Desktop applications
 ====================
@@ -17,17 +17,17 @@ Read the documentation of the GUI toolkit your application uses in order to get 
 +----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
 | Common GUI Toolkits                                                  | Technologies                                                                                             |
 +======================================================================+==========================================================================================================+
-| `GTK 3 <gtk3-applications.md>`__                                     | `OpenGL/GPU support <adding-opengl-gpu-support-to-a-snap.md>`__                                          |
+| :ref:`GTK 3 <gtk3-applications>`                                     | :ref:`OpenGL/GPU support <adding-opengl-gpu-support-to-a-snap>`                                          |
 +----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
-| `GTK+ 2 <gtk2-applications.md>`__                                    | `Desktop Launchers / Menu entries <desktop-files-for-menu-integration.md>`__                             |
+| :ref:`GTK+ 2 <gtk2-applications>`                                    | :ref:`Desktop Launchers / Menu entries <desktop-files-for-menu-integration>`                             |
 +----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
-| `Qt 5 and KDE Frameworks <qt5-and-kde-frameworks-applications.md>`__ | `XDG desktop portals <xdg-desktop-portals.md>`__                                                         |
+| :ref:`Qt 5 and KDE Frameworks <qt5-and-kde-frameworks-applications>` | :ref:`XDG desktop portals <xdg-desktop-portals>`                                                         |
 +----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
-| `Java Swing <java-applications.md>`__                                | `AppStream metadata support <using-external-metadata.md>`__                                              |
+| :ref:`Java Swing <java-applications>`                                | :ref:`AppStream metadata support <using-external-metadata>`                                              |
 +----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
-| `Electron <electron-apps.md>`__                                      | `chromium-ffmpeg in third-party browser snaps <using-chromium-ffmpeg-in-third-party-browser-snaps.md>`__ |
+| :ref:`Electron <electron-apps>`                                      | :ref:`chromium-ffmpeg in third-party browser snaps <using-chromium-ffmpeg-in-third-party-browser-snaps>` |
 +----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
-| `Flutter <flutter-applications.md>`__                                | `The desktop interfaces <the-desktop-interfaces.md>`__                                                   |
+| :ref:`Flutter <flutter-applications>`                                | :ref:`The desktop interfaces <the-desktop-interfaces>`                                                   |
 +----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
 
 .. raw:: html
@@ -37,7 +37,7 @@ Read the documentation of the GUI toolkit your application uses in order to get 
 Refining
 --------
 
--  `Reduce the size of your snap <reducing-the-size-of-desktop-snaps.md>`__. This will also speed up how quickly your snap starts!
+-  :ref:`Reduce the size of your snap <reducing-the-size-of-desktop-snaps>`. This will also speed up how quickly your snap starts!
 -  `Switch the compression to ``lzo`` <snapcraft-top-level-metadata.md#desktop-applications-heading--compression>`__ to make your application start up even quicker.
 -  Make sure your application has a `logo in the snap store <https://snapcraft.io/docs/store-listing-and-branding#desktop-applications-heading--logo-icon>`__ and `screenshots <https://snapcraft.io/docs/store-listing-and-branding#desktop-applications-heading--screenshots>`__.
 -  Include a link to your contact page or bugtracker in the `store metadata <https://snapcraft.io/docs/store-listing-and-branding#desktop-applications-heading--metadata>`__.
@@ -51,7 +51,7 @@ Compared to CLI apps, desktop apps typically require three additional features.
 2. Access to a GUI toolkit such as GTK or Qt.
 3. Initialisation of desktop-specific functionality such as fonts, themes and the `XDG <https://www.freedesktop.org>`__ environment.
 
-Since snap apps are completely sandboxed by default, they cannot play sound, create notifications, or access the X server to display itself. However, it’s easy to make this possible by using the `desktop interfaces <the-desktop-interfaces.md>`__. These allow you to “poke holes” in the sandbox, to give your application selected access to the host system.
+Since snap apps are completely sandboxed by default, they cannot play sound, create notifications, or access the X server to display itself. However, it’s easy to make this possible by using the :ref:`desktop interfaces <the-desktop-interfaces>`. These allow you to “poke holes” in the sandbox, to give your application selected access to the host system.
 
 The sandbox also means that your app cannot use the GUI toolkits of the host system. The snap either has to include the toolkit in the snap itself, or it needs to connect to a snap that provides these toolkits. Many toolkits and general desktop features such as fonts and themes also require initialization before the application can start. The extensions make this as easy as possible. They provide parts to bundle or access common GUI toolkits in your snap and a ``desktop-launch`` script which does the required initialization for you.
 
@@ -60,5 +60,5 @@ Legacy
 
 These methods are not recommended anymore but might be useful as reference.
 
--  `Qt 5 support using the ``desktop-helpers`` <deprecated-desktop-app-support-qt5.md>`__
+-  :ref:`Qt 5 support using the ``desktop-helpers`` <deprecated-desktop-app-support-qt5>`
 -  ```snapcraft-desktop-helpers`` <https://github.com/ubuntu/snapcraft-desktop-helpers/>`__ provided useful parts and launchers for desktop snaps, but these are deprecated in favor of the ``gnome-*`` and ``kde-neon`` extensions.

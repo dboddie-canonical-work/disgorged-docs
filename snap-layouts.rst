@@ -1,11 +1,11 @@
 .. 7207.md
 
-.. \_snap-layouts:
+.. _snap-layouts:
 
 Snap layouts
 ============
 
-Layouts modify the execution environment of a `strictly-confined <snap-confinement.md>`__ snap.
+Layouts modify the execution environment of a :ref:`strictly-confined <snap-confinement>` snap.
 
 With layouts, you can make elements in ``$SNAP``, ``$SNAP_DATA``, ``$SNAP_COMMON`` accessible from locations such as ``/usr``, ``/var`` and ``/etc``. This helps when using pre-compiled binaries and libraries that expect to find files and directories outside of locations referenced by ``$SNAP`` or ``$SNAP_DATA``.
 
@@ -16,9 +16,9 @@ Layouts require snap version *2.36+*.
 Using layouts
 -------------
 
-Layouts are transparently supported by `Snapcraft <snapcraft-overview.md>`__ when using a `base snap <base-snaps.md>`__ (e.g. ``base: core18``).
+Layouts are transparently supported by :ref:`Snapcraft <snapcraft-overview>` when using a :ref:`base snap <base-snaps>` (e.g. ``base: core18``).
 
-   ⓘ When not using a base snap, layout options within ``snapcraft.yaml`` must be made within the scope of a top-level `passthrough <using-in-development-features-in-snapcraft-yaml.md>`__ field.
+   ⓘ When not using a base snap, layout options within :ref:``snapcraft.yaml`` must be made within the scope of a top-level `passthrough <using-in-development-features-in-snapcraft-yaml>` field.
 
 As a simple example, consider an application you want to snap that:
 
@@ -99,7 +99,7 @@ The following apply as of snapd 2.36:
 Layouts do not work with *classic* snaps
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This functionality only works with `strictly-confined <snap-confinement.md>`__ snaps, and does not work with snaps using *classic* confinement. This may change in the future.
+This functionality only works with :ref:`strictly-confined <snap-confinement>` snaps, and does not work with snaps using *classic* confinement. This may change in the future.
 
 New entries in / (root)
 ~~~~~~~~~~~~~~~~~~~~~~~

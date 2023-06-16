@@ -1,17 +1,17 @@
 .. 13123.md
 
-.. \_adding-interfaces:
+.. _adding-interfaces:
 
 Adding interfaces
 =================
 
-After `Defining a command <defining-a-command.md>`__, *interfaces* are the means by which an installed snap gets access to system resources. Interfaces that are required for normal operation are specified at snap build-time within the `app and service metadata <snapcraft-app-and-service-metadata.md>`__ of a snap’s `snapcraft.yaml <creating-snapcraft-yaml.md>`__.
+After :ref:`Defining a command <defining-a-command>`, *interfaces* are the means by which an installed snap gets access to system resources. Interfaces that are required for normal operation are specified at snap build-time within the :ref:`app and service metadata <snapcraft-app-and-service-metadata>` of a snap’s :ref:`snapcraft.yaml <creating-snapcraft-yaml>`.
 
 Many interfaces are automatically connected when a snap is installed, but this ability is dependent on the permissiveness of each particular interface. See `Auto-connections <interface-management.md#adding-interfaces-heading--auto-connections>`__ for more details.
 
-Other interfaces require the user to make a manual connection, such as `camera <t/the-camera-interface/7776>`__ and `removable-media <the-removable-media-interface.md>`__. Manual connections enable the user to have a complete control over what kind of access they allow.
+Other interfaces require the user to make a manual connection, such as `camera <t/the-camera-interface/7776>`__ and :ref:`removable-media <the-removable-media-interface>`. Manual connections enable the user to have a complete control over what kind of access they allow.
 
-Once published in the `Snap Store <https://snapcraft.io/store>`__, automatic connections may be requested for manual interfaces on a case-by-case basis. For example, it may be reasonable for a photo-booth application to expect an automatic connection to the ``camera`` interface. Those requests are submitted and processed in the open on the Snapcraft forum. For more details on this process, see `Permission requests <permission-requests.md>`__ .
+Once published in the `Snap Store <https://snapcraft.io/store>`__, automatic connections may be requested for manual interfaces on a case-by-case basis. For example, it may be reasonable for a photo-booth application to expect an automatic connection to the :ref:``camera`` interface. Those requests are submitted and processed in the open on the Snapcraft forum. For more details on this process, see `Permission requests <permission-requests>` .
 
 Plugs and slots
 ---------------
@@ -64,8 +64,8 @@ The process of adding interfaces requires the snap developer to have a good unde
 
 Being familiar with these can help to speed up snap development:
 
--  `Games interfaces <games-interfaces.md>`__
--  `Desktop interfaces <the-desktop-interfaces.md>`__
--  `Network interface <network-interface.md>`__
+-  :ref:`Games interfaces <games-interfaces>`
+-  :ref:`Desktop interfaces <the-desktop-interfaces>`
+-  :ref:`Network interface <network-interface>`
 
-See `Supported interfaces <supported-interfaces.md>`__ for the full list of interfaces available for snaps to use.
+See :ref:`Supported interfaces <supported-interfaces>` for the full list of interfaces available for snaps to use.

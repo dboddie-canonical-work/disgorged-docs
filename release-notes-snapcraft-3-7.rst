@@ -1,13 +1,13 @@
 .. 12509.md
 
-.. \_release-notes-snapcraft-3-7:
+.. _release-notes-snapcraft-3-7:
 
 Release notes: Snapcraft 3.7
 ============================
 
-These are the release notes for `Snapcraft 3.7 <https://github.com/snapcore/snapcraft/releases/tag/3.7>`__, a significant update to `Snapcraft 3 <snapcraft-overview.md>`__.
+These are the release notes for `Snapcraft 3.7 <https://github.com/snapcore/snapcraft/releases/tag/3.7>`__, a significant update to :ref:`Snapcraft 3 <snapcraft-overview>`.
 
-For general details, including installation instructions, see `Snapcraft overview <snapcraft-overview.md>`__, or take a look at `Snapcraft release notes <snapcraft-release-notes.md>`__ for other *Snapcraft* releases.
+For general details, including installation instructions, see :ref:`Snapcraft overview <snapcraft-overview>`, or take a look at :ref:`Snapcraft release notes <snapcraft-release-notes>` for other *Snapcraft* releases.
 
    ℹ Many of the improvements in this release are thanks to the great work done in collaboration with the attendees of the `2019 Snapcraft Summit <https://snapcraft.io/blog/snapcraft-summit-montreal>`__ that took place in Montreal.
 
@@ -55,7 +55,7 @@ To solve the above issue, for example, use the following:
 Extended metadata
 ~~~~~~~~~~~~~~~~~
 
-The `snapcraft.yaml <the-snapcraft-yaml-schema.md>`__ schema has been extended to support new app properties added to `snap.yaml <the-snap-format.md>`__, alongside better error handling and schema checks.
+The :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>` schema has been extended to support new app properties added to :ref:`snap.yaml <the-snap-format>`, alongside better error handling and schema checks.
 
 -  It’s now possible to specify the *type* string for the following existing options with an unspecified type:
 
@@ -79,7 +79,7 @@ The `snapcraft.yaml <the-snapcraft-yaml-schema.md>`__ schema has been extended t
 Faster LXD build iterations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When using `Snapcraft with LXD <t/build-on-lxd/4157>`__ and `iterating over a build <iterating-over-a-build.md>`__, a significant reduction in network overhead has resulted in much faster build times.
+When using `Snapcraft with LXD <t/build-on-lxd/4157>`__ and :ref:`iterating over a build <iterating-over-a-build>`, a significant reduction in network overhead has resulted in much faster build times.
 
 This is thanks to *snapd 2.39* supporting API snap retrieval, and is used to avoid a root requirement when adding snaps to the build environment. It means snap don’t need to be re-downloaded as frequently.
 
@@ -114,7 +114,7 @@ This plugin uses the following plugin-specific keywords: - **``conda-packages``*
 rust
 ~~~~
 
-The `Rust plugin <the-rust-plugin.md>`__ has been reviewed by a Rust developer and their suggestions incorporated into this release.
+The :ref:`Rust plugin <the-rust-plugin>` has been reviewed by a Rust developer and their suggestions incorporated into this release.
 
 One such improvement is defaulting to use the ``rust-toolchain`` file (if present), unless explicitly overridden by use of ``rust-channel`` or ``rust-revision``.
 
@@ -123,16 +123,16 @@ Rebuilding is now also possible using this plugin.
 ant
 ~~~
 
-The `Ant <https://ant.apache.org/>`__ publisher has released an `Ant snap <https://snapcraft.io/ant>`__ and reviewed the `Ant plugin <the-ant-plugin.md>`__. Consequently, the Ant plugin has been updated to support the use of this new snap for building Ant-based projects.
+The `Ant <https://ant.apache.org/>`__ publisher has released an `Ant snap <https://snapcraft.io/ant>`__ and reviewed the :ref:`Ant plugin <the-ant-plugin>`. Consequently, the Ant plugin has been updated to support the use of this new snap for building Ant-based projects.
 
 The following new keywords are now accepted by the plugin:
 
--  **``ant-channel``** (string) If not using the Ant tarball from the Ant archive (see `ant-version and ant-version-checksum <the-ant-plugin.md>`__, this keyword specifies the channel to use for *ant* in the Snap Store. Default: ``latest/stable``
+-  **:ref:``ant-channel``** (string) If not using the Ant tarball from the Ant archive (see `ant-version and ant-version-checksum <the-ant-plugin>`, this keyword specifies the channel to use for *ant* in the Snap Store. Default: ``latest/stable``
 
 colcon
 ~~~~~~
 
-Support for `ROS 2 Dashing Diademata <https://index.ros.org//doc/ros2/Releases/Release-Dashing-Diademata/>`__ was added to the `colcon <the-colcon-plugin.md>`__ plugin in order to support this latest ROS release.
+Support for `ROS 2 Dashing Diademata <https://index.ros.org//doc/ros2/Releases/Release-Dashing-Diademata/>`__ was added to the :ref:`colcon <the-colcon-plugin>` plugin in order to support this latest ROS release.
 
 Bug fixes
 ---------

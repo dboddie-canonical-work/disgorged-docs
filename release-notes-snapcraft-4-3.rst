@@ -1,6 +1,6 @@
 .. 20017.md
 
-.. \_release-notes-snapcraft-4-3:
+.. _release-notes-snapcraft-4-3:
 
 Release notes: Snapcraft 4.3
 ============================
@@ -9,7 +9,7 @@ The team behind Snapcraft is pleased to announce the release of `Snapcraft 4.3 <
 
 Highlights for this release include: \* a new ROS 1 extension for ``core20`` \* new v2 versions of the catkin and catkin-tools plugins \* the ability to set a default track for a snap \* a new ``--enable-experimental-extensions`` option for expand-extensions
 
-For general details, including installation instructions, see `Snapcraft overview <snapcraft-overview.md>`__, or take a look at `Snapcraft release notes <snapcraft-release-notes.md>`__ for other *Snapcraft* releases.
+For general details, including installation instructions, see :ref:`Snapcraft overview <snapcraft-overview>`, or take a look at :ref:`Snapcraft release notes <snapcraft-release-notes>` for other *Snapcraft* releases.
 
 Special thanks to the contributors that helped to make this release happen: `@cjp256 <https://github.com/cjp256>`__, `@flexiondotorg <https://github.com/flexiondotorg>`__, `@kyrofa <https://github.com/kyrofa>`__ and `@sergiusens <https://github.com/sergiusens>`__.
 
@@ -19,7 +19,7 @@ New Features
 ROS 1 Extension
 ~~~~~~~~~~~~~~~
 
-The new ROS 1 `extension <snapcraft-extensions.md>`__ allows you to target ``core20`` with ROS 1 *Noetic Ninjemys*, the latest (and last) ROS 1 LTS that runs on Ubuntu 20.04 LTS (Focal Fossa).
+The new ROS 1 :ref:`extension <snapcraft-extensions>` allows you to target ``core20`` with ROS 1 *Noetic Ninjemys*, the latest (and last) ROS 1 LTS that runs on Ubuntu 20.04 LTS (Focal Fossa).
 
 You can now build a ROS 1 application with a ``snapcraft.yaml`` as simple as:
 
@@ -46,7 +46,7 @@ You can now build a ROS 1 application with a ``snapcraft.yaml`` as simple as:
        source: .
        build-packages: [g++, make]
 
-It’s operation and functionality is similar to the newly introduced `ROS 2 extension <the-ros2-foxy-extension.md>`__, and the associated colcon plugin, added in `Snapcraft 4.2 <release-notes-snapcraft-4-2.md>`__.
+It’s operation and functionality is similar to the newly introduced :ref:`ROS 2 extension <the-ros2-foxy-extension>`, and the associated colcon plugin, added in :ref:`Snapcraft 4.2 <release-notes-snapcraft-4-2>`.
 
 Set the default Channel Track
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -58,7 +58,7 @@ It is now possible to set a `default track <https://snapcraft.io/docs/using-trac
    $ snapcraft set-default-track <snap-name> 17
    Default track for '<snap-name>' set to '17'
 
-This features complements the ability to list channel tracks, which as added in `Snapcraft 4.2 <release-notes-snapcraft-4-2.md>`__.
+This features complements the ability to list channel tracks, which as added in :ref:`Snapcraft 4.2 <release-notes-snapcraft-4-2>`.
 
 New v2 plugins
 ~~~~~~~~~~~~~~

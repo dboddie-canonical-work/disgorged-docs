@@ -1,6 +1,6 @@
 .. 8409.md
 
-.. \_deprecation-notice-9:
+.. _deprecation-notice-9:
 
 Deprecation notice: 9
 =====================
@@ -30,4 +30,4 @@ To get equivalent functionality with the ``override-build`` scriptlet, try this:
      snapcraftctl build
      echo "This runs after build!"
 
-See `Deprecation notices <deprecation-notices.md>`__ for further announcements.
+See :ref:`Deprecation notices <deprecation-notices>` for further announcements.

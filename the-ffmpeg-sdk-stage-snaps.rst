@@ -1,6 +1,6 @@
 .. 10818.md
 
-.. \_the-ffmpeg-sdk-stage-snaps:
+.. _the-ffmpeg-sdk-stage-snaps:
 
 The FFmpeg SDK stage snaps
 ==========================

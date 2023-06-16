@@ -1,6 +1,6 @@
 .. 25489.md
 
-.. \_the-sd-control-interface:
+.. _the-sd-control-interface:
 
 The sd-control interface
 ========================
@@ -9,7 +9,7 @@ The ``sd-control`` interface allows for the management and control of SD cards o
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 
@@ -23,7 +23,7 @@ Developer details
 
    </h2>
 
-`Auto-connect <interface-management.md#the-sd-control-interface-heading--auto-connections>`__: no `Super-privileged <super-privileged-interfaces.md>`__: yes
+`Auto-connect <interface-management.md#the-sd-control-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
 
 The main DualSD device node (``/dev/DualSD``) is used to control certain aspects of SD cards on the system.
 

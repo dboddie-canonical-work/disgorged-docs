@@ -1,6 +1,6 @@
 .. 7819.md
 
-.. \_java-applications:
+.. _java-applications:
 
 Java applications
 =================
@@ -23,7 +23,7 @@ Build a snap in 20 minutes
 
 Ready to get started? By the end of this guide, you’ll understand how to make a snap of your Java app that can be published in the `Snap Store <https://snapcraft.io/store>`__, showcasing it to millions of Linux users.
 
-   ℹ For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see `Snapcraft overview <snapcraft-overview.md>`__. For a more comprehensive breakdown of the steps involved, take a look at `Creating a snap <creating-a-snap.md>`__.
+   ℹ For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see :ref:`Snapcraft overview <snapcraft-overview>`. For a more comprehensive breakdown of the steps involved, take a look at :ref:`Creating a snap <creating-a-snap>`.
 
 Getting started
 ---------------
@@ -126,7 +126,7 @@ The base keyword declares which *base snap* to use with your project. A base sna
 
 As used above, ```core18`` <https://snapcraft.io/core18>`__ is the current standard base for snap building and is based on `Ubuntu 18.04 LTS <http://releases.ubuntu.com/18.04/>`__.
 
-See `Base snaps <base-snaps.md>`__ for more details.
+See :ref:`Base snaps <base-snaps>` for more details.
 
 Security model
 --------------
@@ -165,7 +165,7 @@ If you don’t want your command prefixed you can request an alias for it on the
          - network
          - cups-control
 
-Since Freeplane is a desktop application, we use the ```gnome-3-28`` extension <the-gnome-3-28-extension.md>`__ to configure and setup the desktop integration and permissions for the snap. Although Freeplane is a Java Swing application which doesn’t need acces to GTK or GNOME, the GNOME extension is stil useful because it sets up many toolkit-independent libraries and functionality such as mouse cursor themes, locales and the XDG runtime environment.
+Since Freeplane is a desktop application, we use the :ref:```gnome-3-28`` extension <the-gnome-3-28-extension>` to configure and setup the desktop integration and permissions for the snap. Although Freeplane is a Java Swing application which doesn’t need acces to GTK or GNOME, the GNOME extension is stil useful because it sets up many toolkit-independent libraries and functionality such as mouse cursor themes, locales and the XDG runtime environment.
 
 Parts
 -----
@@ -190,7 +190,7 @@ The gradle plugin can build the application using standard parameters. In this c
        build-packages:
          - unzip
 
-For more details on Gradle-specific metadata, see `The Gradle plugin <the-gradle-plugin.md>`__.
+For more details on Gradle-specific metadata, see :ref:`The Gradle plugin <the-gradle-plugin>`.
 
 Building the snap
 -----------------
@@ -260,4 +260,4 @@ Use snapcraft to push the snap to the Snap Store.
 
 If you’re happy with the result, you can commit the snapcraft.yaml to your GitHub repo and `turn on automatic builds <https://build.snapcraft.io>`__ so any further commits automatically get released to edge, without requiring you to manually build locally.
 
-Congratulations! You’ve just built and published your first Java snap. For a more in-depth overview of the snap building process, see `Creating a snap <creating-a-snap.md>`__.
+Congratulations! You’ve just built and published your first Java snap. For a more in-depth overview of the snap building process, see :ref:`Creating a snap <creating-a-snap>`.

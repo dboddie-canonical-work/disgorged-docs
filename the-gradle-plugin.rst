@@ -1,6 +1,6 @@
 .. 5390.md
 
-.. \_the-gradle-plugin:
+.. _the-gradle-plugin:
 
 The Gradle plugin
 =================
@@ -9,11 +9,11 @@ This plugin is used for building parts that use gradle.
 
 The gradle build system is a popular build tool used to build Java projects. The plugin requires that gradle’s build.gradle file exists in the root of the source tree.
 
-   ⓘ This plugin is only available to *core* and *core18* based snaps. See `Base snaps <base-snaps.md>`__ for details.
+   ⓘ This plugin is only available to *core* and *core18* based snaps. See :ref:`Base snaps <base-snaps>` for details.
 
-See the `Java Applications <java-applications.md>`__ tutorial for a complete and annotated example.
+See the :ref:`Java Applications <java-applications>` tutorial for a complete and annotated example.
 
-This plugin uses the common plugin keywords as well as those for “sources”. For more information, see `Snapcraft parts metadata <snapcraft-parts-metadata.md>`__.
+This plugin uses the common plugin keywords as well as those for “sources”. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
 
 Additionally, this plugin uses the following plugin-specific keywords
 
@@ -87,4 +87,4 @@ Examples
 
 `Examples on GitHub <https://github.com/search?o=desc&q=path%3Asnapcraft.yaml+%22plugin%3A+gradle%22+&s=indexed&type=Code&utf8=%E2%9C%93>`__
 
-   ⓘ This is a *snapcraft* plugin. See `Snapcraft plugins <snapcraft-plugins.md>`__ and `Supported plugins <supported-plugins.md>`__ for further details on how plugins are used.
+   ⓘ This is a *snapcraft* plugin. See :ref:`Snapcraft plugins <snapcraft-plugins>` and :ref:`Supported plugins <supported-plugins>` for further details on how plugins are used.

@@ -1,20 +1,20 @@
 .. 10704.md
 
-.. \_release-notes-snapcraft-3-0:
+.. _release-notes-snapcraft-3-0:
 
 Release notes: Snapcraft 3.0
 ============================
 
 These are the release notes for `Snapcraft 3.0 <https://github.com/snapcore/snapcraft/releases/tag/3.0>`__, a major overhaul of the snap build environment.
 
-For general details, including installation instructions, see `Snapcraft overview <snapcraft-overview.md>`__, or take a look at `Snapcraft release notes <snapcraft-release-notes.md>`__ for other *Snapcraft* releases.
+For general details, including installation instructions, see :ref:`Snapcraft overview <snapcraft-overview>`, or take a look at :ref:`Snapcraft release notes <snapcraft-release-notes>` for other *Snapcraft* releases.
 
 Build environments
 ------------------
 
 This release adds specific build environments for each snapcraft project you work on. These environments are tuned for each project, and ensure both API and ABI compatibility are in place for every binary built within each respective environment.
 
-Snapcraft’s build environments leverage a snap architecture feature called `bases <base-snaps.md>`__. At build time, the *snapcraft* tool ensures you are creating your applications inside an environment specifically tailored for the specified base.
+Snapcraft’s build environments leverage a snap architecture feature called :ref:`bases <base-snaps>`. At build time, the *snapcraft* tool ensures you are creating your applications inside an environment specifically tailored for the specified base.
 
 To make the transition to Snapcraft 3.0 easy, the entire functionality for this new tool behavior is triggered by making use of the ``base`` keyword in ``snapcraft.yaml``.
 

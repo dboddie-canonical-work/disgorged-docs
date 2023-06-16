@@ -1,6 +1,6 @@
 .. 3798.md
 
-.. \_documentation-guidelines:
+.. _documentation-guidelines:
 
 Documentation guidelines
 ========================

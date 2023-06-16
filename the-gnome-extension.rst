@@ -1,13 +1,13 @@
 .. 31449.md
 
-.. \_the-gnome-extension:
+.. _the-gnome-extension:
 
 The gnome extension
 ===================
 
 The *gnome* extension helps with the creation of snaps that use GTK 3, GNOME 42+, and/or GLib.
 
-This is an updated version of the `gnome-3-38 extension <the-gnome-3-34-extension.md>`__ that will only work with the core22 `base snap <base-snaps.md>`__, built from `Ubuntu 22.04 LTS <http://releases.ubuntu.com/22.04/>`__.
+This is an updated version of the :ref:`gnome-3-38 extension <the-gnome-3-34-extension>` that will only work with the core22 :ref:`base snap <base-snaps>`, built from `Ubuntu 22.04 LTS <http://releases.ubuntu.com/22.04/>`__.
 
 Previous Gnome extensions were built to use ``core18``, based on `Ubuntu 18.04 LTS <http://releases.ubuntu.com/18.04/>`__ and ``core20``, based on `Ubuntu 20.04 LTS <http://releases.ubuntu.com/20.04/>`__.
 
@@ -21,7 +21,7 @@ This extension provides many of the components needed for general desktop applic
 
 ..
 
-   ℹ Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See `Snapcraft extensions <snapcraft-extensions.md>`__ for further details.
+   ℹ Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See :ref:`Snapcraft extensions <snapcraft-extensions>` for further details.
 
 .. raw:: html
 
@@ -33,7 +33,7 @@ How to use it
 
    </h2>
 
-This extension currently only works with the ``core22`` base snap (see `Base snaps <base-snaps.md>`__ for details). To use it, add ``extensions: [gnome]`` to the application definition in your `snapcraft.yaml <creating-snapcraft-yaml.md>`__ file.
+This extension currently only works with the :ref:``core22`` base snap (see `Base snaps <base-snaps>` for details). To use it, add :ref:``extensions: [gnome]`` to the application definition in your `snapcraft.yaml <creating-snapcraft-yaml>` file.
 
 For instance:
 
@@ -45,7 +45,7 @@ For instance:
            command: usr/bin/tali
    [...]
 
-See `GTK3 applications <gtk3-applications.md>`__ for a comprehensive overview of using extensions with GNOME applications.
+See :ref:`GTK3 applications <gtk3-applications>` for a comprehensive overview of using extensions with GNOME applications.
 
 .. raw:: html
 
@@ -87,7 +87,7 @@ Your app may still need additional plugs, but you can expect the following plugs
 
    plugs: [ desktop, desktop-legacy, gsettings, opengl, wayland, x11, mount-observe, calendar-service]
 
-See `Adding interfaces <adding-interfaces.md>`__ for more details.
+See :ref:`Adding interfaces <adding-interfaces>` for more details.
 
 .. raw:: html
 
@@ -174,4 +174,4 @@ The platform snap’s gjs, webkit2gtk-4.0, and iso-codes are used so they don’
        /usr/share/libdrm:
            bind: $SNAP/gnome-platform/usr/share/libdrm
 
-See `Snap layouts <snap-layouts.md>`__ for further details.
+See :ref:`Snap layouts <snap-layouts>` for further details.

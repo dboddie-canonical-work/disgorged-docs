@@ -1,11 +1,11 @@
 .. 20913.md
 
-.. \_progressive-releases:
+.. _progressive-releases:
 
 Progressive releases
 ====================
 
-When a snap `has been published <releasing-your-app.md>`__ and has an established user base, tracks and channels help balance the risk of a release containing unexpected issues against user expectations for new features. This is covered in `Release management <https://snapcraft.io/docs/release-management>`__.
+When a snap :ref:`has been published <releasing-your-app>` and has an established user base, tracks and channels help balance the risk of a release containing unexpected issues against user expectations for new features. This is covered in `Release management <https://snapcraft.io/docs/release-management>`__.
 
 Progressive releases offer an additional strategy to help mitigate the risk of unexpected issues affecting users. They help by making a release available only to a specific percentage of a snap’s user base. This percentage can be initially small, perhaps 10% or 20%, and increases as confidence in a release grows.
 
@@ -33,7 +33,7 @@ Creating a progressive release
 
    </h2>
 
-First, ensure there is a revision of the target snap available on the `Snap Store <https://snapcraft.io/store>`__. See `Releasing your app <releasing-your-app.md>`__ for details on building and uploading locally, or `Remote build <remote-build.md>`__ to create a revision on remote servers using `Launchpad <https://launchpad.net/>`__.
+First, ensure there is a revision of the target snap available on the `Snap Store <https://snapcraft.io/store>`__. See :ref:`Releasing your app <releasing-your-app>` for details on building and uploading locally, or :ref:`Remote build <remote-build>` to create a revision on remote servers using `Launchpad <https://launchpad.net/>`__.
 
 The ``snapcraft revisions`` command can be used to see which revisions have been uploaded and available:
 

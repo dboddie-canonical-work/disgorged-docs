@@ -1,6 +1,6 @@
 .. 30464.md
 
-.. \_release-notes-snapcraft-7:
+.. _release-notes-snapcraft-7:
 
 Release notes: Snapcraft 7
 ==========================
@@ -36,12 +36,12 @@ The following are not currently supported with ``core22`` : - Automatic classic 
 
 Missing features will be ported and added to upcoming 7.x releases. If your snap relies on any of these features, please wait for the next releases to port them to use ``base: core22``.
 
-See `How to migrate from core20 to core22 10 <micro-howto-migrate-from-core20-to-core22.md>`__ for help on migrating your snaps to the new base.
+See :ref:`How to migrate from core20 to core22 10 <micro-howto-migrate-from-core20-to-core22>` for help on migrating your snaps to the new base.
 
 Build Providers
 ---------------
 
-The build environment is now created through a new API called `Craft Providers <https://craft-providers.readthedocs.io/en/latest/>`__, and consequently, Snapcraft now defaults to using `LXD <build-providers.md>`__.
+The build environment is now created through a new API called `Craft Providers <https://craft-providers.readthedocs.io/en/latest/>`__, and consequently, Snapcraft now defaults to using :ref:`LXD <build-providers>`.
 
 Command Line Interface
 ----------------------

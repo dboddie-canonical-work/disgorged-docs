@@ -1,15 +1,15 @@
 .. 28298.md
 
-.. \_the-kernel-module-load-interface:
+.. _the-kernel-module-load-interface:
 
 The kernel-module-load interface
 ================================
 
 ``kernel-module-load`` provides the ability to load, or deny loading, specific kernel modules. This interface gives privileged access to the device.
 
-See also the `kernel-module-control interface <the-kernel-module-control-interface.md>`__ for inserting, removing and querying kernel modules.
+See also the :ref:`kernel-module-control interface <the-kernel-module-control-interface>` for inserting, removing and querying kernel modules.
 
-   ⓘ This is a snap interface. See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
 
@@ -23,7 +23,7 @@ Developer details
 
    </h2>
 
-`Auto-connect <interface-management.md#the-kernel-module-load-interface-heading--auto-connections>`__: no `Super-privileged <super-privileged-interfaces.md>`__: yes
+`Auto-connect <interface-management.md#the-kernel-module-load-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
 
 **Attributes**: \* ``name`` (plug, required): provides the name of the kernel module to be loaded (eg, ‘``name: pcspkr``’) \* ``load`` (plug): string to declare when, or whether, to load this module. Values can be one of the following: - ``on-boot`` (default): loads the kernel module at boot time (eg. ``load: on-boot``) - ``denied``: prevents the module from being loaded at all (eg. ``load: denied``). Also known as *denylisting* in the Linux kernel. \* ``options`` (plug): string of options to use when loading the module (eg, ``options: p1=3 p2=true p3``)
 

@@ -1,6 +1,6 @@
 .. 28382.md
 
-.. \_the-shared-memory-interface:
+.. _the-shared-memory-interface:
 
 The shared-memory interface
 ===========================
@@ -11,7 +11,7 @@ Requires snapd version *2.54+* .
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 
@@ -30,7 +30,7 @@ Developer details
 +==================================================================================================+=======================+============================================================================+
 | `Auto-connect <interface-management.md#the-shared-memory-interface-heading--auto-connections>`__ | **no** by default     | **yes** when ``private`` is enabled, or with snaps from the same publisher |
 +--------------------------------------------------------------------------------------------------+-----------------------+----------------------------------------------------------------------------+
-| `Super-privileged <super-privileged-interfaces.md>`__                                            | **no** for plugs      | **yes** for slots                                                          |
+| :ref:`Super-privileged <super-privileged-interfaces>`                                            | **no** for plugs      | **yes** for slots                                                          |
 +--------------------------------------------------------------------------------------------------+-----------------------+----------------------------------------------------------------------------+
 
 **Attributes**:

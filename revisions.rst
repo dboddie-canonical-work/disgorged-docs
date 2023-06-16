@@ -1,6 +1,6 @@
 .. 35613.md
 
-.. \_revisions:
+.. _revisions:
 
 Revisions
 =========
@@ -96,7 +96,7 @@ Data management
 
    </h2>
 
-The revision identity is used as a reference for revision-specific data. As described in `Data locations <data-locations.md>`__, revision-specific data for a snap is stored in a either system-wide location, or a user-specific home location:
+The revision identity is used as a reference for revision-specific data. As described in :ref:`Data locations <data-locations>`, revision-specific data for a snap is stored in a either system-wide location, or a user-specific home location:
 
 -  **SNAP\_ DATA**: ``/var/snap/<snap name>/<revision number>``\  This location is also used to store data, mostly information utilised by background application and services, for logging, and other tasks that require persistence between snap launches.
 

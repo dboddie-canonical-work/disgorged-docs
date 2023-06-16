@@ -1,6 +1,6 @@
 .. 8405.md
 
-.. \_deprecation-notice-5:
+.. _deprecation-notice-5:
 
 Deprecation notice: 5
 =====================
@@ -18,4 +18,4 @@ To solve these issues, aliases are no longer carried within the snap itself with
 
 To get aliases in the Snap Store, the developer needs to request them and get approval from the developer community. This process happens in the Snapcraft forum; see the `request guidelines <https://snapcraft.io/docs/process-for-aliases-auto-connections-and-tracks>`__.
 
-See `Deprecation notices <deprecation-notices.md>`__ for further announcements.
+See :ref:`Deprecation notices <deprecation-notices>` for further announcements.

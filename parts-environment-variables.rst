@@ -1,11 +1,11 @@
 .. 12271.md
 
-.. \_parts-environment-variables:
+.. _parts-environment-variables:
 
 Parts environment variables
 ===========================
 
-When building a part to construct a snap, `Snapcraft <snapcraft-overview.md>`__ creates the following sets of environment variables that can optionally be used by a part’s build mechanism:
+When building a part to construct a snap, :ref:`Snapcraft <snapcraft-overview>` creates the following sets of environment variables that can optionally be used by a part’s build mechanism:
 
 -  `Locating directories <#parts-environment-variables-heading--locating-directories>`__
 
@@ -20,11 +20,11 @@ When building a part to construct a snap, `Snapcraft <snapcraft-overview.md>`__ 
 -  `Build flags <#parts-environment-variables-heading--build-flags>`__
 -  `Plugin variables <#parts-environment-variables-heading--plugin-variables>`__
 
-Environment variables can be accessed via the `override- <snapcraft-parts-metadata.md>`__ keywords with shell commands and `Scriptlets <override-build-steps.md>`__, or more generally within your project’s build infrastructure.
+Environment variables can be accessed via the :ref:`override- <snapcraft-parts-metadata>` keywords with shell commands and :ref:`Scriptlets <override-build-steps>`, or more generally within your project’s build infrastructure.
 
-See `Adding parts <adding-parts.md>`__ for a general overview of what parts are and how to use them, and for more details on how parts are built within the *snapcraft* environment, including build stages and the directories they use, see `Parts lifecycle <parts-lifecycle.md>`__.
+See :ref:`Adding parts <adding-parts>` for a general overview of what parts are and how to use them, and for more details on how parts are built within the *snapcraft* environment, including build stages and the directories they use, see :ref:`Parts lifecycle <parts-lifecycle>`.
 
-   ⓘ For the various environment variables available to running snap applications, see `Environment variables <environment-variables.md>`__.
+   ⓘ For the various environment variables available to running snap applications, see :ref:`Environment variables <environment-variables>`.
 
 .. raw:: html
 
@@ -36,7 +36,7 @@ Locating directories
 
    </h3>
 
-See `Parts lifecycle <parts-lifecycle.md>`__ and `Parts directories <parts-lifecycle.md#parts-environment-variables-heading--parts-directories>`__ for details on which directories are created and used when building a part.
+See :ref:`Parts lifecycle <parts-lifecycle>` and `Parts directories <parts-lifecycle.md#parts-environment-variables-heading--parts-directories>`__ for details on which directories are created and used when building a part.
 
 .. raw:: html
 
@@ -182,7 +182,7 @@ Plugin variables
 
    </h3>
 
-A part’s `plugin <snapcraft-plugins.md>`__ can add its own set of environment variables, or expand on the above *build* related flags.
+A part’s :ref:`plugin <snapcraft-plugins>` can add its own set of environment variables, or expand on the above *build* related flags.
 
 The ``build-environment`` keyword can be used to either override the default environment variables or define new ones. Here is a basic example:
 
@@ -198,4 +198,4 @@ The ``build-environment`` keyword can be used to either override the default env
 
 The above example will override default flags and search for libraries in a non-standard path.
 
-For a complete list of environment variables, see `Environment variables exposed by Snapcraft <environment-variables-that-snapcraft-exposes.md>`__.
+For a complete list of environment variables, see :ref:`Environment variables exposed by Snapcraft <environment-variables-that-snapcraft-exposes>`.

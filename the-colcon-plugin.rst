@@ -1,19 +1,19 @@
 .. 11895.md
 
-.. \_the-colcon-plugin:
+.. _the-colcon-plugin:
 
 The colcon plugin
 =================
 
 The ``colcon`` plugin is useful when building `ROS 2 <http://www.ros.org/>`__ parts that use `colcon <https://colcon.readthedocs.io/en/released/>`__.
 
-Plugin-specific features and syntax are dependent on which `base <base-snaps.md>`__ is being used, as outlined below:
+Plugin-specific features and syntax are dependent on which :ref:`base <base-snaps>` is being used, as outlined below:
 
 -  `base: core22 <#the-colcon-plugin-heading--core22>`__
 -  `base: core20 <#the-colcon-plugin-heading--core20>`__
 -  `base: core18 \| core <#the-colcon-plugin-heading--core18>`__
 
-This plugin uses the common plugin keywords as well as those for “sources”. For more information, see `Snapcraft parts metadata <snapcraft-parts-metadata.md>`__.
+This plugin uses the common plugin keywords as well as those for “sources”. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
 
 ##
 
@@ -27,7 +27,7 @@ base: core22
 
    </h3>
 
-For core22, this plugin is designed to work with the `ROS 2 Humble extension <the-ros-2-humble-extension.md>`__. If not using this extension, it is required to set the ``ROS_DISTRO`` environment variable to ``humble`` using ``build-environment``.
+For core22, this plugin is designed to work with the :ref:`ROS 2 Humble extension <the-ros-2-humble-extension>`. If not using this extension, it is required to set the ``ROS_DISTRO`` environment variable to ``humble`` using ``build-environment``.
 
 This plugin enables the following plugin-specific keywords on core22:
 
@@ -49,7 +49,7 @@ base: core20
 
    </h3>
 
-For core20, this plugin is designed to work with the `ROS 2 Foxy extension <the-ros2-foxy-extension.md>`__. If not using this extension, it is required to set the ``ROS_DISTRO`` environment variable to ``foxy`` using ``build-environment``.
+For core20, this plugin is designed to work with the :ref:`ROS 2 Foxy extension <the-ros2-foxy-extension>`. If not using this extension, it is required to set the ``ROS_DISTRO`` environment variable to ``foxy`` using ``build-environment``.
 
 This plugin enables the following plugin-specific keywords on core20:
 
@@ -83,8 +83,8 @@ This plugin enables the following plugin-specific keywords on core18:
 Related Information
 ===================
 
-See the `catkin plugin <the-catkin-plugin.md>`__ for building ROS 1 parts.
+See the :ref:`catkin plugin <the-catkin-plugin>` for building ROS 1 parts.
 
-For a simple example, see `ROS 2 applications <ros-2-deployment-with-snaps.md>`__, or search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+colcon%22&type=Code>`__ for projects already using the plugin.
+For a simple example, see :ref:`ROS 2 applications <ros-2-deployment-with-snaps>`, or search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+colcon%22&type=Code>`__ for projects already using the plugin.
 
-   ⓘ This is a *snapcraft* plugin. See `Snapcraft plugins <snapcraft-plugins.md>`__ and `Supported plugins <supported-plugins.md>`__ for further details on how plugins are used.
+   ⓘ This is a *snapcraft* plugin. See :ref:`Snapcraft plugins <snapcraft-plugins>` and :ref:`Supported plugins <supported-plugins>` for further details on how plugins are used.

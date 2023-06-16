@@ -1,6 +1,6 @@
 .. 25732.md
 
-.. \_snapcraft-metrics:
+.. _snapcraft-metrics:
 
 Snapcraft metrics
 =================

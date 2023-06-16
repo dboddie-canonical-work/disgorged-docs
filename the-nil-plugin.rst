@@ -1,6 +1,6 @@
 .. 8646.md
 
-.. \_the-nil-plugin:
+.. _the-nil-plugin:
 
 The nil plugin
 ==============
@@ -11,4 +11,4 @@ By using the *nil* plugin, parts can be defined purely by using properties autom
 
 For examples, search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+nil%22&type=Code>`__ for projects already using the plugin.
 
-   ⓘ This is a *snapcraft* plugin. See `Snapcraft plugins <snapcraft-plugins.md>`__ and `Supported plugins <supported-plugins.md>`__ for further details on how plugins are used.
+   ⓘ This is a *snapcraft* plugin. See :ref:`Snapcraft plugins <snapcraft-plugins>` and :ref:`Supported plugins <supported-plugins>` for further details on how plugins are used.

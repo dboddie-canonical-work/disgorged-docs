@@ -1,6 +1,6 @@
 .. 26569.md
 
-.. \_the-snap-refresh-control-interface:
+.. _the-snap-refresh-control-interface:
 
 The snap-refresh-control interface
 ==================================
@@ -11,7 +11,7 @@ The ``snap-refresh-control`` interface allows extended control, via `snapctl <ht
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 
@@ -25,7 +25,7 @@ Developer details
 
    </h2>
 
-`Auto-connect <interface-management.md#the-snap-refresh-control-interface-heading--auto-connections>`__: no `Super-privileged <super-privileged-interfaces.md>`__: yes
+`Auto-connect <interface-management.md#the-snap-refresh-control-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
 
 ``snap-refresh-control`` is a marker interface (with no associated AppArmor or Seccomp rules).
 

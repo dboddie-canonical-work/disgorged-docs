@@ -1,13 +1,13 @@
 .. 11650.md
 
-.. \_release-notes-snapcraft-3-4:
+.. _release-notes-snapcraft-3-4:
 
 Release notes: Snapcraft 3.4
 ============================
 
 These are the release notes for `Snapcraft 3.4 <https://github.com/snapcore/snapcraft/releases/tag/3.4>`__.
 
-For general details, including installation instructions, see `Snapcraft overview <snapcraft-overview.md>`__, or take a look at `Snapcraft release notes <snapcraft-release-notes.md>`__ for other *Snapcraft* releases.
+For general details, including installation instructions, see :ref:`Snapcraft overview <snapcraft-overview>`, or take a look at :ref:`Snapcraft release notes <snapcraft-release-notes>` for other *Snapcraft* releases.
 
 New *core* features
 -------------------
@@ -40,7 +40,7 @@ Plugins
 go
 ~~
 
-The `go <the-go-plugin.md>`__ plugin now works more broadly when using ``classic`` confinement. This helps avoid specifying ``no-patchelf`` for parts that fail to patch correctly.
+The :ref:`go <the-go-plugin>` plugin now works more broadly when using ``classic`` confinement. This helps avoid specifying ``no-patchelf`` for parts that fail to patch correctly.
 
 catkin
 ~~~~~~

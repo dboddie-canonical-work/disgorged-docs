@@ -1,6 +1,6 @@
 .. 8398.md
 
-.. \_deprecation-notice-2:
+.. _deprecation-notice-2:
 
 Deprecation notice: 2
 =====================
@@ -25,4 +25,4 @@ To move to the new schema, for plugins all you need to do is:
 
 …and apply those changes to your VCS if you are using one.
 
-See `Deprecation notices <deprecation-notices.md>`__ for further announcements.
+See :ref:`Deprecation notices <deprecation-notices>` for further announcements.

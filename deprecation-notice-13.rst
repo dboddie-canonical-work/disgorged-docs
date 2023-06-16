@@ -1,6 +1,6 @@
 .. 23774.md
 
-.. \_deprecation-notice-13:
+.. _deprecation-notice-13:
 
 Deprecation notice: 13
 ======================

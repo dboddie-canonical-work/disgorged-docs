@@ -1,6 +1,6 @@
 .. 22938.md
 
-.. \_debug-snaps-with-snap-try:
+.. _debug-snaps-with-snap-try:
 
 Debug snaps with snap try
 =========================
@@ -101,13 +101,13 @@ Using snapcraft try
 
    </h2>
 
-When developing a snap with `snapcraft <snapcraft-overview.md>`__, the ``snapcraft try`` command can be used in combination with ``snap try`` to quickly test a snap and fix issues.
+When developing a snap with :ref:`snapcraft <snapcraft-overview>`, the ``snapcraft try`` command can be used in combination with ``snap try`` to quickly test a snap and fix issues.
 
-The ``snapcraft try`` command runs through the build process to the completion of the *prime* stage (see `Parts lifecycle <parts-lifecycle.md>`__ for further details). It then exposes the resultant *prime* directory to the snapcraft directory, even from within a virtual machine or container.
+The :ref:``snapcraft try`` command runs through the build process to the completion of the *prime* stage (see `Parts lifecycle <parts-lifecycle>` for further details). It then exposes the resultant *prime* directory to the snapcraft directory, even from within a virtual machine or container.
 
 This *prime* directory includes all the staged components of a snap, which can then be installed and tested with the ``snap try <prime directory>`` command.
 
-The following, example, will build a *hello-world* snap within `LXD <build-options.md>`__ and offer its *prime* directory locally:
+The following, example, will build a *hello-world* snap within :ref:`LXD <build-options>` and offer its *prime* directory locally:
 
 .. code:: bash
 
@@ -131,4 +131,4 @@ The above snap can then be installed and tested with ```snap try`` <#debug-snaps
    $ snap try /home/user/hello-world/prime
    hello-world 0.1 mounted from /home/user/hello-world/prime
 
-For further help on testing and debugging a snap, see `Iterating over a build <iterating-over-a-build.md>`__ and `Debugging snaps <debugging-snaps.md>`__.
+For further help on testing and debugging a snap, see :ref:`Iterating over a build <iterating-over-a-build>` and :ref:`Debugging snaps <debugging-snaps>`.

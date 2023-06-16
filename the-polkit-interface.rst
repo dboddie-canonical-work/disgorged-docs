@@ -1,6 +1,6 @@
 .. 28408.md
 
-.. \_the-polkit-interface:
+.. _the-polkit-interface:
 
 The polkit interface
 ====================
@@ -9,7 +9,7 @@ The ``polkit`` interface provides daemons with the permission to use the `polkit
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 

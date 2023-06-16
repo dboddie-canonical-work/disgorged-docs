@@ -1,6 +1,6 @@
 .. 31668.md
 
-.. \_the-posix-mq-interface:
+.. _the-posix-mq-interface:
 
 The posix-mq interface
 ======================
@@ -9,7 +9,7 @@ The ``posix-mq`` interface enables inter-process communication (IPC) messages to
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 
@@ -28,7 +28,7 @@ Developer details
 +=============================================================================================+=======================+============================================+
 | `Auto-connect <interface-management.md#the-posix-mq-interface-heading--auto-connections>`__ | **no** by default     | **yes** with snaps from the same publisher |
 +---------------------------------------------------------------------------------------------+-----------------------+--------------------------------------------+
-| `Super-privileged <super-privileged-interfaces.md>`__                                       | **no** for plugs      | **yes** for slots                          |
+| :ref:`Super-privileged <super-privileged-interfaces>`                                       | **no** for plugs      | **yes** for slots                          |
 +---------------------------------------------------------------------------------------------+-----------------------+--------------------------------------------+
 
 **Attributes**:

@@ -1,6 +1,6 @@
 .. 1433.md
 
-.. \_stracing-snap-commands:
+.. _stracing-snap-commands:
 
 Stracing snap commands
 ======================

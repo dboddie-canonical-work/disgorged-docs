@@ -1,21 +1,21 @@
 .. 8505.md
 
-.. \_the-go-plugin:
+.. _the-go-plugin:
 
 The go plugin
 =============
 
-The Go plugin integrates projects written in `Go <https://golang.org/>`__. This plugin uses the common plugin keywords as well as those for `sources <snapcraft-parts-metadata.md#the-go-plugin-heading--source>`__. For more information, see `Snapcraft parts metadata <snapcraft-parts-metadata.md>`__.
+The Go plugin integrates projects written in `Go <https://golang.org/>`__. This plugin uses the common plugin keywords as well as those for `sources <snapcraft-parts-metadata.md#the-go-plugin-heading--source>`__. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
 
-Plugin-specific features and syntax are dependent on which `base <base-snaps.md>`__ is being used, as outlined below:
+Plugin-specific features and syntax are dependent on which :ref:`base <base-snaps>` is being used, as outlined below:
 
 -  `base: core22 <#the-go-plugin-heading--core22>`__
 -  `base: core20 <#the-go-plugin-heading--core20>`__
 -  `base: core18 \| core <#the-go-plugin-heading--core18>`__
 
-See `Go applications <go-applications.md>`__ for a simple example, or search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+go%22&type=Code>`__ for projects already using the plugin.
+See :ref:`Go applications <go-applications>` for a simple example, or search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+go%22&type=Code>`__ for projects already using the plugin.
 
-   ⓘ This is a *snapcraft* plugin. See `Snapcraft plugins <snapcraft-plugins.md>`__ and `Supported plugins <supported-plugins.md>`__ for further details on how plugins are used.
+   ⓘ This is a *snapcraft* plugin. See :ref:`Snapcraft plugins <snapcraft-plugins>` and :ref:`Supported plugins <supported-plugins>` for further details on how plugins are used.
 
 .. raw:: html
 

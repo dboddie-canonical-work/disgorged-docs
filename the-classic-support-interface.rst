@@ -1,6 +1,6 @@
 .. 7777.md
 
-.. \_the-classic-support-interface:
+.. _the-classic-support-interface:
 
 The classic-support interface
 =============================
@@ -13,7 +13,7 @@ Requires snapd version *2.23+*.
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 
@@ -27,7 +27,7 @@ Developer details
 
    </h2>
 
-`Auto-connect <interface-management.md#the-classic-support-interface-heading--auto-connections>`__: no `Super-privileged <super-privileged-interfaces.md>`__: yes
+`Auto-connect <interface-management.md#the-classic-support-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
 
 Code examples
 -------------

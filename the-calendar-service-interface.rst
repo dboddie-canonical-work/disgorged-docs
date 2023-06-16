@@ -1,6 +1,6 @@
 .. 7804.md
 
-.. \_the-calendar-service-interface:
+.. _the-calendar-service-interface:
 
 The calendar-service interface
 ==============================
@@ -9,7 +9,7 @@ The ``calendar-service`` interface enables communication with Evolution Data Ser
 
 [note type=“positive” status=“Interface documentation”]
 
-See `Interface management <interface-management.md>`__ and `Supported interfaces <supported-interfaces.md>`__ for further details on how interfaces are used. [/note]
+See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
 
 --------------
 

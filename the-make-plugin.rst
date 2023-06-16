@@ -1,6 +1,6 @@
 .. 8622.md
 
-.. \_the-make-plugin:
+.. _the-make-plugin:
 
 The make plugin
 ===============
@@ -9,11 +9,11 @@ The ``make`` plugin is useful when building `make <https://www.gnu.org/software/
 
 This plugin runs ‘make’ followed by ‘make install’, except when the ``artifacts`` keyword is used with *core18* or *core*.
 
-If your project uses `Automake <https://www.gnu.org/software/automake/>`__, take a look at the `autotools <the-autotools-plugin.md>`__ plugin. For examples, search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+make%22&type=Code>`__ for projects using the plugin.
+If your project uses `Automake <https://www.gnu.org/software/automake/>`__, take a look at the :ref:`autotools <the-autotools-plugin>` plugin. For examples, search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+make%22&type=Code>`__ for projects using the plugin.
 
-This plugin uses the common plugin keywords as well as those for “sources”. For more information, see `Snapcraft parts metadata <snapcraft-parts-metadata.md>`__.
+This plugin uses the common plugin keywords as well as those for “sources”. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
 
-Its features and syntax are dependent on which `base <base-snaps.md>`__ is being used, as outlined below:
+Its features and syntax are dependent on which :ref:`base <base-snaps>` is being used, as outlined below:
 
 -  `base: core22 <#the-make-plugin-heading--core22>`__
 -  `base: core20 <#the-make-plugin-heading--core20>`__
@@ -21,7 +21,7 @@ Its features and syntax are dependent on which `base <base-snaps.md>`__ is being
 
 ..
 
-   ⓘ This is a *snapcraft* plugin. See `Snapcraft plugins <snapcraft-plugins.md>`__ and `Supported plugins <supported-plugins.md>`__ for further details on how plugins are used.
+   ⓘ This is a *snapcraft* plugin. See :ref:`Snapcraft plugins <snapcraft-plugins>` and :ref:`Supported plugins <supported-plugins>` for further details on how plugins are used.
 
 .. raw:: html
 
