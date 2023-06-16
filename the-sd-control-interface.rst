@@ -7,9 +7,10 @@ The sd-control interface
 
 The ``sd-control`` interface allows for the management and control of SD cards on certain devices using the DualSD driver.
 
-[note type=“positive” status=“Interface documentation”]
+.. note::
 
-See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
+
+          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
 

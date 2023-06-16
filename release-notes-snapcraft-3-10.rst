@@ -135,9 +135,7 @@ Several AppStream fixes arrive with this release. These include a fix related to
 Full list of changes
 --------------------
 
-The issues and features worked on for Snapcraft 3.10 are reflected in the following change list:
-
-[details=List of changes for Snapcraft 3.10] Adam Collard: ————-
+The issues and features worked on for Snapcraft 3.10 are reflected in the following change list: Adam Collard: ————-
 
 -  snap: add license to snapcraft.yaml
 
@@ -387,4 +385,4 @@ Ted Kern:
 dalance:
 --------
 
--  rust plugin: set rustup profile to minimal (`#2767 <https://github.com/snapcore/snapcraft/pull/2767>`__) [/details]
+-  rust plugin: set rustup profile to minimal (`#2767 <https://github.com/snapcore/snapcraft/pull/2767>`__) 

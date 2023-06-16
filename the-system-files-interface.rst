@@ -21,9 +21,10 @@ Example
 
 The `Firefox <https://snapcraft.io/firefox>`__, `Chromium <https://snapcraft.io/chromium>`__ and `Thunderbird <https://snapcraft.io/thunderbird>`__ snaps use this interface to enable access to system-installed policies to customise each respective application.
 
-[note type=“positive” status=“Interface documentation”]
+.. note::
 
-See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
+
+          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
 
@@ -43,9 +44,10 @@ Requires snapd version *2.37+*.
 
 Consumers of this interface require a `snap declaration <https://snapcraft.io/docs/process-for-aliases-auto-connections-and-tracks>`__ for distribution via the `Snap Store <https://snapcraft.io/store>`__ and acceptance in the store requires that the interface is not be used to access: - system files where the snap is not the clear owner (eg, /dev, /proc, /sys, /usr, etc). - paths in :ref:``/dev``, such as ``/dev/sda1`` Access to ``/dev`` device nodes requires both AppArmor policy and device control group inclusion, but the *system-files* interface does not have enough information to generate the necessary policy to enable these use cases. As such, purpose-specific interfaces should be used instead, such as `block-devices <the-block-devices-interface>` or :ref:`raw-volume <the-raw-volume-interface>`.
 
-[note type=“caution” status=“Caution”] Do not share data between snaps. While :ref:``system-files`` can be used to share data with another snap, such as within a configuration file, this behaviour is not recommended. The `content interface <the-content-interface>` should be used instead.
+.. note::
+          Do not share data between snaps. While :ref:``system-files`` can be used to share data with another snap, such as within a configuration file, this behaviour is not recommended. The `content interface <the-content-interface>` should be used instead.
 
-[/note]
+
 
 An additional requirement for acceptance in the Global store is using a descriptive interface reference for use with ``snap connections|interfaces|connect|disconnect``.
 

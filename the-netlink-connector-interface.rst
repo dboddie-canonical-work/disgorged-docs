@@ -9,9 +9,10 @@ The ``netlink-connector`` interface allows communication through the kernel Netl
 
 See also :ref:`netlink-driver <the-netlink-driver-interface>` and :ref:`netlink-audit <the-netlink-audit-interface>`.
 
-[note type=“positive” status=“Interface documentation”]
+.. note::
 
-See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
+
+          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
 

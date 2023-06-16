@@ -12,9 +12,10 @@ It may sometimes be necessary, or helpful, to build snaps without this network d
 -  `Preparation <#snapcraft-offline-mode-heading--preparation>`__
 -  `Run snapcraft offline <#snapcraft-offline-mode-heading--offline>`__
 
-[note type=“caution” status=“Only works with Snapcraft 6.x”]
+.. note::
 
-Offline mode is considered **experimental** and only works with Snapcraft 6.x. It will not work with earlier versions, or Snapcraft 7.x. [/note]
+
+          Offline mode is considered **experimental** and only works with Snapcraft 6.x. It will not work with earlier versions, or Snapcraft 7.x.
 
 --------------
 

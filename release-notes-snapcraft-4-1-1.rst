@@ -16,8 +16,6 @@ Full list of changes
 
 The issues and features worked on for Snapcraft 4.1.1 are reflected in the following change list:
 
-[details=List of changes for Snapcraft 4.1.1]
-
 Bug Fixes
 ---------
 
@@ -30,4 +28,4 @@ Tooling
 
 -  spread tests: higher timeout for extension tests `@sergiusens <https://github.com/sergiusens>`__ (`#3205 <https://github.com/snapcore/snapcraft/pull/3205>`__)
 
-[/details]
+

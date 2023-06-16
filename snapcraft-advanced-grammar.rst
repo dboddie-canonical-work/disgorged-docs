@@ -55,7 +55,8 @@ The *try* statement
 
 ``<primitive>`` may be either a list or a scalar, depending on the keyword.
 
-[note type=“caution” status=“Warning”] The *try* statement does not work with builds using a :ref:`base snap <base-snaps>` of ``core22`` or later. [/note]
+.. note::
+          The *try* statement does not work with builds using a :ref:`base snap <base-snaps>` of ``core22`` or later.
 
 The body of the ``try`` clause is taken into account only when all primitives contained within it are valid (primitive validity is determined on a keyword-specific basis). If they are not all valid, and are immediately followed by ``else`` clauses, those are tried in order, and one of them must be satisfied. A ``try`` clause with no ‘``else``’ clause is considered satisfied even if it contains invalid primitives.
 

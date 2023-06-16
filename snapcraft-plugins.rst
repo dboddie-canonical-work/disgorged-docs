@@ -44,9 +44,7 @@ With Snapcraft 4.0, the help command is also base aware. To get help for a plugi
 
 For further details on specific plugins, see :ref:`Supported plugins <supported-plugins>`, and to create your own, see :ref:`Writing local plugins <writing-local-plugins>`.
 
-.. raw:: html
-
-   <!-- TODO: Move the following to the 'Writing local plugins* document
+.. raw:: html TODO: Move the following to the 'Writing local plugins* document
 
    When building a snap, Snapcraft advances through the following steps to incorporate a snap's plugins:
 
@@ -58,4 +56,4 @@ For further details on specific plugins, see :ref:`Supported plugins <supported-
 
    Each step corresponds to a *snapcraft* command. When you initiate `snapcraft pull`, for instance, the source is pulled for each plugin within each part in the snap. Each part will then have a fully populated `parts/<part-name/>/src/` directory. Similarly, `snapcraft build` invokes a plugin's build process for each part in turn.
 
-   -->
+   

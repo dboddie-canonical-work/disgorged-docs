@@ -209,9 +209,7 @@ To perform a progressive release, use the ``release`` command with the with the 
 Full list of changes
 --------------------
 
-The issues and features worked on for Snapcraft 4.0 are reflected in the following change list:
-
-[details=List of changes for Snapcraft 4.0] ### Andrey M (1):
+The issues and features worked on for Snapcraft 4.0 are reflected in the following change list: ### Andrey M (1):
 
 -  dotnet plugin: add dotnet runtime version and support core18 (`#3005 <https://github.com/snapcore/snapcraft/pull/3005>`__)
 
@@ -338,4 +336,4 @@ Sergio Schvezov (56):
 -  tests: add python3-wheel to staged python spread test
 -  tests: remove MATCH from build-and-run-hello spread task
 -  tests: add python3-minimal to python-staged spread
--  pluginhandler: cleanup before rebuilding for anything not PluginV1 [/details]
+-  pluginhandler: cleanup before rebuilding for anything not PluginV1 

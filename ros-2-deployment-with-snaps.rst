@@ -48,8 +48,6 @@ core18
 
    </h3>
 
-[details=“core18 getting started”]
-
 Snaps are defined in a single YAML file placed in the root folder of your project. The following example shows the entire *snapcraft.yaml* file for an example project, `ros2-talker-listener <https://github.com/snapcraft-docs/ros2-talker-listener>`__. Don’t worry, we’ll break this down.
 
 .. code:: yaml
@@ -210,7 +208,7 @@ Once done developing your snap, you can easily clean up the build environment:
 
    $ snapcraft clean
 
-[/details]
+
 ----------
 
 .. raw:: html
@@ -222,8 +220,6 @@ core20
 .. raw:: html
 
    </h3>
-
-[details=“core20 getting started”]
 
 Snaps are defined in a single YAML file placed in the root folder of your project. The following example shows the entire *snapcraft.yaml* file for an example project, `ros2-talker-listener-core20 <https://github.com/snapcraft-docs/ros2-talker-listener-core20>`__. Don’t worry, we’ll break this down.
 
@@ -401,7 +397,7 @@ Once done developing your snap, you can easily clean up the build environment:
 
 .. _details-1:
 
-[/details]
+
 ----------
 
 .. raw:: html
@@ -413,8 +409,6 @@ core22
 .. raw:: html
 
    </h3>
-
-[details=“core22 getting started”]
 
 Snaps are defined in a single YAML file placed in the root folder of your project. The following example shows the entire *snapcraft.yaml* file for an example project, `ros2-talker-listener-core22 <https://github.com/snapcraft-docs/ros2-talker-listener-core22>`__. Don’t worry, we’ll break this down.
 
@@ -593,7 +587,7 @@ Once done developing your snap, you can easily clean up the build environment:
 
    $ snapcraft clean
 
-[/details]
+
 
 Publishing your snap
 --------------------

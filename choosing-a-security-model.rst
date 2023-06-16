@@ -36,7 +36,8 @@ To confine your application, return to your snapcraft.yaml file and change the c
 
    confinement: strict
 
-[quote] ℹ If you are working with an :ref:`Electron app <electron-apps>`, you will not have a snapcraft.yaml file. Set the ``confinement`` `property <https://www.electron.build/configuration/snap>`__, under the top-level ``snap`` key in your package.json file. This defaults to ``strict``. [/quote]
+.. note::
+          ℹ If you are working with an :ref:`Electron app <electron-apps>`, you will not have a snapcraft.yaml file. Set the ``confinement`` `property <https://www.electron.build/configuration/snap>`__, under the top-level ``snap`` key in your package.json file. This defaults to ``strict``.
 
 You will also likely need to specify some interfaces. These are declarations that tell the system to give permission for a specific task, such as accessing a webcam or binding to a network port. You can find a list of interfaces and their intended purpose in the :ref:`reference documentation <supported-interfaces>`.
 

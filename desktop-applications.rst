@@ -30,9 +30,7 @@ Read the documentation of the GUI toolkit your application uses in order to get 
 | :ref:`Flutter <flutter-applications>`                                | :ref:`The desktop interfaces <the-desktop-interfaces>`                                                   |
 +----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
 
-.. raw:: html
-
-   <!--- [wxWidgets](the-wxwidgets-sdk-stage-snaps.md) (not including this since it's an unmaintained community project)-->
+.. raw:: html- [wxWidgets](the-wxwidgets-sdk-stage-snaps.md) (not including this since it's an unmaintained community project)
 
 Refining
 --------

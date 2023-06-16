@@ -57,11 +57,12 @@ Snaps are downloaded from the `Snap Store <https://snapcraft.io/store>`__ and un
 
 For staged snaps, the ``meta`` and ``snap`` directories from the snap will be available as ``meta.<snap-name>`` and ``snap.<snap-name>`` for cases where assets from those locations are desired for reuse.
 
-[note type=“positive” status=“Adding additional repositories”]
+.. note::
 
-See :ref:`Snapcraft package repositories <snapcraft-package-repositories>` for details on how to add *apt* repositories as sources for ``build-packages`` and ``stage-packages``, including those hosted on a PPA.
 
-[/note]
+          See :ref:`Snapcraft package repositories <snapcraft-package-repositories>` for details on how to add *apt* repositories as sources for ``build-packages`` and ``stage-packages``, including those hosted on a PPA.
+
+
 
 .. raw:: html
 

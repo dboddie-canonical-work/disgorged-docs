@@ -13,9 +13,10 @@ The interface **does not** allow the management of users and groups for the syst
 
 Due to the privileged nature of access enabled by this interface, its use is reserved exclusively for “management snaps” from `brand stores <glossary.md#the-account-control-interface-heading--brand-store>`__.
 
-[note type=“positive” status=“Interface documentation”]
+.. note::
 
-See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
+
+          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
 

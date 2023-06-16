@@ -51,11 +51,12 @@ Two YAML keys are used to describe your target device:
 
 -  **defaults** (YAML sub-section, optional): default configuration options for the defined snaps, applied on installation: ``yaml  defaults:        <snap id>:            <key>: <value>`` In addition to ``<snap id>``, it is also possible to use ``system`` to define system-wide configuration options, similar to running ``snap set system key=value``: ``yaml  defaults:        system:            <key>: <value>``
 
-[note type=“negative” status=“Warning”] Defaults only become available during snap installation.
+.. note::
+          Defaults only become available during snap installation.
 
-Values in ``defaults:`` (other than ``system:``) are not consumed and do not become available until either the `configure hook <supported-snap-hooks.md#gadget-snaps-heading--the-configure-hook>`__ or the `default-configure hook <supported-snap-hooks.md#gadget-snaps-heading--default-configure>`__ are run as part of the corresponding snap installation. ``system:`` values are set immediately.
+          Values in ``defaults:`` (other than ``system:``) are not consumed and do not become available until either the `configure hook <supported-snap-hooks.md#gadget-snaps-heading--the-configure-hook>`__ or the `default-configure hook <supported-snap-hooks.md#gadget-snaps-heading--default-configure>`__ are run as part of the corresponding snap installation. ``system:`` values are set immediately.
 
-[/note]
+
 
 -  **volumes** (YAML sub-section, required): the volumes layout, where each disk image is represented as a YAML sub-section.
 
@@ -101,8 +102,6 @@ The ``meta/gadget.yaml`` file contains the basic metadata for gadget-specific fu
 A gadget snap’s boot assets can also be automatically updated when the snap is refreshed. See :ref:`Updating gadget boot assets <updating-gadget-boot-assets>` for further details.
 
 The following specification defines what is supported in ``gadget.yaml``:
-
-[details=“gadget.yaml”]
 
 .. code:: yaml
 
@@ -233,7 +232,7 @@ The following specification defines what is supported in ``gadget.yaml``:
                preserve:
                  - <filename>
 
-[/details]
+
 
 .. raw:: html
 
@@ -244,8 +243,6 @@ Example: Raspberry Pi 3 gadget.yaml
 .. raw:: html
 
    </h3>
-
-[details=“Raspberry Pi gadget.yaml”]
 
 .. code:: yaml
 
@@ -291,7 +288,7 @@ Example: Raspberry Pi 3 gadget.yaml
            # XXX: make auto-grow to partition
            size: 1500M
 
-[/details]
+
 
 .. raw:: html
 

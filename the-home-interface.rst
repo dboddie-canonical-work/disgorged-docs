@@ -31,9 +31,10 @@ A snap developer can :ref:`request permission <permission-requests>` to have the
 
 Requires snapd version *2.33+*.
 
-[note type=“positive” status=“Interface documentation”]
+.. note::
 
-This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
+
+          This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
 

@@ -13,9 +13,10 @@ The ``dm-crypt`` interface enables the following access functions to `dm-crypt <
 -  formatting encrypted partition(s) ( creation of fs)
 -  mounting of encrypted partition(s)
 
-[note type=“positive” status=“Interface documentation”]
+.. note::
 
-See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
+
+          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
 

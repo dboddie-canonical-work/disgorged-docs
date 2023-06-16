@@ -79,7 +79,8 @@ As illustrated above, electron-builder has been added to ``scripts`` and ``devDe
 
    npm install --save-dev electron-builder
 
-[quote] ⓘ Make sure your package.json depends on Electron version 9.x.x or later and electron-builder version 22.7.0 or later. [/quote]
+.. note::
+          ⓘ Make sure your package.json depends on Electron version 9.x.x or later and electron-builder version 22.7.0 or later.
 
 The script snippet named ``dist`` calls the ``build`` command from electron-builder and instructs it to build a Linux snap.
 

@@ -44,8 +44,6 @@ An additional ``--key-name`` argument can be used to specify a key other than th
 
 A text editor will open containing a template for a validation set assertion that needs to be filled in by the developer issuing the assertion.
 
-[details=validation-set template]
-
 .. code:: yaml
 
    account-id: <account-id>
@@ -60,7 +58,7 @@ A text editor will open containing a template for a validation set assertion tha
    #    presence: [required|optional|invalid]  # Optional, defaults to required.
    #    revision: <n> # The revision of the snap. Optional.
 
-[/details]
+
 
 The template validation set assertion needs to be populated with the details of the snaps you wish to include in the set. These are listed beneath the ``snaps:`` section, and each snap can use the following fields:
 

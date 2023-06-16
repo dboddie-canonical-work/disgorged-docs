@@ -9,9 +9,10 @@ The ``acrn`` interface allows access to, and control of, user virtual machines u
 
 **This interface is primarily intended to be used with**\ `Ubuntu Core <glossary.md#the-acrn-interface-heading--ubuntu-core>`__\ **devices.**
 
-[note type=“positive” status=“Interface documentation”]
+.. note::
 
-See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
+
+          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
 

@@ -21,9 +21,10 @@ Example
 
 The `Yaru MATE Icons <https://github.com/ubuntu-mate/icon-theme-yaru-mate-snap>`__ snap is a good producer snap example, letting other applications access the wonderful MATE icon theme. But there are many other producer snaps too, including several for `GTK Common Themes <https://snapcraft.io/gtk-common-themes>`__ and `KDE Frameworks <https://snapcraft.io/kde-frameworks-5-core18>`__ for better application integration with the desktop.
 
-[note type=“positive” status=“Interface documentation”]
+.. note::
 
-See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
+
+          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
 

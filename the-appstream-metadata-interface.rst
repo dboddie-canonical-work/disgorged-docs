@@ -7,9 +7,10 @@ The appstream-metadata interface
 
 `AppStream <https://www.freedesktop.org/software/appstream/docs/>`__ is a metadata standard used to describe a common set software components. The ``appstream-metadata`` interface allows access to AppStream metadata from the host system.
 
-[note type=“positive” status=“Interface documentation”]
+.. note::
 
-See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
+
+          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
 

@@ -30,7 +30,8 @@ Next, upload the snap and release it into the `stable channel <https://snapcraft
 
 If no errors are detected in the automated review of your upload, your app will be immediately available for installation.
 
-[quote] ⓘ If errors are detected, the snapcraft command will give a brief summary and guidance on how to correct each. [/quote]
+.. note::
+          ⓘ If errors are detected, the snapcraft command will give a brief summary and guidance on how to correct each.
 
 You can now test-install your snap from the Snap Store, ideally from a different testing environment to the one used to build your snap:
 

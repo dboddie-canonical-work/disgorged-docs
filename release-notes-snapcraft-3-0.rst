@@ -374,8 +374,6 @@ Full list of changes
 
 The issues and features worked on for 3.0 can be seen on the `3.0 launchpad milestone <https://launchpad.net/snapcraft/+milestone/3.0>`__ which are reflected in the following change list:
 
-[details=List of changes for Snapcraft 3.0]
-
 -  snap: add the https transport (`#2244 <https://github.com/snapcore/snapcraft/pull/2244>`__)
 -  build providers: environment setup for projects (`#2225 <https://github.com/snapcore/snapcraft/pull/2225>`__)
 -  build providers: provide support to shell in (`#2249 <https://github.com/snapcore/snapcraft/pull/2249>`__)
@@ -488,7 +486,7 @@ The issues and features worked on for 3.0 can be seen on the `3.0 launchpad mile
 -  rust plugin: do not ignore the cross compile target (`#2264 <https://github.com/snapcore/snapcraft/pull/2264>`__)
 -  nodejs plugin: add support for ppc64el and s390x (`#2310 <https://github.com/snapcore/snapcraft/pull/2310>`__) (`#2310 <https://github.com/snapcore/snapcraft/pull/2310>`__)
 -  nodejs plugin: update to the latest 8.x LTS version (`#2342 <https://github.com/snapcore/snapcraft/pull/2342>`__)
--  yaml: replace yaml.safe_load() with CSafeLoader (`#2218 <https://github.com/snapcore/snapcraft/pull/2218>`__) [/details]
+-  yaml: replace yaml.safe_load() with CSafeLoader (`#2218 <https://github.com/snapcore/snapcraft/pull/2218>`__) 
 
 .. |asciicast| image:: https://camo.githubusercontent.com/e31b1f2e1d5512c3fc67993c17630e0ce7f945d4/68747470733a2f2f61736369696e656d612e6f72672f612f74353437663049744279367057336b43534c786456304a564c2e737667
    :target: https://asciinema.org/a/t547f0ItBy6pW3kCSLxdV0JVL

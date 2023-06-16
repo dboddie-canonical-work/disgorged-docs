@@ -20,9 +20,10 @@ Use ``snap interface serial-port`` to see which serial-port devices are availabl
 
 Once connected, the consuming snap can use the device via the path specified by the connected slot.
 
-[note type=“positive” status=“Interface documentation”]
+.. note::
 
-See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
+
+          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
 

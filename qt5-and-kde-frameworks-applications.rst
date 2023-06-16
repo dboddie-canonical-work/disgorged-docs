@@ -35,8 +35,6 @@ KCalc Snap
 
 Snaps are defined in a single yaml file placed in the root of your project. The Kcalc example shows the entire snapcraft.yaml for an existing project. We’ll break this down.
 
-[details=snapcraft.yaml for KCalc]
-
 .. code:: yaml
 
    name: kcalc
@@ -91,7 +89,7 @@ Snaps are defined in a single yaml file placed in the root of your project. The 
          - "-DBUILD_TESTING=OFF"
          - "-DKDE_SKIP_TEST_SETTINGS=ON"
 
-[/details]
+
 
 Metadata
 ^^^^^^^^

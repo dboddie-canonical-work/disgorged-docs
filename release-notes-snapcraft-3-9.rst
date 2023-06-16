@@ -101,8 +101,6 @@ Full list of changes
 
 The issues and features worked on for Snapcraft 3.9 are reflected in the following change list:
 
-[details=List of changes for Snapcraft 3.9]
-
 Sergio Schvezov
 ~~~~~~~~~~~~~~~
 
@@ -259,4 +257,4 @@ Ken VanDine
 -  gnome extension: use the snap name only for the default-provider (`#2763 <https://github.com/snapcore/snapcraft/pull/2763>`__)
 -  kde neon extension: use the snap name only for the default-provider (`#2764 <https://github.com/snapcore/snapcraft/pull/2764>`__)
 
-[/details]
+

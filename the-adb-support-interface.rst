@@ -19,9 +19,10 @@ Example
 
 `guiscrcpy <https://snapcraft.io/guiscrcpy>`__ uses *adb-support* to help share an Android screen on a Linux desktop.
 
-[note type=“positive” status=“Interface documentation”]
+.. note::
 
-See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
+
+          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
 

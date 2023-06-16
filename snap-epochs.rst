@@ -83,9 +83,7 @@ Epoch transitions
 
 The following table illustrates which revision (R) and epoch (E) a user will receive when refreshing an application from stable and candidate channels:
 
-.. raw:: html
-
-   <!-- OLD MARKDOWN TABLE
+.. raw:: html OLD MARKDOWN TABLE
    |  | stable  | candidate | user 1 installs from <br />  stable | user 2  installs from <br /> candidate         | user 3  installs from <br />  candidate |
    | -- | ------- | --------- | --------------------------- | -------------------------------------- | ------------------------------ |
    | 1 | R1, E0  | -         | R1                          | R1                                     |  -                              |
@@ -97,7 +95,7 @@ The following table illustrates which revision (R) and epoch (E) a user will rec
    | 7 | R6, E1* |  -         | R6                          | R6                                     | R6                             |
    | 8 |  -       | R7, E1    | R6                          | R7                                     | R7                             |
    (!) is used to show the influence of epochs on locally installed revisions.
-   -->
+   
 
 .. raw:: html
 

@@ -69,9 +69,10 @@ For example, if you want to set the ``version`` of a snap based on the ``git tag
          craftctl default
          craftctl set version=$(git describe --tags --abbrev=10)
 
-[note type=“caution” status=“Caution”] Use ``adopt-info``\ 
+.. note::
+          Use ``adopt-info``\
 
-To incorporate retrieved metadata correctly, ensure that ``adopt-info`` points to the part that runs ``craftctl set``. Without this, snap metadata will not be updated. [/note]
+          To incorporate retrieved metadata correctly, ensure that ``adopt-info`` points to the part that runs ``craftctl set``. Without this, snap metadata will not be updated.
 
 .. raw:: html
 

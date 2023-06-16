@@ -7,9 +7,10 @@ The scsi-generic interface
 
 The ``scsi-generic`` interface allows read and write access to `SCSI Generic driver <https://www.kernel.org/doc/html/latest/scsi/scsi-generic.html>`__ (sg) devices.
 
-[note type=“positive” status=“Interface documentation”]
+.. note::
 
-See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
+
+          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
 

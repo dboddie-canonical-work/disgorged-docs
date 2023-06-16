@@ -9,9 +9,10 @@ The ``allegro-vcu`` interface enables access to the Allegro Video Core Unit, usi
 
 This interface is intended primarily to be used with `Ubuntu Core <glossary.md#the-allegro-vcu-interface-heading--ubuntu-core>`__.
 
-[note type=“positive” status=“Interface documentation”]
+.. note::
 
-See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
+
+          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
 

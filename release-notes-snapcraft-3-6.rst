@@ -24,8 +24,6 @@ Full list of changes
 
 The issues and features worked on for 3.6 can be seen on the `3.6 <https://github.com/snapcore/snapcraft/releases/tag/3.6>`__ launchpad milestone which are reflected in the following change list:
 
-[details=List of changes for Snapcraft 3.6]
-
 Sergio Schvezov
 ~~~~~~~~~~~~~~~
 
@@ -50,4 +48,4 @@ Chris Patterson
 
 -  tools: add ``black`` snap to environment-setup.sh (`#2595 <https://github.com/snapcore/snapcraft/pull/2595>`__)
 
-[/details]
+

@@ -89,8 +89,6 @@ Full list of changes
 
 The issues and features worked on for 3.1 can be seen on the `3.1 launchpad milestone <https://launchpad.net/snapcraft/+milestone/3.1>`__ which are reflected in the following change list:
 
-[details=list of changes for Snapcraft 3.1]
-
 -  cmake plugin: use native primitives (`#2397 <https://github.com/snapcore/snapcraft/pull/2397>`__)
 -  cmake plugin: use build snaps to search paths (`#2399 <https://github.com/snapcore/snapcraft/pull/2399>`__)
 -  static: update to the latest flake8 (`#2420 <https://github.com/snapcore/snapcraft/pull/2420>`__)
@@ -122,4 +120,4 @@ The issues and features worked on for 3.1 can be seen on the `3.1 launchpad mile
 -  tests: use more fine grained assertions in lifecycle tests
 -  tests: remove rust revision testing for i386
 
-[/details]
+

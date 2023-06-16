@@ -225,7 +225,8 @@ A slot and a plug can only be connected if they have the same interface name.
 
 Add the ``--no-wait`` option to *snap connect* or *snap disconnect* to run the process in the background and return immediately to the command prompt.
 
-[note type=“positive”] A successful connection grants any necessary permissions that may be required by the interface to function. [/note]
+.. note::
+          A successful connection grants any necessary permissions that may be required by the interface to function.
 
 .. raw:: html
 

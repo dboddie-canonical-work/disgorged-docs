@@ -97,8 +97,6 @@ To instantiate a remote build, use the ``remote-build`` argument with snapcraft:
 
 The remote build process will now start.
 
-[details=“Example remote-build output”]
-
 The following is typical output for a successful single architecture remote build:
 
 .. code:: bash
@@ -124,7 +122,7 @@ The following is typical output for a successful single architecture remote buil
    Build log available at 'hello_amd64.1.txt'
    Build complete.
 
-[/details]
+
 
 Snapcraft waits for the build to complete before retrieving the resultant snaps, and build logs, and placing them all in your local build directory. Build time depends on the target architecture, the package size, and the availability of builder back-ends.
 

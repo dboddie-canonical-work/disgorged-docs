@@ -11,9 +11,10 @@ Due to its ability to permit the installation any snap at potentially any confin
 
 Consequently, consumers of this interface require `approval <https://snapcraft.io/docs/process-for-aliases-auto-connections-and-tracks>`__ for distribution via the Snap Store, and this approval is only likely to be given under strict and specific circumstances.
 
-[note type=“positive” status=“Interface documentation”]
+.. note::
 
-See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
+
+          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
 

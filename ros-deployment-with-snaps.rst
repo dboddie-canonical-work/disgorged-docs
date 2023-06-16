@@ -36,8 +36,6 @@ There are currently two supported bases for ROS, core18 and core20.
 
 Let us explore the differences between core18 and core20.
 
-[details=“core18”]
-
 Snaps are defined in a single YAML file placed in the root folder of your project. The following example shows the entire *snapcraft.yaml* file for an example project, `ros-talker-listener <https://github.com/snapcraft-docs/ros-talker-listener>`__. Don’t worry, we’ll break this down.
 
 .. code:: yaml
@@ -213,10 +211,8 @@ Once done developing your snap, you can easily clean up the build environment:
 
    $ snapcraft clean
 
-[/details]
-----------
 
-[details=“core20”]
+----------
 
 Snaps are defined in a single YAML file placed in the root folder of your project. The following example shows the entire snapcraft.yaml file for an example project,\ `ros-talker-listener-core20 <https://github.com/snapcraft-docs/ros-talker-listener-core20>`__. Don’t worry, we’ll break this down.
 
@@ -407,7 +403,7 @@ Once done developing your snap, you can easily clean up the build environment:
 
    $ snapcraft clean --enable-experimental-extensions
 
-[/details]
+
 
 Publishing your snap
 --------------------

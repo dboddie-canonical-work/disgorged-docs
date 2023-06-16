@@ -7,9 +7,10 @@ The kernel-crypto-api interface
 
 The ``kernel-crypto-api`` interface allows access to the `Linux kernel crypto API <https://www.kernel.org/doc/html/v4.11/crypto/index.html>`__, which itself provides a set of cryptographic ciphers and other data transformation mechanisms.
 
-[note type=“positive” status=“Interface documentation”]
+.. note::
 
-See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
+
+          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
 

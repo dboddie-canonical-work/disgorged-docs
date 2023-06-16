@@ -9,9 +9,10 @@ The ``netlink-driver`` interface allows a kernel module to expose itself to user
 
 See also :ref:`netlink-audit <the-netlink-audit-interface>` and :ref:`netlink-connector <the-netlink-connector-interface>`.
 
-[note type=“positive” status=“Interface documentation”]
+.. note::
 
-See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
+
+          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
 

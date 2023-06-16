@@ -37,8 +37,6 @@ DOSBox Snap
 
 Snaps are defined in a single yaml file placed in the root of your project. The DOSBox example shows the entire snapcraft.yaml for an existing project. We’ll break this down.
 
-[details=snapcraft.yaml for DOSBox]
-
 .. code:: yaml
 
    name: dosbox
@@ -125,7 +123,7 @@ Snaps are defined in a single yaml file placed in the root of your project. The 
          "LD_LIBRARY_PATH": "$SNAP/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/pulseaudio"
          "DISABLE_WAYLAND": "1"
 
-[/details]
+
 
 Metadata
 ^^^^^^^^

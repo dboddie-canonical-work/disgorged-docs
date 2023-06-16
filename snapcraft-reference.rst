@@ -5,13 +5,14 @@
 Snapcraft Reference
 ===================
 
-[quote] **NOTE TO EDITORS**
+.. note::
+          **NOTE TO EDITORS**
 
-This topic is currently under construction as we start to migrate our current documentation to use the `Diátaxis <https://diataxis.fr/>`__ framework.
+          This topic is currently under construction as we start to migrate our current documentation to use the `Diátaxis <https://diataxis.fr/>`__ framework.
 
-See `Diátaxis, a new foundation for Canonical documentation <https://ubuntu.com/blog/diataxis-a-new-foundation-for-canonical-documentation>`__ for more details.
+          See `Diátaxis, a new foundation for Canonical documentation <https://ubuntu.com/blog/diataxis-a-new-foundation-for-canonical-documentation>`__ for more details.
 
-[/quote]
+
 
 Our Snapcraft *Reference section* is for when you need to know which plugins we offer, which interfaces you can use, and what you can add to snapcraft.yaml.
 

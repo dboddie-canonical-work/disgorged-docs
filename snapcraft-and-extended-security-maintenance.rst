@@ -87,8 +87,6 @@ The build environment needs the ``ua`` command installed, provided by the ``ubun
 
 When the snapcraft command is run, the provisioning of the ESM packages will be done seamlessly in the background.
 
-[details=Example output when specifying the UA token ]
-
 .. code:: no-highlight
 
    Launching a container.
@@ -122,7 +120,7 @@ When the snapcraft command is run, the provisioning of the ESM packages will be 
    [...]
    Detaching specified UA token...
 
-[/details]
+
 
 .. raw:: html
 

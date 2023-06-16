@@ -324,107 +324,124 @@ Notes and admonishments
 
    </h3>
 
-Admonishments in Discourse use BBtext markup syntax. Using ``[note]`` … ``[/note]`` draws a box around the contained text.
+Admonishments in Discourse use BBtext markup syntax. Using ``
+
+.. note::
+          `` … ```` draws a box around the contained text.
 
 .. code:: markdown
 
-   [note type="important" status="Info"]
+.. note::
 
-   An informative note. This box is dark blue.
-   [/note]
+
+          An informative note. This box is dark blue.
+          
 
 This produces:
 
-[note type=“important” status=“Info”]
+.. note::
 
-An informative note. [/note]
+
+          An informative note.
 
 You can omit the status header.
 
 .. code:: plain
 
-   [note type="important"]
+.. note::
 
-   A note without a title.
-   [/note]
+
+          A note without a title.
+          
 
 And its output:
 
-[note type=“important”]
+.. note::
 
-A note without a title. [/note]
+
+          A note without a title.
 
 The ``type`` parameter is optional, but recommended:
 
 .. code:: plain
 
-   [note]
+.. note::
 
-   A note that only uses default settings.
-   [/note]
+
+          A note that only uses default settings.
+          
 
 And its output:
 
-[note]
+.. note::
 
-A note that only uses default settings. [/note]
 
-Types of ``[note]``
-~~~~~~~~~~~~~~~~~~~
+          A note that only uses default settings.
 
-Changing the ``type`` parameter changes how it is presented to the reader:
+Types of ``
 
--  ``important`` (default)
--  ``caution``
--  ``positive``
--  ``negative``
+.. note::
+          ``
+          ~~~~~~~~~~~~~~~~~~~
 
-The below examples are produced using type and status combinations of ‘caution/Warning’, ‘positive/High score’, and ‘negative/Game over’, respectively:
+          Changing the ``type`` parameter changes how it is presented to the reader:
 
-Caution
-~~~~~~~
+          -  ``important`` (default)
+          -  ``caution``
+          -  ``positive``
+          -  ``negative``
 
-::
+          The below examples are produced using type and status combinations of ‘caution/Warning’, ‘positive/High score’, and ‘negative/Game over’, respectively:
 
-   [note type="caution" status="Warning"]
-   Here be dragons.
+          Caution
+          ~~~~~~~
 
-   Uses `caution` type.
-   [/note]
+          ::
 
-[note type=“caution” status=“Warning”] Here be dragons.
+          [note type="caution" status="Warning"]
+          Here be dragons.
 
-Uses ``caution`` type. [/note]
+          Uses `caution` type.
+          
+
+.. note::
+          Here be dragons.
+
+          Uses ``caution`` type.
 
 Positive
 ~~~~~~~~
 
 ::
 
-   [note type="positive" status="High score"]
-   Great work.
+.. note::
 
-   Uses `positive` type.
-   [/note]
+          Great work.
 
-[note type=“positive” status=“High score”] Great work.
+          Uses `positive` type.
+          
 
-Uses ``positive`` type. [/note]
+.. note::
+          Great work.
+
+          Uses ``positive`` type.
 
 Negative
 ~~~~~~~~
 
 ::
 
-   [note type="negative" status="Game over"]
-   Please try again.
+.. note::
 
-   Uses `negative` type.
-   [/note]
+          Please try again.
 
-[note type=“negative” status=“Game over”] Please try again.
+          Uses `negative` type.
+          
 
-Uses ``negative`` type. [/note]
+.. note::
+          Please try again.
+
+          Uses ``negative`` type.
 
 Hyperlinks cannot be word-wrapped within admonishments. Doing so will not format the links.
 
@@ -442,11 +459,12 @@ Sometimes it’s useful to provide information to documentation editors. For tha
 
 .. code:: markdown
 
-   [quote]
-    **NOTE TO EDITORS** 
+.. note::
 
-   This note is not visible in the dedicated documentation site.
-   [/quote]
+          **NOTE TO EDITORS**
+
+          This note is not visible in the dedicated documentation site.
+          
 
 .. raw:: html
 
@@ -464,20 +482,16 @@ Foldout syntax in Discourse uses two sets of square brackets with an open and cl
 
 .. code:: markdown
 
-   [details=Manually create a network on a 10.x.x.x subnet]
-
    If you try to run `lxd init` on a system that is connected to a network with a `10.x.x.x` subnet,
    then the final step of the Iinit* may fail with the following error:
 
-   [/details]
+   
 
 The above will appear as follows:
 
-[details=Manually create a network on a 10.x.x.x subnet]
-
 If you try to run ``lxd init`` on a system that is connected to a network with a ``10.x.x.x`` subnet, then the final step of the Iinit\* may fail with the following error:
 
-[/details]
+
 
 .. raw:: html
 

@@ -9,9 +9,10 @@ The ``steam-support`` interface has been developed specifically to help Valve’
 
 Only the Steam snap may establish this interface. See `Introducing early access to the Steam snap <https://discourse.ubuntu.com/t/introducing-early-access-to-the-steam-snap/28082>`__ for more details.
 
-[note type=“positive” status=“Interface documentation”]
+.. note::
 
-See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
+
+          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
 

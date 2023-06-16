@@ -23,9 +23,10 @@ Ready to get started? By the end of this guide, you’ll understand how to make 
 
 Snapcraft overview: For a brief overview of the snap creation process, including how to install snapcraft and how it’s used, see `Snapcraft overview <https://snapcraft.io/docs/snapcraft-overview>`__. For a more comprehensive breakdown of the steps involved, take a look at `Creating a snap <https://snapcraft.io/docs/creating-a-snap>`__.
 
-[note type=“positive” status=“Snapcraft overview”]
+.. note::
 
-For a brief overview of the snap creation process, including how to install snapcraft and how it’s used, see `Snapcraft overview <https://snapcraft.io/docs/snapcraft-overview>`__. For a more comprehensive breakdown of the steps involved, take a look at `Creating a snap <https://snapcraft.io/docs/creating-a-snap>`__. [/note]
+
+          For a brief overview of the snap creation process, including how to install snapcraft and how it’s used, see `Snapcraft overview <https://snapcraft.io/docs/snapcraft-overview>`__. For a more comprehensive breakdown of the steps involved, take a look at `Creating a snap <https://snapcraft.io/docs/creating-a-snap>`__.
 
 Getting started
 ---------------
@@ -135,18 +136,19 @@ The ``dotnet`` plugin can be used in .NET projects to install dependencies via t
 -  ``dotnet-build-configuration``: The .NET build configuration to use. Defaults to Release.
 -  ``dotnet-self-contained-runtime-identifier``: Optional parameter to specify the runtime identifier to use when building a self-contained application. Setting this parameter will automatically trigger a self-contained build (with the ``--self-contained`` flag on the ``dotnet publish`` command).
 
-[note type=“important” status=“Single file publishing”]
+.. note::
 
-The output of the deployment should contain the executable file along with all the necessary DLLs and dependencies necessary to run it. If you want to deploy your application as a single-file executable, you should set the following parameter inside the ``.csproj`` file of your project:
 
-.. code:: xml
+          The output of the deployment should contain the executable file along with all the necessary DLLs and dependencies necessary to run it. If you want to deploy your application as a single-file executable, you should set the following parameter inside the ``.csproj`` file of your project:
 
-   <PropertyGroup>
-      …
-      <PublishSingleFile>true</PublishSingleFile>
-   </PropertyGroup>
+          .. code:: xml
 
-By doing this, the parameter ``dotnet-self-contained-runtime-identifier`` becomes required, since a runtime identifier is required to build a single-file .NET executable. [/note]
+          <PropertyGroup>
+          …
+          <PublishSingleFile>true</PublishSingleFile>
+          </PropertyGroup>
+
+          By doing this, the parameter ``dotnet-self-contained-runtime-identifier`` becomes required, since a runtime identifier is required to build a single-file .NET executable.
 
 The ``source`` should point to the root of your .NET project. In our case, it points to the local directory as it’s where the source tree is located. It can also point to a URL if the source code is available as a compressed archive or a revision control repository.
 

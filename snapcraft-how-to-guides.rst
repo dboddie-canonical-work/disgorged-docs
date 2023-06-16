@@ -5,13 +5,14 @@
 Snapcraft How-to guides
 =======================
 
-[quote] **NOTE TO EDITORS**
+.. note::
+          **NOTE TO EDITORS**
 
-This topic is currently under construction as we start to migrate our current documentation to use the `Diátaxis <https://diataxis.fr/>`__ framework.
+          This topic is currently under construction as we start to migrate our current documentation to use the `Diátaxis <https://diataxis.fr/>`__ framework.
 
-See `Diátaxis, a new foundation for Canonical documentation <https://ubuntu.com/blog/diataxis-a-new-foundation-for-canonical-documentation>`__ for more details.
+          See `Diátaxis, a new foundation for Canonical documentation <https://ubuntu.com/blog/diataxis-a-new-foundation-for-canonical-documentation>`__ for more details.
 
-[/quote]
+
 
 If you have a specific goal, but are already familiar with *snapcraft* (after following a tutorial, for example), our *How-to* guides have more in-depth detail than our tutorials and can be applied to a broader set of applications.
 

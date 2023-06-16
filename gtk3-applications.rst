@@ -36,8 +36,6 @@ Foliate Snap
 
 Snaps are defined in a single yaml file placed in the root of your project. The Foliate example shows the entire snapcraft.yaml for an existing project. We’ll break this down.
 
-[details=snapcraft.yaml for Foliate]
-
 .. code:: yaml
 
    name: foliate
@@ -83,7 +81,7 @@ Snaps are defined in a single yaml file placed in the root of your project. The 
      /usr/bin/gjs:
        symlink: $SNAP/usr/bin/gjs
 
-[/details]
+
 
 The ``name`` must be unique in the Snap Store. Valid snap names consist of lower-case alphanumeric characters and hyphens. They cannot be all numbers and they also cannot start or end with a hyphen.
 

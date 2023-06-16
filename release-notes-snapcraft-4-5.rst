@@ -21,8 +21,6 @@ Full list of changes
 
 The issues and features worked on for Snapcraft 4.5 are reflected in the following change list:
 
-[details=List of changes for Snapcraft 4.5]
-
 -  repo: key management refactor `@cjp256 <https://github.com/cjp256>`__ (`#3359 <https://github.com/snapcore/snapcraft/pull/3359>`__)
 -  repo: default to target arch for stage package cache `@cjp256 <https://github.com/cjp256>`__ (`#3416 <https://github.com/snapcore/snapcraft/pull/3416>`__)
 -  package repositories: introduce path property for exact paths `@cjp256 <https://github.com/cjp256>`__ (`#3336 <https://github.com/snapcore/snapcraft/pull/3336>`__)
@@ -49,4 +47,4 @@ The issues and features worked on for Snapcraft 4.5 are reflected in the followi
 -  requirements: uprev python-apt `@sergiusens <https://github.com/sergiusens>`__ (`#3400 <https://github.com/snapcore/snapcraft/pull/3400>`__)
 -  cli: do not require snapd deb for assertions `@sergiusens <https://github.com/sergiusens>`__ (`#3399 <https://github.com/snapcore/snapcraft/pull/3399>`__)
 -  plugins v2: port the qmake plugin `@jhenstridge <https://github.com/jhenstridge>`__ (`#3391 <https://github.com/snapcore/snapcraft/pull/3391>`__)
--  plugins v2: add support for out of source tree builds `@jhenstridge <https://github.com/jhenstridge>`__ (`#3392 <https://github.com/snapcore/snapcraft/pull/3392>`__) [/details]
+-  plugins v2: add support for out of source tree builds `@jhenstridge <https://github.com/jhenstridge>`__ (`#3392 <https://github.com/snapcore/snapcraft/pull/3392>`__) 

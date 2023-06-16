@@ -7,9 +7,10 @@ The polkit interface
 
 The ``polkit`` interface provides daemons with the permission to use the `polkit authorisation manager <https://www.freedesktop.org/software/polkit/docs/latest/polkit.8.html>`__ (*polkitd*) to make access control decisions for requests from unprivileged clients.
 
-[note type=“positive” status=“Interface documentation”]
+.. note::
 
-See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
+
+          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
 

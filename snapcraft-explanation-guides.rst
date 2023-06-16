@@ -5,13 +5,14 @@
 Snapcraft Explanation guides
 ============================
 
-[quote] **NOTE TO EDITORS**
+.. note::
+          **NOTE TO EDITORS**
 
-This topic is currently under construction as we start to migrate our current documentation to use the `Diátaxis <https://diataxis.fr/>`__ framework.
+          This topic is currently under construction as we start to migrate our current documentation to use the `Diátaxis <https://diataxis.fr/>`__ framework.
 
-See `Diátaxis, a new foundation for Canonical documentation <https://ubuntu.com/blog/diataxis-a-new-foundation-for-canonical-documentation>`__ for more details.
+          See `Diátaxis, a new foundation for Canonical documentation <https://ubuntu.com/blog/diataxis-a-new-foundation-for-canonical-documentation>`__ for more details.
 
-[/quote]
+
 
 Our explanatory and conceptual guides are written to provide a better understanding of how Snapcraft works and the principles behind its build system and syntax. They enable you to expand your knowledge and become better at both building snaps and getting the most out of the snap ecosystem.
 

@@ -29,8 +29,6 @@ Older releases
 
 The release notes for older releases can be found below:
 
-[details=Older releases]
-
 +-----------------------------------+--------------------------------------------------------+
 | **29th July 2021**                | :ref:`Snapcraft 5.0 <release-notes-snapcraft-5-0>`     |
 +-----------------------------------+--------------------------------------------------------+
@@ -87,4 +85,4 @@ The release notes for older releases can be found below:
 | **29th November 2018**            | :ref:`Snapcraft 3.0 <release-notes-snapcraft-3-0>`     |
 +-----------------------------------+--------------------------------------------------------+
 
-[/details]
+

@@ -9,9 +9,10 @@ The ``netlink-audit`` interface allows access to the kernel part of the Linux Au
 
 See also :ref:`netlink-driver <the-netlink-driver-interface>` and `netlink-connector <>`__.
 
-[note type=“positive” status=“Interface documentation”]
+.. note::
 
-See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
+
+          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
 

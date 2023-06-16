@@ -7,9 +7,10 @@ The media-control interface
 
 The ``media-control`` interface permits access to media control devices and Video4Linux (V4L) devices via the Linux kernel’s `Media Controller API <https://www.kernel.org/doc/html/latest/userspace-api/media/mediactl/media-controller.html>`__.
 
-[note type=“positive” status=“Interface documentation”]
+.. note::
 
-See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
+
+          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
 

@@ -54,8 +54,6 @@ Full list of changes
 
 The issues and features worked on for 3.4 can be seen on the `3.4 <https://bugs.launchpad.net/snapcraft/+milestone/3.4>`__ launchpad milestone which are reflected in the following change list:
 
-[details=List of changes for Snapcraft 3.4]
-
 Sergio Schvezov
 ~~~~~~~~~~~~~~~
 
@@ -93,4 +91,4 @@ Kyle Fazzari
 
 -  catkin plugin: check stage-snaps for ROS dependencies (`#2525 <https://github.com/snapcore/snapcraft/pull/2525>`__)
 
-[/details]
+

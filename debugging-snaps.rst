@@ -5,11 +5,12 @@
 Debugging snaps
 ===============
 
-[quote] **NOTE TO EDITORS**
+.. note::
+          **NOTE TO EDITORS**
 
-This topic is currently under construction. In particular, we want to add usage documentation on the following:
+          This topic is currently under construction. In particular, we want to add usage documentation on the following:
 
-□ –strace [/quote]
+          □ –strace
 
 Each snap runs inside its own :ref:`confined environment <snap-confinement>`, also called “sandbox”. The policy of each sandbox describes what the application is allowed to do. When an application tries to do something that is not allowed, the system logs a policy violation. The following techniques can help you investigate and solve these policy violations.
 
@@ -283,8 +284,6 @@ For device cgroups, create or modify ``/etc/udev/rules.d/70-snap.$SNAPNAME.rules
 If you believe there is a bug in the security policy or want to request and/or contribute a new interface, please `file a bug <https://bugs.launchpad.net/snappy/+filebug>`__, adding the ``snapd-interface`` tag.
 
 .. raw:: html
-
-   <!--
    ### Interface development and security policy
 
    When participating in snappy development and implementing new interfaces for others to use, you will almost always need to write security policy for both the slots and the plugs side of the interface but keep in mind you are not expected to write perfect security policy on the first try. The review process for snapd includes a security review of the interface security policy and it is expected that the security policy will be iterated on during the review process (in other words, if you are stuck on writing security policy but the interface otherwise works, feel free to submit the interface and ask for help).
@@ -312,7 +311,7 @@ If you believe there is a bug in the security policy or want to request and/or c
     * when testing new versions of snappy-app-dev, if re-exec is enabled you will need to copy the new version to the location udev expects it (eg, `/lib/udev`) and then bind mount it over where the re-exec'd snap-confine expects it (eg, `mount --bind /lib/udev/snappy-app-dev /snap/core/<version>/lib/udev/snappy-app-dev`)
 
    The above command has changed to snap-device-helper
-   -->
+   
 
 .. raw:: html
 

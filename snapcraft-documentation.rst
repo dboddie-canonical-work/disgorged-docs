@@ -5,13 +5,14 @@
 Snapcraft documentation
 =======================
 
-[quote] **NOTE TO EDITORS**
+.. note::
+          **NOTE TO EDITORS**
 
-This topic is currently under construction as we start to migrate our current documentation to use the `Diátaxis <https://diataxis.fr/>`__ framework.
+          This topic is currently under construction as we start to migrate our current documentation to use the `Diátaxis <https://diataxis.fr/>`__ framework.
 
-See `Diátaxis, a new foundation for Canonical documentation <https://ubuntu.com/blog/diataxis-a-new-foundation-for-canonical-documentation>`__ for more details.
+          See `Diátaxis, a new foundation for Canonical documentation <https://ubuntu.com/blog/diataxis-a-new-foundation-for-canonical-documentation>`__ for more details.
 
-[/quote]
+
 
 Snapcraft **builds**, **packages** and **publishes** snaps. It’s available for **Ubuntu**, many **other Linux distributions**, and **macOS**, and runs from the command line.
 

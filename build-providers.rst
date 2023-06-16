@@ -78,8 +78,6 @@ Next, initialise LXD with the following command and accept all the default optio
 
    ⓘ If the system you are installing LXD onto is using a network with a ``10.x.x.x`` subnet then network create may fail. Step through the following to resolve this.
 
-[details=Manually create a network on a 10.x.x.x subnet]
-
 If you try to run ``lxd init`` on a system that is connected to a network with a ``10.x.x.x`` subnet, then the final step of the init\* may fail with the following error:
 
 .. code:: no-highlight
@@ -98,7 +96,7 @@ You can then re-run ``lxd init``. When you are prompted to create a new network 
 
    Would you like to create a new network bridge (yes/no) [default=yes]? no
 
-[/details]
+
 
 Group permissions
 ~~~~~~~~~~~~~~~~~

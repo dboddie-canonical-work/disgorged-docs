@@ -144,8 +144,6 @@ Full list of changes
 
 The full list of features and issues worked on in this release are listed below.
 
-[details=List of changes for Snapcraft 3.7]
-
 Sergio Schvezov
 ~~~~~~~~~~~~~~~
 
@@ -230,4 +228,4 @@ Carlo Lobrano
 
 -  tools: let environment-setup.sh skip unnecessary steps (`#2625 <https://github.com/snapcore/snapcraft/pull/2625>`__)
 
-[/details]
+

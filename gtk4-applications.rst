@@ -36,8 +36,6 @@ Gnome-Text-Editor Snap
 
 Snaps are defined in a single yaml file placed in the root of your project. The Gnome-Text-Editor example shows the entire snapcraft.yaml for an existing project. We’ll break this down.
 
-[details=snapcraft.yaml for Text Editor]
-
 .. code:: yaml
 
    name: gnome-text-editor
@@ -75,7 +73,7 @@ Snaps are defined in a single yaml file placed in the root of your project. The 
        bus: session
        name: org.gnome.TextEditor
 
-[/details]
+
 
 Metadata
 ^^^^^^^^

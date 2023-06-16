@@ -19,9 +19,10 @@ Example
 
 This interface automatically connected by the `ONLY OFFICE Document Server <https://snapcraft.io/onlyoffice-ds>`__ snap to provide better integration with pre-configured accounts.
 
-[note type=“positive” status=“Interface documentation”]
+.. note::
 
-See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
+
+          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
 

@@ -5,11 +5,12 @@
 Building the snap
 =================
 
-[quote] **NOTE TO EDITORS**
+.. note::
+          **NOTE TO EDITORS**
 
-This topic contributes to a new set of snap documentation. See `Proposed new documentation outline <https://snapcraft.io/docs/proposed-new-documentation-outline-page-deprecated>`__ for further details.
+          This topic contributes to a new set of snap documentation. See `Proposed new documentation outline <https://snapcraft.io/docs/proposed-new-documentation-outline-page-deprecated>`__ for further details.
 
-[/quote] Whether you use Linux, Mac, or Windows for your development environment, you can create snaps of your app provided it is able to natively run on Linux.
+ Whether you use Linux, Mac, or Windows for your development environment, you can create snaps of your app provided it is able to natively run on Linux.
 
 Once you’ve :ref:`set up your project to produce snaps <creating-a-snap>`, you can build your :ref:``.snap`` file: \* `Linux <building-the-snap-on-linux>` \* :ref:`Mac <building-the-snap-on-mac>` \* :ref:`Windows <building-the-snap-on-windows>`
 

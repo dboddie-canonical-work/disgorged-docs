@@ -116,8 +116,6 @@ When running through its build steps, a part will use different working director
 The following table gives an overview of which directories each step uses. The directories are specified by their environment variables.
 
 .. raw:: html
-
-   <!--
    | Step | Explanation | Source&nbsp;directory&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Result directory |
    |--|--|--|--|
    | **pull** | downloads and retrieves the sources | *as specified by [`source`](snapcraft-parts-metadata.md#parts-lifecycle-heading--source) key* | SNAPCRAFT_PART_**SRC** |
@@ -125,7 +123,7 @@ The following table gives an overview of which directories each step uses. The d
    | **stage** | copies built files to shared stage directory | SNAPCRAFT_PART_**INSTALL** | SNAPCRAFT_**STAGE** |
    | **prime** | copies staged files to shared prime directory | SNAPCRAFT_PART_**INSTALL*** | SNAPCRAFT_**PRIME** |
    | **snap** | packs contents of prime directory into a snap | SNAPCRAFT_**PRIME** | SNAPCRAFT_PROJECT_DIR |
-   -->
+   
 
 +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Step                              | Explanation                                                                                                                                                                      |

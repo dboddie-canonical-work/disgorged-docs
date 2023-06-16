@@ -11,9 +11,10 @@ But *pip* and *Virtualenv* are not user-oriented tools. Nor do they offer a solu
 
 Snaps address these gaps, while building upon the work you’ve already done to teach Python how to package your app. By the end of this guide, you’ll understand how to make a snap of your Python app that can be published in the `Snap Store <https://snapcraft.io/store>`__, showcasing it to millions of Linux users.
 
-[note type=“positive” status=“Snapcraft overview”]
+.. note::
 
-For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see :ref:`Snapcraft overview <snapcraft-overview>`. For a more comprehensive breakdown of the steps involved, take a look at :ref:`Creating a snap <creating-a-snap>`. [/note]
+
+          For a brief overview of the snap creation process, including how to install *snapcraft* and how it’s used, see :ref:`Snapcraft overview <snapcraft-overview>`. For a more comprehensive breakdown of the steps involved, take a look at :ref:`Creating a snap <creating-a-snap>`.
 
 Getting started
 ---------------

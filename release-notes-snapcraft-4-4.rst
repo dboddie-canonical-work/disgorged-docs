@@ -65,9 +65,7 @@ Refer to the `specification <https://github.com/snapcore/snapcraft/blob/master/s
 Full list of changes
 --------------------
 
-The issues and features worked on for Snapcraft 4.4 are reflected in the following change list:
-
-[details=List of changes for Snapcraft 4.4] New Features ————
+The issues and features worked on for Snapcraft 4.4 are reflected in the following change list: New Features ————
 
 -  cli: remove spaces from progressive metrics `@sergiusens <https://github.com/sergiusens>`__ (`#3335 <https://github.com/snapcore/snapcraft/pull/3335>`__)
 -  storeapi: add releases endpoint `@sergiusens <https://github.com/sergiusens>`__ (`#3311 <https://github.com/snapcore/snapcraft/pull/3311>`__)
@@ -123,4 +121,4 @@ Specifications and Documentation
 
 -  specifications: v1 history to v2 releases `@sergiusens <https://github.com/sergiusens>`__ (`#3304 <https://github.com/snapcore/snapcraft/pull/3304>`__)
 -  specification: desktop extension font hook `@sergiusens <https://github.com/sergiusens>`__ (`#3295 <https://github.com/snapcore/snapcraft/pull/3295>`__)
--  specifications: finalization of package repositories spec `@cjp256 <https://github.com/cjp256>`__ (`#3333 <https://github.com/snapcore/snapcraft/pull/3333>`__) [/details]
+-  specifications: finalization of package repositories spec `@cjp256 <https://github.com/cjp256>`__ (`#3333 <https://github.com/snapcore/snapcraft/pull/3333>`__) 

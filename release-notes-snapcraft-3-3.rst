@@ -84,8 +84,6 @@ Full list of changes
 
 The issues and features worked on for 3.3 can be seen on the `3.3 <https://bugs.launchpad.net/snapcraft/+milestone/3.3>`__ launchpad milestone which are reflected in the following change list:
 
-[details=List of changes for Snapcraft 3.3]
-
 **Sergio Schvezov**
 
 -  many: support for “base: core” in snapcraft.yaml (`#2499 <https://github.com/snapcore/snapcraft/pull/2499>`__) (LP: #1819290)
@@ -113,4 +111,4 @@ The issues and features worked on for 3.3 can be seen on the `3.3 <https://bugs.
 -  schema: better ‘version’ error messages: wrong type and incorrect length (`#2497 <https://github.com/snapcore/snapcraft/pull/2497>`__)
    (LP: #1815812)
 
-[/details]
+

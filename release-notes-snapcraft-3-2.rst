@@ -70,8 +70,6 @@ Full list of changes
 
 The issues and features worked on for 3.2 can be seen on the `3.2 <https://bugs.launchpad.net/snapcraft/+milestone/3.2>`__ launchpad milestone which are reflected in the following change list:
 
-[details=List of changes for Snapcraft 3.2]
-
 -  many: support for stage-snaps (`#2468 <https://github.com/snapcore/snapcraft/pull/2468>`__) (LP: #1805214)
 -  project loader: do not leak a part’s build-environment (`#2472 <https://github.com/snapcore/snapcraft/pull/2472>`__) (LP: #1815658)
 -  build providers: remove dead code (`#2474 <https://github.com/snapcore/snapcraft/pull/2474>`__)
@@ -88,4 +86,4 @@ The issues and features worked on for 3.2 can be seen on the `3.2 <https://bugs.
 -  colcon plugin: new plugin (`#2456 <https://github.com/snapcore/snapcraft/pull/2456>`__) (LP: #1805213)
 -  colcon plugin: support build-time chaining (`#2486 <https://github.com/snapcore/snapcraft/pull/2486>`__) (LP: #1816565)
 
-[/details]
+

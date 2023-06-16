@@ -122,8 +122,6 @@ As the output for most queries will be large, a pager is used to make the output
 
    if the query returns with a “None” data point, it is replaced with a “-” to indicate zero (or not applicable depending on context).
 
-[details=Example table output]
-
 Example **daily_device_change** output:
 
 ::
@@ -240,7 +238,7 @@ Example **installed_base_by_version** output:
    2.4.5             4           4           4
    2.5.0            28          28          16
 
-[/details]
+
 
 .. raw:: html
 

@@ -7,8 +7,6 @@ Glossary
 
 .. raw:: html
 
-   <!--
-
     This topic is under construction. Feel free to add new terms.
 
    To help with linking to these terms, we're using the following syntax as the heading for each title definition:
@@ -24,7 +22,7 @@ Glossary
    dangerous
    [/quote]
 
-   -->
+   
 
 There are a significant number of terms and definitions that are unique to the snap, snapd, and snapcraft ecosystem. This page defines the terminology and other terms touched by these tools and links to further information when required.
 

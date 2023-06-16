@@ -32,8 +32,6 @@ Snaps are defined in a single YAML file placed in the root folder of your projec
 
 Using a few lines of yaml and the snapcraft tool, a Java application, it’s dependencies and the correct JRE can be packaged as a snap. We’ll break this down.
 
-[details=snapcraft.yaml for Freeplane]
-
 .. code:: yaml
 
    name: freeplane
@@ -86,7 +84,7 @@ Using a few lines of yaml and the snapcraft tool, a Java application, it’s dep
        build-packages:
          - unzip
 
-[/details]
+
 
 Metadata
 --------

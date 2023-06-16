@@ -9,7 +9,8 @@ Build on Docker
 
 However, Docker can still be used, and is particularly useful when you’re already using Docker within your build and test infrastructure. All you need is a working *snapcraft.yaml* (see :ref:`Creating a snap <creating-a-snap>` for more details).
 
-[quote] ℹ Electron apps are built slightly differently, and do not use a :ref:``snapcraft.yaml`` file. `Follow this guide <electron-apps>` to build a snap of an Electron app using electron-builder. [/quote]
+.. note::
+          ℹ Electron apps are built slightly differently, and do not use a :ref:``snapcraft.yaml`` file. `Follow this guide <electron-apps>` to build a snap of an Electron app using electron-builder.
 
 To create a snap with Docker, first make sure you have `Docker installed <https://docs.docker.com/install/>`__. You can test that Docker is correctly set up with:
 
@@ -34,8 +35,6 @@ The process for building a :ref:``core18`` compatible image, the default for `Sn
 Docker images are built from a `Dockerfile <https://docs.docker.com/engine/reference/builder/>`__. This is a script that Docker interprets to assemble whatever is required to generate the image.
 
 The following is an example Dockerfile to build a ``core18`` compatible image:
-
-[details=stable.Dockerfile for core18]
 
 .. code:: shell
 
@@ -94,7 +93,7 @@ The following is an example Dockerfile to build a ``core18`` compatible image:
    ENV SNAP_NAME="snapcraft"
    ENV SNAP_ARCH="amd64"
 
-[/details]
+
 
 Dockerfiles for the Snapcraft project, including files that can be built with *snapd* from different channels, can be found on `Snapcraft’s GitHub <https://github.com/snapcore/snapcraft/tree/master/docker>`__ repository.
 
@@ -141,7 +140,8 @@ When the snap build completes successfully, you will find a ``.snap`` file in th
 
    $ unsquashfs -l *.snap
 
-[quote] ⚠ Docker may contaminate your project directory with files owned by ``root``, causing *permission denied* errors. Use ``sudo chown --changes --recursive $USER:$USER _project_folder_`` to regain ownership of these files. [/quote]
+.. note::
+          ⚠ Docker may contaminate your project directory with files owned by ``root``, causing *permission denied* errors. Use ``sudo chown --changes --recursive $USER:$USER _project_folder_`` to regain ownership of these files.
 
 Next steps
 ~~~~~~~~~~

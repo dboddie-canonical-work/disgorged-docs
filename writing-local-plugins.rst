@@ -13,7 +13,8 @@ Snapcraft has a lot of official plugins included by default (with more being add
 
 Regardless of the reason, the purpose of this document is to provide a simple tutorial for doing it, from scratch.
 
-[note type=“negative” status=“No longer supported”] This feature has been deprecated. Local plugins do not work with Snapcraft 7, although earlier versions of Snapcraft can still be used. [/note]
+.. note::
+          This feature has been deprecated. Local plugins do not work with Snapcraft 7, although earlier versions of Snapcraft can still be used.
 
 Step 1: Create new project
 --------------------------

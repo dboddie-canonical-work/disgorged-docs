@@ -36,8 +36,6 @@ Arduino IDE Snap
 
 Snaps are defined in a single yaml file placed in the root of your project. The Arduino IDE example shows the entire snapcraft.yaml for an existing project. We’ll break this down.
 
-[details=snapcraft.yaml for Arduino IDE]
-
 .. code:: yaml
 
    name: arduino
@@ -165,7 +163,7 @@ Snaps are defined in a single yaml file placed in the root of your project. The 
        target: $SNAP/data-dir/sounds
        default-provider: gtk-common-themes
 
-[/details]
+
 
 Metadata
 --------

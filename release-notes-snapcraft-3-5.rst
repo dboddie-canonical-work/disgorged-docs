@@ -44,8 +44,6 @@ Full list of changes
 
 The issues and features worked on for 3.5 can be seen on the `3.5 <https://bugs.launchpad.net/snapcraft/+milestone/3.5>`__ launchpad milestone which are reflected in the following change list:
 
-[details=List of changes for Snapcraft 3.5]
-
 Sergio Schvezov
 ~~~~~~~~~~~~~~~
 
@@ -69,4 +67,4 @@ Daniel Llewellyn
 
 -  meta: take ${SNAP} into account .desktop icon checks (`#2541 <https://github.com/snapcore/snapcraft/pull/2541>`__)
 
-[/details]
+

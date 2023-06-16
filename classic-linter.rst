@@ -50,8 +50,6 @@ The classic linter will issue a warning if the ELF binary it is testing:
 1. does not use the correct dynamic linker (either from the ``base`` or the staged *libc*).
 2. does not have an *rpath* (run-time search path) set to a value needed to load shared library dependencies, either from the ``base`` or from the snap if the dependency is not part of the ``base``.
 
-[details=Example classic linter output]
-
 .. code:: bash
 
    Running linter: classic
@@ -71,7 +69,7 @@ The classic linter will issue a warning if the ELF binary it is testing:
    - classic: usr/lib/x86_64-linux-gnu/libslang.so.2.3.2: ELF interpreter should be set to '/snap/core22/current/lib64/ld-linux-x86-64.so.2'.
    - classic: usr/lib/x86_64-linux-gnu/libslang.so.2.3.2: ELF rpath should be set to '/snap/core22/current/lib/x86_64-linux-gnu'.
 
-[/details]
+
 
 .. raw:: html
 

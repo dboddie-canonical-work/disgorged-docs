@@ -16,8 +16,6 @@ Full list of changes
 
 The issues and features worked on for Snapcraft 4.1 are reflected in the following change list:
 
-[details=List of changes for Snapcraft 4.1]
-
 -  flutter v1 plugin: new plugin for flutter `@sergiusens <https://github.com/sergiusens>`__ (`#3192 <https://github.com/snapcore/snapcraft/pull/3192>`__)
 -  flutter v1 plugin: pull from source-subdir if set `@sergiusens <https://github.com/sergiusens>`__ (`#3200 <https://github.com/snapcore/snapcraft/pull/3200>`__)
 -  extensions: introduce flutter-dev `@sergiusens <https://github.com/sergiusens>`__ (`#3199 <https://github.com/snapcore/snapcraft/pull/3199>`__)
@@ -54,4 +52,4 @@ Tooling
 
 -  tools: fix environment-setup to work on aarch64 `@cjp256 <https://github.com/cjp256>`__ (`#3176 <https://github.com/snapcore/snapcraft/pull/3176>`__)
 
-[/details]
+

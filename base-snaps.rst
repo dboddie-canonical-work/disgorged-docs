@@ -52,13 +52,14 @@ For snaps using *core*, we highly recommend reading :ref:`Snapcraft and Extended
 
 The base snap mounts itself as the root filesystem within your snap such that when your application runs, the base’s library paths are searched directly after the paths for your specific snap.
 
-[note type=“caution” status=“Warning”] Compatibility mode and ESM Support
+.. note::
+          Compatibility mode and ESM Support
 
-When building a snap with no specified base, :ref:`Snapcraft <snapcraft-overview>` will operate in compatibility mode. This is essentially a prior (2.43-era) version of Snapcraft and, consequently, *snapcraft* will lose the functionality of newer releases. See `Features incompatible with bases <release-notes-snapcraft-3-0.md#base-snaps-heading--base-exceptions>`__ for details.
+          When building a snap with no specified base, :ref:`Snapcraft <snapcraft-overview>` will operate in compatibility mode. This is essentially a prior (2.43-era) version of Snapcraft and, consequently, *snapcraft* will lose the functionality of newer releases. See `Features incompatible with bases <release-notes-snapcraft-3-0.md#base-snaps-heading--base-exceptions>`__ for details.
 
-This compatibility mode is no longer supported in Snapcraft 5.0. Snapcraft 4 can be installed from the 4.x track on the Snap Store (:ref:``snap install snapcraft --channel 4.x``). See `Snapcraft and Extended Security Maintenance <snapcraft-and-extended-security-maintenance>` for essential support details.
+          This compatibility mode is no longer supported in Snapcraft 5.0. Snapcraft 4 can be installed from the 4.x track on the Snap Store (:ref:``snap install snapcraft --channel 4.x``). See `Snapcraft and Extended Security Maintenance <snapcraft-and-extended-security-maintenance>` for essential support details.
 
-[/note]
+
 
 Choosing a base
 ---------------

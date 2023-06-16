@@ -7,9 +7,10 @@ The gnome-3-38 extension
 
 The *gnome-3-38* extension helps with the creation of snaps that use GTK 3, GNOME 3.38, and/or GLib. It’s an updated version of the :ref:`gnome-3-34 extension <the-gnome-3-34-extension>` that works specifically with the :ref:``core20`` `base snap <base-snaps>` built from `Ubuntu 20.04 LTS <http://releases.ubuntu.com/20.04/>`__. Previous Gnome extensions were built to use ``core18``, based on `Ubuntu 18.04 LTS <http://releases.ubuntu.com/18.04/>`__.
 
-[note type=“caution” status=“Experimental support”]
+.. note::
 
-The *gnome-3-38* extension is considered experimental and requires the ``--enable-experimental-extensions`` argument added to the *snapcraft* command for versions of Snapcraft lesser than 4.6. [/note]
+
+          The *gnome-3-38* extension is considered experimental and requires the ``--enable-experimental-extensions`` argument added to the *snapcraft* command for versions of Snapcraft lesser than 4.6.
 
 This extension provides many of the components needed for general desktop applications making it useful for a broader set of applications outside of those tailored for the GNOME desktop.
 

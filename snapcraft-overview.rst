@@ -115,4 +115,5 @@ After a snap has been built, it can be installed locally with the ``--devmode`` 
 
 For a more comprehensive and iterative break-down of the snap building process, see :ref:`Creating a snap <creating-a-snap>`.
 
-[note type=“important”] ⓘ To see what’s new in each release of Snapcraft, take a look at :ref:`Snapcraft release notes <snapcraft-release-notes>`. [/note]
+.. note::
+          ⓘ To see what’s new in each release of Snapcraft, take a look at :ref:`Snapcraft release notes <snapcraft-release-notes>`.

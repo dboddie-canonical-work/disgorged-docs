@@ -9,9 +9,10 @@ The ``gconf`` interface allows access to any item from the legacy `GConf configu
 
 This interface needs to be manually connected because *gconf* is a global database for GNOME desktop and application settings and offers no application isolation.
 
-[note type=“positive” status=“Interface documentation”]
+.. note::
 
-See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used. [/note]
+
+          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
 
