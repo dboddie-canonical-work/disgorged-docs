@@ -37,7 +37,6 @@ To register a name with the web UI, log into your `developer account <https://sn
 .. figure:: https://forum-snapcraft-io.s3.dualstack.us-east-1.amazonaws.com/original/2X/b/b1f74bd8422bf8196cd3b334eafd173350ad432d.png
    :alt: Screenshot_20200828_114733|613x361
 
-   Screenshot_20200828_114733|613x361
 
 If the name you want is already in use and you believe you are the rightful owner, you can register a dispute. Follow the on-screen instructions to be guided through this process. Your dispute will be reviewed by a member of the Snap Store team and a decision communicated by email.
 

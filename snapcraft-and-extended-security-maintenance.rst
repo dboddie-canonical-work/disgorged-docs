@@ -65,7 +65,6 @@ Visit `ubuntu.com/advantage <https://ubuntu.com/advantage>`__ to create an accou
 .. figure:: https://forum-snapcraft-io.s3.dualstack.us-east-1.amazonaws.com/optimized/2X/5/58e2e7e29918993f259a25b95d67bc51594a3410_2_616x500.png
    :alt: image|616x500
 
-   image|616x500
 
 .. raw:: html
 

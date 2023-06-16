@@ -28,7 +28,6 @@ The account is registered on `Ubuntu One <https://login.ubuntu.com/>`__, a singl
 .. figure:: https://assets.ubuntu.com/v1/d7966a51-sso-01.png
    :alt: Ubuntu SSO Create Account
 
-   Ubuntu SSO Create Account
 
 Fill out the form that appears. Your “full name” and “username” will be displayed next to your app in the Snap Store, so you should choose appropriate branding. Use your organisation’s name for both if you are publishing on their behalf.
 

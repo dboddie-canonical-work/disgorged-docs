@@ -260,7 +260,6 @@ You can then try it out:
 .. figure:: https://forum-snapcraft-io.s3.dualstack.us-east-1.amazonaws.com/optimized/2X/5/5e4a99e71254372ac1c2da5b758fe488029b9d0a_2_690x495.png
    :alt: Screenshot_20190613_152721|690x495
 
-   Screenshot_20190613_152721|690x495
 
 Removing the snap is simple too:
 

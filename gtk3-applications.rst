@@ -229,7 +229,6 @@ You can then try it out:
 .. figure:: https://forum-snapcraft-io.s3.dualstack.us-east-1.amazonaws.com/optimized/2X/7/786a40dcb91411fa69f0a8542de5004ebf4976b6_2_606x500.png
    :alt: image|606x500
 
-   image|606x500
 
 Removing the snap is simple too:
 

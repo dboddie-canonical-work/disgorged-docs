@@ -131,7 +131,6 @@ A branch is visible on a snap’s ‘Release’ page in the `Snap Store web UI <
 .. figure:: https://forum-snapcraft-io.s3.dualstack.us-east-1.amazonaws.com/original/2X/f/f872a50bf0a3db7e999260fea035fd4b32fa920f.png
    :alt: image|690x367
 
-   image|690x367
 
 A snap from a branch can also be promoted to another channel using *snapcraft* on the command line:
 

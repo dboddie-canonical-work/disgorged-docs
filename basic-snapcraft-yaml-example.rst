@@ -148,7 +148,6 @@ An interface consists of a connection between a slot and a plug. The slot is the
 .. figure:: https://assets.ubuntu.com/v1/59c290a8-snapd-interfaces.png
    :alt: How an interface uses a plug and a slot
 
-   How an interface uses a plug and a slot
 
 Interfaces can be automatically or manually connected. Some interfaces will be auto-connected. Others may not, especially if they have access to sensitive resources (like network control, for instance). Users have the option to manually control interfaces – connect and disconnect them.
 

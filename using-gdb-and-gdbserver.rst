@@ -184,7 +184,6 @@ In VS Code, open your workspace and select *Run and Debug* from the primary side
 .. figure:: https://assets.ubuntu.com/v1/b8187da5-vscode_01.png
    :alt: VSCode GDB selector
 
-   VSCode GDB selector
 
 This will open a template *launch.json* file in the editor which can be configured to access the remote *snap gdb* session. Replace the contents of this file with the following to create a new entry called *Remote gdb*:
 
@@ -220,11 +219,9 @@ Save the file and set some breakpoints in the code before returnin to the *Run a
 .. figure:: https://assets.ubuntu.com/v1/d9434881-vscode_02.png
    :alt: VS Code run remote GDB
 
-   VS Code run remote GDB
 
 Press the small *play* icon to connect to an already running snap gdbserver. You can now debug a running snap just as you would a normally built executable.
 
 .. figure:: https://assets.ubuntu.com/v1/430a49e2-vscode_03.png
    :alt: VS Code debugging a snap
 
-   VS Code debugging a snap

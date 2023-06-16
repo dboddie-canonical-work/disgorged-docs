@@ -40,14 +40,12 @@ An application first needs to be installed as a snap:
 .. figure:: https://assets.ubuntu.com/v1/8905c627-store-01.png
    :alt: Snap Store VLC install from snap
 
-   Snap Store VLC install from snap
 
 To access the interface management functions, either search for an installed snap, or select it from the *Installed* view. The interfaces for the selected application can then be viewed by selecting **Permissions**:
 
 .. figure:: https://assets.ubuntu.com/v1/7fbcf74c-store-04.png
    :alt: Snap store permissions
 
-   Snap store permissions
 
 Each interface can now be connected or disconnected by selecting the toggle switch to the right of its description, and you may be prompted for your password.
 
@@ -145,7 +143,6 @@ In other words, the slot is the provider of the resource while the plug is the c
 .. figure:: https://assets.ubuntu.com/v1/59c290a8-snapd-interfaces.png
    :alt: How an interfaces uses a plug and a slot
 
-   How an interfaces uses a plug and a slot
 
 In the output to ``snap connections vlc`` (see above), every interface used by VLC is listed in the first column. The *Plug* and *Slot* columns then describe how each interface is connected.
 

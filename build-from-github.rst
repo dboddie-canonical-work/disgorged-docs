@@ -84,14 +84,12 @@ This is accomplished by using the two drop-down menus, first to choose an organi
 .. figure:: https://forum-snapcraft-io.s3.dualstack.us-east-1.amazonaws.com/original/2X/b/bfc72bc1a38e19de984786d4163d27afc852fb49.png
    :alt: image|677x361
 
-   image|677x361
 
 Click on *Start building* to instantiate the build process and complete the linking process:
 
 .. figure:: https://forum-snapcraft-io.s3.dualstack.us-east-1.amazonaws.com/original/2X/a/adcfaf6fb18ef99655535c31875f2a980e8a9ec5.png
    :alt: 352253a18ea8e99a914ce6697d83cddfc9d3dc89|648x146
 
-   352253a18ea8e99a914ce6697d83cddfc9d3dc89|648x146
 
 .. raw:: html
 
@@ -108,21 +106,18 @@ The *Builds* tab in the web UI will always show the build status for each suppor
 .. figure:: https://forum-snapcraft-io.s3.dualstack.us-east-1.amazonaws.com/original/2X/e/e1274b75d1d4f61af27c4a4ad1a11d94b19fb27c.png
    :alt: image|648x380
 
-   image|648x380
 
 Clicking on a build ID will take you to the status page for that specific job. This is useful if a build fails as it will contain the build log for analysis:
 
 .. figure:: https://forum-snapcraft-io.s3.dualstack.us-east-1.amazonaws.com/original/2X/e/e961a00115dee7d1f5a45c5b6e8be25920df079b.png
    :alt: image|672x396
 
-   image|672x396
 
 When a build succeeds, it’s automatically released to the edge channel. The release history for those builds can be viewed from the *Releases* tab on the web UI by selecting *Launchpad* beneath the *Revisions available to release* heading:
 
 .. figure:: https://forum-snapcraft-io.s3.dualstack.us-east-1.amazonaws.com/original/2X/3/330e0d32ed9fb1496246f2db38548c417274e214.png
    :alt: image|672x341
 
-   image|672x341
 
 See `Release management <https://snapcraft.io/docs/release-management>`__ for more details on how to promote and monitor release revisions and their channels.
 
@@ -141,6 +136,5 @@ To unlink your GitHub repo and disable automatic snap builds, navigate to the *B
 .. figure:: https://forum-snapcraft-io.s3.dualstack.us-east-1.amazonaws.com/original/2X/f/f6af192ff385ad69a25d235f5386806a967997e1.png
    :alt: image|665x115
 
-   image|665x115
 
 This will clear the build history on the same page, but you can still release any successful builds from the *Releases* page of the web UI.

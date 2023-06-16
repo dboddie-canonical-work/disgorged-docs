@@ -190,7 +190,6 @@ You can then try it out:
 .. figure:: https://assets.ubuntu.com/v1/f12e5af3-flutter_01.png
    :alt: Running example Flutter application
 
-   Running example Flutter application
 
 Removing the snap is simple too:
 

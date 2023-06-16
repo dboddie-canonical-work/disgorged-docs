@@ -155,7 +155,6 @@ From the snap packages web page, select the build data for the job you want to m
 .. figure:: https://assets.ubuntu.com/v1/04cd2c65-snapcraft-hello_01.png
    :alt: Launchpad remote build management
 
-   Launchpad remote build management
 
 Selecting the build page for a build allows you to monitor the build progress for each architecture, and access the completed build log for each.
 

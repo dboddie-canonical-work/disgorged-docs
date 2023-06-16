@@ -30,7 +30,6 @@ The virtual machine or container will not be deleted, and will be reused for any
 .. figure:: https://assets.ubuntu.com/v1/af579545-snap-konsole.png
    :alt: Snapcraft building the wethr snap in Konsole
 
-   Snapcraft building the wethr snap in Konsole
 
 .. raw:: html
 

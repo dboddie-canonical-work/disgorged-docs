@@ -79,7 +79,6 @@ Epoch transitions
 .. figure:: https://assets.ubuntu.com/v1/fa390985-Untitled+drawing.png
    :alt: Epoch transitions
 
-   Epoch transitions
 
 The following table illustrates which revision (R) and epoch (E) a user will receive when refreshing an application from stable and candidate channels:
 
