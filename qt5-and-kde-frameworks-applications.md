@@ -162,7 +162,7 @@ parts:
 
 `stage-packages` are the packages required by KCalc to run, and mirror the same packages required by the binary on a standard distribution installation.
 
-`parse-info` points to the AppStream metadata file. Since we used `adopt-info: kcalc` in the metadata, the AppStream file of the `kcalc` part will be used to fill in the `title`, `summary` and `description` of this snap. See [Using AppStream metadata](using-external-metadata.md#heading--appstream) for more information.
+`parse-info` points to the AppStream metadata file. Since we used `adopt-info: kcalc` in the metadata, the AppStream file of the `kcalc` part will be used to fill in the `title`, `summary` and `description` of this snap. See [Using AppStream metadata](using-external-metadata.md#qt5-and-kde-frameworks-applications-heading--appstream) for more information.
 
 #### Apps
 
@@ -187,7 +187,7 @@ apps:
 
 You can see we use the [`kde-neon` extension](the-kde-neon-extension.md). This extension will make Qt5 and KDE libraries available to the snap at run time and it will configure the run time environment of the application so that all desktop functionality is correctly initialised.
 
-The `common-id` field is used to link the AppStream metadata to this application. As a result, we don't need to [manually specify the `.desktop` entry file](desktop-files-for-menu-integration.md) because it's already defined in AppStream. See [Using AppStream metadata](using-external-metadata.md#heading--appstream) for more information.
+The `common-id` field is used to link the AppStream metadata to this application. As a result, we don't need to [manually specify the `.desktop` entry file](desktop-files-for-menu-integration.md) because it's already defined in AppStream. See [Using AppStream metadata](using-external-metadata.md#qt5-and-kde-frameworks-applications-heading--appstream) for more information.
 
 
 ### Building the snap

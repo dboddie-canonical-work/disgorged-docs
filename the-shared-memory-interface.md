@@ -15,11 +15,11 @@ See [Interface management](interface-management.md) and [Supported interfaces](s
 
 ---
 
-<h2 id='heading--dev-details'>Developer details </h2>
+<h2 id='the-shared-memory-interface-heading--dev-details'>Developer details </h2>
 
 | Permissions |  |  |
 |--|--|--|
-| **[Auto-connect](interface-management.md#heading--auto-connections)** | **no** by default | **yes** when `private` is enabled, or with snaps from the same publisher |
+| **[Auto-connect](interface-management.md#the-shared-memory-interface-heading--auto-connections)** | **no** by default | **yes** when `private` is enabled, or with snaps from the same publisher |
 | **[Super-privileged](super-privileged-interfaces.md)** | **no** for plugs | **yes** for slots |
 
 **Attributes**:

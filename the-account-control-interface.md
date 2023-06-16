@@ -10,7 +10,7 @@ This interface enables the management of the `extrausers` table in the Name Serv
 
 The interface **does not** allow the management of users and groups for the system NSS databases in */etc*.
 
-Due to the privileged nature of access enabled by this interface, its use is reserved exclusively for "management snaps" from [brand stores](glossary.md#heading--brand-store).
+Due to the privileged nature of access enabled by this interface, its use is reserved exclusively for "management snaps" from [brand stores](glossary.md#the-account-control-interface-heading--brand-store).
 
 [note type="positive" status="Interface documentation"]
 
@@ -20,12 +20,12 @@ See [Interface management](interface-management.md) and [Supported interfaces](s
 
 ---
 
-<h2 id='heading--dev-details'>Developer details </h2>
+<h2 id='the-account-control-interface-heading--dev-details'>Developer details </h2>
 
 **Auto-connect**: no
 
 
-<h3 id='heading-code'>Code examples</h3>
+<h3 id='the-account-control-interface-heading-code'>Code examples</h3>
 
 The account-control interface is used in the _usbtop_ snap to help monitor USB traffic: <https://github.com/ogra1/usbtop/blob/master/snap/snapcraft.yaml>
 

@@ -20,9 +20,9 @@ However, there are specific circumstances when a manual review and approval proc
 
 1. *classic confinement* and publishing to the Snap Store
 1.  automatic alias creation for an executable with a different name to the snap name
-  (see [Application aliases](https://snapcraft.io/docs/commands-and-aliases#heading--aliases) for more details)
+  (see [Application aliases](https://snapcraft.io/docs/commands-and-aliases#permission-requests-heading--aliases) for more details)
 1. automatic interfaces connection with an interface that defaults to no auto-connection
-1. a new [track](https://snapcraft.io/docs/channels#heading--tracks), often used to provide a stable version path with production grade applications
+1. a new [track](https://snapcraft.io/docs/channels#permission-requests-heading--tracks), often used to provide a stable version path with production grade applications
 1. use of a more permissive interfaces, such as [personal-files](the-personal-files-interface.md)
 
 In all of the above cases, a snap's publisher needs to make a permission request in the [store-requests](https://forum.snapcraft.io/c/store-requests) category of [https://forum.snapcraft.io](https://forum.snapcraft.io).

@@ -61,7 +61,7 @@ The metadata, base, and confinement declarations are rather similar to our basic
 * The wethr snap uses core20 as its base.
 * The wethr snap uses strict confinement instead of devmode.
 
-<h2 id='heading--adopt'>adopt-info</h2>
+<h2 id='intermediate-snapcraft-yaml-example-heading--adopt'>adopt-info</h2>
 
 This keyword instructs Snapcraft to “adopt” metadata information using [external metadata](using-external-metadata.md) sources. Such use can be useful for CI systems, where the declarations in the snapcraft.yaml file can be obtained from scripts rather than manually.
 
@@ -82,7 +82,7 @@ adopt-info: wethr
 
 Alternatively, in this particular example, the version field could also be manually defined, e.g.: version: ‘1.5’.
 
-<h2 id='heading--grade'>grade</h2>
+<h2 id='intermediate-snapcraft-yaml-example-heading--grade'>grade</h2>
 
 The optional grade keyword defines the quality level of the snap. Two levels are available: devel and stable. Snaps with the devel grade level cannot be uploaded to the stable channel in the Snap Store.
 
@@ -90,7 +90,7 @@ The optional grade keyword defines the quality level of the snap. Two levels are
 grade: stable
 ```
 
-<h2 id='heading--architectures'>Architectures</h2>
+<h2 id='intermediate-snapcraft-yaml-example-heading--architectures'>Architectures</h2>
 
 This section defines the target [architectures](architectures.md) for which the snap should be built. It requires the build system that is running the Snapcraft tool to be able to compile and build the snap for the listed platforms.
 
@@ -102,11 +102,11 @@ architectures:
 ```
 
 
-<h2 id='heading--build'>Build definition</h2>
+<h2 id='intermediate-snapcraft-yaml-example-heading--build'>Build definition</h2>
 
 While largely similar to the yt-dlp example, the wethr application does introduce some notable differences in the build definition section. We will discuss the parts section first.
 
-<h3 id='heading--parts'>The parts definition</h3>
+<h3 id='intermediate-snapcraft-yaml-example-heading--parts'>The parts definition</h3>
 
 The parts definition consists of the following lines of code:
 
@@ -143,7 +143,7 @@ The wethr snap also only has one part. However, here, it is built using the npm 
 * **override-pull**: opens a multi-line block inside which BASH-syntax commands are used to perform operations that cannot be satisfied by the default Snapcraft lifecycle pull operation. In the wethr example, the listed commands are used to derive the right version of the application, and set it using the snapcraftctl scriptlet.
 * **build-packages**: defines the list of tools and libraries that are required to successfully build or compile the part. The build packages are obtained from the repository archives that match the snap base, and need to be written in the syntax that can be correctly interpreted by the apt package manager. For instance, a foo build package from the Ubuntu 20.04 archive would be installed (apt install foo) in the snap build environment during the build lifecycle. In this case, the snap needs the git tool to retrieve the sources from the Git repository (GitHub) and the sed tool to perform the string search and replace action on the commit tag.
 
-<h3 id='heading--apps'>The apps definition</h3>
+<h3 id='intermediate-snapcraft-yaml-example-heading--apps'>The apps definition</h3>
 
 The apps build definition consists of the following lines of code:
 

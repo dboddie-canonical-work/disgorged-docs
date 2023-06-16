@@ -15,7 +15,7 @@ See [Interface management](interface-management.md) and [Supported interfaces](s
 
 ---
 
-<h2 id='heading--dev-details'>Developer details </h2>
+<h2 id='the-netlink-connector-interface-heading--dev-details'>Developer details </h2>
 
 **Auto-connect**: no
 
@@ -23,7 +23,7 @@ As NETLINK_CONNECTOR is not finely mediated and app-specific, use of this interf
 
 Requires snapd version _2.26+_.
 
-<h3 id='heading-code'>Code examples</h3>
+<h3 id='the-netlink-connector-interface-heading-code'>Code examples</h3>
 
 The snap of the [usbtop]() kernel module, used to monitor the bandwidth of USB buses and devices, uses the _netlink-audit_ interface:
 [https://github.com/ogra1/usbtop/blob/master/snap/snapcraft.yaml](https://github.com/ogra1/usbtop/blob/3743b5a55e6df70e6dd95292121279f1013ba570/snap/snapcraft.yaml#L50)

@@ -20,8 +20,8 @@ Snapcraft 3.0 also remains backwards compatible. This means you can omit the `ba
 
 The environment runs in a container, which means it's isolated from the user during normal operation. However, the following commands enable you to step into this encapsulated environment:
 
--   `--shell`: builds your snap to the [lifecycle step](parts-lifecycle.md#heading--steps) prior to that specified and opens a shell into the environment (e.g. running `snapcraft prime --shell` will run up to the `stage` step and open a shell).
--   `--shell-after`: builds your snap to the [lifecycle step](parts-lifecycle.md#heading--steps) specified and opens a shell into the environment. (eg. running `snapcraft prime --shell-after` will run up to the `prime` step and then drop into a shell).
+-   `--shell`: builds your snap to the [lifecycle step](parts-lifecycle.md#release-notes-snapcraft-3-0-heading--steps) prior to that specified and opens a shell into the environment (e.g. running `snapcraft prime --shell` will run up to the `stage` step and open a shell).
+-   `--shell-after`: builds your snap to the [lifecycle step](parts-lifecycle.md#release-notes-snapcraft-3-0-heading--steps) specified and opens a shell into the environment. (eg. running `snapcraft prime --shell-after` will run up to the `prime` step and then drop into a shell).
 -   `--debug`, opens a shell inside the environment after an error occur.
 
 The below video shows an example of how the system behaves with the new functionality in place:
@@ -32,9 +32,9 @@ The below video shows an example of how the system behaves with the new function
 
 With this release of Snapcraft 3.0, we are happy to announce support for macOS via [Homebrew](https://formulae.brew.sh/formula/snapcraft). Moreover, the experience is transparent thanks to the use of build environments and its underlying technology.
 
-See [Install snapcraft on macOS](installing-snapcraft.md#heading--macos) for further details.
+See [Install snapcraft on macOS](installing-snapcraft.md#release-notes-snapcraft-3-0-heading--macos) for further details.
 
-<h3 id='heading--base-exceptions'>Features incompatible with bases</h3>
+<h3 id='release-notes-snapcraft-3-0-heading--base-exceptions'>Features incompatible with bases</h3>
 
 When using the `base` keyword in `snapcraft.yaml` the following (long deprecated) features become unavailable:
 
@@ -72,7 +72,7 @@ The recording below shows how the original `command`, defined in `snapcraft.yaml
 
 [![asciicast](https://camo.githubusercontent.com/d59f96e630f91f32d4ba690af9238717ad3aeaed/68747470733a2f2f61736369696e656d612e6f72672f612f74713844325268455862734e596b5644567a35457a594448302e737667)](https://asciinema.org/a/tq8D2RhEXbsNYkVDVz5EzYDH0)
 
-<h3 id='heading--extensions'>Extensions</h3>
+<h3 id='release-notes-snapcraft-3-0-heading--extensions'>Extensions</h3>
 
 The architecture and framework has been cemented into the `snapcraft` tool to help *snapcraft.yaml* grow declarative* functionality we're calling *Extensions*. We have done this to avoid repetitive tasks, and to avoid snap builders needing deep knowledge of a target software stack.
 

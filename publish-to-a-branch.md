@@ -10,14 +10,14 @@ Branch names convey their purpose, such as `fix-for-bug123`, but the name isn’
 
 After 30 days with no further updates, a branch will be closed automatically. The replacement snap will then be chosen from the next most conservative risk-level of the same track. For example, *beta/fix-for-bug123* will fall back to *beta* after the *fix-for-bug123* branch is closed.
 
-- [Creating a branch](#heading--creating)
-- [Installing a snap from a branch](#heading--installing)
-- [Promoting a snap from a branch](#heading--promote)
-- [Setting a default branch](#heading--default)
+- [Creating a branch](#publish-to-a-branch-heading--creating)
+- [Installing a snap from a branch](#publish-to-a-branch-heading--installing)
+- [Promoting a snap from a branch](#publish-to-a-branch-heading--promote)
+- [Setting a default branch](#publish-to-a-branch-heading--default)
 
 ---
 
-<h2 id='heading--creating'>Creating a branch</h2>
+<h2 id='publish-to-a-branch-heading--creating'>Creating a branch</h2>
 
 To publish a built and tested snap to a new branch, the snap developer can use the same _snapcraft upload_ process used to publish the snap, but with a full [channel description](https://snapcraft.io/docs/channels) that includes track, risk-level and a new arbitrary branch name:
 
@@ -81,7 +81,7 @@ channels:
   latest/edge:      0.6.3   2021-09-28 (225) 101MB -
 ```
 
-<h2 id='heading--installing'>Installing a snap from a branch</h2>
+<h2 id='publish-to-a-branch-heading--installing'>Installing a snap from a branch</h2>
 
 To install a snap from a branch, the user needs to know its name. This is typically shared by the developer, either through whatever issue tracking system might be used by the project, or shared informally via a forum post or message.
 
@@ -96,7 +96,7 @@ If the snap is already installed, replace **install** with **refresh**.
 
 After 30 days with no further updates, a branch will be closed automatically. The replacement snap will then be chosen from the next most conservative risk-level of the same track. For example, _beta/fix-test-061_ will fall back to whatever snap is provided by _beta_ after the fix-test-061 branch is closed.
 
-<h2 id='heading--promote'>Promoting a snap from a branch</h2>
+<h2 id='publish-to-a-branch-heading--promote'>Promoting a snap from a branch</h2>
 
 If a snap in a branch proves stable and fixes whatever issue necessitated the branch release, it can be promoted to another channel just like any other snap.
 
@@ -120,7 +120,7 @@ After a snap has been promoted, the branch will remain in-place until its expiry
 
 For more details on promoting snaps to different channels, see [Release management](https://snapcraft.io/docs/release-management).
 
-<h2 id='heading--default'>Setting a default track</h2>
+<h2 id='publish-to-a-branch-heading--default'>Setting a default track</h2>
 
 All snaps have a default track. When not specified explicitely, a snap is installed from the default track and without the snap publisher specifying otherwise, the default track is called _latest_
 

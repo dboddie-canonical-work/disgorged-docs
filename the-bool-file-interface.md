@@ -6,7 +6,7 @@
 
 The `bool-file` interface allows access to a specific class of file that contains boolean semantics, typically used to toggle or represent the state of binary hardware values.
 
-This interface is primarily intended to be used with [Ubuntu Core](glossary.md#heading--ubuntu-core) devices, it's also restricted because it provides privileged access to hardware.
+This interface is primarily intended to be used with [Ubuntu Core](glossary.md#the-bool-file-interface-heading--ubuntu-core) devices, it's also restricted because it provides privileged access to hardware.
 
 These kinds of file are located within specific directories inside the [sysfs](https://man7.org/linux/man-pages/man5/sysfs.5.html) filesystem (`/sys`) and this  interface allows a file to be _read_, to obtaining a current value, or _written to_, setting a new value.
 
@@ -31,10 +31,10 @@ See [Interface management](interface-management.md) and [Supported interfaces](s
 
 ---
 
-<h2 id='heading--dev-details'>Developer details </h2>
+<h2 id='the-bool-file-interface-heading--dev-details'>Developer details </h2>
 
 
-**[Auto-connect](interface-management.md#heading--auto-connections)**: no</br>
+**[Auto-connect](interface-management.md#the-bool-file-interface-heading--auto-connections)**: no</br>
 
 **Attributes**:
  * `path` (slot): path to the file in _sysfs_</br>
@@ -47,7 +47,7 @@ See [Interface management](interface-management.md) and [Supported interfaces](s
 
 The [gpio interface](the-gpio-interface.md)  provides another option for accessing GPIO devices.
 
-To use a boolean file, the snap developer must add `plugs: [ bool-file ]` to a snap's [snapcraft.yaml](the-snapcraft-yaml-schema.md). The snap user can then access a specific boolean file with an [interface connection](interface-management.md#heading--manual-connections).
+To use a boolean file, the snap developer must add `plugs: [ bool-file ]` to a snap's [snapcraft.yaml](the-snapcraft-yaml-schema.md). The snap user can then access a specific boolean file with an [interface connection](interface-management.md#the-bool-file-interface-heading--manual-connections).
 
 Unless a snap specifically expects a set of boolean files that cannot be predefined, the recommended approach is to define distinct plugs for each boolean file the snap wishes to use:
 

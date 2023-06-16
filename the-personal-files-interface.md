@@ -6,7 +6,7 @@
 
 The `personal-files` interface provides access to the specified files in the user's home. This interface gives privileged access to the user's data.
 
-**[Auto-connect](interface-management.md#heading--auto-connections)**: no</br>
+**[Auto-connect](interface-management.md#the-personal-files-interface-heading--auto-connections)**: no</br>
 **[Super-privileged](super-privileged-interfaces.md)**: yes</br>
 **Transitional**: no</br>
 **Attributes**:</br>

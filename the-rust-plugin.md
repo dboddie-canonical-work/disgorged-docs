@@ -4,19 +4,19 @@
 
 # The rust plugin
 
-The `rust` plugin is useful for building [Rust](https://www.rust-lang.org/)-based parts using the [Cargo](https://crates.io/) package manager to drive the build.  This plugin uses the common plugin keywords as well as those for [sources](snapcraft-parts-metadata.md#heading--source). For more information, see [Snapcraft parts metadata](snapcraft-parts-metadata.md).
+The `rust` plugin is useful for building [Rust](https://www.rust-lang.org/)-based parts using the [Cargo](https://crates.io/) package manager to drive the build.  This plugin uses the common plugin keywords as well as those for [sources](snapcraft-parts-metadata.md#the-rust-plugin-heading--source). For more information, see [Snapcraft parts metadata](snapcraft-parts-metadata.md).
 
 Additional features and syntax are dependent on which [base](base-snaps.md) is being used, as outlined below:
 
-- [base: core22](#heading--core22)
-- [base: core20](#heading--core20)
-- [base: core18 | core](#heading--core18)
+- [base: core22](#the-rust-plugin-heading--core22)
+- [base: core20](#the-rust-plugin-heading--core20)
+- [base: core18 | core](#the-rust-plugin-heading--core18)
 
 See [Rust applications](rust-applications.md) for a simple example, or search [GitHub](https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+rust%22&type=Code) for projects using the plugin.
 
 > ⓘ  This is a *snapcraft* plugin. See [Snapcraft plugins](snapcraft-plugins.md) and [Supported plugins](supported-plugins.md) for further details on how plugins are used.
 
-<h3 id='heading--core22'>base: core22</h3>
+<h3 id='the-rust-plugin-heading--core22'>base: core22</h3>
 
 - **`rust-features`** (list of strings)
      Features used to build optional dependencies
@@ -26,7 +26,7 @@ See [Rust applications](rust-applications.md) for a simple example, or search [G
 
 Requires Snapcraft version _7.0+_.
 
-<h3 id='heading--core20'>base: core20</h3>
+<h3 id='the-rust-plugin-heading--core20'>base: core20</h3>
 
 - **`rust-features`** (list of strings)
      Features used to build optional dependencies
@@ -35,7 +35,7 @@ Requires Snapcraft version _7.0+_.
 
 Requires Snapcraft version _4.0+_.
 
-<h3 id='heading--core18'>base: core18 | core</h3>
+<h3 id='the-rust-plugin-heading--core18'>base: core18 | core</h3>
 
 - **`rust-channel`** (string)
      Used to select which *rust* channel (stable, beta, nightly)

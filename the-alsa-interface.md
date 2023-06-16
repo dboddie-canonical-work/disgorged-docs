@@ -10,7 +10,7 @@ To provide better audio sharing and input and output configuration, it's  recomm
 
 However, raw access to ALSA devices using this interface can provide a slight performance advantage with input and output latency and avoid resampling which can reduce audio quality.
 
-<h2 id='heading--example'>Example</h2>
+<h2 id='the-alsa-interface-heading--example'>Example</h2>
 
 The musical notation and composition application, [MuseScore](https://snapcraft.io/musescore), is a good example of a snap that uses the ALSA interface.
 
@@ -27,7 +27,7 @@ See [Interface management](interface-management.md) and [Supported interfaces](s
 
 ---
 
-<h2 id='heading--dev-details'>Developer details </h2>
+<h2 id='the-alsa-interface-heading--dev-details'>Developer details </h2>
 
 **Auto-connect**: no
 
@@ -35,7 +35,7 @@ The `alsa` interface is not auto-connected, in part, because not all hardware wi
 
 The _libasound2_ library needs to be included in a snap's `stage-packages`, of the part which uses ALSA, either directly or through some other package which brings it in (or manually compiled).
 
-<h3 id='heading-code'>Code examples</h3>
+<h3 id='the-alsa-interface-heading-code'>Code examples</h3>
 
 The _snapcraft.yaml_ for MuseScore includes an ALSA interface definition:
 [https://github.com/pachulo/musescore-snap/blob/master/snap/snapcraft.yaml](https://github.com/pachulo/musescore-snap/blob/9d328cb48679542180b257e32131bbf23ea8cba0/snap/snapcraft.yaml#L32)

@@ -4,7 +4,7 @@
 
 # The cmake plugin
 
-The `cmake` plugin is useful for building [CMake](https://cmake.org/)-based parts.  This plugin uses the common plugin keywords as well as those for [sources](snapcraft-parts-metadata.md#heading--source). For more information, see [Snapcraft parts metadata](snapcraft-parts-metadata.md).
+The `cmake` plugin is useful for building [CMake](https://cmake.org/)-based parts.  This plugin uses the common plugin keywords as well as those for [sources](snapcraft-parts-metadata.md#the-cmake-plugin-heading--source). For more information, see [Snapcraft parts metadata](snapcraft-parts-metadata.md).
 
 This plugin also supports options from the [make](the-make-plugin.md) plugin.
 
@@ -12,15 +12,15 @@ A *cmake* project will typically include a *CMakeLists.txt* file to drive the bu
 
 Plugin-specific features and syntax are dependent on which [base](base-snaps.md) is being used, as outlined below:
 
-- [base: core22](#heading--core22)
-- [base: core20](#heading--core20)
-- [base: core18 | core](#heading--core18)
+- [base: core22](#the-cmake-plugin-heading--core22)
+- [base: core20](#the-cmake-plugin-heading--core20)
+- [base: core18 | core](#the-cmake-plugin-heading--core18)
 
 For a simple example, see [MOOS applications](moos-applications.md), or search [GitHub](https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+cmake%22&type=Code) for projects already using the plugin.
 
 > ⓘ  This is a *snapcraft* plugin. See [Snapcraft plugins](snapcraft-plugins.md) and [Supported plugins](supported-plugins.md) for further details on how plugins are used.
 
-<h3 id='heading--core22'>base: core22</h3>
+<h3 id='the-cmake-plugin-heading--core22'>base: core22</h3>
 
 - **`cmake-generator`** (string, default: _Unix Makefiles_)
       Determine what native build system is to be used.
@@ -41,7 +41,7 @@ parts:
 
 Requires Snapcraft version _7.0+_.
 
-<h3 id='heading--core20'>base: core20</h3>
+<h3 id='the-cmake-plugin-heading--core20'>base: core20</h3>
 
 - **`cmake-generator`** (string, default: _Unix Makefiles_)
       Determine what native build system is to be used.
@@ -61,7 +61,7 @@ parts:
 ```
 Requires Snapcraft version _4.0+_.
 
-<h3 id='heading--core18'>base: core18 | core</h3>
+<h3 id='the-cmake-plugin-heading--core18'>base: core18 | core</h3>
 
 - **`configflags`** (list of strings)
      Configure flags to pass to the build using the common *cmake* semantics.

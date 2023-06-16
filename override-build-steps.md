@@ -24,7 +24,7 @@ parts:
       <shell script>
 ```
 
-<h2 id='heading--overriding-the-pull-step'>Overriding the pull step</h2>
+<h2 id='override-build-steps-heading--overriding-the-pull-step'>Overriding the pull step</h2>
 
 This can be done by utilising the `override-pull` override. Its working directory is the part's source directory in `parts/<part name>/src/`. In order to run the default `pull` step, call `snapcraftctl pull` from within the override itself.
 
@@ -42,7 +42,7 @@ parts:
       patch -p1 < $SNAPCRAFT_STAGE/my.patch
 ```
 
-<h2 id='heading--overriding-the-build-step'>Overriding the build step</h2>
+<h2 id='override-build-steps-heading--overriding-the-build-step'>Overriding the build step</h2>
 
 This can be done by utilising the `override-build` override. Its working directory is the part's base build directory in `parts/<part name>/build/`. In order to run the default `build` step, call `snapcraftctl build` from within the override itself.
 
@@ -60,7 +60,7 @@ parts:
       sed -i 's|/usr/bin|$SNAP/usr/bin|g' $SNAPCRAFT_PART_INSTALL/my-bin-artifact.sh
 ```
 
-<h2 id='heading--overriding-the-stage-step'>Overriding the stage step</h2>
+<h2 id='override-build-steps-heading--overriding-the-stage-step'>Overriding the stage step</h2>
 
 This can be done by utilising the `override-stage` override. Its working directory is the staging area in `stage/`. In order to run the default `stage` step, call `snapcraftctl stage` from within the override itself.
 
@@ -79,7 +79,7 @@ parts:
       sed -i 's|/usr/bin|$SNAP/usr/bin|g' other/parts/file
 ```
 
-<h2 id='heading--overriding-the-prime-step'>Overriding the prime step</h2>
+<h2 id='override-build-steps-heading--overriding-the-prime-step'>Overriding the prime step</h2>
 
 This can be done by utilising the `override-prime` override. Its working directory is the primeing area in `prime/`. In order to run the default `prime` step, call `snapcraftctl prime` from within the override itself.
 

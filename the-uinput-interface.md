@@ -16,7 +16,7 @@ This means snapd does not install additional _udev_ rules to modify device permi
 
 See [the joystick interface](the-joystick-interface.md) and [the raw-usb interface](the-raw-usb-interface.md) for potential alternatives.
 
-**[Auto-connect](interface-management.md#heading--auto-connections)**: no</br>
+**[Auto-connect](interface-management.md#the-uinput-interface-heading--auto-connections)**: no</br>
 **[Super-privileged](super-privileged-interfaces.md)**: yes</br>
 
 Requires snapd version  *2.46+* .

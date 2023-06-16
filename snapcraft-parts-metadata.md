@@ -35,9 +35,9 @@ The following are keys that can be used within **parts.<part-name>** (for exampl
 
 Type: `list[string]`
 
-Ensures that all the \<part-names\> listed in `after` are staged before this part begins its [lifecycle](parts-lifecycle.md#heading--steps).
+Ensures that all the \<part-names\> listed in `after` are staged before this part begins its [lifecycle](parts-lifecycle.md#snapcraft-parts-metadata-heading--steps).
 
-<h3 id='heading--build-attributes'>build-attributes<sup><a href='#heading--build-attributes'>⚓</a></sup></h3>
+<h3 id='snapcraft-parts-metadata-heading--build-attributes'>build-attributes<sup><a href='#snapcraft-parts-metadata-heading--build-attributes'>⚓</a></sup></h3>
 
 Type: `enum`
 
@@ -53,7 +53,7 @@ Supported attributes:
 
 For more information, refer to the output of `snapcraft help plugins`.
 
-<h3 id='heading--build-environment'>build-environment<sup><a href='#heading--build-environment'>⚓</a></sup></h3>
+<h3 id='snapcraft-parts-metadata-heading--build-environment'>build-environment<sup><a href='#snapcraft-parts-metadata-heading--build-environment'>⚓</a></sup></h3>
 
 Type: Array
 
@@ -80,7 +80,7 @@ Packages are installed using the host's package manager, such as `apt` or `dnf`,
 Example: `[ libssl-dev, libssh-dev, libncursesw5-dev]`
 
 
-<h3 id='heading--build-snaps'>build-snaps<sup><a href='#heading--build-snaps'>⚓</a></sup></h3>
+<h3 id='snapcraft-parts-metadata-heading--build-snaps'>build-snaps<sup><a href='#snapcraft-parts-metadata-heading--build-snaps'>⚓</a></sup></h3>
 
 Type: `list[string]`
 
@@ -90,7 +90,7 @@ If a specific channel is required, the syntax is of the form `<snap-name>/<chann
 
 Example: `build-snaps: [go/1.13/stable]`
 
-<h3 id='heading--disable-parallel'>disable-parallel <sup><a href='#heading--disable-parallel'>⚓</a></sup></h3>
+<h3 id='snapcraft-parts-metadata-heading--disable-parallel'>disable-parallel <sup><a href='#snapcraft-parts-metadata-heading--disable-parallel'>⚓</a></sup></h3>
 
 Type: `boolean`
 
@@ -115,43 +115,43 @@ In the key/value pair, the key represents the path of a file inside the part and
 Example: ` bin/snapcraftctl: bin/scriptlet-bin/snapcraftctl`
 
 
-<h3 id='heading--override-build'>override-build<sup><a href='#heading--override-build'>⚓</a></sup></h3>
+<h3 id='snapcraft-parts-metadata-heading--override-build'>override-build<sup><a href='#snapcraft-parts-metadata-heading--override-build'>⚓</a></sup></h3>
 
 Type: `multiline string`
 
 Replaces a plugin's default *build* process with a script.
 
-The shell script defined here replaces the [build](parts-lifecycle.md#heading--steps) step of the plugin, defined in `parts.<part-name>.plugin`. The working directory is the base build directory for the given part. The defined script is run with `/bin/sh` and `set -e`.  A set of [Environment Variables](environment-variables.md) will be available to the script.
+The shell script defined here replaces the [build](parts-lifecycle.md#snapcraft-parts-metadata-heading--steps) step of the plugin, defined in `parts.<part-name>.plugin`. The working directory is the base build directory for the given part. The defined script is run with `/bin/sh` and `set -e`.  A set of [Environment Variables](environment-variables.md) will be available to the script.
 
 To run Snapcraft's original build implementation from within *override-build*, run `snapcraftctl build`. This can be run before or after any custom script or omitted entirely.
 
-<h3 id='heading--override-prime'>override-prime<sup><a href='#heading--override-prime'>⚓</a></sup></h3>
+<h3 id='snapcraft-parts-metadata-heading--override-prime'>override-prime<sup><a href='#snapcraft-parts-metadata-heading--override-prime'>⚓</a></sup></h3>
 
 Type: `multiline string`
 
 Replaces a plugin's default *prime* process with a script.
 
-The shell script defined here replaces the [prime](parts-lifecycle.md#heading--steps) step of the plugin, defined in `parts.<part-name>.plugin`. The working directory is the base prime directory for the given part. The defined script is run with `/bin/sh` and `set -e`.  A set of [Environment Variables](environment-variables.md) will be available to the script.
+The shell script defined here replaces the [prime](parts-lifecycle.md#snapcraft-parts-metadata-heading--steps) step of the plugin, defined in `parts.<part-name>.plugin`. The working directory is the base prime directory for the given part. The defined script is run with `/bin/sh` and `set -e`.  A set of [Environment Variables](environment-variables.md) will be available to the script.
 
 To run Snapcraft's original prime step implementation from within *override-prime*, run `snapcraftctl prime`. This can be run before or after any custom script or omitted entirely.
 
-<h3 id='heading--override-pull'>override-pull<sup><a href='#heading--override-pull'>⚓</a></sup></h3>
+<h3 id='snapcraft-parts-metadata-heading--override-pull'>override-pull<sup><a href='#snapcraft-parts-metadata-heading--override-pull'>⚓</a></sup></h3>
 
 Type: `multiline string`
 
 Replaces a plugin's default *pull* process with a script.
 
-The shell script defined here replaces the [pull](parts-lifecycle.md#heading--steps) step of the plugin, defined in `parts.<part-name>.plugin`. The working directory is the base pull directory for the given part. The defined script is run with `/bin/sh` and `set -e`.  A set of [Environment Variables](environment-variables.md) will be available to the script.
+The shell script defined here replaces the [pull](parts-lifecycle.md#snapcraft-parts-metadata-heading--steps) step of the plugin, defined in `parts.<part-name>.plugin`. The working directory is the base pull directory for the given part. The defined script is run with `/bin/sh` and `set -e`.  A set of [Environment Variables](environment-variables.md) will be available to the script.
 
 To run Snapcraft's original pull stage implementation from within *override-pull*, run `snapcraftctl pull`. This can be run before or after any custom script or omitted entirely.
 
-<h3 id='heading--override-stage'>override-stage<sup><a href='#heading--override-stage'>⚓</a></sup></h3>
+<h3 id='snapcraft-parts-metadata-heading--override-stage'>override-stage<sup><a href='#snapcraft-parts-metadata-heading--override-stage'>⚓</a></sup></h3>
 
 Type: `multiline string`
 
 Replaces a plugin's default *stage* process with a script.
 
-The shell script defined here replaces the [stage](parts-lifecycle.md#heading--steps) step of the plugin, defined in `parts.<part-name>.plugin`. The working directory is the base stage directory for the given part. The defined script is run with `/bin/sh` and `set -e`.  A set of [Environment Variables](environment-variables.md) will be available to the script.
+The shell script defined here replaces the [stage](parts-lifecycle.md#snapcraft-parts-metadata-heading--steps) step of the plugin, defined in `parts.<part-name>.plugin`. The working directory is the base stage directory for the given part. The defined script is run with `/bin/sh` and `set -e`.  A set of [Environment Variables](environment-variables.md) will be available to the script.
 
 To run Snapcraft's original stage implementation from within *override-stage*, run `snapcraftctl stage`. This can be run before or after any custom script or omitted entirely.
 
@@ -161,7 +161,7 @@ Type: `list[string]`
 
 Defines content to adopt when using external metadata.
 
-Each entry is a relative path to a [supported metadata file](using-external-metadata.md) from the part source, build or install directory ([SNAPCRAFT_PART_SRC, SNAPCRAFT_PART_BUILD, SNAPCRAFT_PART_INSTALL](parts-lifecycle.md#heading--parts-directories)).
+Each entry is a relative path to a [supported metadata file](using-external-metadata.md) from the part source, build or install directory ([SNAPCRAFT_PART_SRC, SNAPCRAFT_PART_BUILD, SNAPCRAFT_PART_INSTALL](parts-lifecycle.md#snapcraft-parts-metadata-heading--parts-directories)).
 
 See [Using external metadata](using-external-metadata.md) for more details.
 
@@ -179,23 +179,23 @@ Every part drives its build through a plugin, this entry declares the plugin tha
 
 Type:  `multiline string`
 
-Runs a script before the plugin's [build](parts-lifecycle.md#heading--steps) step.
+Runs a script before the plugin's [build](parts-lifecycle.md#snapcraft-parts-metadata-heading--steps) step.
 
 The script is run before the build step defined for `parts.<part-name>.plugin` starts. The working directory is the base build directory for the given part. The defined script is run with `/bin/sh` and `set -e`.  A set of [Environment Variables](environment-variables.md) will be available to the script.
 
-> ⚠ The release of [Snapcraft 3.0](release-notes-snapcraft-3-0.md) made this key obsolete. Use [`override-build`](#heading--override-build) instead.
+> ⚠ The release of [Snapcraft 3.0](release-notes-snapcraft-3-0.md) made this key obsolete. Use [`override-build`](#snapcraft-parts-metadata-heading--override-build) instead.
 
 
 ### prime
 
 Type: `list[string]`
 
-A list of files from \<part-name\> to [prime](parts-lifecycle.md#heading--steps).
+A list of files from \<part-name\> to [prime](parts-lifecycle.md#snapcraft-parts-metadata-heading--steps).
 
 Rules applying to the list here are the same as those of filesets. Referencing of fileset keys is done with a `$` prefixing the fileset key, which will expand with the value of such key.
 
 
-<h3 id='heading--source'>source<sup><a href=#heading--source>⚓</a></sup></h3>
+<h3 id='snapcraft-parts-metadata-heading--source'>source<sup><a href=#snapcraft-parts-metadata-heading--source>⚓</a></sup></h3>
 
 Type: `string`
 
@@ -290,7 +290,7 @@ Used when the type of `source` entry cannot be detected.
 Can be one of the following: `[bzr|deb|git|hg|local|mercurial|rpm|subversion|svn|tar|zip|7z]`
 
 
-<h3 id='heading--stage'>stage<sup><a href='#heading--stage'>⚓</a></sup></h3>
+<h3 id='snapcraft-parts-metadata-heading--stage'>stage<sup><a href='#snapcraft-parts-metadata-heading--stage'>⚓</a></sup></h3>
 
 Type: `list[string]`
 

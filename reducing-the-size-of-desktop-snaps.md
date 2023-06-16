@@ -23,7 +23,7 @@ The Ubuntu archives include many packages with development files whose name ends
 
 To avoid this, move all `stage-packages` which end in `-dev` to `build-packages` and add their regular counterpart to `stage-packages`. See [Build and staging dependencies](https://snapcraft.io/docs/build-and-staging-dependencies) for more information.
 
-<h2 id="heading--cleanup-part">Using the cleanup part<sup><a href=#heading--cleanup-part>⚓</a></sup></h2>
+<h2 id="reducing-the-size-of-desktop-snaps-heading--cleanup-part">Using the cleanup part<sup><a href=#reducing-the-size-of-desktop-snaps-heading--cleanup-part>⚓</a></sup></h2>
 
 Snaps often ship libraries that are already available in the base snap or connected content snaps. This is because `stage-packages` currently pulls in all the dependencies of the packages you list, even if those dependencies are already available from content snaps.
 
@@ -37,7 +37,7 @@ You can remove those libraries manually by excluding them using the [`stage`]() 
     # at runtime from the content and base snaps, they do not need to be
     # included in this snap itself.
     #
-    # More info: reducing-the-size-of-desktop-snaps.md#heading--cleanup-part
+    # More info: reducing-the-size-of-desktop-snaps.md#reducing-the-size-of-desktop-snaps-heading--cleanup-part
     #
     cleanup:
       after:  # Make this part run last; list all your other parts here

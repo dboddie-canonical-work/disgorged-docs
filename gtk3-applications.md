@@ -156,13 +156,13 @@ parts:
 
 ```
 
-`override-pull` isn't often needed but it replaces the default [pull lifecycle step](parts-lifecycle.md#heading--steps) with our own actions. We're using it to augment the default _snapcraftctl pull_ step with a _sed_ command to replace the GJS path embedded within the launch file with the path to _gjs_ after it's installed as a _stage-package_ within the snap.
+`override-pull` isn't often needed but it replaces the default [pull lifecycle step](parts-lifecycle.md#gtk3-applications-heading--steps) with our own actions. We're using it to augment the default _snapcraftctl pull_ step with a _sed_ command to replace the GJS path embedded within the launch file with the path to _gjs_ after it's installed as a _stage-package_ within the snap.
 
 `built-packages` are the packages needed for a project to successfully build. This will be listed in a project's documentation, or known by the development team.
 
 `stage-packages` are required by Foliate to run, and mirror the same packages required by the binary on a standard distribution installation. We only need to install the _gjs_ package, as mentioned earlier.
 
-`parse-info` points to the AppStream metadata file. Since we used `adopt-info: foliate` in the top-level metadata, the AppStream file of the `foliate` part will be used to fill in the `summary`, `description` and `icon` of this snap. See [Using AppStream metadata](using-external-metadata.md#heading--appstream) for more information.
+`parse-info` points to the AppStream metadata file. Since we used `adopt-info: foliate` in the top-level metadata, the AppStream file of the `foliate` part will be used to fill in the `summary`, `description` and `icon` of this snap. See [Using AppStream metadata](using-external-metadata.md#gtk3-applications-heading--appstream) for more information.
 
 ### Slots
 

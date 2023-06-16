@@ -15,20 +15,20 @@ This topic is currently under construction. In particular, we want to add usage 
 Each snap runs inside its own [confined environment](snap-confinement.md), also called "sandbox". The policy of each sandbox describes what the application is allowed to do. When an application tries to do something that is not allowed, the system logs a policy violation. The following techniques can help you investigate and solve these policy violations.
 
 - Use [`snap try`](debug-snaps-with-snap-try.md) to quickly test changes without rebuilding your snap.
-- Use [`snap run --shell`](#heading--shell) to inspect and test the confined environment.
-- Use [developer mode](#heading--developer) to try your snap without confinement.
+- Use [`snap run --shell`](#debugging-snaps-heading--shell) to inspect and test the confined environment.
+- Use [developer mode](#debugging-snaps-heading--developer) to try your snap without confinement.
 
 - Investigating policy violation logs.
-  - Use [`snappy-debug`](#heading--snappy-debug) to investigate violation logs and receive suggestions.
-  - [Manually search the raw logs](#heading--manual-log).
-  - [Understanding AppArmor](#heading--apparmor) violations.
-  - [Understanding seccomp](#heading--seccomp) violations.
-- Investigate [file permissions and cgroup device access](#heading--permissions) violations.
+  - Use [`snappy-debug`](#debugging-snaps-heading--snappy-debug) to investigate violation logs and receive suggestions.
+  - [Manually search the raw logs](#debugging-snaps-heading--manual-log).
+  - [Understanding AppArmor](#debugging-snaps-heading--apparmor) violations.
+  - [Understanding seccomp](#debugging-snaps-heading--seccomp) violations.
+- Investigate [file permissions and cgroup device access](#debugging-snaps-heading--permissions) violations.
 - Use [GDB and gdbserver from within a snap's environment](using-gdb-and-gdbserver.md) to isolate and identify potential issues.
 
 For more details on how AppArmor, seccomp and device permission security policies are implemented, see [Security policy and sandboxing](https://snapcraft.io/docs/security-policy-and-sandboxing).
 
-<h2 id='heading--shell'>Run a shell in the confined environment</h2>
+<h2 id='debugging-snaps-heading--shell'>Run a shell in the confined environment</h2>
 
 To investigate and test the confined environment of a snap, you can open a `bash` shell in it. After the snap is installed, use the `--shell  <name>.<command>` argument of `snap run`.
 
@@ -38,13 +38,13 @@ To run a command as administrator (user "root"), use "sudo <command>".
 See "man sudo_root" for details.
 ```
 
-This will create the confined environment of the Snap, execute the [command-chain](snapcraft-app-and-service-metadata.md#heading--command-chain) and then run `bash` inside that environment.
+This will create the confined environment of the Snap, execute the [command-chain](snapcraft-app-and-service-metadata.md#debugging-snaps-heading--command-chain) and then run `bash` inside that environment.
 
 You can then investigate which files your snap has access to by running commands such as `ls` and `cat`.
 
 > ⓘ It's important to put `--shell` _before_ the name of the snap. Otherwise it will be interpreted as an argument to the application instead of an argument to `snap run`.
 
-<h2 id='heading--developer'>Developer mode</h2>
+<h2 id='debugging-snaps-heading--developer'>Developer mode</h2>
 
 To help isolate runtime errors when building and testing a snap, a snap can be installed using _developer mode_.
 
@@ -56,9 +56,9 @@ sudo snap install --devmode mysnap
 
 When a snap is installed with developer mode, violations against a snap's security policy are permitted to proceed but logged via journald.
 
-<h2 id='heading--debugging'>Debugging policy violation logs</h2>
+<h2 id='debugging-snaps-heading--debugging'>Debugging policy violation logs</h2>
 
-<h3 id='heading--snappy-debug'>Using snappy-debug to show violations</h3>
+<h3 id='debugging-snaps-heading--snappy-debug'>Using snappy-debug to show violations</h3>
 
 The easiest way to find and fix policy violations is to use [the `snappy-debug` tool](https://snapcraft.io/snappy-debug). It
 
@@ -93,7 +93,7 @@ See `snappy-debug --help` for more information about this tool.
 If you believe there is a bug in a security policy or want to request and/or contribute a new interface, please [file a bug](https://bugs.launchpad.net/snappy/+filebug), adding the `snapd-interface` tag, and feel free to discuss policy issues [on the forum](https://forum.snapcraft.io/c/snapd).
 
 
-<h3 id='heading--manual-log'>Manually extracting violation logs</h3>
+<h3 id='debugging-snaps-heading--manual-log'>Manually extracting violation logs</h3>
 
 > Note that this method does not show _all_ violation logs, since not all logs contain the term "audit" in them. Use `snappy-debug` to see all violation logs.
 
@@ -116,7 +116,7 @@ As shown above, kernel log rate limiting can be disabled manually with:
 $ sudo sysctl -w kernel.printk_ratelimit=0
 ```
 
-<h3 id='heading--apparmor'>Understanding AppArmor violations</h3>
+<h3 id='debugging-snaps-heading--apparmor'>Understanding AppArmor violations</h3>
 
 An AppArmor violation will look something like the following and include `apparmor=DENIED`:
 
@@ -132,12 +132,12 @@ For example:
 
 1. build the  snap
 1. copy the snap to the target device and install it (or use [snap try](debug-snaps-with-snap-try.md))
-1. use the snap (perhaps using [`snap run --shell <name>.<command>`](#heading--shell)), monitoring via journalctl for denials
+1. use the snap (perhaps using [`snap run --shell <name>.<command>`](#debugging-snaps-heading--shell)), monitoring via journalctl for denials
 1. modifying `/var/lib/snapd/apparmor/profiles/snap.<name>.<command>` as needed (eg, adding rules before the final `'}'`)and running `sudo apparmor_parser -r /var/lib/snapd/apparmor/profiles/snap.<name>.<command>` to compile and load the policy into the kernel
 1. use `sudo service snap.<name>.<command> stop/start/etc` as needed for daemons
 1. repeat until AppArmor policy issues are resolved
 
-<h3 id='heading--seccomp'>Understanding seccomp violations</h3>
+<h3 id='debugging-snaps-heading--seccomp'>Understanding seccomp violations</h3>
 
 A seccomp violation will look something like:
 
@@ -168,7 +168,7 @@ The `snap-confine` command will load the bpf in the `.bin` file for the command 
 
 When done, copy any changes you make to `/var/lib/snapd/apparmor/profiles/snap.<name>.<command>` or `/var/lib/snapd/seccomp/bpf/snap.<name>.<command>.src` to your interface code.
 
-<h4 id='heading--snapseccomp'>snap-seccomp versions and paths</h3>
+<h4 id='debugging-snaps-heading--snapseccomp'>snap-seccomp versions and paths</h3>
 
 Tools such as snap-confine, snap-seccomp and snap-exec are internal to snapd and are initially installed with a distribution's snapd package.
 
@@ -194,7 +194,7 @@ lrwxrwxrwx 1 root root 0 06-05 12:49 /proc/808335/exe -> /usr/lib/snapd/snapd
 
 Correspondingly, `snap-seccomp` will be called using its full path `/usr/lib/snapd/snapd`.
 
-<h2 id='heading--permissions'>File permissions</h2>
+<h2 id='debugging-snaps-heading--permissions'>File permissions</h2>
 
 While tradition file permissions are respected and enforced, any violations are not currently logged. Similarly, device cgroups may also block access without logging denials.
 
@@ -238,7 +238,7 @@ In addition to the above, here are some other useful techniques when debugging/d
 The above command has changed to snap-device-helper
 -->
 
-<h2 id='heading--further'>Further reading</h2>
+<h2 id='debugging-snaps-heading--further'>Further reading</h2>
 
 - https://github.com/snapcore/snapd/tree/master/interfaces for existing interface code and policy
 - https://manpages.ubuntu.com/manpages/jammy/man5/apparmor.d.5.html

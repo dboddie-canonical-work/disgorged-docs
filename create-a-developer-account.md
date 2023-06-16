@@ -6,13 +6,13 @@
 
 To upload your snap to the [Snap Store](https://snapcraft.io/store) and access its management web interface, you will need a developer account. If you don't already have one, creating one is easy.
 
-- [Ubuntu One details](#heading--setup)
-- [Developer account id](#heading--developer-id)
-- [Adding SSH keys to your account](#heading--ssh-keys)
+- [Ubuntu One details](#create-a-developer-account-heading--setup)
+- [Developer account id](#create-a-developer-account-heading--developer-id)
+- [Adding SSH keys to your account](#create-a-developer-account-heading--ssh-keys)
 
 ---
 
-<h2 id='heading--details'>Ubuntu One setup</h2>
+<h2 id='create-a-developer-account-heading--details'>Ubuntu One setup</h2>
 
 The account is registered on [Ubuntu One](https://login.ubuntu.com/), a single sign-on service for Ubuntu and affiliated projects. Head over to [https://snapcraft.io/account](https://snapcraft.io/account) and select the "I don’t have an Ubuntu One account" option.
 
@@ -29,7 +29,7 @@ Finally, you will be asked to review the terms of the developer programme. If yo
 
 Once you have accepted the terms, your developer account is immediately ready to start publishing snaps. The details of your account can be reviewed at any time from the menu on the top right.
 
-<h2 id='heading--developer-id'>Developer account id</h2>
+<h2 id='create-a-developer-account-heading--developer-id'>Developer account id</h2>
 
 It's useful to know your developer account id when building [Ubuntu Core devices](https://ubuntu.com/core/docs/system-user),  interacting with the  Snap Store [review team](https://forum.snapcraft.io/c/store-requests/19) and using the [snapd API](https://snapcraft.io/docs/snapd-rest-api).
 
@@ -77,7 +77,7 @@ developer-id: xSfWKGdLoQBoQx88vIM1MpbFNMq53t1f
 
 In the example output above, the developer-id is `xSfWKGdLoQBoQx88vIM1MpbFNMq53t1f`.
 
-<h2 id='heading--ssh-keys'>Adding SSH keys to your account</h2>
+<h2 id='create-a-developer-account-heading--ssh-keys'>Adding SSH keys to your account</h2>
 
 The contents of one or more [SSH public keys](https://help.ubuntu.com/community/SSH/OpenSSH/Keys) can be added to, and associated with, your Ubuntu One account.
 

@@ -14,13 +14,13 @@ To deploy a progressive releases, add an additional argument to the `snapcraft r
 
 The percentage value defines the proportion of devices a progressive release will be deployed to.
 
-- **[Creating a progressive release](#heading--creating)**
-- **[Monitoring a progressive release](#heading--monitoring)**
-- **[Finalising a progressive release](#heading--finalising)**
+- **[Creating a progressive release](#progressive-releases-heading--creating)**
+- **[Monitoring a progressive release](#progressive-releases-heading--monitoring)**
+- **[Finalising a progressive release](#progressive-releases-heading--finalising)**
 
 > ℹ Snapcraft 7.x or newer is required to use progressive releases.
 
-<h2 id='heading--creating'>Creating a progressive release</h2>
+<h2 id='progressive-releases-heading--creating'>Creating a progressive release</h2>
 
 First, ensure there is a revision of the target snap available on the [Snap Store](https://snapcraft.io/store). See [Releasing your app](releasing-your-app.md) for details on building and uploading locally, or [Remote build](remote-build.md) to create a revision on remote servers using [Launchpad](https://launchpad.net/).
 
@@ -48,7 +48,7 @@ $ snapcraft release <snap-name> 356 stable --progressive 30
 
 The command above will release the snap to 30% of devices, chosen pseudo-randomly based in part on a hash of their device ID,  with the snap installed from its stable channel. This means that roughly every third device will get the update when it next requests a refresh.
 
-<h2 id='heading--monitoring'>Monitoring a release</h2>
+<h2 id='progressive-releases-heading--monitoring'>Monitoring a release</h2>
 
 The _snapcraft status_ command can be used to monitor the progress of a progressive release:
 
@@ -66,7 +66,7 @@ The above output shows that the progressive release of the  *stable*  channel ha
 
 If an issue is discovered with a revision deployed as a progressive release, a new revision can be built and uploaded to address the issue without further deployment. When the new revision is itself published as a progressive release to the same channel, the devices that received the earlier release will be prioritised.
 
-<h2 id='heading--finalising'>Finalising a progressive release</h2>
+<h2 id='progressive-releases-heading--finalising'>Finalising a progressive release</h2>
 
 After the assigned percentage of devices have received the release, there are two ways the snap publisher can proceed:
 

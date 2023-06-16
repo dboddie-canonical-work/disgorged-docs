@@ -14,13 +14,13 @@ This plugin uses the common plugin keywords as well as those for "sources". For 
 
 Its features and syntax are dependent on which [base](base-snaps.md) is being used, as outlined below:
 
-- [base: core22](#heading--core22)
-- [base: core20](#heading--core20)
-- [base: core18 | core](#heading--core18)
+- [base: core22](#the-make-plugin-heading--core22)
+- [base: core20](#the-make-plugin-heading--core20)
+- [base: core18 | core](#the-make-plugin-heading--core18)
 
  > ⓘ  This is a *snapcraft* plugin. See [Snapcraft plugins](snapcraft-plugins.md) and [Supported plugins](supported-plugins.md) for further details on how plugins are used.
 
-<h3 id='heading--core22'>base: core22</h3>
+<h3 id='the-make-plugin-heading--core22'>base: core22</h3>
 
 
 This plugin uses the following plugin-specific keywords:
@@ -28,12 +28,12 @@ This plugin uses the following plugin-specific keywords:
 - **`make-parameters`** (list of strings)
   Parameters to pass to the make command.
 
-Use Snapcraft's [override-build](snapcraft-parts-metadata.md#heading--override-build) functionality to implement the equivalent `makefile`, `artifacts` and `make-install-var` functionality available to _core18_ and _core_ snaps.
+Use Snapcraft's [override-build](snapcraft-parts-metadata.md#the-make-plugin-heading--override-build) functionality to implement the equivalent `makefile`, `artifacts` and `make-install-var` functionality available to _core18_ and _core_ snaps.
 
 
 Requires Snapcraft version _7.0+_.
 
-<h3 id='heading--core20'>base: core20</h3>
+<h3 id='the-make-plugin-heading--core20'>base: core20</h3>
 
 
 This plugin uses the following plugin-specific keywords:
@@ -41,11 +41,11 @@ This plugin uses the following plugin-specific keywords:
 - **`make-parameters`** (list of strings)
   Parameters to pass to the make command.
 
-Use Snapcraft's [override-build](snapcraft-parts-metadata.md#heading--override-build) functionality to implement the equivalent `makefile`, `artifacts` and `make-install-var` functionality available to _core18_ and _core_ snaps.
+Use Snapcraft's [override-build](snapcraft-parts-metadata.md#the-make-plugin-heading--override-build) functionality to implement the equivalent `makefile`, `artifacts` and `make-install-var` functionality available to _core18_ and _core_ snaps.
 
 Requires Snapcraft version _4.0+_.
 
-<h3 id='heading--core18'>base: core18 | core</h3>
+<h3 id='the-make-plugin-heading--core18'>base: core18 | core</h3>
 
 This plugin uses the following plugin-specific keywords:
 

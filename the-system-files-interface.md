@@ -8,7 +8,7 @@ The `system-files` interface enables a snap to access specific system files and 
 
 This interface is typically used to provide read-only access to system configuration directories created by a non-snap version of an application now running from an equivalent snap.
 
-<h2 id='heading--example'>Example</h2>
+<h2 id='the-system-files-interface-heading--example'>Example</h2>
 
 The [Firefox](https://snapcraft.io/firefox), [Chromium](https://snapcraft.io/chromium) and [Thunderbird](https://snapcraft.io/thunderbird) snaps use this interface to enable access to system-installed policies to customise each respective application.
 
@@ -19,9 +19,9 @@ See [Interface management](interface-management.md) and [Supported interfaces](s
 
 ---
 
-<h2 id='heading--dev-details'>Developer details </h2>
+<h2 id='the-system-files-interface-heading--dev-details'>Developer details </h2>
 
-**[Auto-connect](interface-management.md#heading--auto-connections)**: no</br>
+**[Auto-connect](interface-management.md#the-system-files-interface-heading--auto-connections)**: no</br>
 **[Super-privileged](super-privileged-interfaces.md)**: yes</br>
 **Transitional**: no </br>
 **Attributes**:
@@ -64,7 +64,7 @@ Note, when declaring an instance of the `system-files` plug as above, it should 
 
 With the above, a `snap connect` command would look like: `snap connect foo:etc-foo`.
 
-<h3 id='heading-code'>Code examples</h3>
+<h3 id='the-system-files-interface-heading-code'>Code examples</h3>
 
 The source code for this interface is in the *snapd* repository:
 <https://github.com/snapcore/snapd/blob/master/interfaces/builtin/system_files.go>

@@ -16,7 +16,7 @@ A lot of work has been done in preparation for the imminent installer for Micros
 
 ### Improved build-base support
 
-The following snap types have been added to [build-base](base-snaps.md#heading--base-snap):
+The following snap types have been added to [build-base](base-snaps.md#release-notes-snapcraft-3-8-heading--base-snap):
 
 -   kernel
 -   snapd

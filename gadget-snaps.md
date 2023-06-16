@@ -17,15 +17,15 @@ See [Building a gadget snap](https://ubuntu.com/core/docs/gadget-building) for d
 
 ---
 A typical gadget snap will consist of the following:
-- [Setup files](#heading--setup)
-- [Gadget.yaml](#heading--gadget)
-  - [Volumes](#heading--volumes)
-  - [Specification](#heading--specification)
-  - [Raspberry Pi example](#heading--piexample)
-- [Prepare-device hook](#heading--prepare)
-  - [Example script](#heading--example-prepare)
+- [Setup files](#gadget-snaps-heading--setup)
+- [Gadget.yaml](#gadget-snaps-heading--gadget)
+  - [Volumes](#gadget-snaps-heading--volumes)
+  - [Specification](#gadget-snaps-heading--specification)
+  - [Raspberry Pi example](#gadget-snaps-heading--piexample)
+- [Prepare-device hook](#gadget-snaps-heading--prepare)
+  - [Example script](#gadget-snaps-heading--example-prepare)
 
-<h2 id='heading--setup'>Setup files</h2>
+<h2 id='gadget-snaps-heading--setup'>Setup files</h2>
 
 In addition to traditional snap metadata, the gadget snap also holds some setup files fundamental to the initialisation and lifecycle of the device:
 
@@ -42,7 +42,7 @@ Sample configuration files may be found in the current reference gadget snaps:
 
 In the near future, we expect to add a RISC-V reference gadget snap to this list.
 
-<h2 id='heading--gadget'>The gadget.yaml file</h2>
+<h2 id='gadget-snaps-heading--gadget'>The gadget.yaml file</h2>
 
 Two YAML keys are used to describe your target device:
 
@@ -62,13 +62,13 @@ Two YAML keys are used to describe your target device:
 [note type="negative" status="Warning"]
 Defaults only become available during snap installation.</br></br>
 
-Values in `defaults:` (other than `system:`) are not consumed and do not become available until either the [configure hook](supported-snap-hooks.md#heading--the-configure-hook) or the [default-configure hook](supported-snap-hooks.md#heading--default-configure) are run as part of the corresponding snap installation. `system:` values are set immediately.
+Values in `defaults:` (other than `system:`) are not consumed and do not become available until either the [configure hook](supported-snap-hooks.md#gadget-snaps-heading--the-configure-hook) or the [default-configure hook](supported-snap-hooks.md#gadget-snaps-heading--default-configure) are run as part of the corresponding snap installation. `system:` values are set immediately.
 
 [/note]
 
 - **volumes** (YAML sub-section, required): the volumes layout, where each disk image is represented as a YAML sub-section.
 
-<h3 id='heading--volumes'>The volumes mapping sub-section</h3>
+<h3 id='gadget-snaps-heading--volumes'>The volumes mapping sub-section</h3>
 
 Each volume entry  is described by:
 -   a name as defined by the entry key
@@ -91,7 +91,7 @@ Ubuntu Core 20 typically uses the following storage partitions:
 
 The structure section lists entities with gadget data inside the image, most of which are partitions with a file system inside, with the exception of structures of type: bare, which can describe a region of data without a corresponding entry in the partition table.
 
-<h3 id='heading--specification'>Specification</h3>
+<h3 id='gadget-snaps-heading--specification'>Specification</h3>
 
 The `meta/gadget.yaml` file contains the basic metadata for gadget-specific functionality, including a detailed specification of which structure items compose an image. The latter is used both by snapd and by ubuntu-image when creating images for these devices.
 
@@ -229,7 +229,7 @@ volumes:
               - <filename>
 ```
 [/details]
-<h3 id='heading--piexample'>Example: Raspberry Pi 3 gadget.yaml</h3>
+<h3 id='gadget-snaps-heading--piexample'>Example: Raspberry Pi 3 gadget.yaml</h3>
 
 
 [details="Raspberry Pi gadget.yaml"]
@@ -278,7 +278,7 @@ volumes:
 ```
 [/details]
 
-<h2 id='heading--prepare'> prepare-device hook</h2>
+<h2 id='gadget-snaps-heading--prepare'> prepare-device hook</h2>
 
 The optional `prepare-device` hook will be called on the gadget at the start of the device initialisation process, after the gadget snap has been installed.
 
@@ -290,7 +290,7 @@ The `prepare-device` hook can for example redirect this exchange and dynamically
 
 One must ensure that `registration.proposed-serial`  is set to a _unique value_  across all devices of the brand and model and that it does not contain a `/`. It is going to be used as the "serial number" (a string, not necessarily a number) part of the identification in case the device service supports setting it or **requires** it, as is the case with the *serial-vault*.
 
-<h3 id='heading--example-prepare'>Example: prepare-device hook</h3>
+<h3 id='gadget-snaps-heading--example-prepare'>Example: prepare-device hook</h3>
 
 
 ```bash

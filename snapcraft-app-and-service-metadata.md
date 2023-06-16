@@ -38,7 +38,7 @@ Can be one of the following:
 
 Snapcraft normally creates a wrapper holding common environment variables. Disabling this could be useful for minimal base snaps without a shell, and for statically linked binaries with no use for an environment.
 
-<h3 id='heading--after'>after</h3>
+<h3 id='snapcraft-app-and-service-metadata-heading--after'>after</h3>
 
 Type: Array of  `string`
 
@@ -46,9 +46,9 @@ A list of applications to be started after `<app-name>`.  Applications must be p
 
 Requires `daemon` to be set in the _app_ metadata. See [Services and daemons](services-and-daemons.md) for details.
 
-See also [before](#heading--before).
+See also [before](#snapcraft-app-and-service-metadata-heading--before).
 
-<h3 id='heading--autostart'>autostart<sup><a href='#heading--autostart'>⚓</a></sup></h3>
+<h3 id='snapcraft-app-and-service-metadata-heading--autostart'>autostart<sup><a href='#snapcraft-app-and-service-metadata-heading--autostart'>⚓</a></sup></h3>
 
 Type: `string`
 
@@ -58,9 +58,9 @@ The desktop file is placed in `$SNAP_USER_DATA/.config/autostart`, and the appli
 
 Example: `autostart: my-chat.desktop`
 
-See [Autostart desktop files](the-snap-format.md#heading--autostart) for an example of both the desktop file and the _Exec_ file entry.
+See [Autostart desktop files](the-snap-format.md#snapcraft-app-and-service-metadata-heading--autostart) for an example of both the desktop file and the _Exec_ file entry.
 
-<h3 id='heading--before'>before</h3>
+<h3 id='snapcraft-app-and-service-metadata-heading--before'>before</h3>
 
 Type: Array of  `string`
 
@@ -68,7 +68,7 @@ An ordered list of applications to be started before  `<app-name>` . Application
 
 Requires `daemon` to be set in the _app_ metadata. See [Services and daemons](services-and-daemons.md) for details.
 
-See also [after](#heading--after).
+See also [after](#snapcraft-app-and-service-metadata-heading--after).
 
 ### command
 
@@ -82,7 +82,7 @@ If daemon is set, this will be the command to run the service. Only a snap with 
 
 Examples: `app-launch` for an excecutable placed under `$SNAP/bin`. With `classic` confinement, `bin/app-launch` for an executable placed under `$SNAP/bin`.
 
-<h3 id='heading--command-chain'>command-chain</h3>
+<h3 id='snapcraft-app-and-service-metadata-heading--command-chain'>command-chain</h3>
 
 Type: Array of `string`
 
@@ -136,7 +136,7 @@ Key is the environment variable name; Value is the contents of the environment v
 Example: `LANG: C.UTF-8`
 
 
-<h3 id='heading--extension'>extensions</h3>
+<h3 id='snapcraft-app-and-service-metadata-heading--extension'>extensions</h3>
 
 Type: `list[string] | string` (*optional*)
 
@@ -146,7 +146,7 @@ For further details, see [Snapcraft extensions](snapcraft-extensions.md), and se
 
 Example: `[gnome-3-38]`
 
-<h3 id='heading--install-mode'>install-mode</h3>
+<h3 id='snapcraft-app-and-service-metadata-heading--install-mode'>install-mode</h3>
 
 Type: `string`
 

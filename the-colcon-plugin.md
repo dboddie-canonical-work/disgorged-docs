@@ -8,13 +8,13 @@ The `colcon` plugin is useful when building [ROS 2](http://www.ros.org/) parts t
 
 Plugin-specific features and syntax are dependent on which [base](base-snaps.md) is being used, as outlined below:
 
-- [base: core22](#heading--core22)
-- [base: core20](#heading--core20)
-- [base: core18 | core](#heading--core18)
+- [base: core22](#the-colcon-plugin-heading--core22)
+- [base: core20](#the-colcon-plugin-heading--core20)
+- [base: core18 | core](#the-colcon-plugin-heading--core18)
 
 This plugin uses the common plugin keywords as well as those for "sources". For more information, see [Snapcraft parts metadata](snapcraft-parts-metadata.md).
 
-## <h3 id='heading--core22'>base: core22</h3>
+## <h3 id='the-colcon-plugin-heading--core22'>base: core22</h3>
 
 For core22, this plugin is designed to work with the [ROS 2 Humble extension](the-ros-2-humble-extension.md).  If not using this extension, it is required to set the `ROS_DISTRO` environment variable to `humble` using `build-environment`.
 
@@ -39,7 +39,7 @@ be built, which could be useful if you only want ROS debs in the snap.
 - **`colcon-packages-ignore`** (list of strings)
 List of packages for colcon to ignore.
 
-## <h3 id='heading--core20'>base: core20</h3>
+## <h3 id='the-colcon-plugin-heading--core20'>base: core20</h3>
 
 For core20, this plugin is designed to work with the [ROS 2 Foxy extension](the-ros2-foxy-extension.md).  If not using this extension, it is required to set the `ROS_DISTRO` environment variable to `foxy` using `build-environment`.
 
@@ -64,7 +64,7 @@ be built, which could be useful if you only want ROS debs in the snap.
 - **`colcon-packages-ignore`** (list of strings)
 List of packages for colcon to ignore.
 
-## <h3 id='heading--core18'>base: core18</h3>
+## <h3 id='the-colcon-plugin-heading--core18'>base: core18</h3>
 
 This plugin enables the following plugin-specific keywords on core18:
 

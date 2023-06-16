@@ -12,17 +12,17 @@ An interface is most commonly used to enable a snap to access OpenGL acceleratio
 
 See [Supported interfaces](supported-interfaces.md) for a comprehensive list of interfaces and what kind of access they permit.
 
-- [Using a GUI](#heading--snap-store)
-- [Listing interfaces](#heading--listing)
-- [Listing connections](#heading--listing-connections)
-- [Slots and plugs](#heading--slots-plugs)
-- [Automatic connections](#heading--auto-connections)
-- [Manual connections](#heading--manual-connections)
-- [Disconnect interfaces](#heading--disconnect)
+- [Using a GUI](#interface-management-heading--snap-store)
+- [Listing interfaces](#interface-management-heading--listing)
+- [Listing connections](#interface-management-heading--listing-connections)
+- [Slots and plugs](#interface-management-heading--slots-plugs)
+- [Automatic connections](#interface-management-heading--auto-connections)
+- [Manual connections](#interface-management-heading--manual-connections)
+- [Disconnect interfaces](#interface-management-heading--disconnect)
 
 ---
 
-<h2 id='heading--snap-store'>Using a GUI</h2>
+<h2 id='interface-management-heading--snap-store'>Using a GUI</h2>
 
 The Ubuntu Software/[Snap Store](https://snapcraft.io/snap-store) desktop application is installed by default on Ubuntu and can be used to list an application's interfaces and to connect and disconnect them.
 
@@ -36,7 +36,7 @@ To access the interface management functions, either search for an installed sna
 
 Each interface can now be connected or disconnected by selecting the toggle switch to the right of its description, and you may be prompted for your password.
 
-<h2 id='heading--listing'>Listing interfaces</h2>
+<h2 id='interface-management-heading--listing'>Listing interfaces</h2>
 
 On the terminal, the _snap_ command provides more granular control over interface connections, and which interfaces are operational, on your system.
 
@@ -53,7 +53,7 @@ dbus                 -                              cameractrls:dbus-daemon  -
 [...]
 ```
 
-<h2 id='heading--listing-connections'>Listing connections</h2>
+<h2 id='interface-management-heading--listing-connections'>Listing connections</h2>
 
 To see which interfaces a snap is using, and which interfaces it could use but isn't, type `snap connections <snapname>`:
 
@@ -97,7 +97,7 @@ alsa           guvcview:alsa           -                    -
 (...)
 ```
 
-<h2 id='heading--slots-plugs'>Slots and plugs</h2>
+<h2 id='interface-management-heading--slots-plugs'>Slots and plugs</h2>
 
 An interface provides a level of access to resources, such as audio playback, as defined by a *slot*. One or more snaps can access this resource by connecting a corresponding *plug* to the slot.
 
@@ -124,7 +124,7 @@ slots:
 ```
 In the above output, you can see that Chromium, VLC and the Zoom snaps are connected to _snapd's_ audio-playback slot, which is synonymous with *Core* and *system*.
 
-<h2 id='heading--auto-connections'>Auto-connections</h2>
+<h2 id='interface-management-heading--auto-connections'>Auto-connections</h2>
 
 Many interfaces are automatically connected when a snap is installed, and this ability is a property of either the interface itself, or the snap.
 
@@ -140,7 +140,7 @@ For more technical details on how interface auto-connections are processed, see 
 
 > ⓘ See the _Auto-connect_ column in the [Supported interfaces](supported-interfaces.md) table for which interfaces are connected automatically.
 
-<h2 id='heading--manual-connections'>Manual connections</h2>
+<h2 id='interface-management-heading--manual-connections'>Manual connections</h2>
 
 When you need to connect an interface manually, such as when you want to grant a snap access to [audio-record](the-audio-record-interface.md) for audio input, use the `snap connect` command:
 
@@ -170,7 +170,7 @@ Add the `--no-wait` option to _snap connect_ or _snap disconnect_ to run the pro
 A successful connection grants any necessary permissions that may be required by the interface to function.
 [/note]
 
-<h2 id='heading--disconnect'>Disconnect interfaces</h2>
+<h2 id='interface-management-heading--disconnect'>Disconnect interfaces</h2>
 
 
 To disconnect an interface, use `snap disconnect`:
@@ -185,4 +185,4 @@ Following our previous example, you would disconnect *vlc:audio-record* with the
 sudo snap disconnect vlc:audio-record
 ```
 
-When an automatic connection ([see above](#heading--auto-connections)) is manually disconnected, its disconnected state is retained after a [snap refresh](https://snapcraft.io/docs/managing-updates). The `--forget` flag can be added to the disconnect command to reset this behaviour, and consequently, re-enable the automatic re-connection after a snap refresh.
+When an automatic connection ([see above](#interface-management-heading--auto-connections)) is manually disconnected, its disconnected state is retained after a [snap refresh](https://snapcraft.io/docs/managing-updates). The `--forget` flag can be added to the disconnect command to reset this behaviour, and consequently, re-enable the automatic re-connection after a snap refresh.

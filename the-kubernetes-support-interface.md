@@ -6,7 +6,7 @@
 
 `kubernetes-support` allows operating as the Kubernetes service and running application containers.
 
-**[Auto-connect](interface-management.md#heading--auto-connections)**: no</br>
+**[Auto-connect](interface-management.md#the-kubernetes-support-interface-heading--auto-connections)**: no</br>
 **[Super-privileged](super-privileged-interfaces.md)**: yes
 
 Requires snapd version _2.25+_.

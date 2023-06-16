@@ -153,7 +153,7 @@ parts:
     parse-info: [usr/share/metainfo/org.gnome.TextEditor.appdata.xml]
 ```
 
-`parse-info` points to the AppStream metadata file. Since we used `adopt-info: gnome-text-editor` in the top-level metadata, the AppStream file of the `gnome-text-editor` part will be used to fill in the `summary`, `description` and `icon` of this snap. See [Using AppStream metadata](using-external-metadata.md#heading--appstream) for more information.
+`parse-info` points to the AppStream metadata file. Since we used `adopt-info: gnome-text-editor` in the top-level metadata, the AppStream file of the `gnome-text-editor` part will be used to fill in the `summary`, `description` and `icon` of this snap. See [Using AppStream metadata](using-external-metadata.md#gtk4-applications-heading--appstream) for more information.
 
 ### Slots
 

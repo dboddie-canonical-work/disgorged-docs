@@ -95,7 +95,7 @@ base: core18
 
 #### Security model
 
-To get started, we won't confine this application. Unconfined applications, specified with `devmode`, can only be released to the hidden ["edge" channel](https://snapcraft.io/docs/channels#heading--risk-levels).
+To get started, we won't confine this application. Unconfined applications, specified with `devmode`, can only be released to the hidden ["edge" channel](https://snapcraft.io/docs/channels#ros-deployment-with-snaps-heading--risk-levels).
 
 ```yaml
 confinement: devmode
@@ -262,7 +262,7 @@ base: core20
 
 #### Security model
 
-To get started, we won’t confine this application. Unconfined applications, specified with `devmode`, can only be released to the [“edge” channel](https://snapcraft.io/docs/channels#heading--risk-levels).
+To get started, we won’t confine this application. Unconfined applications, specified with `devmode`, can only be released to the [“edge” channel](https://snapcraft.io/docs/channels#ros-deployment-with-snaps-heading--risk-levels).
 
 ```yaml
 confinement: devmode

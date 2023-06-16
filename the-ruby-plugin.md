@@ -4,7 +4,7 @@
 
 # The ruby plugin
 
-The `ruby` plugin is useful for [Ruby](https://www.ruby-lang.org/en/)-based parts.  This plugin uses the common plugin keywords as well as those for [sources](snapcraft-parts-metadata.md#heading--source). For more information, see [Snapcraft parts metadata](snapcraft-parts-metadata.md).
+The `ruby` plugin is useful for [Ruby](https://www.ruby-lang.org/en/)-based parts.  This plugin uses the common plugin keywords as well as those for [sources](snapcraft-parts-metadata.md#the-ruby-plugin-heading--source). For more information, see [Snapcraft parts metadata](snapcraft-parts-metadata.md).
 
 
 > ⓘ This plugin is only available to _core_ and _core18_ based snaps. See [Base snaps](base-snaps.md) for details.

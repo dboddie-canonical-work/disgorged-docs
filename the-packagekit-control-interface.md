@@ -8,7 +8,7 @@
 
 This interface is intended to work in tandem with [the AppStream interface](the-appstream-metadata-interface.md). Snaps distributed via the public [Snap store](https://snapcraft.io/store) are not typically granted auto-connection for this interface.
 
-**[Auto-connect](interface-management.md#heading--auto-connections)**: no</br>
+**[Auto-connect](interface-management.md#the-packagekit-control-interface-heading--auto-connections)**: no</br>
 **[Super-privileged](super-privileged-interfaces.md)**: yes</br>
 
 Requires snapd version _2.41+_.`

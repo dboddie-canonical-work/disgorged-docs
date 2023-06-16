@@ -14,17 +14,17 @@ Among its many updates, fixes and additions, the following are what we consider 
 
 For general details, including installation instructions, see [Snapcraft overview](https://snapcraft.io/docs/snapcraft-overview), or take a look at [Snapcraft release notes](https://snapcraft.io/docs/snapcraft-release-notes) for other *Snapcraft* releases.
 
-- [Git sources](#heading--git)
-- [Plugins](#heading--plugins)
-- [Extensions](#heading--extensions)
-- [Command line interface](#heading--cli)
-- [core22 parts lifecycle opt-in for core20](#heading--core22)
-- [Schema](#heading--schema)
-- [Other fixes](#heading-other)
-- [New contributors](#heading--contribs)
+- [Git sources](#release-notes-snapcraft-6-1-heading--git)
+- [Plugins](#release-notes-snapcraft-6-1-heading--plugins)
+- [Extensions](#release-notes-snapcraft-6-1-heading--extensions)
+- [Command line interface](#release-notes-snapcraft-6-1-heading--cli)
+- [core22 parts lifecycle opt-in for core20](#release-notes-snapcraft-6-1-heading--core22)
+- [Schema](#release-notes-snapcraft-6-1-heading--schema)
+- [Other fixes](#release-notes-snapcraft-6-1-heading-other)
+- [New contributors](#release-notes-snapcraft-6-1-heading--contribs)
 ---
 
-<h2 id='heading--git'>Git Sources</h2>
+<h2 id='release-notes-snapcraft-6-1-heading--git'>Git Sources</h2>
 
 -   sources: make submodule fetching configurable by [@mr-cal](https://github.com/mr-cal) in [#3629](https://github.com/snapcore/snapcraft/pull/3629)
 
@@ -56,7 +56,7 @@ parts:
 
 1.  not defined (the default), all submodules are fetched
 
-<h2 id='heading--plugins'>Plugins</h2>
+<h2 id='release-notes-snapcraft-6-1-heading--plugins'>Plugins</h2>
 
 ### NPM plugin
 
@@ -76,7 +76,7 @@ parts:
 -   ROS plugins v2: respect source-subdir key by [@Guillaumebeuzeboc](https://github.com/Guillaumebeuzeboc) in [#3664](https://github.com/snapcore/snapcraft/pull/3664)
 -   colcon v2: forward cmake args by [@artivis](https://github.com/artivis) in [#3638](https://github.com/snapcore/snapcraft/pull/3638)
 
-<h2 id='heading--extensions'>Extensions</h2>
+<h2 id='release-notes-snapcraft-6-1-heading--extensions'>Extensions</h2>
 
 ### KDE
 
@@ -84,7 +84,7 @@ parts:
 -   set lzo compression by default in kde-neon extension by [@jriddell](https://github.com/jriddell) in [#3595](https://github.com/snapcore/snapcraft/pull/3595)
 -   kde extension: new content snap for core20 by [@jriddell](https://github.com/jriddell) in [#3658](https://github.com/snapcore/snapcraft/pull/3658)
 
-<h2 id='heading--cli'>Command Line Interface</h2>
+<h2 id='release-notes-snapcraft-6-1-heading--cli'>Command Line Interface</h2>
 
 -   dependencies: missing library resolution by [@mr-cal](https://github.com/mr-cal) in [#3634](https://github.com/snapcore/snapcraft/pull/3634)
 -   cli: reintroduce remote-build and promote to snapcraft help by [@aritra24](https://github.com/aritra24) in [#3648](https://github.com/snapcore/snapcraft/pull/3648)
@@ -93,7 +93,7 @@ Since the `/usr` merge with `/` the potentially missing stage-packages to add an
 
 The two command line client commands that were previously hidden, `promote` and `remote-build`, are now displayed as part of the general help.
 
-<h2 id='heading--core22'>core22 parts lifecycle opt-in for core20</h2>
+<h2 id='release-notes-snapcraft-6-1-heading--core22'>core22 parts lifecycle opt-in for core20</h2>
 
 -   lifecycle: core22 lifecycle conditional on build-attributes entry by [@sergiusens](https://github.com/sergiusens) in [#3622](https://github.com/snapcore/snapcraft/pull/3622)
 -   lifecycle: fix behavior for core22-step-dependencies by [@facundobatista](https://github.com/facundobatista) in [#3641](https://github.com/snapcore/snapcraft/pull/3641)
@@ -108,11 +108,11 @@ parts:
         build-attributes: [core22-step-dependencies]
 ```
 
-<h2 id='heading--schema'>Schema</h2>
+<h2 id='release-notes-snapcraft-6-1-heading--schema'>Schema</h2>
 
 -   schema: add support for activates-on app property to schema by [@jhenstridge](https://github.com/jhenstridge) in [#3425](https://github.com/snapcore/snapcraft/pull/3425)
 
-<h2 id='heading--other'>Other fixes</h2>
+<h2 id='release-notes-snapcraft-6-1-heading--other'>Other fixes</h2>
 
 -   spread: update error when local snap is missing by [@sergiusens](https://github.com/sergiusens) in [#3640](https://github.com/snapcore/snapcraft/pull/3640)
 -   tools: update staging store URL for uploading blobs by [@nessita](https://github.com/nessita) in [#3656](https://github.com/snapcore/snapcraft/pull/3656)
@@ -120,7 +120,7 @@ parts:
 -   docker: fix Python installation by [@mhoeher](https://github.com/mhoeher) in [#3607](https://github.com/snapcore/snapcraft/pull/3607)
 -   build(deps): bump pyyaml from 5.3 to 5.4 by [@dependabot](https://github.com/dependabot) in [#3490](https://github.com/snapcore/snapcraft/pull/3490)
 
-<h2 id='heading--contribs'>New Contributors</h2>
+<h2 id='release-notes-snapcraft-6-1-heading--contribs'>New Contributors</h2>
 
 
 -   [@om26er](https://github.com/om26er) made their first contribution in [#3624](https://github.com/snapcore/snapcraft/pull/3624)

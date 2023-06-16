@@ -10,15 +10,15 @@ This plugin uses the common plugin keywords as well as those for "sources". For 
 
 Additional features and syntax are dependent on which [base](base-snaps.md) is being used, as outlined below:
 
-- [base: core22](#heading--core22)
-- [base: core20](#heading--core20)
-- [base: core18 | core](#heading--core18)
+- [base: core22](#the-conda-plugin-heading--core22)
+- [base: core20](#the-conda-plugin-heading--core20)
+- [base: core18 | core](#the-conda-plugin-heading--core18)
 
 For examples, search [GitHub](https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+conda%22&type=Code) for projects already using the plugin.
 
 > ⓘ  This is a *snapcraft* plugin. See [Snapcraft plugins](snapcraft-plugins.md) and [Supported plugins](supported-plugins.md) for further details on how plugins are used.
 
-<h3 id='heading--core22'>base: core22</h3>
+<h3 id='the-conda-plugin-heading--core22'>base: core22</h3>
 
 This plugin uses the following plugin-specific keywords:
 * **`conda-packages`** (list of strings)
@@ -32,7 +32,7 @@ Defaults to the latest release.
 
 Requires Snapcraft version *7.0+* .
 
-<h3 id='heading--core20'>base: core20</h3>
+<h3 id='the-conda-plugin-heading--core20'>base: core20</h3>
 
 This plugin uses the following plugin-specific keywords:
 * **`conda-packages`** (list of strings)
@@ -46,7 +46,7 @@ Defaults to the latest release.
 
 Requires Snapcraft version *4.6+* .
 
-<h3 id='heading--core18'>base: core18 | core</h3>
+<h3 id='the-conda-plugin-heading--core18'>base: core18 | core</h3>
 
 This plugin uses the following plugin-specific keywords:
 -   **`conda-packages`** (list of strings)

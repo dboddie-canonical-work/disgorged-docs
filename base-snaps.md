@@ -6,7 +6,7 @@
 
 A *base* snap is a special kind of snap that provides a run-time environment with a minimal set of libraries that are common to most applications. They're transparent to users, but they need to be considered and specified when building a snap.
 
-<h2 id='heading--supported'>Supported base snaps</h2>
+<h2 id='base-snaps-heading--supported'>Supported base snaps</h2>
 
 There are currently five supported bases:
 - [`core22`](https://snapcraft.io/core22): the newest base, built from [Ubuntu 22.04 LTS](https://releases.ubuntu.com/22.04/).
@@ -38,7 +38,7 @@ To specify *core22*, use the following
 base: core22
 ```
 
-Snapcraft no longer supports building snaps with the older *core* base. Snapcraft 4 needs to be used instead. Snapcraft 4 is still being supported and can be installed from Snapcraft's _4.x_ [track](https://snapcraft.io/docs/channels#heading--tracks):
+Snapcraft no longer supports building snaps with the older *core* base. Snapcraft 4 needs to be used instead. Snapcraft 4 is still being supported and can be installed from Snapcraft's _4.x_ [track](https://snapcraft.io/docs/channels#base-snaps-heading--tracks):
 
 ```
 $ snap install snapcraft --channel 4.x
@@ -51,7 +51,7 @@ The base snap mounts itself as the root filesystem within your snap such that wh
 [note type="caution" status="Warning"]
 Compatibility mode and ESM Support
 
-When building a snap with no specified base, [Snapcraft](snapcraft-overview.md) will operate in compatibility mode. This is essentially a prior (2.43-era) version of Snapcraft and, consequently, _snapcraft_ will lose the functionality of newer releases. See [Features incompatible with bases](release-notes-snapcraft-3-0.md#heading--base-exceptions) for details.
+When building a snap with no specified base, [Snapcraft](snapcraft-overview.md) will operate in compatibility mode. This is essentially a prior (2.43-era) version of Snapcraft and, consequently, _snapcraft_ will lose the functionality of newer releases. See [Features incompatible with bases](release-notes-snapcraft-3-0.md#base-snaps-heading--base-exceptions) for details.
 
 This compatibility mode is no longer supported in Snapcraft 5.0. Snapcraft 4 can be installed from the 4.x track on the Snap Store (`snap install snapcraft --channel 4.x`). See [Snapcraft and Extended Security Maintenance](snapcraft-and-extended-security-maintenance.md) for essential support details.
 
@@ -65,7 +65,7 @@ This compatibility mode is no longer supported in Snapcraft 5.0. Snapcraft 4 can
 
 [Snapcraft extensions](snapcraft-extensions.md) are a great way to easily bundle a set of common requirements into a snap, such as for running KDE Plasma or GNOME applications, but you need to select a base that's supported by the extension you require. See [Supported extensions](supported-extensions.md) for a list of which extensions support which bases.
 
-Base support was added with the release of [Snapcraft 3](release-notes-snapcraft-3-0.md). As noted above, snaps created before this, and snaps not using the `base:` keyword, can still be built but they cannot use [specific new features](release-notes-snapcraft-3-0.md#heading--base-exceptions). Instead, snaps built without bases inherit attributes from their respective build environments.
+Base support was added with the release of [Snapcraft 3](release-notes-snapcraft-3-0.md). As noted above, snaps created before this, and snaps not using the `base:` keyword, can still be built but they cannot use [specific new features](release-notes-snapcraft-3-0.md#base-snaps-heading--base-exceptions). Instead, snaps built without bases inherit attributes from their respective build environments.
 
 Snaps that don't use bases can often migrate to one without too much difficulty. See [Upgrading snapcraft](upgrading-snapcraft.md) for more details on potential differences.
 
@@ -79,7 +79,7 @@ While it is possible to build your own base snap, its publisher needs to take re
 
 Base snaps can be either bootable or non-bootable. The former needs to include *systemd* while the latter can be leaner.
 
-<h2 id='heading--base-snap'>build-base</h2>
+<h2 id='base-snaps-heading--base-snap'>build-base</h2>
 
 The `base` keyword on its own does not not take into account the *creation* of bases. Instead, with older versions of snapcraft, the `name` keyword was arbitrarily used to determine the build environment:
 

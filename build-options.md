@@ -21,7 +21,7 @@ Snaps build on the bases `core`, `core18`, and `core20` default to using Multipa
 
 > ⓘ See [this page](build-providers.md) for details on how to configure snapcraft to use either LXD or Multipass and other build provider-specific details.
 
-<h2 id='heading--snapcraft'>Build environment options</h2>
+<h2 id='build-options-heading--snapcraft'>Build environment options</h2>
 
 Snapcraft can optionally use the following arguments to modify the build environment.
 
@@ -36,7 +36,7 @@ Snapcraft can optionally use the following arguments to modify the build environ
 | `--ua-token` | Configure build environment with ESM using specified UA token. | LXD, Multipass |
 | `--enable-manifest` | Add the build manifest to the snap package in `snap/manifest.yaml`. This contains the specific sources and packages used to build the snap and allows the Snap Store to [automatically check your Snap for security issues](https://snapcraft.io/blog/introducing-developer-notifications-for-snap-security-updates). This is identical to setting the environment variable `SNAPCRAFT_BUILD_INFO=1`. Snaps built on Launchpad will have this set automatically. | None |
 
-<h2 id='heading--deprecated'>Deprecated build options</h2>
+<h2 id='build-options-heading--deprecated'>Deprecated build options</h2>
 
 | Command | Description | Requirements |
 |-|-|-|

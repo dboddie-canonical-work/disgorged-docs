@@ -40,7 +40,7 @@ See [Snapcraft and Extended Security Maintenance](snapcraft-and-extended-securit
 
 ## Conda plugin
 
-When using _core20_, the recently introduced [conda](h/t/the-conda-plugin/12530#heading--core20) plugin now supports more architectures, with the new ones being:
+When using _core20_, the recently introduced [conda](h/t/the-conda-plugin/12530#release-notes-snapcraft-4-7-heading--core20) plugin now supports more architectures, with the new ones being:
 
 * i386 (x86)
 * armhf (armv7l)

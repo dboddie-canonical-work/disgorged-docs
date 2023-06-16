@@ -38,7 +38,7 @@ There are currently three supported bases for ROS 2, core18, core20 and core22.
 
 Let us explore the differences between the different bases.
 
-<h3 id='heading--core18'>core18</h3>
+<h3 id='ros-2-deployment-with-snaps-heading--core18'>core18</h3>
 
 [details="core18 getting started"]
 
@@ -106,7 +106,7 @@ base: core18
 
 #### Security model
 
-To get started we won't confine this application. Unconfined applications, specified with `devmode`, can only be released to the hidden [“edge” channel](https://snapcraft.io/docs/channels#heading--risk-levels).
+To get started we won't confine this application. Unconfined applications, specified with `devmode`, can only be released to the hidden [“edge” channel](https://snapcraft.io/docs/channels#ros-2-deployment-with-snaps-heading--risk-levels).
 
 ```yaml
 confinement: devmode
@@ -135,7 +135,7 @@ parts:
     stage-packages: [ros-dashing-ros2launch]
 ```
 
-For more details on colcon-specific metadata, see [the colcon plugin documentation](https://snapcraft.io/docs/the-colcon-plugin#heading--core18). For more information about general parts metadata, see [parts-metadata](https://snapcraft.io/docs/snapcraft-parts-metadata).
+For more details on colcon-specific metadata, see [the colcon plugin documentation](https://snapcraft.io/docs/the-colcon-plugin#ros-2-deployment-with-snaps-heading--core18). For more information about general parts metadata, see [parts-metadata](https://snapcraft.io/docs/snapcraft-parts-metadata).
 
 #### Apps
 
@@ -200,7 +200,7 @@ $ snapcraft clean
 ```
 [/details]
 ---
-<h3 id='heading--core20'>core20</h3>
+<h3 id='ros-2-deployment-with-snaps-heading--core20'>core20</h3>
 
 [details="core20 getting started"]
 
@@ -269,7 +269,7 @@ base: core20
 
 #### Security model
 
-To get started, we won’t confine this application. Unconfined applications, specified with `devmode`, can only be released to the [“edge” channel](https://snapcraft.io/docs/channels#heading--risk-levels).
+To get started, we won’t confine this application. Unconfined applications, specified with `devmode`, can only be released to the [“edge” channel](https://snapcraft.io/docs/channels#ros-2-deployment-with-snaps-heading--risk-levels).
 
 ```yaml
 confinement: devmode
@@ -297,7 +297,7 @@ parts:
    stage-packages: [ros-foxy-ros2launch]
 ```
 
-For more details on colcon-specific metadata, see [the colcon plugin documentation](https://snapcraft.io/docs/the-colcon-plugin#heading--core20). For more information about general parts metadata, see [parts-metadata](https://snapcraft.io/docs/snapcraft-parts-metadata).
+For more details on colcon-specific metadata, see [the colcon plugin documentation](https://snapcraft.io/docs/the-colcon-plugin#ros-2-deployment-with-snaps-heading--core20). For more information about general parts metadata, see [parts-metadata](https://snapcraft.io/docs/snapcraft-parts-metadata).
 
 #### Apps
 
@@ -366,7 +366,7 @@ $ snapcraft clean
 
 [/details]
 ---
-<h3 id='heading--core22'>core22</h3>
+<h3 id='ros-2-deployment-with-snaps-heading--core22'>core22</h3>
 
 [details="core22 getting started"]
 
@@ -433,7 +433,7 @@ base: core22
 
 #### Security model
 
-To get started, we won’t confine this application. Unconfined applications, specified with `devmode`, can only be released to the [“edge” channel](https://snapcraft.io/docs/channels#heading--risk-levels).
+To get started, we won’t confine this application. Unconfined applications, specified with `devmode`, can only be released to the [“edge” channel](https://snapcraft.io/docs/channels#ros-2-deployment-with-snaps-heading--risk-levels).
 
 ```yaml
 confinement: devmode
@@ -461,7 +461,7 @@ parts:
    stage-packages: [ros-humble-ros2launch]
 ```
 
-For more details on colcon-specific metadata, see [the colcon plugin](https://snapcraft.io/docs/the-colcon-plugin#heading--core22) documentation. For more information about general parts metadata, see, [parts-metadata](https://snapcraft.io/docs/snapcraft-parts-metadata).
+For more details on colcon-specific metadata, see [the colcon plugin](https://snapcraft.io/docs/the-colcon-plugin#ros-2-deployment-with-snaps-heading--core22) documentation. For more information about general parts metadata, see, [parts-metadata](https://snapcraft.io/docs/snapcraft-parts-metadata).
 
 #### Apps
 

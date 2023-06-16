@@ -19,9 +19,9 @@ See [Interface management](interface-management.md) and [Supported interfaces](s
 
 ---
 
-<h2 id='heading--dev-details'>Developer details </h2>
+<h2 id='the-dm-crypt-interface-heading--dev-details'>Developer details </h2>
 
-**[Auto-connect](interface-management.md#heading--auto-connections)**: no
+**[Auto-connect](interface-management.md#the-dm-crypt-interface-heading--auto-connections)**: no
 **[Super-privileged](super-privileged-interfaces.md)**: yes
 
 Often, _dm-crypt_ is statically linked into the kernel (`CONFIG_DM_CRYPT=y`). This is expected when working with custom kernels on projects where disk encryption is required.

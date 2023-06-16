@@ -10,7 +10,7 @@ For general details, including installation instructions, see [Snapcraft overvie
 
 ## Plugins
 
--   New [Flutter plugin](/t/the-flutter-plugin/18746#heading--core22) with core22 support [#3952](https://github.com/snapcore/snapcraft/pull/3952)
+-   New [Flutter plugin](/t/the-flutter-plugin/18746#release-notes-snapcraft-7-3-heading--core22) with core22 support [#3952](https://github.com/snapcore/snapcraft/pull/3952)
 
 ## Extensions
 

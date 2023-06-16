@@ -10,7 +10,7 @@ The maven build system is commonly used to build Java projects. The plugin requi
 
 This plugin is only available to *core22* and *core18* based snaps. See [Base snaps](base-snaps.md) for details.
 
-<h3 id='heading--core22'>base: core22 and base: core18</h3>
+<h3 id='the-maven-plugin-heading--core22'>base: core22 and base: core18</h3>
 
 This plugin uses the following plugin-specific keywords:
 

@@ -35,7 +35,7 @@ When the `base` keyword is used within `snapcraft.yaml` the following, long-depr
 - `cleanbuild` and triggering builds using LXD from certain environment variables. See [Build on LXD](/t/build-on-lxd) for more details.
 - `prepare`, `build` and `install` keywords, used in parts, have been replaced by `override-build` and `snapcraftctl`. This means you can use `override-` for `pull`, `stage` and `prime` stages too.
 - the `snap` keyword has been superseded by the `prime` keyword.
-- when calling build commands through snapcraft, `--disable-parallel-build` is no longer available. It can be setup per-part using the [build-attributes](snapcraft-parts-metadata.md#heading--build-attributes) property.
+- when calling build commands through snapcraft, `--disable-parallel-build` is no longer available. It can be setup per-part using the [build-attributes](snapcraft-parts-metadata.md#upgrading-snapcraft-heading--build-attributes) property.
 - similarly, when calling build commands through snapcraft, `--use-geoip` (which affected `stage-packages`) is no longer available.
 
 ## Migrating from *deb* to *snap*

@@ -30,7 +30,7 @@ List of build and run architectures.
 For more details, see [Architectures](architectures.md).
 
 
-<h3 id="heading--assumes">assumes<sup><a href=#heading--assumes>⚓</a></sup></h3>
+<h3 id="snapcraft-top-level-metadata-heading--assumes">assumes<sup><a href=#snapcraft-top-level-metadata-heading--assumes>⚓</a></sup></h3>
 
 Type: `list[string]`
 (*optional*)
@@ -46,9 +46,9 @@ Other potential values for _assumes_ include:
 - `common-data-dir`: support for common data directory across revisions of a snap
 - `snap-env`: support for the "Environment:" feature in snap.yaml
 - `command-chain`: support for the "command-chain" feature for apps and hooks in snap.yaml
-- `kernel-assets`: support for kernel assets in [gadget.yaml](gadget-snaps.md#heading--specification), such as to include volume content in the style `$kernel:ref`
+- `kernel-assets`: support for kernel assets in [gadget.yaml](gadget-snaps.md#snapcraft-top-level-metadata-heading--specification), such as to include volume content in the style `$kernel:ref`
 
-<h3 id="heading--base">base</h3>
+<h3 id="snapcraft-top-level-metadata-heading--base">base</h3>
 
 Type: `string`
 (*optional*)
@@ -64,7 +64,7 @@ Values:
 | `core20` | Ubuntu Core 20 |
 | `core22` | Ubuntu Core 22 |
 
-<h3 id='heading--compression'>compression</h3>
+<h3 id='snapcraft-top-level-metadata-heading--compression'>compression</h3>
 
 Type:  `string`
 (*optional*)
@@ -130,7 +130,7 @@ Type: `list[string] | string`
 
 A link or list of links to receive donations for the snap.
 
-<h3 id='heading--epoch'>epoch</h3>
+<h3 id='snapcraft-top-level-metadata-heading--epoch'>epoch</h3>
 
 type: `integer`
 (*optional*)
@@ -141,7 +141,7 @@ Applications and their data formats are constantly evolving, and this requires a
 
 See [Snap epochs](snap-epochs.md) for further details.
 
-<h3 id="heading--grade">grade</h3>
+<h3 id="snapcraft-top-level-metadata-heading--grade">grade</h3>
 
 Type: `enum`
 (*optional*)
@@ -154,7 +154,7 @@ A snap of `type` `app` (default) cannot be set to `stable` if the `base` is not 
 
 Example: `[stable` or `devel`]
 
-<h3 id="heading--hooks">hooks</h3>
+<h3 id="snapcraft-top-level-metadata-heading--hooks">hooks</h3>
 
 Type: `list[dict]`
 (*optional*)
@@ -177,7 +177,7 @@ Type: `list[string] | string`
 
 A link or list of links to report issues for the snap.
 
-<h3 id="heading--icon">icon<sup><a href=#heading--icon>⚓</a></sup></h3>
+<h3 id="snapcraft-top-level-metadata-heading--icon">icon<sup><a href=#snapcraft-top-level-metadata-heading--icon>⚓</a></sup></h3>
 
 Type: `string`
 (*optional*)
@@ -190,7 +190,7 @@ It is a relative path to a `.png`/`.svg` file from the source tree root. The [re
 
 Examples: `_package_name_.svg`, or `snap/gui/logo.png`
 
-<h3 id="heading--layout">layout<sup><a href=#heading--layout>⚓</a></sup></h3>
+<h3 id="snapcraft-top-level-metadata-heading--layout">layout<sup><a href=#snapcraft-top-level-metadata-heading--layout>⚓</a></sup></h3>
 
 Type: `list[dict]`
 (*optional*)
@@ -212,7 +212,7 @@ layout:
     bind-file: $SNAP_DATA/etc/foo.conf
 ```
 
-<h3 id="heading--license">license<sup><a href=#heading--license>⚓</a></sup></h3>
+<h3 id="snapcraft-top-level-metadata-heading--license">license<sup><a href=#snapcraft-top-level-metadata-heading--license>⚓</a></sup></h3>
 
 Type: `string`
 (*optional*)
@@ -333,7 +333,7 @@ Max len. 32 chars. Needs to be wrapped with single-quotes when the value will be
 Examples: `'1'`, `'1.2'`, `'1.2.3'`, `git` (will be replaced by a `git describe` based version string)
 
 
-<h2 id="heading--plugs-and-slots-for-an-entire-snap">Plugs and slots for an entire snap</h2>
+<h2 id="snapcraft-top-level-metadata-heading--plugs-and-slots-for-an-entire-snap">Plugs and slots for an entire snap</h2>
 
 Plugs and slots for an [interface](supported-interfaces.md) are usually configured per-app or per-daemon within *snapcraft.yaml*. See [Snapcraft app metadata](snapcraft-app-and-service-metadata.md) for more details. However, `snapcraft.yaml` also enables global *plugs* and *slots* configuration for an entire snap:
 

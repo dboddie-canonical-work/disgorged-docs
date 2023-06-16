@@ -6,7 +6,7 @@
 
 After [Defining a command](defining-a-command.md), _interfaces_ are the means by which an installed snap gets access to system resources. Interfaces that are required for normal operation are specified at snap build-time within the [app and service metadata](snapcraft-app-and-service-metadata.md) of a snap's [snapcraft.yaml](creating-snapcraft-yaml.md).
 
-Many interfaces are automatically connected when a snap is installed, but this ability is dependent on the permissiveness of each particular interface. See [Auto-connections](interface-management.md#heading--auto-connections) for more details.
+Many interfaces are automatically connected when a snap is installed, but this ability is dependent on the permissiveness of each particular interface. See [Auto-connections](interface-management.md#adding-interfaces-heading--auto-connections) for more details.
 
 Other interfaces require the user to make a manual connection, such as [camera](t/the-camera-interface/7776) and [removable-media](the-removable-media-interface.md). Manual connections enable the user to have a complete control over what kind of access they allow.
 
@@ -51,7 +51,7 @@ apps:
 
 ## Common interfaces
 
-When building a snap, its interfaces will be as unique as its application requirements. You can use the [`snappy-debug`](debugging-building-snaps.md#heading--identifying-missing-interfaces) tool to figure out which interfaces a snap needs.
+When building a snap, its interfaces will be as unique as its application requirements. You can use the [`snappy-debug`](debugging-building-snaps.md#adding-interfaces-heading--identifying-missing-interfaces) tool to figure out which interfaces a snap needs.
 
 The [FFmpeg](https://snapcraft.io/ffmpeg) multimedia framework, for example, needs interfaces for audio, USB cameras, network access and the desktop, [among many others](https://github.com/snapcrafters/ffmpeg/blob/master/snap/snapcraft.yaml). The game [Spelunky](https://snapcraft.io/spelunky) needs to [access](https://github.com/snapcrafters/spelunky/blob/master/snap/snapcraft.yaml) OpenGL, the desktop environment and any connected joystick.
 

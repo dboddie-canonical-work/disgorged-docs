@@ -8,18 +8,18 @@ When building a snap and constructing a [part](adding-parts.md), you commonly ne
 
 How these dependencies are identified and added is covered below.
 
-- [Package types](#heading--package)
-- [Package and snap names](#heading--package-names)
-- [Identify missing packages](#heading--missing)
-   - [Building](#heading--missing-building)
-   - [Staging](#heading--missing-staging)
-- [Removing stage package duplication](#heading--filtering)
+- [Package types](#build-and-staging-dependencies-heading--package)
+- [Package and snap names](#build-and-staging-dependencies-heading--package-names)
+- [Identify missing packages](#build-and-staging-dependencies-heading--missing)
+   - [Building](#build-and-staging-dependencies-heading--missing-building)
+   - [Staging](#build-and-staging-dependencies-heading--missing-staging)
+- [Removing stage package duplication](#build-and-staging-dependencies-heading--filtering)
 
 For further help on solving build dependencies, see [Iterating over a build](iterating-over-a-build.md) for build and testing best-practices and  [Troubleshoot snap building](troubleshoot-snap-building.md) for help  resolving build errors.
 
 ---
 
-<h2 id='heading--package'>Package types</h2>
+<h2 id='build-and-staging-dependencies-heading--package'>Package types</h2>
 
 Build and staging dependencies are added to a snap's [snapcraft.yaml](the-snapcraft-yaml-schema.md) within a part definition. They can be added as standard
 packages for the chosen build environment, such as _deb_ packages for Ubuntu, or as a cross-platform snap using the following _snapcraft.yaml_ keywords:
@@ -57,7 +57,7 @@ See [Snapcraft package repositories](snapcraft-package-repositories.md) for deta
 
 [/note]
 
-<h2 id='heading--package-names'>Package and snap names</h2>
+<h2 id='build-and-staging-dependencies-heading--package-names'>Package and snap names</h2>
 
 Package dependencies are listed as package names for the snap's build environment.
 
@@ -69,11 +69,11 @@ The required packages are likely to be identical to those needed to either build
 
 Snap names are identical to the names used to install the snap outside of the build environment, and those listed by the [Snap Store](https://snapcraft.io/store).  If a specific channel is required, the syntax is of the form `<snap-name>/<channel>` (see [Channels](https://snapcraft.io/docs/channels) for more details on the syntax).
 
-<h2 id='heading--missing'>Identifying missing packages</h2>
+<h2 id='build-and-staging-dependencies-heading--missing'>Identifying missing packages</h2>
 
 Working out your project's dependencies can be an iterative process, much like compiling a third-party package, with the process split into identifying the dependencies a snap needs to be built, and those required for running the resultant application.
 
-<h3 id='heading--missing-building'>Building</h3>
+<h3 id='build-and-staging-dependencies-heading--missing-building'>Building</h3>
 
 1. when you have a workable framework *snapcraft.yaml* for your snap, run `snapcraft --debug` until you hit an error
 1. If that error is a build dependency, use the *debug* interactive shell to work out which package is required
@@ -90,7 +90,7 @@ In most cases, the error will provide some indication of what needs to be instal
 
 If the package is unknown, it's correct name can normally be found with a search from within the build environment, or via a search engine.
 
-<h3 id='heading--missing-staging'>Staging</h3>
+<h3 id='build-and-staging-dependencies-heading--missing-staging'>Staging</h3>
 
 After a snap has been successfully built, if snapcraft detects that the resultant executable will require further packages, it will attempt to guess these and output a list that can be copied and pasted into the snapcraft.yaml. The output will look similar to the following:
 
@@ -126,7 +126,7 @@ The following are the most common solutions for these kind of errors:
 - The missing library might be installed by another snap and shared to this snap by a [content interface](the-content-interface.md), but the content interface is not connected.
   * Connect the snapd interface (manually for testing, or automatically for production).
 
-<h2 id='heading--filtering'>Removing stage package duplication</h2>
+<h2 id='build-and-staging-dependencies-heading--filtering'>Removing stage package duplication</h2>
 
 Snapcraft minimises the size of a target snap by filtering out stage-package dependencies, if they are available in the base, e.g. core18.
 

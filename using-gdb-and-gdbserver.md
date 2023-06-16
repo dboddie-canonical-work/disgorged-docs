@@ -6,15 +6,15 @@
 
 The _gdb_ debugging tool is widely used by developers to introspect the execution environment of an application, revealing both its code and data state at any point. Snaps can use gdb to debug both locally and remotely.
 
-- [Local debugging with gdb](#heading--gdb)
-- [Generate debug symbols](#heading--debug-symbols)
-- [Local debugging with gdbserver](#heading--gdbserver)
-- [Remote debugging with gdbserver](#heading--gdbserver-remote)
-- [Debugging with VS Code](#heading--vscode)
+- [Local debugging with gdb](#using-gdb-and-gdbserver-heading--gdb)
+- [Generate debug symbols](#using-gdb-and-gdbserver-heading--debug-symbols)
+- [Local debugging with gdbserver](#using-gdb-and-gdbserver-heading--gdbserver)
+- [Remote debugging with gdbserver](#using-gdb-and-gdbserver-heading--gdbserver-remote)
+- [Debugging with VS Code](#using-gdb-and-gdbserver-heading--vscode)
 
 ---
 
-<h2 id='heading--gdb'>Local debugging with gdb</h2>
+<h2 id='using-gdb-and-gdbserver-heading--gdb'>Local debugging with gdb</h2>
 
 As snaps are run within a [confined environment](snap-confinement.md), running _gdb_ directly against a snap executable would introspect both the snap environment and the application itself, making the identification of any issues specific to the snap application much more difficult.
 
@@ -28,7 +28,7 @@ When GDB is instantiated in this way, it behaves just as it would were it called
 
 > ℹ  For general advice on fixing potential issues in running snaps, see [Debugging snaps](debugging-snaps.md). Guidance on using GDB is outside the scope of our documentation, but a good place to start is the [Sample GDB Session](https://sourceware.org/gdb/current/onlinedocs/gdb/Sample-Session.html#Sample-Session) in the [official documentation](https://sourceware.org/gdb/current/onlinedocs/gdb/).
 
-<h2 id='heading--debug-symbols'>Generate debug symbols</h2>
+<h2 id='using-gdb-and-gdbserver-heading--debug-symbols'>Generate debug symbols</h2>
 
 The majority of snaps do not ship with binaries that include debug symbols, and this means GDB can't typically link to the original source to allow further analysis.
 
@@ -67,7 +67,7 @@ GDB from a snap is working
 
 See [Collecting debug symbols](https://snapcraft.io/docs/collecting-debug-symbols) for the forum discussion related to how snaps might bundle debug symbols.
 
-<h2 id='heading--gdbserver'>Local debugging with gdbserver</h2>
+<h2 id='using-gdb-and-gdbserver-heading--gdbserver'>Local debugging with gdbserver</h2>
 
 In addition to the gdb command (see above), the snap daemon can work with _gdbserver_ for remote access. This is often a better way to debug because it combines gdb functionality with the convenience of alternative frontends, remote access, and the ability to run applications as a normal user.
 
@@ -104,7 +104,7 @@ GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
 (gdb)
 ```
 
-<h2 id='heading--gdbserver-remote'>Remote debugging with gdbserver</h2>
+<h2 id='using-gdb-and-gdbserver-heading--gdbserver-remote'>Remote debugging with gdbserver</h2>
 
 A gdbserver session can be started remotely via SSH, or by passing the command to through SSH directly:
 
@@ -132,7 +132,7 @@ You are right before your application is execed():
 
 From the above point, you can debug your application normally.
 
-<h2 id='heading--vscode'>Remote debugging with VS Code</h2>
+<h2 id='using-gdb-and-gdbserver-heading--vscode'>Remote debugging with VS Code</h2>
 
 Most IDEs can be used to visually debug snaps running _gdbserver_ with either `gdb` or `gdb-multiarch` packages. An IDE needs to be configured to access the target host gdbserver session rather than use its default debug routine, and optionally, to automatically the execution of the snap with gdbserver before the debugger starts.
 

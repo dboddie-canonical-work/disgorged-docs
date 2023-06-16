@@ -8,17 +8,17 @@ The `snapcraft metrics` command is used to track installation and usage statisti
 
 A selection of metrics are also visible from the [Snap Store](https://snapcraft.io/store) web UI. See [Snap Store metrics](https://snapcraft.io/docs/snap-store-metrics) for details.
 
-To ensure you have the correct and updated permissions to access _metrics_, we recommend using `snapcraft logout` and `snapcraft login` the first time this feature is used. See [Credentials](#heading--credentials) for more details.
+To ensure you have the correct and updated permissions to access _metrics_, we recommend using `snapcraft logout` and `snapcraft login` the first time this feature is used. See [Credentials](#snapcraft-metrics-heading--credentials) for more details.
 
-- [Usage](#heading--usage)
-  - [Supported metrics](#heading--supported)
-- [Output format](#heading--output)
-  - [JSON output](#heading--json)
-  - [Table output](#heading--table)
-- [Credentials](#heading--credentials)
+- [Usage](#snapcraft-metrics-heading--usage)
+  - [Supported metrics](#snapcraft-metrics-heading--supported)
+- [Output format](#snapcraft-metrics-heading--output)
+  - [JSON output](#snapcraft-metrics-heading--json)
+  - [Table output](#snapcraft-metrics-heading--table)
+- [Credentials](#snapcraft-metrics-heading--credentials)
 ---
 
-<h2 id='heading--usage'>Usage</h2>
+<h2 id='snapcraft-metrics-heading--usage'>Usage</h2>
 
 The _snapcraft metrics_ command takes the following arguments:
 
@@ -35,7 +35,7 @@ snapcraft metrics <snap-name> --name <metric-name> \
 | `end` | optional | string of format *YYYY-MM-DD* | End (inclusive) of date range to request (must not be later than today's date). Defaults to yesterday. |
 | `format` | required | string | Output format. |
 
-<h3 id='heading--supported'>Supported metrics</h3>
+<h3 id='snapcraft-metrics-heading--supported'>Supported metrics</h3>
 
 The following metrics (`<metric-name>`) are supported:
 * **daily_device_change**: contains the 3 series representing the number of **new**, **continued** and **lost** devices with the given snap installed compared to the previous day.
@@ -51,11 +51,11 @@ The following metrics (`<metric-name>`) are supported:
 
 Each metric has a query that includes a start and end date. The returned data, if available, will include all the days in-between. Weekly installed numbers still generated daily with the provided numbers being the averages for the 7 day window ending on the specified day.
 
-<h2 id='heading--output'>Output format</h2>
+<h2 id='snapcraft-metrics-heading--output'>Output format</h2>
 
 The _snapcraft metrics_ command outputs either as JSON string or a table.
 
-<h3 id='heading--json'>JSON output</h3>
+<h3 id='snapcraft-metrics-heading--json'>JSON output</h3>
 
 When using `--format=json`,  a JSON string matching the response from the Snap Store API server for the given metric is output.
 
@@ -73,7 +73,7 @@ $ snapcraft metrics my-snap --name daily_device_change \
 
 If the JSON object returned from the API is `response`, _snapcraft_ will output the pertinent data at `response["metrics"][0]`. The relevant API documentation can be found on [dashboard.snapcraft.io](https://dashboard.snapcraft.io/docs/reference/v1/snap.html#the-metrics-response).
 
-<h3 id='heading--table'>Table output</h3>
+<h3 id='snapcraft-metrics-heading--table'>Table output</h3>
 
 When using `--format=table`, a table-based interpretation of the returned data, with columns for the requested date ranges and rows of the requested data series, is output.
 
@@ -197,7 +197,7 @@ Version  2021-07-01  2021-07-02  2021-07-03
 
 [/details]
 
-<h2 id='heading--credentials'>Handling credentials</h2>
+<h2 id='snapcraft-metrics-heading--credentials'>Handling credentials</h2>
 
 The [Snap Store metrics API](https://dashboard.snapcraft.io/docs/reference/v1/snap.html#fetch-metrics-for-snaps), used by the _snapcraft metrics_ command, requires the `package_metrics` permission granted for the given credentials of the current snapcraft user.
 

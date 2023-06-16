@@ -10,22 +10,22 @@ Part of this convenience is whether an interface is permitted to be automaticall
 
 ---
 
-- [Auto-connections](#heading--autoconnect)
-  - [Auto-connection process](#heading--process)
-  - [Auto-connection constraints](#heading--constraints)
-  - [Auto-connection with a default-provider](#heading--default--provider)
-- [Super-privileged interfaces](#heading--super)
+- [Auto-connections](#the-interface-auto-connection-mechanism-heading--autoconnect)
+  - [Auto-connection process](#the-interface-auto-connection-mechanism-heading--process)
+  - [Auto-connection constraints](#the-interface-auto-connection-mechanism-heading--constraints)
+  - [Auto-connection with a default-provider](#the-interface-auto-connection-mechanism-heading--default--provider)
+- [Super-privileged interfaces](#the-interface-auto-connection-mechanism-heading--super)
 
-<h2 id='heading--autoconnect'>Auto-connections</h2>
+<h2 id='the-interface-auto-connection-mechanism-heading--autoconnect'>Auto-connections</h2>
 
-The snapd [interface auto-connection](interface-management.md#heading--auto-connections) mechanism has been designed to remove the need for a manual connection when:
+The snapd [interface auto-connection](interface-management.md#the-interface-auto-connection-mechanism-heading--auto-connections) mechanism has been designed to remove the need for a manual connection when:
 
 - An interface is commonly required and has no or low security implications
 - A snap provides, or accesses, libraries or other content vital to the operation of a snap
 - There is a need to connect snaps that are designed to work together
 - Store-set policy applies to let a given snap use an interface that would not be generally auto-connected.
 
-<h3 id='heading--process'>Auto-connection process</h3>
+<h3 id='the-interface-auto-connection-mechanism-heading--process'>Auto-connection process</h3>
 
 Whenever a snap is installed or refreshed, snapd will review its unconnected plugs and their candidate slots for auto-connection potential. It does the same for its slots and candidate plugs.
 
@@ -51,7 +51,7 @@ Built-in rules embody the general policy of whether and when an interface should
 
 A user can also issue "snap connect" and "snap disconnect" commands. In particular, a manual "snap disconnect" of an auto-connection will inhibit a subsequent refresh from re-establishing the auto-connection.
 
-<h3 id='heading--constraints'>Auto-connection constraints</h3>
+<h3 id='the-interface-auto-connection-mechanism-heading--constraints'>Auto-connection constraints</h3>
 
 The following is an example built-in auto-connection rule (attached to the slot-side) for the content interface:
 
@@ -83,7 +83,7 @@ Further lists of constraints or values can be used in the rule language to expre
 
 > ℹ  The same language rules can be used to define rules other than interface auto-connections, including default policy for ordinary connections and installations, and to override policy for the more sensitive interfaces.
 
-<h3 id='heading--default-provider'>Auto-connection with a default-provider</h3>
+<h3 id='the-interface-auto-connection-mechanism-heading--default-provider'>Auto-connection with a default-provider</h3>
 
 A content interface plug can specify a default-provider. This is the name of a snap that can be installed to fulfil the plug's need. If there isn’t a slot with the content label of the plug on the system the specified snap will be installed before the snap with the plug. However, if there is a slot on the system that already has the content label, any default-provider specified by a content interface plug is ignored. If the specified snap is already installed but there is no slot with the content label, the specified snap will be upgraded instead under the assumption that a newer version may start providing the label.
 

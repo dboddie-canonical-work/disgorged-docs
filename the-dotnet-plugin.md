@@ -10,14 +10,14 @@ The plugin uses the .NET SDK to install dependencies via the [NuGet](https://www
 
 Plugin-specific features and syntax are dependent on which [base](base-snaps.md) is being used, as outlined below:
 
-- [base: core22](#heading--core22)
-- [base: core18 | core](#heading--core18)
+- [base: core22](#the-dotnet-plugin-heading--core22)
+- [base: core18 | core](#the-dotnet-plugin-heading--core18)
 
 For examples, search [GitHub](https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+dotnet%22&type=Code) for projects using the plugin.
 
 > ⓘ  This is a *snapcraft* plugin. See [Snapcraft plugins](snapcraft-plugins.md) and [Supported plugins](supported-plugins.md) for further details on how plugins are used.
 
-<h3 id='heading--core22'>base: core22</h3>
+<h3 id='the-dotnet-plugin-heading--core22'>base: core22</h3>
 
 This plugin uses the following plugin-specific keywords:
 
@@ -29,7 +29,7 @@ This plugin uses the following plugin-specific keywords:
 
 Requires Snapcraft version _7.0+_.
 
-<h3 id='heading--core18'>base: core18 | core</h3>
+<h3 id='the-dotnet-plugin-heading--core18'>base: core18 | core</h3>
 
 This plugin uses the following plugin-specific keywords:
 

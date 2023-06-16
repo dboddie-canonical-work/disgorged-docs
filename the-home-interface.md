@@ -36,11 +36,11 @@ This is a snap interface. See [Interface management](interface-management.md) an
 
 ---
 
-<h2 id='heading--dev'>Developer details</h2>
+<h2 id='the-home-interface-heading--dev'>Developer details</h2>
 
-**[Auto-Connect](the-interface-auto-connection-mechanism.md#heading--autoconnect)**:
+**[Auto-Connect](the-interface-auto-connection-mechanism.md#the-home-interface-heading--autoconnect)**:
 -  **yes** on traditional distributions
--  **no** on all other systems, including [Ubuntu Core](glossary.md#heading--ubuntu-core)
+-  **no** on all other systems, including [Ubuntu Core](glossary.md#the-home-interface-heading--ubuntu-core)
 
 **Transitional**: yes</br>
 **Attributes**:

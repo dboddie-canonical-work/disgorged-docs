@@ -16,36 +16,36 @@ A snap which needs user-access to files should use an [interface](interface-mana
 
 But it can also be helpful to understand how snaps operate on and access data, even without an interface, and this is outlined below:
 
-- [Snap installation](#heading--installation)
-- [System data](#heading--system)
-- [User data](#heading--user)
-- [Other locations](#heading--other)
-- [Deleting a snap](#heading--delete)
+- [Snap installation](#data-locations-heading--installation)
+- [System data](#data-locations-heading--system)
+- [User data](#data-locations-heading--user)
+- [Other locations](#data-locations-heading--other)
+- [Deleting a snap](#data-locations-heading--delete)
 
 ---
 
-<h2 id='heading--installation'>Snap installation</h2>
+<h2 id='data-locations-heading--installation'>Snap installation</h2>
 
-When a user [installs a snap](https://snapcraft.io/docs/quickstart-guide#heading--install-snap) from the [Snap Store](https://snapcraft.io/store), the following happens:
+When a user [installs a snap](https://snapcraft.io/docs/quickstart-guide#data-locations-heading--install-snap) from the [Snap Store](https://snapcraft.io/store), the following happens:
 
-1. The [snapd services](glossary.md#heading--snapd) downloads the snap as a single file – a compressed SquashFS archive with a _.snap_ suffix.
+1. The [snapd services](glossary.md#data-locations-heading--snapd) downloads the snap as a single file – a compressed SquashFS archive with a _.snap_ suffix.
 1. The snap file is uncompressed and mounted as a read-only filesystem under _/snap._   See [The snap format](the-snap-format.md) for further details on what is included in a snap.
 
 By design, the read-only filesystem cannot provide a persistent experience between application launches, which is why snaps also have writable parts for system data and for user data.
 
-<h2 id='heading--system'>System data</h2>
+<h2 id='data-locations-heading--system'>System data</h2>
 
 Within the snap environment, [environment variables](environment-variables.md) are used to reference different accessible locations.  The following variables and default referenced locations are used to store system data:
 
 * **SNAP_COMMON**: `/var/snap/<snap name>/common`
-This directory is owned and writable by root and is used to store data that is common across multiple [revisions](glossary.md#heading--revision) of the snap (e.g.: revision 6, revision 7, etc.).
+This directory is owned and writable by root and is used to store data that is common across multiple [revisions](glossary.md#data-locations-heading--revision) of the snap (e.g.: revision 6, revision 7, etc.).
 
 * **SNAP_ DATA**: `/var/snap/<snap name>/<revision number>`
 This location it is also used to store data, mostly information utilised by background application and services, for logging, and other tasks that require persistence between snap launches.
 
-A [snapshot](https://snapcraft.io/docs/snapshots) of `SNAP_DATA` and `SNAP_COMMON` is created and restored when performing a snap update (refresh) or revert operation. The contents of `SNAP_DATA` is specific to the snap revision, while the contents of `SNAP_COMMON` is applicable to all revisions and will overwrite the contents of `SNAP_COMMON` when restored. See [What a snapshot stores](https://snapcraft.io/docs/snapshots#heading--what-is-stored) for more details.
+A [snapshot](https://snapcraft.io/docs/snapshots) of `SNAP_DATA` and `SNAP_COMMON` is created and restored when performing a snap update (refresh) or revert operation. The contents of `SNAP_DATA` is specific to the snap revision, while the contents of `SNAP_COMMON` is applicable to all revisions and will overwrite the contents of `SNAP_COMMON` when restored. See [What a snapshot stores](https://snapcraft.io/docs/snapshots#data-locations-heading--what-is-stored) for more details.
 
-<h2 id='heading--user'>User data</h2>
+<h2 id='data-locations-heading--user'>User data</h2>
 
 Snaps can also contain user data. As with the system data environment variables, `SNAP_COMMON` and `SNAP_DATA`,  the following user-specific environment variables point to directories for user data:
 
@@ -61,7 +61,7 @@ Both `SNAP_USER_COMMON` and `SNAP_USER_DATA` only become available after a snap 
 
 ### Ubuntu Core
 
-On Ubuntu Core, the **`SNAP_SAVE_DATA`** environment variable within a snap's environment points to a snap-specific location on the [ubuntu-save](https://ubuntu.com/core/docs/uc20/inside#heading--layouts) volume. This is used to store data that can be accessed during recovery or after re-installation of Ubuntu Core.
+On Ubuntu Core, the **`SNAP_SAVE_DATA`** environment variable within a snap's environment points to a snap-specific location on the [ubuntu-save](https://ubuntu.com/core/docs/uc20/inside#data-locations-heading--layouts) volume. This is used to store data that can be accessed during recovery or after re-installation of Ubuntu Core.
 
 For example, in the reference Ubuntu Core 22 image, from within the _hello-world_ snap, `SNAP_SAVE_DATA` has the following value:
 
@@ -76,7 +76,7 @@ $ mount | grep "snapd/save"
 /dev/mapper/ubuntu-save on /var/lib/snapd/save type ext4 (rw,relatime)
 ```
 
-<h2 id='heading--other'>Other locations</h2>
+<h2 id='data-locations-heading--other'>Other locations</h2>
 
 There are several other directories you should be aware of:
 
@@ -88,7 +88,7 @@ There are several other directories you should be aware of:
   Contains both the manually generated and automatically generated [snapshots](https://snapcraft.io/docs/snapshots).
 
 
-<h2 id='heading--delete'>Deleting a snap</h2>
+<h2 id='data-locations-heading--delete'>Deleting a snap</h2>
 
 When deleting and removing a snap from a system, the following will happen:
 

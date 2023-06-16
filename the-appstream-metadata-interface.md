@@ -15,13 +15,13 @@ See [Interface management](interface-management.md) and [Supported interfaces](s
 
 ---
 
-<h2 id='heading--dev-details'>Developer details </h2>
+<h2 id='the-appstream-metadata-interface-heading--dev-details'>Developer details </h2>
 
 **Auto-connect**: no
 
 Requires snapd version _2.41+_.
 
-<h3 id='heading-code'>Code examples</h3>
+<h3 id='the-appstream-metadata-interface-heading-code'>Code examples</h3>
 
 [Using external metadata](using-external-metadata.md) describes how to access AppStream metadata.
 

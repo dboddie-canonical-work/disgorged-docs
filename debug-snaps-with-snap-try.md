@@ -10,10 +10,10 @@ Ordinarily, snaps cannot be modified. They are distributed as, and executed from
 
 But it’s sometimes useful to be able to experiment with a snap locally, to help debug an issue, or to make changes to a snap when you don’t have upstream access to the packaging process. This is when `snap try` is useful.
 
-* If you only have access to the packaged snap itself, you first need to [unsquash the snap](#heading--unsquash) and then [use snap try to test it](#heading--snaptry).
-* If, instead, you are a developer with access to the source code of the snap, you first need to [use snapcraft try to build an unpacked snap](#heading--snapcrafttry), and then [use snap try to test it](#heading--snaptry).
+* If you only have access to the packaged snap itself, you first need to [unsquash the snap](#debug-snaps-with-snap-try-heading--unsquash) and then [use snap try to test it](#debug-snaps-with-snap-try-heading--snaptry).
+* If, instead, you are a developer with access to the source code of the snap, you first need to [use snapcraft try to build an unpacked snap](#debug-snaps-with-snap-try-heading--snapcrafttry), and then [use snap try to test it](#debug-snaps-with-snap-try-heading--snaptry).
 
-<h2 id='heading--unsquash'>Unsquashing a snap</h2>
+<h2 id='debug-snaps-with-snap-try-heading--unsquash'>Unsquashing a snap</h2>
 
 In order to use `snap try`, you first need to get the unpacked contents of the snap. The first step is to get the snap itself. The most practical source of snaps is the snap store, where a snap can be downloaded with the `snap download` command:
 
@@ -43,9 +43,9 @@ created 0 symlinks
 created 0 device
 ```
 
-The files associated with the snap can now be found in the `squashfs-root’ directory. You can use [snap try](#heading--snaptry) to install this unpacked snap.
+The files associated with the snap can now be found in the `squashfs-root’ directory. You can use [snap try](#debug-snaps-with-snap-try-heading--snaptry) to install this unpacked snap.
 
-<h2 id='heading--snaptry'>Using snap try</h2>
+<h2 id='debug-snaps-with-snap-try-heading--snaptry'>Using snap try</h2>
 
 Running `snap try <directory>` installs an unpacked snap using a bind mount.
 
@@ -74,7 +74,7 @@ $ hello-world
 Hello Everyone!
 ```
 
-<h2 id='heading--snapcrafttry'>Using snapcraft try</h2>
+<h2 id='debug-snaps-with-snap-try-heading--snapcrafttry'>Using snapcraft try</h2>
 
 When developing a snap with [snapcraft](snapcraft-overview.md), the `snapcraft try` command can be used in combination with `snap try` to quickly test a snap and fix issues.
 
@@ -99,7 +99,7 @@ Priming hello-world
 You can now run `snap try /home/user/hello-world/prime`.
 ```
 
-The above snap can then be installed and tested with [`snap try`](#heading--snaptry) and the _prime_ directory as its target:
+The above snap can then be installed and tested with [`snap try`](#debug-snaps-with-snap-try-heading--snaptry) and the _prime_ directory as its target:
 
 ```bash
 $ snap try /home/user/hello-world/prime

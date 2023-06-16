@@ -8,13 +8,13 @@ The `catkin` plugin is useful when building [ROS 1](http://www.ros.org/) parts.
 
 Plugin-specific features and syntax are dependent on which [base](base-snaps.md) is being used, as outlined below:
 
-- [base: core20](#heading--core20)
-- [base: core18 | core](#heading--core18)
+- [base: core20](#the-catkin-plugin-heading--core20)
+- [base: core18 | core](#the-catkin-plugin-heading--core18)
 
 This plugin uses the common plugin keywords as well as those for "sources". For more information, see [Snapcraft parts metadata](snapcraft-parts-metadata.md).
 
 
-## <h3 id='heading--core20'>base: core20</h3>
+## <h3 id='the-catkin-plugin-heading--core20'>base: core20</h3>
 
 For core20, this plugin is designed to work with the [ROS 1 Noetic extension](the-ros-1-noetic-extension.md).  If not using this extension, it is required to set the `ROS_DISTRO` environment variable to `noetic` using `build-environment`.
 
@@ -33,7 +33,7 @@ List of catkin packages to ignore (i.e. not build or install). If not specified 
 - **`catkin-cmake-args`** (list of strings)
 Arguments to pass to cmake projects.
 
-## <h3 id='heading--core18'>base: core | core18</h3>
+## <h3 id='the-catkin-plugin-heading--core18'>base: core | core18</h3>
 
 For core, this plugin is designed to work with the ROS Kinetic distro.
 

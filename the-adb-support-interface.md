@@ -6,7 +6,7 @@
 
 `adb-support` allows a snap to operating the Android Debug Bridge service, providing privileged access to an Android device.
 
-<h2 id='heading--example'>Example</h2>
+<h2 id='the-adb-support-interface-heading--example'>Example</h2>
 
 [guiscrcpy](https://snapcraft.io/guiscrcpy) uses _adb-support_ to help share an Android screen on a Linux desktop.
 
@@ -17,14 +17,14 @@ See [Interface management](interface-management.md) and [Supported interfaces](s
 
 ---
 
-<h2 id='heading--dev-details'>Developer details </h2>
+<h2 id='the-adb-support-interface-heading--dev-details'>Developer details </h2>
 
 **Auto-connect**: no
 
 
 Requires snapd version _2.36+_.
 
-<h3 id='heading-code'>Code examples</h3>
+<h3 id='the-adb-support-interface-heading-code'>Code examples</h3>
 
 The adb-support interface is used in the _guiscrcpy_ snap: <https://github.com/srevinsaju/guiscrcpy/blob/master/snap/snapcraft.yaml>
 

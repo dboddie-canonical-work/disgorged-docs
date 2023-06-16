@@ -24,7 +24,7 @@ You also have a choice over whether a snap is _public_ or _private_:
 - **Public**: the snap will appear in local `snap find` searches, in the Snap Store, and other application installers that access the store
 - **Private**: the snap is hidden from search results, and can only be installed from your account and from accounts linked to your account
 
-To change a snap's visibility after registering, see [Release management](https://snapcraft.io/docs/release-management#heading--private-snaps).
+To change a snap's visibility after registering, see [Release management](https://snapcraft.io/docs/release-management#registering-your-app-name-heading--private-snaps).
 
 A name can be registered from either the web UI or with the _snapcraft_ command:
 

@@ -12,15 +12,15 @@ Previous Gnome extensions were built to use `core18`, based on [Ubuntu 18.04 LTS
 
 This extension provides many of the components needed for general desktop applications making it useful for a broader set of applications outside of those tailored for the GNOME desktop.
 
-- [How to use it](#heading--how): adding the necessary keywords to your snapcraft.yaml
-- [Interface connections](#heading--plugs): which interfaces are accessible from the extension
-- [Included packages](#heading--packages): a list of the packages the extension is build from and provides
-- [Environment variables](#heading--environment): variables used during build and snap runntime
-- [Layout set](#heading--layouts): layouts used by this extension to access files on the host
+- [How to use it](#the-gnome-extension-heading--how): adding the necessary keywords to your snapcraft.yaml
+- [Interface connections](#the-gnome-extension-heading--plugs): which interfaces are accessible from the extension
+- [Included packages](#the-gnome-extension-heading--packages): a list of the packages the extension is build from and provides
+- [Environment variables](#the-gnome-extension-heading--environment): variables used during build and snap runntime
+- [Layout set](#the-gnome-extension-heading--layouts): layouts used by this extension to access files on the host
 
 > ℹ  Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See [Snapcraft extensions](snapcraft-extensions.md) for further details.
 
-<h2 id='heading--how'>How to use it</h2>
+<h2 id='the-gnome-extension-heading--how'>How to use it</h2>
 
 This extension currently only works with the `core22` base snap (see [Base snaps](base-snaps.md) for details). To use it, add `extensions: [gnome]` to the application definition in your [snapcraft.yaml](creating-snapcraft-yaml.md) file.
 
@@ -36,7 +36,7 @@ apps:
 
 See [GTK3 applications](gtk3-applications.md) for a comprehensive overview of using extensions with GNOME applications.
 
-<h2 id='heading--plugs'>Interface connections</h2>
+<h2 id='the-gnome-extension-heading--plugs'>Interface connections</h2>
 
 The following plugs are provided by the extension and implicitly included in your snapcraft.yaml:
 
@@ -70,7 +70,7 @@ plugs: [ desktop, desktop-legacy, gsettings, opengl, wayland, x11, mount-observe
 
 See [Adding interfaces](adding-interfaces.md) for more details.
 
-<h2 id='heading--packages'>Included packages</h2>
+<h2 id='the-gnome-extension-heading--packages'>Included packages</h2>
 
 The GNOME extension is derived from two separate snaps; a [build snap](https://github.com/ubuntu/gnome-sdk/blob/gnome-42-2204-sdk/snapcraft.yaml) and a [platform snap](https://github.com/ubuntu/gnome-sdk/blob/gnome-42-2204/snapcraft.yaml).
 
@@ -78,7 +78,7 @@ The **build snap** builds compiles libraries from source that are commonly used 
 
 The **platform snap** takes the build snap and makes all of those libraries available to your snap at build time without needing to include the pieces of the build snap that are unnecessary at runtime (like compilers) in your final snap.
 
-<h2 id='heading--environment'>Environment variables</h2>
+<h2 id='the-gnome-extension-heading--environment'>Environment variables</h2>
 
 In addition to using the build and platform snaps, the _gnome-3-38 extension_ also sets a collection of environment variables, links, default plugs for the app to use, and a default build-environment for each part in your snap to use.
 
@@ -110,7 +110,7 @@ environment:
   GTK_USE_PORTAL: '1'
 ```
 
-<h2 id='heading--layouts'>Layouts set</h2>
+<h2 id='the-gnome-extension-heading--layouts'>Layouts set</h2>
 
 The platform snap's gjs, webkit2gtk-4.0, and iso-codes are used so they don't need to be packaged as part of the snap  and would greatly inflate the size.
 

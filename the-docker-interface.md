@@ -6,7 +6,7 @@
 
 `docker` allows client access to Docker socket. Use this interface when you want to interact with the Docker daemon.
 
-**[Auto-connect](interface-management.md#heading--auto-connections)**: no</br>
+**[Auto-connect](interface-management.md#the-docker-interface-heading--auto-connections)**: no</br>
 **[Super-privileged](super-privileged-interfaces.md)**: yes</br>
 
 For distribution via the [Snap store ](https://snapcraft.io/store), consumers of this interface require an approved [snap declaration](https://snapcraft.io/docs/process-for-aliases-auto-connections-and-tracks).

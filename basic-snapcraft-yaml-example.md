@@ -31,7 +31,7 @@ parts:
     source: https://github.com/yt-dlp/yt-dlp.git
 ```
 
-<h2 id='heading--metadata'>Metadata</h2>
+<h2 id='basic-snapcraft-yaml-example-heading--metadata'>Metadata</h2>
 
 Several [mandatory fields](snapcraft-top-level-metadata.md) define and describe the application - name, version, summary and description. These fields allow end users to find snaps and install them.
 
@@ -49,7 +49,7 @@ Several [mandatory fields](snapcraft-top-level-metadata.md) define and describe 
 
 When the application is built with snapcraft, this metadata will be made available to users. It can also be used to pre-populate certain fields in the snap’s Snap Store page during upload.
 
-<h2 id='heading--base'>Base</h2>
+<h2 id='basic-snapcraft-yaml-example-heading--base'>Base</h2>
 
 As part of their security design, by default, snaps cannot see the root filesystem on the host. This prevents conflict with other applications and increases security. However, applications still need some location to act as their root filesystem. Furthermore, they would also benefit from common libraries (e.g. libc) being in this root filesystem rather than being bundled into each application.
 
@@ -61,7 +61,7 @@ Several bases are available, including core18, core20, core22, etc. These bases 
 base: core22
 ```
 
-<h2 id='heading--confinement'>Confinement</h2>
+<h2 id='basic-snapcraft-yaml-example-heading--confinement'>Confinement</h2>
 
 Security confinement distinguishes snaps from software distributed using the traditional repository methods. The [confinement mechanism](snap-confinement.md) allows for a high level of isolation and security, and prevents snaps from being affected by underlying system changes, one snap another, or snaps affecting the host system.
 
@@ -91,7 +91,7 @@ The xsv snap has its confinement level set as strict:
 confinement: strict
 ```
 
-<h2 id='heading--interfaces'>Interfaces</h2>
+<h2 id='basic-snapcraft-yaml-example-heading--interfaces'>Interfaces</h2>
 
 A strictly confined snap is considered untrusted, and it runs in a restricted sandbox. By design, untrusted applications:
 
@@ -112,7 +112,7 @@ An interface consists of a connection between a slot and a plug. The slot is the
 
 Interfaces can be automatically or manually connected. Some interfaces will be auto-connected. Others may not, especially if they have access to sensitive resources (like network control, for instance). Users have the option to manually control interfaces – connect and disconnect them.
 
-<h3 id='heading--build'>Build definition</h3>
+<h3 id='basic-snapcraft-yaml-example-heading--build'>Build definition</h3>
 
 The build definition stanza comprises the apps and parts section of the snapcraft.yaml. These two sections describe how the application is going to be built, what sources and options will be used, and what permissions it will have to run (in relation to the snap’s security confinement).
 

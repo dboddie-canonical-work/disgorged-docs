@@ -8,7 +8,7 @@
 
 This interface can potentially impact the system and other snaps, and allows privileged access to hardware. See [The gpio interface](the-gpio-interface.md) to access a specific pin.
 
-**[Auto-connect](interface-management.md#heading--auto-connections)**: no</br>
+**[Auto-connect](interface-management.md#the-gpio-control-interface-heading--auto-connections)**: no</br>
 **[Super-privileged](super-privileged-interfaces.md)**: yes</br>
 
 Requires snapd version _2.41+_.

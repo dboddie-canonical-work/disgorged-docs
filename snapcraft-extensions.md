@@ -22,7 +22,7 @@ Extensions help:
 
 ## Using Extensions
 
-To use an extension, the [app](snapcraft-app-and-service-metadata.md#heading--extension) metadata section of the snap's [snapcraft.yaml](the-snapcraft-yaml-schema.md) needs include the `extensions` definition. The following snippet, for example, shows how the [Firefox](https://github.com/mozilla/gecko-dev/blob/d36cf98aa85f24ceefd07521b3d16b9edd2abcb7/taskcluster/docker/firefox-snap/firefox.snapcraft.yaml.in#L15) snap uses the `gnome-3-34` extension to add Gnome desktop support:
+To use an extension, the [app](snapcraft-app-and-service-metadata.md#snapcraft-extensions-heading--extension) metadata section of the snap's [snapcraft.yaml](the-snapcraft-yaml-schema.md) needs include the `extensions` definition. The following snippet, for example, shows how the [Firefox](https://github.com/mozilla/gecko-dev/blob/d36cf98aa85f24ceefd07521b3d16b9edd2abcb7/taskcluster/docker/firefox-snap/firefox.snapcraft.yaml.in#L15) snap uses the `gnome-3-34` extension to add Gnome desktop support:
 
 ```bash
 apps:

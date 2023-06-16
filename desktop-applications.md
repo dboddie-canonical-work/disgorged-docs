@@ -26,9 +26,9 @@ Read the documentation of the GUI toolkit your application uses in order to get 
 ## Refining
 
 * [Reduce the size of your snap](reducing-the-size-of-desktop-snaps.md). This will also speed up how quickly your snap starts!
-* [Switch the compression to `lzo`](snapcraft-top-level-metadata.md#heading--compression) to make your application start up even quicker.
-* Make sure your application has a [logo in the snap store](https://snapcraft.io/docs/store-listing-and-branding#heading--logo-icon) and [screenshots](https://snapcraft.io/docs/store-listing-and-branding#heading--screenshots).
-* Include a link to your contact page or bugtracker in the [store metadata](https://snapcraft.io/docs/store-listing-and-branding#heading--metadata).
+* [Switch the compression to `lzo`](snapcraft-top-level-metadata.md#desktop-applications-heading--compression) to make your application start up even quicker.
+* Make sure your application has a [logo in the snap store](https://snapcraft.io/docs/store-listing-and-branding#desktop-applications-heading--logo-icon) and [screenshots](https://snapcraft.io/docs/store-listing-and-branding#desktop-applications-heading--screenshots).
+* Include a link to your contact page or bugtracker in the [store metadata](https://snapcraft.io/docs/store-listing-and-branding#desktop-applications-heading--metadata).
 
 ## Further Information
 

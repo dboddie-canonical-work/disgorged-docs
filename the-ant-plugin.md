@@ -14,7 +14,7 @@ This plugin uses the common plugin keywords as well as those for "sources". For 
 
 This plugin is only available to *core22* and *core18* based snaps. See [Base snaps](base-snaps.md) for details.
 
-<h3 id='heading--core22'>base: core22 and base: core18</h3>
+<h3 id='the-ant-plugin-heading--core22'>base: core22 and base: core18</h3>
 
 This plugin uses the following plugin-specific keywords:
 

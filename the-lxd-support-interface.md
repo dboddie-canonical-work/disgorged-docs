@@ -6,7 +6,7 @@
 
 `lxd-support` enables operating as the LXD service. This interface can currently only be established with the upstream LXD project.
 
-**[Auto-connect](interface-management.md#heading--auto-connections)**: no</br>
+**[Auto-connect](interface-management.md#the-lxd-support-interface-heading--auto-connections)**: no</br>
 **[Super-privileged](super-privileged-interfaces.md)**: yes
 **Transitional**: yes
 

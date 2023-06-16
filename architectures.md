@@ -7,10 +7,10 @@
 By default, [Snapcraft](snapcraft-overview.md) builds a snap to run on the same architecture as the build environment. This behaviour can be modified with an optional root `architectures` keyword in the snap's [snapcraft.yaml](the-snapcraft-yaml-schema.md).
 
 Architecture features and syntax are dependent on which [base](base-snaps.md) is being used, as outlined below:
-- [base: core22](#heading--core22)
-- [base: core20 | core18 | core](#heading--core20-core18)
+- [base: core22](#architectures-heading--core22)
+- [base: core20 | core18 | core](#architectures-heading--core20-core18)
 
-<h2 id='heading-core22'>base: core22</h3>
+<h2 id='architectures-heading-core22'>base: core22</h3>
 
 ### Syntax
 
@@ -102,7 +102,7 @@ architectures:
 - for snaps that can run on any architecture (e.g. python or shell scripts), use `build-for: all`
 - building on `amd64` will produce 1 snap that can run on any architecture
 
-<h2 id='heading-core20-core18'>base: core20 | core18 | core</h3>
+<h2 id='architectures-heading-core20-core18'>base: core20 | core18 | core</h3>
 
 ### Syntax
 
@@ -119,7 +119,7 @@ architectures:
 
 - valid architectures include `arm64`, `armhf`, `amd64`, `i386`, `ppc64el`, and `s390x`
 - snaps using a base of `core` and `core18` can additionally support `i386`
-- support for `i386` was removed in `core20` (see [Migrating bases](migrating-between-bases.md#heading--arch) for details)
+- support for `i386` was removed in `core20` (see [Migrating bases](migrating-between-bases.md#architectures-heading--arch) for details)
 - the default value for `run-on` is the value of `build-on`
 - `run-on:` supports a value of `all` to denote a snap that can run everywhere (e.g. a snap that is only shell scripts or python)
 - if the value list is a single item, it can be simplified to a scalar (e.g. `build-on: amd64`)

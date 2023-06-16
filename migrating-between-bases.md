@@ -8,7 +8,7 @@ A *base* snap is a special kind of snap that provides a run-time environment wit
 
 See [Base snaps](base-snaps.md) for details on how use and specify them.
 
-Each base snap is built from a [corresponding Ubuntu LTS ](base-snaps.md#heading--supported) release and migrating a snap from one base to the next gives the snap access to newer packages, extended support, and the latest [Snapcraft](snapcraft-overview.md) features, including [plugins](supported-plugins.md) and [extensions](snapcraft-extensions.md).
+Each base snap is built from a [corresponding Ubuntu LTS ](base-snaps.md#migrating-between-bases-heading--supported) release and migrating a snap from one base to the next gives the snap access to newer packages, extended support, and the latest [Snapcraft](snapcraft-overview.md) features, including [plugins](supported-plugins.md) and [extensions](snapcraft-extensions.md).
 
 The complexity of the migration process is directly linked to both dependencies in the snap's [snapcraft.yaml](the-snapcraft-yaml-schema.md) and the base snap versions being migrated between.
 
@@ -21,31 +21,31 @@ At its simplest, migrating from one base snap to another requires only that the 
 
 But further changes will most likely be needed, and what these are will depend on the original base and the packages that are bundled alongside the application. The most common required changes are described below:
 
-- [No base, or old bases](#heading--oldbase)
-- [Package names](#heading--names)
-- [Architectures](#heading--arch)
-- [Environment variables](#heading--environment)
-- [Remote parts and extensions](#heading--remote)
-- [Audio _interfaces_](#heading--audio)
-- [Version scripts](#heading--version)
+- [No base, or old bases](#migrating-between-bases-heading--oldbase)
+- [Package names](#migrating-between-bases-heading--names)
+- [Architectures](#migrating-between-bases-heading--arch)
+- [Environment variables](#migrating-between-bases-heading--environment)
+- [Remote parts and extensions](#migrating-between-bases-heading--remote)
+- [Audio _interfaces_](#migrating-between-bases-heading--audio)
+- [Version scripts](#migrating-between-bases-heading--version)
 - Plugins
-  - [name changes](#heading--names): nodejs to npm
-  - [modified syntax](#heading--syntax): npm, autotools, go,
-- [Application definitions](#heading--definitions)
-  - [paths](#heading--paths)
-  - [command-chain](#heading--command-chain)
-- [Migrated snap examples](#heading--examples)
+  - [name changes](#migrating-between-bases-heading--names): nodejs to npm
+  - [modified syntax](#migrating-between-bases-heading--syntax): npm, autotools, go,
+- [Application definitions](#migrating-between-bases-heading--definitions)
+  - [paths](#migrating-between-bases-heading--paths)
+  - [command-chain](#migrating-between-bases-heading--command-chain)
+- [Migrated snap examples](#migrating-between-bases-heading--examples)
 ---
 
-<h2 id='heading--oldbase'>Updating from no or old bases</h2>
+<h2 id='migrating-between-bases-heading--oldbase'>Updating from no or old bases</h2>
 
 Migrating a snap from having no base, or `base: core`, to `core18` or `core20`, for example, is a more involved process than going from `core18` to `core20`.
 
 This is because when building a snap with an old base, Snapcraft will operate in compatibility mode.
 
-Compatibility mode is essentially a prior (2.43-era) version of Snapcraft, and will lose the functionality of newer releases. See [Features incompatible with bases](release-notes-snapcraft-3-0.md#heading--base-exceptions) for details.
+Compatibility mode is essentially a prior (2.43-era) version of Snapcraft, and will lose the functionality of newer releases. See [Features incompatible with bases](release-notes-snapcraft-3-0.md#migrating-between-bases-heading--base-exceptions) for details.
 
-<h2 id='heading--names'>Package names</h2>
+<h2 id='migrating-between-bases-heading--names'>Package names</h2>
 
 The `build-packages` and `stage-packages` sections in a snap's [snapcraft.yaml](the-snapcraft-yaml-schema.md) specify which packages need to be incorporated during the build and stage parts of the [Parts lifecycle](parts-lifecycle.md), and described in [Build and staging dependencies](build-and-staging-dependencies.md).
 
@@ -61,7 +61,7 @@ Package name example: [Irssi](https://github.com/snapcrafters/irssi/pull/9)
 
 In the above example, the name of the Perl library package changed due to a version bump. The best way to resolve these issues is to first build your snap on the destination base system, either via _snapcraft_ or a virtual machine/LXD container, and update each unresolved package in turn with the new equivalents.
 
-<h2 id='heading--arch'>Architectures</h2>
+<h2 id='migrating-between-bases-heading--arch'>Architectures</h2>
 
 The *architectures* keyword defines a set of both build and run architectures:
 
@@ -86,7 +86,7 @@ architectures:
 
 For potential approaches to maintain an i386 build of a snap, see [How best to handle i386 when moving to core20](17680.md).
 
-<h2 id='heading--environment'>Environment variables</h2>
+<h2 id='migrating-between-bases-heading--environment'>Environment variables</h2>
 
 Environment variables are often used in snaps to ensure binaries are able to find loadable modules or libraries which reside inside the snap at runtime. Sometimes this results in path names which require updates due to directory name changes between versions.
 
@@ -100,7 +100,7 @@ Environment variables example: [Irssi](https://github.com/snapcrafters/irssi/pul
 
 When a package name changes or is updated, it's worth checking to make sure no environment variables are dependent on a path related to an older name, as with the above path.
 
-<h2 id='heading--remote'>Remote parts and Extensions</h2>
+<h2 id='migrating-between-bases-heading--remote'>Remote parts and Extensions</h2>
 
 In some snaps [remote parts](remote-reusable-parts.md) may have been used to share configuration across multiple snaps and to reduce the local `snapcraft.yaml` complexity.
 
@@ -159,7 +159,7 @@ Example showing `core20`-only Gnome extension: [Dwarf Fortress](https://github.c
 +    command: wrapper.sh
 ```
 
-<h2 id='heading--audio'>Audio <i>interfaces</i></h2>
+<h2 id='migrating-between-bases-heading--audio'>Audio <i>interfaces</i></h2>
 
 For applications which play or record audio, the [interface](interface-management.md) names have changed.
 Previously the [pulseaudio](the-pulseaudio-interface.md) interface was used for both playback and recording of audio. This has been replaced by [audio-playback](the-audio-playback-interface.md) and [audio-record](t/the-audio-record-interface/13090):
@@ -178,7 +178,7 @@ Note that to ensure privacy, `audio-playback` is automatically connected but `au
 
 Application publishers who believe `audio-record` *should* be automatically connected on install (such as for an audio recording application) should start a thread in the [store-requests](https://forum.snapcraft.io/c/store-requests/19) category on the Snapcraft forum asking for it.
 
-<h2 id='heading--version'>Version scripts</h2>
+<h2 id='migrating-between-bases-heading--version'>Version scripts</h2>
 
 The top level `version-script` option has been [deprecated](deprecation-notice-10.md) in favour of `adopt-info`. This requires that you specify `adopt-info` with a reference to the part in which the version data (and some other metadata) may be set.
 
@@ -198,7 +198,7 @@ Example replacing _version-script_ with _adopt-info_: [Cointop](https://github.c
 
 See [Using external metadata](using-external-metadata.md) for further details.
 
-<h2 id='#heading--name'>Plugin name changes</h2>
+<h2 id='#migrating-between-bases-heading--name'>Plugin name changes</h2>
 
 The following plugin names have changed across Snapcraft releases:
 
@@ -215,7 +215,7 @@ e.g. [wethr](https://github.com/snapcrafters/wethr/commit/678ac026fb03d42925eb58
 +    plugin: npm
 ```
 
-<h2 id='heading--syntax'>Plugin syntax</h2>
+<h2 id='migrating-between-bases-heading--syntax'>Plugin syntax</h2>
 
 Plugin changes can be queried with the `snapcraft help <plugin name> --base <base name>` command:
 
@@ -277,9 +277,9 @@ Example Go plugin syntax changes:  [slack-term](https://github.com/snapcrafters/
 +      go-channel: latest/stable
 ```
 
-<h2 id='heading--definitions'>Application definitions</h2>
+<h2 id='migrating-between-bases-heading--definitions'>Application definitions</h2>
 
-<h3 id='heading--paths'>Paths</h3>
+<h3 id='migrating-between-bases-heading--paths'>Paths</h3>
 
 Snapcraft now requires explicit paths to be specified for binaries listed in the `apps` stanza:
 
@@ -292,9 +292,9 @@ Example update adding explicit paths: [wethr](https://github.com/snapcrafters/we
 +    command: bin/wethr
 ```
 
-<h3 id='heading--command-chain'>command-chain</h3>
+<h3 id='migrating-between-bases-heading--command-chain'>command-chain</h3>
 
-Rather than specify `command` followed by a long list of space-separated executables, they can now be listed with the [command-chain](snapcraft-app-and-service-metadata.md#heading--command-chain) option:
+Rather than specify `command` followed by a long list of space-separated executables, they can now be listed with the [command-chain](snapcraft-app-and-service-metadata.md#migrating-between-bases-heading--command-chain) option:
 
 Example of command being replaced by command-chain: [Atom](https://github.com/snapcrafters/atom/pull/64)
 
@@ -307,7 +307,7 @@ Example of command being replaced by command-chain: [Atom](https://github.com/sn
 +    command: usr/share/atom/atom
 ```
 
-<h2 id='heading--examples'>Examples summary</h2>
+<h2 id='migrating-between-bases-heading--examples'>Examples summary</h2>
 
 * [Atom](https://github.com/snapcrafters/atom/pull/64)
 * [Cointop](https://github.com/miguelmota/cointop/pull/94)

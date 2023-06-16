@@ -4,7 +4,7 @@
 
 # Super-privileged interfaces
 
-Interfaces allow (or deny) access to a resource outside of a snap’s confinement. Generally, any snap can declare any [interface plug](interface-management.md#heading--slots-plugs).
+Interfaces allow (or deny) access to a resource outside of a snap’s confinement. Generally, any snap can declare any [interface plug](interface-management.md#super-privileged-interfaces-heading--slots-plugs).
 
 However, there is a limited set of interfaces that require extra scrutiny when their _plugs_ are included in a snap. This is due to their permissive nature and the control and impact they potentially have over a system.
 

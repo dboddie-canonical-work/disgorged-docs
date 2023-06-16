@@ -17,12 +17,12 @@ Each Flutter extension uses the [gnome-3-28 extension](the-gnome-3-28-extension.
 
 Use of the [flutter plugin](the-flutter-plugin.md) is optional. The plugin drives the build process while the extension handles its dependencies.
 
-- [Using the extensions](#heading--how): adding the necessary keywords to your snapcraft.yaml
-- [Interface connections](#heading--plugs): which interfaces are accessible from the extension
+- [Using the extensions](#the-flutter-extension-heading--how): adding the necessary keywords to your snapcraft.yaml
+- [Interface connections](#the-flutter-extension-heading--plugs): which interfaces are accessible from the extension
 
 > ℹ  Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See [Snapcraft extensions](snapcraft-extensions.md) for further details.
 
-<h2 id='heading--how'>Using the extensions</h2>
+<h2 id='the-flutter-extension-heading--how'>Using the extensions</h2>
 
 Each Flutter extension works with the `core18` base snap (see [Base snaps](base-snaps.md) for details). To use either extension, add `extensions: [flutter-master]` or `extensions: [flutter-dev]` to the application definition in your [snapcraft.yaml](creating-snapcraft-yaml.md) file. For instance:
 
@@ -36,7 +36,7 @@ apps:
 
 See [Flutter applications](flutter-applications.md) for a comprehensive overview of using extensions with Flutter applications.
 
-<h2 id='heading--plugs'>Interface connections</h2>
+<h2 id='the-flutter-extension-heading--plugs'>Interface connections</h2>
 
 The following plugs are provided by either extension and implicitly included in your snapcraft.yaml:
 

@@ -10,7 +10,7 @@ This extension helps you snap ROS 2 applications for the [Humble Hawksbill](http
 
 ## How to use it
 
-Add `extensions: [ ros2-humble ]` to the application definition in your `snapcraft.yaml` file. See the [ROS 2 applications](https://snapcraft.io/docs/ros2-applications#heading--core22) documentation page for a complete tutorial on how to use this extension.
+Add `extensions: [ ros2-humble ]` to the application definition in your `snapcraft.yaml` file. See the [ROS 2 applications](https://snapcraft.io/docs/ros2-applications#the-ros-2-humble-extension-heading--core22) documentation page for a complete tutorial on how to use this extension.
 
 ```yaml
     ...
@@ -39,7 +39,7 @@ apps:
 
 ## Further reading
 
-* For an example of this extension being used, see the _core22_ section of the [ROS 2 applications](https://snapcraft.io/docs/ros2-applications#heading--core22) page.
+* For an example of this extension being used, see the _core22_ section of the [ROS 2 applications](https://snapcraft.io/docs/ros2-applications#the-ros-2-humble-extension-heading--core22) page.
 * For a complete picture of what this extension does, add it to your app definition and run `snapcraft expand-extensions`.
 
 > ℹ  Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See [Snapcraft extensions](snapcraft-extensions.md) for further details.

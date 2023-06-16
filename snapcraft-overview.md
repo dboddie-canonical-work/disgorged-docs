@@ -18,7 +18,7 @@ sudo snap install snapcraft --classic
 ```
 The `--classic` argument is required because snapcraft uses [classic confinement](snap-confinement.md).
 
-Snapcraft can also be installed and run on Apple's macOS. See [Install snapcraft on macOS](installing-snapcraft.md#heading--macos) for details.
+Snapcraft can also be installed and run on Apple's macOS. See [Install snapcraft on macOS](installing-snapcraft.md#snapcraft-overview-heading--macos) for details.
 
 See below for a general overview of Snapcraft's capabilities, and see [Creating a snap](creating-a-snap.md) for a more detailed look at the process, alongside a selection of self-contained examples for some popular languages and frameworks, including [Go](go-applications.md), [Python](python-apps.md) and [C/C++](c-c-applications.md).
 
@@ -32,7 +32,7 @@ At the heart of the snapcraft build process is a file called [snapcraft.yaml](th
 
 Snapcraft offers a variety of options when using LXD and Multipass. See [Build options](build-options.md) for details on build options and [build providers](t/build-on-lxd/4157) for details on interacting with LXD and Multipass.
 
-<h3 id='heading--creating-snapcraft'>Creating snapcraft.yaml</h3>
+<h3 id='snapcraft-overview-heading--creating-snapcraft'>Creating snapcraft.yaml</h3>
 
 To get started, run `snapcraft init`. This creates a buildable snapcraft.yaml template within a snap sub-directory relative to your current filesystem location. If the command cannot be found, make sure `/snap/bin` is on your PATH.
 
@@ -50,7 +50,7 @@ The following lists how you might want to approach building a new snap for your 
     - set build dependencies, if required, and any run-time dependencies
  1. add [interface metadata](snapcraft-app-and-service-metadata.md) to connect external system resources to your application
 
-<h2 id='heading--building-your-snap'>Building your snap</h2>
+<h2 id='snapcraft-overview-heading--building-your-snap'>Building your snap</h2>
 
 When you are ready to test the contents of snapcraft.yaml, simply run `snapcraft --debug` in the same directory where you initialised the snap.
 
@@ -88,7 +88,7 @@ Created snap package my-snap-name_0.1_amd64.snap
 
 The build process will proceed through the [Snapcraft lifecycle](parts-lifecycle.md), installing and building your project's dependencies, as described by your snapcraft.yaml. The time this takes will depend on the complexity of your project and the capabilities of your system.
 
-<h2 id='heading--testing'>Testing your snap locally</h2>
+<h2 id='snapcraft-overview-heading--testing'>Testing your snap locally</h2>
 
 After a snap has been built, it can be installed locally with the `--devmode` flag, enabling your unsigned and unconfined snap to be installed:
 

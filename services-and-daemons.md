@@ -12,7 +12,7 @@ A snap daemon or service behaves the same as a native daemon or service, and wil
 
 Snap confinement prohibits a system’s users and groups from running as traditional services might, such as under a user's ownership. But a *snap_daemon* user and group can alternatively be created within a snap to provide similar user and group level control outside of a snap’s confinement. See [System usernames](system-usernames.md) for more details.
 
- See [Service management](https://snapcraft.io/docs/service-management) for details on starting and stopping services from the _snap_ command. Services and daemons can also be managed from within a snap, such as via a hook, with the [snapctl](https://snapcraft.io/docs/using-the-snapctl-tool#heading--services).
+ See [Service management](https://snapcraft.io/docs/service-management) for details on starting and stopping services from the _snap_ command. Services and daemons can also be managed from within a snap, such as via a hook, with the [snapctl](https://snapcraft.io/docs/using-the-snapctl-tool#services-and-daemons-heading--services).
 
 To set memory and CPU resource limits for a service or daemon, see [Quota groups](https://snapcraft.io/docs/quota-groups)
 

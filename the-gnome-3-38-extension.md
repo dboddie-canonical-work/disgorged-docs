@@ -13,15 +13,15 @@ The _gnome-3-38_ extension is considered experimental and requires the `--enable
 
 This extension provides many of the components needed for general desktop applications making it useful for a broader set of applications outside of those tailored for the GNOME desktop.
 
-- [How to use it](#heading--how): adding the necessary keywords to your snapcraft.yaml
-- [Interface connections](#heading--plugs): which interfaces are accessible from the extension
-- [Included packages](#heading--packages): a list of the packages the extension is build from and provides
-- [Environment variables](#heading--environment): variables used during build and snap runntime
-- [Layout set](#heading--layouts): layouts used by this extension to access files on the host
+- [How to use it](#the-gnome-3-38-extension-heading--how): adding the necessary keywords to your snapcraft.yaml
+- [Interface connections](#the-gnome-3-38-extension-heading--plugs): which interfaces are accessible from the extension
+- [Included packages](#the-gnome-3-38-extension-heading--packages): a list of the packages the extension is build from and provides
+- [Environment variables](#the-gnome-3-38-extension-heading--environment): variables used during build and snap runntime
+- [Layout set](#the-gnome-3-38-extension-heading--layouts): layouts used by this extension to access files on the host
 
 > ℹ  Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See [Snapcraft extensions](snapcraft-extensions.md) for further details.
 
-<h2 id='heading--how'>How to use it</h2>
+<h2 id='the-gnome-3-38-extension-heading--how'>How to use it</h2>
 
 This extension currently only works with the `core20` base snap (see [Base snaps](base-snaps.md) for details). To use it, add `extensions: [gnome-3-38]` to the application definition in your [snapcraft.yaml](creating-snapcraft-yaml.md) file. For instance:
 
@@ -35,7 +35,7 @@ apps:
 
 See [GTK3 applications](gtk3-applications.md) for a comprehensive overview of using extensions with GNOME applications.
 
-<h2 id='heading--plugs'>Interface connections</h2>
+<h2 id='the-gnome-3-38-extension-heading--plugs'>Interface connections</h2>
 
 The following plugs are provided by the extension and implicitly included in your snapcraft.yaml:
 
@@ -67,7 +67,7 @@ plugs: [ desktop, desktop-legacy, gsettings, opengl,wayland, x11 ]
 
 See [Adding interfaces](adding-interfaces.md) for more details.
 
-<h2 id='heading--packages'>Included packages</h2>
+<h2 id='the-gnome-3-38-extension-heading--packages'>Included packages</h2>
 
 The GNOME extension is derived from two separate snaps; a [build snap](https://github.com/ubuntu/gnome-sdk/blob/gnome-3-38-2004-sdk/snapcraft.yaml) and a [platform snap](https://github.com/ubuntu/gnome-sdk/blob/gnome-3-38-2004/snapcraft.yaml).
 
@@ -77,7 +77,7 @@ It is common for GNOME applications to release a gnome-3-38 branch of their proj
 
 The **platform snap** takes the build snap and makes all of those libraries available to your snap at build time without needing to include the pieces of the build snap that are unnecessary at runtime (like compilers) in your final snap.
 
-<h2 id='heading--environment'>Environment variables</h2>
+<h2 id='the-gnome-3-38-extension-heading--environment'>Environment variables</h2>
 
 In addition to using the build and platform snaps, the _gnome-3-38 extension_ also sets a collection of environment variables, links, default plugs for the app to use, and a default build-environment for each part in your snap to use.
 
@@ -109,7 +109,7 @@ environment:
   SNAP_DESKTOP_RUNTIME: $SNAP/gnome-platform
 ```
 
-<h2 id='heading--layouts'>Layouts set</h2>
+<h2 id='the-gnome-3-38-extension-heading--layouts'>Layouts set</h2>
 
 The host's gjs, webkit2gtk-4.0, and iso-codes are used so they don't need to be packaged as part of the snap (would greatly inflate the size).
 

@@ -41,7 +41,7 @@ If your application is not using one of those toolkits, you will need to use the
 > ⓘ Both the [`gnome-3-34` extension](https://snapcraft.io/docs/gnome-3-34-extension) and the  [`kde-neon` extension](https://snapcraft.io/docs/kde-neon-extension) automatically enable portal support for GTK 3 and Qt applications on GTK-based desktops. If your snap uses either extension, you only need to do step 1.
 
 
-<h2 id="heading--portal-vs-home">File chooser portal vs home interface<sup><a href=#heading--portal-vs-home>⚓</a></sup></h2>
+<h2 id="xdg-desktop-portals-heading--portal-vs-home">File chooser portal vs home interface<sup><a href=#xdg-desktop-portals-heading--portal-vs-home>⚓</a></sup></h2>
 
 It is recommended to use the file chooser portal instead of the [`home`](the-home-interface.md) and [`removable-media`](the-removable-media-interface.md) interfaces for the following reasons:
 

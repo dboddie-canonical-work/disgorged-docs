@@ -13,16 +13,16 @@ See [Interface management](interface-management.md) and [Supported interfaces](s
 
 ---
 
-<h2 id='heading--dev-details'>Developer details </h2>
+<h2 id='the-sd-control-interface-heading--dev-details'>Developer details </h2>
 
-**[Auto-connect](interface-management.md#heading--auto-connections)**: no</br>
+**[Auto-connect](interface-management.md#the-sd-control-interface-heading--auto-connections)**: no</br>
 **[Super-privileged](super-privileged-interfaces.md)**: yes</br>
 
 The main DualSD device node (`/dev/DualSD`) is used to control certain aspects of SD cards on the system.
 
 Requires snapd version _2.51.3+_.
 
-<h3 id='heading-code'>Code examples</h3>
+<h3 id='the-sd-control-interface-heading-code'>Code examples</h3>
 
 The source code for this interface is in the *snapd* repository:
 <https://github.com/snapcore/snapd/blob/master/interfaces/builtin/sd_control.go>

@@ -15,7 +15,7 @@ See [Interface management](interface-management.md) and [Supported interfaces](s
 
 ---
 
-<h2 id='heading--dev-details'>Developer details </h2>
+<h2 id='the-gconf-interface-heading--dev-details'>Developer details </h2>
 
 **Auto-connect**: no
 

@@ -16,24 +16,24 @@ Documentation consistency is vital, which is why we're listing some guidelines b
 
 As [Voltaire](https://en.wikipedia.org/wiki/Voltaire) wrote, "_Perfect is the enemy of good_," and we'd rather have documentation we can fix than non-existent documentation we can't.
 
-- [New Discourse users](#heading--new-users)
-- [Style and language](#heading--style)
-- [Diátaxis](#heading--diataxis)
-- [Navigation menu](#heading--navigation)
-- [Discourse markdown](#heading--markdown)
-  - [Headings and titles](#heading--headings)
-  - [Lists](#heading--lists)
-  - [Code blocks](#heading--code)
-  - [Inline code](#heading--inline)
-  - [Anchors](#heading--anchors)
-  - [Notes](#heading--notes)
-  - [Comments](#heading--comments)
-  - [Foldouts](#heading--foldouts)
-  - [Images](#heading--images)
+- [New Discourse users](#documentation-guidelines-heading--new-users)
+- [Style and language](#documentation-guidelines-heading--style)
+- [Diátaxis](#documentation-guidelines-heading--diataxis)
+- [Navigation menu](#documentation-guidelines-heading--navigation)
+- [Discourse markdown](#documentation-guidelines-heading--markdown)
+  - [Headings and titles](#documentation-guidelines-heading--headings)
+  - [Lists](#documentation-guidelines-heading--lists)
+  - [Code blocks](#documentation-guidelines-heading--code)
+  - [Inline code](#documentation-guidelines-heading--inline)
+  - [Anchors](#documentation-guidelines-heading--anchors)
+  - [Notes](#documentation-guidelines-heading--notes)
+  - [Comments](#documentation-guidelines-heading--comments)
+  - [Foldouts](#documentation-guidelines-heading--foldouts)
+  - [Images](#documentation-guidelines-heading--images)
 
 ---
 
-<h2 id='heading--new-users'> New Discourse users</h2>
+<h2 id='documentation-guidelines-heading--new-users'> New Discourse users</h2>
 
 Anyone can edit and contribute to our documentation, but you need to spend a little time with our Discourse forum first.
 
@@ -54,7 +54,7 @@ Users at Trust Level 1 can:
 * Flag posts to alert moderators
 * Mute other users
 
-<h2 id='heading--style'>Style and language</h2>
+<h2 id='documentation-guidelines-heading--style'>Style and language</h2>
 
 One of our biggest challenges is accommodating an audience with a huge variation in experience, from beginners exploring the *snap* command, through snap creators experimenting with _snapcraft.yaml_, to experts harnessing the API and deploying snaps across thousands of IoT devices.
 
@@ -77,7 +77,7 @@ We (mostly) adhere to the [Ubuntu style guide](https://docs.ubuntu.com/styleguid
   - catalogue rather than catalog
 - dates take the format _1 January 2013_, _1-2 January 2013_ and _1 January - 2 February 2013_
 
-<h2 id='heading--diataxis'>Diátaxis</h2>
+<h2 id='documentation-guidelines-heading--diataxis'>Diátaxis</h2>
 
 Our navigational structure, style, and the content of our documentation follows the [Diátaxis](https://diataxis.fr/) systematic framework for technical documentation authoring. This splits documentation pages into tutorials, how-to guides, reference material and explanatory text:
 
@@ -90,7 +90,7 @@ For further details on our Diátaxis strategy, see [Diátaxis, a new foundation 
 
 Improving our documentation and applying the principles of Diátaxis are on-going tasks. There's a lot to do, and we don't want to deter anyone from contributing to our docs. If you don't know whether something should be a tutorial, how-to, reference doc or explanatory text, either ask on the forum or publish what you're thinking. Changes are easy to make, and every contribution helps.
 
-<h2 id='heading--navigation'>Navigation menu</h2>
+<h2 id='documentation-guidelines-heading--navigation'>Navigation menu</h2>
 
 The navigation menu on the published docs site ([https://snapcraft.io/docs](https://snapcraft.io/docs)) is generated automatically from a table in that page's forum post ([https://snapcraft.io/docs/snap-documentation](https://snapcraft.io/docs/snap-documentation)).
 
@@ -101,13 +101,13 @@ If you think something should be added to our navigation, either leave a comment
 The code that creates the navigation and publishes our documentation from Discourse can be found here:
 [canonicalwebteam.discourse](https://github.com/canonical/canonicalwebteam.discourse).
 
-<h2 id='heading--markdown'>Discourse Markdown</h2>
+<h2 id='documentation-guidelines-heading--markdown'>Discourse Markdown</h2>
 
 Documentation is written in the [Markdown](https://daringfireball.net/projects/markdown/syntax) format [supported by Discourse](https://meta.discourse.org/t/post-format-reference-documentation/19197/2).
 
 Mostly, you don't need to worry about the syntax. You can simply use the style toolbar in the Discourse topic editing window to mark the elements you need.
 
-<h3 id='heading--headings'>Headings and titles</h3>
+<h3 id='documentation-guidelines-heading--headings'>Headings and titles</h3>
 
 ```markdown
 ## Subheading within a document
@@ -117,7 +117,7 @@ On `snapcraft.io/docs`, we don't use the top-level heading (`# Heading`) because
 
 Headings and subheadings need to use _sentence case_, which means the first letter is typically the only one capitalised, unless the title includes names, product names or acronyms.
 
-<h3 id='heading--lists'>Lists</h3>
+<h3 id='documentation-guidelines-heading--lists'>Lists</h3>
 
 For a bullet list, use the following syntax:
 
@@ -137,7 +137,7 @@ And for a numbered list, precede each item with `1.` (the numbering then becomes
 
 Unless a list item is particularly long (which should be avoided) and includes punctuation, don't end the item with a full stop. If one item needs a full stop, add the full stop to other items too.
 
-<h3 id='heading--code'>Code blocks</h3>
+<h3 id='documentation-guidelines-heading--code'>Code blocks</h3>
 
 Enclose a code block with three backticks and include the *type* of code:
 
@@ -162,7 +162,7 @@ kernel  4.15.0-39-generic
 
 In sympathy with the command line, we replace _$_ with _#_ when running commands from root.
 
-<h3 id='heading--inline'>Inline code<h3>
+<h3 id='documentation-guidelines-heading--inline'>Inline code<h3>
 
 Use a backtick to mark inline commands and other literals. For instance, to create `$SNAP_DATA`:
 
@@ -189,7 +189,7 @@ In tutorials, provide the exact values that you want the user to use:
 
 `docker-compose run web django-admin startproject myapp .`
 
-<h3 id='heading--hyperlinks'>Hyperlinks</h3>
+<h3 id='documentation-guidelines-heading--hyperlinks'>Hyperlinks</h3>
 
 For links to internal files or external URLs, use the following format:
 
@@ -206,7 +206,7 @@ For more details, see [Snapcraft overview](snapcraft-overview.md).
 ```
 The Discourse topic identifier, _8940_ in the above example, is optional and can be omitted.
 
-<h3 id='heading--anchors'>Anchors</h3>
+<h3 id='documentation-guidelines-heading--anchors'>Anchors</h3>
 
 Discourse Markdown does not support anchor links to a position *within* the same page or another document.
 
@@ -215,13 +215,13 @@ However, you can use standard HTML within Markdown, which means we can manually 
 The [recommended way](https://meta.discourse.org/t/deep-linking-to-headings-anchors/47552) to create anchors is using heading elements with an ID. The ID needs to have `heading--` as a prefix:
 
 ```html
-<h3 id='heading--myanchor'>Link to me</h3>
+<h3 id='documentation-guidelines-heading--myanchor'>Link to me</h3>
 ```
 
 To create an anchor called `base-snap`, for example, enter the following into your document:
 
 ```html
-<h3 id='heading--base-snap'>Base snaps</h3>
+<h3 id='documentation-guidelines-heading--base-snap'>Base snaps</h3>
 ```
 
 This can now be linked to with the following:
@@ -232,7 +232,7 @@ This can now be linked to with the following:
 
 Use HTML sparingly as it can make the raw text difficult to read.
 
-<h3 id='heading--notes'>Notes and admonishments</h3>
+<h3 id='documentation-guidelines-heading--notes'>Notes and admonishments</h3>
 
 Admonishments in Discourse use BBtext markup syntax. Using `[note]` ... `[/note]` draws a box around the contained text.
 
@@ -344,7 +344,7 @@ Uses `negative` type.
 
 Hyperlinks cannot be word-wrapped within admonishments. Doing so will not format the links.
 
-<h3 id='heading--comments'>Comments</h3>
+<h3 id='documentation-guidelines-heading--comments'>Comments</h3>
 
 Sometimes it's useful to provide information to documentation editors. For that, add the comment inside a block quote that includes the  icon. These will be excluded from the dedicated documentation web site, but will be visible in the forum when editing. It may look similar to this:
 
@@ -355,7 +355,7 @@ Sometimes it's useful to provide information to documentation editors. For that,
 This note is not visible in the dedicated documentation site.
 [/quote]
 ```
-<h3 id='heading--foldouts'>Foldouts</h3>
+<h3 id='documentation-guidelines-heading--foldouts'>Foldouts</h3>
 
 When a page contains a lot of extraneous information such as walkthroughs or reference tables, a *foldout* can be used. This will create a collapsed header which, when clicked, will expand to display all the content below it.
 
@@ -378,7 +378,7 @@ If you try to run `lxd init` on a system that is connected to a network with a
 
 [/details]
 
-<h3 id='heading--images'>Images</h3>
+<h3 id='documentation-guidelines-heading--images'>Images</h3>
 
 Most of our documentation covers command line tools, editing and developing. However, if relevant, we highly encourage the use of images. An image should be easier to understand than text, reinforce concepts being discussed in the topic, and break the monotony of words following words.
 

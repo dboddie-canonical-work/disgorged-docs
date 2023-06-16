@@ -6,7 +6,7 @@
 
 `block-devices` provides the ability to perform operations on raw disk block devices. This interface gives privileged access to the device.
 
-**[Auto-connect](interface-management.md#heading--auto-connections)**: no
+**[Auto-connect](interface-management.md#the-block-devices-interface-heading--auto-connections)**: no
 **[Super-privileged](super-privileged-interfaces.md)**: yes
 
 Requires snapd version _2.37+_.

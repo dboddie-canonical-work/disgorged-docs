@@ -8,10 +8,10 @@
 
 For a general overview of what Snapcraft is capable of, and how to build your first snap, take a look at our [Quickstart guide](snapcraft-overview.md), and see below for installation instructions:
 
-- [Linux distributions](#heading--linux)
-- [macOS](#heading--macos)
+- [Linux distributions](#installing-snapcraft-heading--linux)
+- [macOS](#installing-snapcraft-heading--macos)
 
-<h2 id='heading--linux'>Install snapcraft on Linux</h2>
+<h2 id='installing-snapcraft-heading--linux'>Install snapcraft on Linux</h2>
 
 On Linux distributions [with snap support](https://snapcraft.io/docs/installing-snapd), the easiest way to install *snapcraft* is via its snap:
 
@@ -23,7 +23,7 @@ The `--classic` argument is required because snapcraft uses [classic confinement
 
 > ⓘ If you're using an **apt** installed version of snapcraft, such as the package for [Ubuntu 18.04 LTS](http://releases.ubuntu.com/18.04/), you need to remove this (`sudo apt remove snapcraft`) and install snapcraft from its snap to access the latest features.
 
-<h2 id='heading--macos'>Install snapcraft on macOS</h2>
+<h2 id='installing-snapcraft-heading--macos'>Install snapcraft on macOS</h2>
 
 Snapcraft can also be installed and run on Apple's macOS. See [Install snapcraft on macOS](https://snapcraft.io/docs/install-snapcraft-on-macos) for details.
 

@@ -17,21 +17,21 @@ See [Interface management](interface-management.md) and [Supported interfaces](s
 
 ---
 
-<h2 id=`heading--dev-details`>Developer details </h2>
+<h2 id=`the-mount-control-interface-heading--dev-details`>Developer details </h2>
 
-**[Auto-connect](interface-management.md#heading--auto-connections)**: no</br>
+**[Auto-connect](interface-management.md#the-mount-control-interface-heading--auto-connections)**: no</br>
 **[Super-privileged](super-privileged-interfaces.md)**: yes</br>
 
 **Attributes**:
 * `persistent` (plug): defines whether the mount can be persistent or not.</br>
  Either `true` or `false`. Defaults to `false`.
-* `type` (plug): lists one or more [acceptable filesystems](#heading--filesystems) for this mount.</br>
+* `type` (plug): lists one or more [acceptable filesystems](#the-mount-control-interface-heading--filesystems) for this mount.</br>
    Example: `[ext2, ext3, ext4]`
 * `what` (plug): absolute path of what to mount using a matching wildcard.</br>
   Example: `/dev/sd*`
 * `where` (plug): either an absolute destination path for the mount, or a starting reference to  `$SNAP_COMMON` or `$SNAP_DATA` optionally followed by a path. Wildcards are also supported.</br>
   Example: `/media/$USER/**`
-* `options` (plug, required): a list of one or more [permitted options](#heading--options).</br>
+* `options` (plug, required): a list of one or more [permitted options](#the-mount-control-interface-heading--options).</br>
   Example: `[rw, sync]`</br>
 * `namespace` (plug): either `snap`, for locations within the snap, `host`, for locations outside the snap,  or `auto` to set the namespace according to the _where_ pattern. Defaults to `auto`.
 
@@ -40,11 +40,11 @@ See [AppArmor globbing syntax](https://gitlab.com/apparmor/apparmor/-/wikis/AppA
 It's the responsibility of the snapped application or service to create and maintain a mount point, using either of the following:
 - the [mount](https://man7.org/linux/man-pages/man8/mount.8.html) command
 - the [mount()](https://man7.org/linux/man-pages/man2/mount.2.html) system call
-- an accompanying [snapctl mount](https://snapcraft.io/docs/using-the-snapctl-tool#heading--mount)
+- an accompanying [snapctl mount](https://snapcraft.io/docs/using-the-snapctl-tool#the-mount-control-interface-heading--mount)
 
 The `snapctl mount` command is the only option for creating a persistent mount point via its `--persistent` mount option.
 
-<h3 id='heading--filesystems'>Accepted filesystems</h3>
+<h3 id='the-mount-control-interface-heading--filesystems'>Accepted filesystems</h3>
 
 Most filesystem types which are supported by the host system are allowed by this interface, with a few exceptions.
 
@@ -58,7 +58,7 @@ While other filesystems are accepted, the following filesystems are supported al
 
 **Note:** If only `tmpfs` is specified, `what` must be `none`.
 
-<h3 id='heading--options'>Permitted mount options</h3>
+<h3 id='the-mount-control-interface-heading--options'>Permitted mount options</h3>
 
 The following filesystem-independent mount options are permitted:
 

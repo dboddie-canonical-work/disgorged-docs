@@ -4,7 +4,7 @@
 
 # The custom-device interface
 
-The `custom-device` interface permits access to a device of a specific class and model without requiring the creation of an interface for that device alone. It’s intended to be used with [Ubuntu Core](glossary.md#heading--ubuntu-core) and its scope and specification are defined as part of the [gadget snap](gadget-snaps.md) for the deployed Ubuntu Core image.
+The `custom-device` interface permits access to a device of a specific class and model without requiring the creation of an interface for that device alone. It’s intended to be used with [Ubuntu Core](glossary.md#the-custom-device-interface-heading--ubuntu-core) and its scope and specification are defined as part of the [gadget snap](gadget-snaps.md) for the deployed Ubuntu Core image.
 
 The slot-side of the interface is used to derive which _udev_ rules are provided to the plug-side of the connection:
 
@@ -48,9 +48,9 @@ See [Interface management](interface-management.md) and [Supported interfaces](s
 
 ---
 
-<h2 id=`heading--dev-details`>Developer details</h2>
+<h2 id=`the-custom-device-interface-heading--dev-details`>Developer details</h2>
 
-**[Auto-connect](interface-management.md#heading--auto-connections)**: no</br>
+**[Auto-connect](interface-management.md#the-custom-device-interface-heading--auto-connections)**: no</br>
 **[Super-privileged](super-privileged-interfaces.md)**: yes</br>
 
 **Attributes**:

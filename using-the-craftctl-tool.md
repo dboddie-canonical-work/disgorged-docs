@@ -10,11 +10,11 @@ It is only available when building snaps with a `core22` [base snap](base-snaps.
 
 From within an override script, *craftctl* can do the following:
 
-* **[Run the default action](#heading--run-default)**
-* **[Set snap metadata](#heading--set-metadata)**
-* **[Get snap metadata](#heading--get-metadata)**
+* **[Run the default action](#using-the-craftctl-tool-heading--run-default)**
+* **[Set snap metadata](#using-the-craftctl-tool-heading--set-metadata)**
+* **[Get snap metadata](#using-the-craftctl-tool-heading--get-metadata)**
 
-<h2 id='heading--run-default'>Running the default action</h2>
+<h2 id='using-the-craftctl-tool-heading--run-default'>Running the default action</h2>
 
 When overriding a step, the default logic for that step will not be executed. Instead, the script you specify using `override-*` will run. In this script, the default logic for that step can be run with the `craftctl default` command.
 
@@ -29,7 +29,7 @@ parts:
       sed -i.bak -e 's|Icon=@app_id@$|Icon=snap.gnome-text-editor.icon|g' data/org.gnome.TextEditor.desktop.in.in
 ```
 
-<h2 id='heading--set-metadata'>Setting metadata</h2>
+<h2 id='using-the-craftctl-tool-heading--set-metadata'>Setting metadata</h2>
 
 Metadata, such as the version or title of a snap, can be dynamically set within an `override-*` script using the `craftctl set <key>=<value>` command.
 
@@ -61,9 +61,9 @@ Use `adopt-info`</br>
 To incorporate retrieved metadata correctly, ensure that `adopt-info` points  to the part that runs `craftctl set`. Without this, snap  metadata will not be updated.
 [/note]
 
-<h2 id='heading--get-metadata'>Getting metadata</h2>
+<h2 id='using-the-craftctl-tool-heading--get-metadata'>Getting metadata</h2>
 
-Current metadata values can be retrieved with `craftctl get <key>`. Replace `<key>` with the name of the value to retrieve. This command supports the same keys as [Setting metadata](#heading--set-metadata).
+Current metadata values can be retrieved with `craftctl get <key>`. Replace `<key>` with the name of the value to retrieve. This command supports the same keys as [Setting metadata](#using-the-craftctl-tool-heading--set-metadata).
 
 For example, to append the git commit hash to snap version, override _stage_, run the default action, use `craftctl get version` to get the current version, and modify it:
 

@@ -4,7 +4,7 @@
 
 # Revisions
 
-A snap's *revision* is a number assigned automatically by the [Snap Store](glossary.md#heading--snap-store) with each snap upload, giving each snap binary a unique identity within, and across, its [channels](https://snapcraft.io/docs/channels).
+A snap's *revision* is a number assigned automatically by the [Snap Store](glossary.md#revisions-heading--snap-store) with each snap upload, giving each snap binary a unique identity within, and across, its [channels](https://snapcraft.io/docs/channels).
 
 The revision number increments with each new upload. But this number is arbitrary, and only used to differentiate between uploads.
 
@@ -12,11 +12,11 @@ Neither the revision number (nor its version) enforce an order of release. The l
 
 ---
 
-- [Viewing revision numbers](#heading--viewing)
-- [Revision package management](#heading--package)
-- [Data management](#heading--data-management)
+- [Viewing revision numbers](#revisions-heading--viewing)
+- [Revision package management](#revisions-heading--package)
+- [Data management](#revisions-heading--data-management)
 
-<h2 id='heading--viewing'>Viewing revision numbers</h2>
+<h2 id='revisions-heading--viewing'>Viewing revision numbers</h2>
 
 The output to `snap info <snapname>` includes the revision number for each snap in each track and channel as a number in brackets after the publishing date:
 
@@ -41,9 +41,9 @@ chromium     112.0    2424   latest/stable  canonical✓            -
 ffmpeg       4.3.1    1286   latest/stable  snapcrafters✪         -
 ```
 
-<h2 id='heading--package'>Revision  package management</h2>
+<h2 id='revisions-heading--package'>Revision  package management</h2>
 
-The [Snap Store](glossary.md#heading--snap-store) caches several older revisions of every snap, as does the local system. By default, 2 revisions are stored locally, while [Ubuntu Core](glossary.md#heading--ubuntu-core) systems store 3. These defaults can be changed with the [refresh-retain](https://snapcraft.io/docs/managing-updates#heading--refresh-retain) system option.
+The [Snap Store](glossary.md#revisions-heading--snap-store) caches several older revisions of every snap, as does the local system. By default, 2 revisions are stored locally, while [Ubuntu Core](glossary.md#revisions-heading--ubuntu-core) systems store 3. These defaults can be changed with the [refresh-retain](https://snapcraft.io/docs/managing-updates#revisions-heading--refresh-retain) system option.
 
 The snap `install`, `refresh` and `download` commands can operate on these available revisions with an optional `--revision` argument.
 
@@ -69,7 +69,7 @@ The revision number of the snap being operated upon will appear in the output du
 
 [Release management](https://snapcraft.io/docs/release-management) details how a snap developer can publish or promote specific revisions of their snap.
 
-<h2 id='heading--data-management'>Data management</h2>
+<h2 id='revisions-heading--data-management'>Data management</h2>
 
 The revision identity is used as a reference for revision-specific data. As described in [Data locations](data-locations.md), revision-specific data for a snap is stored in a either system-wide location, or a user-specific home location:
 
@@ -82,6 +82,6 @@ This location contains any user data that the snap writes to its own home. This 
 
 When you move from one revision to the next, the revision-specific contents of **SNAP_DATA** and **SNAP_USER_DATA** are copied into new directories for the new revision. This includes moving from a higher revision number to a lower revision number (because revision numbers are arbitrary).
 
-Revision-specific directories are retained inline with the [refresh-retain](https://snapcraft.io/docs/managing-updates#heading--refresh-retain) system option.
+Revision-specific directories are retained inline with the [refresh-retain](https://snapcraft.io/docs/managing-updates#revisions-heading--refresh-retain) system option.
 
-Other than the contents of the common directories, a [Snapshot](https://snapcraft.io/docs/snapshots) stores only the data associated with the currently installed revision. See [What a snapshot stores](https://snapcraft.io/docs/snapshots#heading--what-is-stored) for more details.
+Other than the contents of the common directories, a [Snapshot](https://snapcraft.io/docs/snapshots) stores only the data associated with the currently installed revision. See [What a snapshot stores](https://snapcraft.io/docs/snapshots#revisions-heading--what-is-stored) for more details.

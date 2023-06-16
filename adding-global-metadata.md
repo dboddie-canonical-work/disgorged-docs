@@ -72,6 +72,6 @@ A snap’s confinement level is the degree of isolation it has from your system.
 
   See [Snap confinement](snap-confinement.md) for further details.
 
-For convenience, and to help avoid duplicating sources,  external metadata such as [AppStream](https://snapcraft.io/docs/using-external-metadata#heading--appstream) can be imported into *snapcraft.yaml*. See [Using external metadata](using-external-metadata.md) for further details.
+For convenience, and to help avoid duplicating sources,  external metadata such as [AppStream](https://snapcraft.io/docs/using-external-metadata#adding-global-metadata-heading--appstream) can be imported into *snapcraft.yaml*. See [Using external metadata](using-external-metadata.md) for further details.
 
 Two further global attribites are `apps:` and `parts:`. These  expand into separate sections that deal with how your snap is built and where its various resources are located.  See [Adding parts](adding-parts.md) for the next logical step in snap building.

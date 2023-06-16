@@ -20,7 +20,7 @@ slots:
 [...]
 ```
 
-<h2 id='heading--example'>Example</h2>
+<h2 id='the-pwm-interface-heading--example'>Example</h2>
 
 With an example snap application called _app_ installed, the following command will connect its PWM interface to the specified PWM device channel:
 
@@ -35,14 +35,14 @@ See [Interface management](interface-management.md) and [Supported interfaces](s
 
 ---
 
-<h2 id='heading--dev-details'>Developer details </h2>
+<h2 id='the-pwm-interface-heading--dev-details'>Developer details </h2>
 
 **Auto-connect**: no
 **Attributes**:
 * `channel` (slot): PWM device channel number to export and expose to consuming snaps
 * `chip-number` (slot): chip base number to export
 
-To use a PWM device, the snap developer must add `plugs:[pwm]` to a snap’s[ snapcraft.yaml](the-snapcraft-yaml-schema.md). The snap user can then access a specific pwm device with an[ interface connection](interface-management.md#heading--manual-connections).
+To use a PWM device, the snap developer must add `plugs:[pwm]` to a snap’s[ snapcraft.yaml](the-snapcraft-yaml-schema.md). The snap user can then access a specific pwm device with an[ interface connection](interface-management.md#the-pwm-interface-heading--manual-connections).
 
 Unless the snap is expected to actually use a set of PWM channels that is not predefined, it is recommended to define distinct plugs for each used pwm channel, like:
 

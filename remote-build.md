@@ -21,12 +21,12 @@ Supported build architectures are: **amd64**, **arm64**, **armhf**, **i386**, **
 
 > ℹ See [Creating a snap](creating-a-snap.md) for details on creating the metadata required to build a snap. For other ways to build a snap, see [Build options](build-options.md).
 
-- [Prerequisites](#heading--prerequisites)
-- [Using remote build](#heading--using)
-- [Monitor a build](#heading--monitor)
+- [Prerequisites](#remote-build-heading--prerequisites)
+- [Using remote build](#remote-build-heading--using)
+- [Monitor a build](#remote-build-heading--monitor)
 
 ---
-<h2 id='heading--prerequisites'>Prerequisites</h2>
+<h2 id='remote-build-heading--prerequisites'>Prerequisites</h2>
 
 Prospective snaps need to be open source, as the code will be publicly available, and you'll need a [Launchpad account](https://login.launchpad.net/+new_account).
 
@@ -50,7 +50,7 @@ snapcraft remote-build --build-on=amd64,arm64
 
 If no architecture is specified, remote build will default to `amd64`. For more details on how snaps handle build and run architectures, see [Architectures](architectures.md).
 
-<h2 id='heading--using'>Using remote build</h2>
+<h2 id='remote-build-heading--using'>Using remote build</h2>
 
 To instantiate a remote build, use the `remote-build` argument with snapcraft:
 
@@ -118,7 +118,7 @@ If your build is interrupted for any reason, it can be resumed with the `--recov
 snapcraft remote-build --recover
 ```
 
-<h2 id='heading--monitor'>Monitor a build</h2>
+<h2 id='remote-build-heading--monitor'>Monitor a build</h2>
 
 Command output from remote build will show build progress for each architecture. You can retrieve the same output from another terminal session within the build directory using the `--status` argument:
 

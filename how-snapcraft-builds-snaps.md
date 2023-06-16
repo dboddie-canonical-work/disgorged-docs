@@ -24,7 +24,7 @@ The list of available global options and commands can be checked with:
 snapcraft help
 ```
 
-<h2 id='heading--snapcraft'>snapcraft.yaml</h2>
+<h2 id='how-snapcraft-builds-snaps-heading--snapcraft'>snapcraft.yaml</h2>
 
 Snaps are created using a build recipe defined in a file called `snapcraft.yaml`.
 
@@ -44,7 +44,7 @@ A minimal valid snapcraft.yaml file that can be built into a working snap requir
 * Confinement level.
 * Build definition.
 
-<h3 id='heading--definitions'>Main definitions inside snapcraft.yaml</h3>
+<h3 id='how-snapcraft-builds-snaps-heading--definitions'>Main definitions inside snapcraft.yaml</h3>
 
 There is no one way for how a snap ought to be assembled. However, most snapcraft.yaml files have the same common elements, including a number of mandatory declarations. Below is a short list of these keys, which will be further explained in the Examples sections later in the tutorial.
 
@@ -64,7 +64,7 @@ It is important to note several additional details:
 
 The parts section may also include a list of [stage packages](build-and-staging-dependencies.md) (stage-packages) that will be used by the snap’s applications at runtime, e.g.: python-bcrypt. These will be obtained from the repository archives in the build instance.
 
-<h2 id='heading--build'>Snapcraft build lifecycle</h2>
+<h2 id='how-snapcraft-builds-snaps-heading--build'>Snapcraft build lifecycle</h2>
 
 Snaps are [built](parts-lifecycle.md) in several steps, collectively known as the “lifecycle”:
 
@@ -75,7 +75,7 @@ Snaps are [built](parts-lifecycle.md) in several steps, collectively known as th
 * **Pack** - Snapcraft packs the assembled components in the prime directory into a single archive.
 
 
-<h2 id='heading--output'>Snapcraft build output</h2>
+<h2 id='how-snapcraft-builds-snaps-heading--output'>Snapcraft build output</h2>
 
 The artifact of a successful Snapcraft build run is a snap file, which is itself a compressed Squashfs archive distinguished by the .snap suffix.
 
