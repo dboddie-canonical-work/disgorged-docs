@@ -29,11 +29,48 @@ Follow the step-by-step instructions below to create your first ROS snap.
 Get started now
 ---------------
 
-**ROS 1** \| \| \| \|–|–\| \| :ref:`ROS applications <7822>` \| Learn how to create a ROS snap for your application\| \| :ref:`catkin <8644>` \| Use the Catkin plugin to generate your ROS1 package\| \| :ref:`catkin-tools <8645>` \| Use the Catkin plugin to compile your ROS package \| \| :ref:`ROS extension <20070>` \| ROS extension helps you snap ROS applications. It comes along with caktin or catkin-tools plugins, adds the ROS APT package repository and sets a build and run-time environment.
+.. list-table:: **ROS 1**
+   :header-rows: 0
 
-**ROS 2** \| \| \| \|–|–\| \| :ref:`ROS 2 applications <7823>` \| Learn how to create a ROS 2 snap for your application \| \| :ref:`colcon <11895>` \| Use the Colcon plugin to build your ROS 2 package \| \| :ref:`ROS 2 Foxy extension <19639>` \| ROS 2 Foxy extension helps you snap ROS 2 applications. It comes along with the colcon plugin, adds the ROS 2 APT package repository and sets a build and run-time environment. \| \| :ref:`ROS 2 Humble extension <30809>` \| ROS 2 Humble extension helps you snap ROS 2 applications. It comes along with the colcon plugin, adds the ROS 2 APT package repository and sets a build and run-time environment. \| \| :ref:`ROS 2 shared memory <31214>` \| Learn about ROS 2 shared-memory in snaps
+   * - :ref:`ROS applications <ros-deployment-with-snaps>`
+     - Learn how to create a ROS snap for your application
+   * - :ref:`catkin <the-catkin-plugin>`
+     - Use the Catkin plugin to generate your ROS1 package
+   * - :ref:`catkin-tools <the-catkin-tools-plugin>`
+     - Use the Catkin plugin to compile your ROS package
+   * - :ref:`ROS extension <the-ros-1-noetic-extension>`
+     - ROS extension helps you snap ROS applications. It comes along with
+       caktin or catkin-tools plugins, adds the ROS APT package repository and
+       sets a build and run-time environment.
 
-**Others** \| \| \| \|–|–\| \| :ref:`ROS architectures with snaps <35431>` \| Presentation of the different snap architectures that developers can adopt for their ROS applications \| \| `ROS FAQ & troubleshooting <https://forum.snapcraft.io/t/29208>`__ \| FAQ & troubleshooting about snap and ROS integration \| \| :ref:`ROS snap with GitHub Actions <30605>` \| Build and Publish a ROS Snap with GitHub Actions \|
+.. list-table:: **ROS 2**
+   :header-rows: 0
+
+   * - :ref:`ROS 2 applications <ros-2-deployment-with-snaps>`
+     - Learn how to create a ROS 2 snap for your application
+   * - :ref:`colcon <the-colcon-plugin>`
+     - Use the Colcon plugin to build your ROS 2 package
+   * - :ref:`ROS 2 Foxy extension <the-ros2-foxy-extension>`
+     - ROS 2 Foxy extension helps you snap ROS 2 applications. It comes along
+       with the colcon plugin, adds the ROS 2 APT package repository and sets
+       a build and run-time environment.
+   * - :ref:`ROS 2 Humble extension <the-ros-2-humble-extension>`
+     - ROS 2 Humble extension helps you snap ROS 2 applications. It comes
+       along with the colcon plugin, adds the ROS 2 APT package repository
+       and sets a build and run-time environment.
+   * - :ref:`ROS 2 shared memory <ros-2-shared-memory-in-snaps>`
+     - Learn about ROS 2 shared-memory in snaps
+
+.. list-table:: **Others**
+   :header-rows: 0
+
+   * - :ref:`ROS architectures with snaps <ros-architectures-with-snaps>`
+     - Presentation of the different snap architectures that developers can
+       adopt for their ROS applications
+   * - `ROS FAQ & troubleshooting <ros-faq-troubleshooting>`__
+     - FAQ & troubleshooting about snap and ROS integration
+   * - :ref:`ROS snap with GitHub Actions <build-and-publish-a-ros-snap-with-github-actions>`
+     - Build and Publish a ROS Snap with GitHub Actions
 
 .. toctree::
    :hidden:
