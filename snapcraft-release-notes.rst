@@ -86,3 +86,39 @@ The release notes for older releases can be found below:
 +-----------------------------------+--------------------------------------------------------+
 
 
+.. toctree::
+   :hidden:
+
+   release-notes-snapcraft-3-0
+   release-notes-snapcraft-3-1
+   release-notes-snapcraft-3-1-1
+   release-notes-snapcraft-3-2
+   release-notes-snapcraft-3-3
+   release-notes-snapcraft-3-4
+   release-notes-snapcraft-3-5
+   release-notes-snapcraft-3-6
+   release-notes-snapcraft-3-7
+   release-notes-snapcraft-3-8
+   release-notes-snapcraft-3-9
+   release-notes-snapcraft-3-10
+   release-notes-snapcraft-4-0
+   release-notes-snapcraft-4-1
+   release-notes-snapcraft-4-1-1
+   release-notes-snapcraft-4-2
+   release-notes-snapcraft-4-3
+   release-notes-snapcraft-4-4
+   release-notes-snapcraft-4-5
+   release-notes-snapcraft-4-5-1
+   release-notes-snapcraft-4-5-2
+   release-notes-snapcraft-4-5-3
+   release-notes-snapcraft-4-5-4
+   release-notes-snapcraft-4-6
+   release-notes-snapcraft-4-7
+   release-notes-snapcraft-4-8
+   release-notes-snapcraft-5-0
+   release-notes-snapcraft-6-0
+   release-notes-snapcraft-6-1
+   release-notes-snapcraft-7
+   release-notes-snapcraft-7-2-0
+   release-notes-snapcraft-7-3
+   deprecation-notices

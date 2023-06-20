@@ -75,11 +75,11 @@ When a snap is installed with developer mode, violations against a snap’s secu
 Debugging policy violation logs
 -------------------------------
 
-.. raw:: html
 
-   <h3 id="debugging-snaps-heading--snappy-debug">
+.. _debugging-snaps-heading--snappy-debug:
 
 Using snappy-debug to show violations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The easiest way to find and fix policy violations is to use `the ``snappy-debug`` tool <https://snapcraft.io/snappy-debug>`__. It
 

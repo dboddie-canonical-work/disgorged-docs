@@ -1,5 +1,5 @@
 Create a snap
-============
+=============
 
 .. toctree::
    :maxdepth: 1

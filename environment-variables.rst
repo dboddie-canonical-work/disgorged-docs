@@ -56,7 +56,6 @@ Alongside the many system-specific variables, this environment will include the 
 
 .. _environment-variables-heading--snap:
 
-.. raw:: html
 ~~~~~~~~~~~~~
 
    <pre>SNAP</pre>
@@ -68,7 +67,6 @@ Typical value: ``/snap/hello-world/27``
 
 .. _environment-variables-heading--snap-arch:
 
-.. raw:: html
 ~~~~~~~~~~~~~
 
    <PRE>SNAP_ARCH</PRE>
@@ -82,7 +80,6 @@ Other values are: ``i386``, ``armhf``, ``arm64``.
 
 .. _environment-variables-heading--snap-common:
 
-.. raw:: html
 ~~~~~~~~~~~~~
 
    <pre>SNAP_COMMON</pre>
@@ -96,7 +93,6 @@ Typical value: ``/var/snap/hello-world/common``
 
 .. _environment-variables-heading--snap-data:
 
-.. raw:: html
 ~~~~~~~~~~~~~
 
    <pre>SNAP_DATA</pre>
@@ -110,7 +106,6 @@ Typical value ``/var/snap/hello-world/27``
 
 .. _environment-variables-heading--snap-euid:
 
-.. raw:: html
 ~~~~~~~~~~~~~
 
    <pre>SNAP_EUID</pre>
@@ -128,7 +123,6 @@ Requires *snapd* 2.59+.
 
 .. _environment-variables-heading--snap-instance-name:
 
-.. raw:: html
 ~~~~~~~~~~~~~
 
    <pre>SNAP_INSTANCE_NAME</pre>
@@ -142,7 +136,6 @@ Typical value: ``hello-world``
 
 .. _environment-variables-heading--snap-instance-key:
 
-.. raw:: html
 ~~~~~~~~~~~~~
 
    <pre>SNAP_INSTANCE_KEY</pre>
@@ -156,7 +149,6 @@ Typical value: none
 
 .. _environment-variables-heading--snap-library-path:
 
-.. raw:: html
 ~~~~~~~~~~~~~
 
    <pre>SNAP_LIBRARY_PATH</pre>
@@ -170,7 +162,6 @@ The referenced directory is typically empty unless Nvidia proprietary drivers ar
 
 .. _environment-variables-heading--snap-name:
 
-.. raw:: html
 ~~~~~~~~~~~~~
 
    <pre>SNAP_NAME</pre>
@@ -182,7 +173,6 @@ Typical value: ``hello-world``
 
 .. _environment-variables-heading--snap-real-home:
 
-.. raw:: html
 ~~~~~~~~~~~~~
 
    <pre>SNAP_REAL_HOME</pre>
@@ -194,7 +184,6 @@ Available `since snapd 2.46 <https://github.com/snapcore/snapd/pull/9189/commits
 
 .. _environment-variables-heading--snap-revision:
 
-.. raw:: html
 ~~~~~~~~~~~~~
 
    <pre>SNAP_REVISION</pre>
@@ -208,7 +197,6 @@ Typical value: ``27`` or ``x1``
 
 .. _environment-variables-heading--snap-save-data:
 
-.. raw:: html
 ~~~~~~~~~~~~~
 
    <pre>SNAP_SAVE_DATA</pre>
@@ -222,7 +210,6 @@ See `ubuntu-save <https://ubuntu.com/core/docs/storage-layout#environment-variab
 
 .. _environment-variables-heading--snap-uid:
 
-.. raw:: html
 ~~~~~~~~~~~~~
 
    <pre>SNAP_UID</pre>
@@ -240,7 +227,6 @@ Requires *snapd* 2.59+.
 
 .. _environment-variables-heading--snap-user-common:
 
-.. raw:: html
 ~~~~~~~~~~~~~
 
    <pre>SNAP_USER_COMMON</pre>
@@ -254,7 +240,6 @@ Typical value ``/home/zyga/snap/hello-world/common``
 
 .. _environment-variables-heading--snap-user-data:
 
-.. raw:: html
 ~~~~~~~~~~~~~
 
    <pre>SNAP_USER_DATA</pre>
@@ -270,7 +255,6 @@ The final number there is ``$SNAP_REVISION``.
 
 .. _environment-variables-heading--snap-version:
 
-.. raw:: html
 ~~~~~~~~~~~~~
 
    <pre>SNAP_VERSION</pre>
@@ -285,7 +269,6 @@ Generic variables
 
 .. _environment-variables-heading--home:
 
-.. raw:: html
 ~~~~~~~~~~~~~
 
    <pre>HOME</pre>
@@ -299,7 +282,6 @@ Typical value: ``/home/_user_name_/snap/_snap_name_/_snap_revision_`` (e.g. ``/
 
 .. _environment-variables-heading--path:
 
-.. raw:: html
 ~~~~~~~~~~~~~
 
    <pre>PATH</pre>

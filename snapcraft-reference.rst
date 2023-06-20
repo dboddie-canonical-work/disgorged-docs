@@ -35,6 +35,12 @@ Finally, for a better understanding of how Snapcraft works, and how it can be us
 .. toctree::
    :hidden:
 
+   architectures
+   base-snaps
+   documentation-guidelines
+   environment-variables
+   environment-variables-that-snapcraft-exposes
+   glossary
    supported-plugins
    supported-extensions
    supported-interfaces
@@ -43,6 +49,22 @@ Finally, for a better understanding of how Snapcraft works, and how it can be us
    snapcraft-package-repositories
    build-options
    build-providers
+   revisions
+   snapcraft-advanced-grammar
+   snapcraft-and-extended-security-maintenance
+   snapcraft-app-and-service-metadata
    snapcraft-linters
-   snapcraft-yaml-reference
+   snapcraft-parts-metadata
+   snapcraft-plugins
+   snapcraft-plugin-api
    snapcraft-release-notes
+   snapcraft-top-level-metadata
+   snapcraft-yaml-reference
+   super-privileged-interfaces
+   the-kernel-snap
+   the-snap-format
+   the-snap-refresh-control-interface
+   the-snap-themes-control-interface
+   the-snapcraft-yaml-schema
+   the-snapd-control-interface
+   validation-sets

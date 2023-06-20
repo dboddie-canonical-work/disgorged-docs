@@ -76,7 +76,7 @@ Step-by-step guide
    :hidden:
 
    snapcraft-installation-and-setup
-   how-snapcraft-builds-a-snap
+   how-snapcraft-builds-snaps
    basic-snapcraft-yaml-example
    intermediate-snapcraft-yaml-example
    build-and-publishing-example

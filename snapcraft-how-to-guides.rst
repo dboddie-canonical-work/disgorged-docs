@@ -40,6 +40,39 @@ Finally, for a better understanding of how Snapcraft works, and how it can be us
    :hidden:
 
    snapcraft-quickstart
+   adding-opengl-gpu-support-to-a-snap
+   building-the-snap
+   building-the-snap-on-linux
+   building-the-snap-on-mac
+   building-the-snap-on-windows
+   build-from-github
+   build-on-docker
+   create-a-developer-account
+   creating-docker-images-for-snapcraft
+   debug-snaps-with-snap-try
+   deploying-robotics-applications
+   desktop-applications
    how-to-create-a-snap
    how-to-snap-publishing
-   deploying-robotics-applications
+   installing-snapcraft
+   join-snapcrafters
+   micro-howto-migrate-from-core20-to-core22
+   override-build-steps
+   permission-requests
+   process-for-reviewing-classic-confinement-snaps
+   reducing-the-size-of-desktop-snaps
+   registering-your-app-name
+   remote-reusable-parts
+   stracing-snap-commands
+   system-usernames
+   the-ffmpeg-sdk-stage-snaps
+   the-hunspell-dictionaries-content-snaps
+   the-interface-auto-connection-mechanism
+   the-wxwidgets-sdk-stage-snaps
+   updating-gadget-boot-assets
+   upgrading-snapcraft
+   using-chromium-ffmpeg-in-third-party-browser-snaps
+   using-external-metadata
+   using-in-development-features-in-snapcraft-yaml
+   writing-local-plugins
+   xdg-desktop-portals

@@ -83,3 +83,17 @@ Extensions modify the ``snapcraft.yaml`` definition before a build. You can use 
        command-chain:
        - snap/command-chain/desktop-launch
    ...
+
+
+.. toctree::
+   :hidden:
+
+   the-flutter-extension
+   the-gnome-3-28-extension
+   the-gnome-3-34-extension
+   the-gnome-3-38-extension
+   the-gnome-extension
+   the-kde-neon-extension
+   the-ros-1-noetic-extension
+   the-ros2-foxy-extension
+   the-ros-2-humble-extension

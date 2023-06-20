@@ -20,3 +20,21 @@ This document contains a list of *snapcraft* deprecation notices and recommendat
 -  :ref:`DN11 <deprecation-notice-11>`: The ``push`` keywords have been replaced by ``upload`` equivalents
 -  :ref:`DN12 <deprecation-notice-12>`: The ``registered`` and ``list-registered`` keywords has been replaced by ``list``
 -  :ref:`DN13 <deprecation-notice-13>`: Support for legacy ``core`` projects will be removed in Snapcraft 5.0 (expected July 22, 2021)
+
+
+.. toctree::
+   :hidden:
+
+   deprecation-notice-1
+   deprecation-notice-2
+   deprecation-notice-3
+   deprecation-notice-4
+   deprecation-notice-5
+   deprecation-notice-6
+   deprecation-notice-7
+   deprecation-notice-8
+   deprecation-notice-9
+   deprecation-notice-10
+   deprecation-notice-11
+   deprecation-notice-12
+   deprecation-notice-13

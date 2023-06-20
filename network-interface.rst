@@ -23,3 +23,5 @@ Both ``network`` and ``network-bind`` interfaces are automatically connected on 
          - network-bind
 
 Further network-related interfaces are typically not required, unless the application needs to interrogate or control network interfaces, or manage the local firewall. Most of these are not automatically connected, but can be manually connected by the end user. In addition, the publisher may request auto-connection of these interfaces via a snapcraft forum thread.
+
+See :ref:`the-network-interface`.

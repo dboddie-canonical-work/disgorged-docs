@@ -56,5 +56,16 @@ Legacy
 
 These methods are not recommended anymore but might be useful as reference.
 
--  :ref:`Qt 5 support using the ``desktop-helpers`` <deprecated-desktop-app-support-qt5>`
+-  :ref:`Qt 5 support using the desktop-helpers <deprecated-desktop-app-support-qt5>`
 -  ```snapcraft-desktop-helpers`` <https://github.com/ubuntu/snapcraft-desktop-helpers/>`__ provided useful parts and launchers for desktop snaps, but these are deprecated in favor of the ``gnome-*`` and ``kde-neon`` extensions.
+
+
+.. toctree::
+   :hidden:
+
+   desktop-app-support-gtk
+   desktop-app-support-qt
+   desktop-app-support-qt-for-snaps-without-bases
+   desktop-app-support-qt4
+   deprecated-desktop-app-support-qt5
+   how-to-use-the-system-gtk-theme-via-the-gtk-common-themes-snap

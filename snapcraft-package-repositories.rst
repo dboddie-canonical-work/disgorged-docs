@@ -350,11 +350,11 @@ The following properties are supported for Deb-type repositories:
 Examples
 --------
 
-.. raw:: html
 
-   <h3 id="snapcraft-package-repositories-heading--example-pparepo">
+.. _snapcraft-package-repositories-heading--example-pparepo:
 
 PPA repository using “ppa” property
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code:: yaml
 

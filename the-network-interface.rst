@@ -10,3 +10,5 @@ The network interface
 **Auto-connect**: yes
 
    ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
+
+See :ref:`network-interface`.

@@ -76,11 +76,11 @@ Snapcraft exposes the following directory related environment variables when bui
 Snapcraft configuration
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-.. raw:: html
 
-   <h4 id="parts-environment-variables-heading--snapcraft-configuration-core18-core-20">
+.. _parts-environment-variables-heading--snapcraft-configuration-core18-core-20:
 
 core \| core18 \| core20
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 When building a part with bases ``core``, ``core18``, or ``core20``, the following *snapcraft* environment variables are set:
 

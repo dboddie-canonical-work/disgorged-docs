@@ -35,8 +35,24 @@ Take a look at our *Reference section* when you need to know which interfaces ca
 .. toctree::
    :hidden:
 
-   parts-lifecycle
-   troubleshoot-snap-building
+   adding-interfaces
+   choosing-a-security-model
+   classic-confinement
+   data-locations
+   debugging-building-snaps
+   gadget-snaps
+   games-interfaces
+   hardware-io-interfaces
+   interface-hooks
+   interface-management
    migrating-between-bases
+   network-interface
+   parts-lifecycle
+   snap-confinement
+   snapcraft-filesets
+   snapcraft-hook-support
+   snapcraft-metrics
+   snapcraft-offline-mode
+   troubleshoot-snap-building
    using-the-snapctl-tool
    explanation-robotics

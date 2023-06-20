@@ -334,11 +334,11 @@ Example Go plugin syntax changes: `slack-term <https://github.com/snapcrafters/s
 Application definitions
 -----------------------
 
-.. raw:: html
 
-   <h3 id="migrating-between-bases-heading--paths">
+.. _migrating-between-bases-heading--paths:
 
 Paths
+~~~~~
 
 Snapcraft now requires explicit paths to be specified for binaries listed in the ``apps`` stanza:
 

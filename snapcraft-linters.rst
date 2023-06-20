@@ -62,3 +62,10 @@ To omit specific files from a linter, add their snap location under the linter n
          - usr/lib/**/libfoo.so*
 
 In the above example, the ``classic`` linter will be disabled entirely, and the ``library`` linter will not run for the files matching the specified file pattern.
+
+
+.. toctree::
+   :hidden:
+
+   classic-linter
+   library-linter
