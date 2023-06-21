@@ -100,7 +100,7 @@ The :ref:`base <base-snaps>` keyword defines a special kind of snap that provide
 
    base: core22
 
-```core22`` <https://snapcraft.io/core22>`__ is latest standard base for snap building and is built on `Ubuntu 22.04 LTS <http://releases.ubuntu.com/22.04/>`__.
+`core22 <https://snapcraft.io/core22>`__ is latest standard base for snap building and is built on `Ubuntu 22.04 LTS <http://releases.ubuntu.com/22.04/>`__.
 
 Security model
 ^^^^^^^^^^^^^^

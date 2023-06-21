@@ -53,7 +53,7 @@ If you cannot find an answer to your question here, feel free to ask it on `the 
       -  ``$SNAP_DATA``, typical value: ``/var/snap/hello-world/27``. Owned by ``root``
       -  ``$SNAP_USER_DATA``, typical value: ``/home/$USER/snap/hello-world/27``. Owned by ``$USER``
 
-   -  Additionally, with the ```home`` interface <https://snapcraft.io/docs/home-interface>`__, your snap could access the real ``$HOME`` of the user by accessing ``$SNAP_REAL_HOME``. # Troubleshooting
+   -  Additionally, with the `home interface <https://snapcraft.io/docs/home-interface>`__, your snap could access the real ``$HOME`` of the user by accessing ``$SNAP_REAL_HOME``. # Troubleshooting
 
 -  The command(s) ``rosrun`` and/or ``roslaunch`` are not available in my snap.
 
@@ -104,7 +104,7 @@ If you cannot find an answer to your question here, feel free to ask it on `the 
 
       [rospack] Unable to create temporary cache file /home/USER/.ros/.rospack_cache.VyyWPF: Permission denied
 
-   -  By default rospack and roslog write to the ``$HOME/.ros``. When strictly confined a snap who doesn’t have the ```home`` interface <https://snapcraft.io/docs/home-interface>`__ cannot access the host ``$HOME``. Also, even with the ```home`` plug <https://snapcraft.io/docs/home-interface>`__ the snap cannot access to hidden directories (.directories) for security reasons (like .ssh).
+   -  By default rospack and roslog write to the ``$HOME/.ros``. When strictly confined a snap who doesn’t have the `home interface <https://snapcraft.io/docs/home-interface>`__ cannot access the host ``$HOME``. Also, even with the `home plug <https://snapcraft.io/docs/home-interface>`__ the snap cannot access to hidden directories (.directories) for security reasons (like .ssh).
 
    -  To solve that we can write ROS logs in the ``$SNAP_USER_DATA`` environment variable. We can do so by defining the ROS environment variable ``ROS_HOME``. We can do so by adding to a snap app in the ``snapcraft.yaml``:
 

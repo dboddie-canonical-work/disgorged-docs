@@ -90,7 +90,7 @@ The base keyword declares which *base snap* to use with your project. A base sna
 
    base: core20
 
-As used above, ```core20`` <https://snapcraft.io/core20>`__ is the current standard base for snap building and is based on `Ubuntu 20.04 LTS <http://releases.ubuntu.com/20.04/>`__.
+As used above, `core20 <https://snapcraft.io/core20>`__ is the current standard base for snap building and is based on `Ubuntu 20.04 LTS <http://releases.ubuntu.com/20.04/>`__.
 
 See :ref:`Base snaps <base-snaps>` for more details.
 

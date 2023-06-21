@@ -96,7 +96,7 @@ The ``base`` keyword defines a special kind of snap that provides a run-time env
 
    base: core20
 
-```core20`` <https://snapcraft.io/core20>`__ is a standard base for snap building and is built on `Ubuntu 20.04 LTS <http://releases.ubuntu.com/20.04/>`__.
+`core20 <https://snapcraft.io/core20>`__ is a standard base for snap building and is built on `Ubuntu 20.04 LTS <http://releases.ubuntu.com/20.04/>`__.
 
 Security model
 ^^^^^^^^^^^^^^
@@ -128,7 +128,7 @@ If you don’t want your command prefixed you can request an alias for it on the
          - dbus-daemon
        common-id: com.github.johnfactotum.Foliate
 
-This application uses the :ref:```gnome-3-38`` extension <the-gnome-3-38-extension>`. This will make GTK and Gnome libraries available to the snap at runtime and it will configure the runtime environment of the application so that all desktop functionality is correctly initialised.
+This application uses the :ref:`gnome-3-38 extension <the-gnome-3-38-extension>`. This will make GTK and Gnome libraries available to the snap at runtime and it will configure the runtime environment of the application so that all desktop functionality is correctly initialised.
 
 The ``common-id`` property is used to link this application to the AppStream metadata specified further down below. This will cause this ``app`` to use the ``.desktop`` launcher specified in the AppStream file.
 

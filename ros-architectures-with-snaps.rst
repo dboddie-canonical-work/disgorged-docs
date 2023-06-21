@@ -97,7 +97,7 @@ Complexity
 
 Deploying multiple snaps means multiple snapcraft.yaml files to define, build, and maintain, making the multi-snap architecture more complex.
 
-ROS 2 DDS default implementation ``FastDDS`` can use shared memory to exchange faster when two ```DomainParticipants`` <https://fast-dds.docs.eprosima.com/en/latest/fastdds/api_reference/dds_pim/domain/domainparticipant.html>`__ are on the same host. You can enable shared memory across multi snaps with the `addition of an extra interface <https://snapcraft.io/docs/ros2-shared-memory-in-snaps>`__.
+ROS 2 DDS default implementation ``FastDDS`` can use shared memory to exchange faster when two `DomainParticipants <https://fast-dds.docs.eprosima.com/en/latest/fastdds/api_reference/dds_pim/domain/domainparticipant.html>`__ are on the same host. You can enable shared memory across multi snaps with the `addition of an extra interface <https://snapcraft.io/docs/ros2-shared-memory-in-snaps>`__.
 
 .. _stability-1:
 
