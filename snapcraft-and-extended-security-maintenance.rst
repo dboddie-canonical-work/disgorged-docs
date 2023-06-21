@@ -64,7 +64,7 @@ Visit `ubuntu.com/advantage <https://ubuntu.com/advantage>`__ to create an accou
 Using the Ubuntu Advantage token
 --------------------------------
 
-The :ref:``--ua-token`` argument is used with the ```snapcraft`` <snapcraft-overview>` command to specify an Ubuntu Advantage token when building a snap (requires :ref:`Snapcraft 4.7+ <release-notes-snapcraft-4-7>`):
+The :ref:``--ua-token`` argument is used with the `snapcraft <snapcraft-overview>` command to specify an Ubuntu Advantage token when building a snap (requires :ref:`Snapcraft 4.7+ <release-notes-snapcraft-4-7>`):
 
 .. code:: bash
 

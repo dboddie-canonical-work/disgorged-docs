@@ -219,7 +219,7 @@ Runs a script before the plugin’s `build <parts-lifecycle.md#snapcraft-parts-m
 
 The script is run before the build step defined for ``parts.<part-name>.plugin:ref:`` starts. The working directory is the base build directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``. A set of `Environment Variables <environment-variables>` will be available to the script.
 
-   ⚠ The release of :ref:`Snapcraft 3.0 <release-notes-snapcraft-3-0>` made this key obsolete. Use ```override-build`` <snapcraft-parts-metadata-heading--override-build_>`__ instead.
+   ⚠ The release of :ref:`Snapcraft 3.0 <release-notes-snapcraft-3-0>` made this key obsolete. Use `override-build <snapcraft-parts-metadata-heading--override-build_>`__ instead.
 
 prime
 ~~~~~

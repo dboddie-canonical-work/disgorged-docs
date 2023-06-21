@@ -710,7 +710,7 @@ R7E1
 Internal read/write configuration
 ---------------------------------
 
-Internally, snapd maintains a list of which revisions of a snap can read and write to each epoch. You can set these from snapcraft using ```passthrough`` <https://snapcraft.io/docs/using-in-development-features>`__. For example, ``1*`` is equivalent to:
+Internally, snapd maintains a list of which revisions of a snap can read and write to each epoch. You can set these from snapcraft using `passthrough <https://snapcraft.io/docs/using-in-development-features>`__. For example, ``1*`` is equivalent to:
 
 .. code:: yaml
 

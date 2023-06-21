@@ -25,8 +25,8 @@ Available linters
 
 Snapcraft currently offers the following linters:
 
--  :ref:```classic`` <classic-linter>`: verifies binary file parameters for snaps using :ref:`classic confinement <snap-confinement>`
--  :ref:```library`` <library-linter>`: verifies that no ELF file dependencies, such as libraries, are missing and that no extra libraries are included in the snap package
+-  :ref:`classic <classic-linter>`: verifies binary file parameters for snaps using :ref:`classic confinement <snap-confinement>`
+-  :ref:`library <library-linter>`: verifies that no ELF file dependencies, such as libraries, are missing and that no extra libraries are included in the snap package
 
 
 .. _snapcraft-linters-heading--disable:

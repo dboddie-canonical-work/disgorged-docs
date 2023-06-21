@@ -97,7 +97,7 @@ This plugin uses the following plugin-specific keywords:
         - git+https://github.com/inuits/mkdocs-factsheet.git  # Install from a git repository
         - https://github.com/cmacmackin/markdown-include/archive/v0.5.1.tar.gz  # Install from an archive
 
-   See the ```pip install`` docs <https://pip.pypa.io/en/stable/reference/pip_install/#pip-install>`__ for more information.
+   See the `pip install docs <https://pip.pypa.io/en/stable/reference/pip_install/#pip-install>`__ for more information.
 
 -  **``python-version``** (string; default: ``python3``) The python version to use. Valid options are ``python2`` and ``python3``
 

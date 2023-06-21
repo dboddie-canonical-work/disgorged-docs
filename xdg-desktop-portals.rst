@@ -45,7 +45,7 @@ How to use portals in your snap
 File chooser portal vs home interface
 -------------------------------------
 
-It is recommended to use the file chooser portal instead of the :ref:```home`` <the-home-interface>` and :ref:```removable-media`` <the-removable-media-interface>` interfaces for the following reasons:
+It is recommended to use the file chooser portal instead of the :ref:`home <the-home-interface>` and :ref:`removable-media <the-removable-media-interface>` interfaces for the following reasons:
 
 -  The portal gives the user complete control over what exact files your application should access while the interfaces are all-or-nothing toggles.
 -  The portal works with hidden files and folders in the home directory. If a user chooses a hidden file, the portal will give your application access to it. The ``home`` interface does not give your app access to hidden files and folders in the home directory for security reasons. Note that the ``home`` interface does give access to hidden files and folders elsewhere, just not in the home directory itself.
@@ -64,7 +64,7 @@ The FileChooser portal also contains a few bugs:
 Known Limitations
 -----------------
 
--  :ref:``org.freedesktop.portal.Flatpak.Spawn`` only works in a Flatpak. If your application needs to run abritrary binaries on the host system, you can use `classic confinement <snap-confinement>`.
+-  ``org.freedesktop.portal.Flatpak.Spawn`` only works in a Flatpak. If your application needs to run abritrary binaries on the host system, you can use :ref:`classic confinement <snap-confinement>`.
 -  Portal support depends on the version of ``xdg-desktop-portal`` in the host system. Older versions do not support all portals. `Repology <https://repology.org/project/xdg-desktop-portal/versions>`__ shows what version of ``xdg-desktop-portal`` each distribution has and the `portals NEWS <https://github.com/flatpak/xdg-desktop-portal/blob/master/NEWS>`__ file explains what portals each version supports.
 
 ..

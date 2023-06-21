@@ -116,7 +116,7 @@ Security best practice dictates file access should be performed with the minimal
 subuid, subgid and other container technologies
 -----------------------------------------------
 
-Snapd takes great care to avoid overlapping with other container technologies (or in the case of systemd, working with ```systemd-nspawn``\ ’s collision detection <https://github.com/systemd/systemd/blob/master/docs/UIDS-GIDS.md>`__). It uses the ``524288-589823`` UID/GID range, for instance, to help avoid the default ranges for LXD, Docker and other container systems.
+Snapd takes great care to avoid overlapping with other container technologies (or in the case of systemd, working with `systemd-nspawn\ ’s collision detection <https://github.com/systemd/systemd/blob/master/docs/UIDS-GIDS.md>`__). It uses the ``524288-589823`` UID/GID range, for instance, to help avoid the default ranges for LXD, Docker and other container systems.
 
 Some administrators may adjust their non-snap container runtimes to use non-default values (eg, via ``/etc/subuid``, ``/etc/subgid``, etc). While it is non-fatal for other container ranges to overlap with snapd’s range, best practice dictates that a different range should always be used to ensure a clean separation between snapd and other container ranges in the kernel on the system.
 

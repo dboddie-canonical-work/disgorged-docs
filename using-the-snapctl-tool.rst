@@ -38,7 +38,7 @@ From within a snap, *snapctl* can do the following:
 Configuration options
 ---------------------
 
-A snap’s configuration options can be queried and altered with the ``snapctl get``, ``snapctl set`` and ``snapctl unset`` commands. These work very similar to the analogous ```snap get/set/..`` commands </t/managing-snap-configuration/510>`__ outside the snap. The main difference is that using these commands from within a snap will *not* trigger `the ``configure`` hook </t/supported-snap-hooks/3795#heading--the-configure-hook>`__.
+A snap’s configuration options can be queried and altered with the ``snapctl get``, ``snapctl set`` and ``snapctl unset`` commands. These work very similar to the analogous `snap get/set/.. commands </t/managing-snap-configuration/510>`__ outside the snap. The main difference is that using these commands from within a snap will *not* trigger `the ``configure`` hook </t/supported-snap-hooks/3795#heading--the-configure-hook>`__.
 
 The ``snapctl`` command uses the same get, set and unset syntax as the snap command:
 

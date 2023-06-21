@@ -13,7 +13,7 @@ Systems running snapd will periodically make a refresh request to the store, che
 
 To access the Snap Store, simply go to https://snapcraft.io/store and login with your developer account credentials. See `Using the Snap Store </t/using-the-snap-store/12379>`__ if you don’t yet have an account, and have yet to publish snaps to the store.
 
-Snap Store metrics can also be retrieved with ```snapcraft metrics`` </t/snapcraft-metrics/25732>`__ command.
+Snap Store metrics can also be retrieved with `snapcraft metrics </t/snapcraft-metrics/25732>`__ command.
 
 My published snaps
 ------------------

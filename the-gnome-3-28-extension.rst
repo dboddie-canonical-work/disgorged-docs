@@ -43,8 +43,8 @@ What it does
 
 To do this, it connects each application to the following content snaps at run time.
 
--  ```gtk-common-themes`` <https://snapcraft.io/gtk-common-themes>`__ for common GTK, icon, cursor and sound themes.
--  ```gnome-3-28-1804`` <https://snapcraft.io/gnome-3-28-1804>`__ for the GNOME runtime libraries and utilities corresponding to 3.28.
+-  `gtk-common-themes <https://snapcraft.io/gtk-common-themes>`__ for common GTK, icon, cursor and sound themes.
+-  `gnome-3-28-1804 <https://snapcraft.io/gnome-3-28-1804>`__ for the GNOME runtime libraries and utilities corresponding to 3.28.
 
 It also configures each application entry with these additional plugs:
 

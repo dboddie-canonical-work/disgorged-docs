@@ -83,6 +83,6 @@ DO NOT plug both ``cups`` and ``cups-control`` in the same Snap. This can mess u
 
 See a `complete example here <https://github.com/snapcore/test-snapd-cups-consumer>`__.
 
-Instructions originally posted in the ```cups`` interface launch thread <https://forum.snapcraft.io/t/new-interface-cups-for-all-snaps-which-print/>`__ and earlier in the `OpenPrinting March 2022 News Post <https://openprinting.github.io/OpenPrinting-News-March-2022/#cups-snap-and-snapd-printing-interface>`__.
+Instructions originally posted in the `cups interface launch thread <https://forum.snapcraft.io/t/new-interface-cups-for-all-snaps-which-print/>`__ and earlier in the `OpenPrinting March 2022 News Post <https://openprinting.github.io/OpenPrinting-News-March-2022/#cups-snap-and-snapd-printing-interface>`__.
 
 Design and development work discussed `here <https://forum.snapcraft.io/t/handling-of-the-cups-plug-by-snapd-especially-auto-connection/>`__ and `here <https://forum.snapcraft.io/t/cups-interface-merged-into-snapd-additional-steps-to-complete/>`__.

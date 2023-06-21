@@ -23,7 +23,7 @@ Add :ref:``extensions: [ kde-neon ]`` to the application definition in your ``sn
 
 ..
 
-   ℹ If you are using ``core18`` as a base and your application needs access to the Qt5 and KDE Frameworks development tools, add ```kde-frameworks-5-core18-sdk`` <https://snapcraft.io/kde-frameworks-5-core18-sdk>`__ to the ``build-snaps`` of the part that builds your application (this action is not required when using ``core20`` as a base).
+   ℹ If you are using ``core18`` as a base and your application needs access to the Qt5 and KDE Frameworks development tools, add `kde-frameworks-5-core18-sdk <https://snapcraft.io/kde-frameworks-5-core18-sdk>`__ to the ``build-snaps`` of the part that builds your application (this action is not required when using ``core20`` as a base).
 
 What it does
 ------------
@@ -33,10 +33,10 @@ What it does
 
 To do this, it connects each application to the following content snaps at run time.
 
--  ```gtk-common-themes`` <https://snapcraft.io/gtk-common-themes>`__ for common icon, cursor and sound themes.
--  ```kde-frameworks-5-core18`` <https://snapcraft.io/kde-frameworks-5-core18>`__ for the Qt5 and KDE Frameworks runtime libraries when the base is ``core18``.
--  ```kde-frameworks-5-99-qt-5-15-7-core20`` <https://snapcraft.io/kde-frameworks-5-99-qt-5-15-7-core20>`__ for the Qt5 and KDE Frameworks runtime libraries when the base is ``core20``.
--  ```kde-frameworks-5-102-qt-5-15-8-core22`` <https://snapcraft.io/kde-frameworks-5-102-qt-5-15-8-core22>`__ for the Qt5 and KDE Frameworks runtime libraries when the base is ``core22``.
+-  `gtk-common-themes <https://snapcraft.io/gtk-common-themes>`__ for common icon, cursor and sound themes.
+-  `kde-frameworks-5-core18 <https://snapcraft.io/kde-frameworks-5-core18>`__ for the Qt5 and KDE Frameworks runtime libraries when the base is ``core18``.
+-  `kde-frameworks-5-99-qt-5-15-7-core20 <https://snapcraft.io/kde-frameworks-5-99-qt-5-15-7-core20>`__ for the Qt5 and KDE Frameworks runtime libraries when the base is ``core20``.
+-  `kde-frameworks-5-102-qt-5-15-8-core22 <https://snapcraft.io/kde-frameworks-5-102-qt-5-15-8-core22>`__ for the Qt5 and KDE Frameworks runtime libraries when the base is ``core22``.
 
 It also configures each application entry with these additional plugs.
 
