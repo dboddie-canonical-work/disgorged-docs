@@ -7,13 +7,6 @@ Create a developer account
 
 To upload your snap to the `Snap Store <https://snapcraft.io/store>`__ and access its management web interface, you will need a developer account. If you don’t already have one, creating one is easy.
 
--  `Ubuntu One details <create-a-developer-account-heading--setup_>`__
--  `Developer account id <create-a-developer-account-heading--developer-id_>`__
--  `Adding SSH keys to your account <create-a-developer-account-heading--ssh-keys_>`__
-
---------------
-
-
 .. _create-a-developer-account-heading--details:
 
 Ubuntu One setup
@@ -39,7 +32,7 @@ Once you have accepted the terms, your developer account is immediately ready to
 
 .. _create-a-developer-account-heading--developer-id:
 
-Developer account id
+Developer account ID
 --------------------
 
 It’s useful to know your developer account id when building `Ubuntu Core devices <https://ubuntu.com/core/docs/system-user>`__, interacting with the Snap Store `review team <https://forum.snapcraft.io/c/store-requests/19>`__ and using the `snapd API <https://snapcraft.io/docs/snapd-rest-api>`__.
@@ -109,7 +102,7 @@ If you don’t already have an SSH key pair, or would like to use a new one, the
 
 You will be prompted for a filename and then for a passphrase. We recommend using a filename unique for this role, such as ``ucid_rsa``. Adding a passphrase secures against your private key being compromised, but it will need to be entered whenever the key is used.
 
-.. code:: bash
+.. code:: text
 
    Generating public/private rsa key pair.
    Enter file in which to save the key (/home/ubuntu/.ssh/id_rsa): ucid_rsa

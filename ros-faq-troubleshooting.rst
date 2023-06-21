@@ -119,7 +119,7 @@ If you cannot find an answer to your question here, feel free to ask it on `the 
 
    -  The data will also be available from the host in: ``~/snap/YOUR_SNAP_NAME/current/ros``
 
-   ROS 2 communication library is trying to use the shared memory mechanism. Don’t worry, even if you see this error, the messages are going to be transmitted (just not through shared memory). If you want to use the shared memory of ROS 2 within snap, visit: :ref:`ROS 2 shared memory in snap <31214>`
+   ROS 2 communication library is trying to use the shared memory mechanism. Don’t worry, even if you see this error, the messages are going to be transmitted (just not through shared memory). If you want to use the shared memory of ROS 2 within snap, visit: :ref:`ros-2-shared-memory-in-snaps`
 
 -  Calling ``snapcraft`` give the following error: \``\` Failed to install GPG key: unable to establish connection to key server ‘keyserver.ubuntu.com’
 

@@ -108,7 +108,7 @@ Publishers who want to move to ‘base: core20’ must drop builds for the i386 
      - build-on: ppc64el
      - build-on: s390x
 
-For potential approaches to maintain an i386 build of a snap, see :ref:`How best to handle i386 when moving to core20 <17680>`.
+For potential approaches to maintain an i386 build of a snap, see `How best to handle i386 when moving to core20 <https://forum.snapcraft.io/t/17680>`.
 
 
 .. _migrating-between-bases-heading--environment:

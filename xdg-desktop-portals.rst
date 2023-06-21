@@ -37,7 +37,7 @@ How to use portals in your snap
 
 ..
 
-   ⓘ Both the ```gnome-3-34`` extension <https://snapcraft.io/docs/gnome-3-34-extension>`__ and the ```kde-neon`` extension <https://snapcraft.io/docs/kde-neon-extension>`__ automatically enable portal support for GTK 3 and Qt applications on GTK-based desktops. If your snap uses either extension, you only need to do step 1.
+   ⓘ Both the `gnome-3-34 extension <https://snapcraft.io/docs/gnome-3-34-extension>`__ and the `kde-neon extension <https://snapcraft.io/docs/kde-neon-extension>`__ automatically enable portal support for GTK 3 and Qt applications on GTK-based desktops. If your snap uses either extension, you only need to do step 1.
 
 
 .. _xdg-desktop-portals-heading--portal-vs-home:

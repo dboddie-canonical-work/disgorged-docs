@@ -5,7 +5,7 @@
 Classic confinement
 ===================
 
-Classic confinement is a permissive :ref:`Snap confinement <6233>` level, equivalent to the full system access that traditionally packaged applications have.
+Classic confinement is a permissive :ref:`Snap confinement <snap-confinement>` level, equivalent to the full system access that traditionally packaged applications have.
 
 It’s often used as a stop-gap measure to enable developers to publish applications that need more access than the current set of interfaces and permissions allow.
 
@@ -146,7 +146,7 @@ When a classic snap is installed, *snapd* will perform the following actions:
 Classic confinement at build time
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-:ref:`Snapcraft <8940>` builds classic snaps differently from snaps with strict confinement.
+:ref:`Snapcraft <snapcraft-overview>` builds classic snaps differently from snaps with strict confinement.
 
 .. figure:: https://assets.ubuntu.com/v1/24ce3093-confinement_03.png
    :alt: Snap confinement at run time

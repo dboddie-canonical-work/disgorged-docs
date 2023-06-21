@@ -34,11 +34,11 @@ Developer details
        snapd:
            interface: snapd-control
            refresh-schedule: managed
-    ```
 
-   Permitting only manual refreshes is a 3 stage process with the above being the first stage. The second stage is to connect the interface, effectively granting permission for refresh management while the third is to set the following _core_ system setting:
+Permitting only manual refreshes is a 3 stage process with the above being the first stage. The second stage is to connect the interface, effectively granting permission for refresh management while the third is to set the following _core_ system setting:
 
-   ```bash
+.. code:: bash
+
    sudo snap set core refresh.timer=managed
 
 The last step activates the manual-only refresh option, skipping upcoming refresh attempts. These values are rechecked and reconfirmed before every future refresh attempt. If any of the steps stop being true, the snap refresh proceeds.

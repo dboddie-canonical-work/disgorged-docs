@@ -23,7 +23,7 @@ Next, install snapcraft:
    brew install snapcraft
 
 .. note::
-          ⚠ The remainder of these steps depend upon functionality landing in October 2018. Prior to this, you can use :ref:`Docker <building-the-snap-on-docker>` to build snaps on Mac.
+          ⚠ The remainder of these steps depend upon functionality landing in October 2018. Prior to this, you can use :ref:`Docker <build-on-docker>` to build snaps on Mac.
 
 Return to the root directory of the project containing your snapcraft.yaml and run snapcraft:
 
