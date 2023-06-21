@@ -5,32 +5,23 @@
 Glossary
 ========
 
+This topic is under construction. Feel free to add new terms.
 
-    This topic is under construction. Feel free to add new terms.
+..   TODO:
+..   plugin
+..   snapcraft.yaml
+..   metrics
+..   dangerous
 
-   To help with linking to these terms, we're using the following syntax as the heading for each title definition:
-
-   ```html
-.. _glossary-heading--term:
-   ```
-
-   TODO:
-   plugin
-   snapcraft.yaml
-   metrics
-   dangerous
-   [/quote]
-
-   
-
-There are a significant number of terms and definitions that are unique to the snap, snapd, and snapcraft ecosystem. This page defines the terminology and other terms touched by these tools and links to further information when required.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+There are a significant number of terms and definitions that are unique to the
+snap, snapd, and snapcraft ecosystem. This page defines the terminology and
+other terms touched by these tools and links to further information when
+required.
 
 If you’re new to using snaps, take a look at `Getting started <https://snapcraft.io/docs/quickstart-guide>`__, and if you’re looking to build your own snaps, take a look at the :ref:`Snapcraft overview <snapcraft-overview>`.
 
 Terms and definitions
 ---------------------
-
 
 .. _glossary-heading--appliance:
 
