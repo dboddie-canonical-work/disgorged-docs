@@ -114,7 +114,7 @@ Now your applications will use the icon theme, cursor theme and open/save file d
 Examples
 --------
 
-You can take a look at the ```snapcraft.yaml`` file of ``keepassxc`` <https://github.com/keepassxreboot/keepassxc/blob/develop/snap/snapcraft.yaml>`__ for a complete example of a qt5 snap.
+You can take a look at the `snapcraft.yaml file of ``keepassxc`` <https://github.com/keepassxreboot/keepassxc/blob/develop/snap/snapcraft.yaml>`__ for a complete example of a qt5 snap.
 
 References
 ----------

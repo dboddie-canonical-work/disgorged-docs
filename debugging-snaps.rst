@@ -14,15 +14,15 @@ Debugging snaps
 
 Each snap runs inside its own :ref:`confined environment <snap-confinement>`, also called “sandbox”. The policy of each sandbox describes what the application is allowed to do. When an application tries to do something that is not allowed, the system logs a policy violation. The following techniques can help you investigate and solve these policy violations.
 
--  Use :ref:```snap try`` <debug-snaps-with-snap-try>` to quickly test changes without rebuilding your snap.
+-  Use :ref:`snap try <debug-snaps-with-snap-try>` to quickly test changes without rebuilding your snap.
 
--  Use ```snap run --shell`` <debugging-snaps-heading--shell_>`__ to inspect and test the confined environment.
+-  Use `snap run --shell <debugging-snaps-heading--shell_>`__ to inspect and test the confined environment.
 
 -  Use `developer mode <debugging-snaps-heading--developer_>`__ to try your snap without confinement.
 
 -  Investigating policy violation logs.
 
-   -  Use ```snappy-debug`` <debugging-snaps-heading--snappy-debug_>`__ to investigate violation logs and receive suggestions.
+   -  Use `snappy-debug <debugging-snaps-heading--snappy-debug_>`__ to investigate violation logs and receive suggestions.
    -  `Manually search the raw logs <debugging-snaps-heading--manual-log_>`__.
    -  `Understanding AppArmor <debugging-snaps-heading--apparmor_>`__ violations.
    -  `Understanding seccomp <debugging-snaps-heading--seccomp_>`__ violations.
@@ -159,7 +159,7 @@ For example:
 
 1. build the snap
 2. copy the snap to the target device and install it (or use :ref:`snap try <debug-snaps-with-snap-try>`)
-3. use the snap (perhaps using ```snap run --shell <name>.<command>`` <debugging-snaps-heading--shell_>`__), monitoring via journalctl for denials
+3. use the snap (perhaps using `snap run --shell <name>.<command> <debugging-snaps-heading--shell_>`__), monitoring via journalctl for denials
 4. modifying ``/var/lib/snapd/apparmor/profiles/snap.<name>.<command>`` as needed (eg, adding rules before the final ``'}'``)and running ``sudo apparmor_parser -r /var/lib/snapd/apparmor/profiles/snap.<name>.<command>`` to compile and load the policy into the kernel
 5. use ``sudo service snap.<name>.<command> stop/start/etc`` as needed for daemons
 6. repeat until AppArmor policy issues are resolved

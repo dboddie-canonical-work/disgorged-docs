@@ -13,7 +13,7 @@ A *base* snap is a special kind of snap that provides a run-time environment wit
 Supported base snaps
 --------------------
 
-There are currently five supported bases: - ```core22`` <https://snapcraft.io/core22>`__: the newest base, built from `Ubuntu 22.04 LTS <https://releases.ubuntu.com/22.04/>`__. - ```core20`` <https://snapcraft.io/core20>`__: built from `Ubuntu 20.04 LTS <https://releases.ubuntu.com/20.04/>`__. - ```core18`` <https://snapcraft.io/core18>`__: the previous standard base for snap building, based on `Ubuntu 18.04 LTS <http://releases.ubuntu.com/18.04/>`__. - ```core`` <https://snapcraft.io/core>`__: based on `Ubuntu 16.04 ESM <http://releases.ubuntu.com/16.04/>`__, not to be confused with ``core16`` (see below). - ```bare`` <https://snapcraft.io/bare>`__: an empty base that’s useful with fully statically linked snaps and when testing.
+There are currently five supported bases: - `core22 <https://snapcraft.io/core22>`__: the newest base, built from `Ubuntu 22.04 LTS <https://releases.ubuntu.com/22.04/>`__. - `core20 <https://snapcraft.io/core20>`__: built from `Ubuntu 20.04 LTS <https://releases.ubuntu.com/20.04/>`__. - `core18 <https://snapcraft.io/core18>`__: the previous standard base for snap building, based on `Ubuntu 18.04 LTS <http://releases.ubuntu.com/18.04/>`__. - `core <https://snapcraft.io/core>`__: based on `Ubuntu 16.04 ESM <http://releases.ubuntu.com/16.04/>`__, not to be confused with ``core16`` (see below). - `bare <https://snapcraft.io/bare>`__: an empty base that’s useful with fully statically linked snaps and when testing.
 
 Older releases of ``core`` were occasionally referred to as *core 16*, but ``core`` and ``core16`` are now two distinct packages.
 

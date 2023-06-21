@@ -51,7 +51,7 @@ Permitted values should then be documented in the snap description so that users
 Default values
 --------------
 
-The snap daemon has no concept of *default values* for configuration options. Actions for these values need to be implemented by the snap developer using the ```configure`` hook </t/supported-snap-hooks/3795#heading--the-configure-hook>`__.
+The snap daemon has no concept of *default values* for configuration options. Actions for these values need to be implemented by the snap developer using the `configure hook </t/supported-snap-hooks/3795#heading--the-configure-hook>`__.
 
 When a user resets a configuration option with ``snap unset``, or installs a snap, the *configure hook* is run and the snap developer can therefore use this hook to check when these values are unset and, if so, use ``snapctl set`` to restore that option to its default value.
 

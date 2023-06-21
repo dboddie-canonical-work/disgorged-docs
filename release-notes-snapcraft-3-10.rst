@@ -45,7 +45,7 @@ For example, a config like:
    use-lxd: true
    bind-ssh: true
    http-proxy: http://192.168.1.10:3128
-   https-proxy: http://192.168.1.10:3128 ```
+   https-proxy: http://192.168.1.10:3128 `
 
 Matches:
 
@@ -58,7 +58,7 @@ Matches:
 
 ..
 
-   ℹ While an argument can be overridden, it cannot be unset. For instance, if using ``http-proxy`` or ``debug``, there is no method to currently unset these values.
+   ℹ While an argument can be overridden, it cannot be unset. For instance, if using http-proxy`` or ``debug``, there is no method to currently unset these values.
 
 Remote Build
 ~~~~~~~~~~~~

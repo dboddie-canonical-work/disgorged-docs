@@ -63,7 +63,7 @@ If none if the prebuilt helpers are suitable for your application, you can creat
 Permit access to GPU hardware
 -----------------------------
 
-The :ref:`snap sandbox <snap-confinement>` doesn’t allow access to GPU hardware by default. You can enable this access by adding the :ref:```opengl`` interface <the-opengl-interface>` to the ``plugs`` section of your application in ``apps``.
+The :ref:`snap sandbox <snap-confinement>` doesn’t allow access to GPU hardware by default. You can enable this access by adding the :ref:`opengl interface <the-opengl-interface>` to the ``plugs`` section of your application in ``apps``.
 
 .. code:: yaml
 

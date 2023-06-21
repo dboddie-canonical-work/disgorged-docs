@@ -169,9 +169,9 @@ Enclose a code block with three backticks and include the *type* of code:
    name: gimp
    version: '2.10.8'
    summary: GNU Image Manipulation Program
-   ```
+   `
 
-The most common code types are: ``bash``, ``yaml``, ``json``, and ``no-highlight``. The last is like a miscellaneous type. It is often used to display command output.
+The most common code types are: bash``, ``yaml``, ``json``, and ``no-highlight``. The last is like a miscellaneous type. It is often used to display command output.
 
 Also, a little contentiously as it goes against the `style guide <https://docs.ubuntu.com/styleguide/en>`__, we use a command line dollar prompt (``$``) to demarcate input and output in the same code block:
 
@@ -283,7 +283,7 @@ Notes and admonishments
 Admonishments in Discourse use BBtext markup syntax. Using ``
 
 .. note::
-          `` … ```` draws a box around the contained text.
+          `` … `` draws a box around the contained text.
 
 .. code:: markdown
 
@@ -317,7 +317,7 @@ And its output:
 
           A note without a title.
 
-The ``type`` parameter is optional, but recommended:
+The type`` parameter is optional, but recommended:
 
 .. code:: text
 

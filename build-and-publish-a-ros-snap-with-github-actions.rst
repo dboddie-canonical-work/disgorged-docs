@@ -142,7 +142,7 @@ Before listing the steps of our build, we will define the environment and the ou
 
 Here we use the variable ``steps.build-snap.outputs.snap`` that will be defined by a step right after.
 
-For more information about the type of machine to run the job on and outputs, see, ```runs-on`` <https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idruns-on>`__ and ```outputs`` <https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idoutputs>`__.
+For more information about the type of machine to run the job on and outputs, see, `runs-on <https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idruns-on>`__ and `outputs <https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idoutputs>`__.
 
 Checkout step
 '''''''''''''

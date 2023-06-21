@@ -118,7 +118,7 @@ The base keyword defines a special kind of snap that provides a run-time environ
 
    base: core18
 
-```core18`` <https://snapcraft.io/core18>`__ is the current standard base for snap building and is based on `Ubuntu 18.04 LTS <http://releases.ubuntu.com/18.04/>`__.
+`core18 <https://snapcraft.io/core18>`__ is the current standard base for snap building and is based on `Ubuntu 18.04 LTS <http://releases.ubuntu.com/18.04/>`__.
 
 Security model
 ^^^^^^^^^^^^^^
@@ -188,7 +188,7 @@ If you don’t want your command prefixed you can request an alias for it on the
          - network-bind
          - pulseaudio
 
-You can see we use the :ref:```kde-neon`` extension <the-kde-neon-extension>`. This extension will make Qt5 and KDE libraries available to the snap at run time and it will configure the run time environment of the application so that all desktop functionality is correctly initialised.
+You can see we use the :ref:`kde-neon extension <the-kde-neon-extension>`. This extension will make Qt5 and KDE libraries available to the snap at run time and it will configure the run time environment of the application so that all desktop functionality is correctly initialised.
 
 The :ref:``common-id`` field is used to link the AppStream metadata to this application. As a result, we don’t need to `manually specify the ``.desktop`` entry file <desktop-files-for-menu-integration>` because it’s already defined in AppStream. See `Using AppStream metadata <using-external-metadata.md#qt5-and-kde-frameworks-applications-heading--appstream>`__ for more information.
 

@@ -85,9 +85,9 @@ To see which interfaces a snap is using, and which interfaces it could use but i
    home            vlc:home               :home                -
    (...)
 
-In the above output, the :ref:```camera`` <the-home-interface>` interface is not connected because its slot is empty. This means VLC cannot access any connected cameras.
+In the above output, the :ref:`camera <the-home-interface>` interface is not connected because its slot is empty. This means VLC cannot access any connected cameras.
 
-VLC can access the user’s */home* directory because the :ref:```home`` <the-home-interface>` interface is connected to the system ``$HOME`` directory (denoted by the ``:home`` slot name).
+VLC can access the user’s */home* directory because the :ref:`home <the-home-interface>` interface is connected to the system ``$HOME`` directory (denoted by the ``:home`` slot name).
 
 To see all connected interfaces on your system, use the *snap connections* command without a snap name:
 

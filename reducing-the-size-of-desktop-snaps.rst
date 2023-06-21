@@ -12,10 +12,10 @@ Using content snaps and extensions
 
 Snaps can provide content to other snaps using the :ref:`content interface <the-content-interface>`. Many popular runtimes and libraries such as GNOME, Qt and Wine are packaged in content snaps. Instead of adding those libraries to your snap, you can connect to the relevant content snaps. The easiest way to use content snaps is to use one of the :ref:`Snapcraft desktop extensions <snapcraft-extensions>`.
 
--  Snaps using KDE Frameworks or Qt5 can use the :ref:```kde-neon`` extension <the-kde-neon-extension>` which adds content snaps for themes, the Qt5 runtime and KDE frameworks.
--  Most other desktop snaps can use the :ref:```gnome-3-28`` extension <the-gnome-3-28-extension>`.
--  Snaps using Wine can use the ```wine-platform-runtime`` <https://snapcraft.io/wine-platform-runtime>`__ and ```wine-platform-5-stable`` <https://snapcraft.io/wine-platform-5-stable>`__ snaps.
--  The :ref:```gtk-common-themes`` <how-to-use-the-system-gtk-theme-via-the-gtk-common-themes-snap>` bundles many popular GTK, cursor and icon themes.
+-  Snaps using KDE Frameworks or Qt5 can use the :ref:`kde-neon extension <the-kde-neon-extension>` which adds content snaps for themes, the Qt5 runtime and KDE frameworks.
+-  Most other desktop snaps can use the :ref:`gnome-3-28 extension <the-gnome-3-28-extension>`.
+-  Snaps using Wine can use the `wine-platform-runtime <https://snapcraft.io/wine-platform-runtime>`__ and `wine-platform-5-stable <https://snapcraft.io/wine-platform-5-stable>`__ snaps.
+-  The :ref:`gtk-common-themes <how-to-use-the-system-gtk-theme-via-the-gtk-common-themes-snap>` bundles many popular GTK, cursor and icon themes.
 
 ..
 
@@ -36,7 +36,7 @@ Using the cleanup part
 
 Snaps often ship libraries that are already available in the base snap or connected content snaps. This is because ``stage-packages`` currently pulls in all the dependencies of the packages you list, even if those dependencies are already available from content snaps.
 
-You can remove those libraries manually by excluding them using the ```stage`` <>`__ or ```prime`` <>`__ keywords. This requires a lot of manual work, however, because you have to figure out which libraries are duplicated and exclude each one manually. An easier method is to use the following ``cleanup`` part, which automatically compares your snap with all the content snaps you specify and removes duplicate files.
+You can remove those libraries manually by excluding them using the `stage <>`__ or `prime <>`__ keywords. This requires a lot of manual work, however, because you have to figure out which libraries are duplicated and exclude each one manually. An easier method is to use the following ``cleanup`` part, which automatically compares your snap with all the content snaps you specify and removes duplicate files.
 
 1. Add the following part to your ``snapcraft.yaml`` in the ``parts`` section.
 

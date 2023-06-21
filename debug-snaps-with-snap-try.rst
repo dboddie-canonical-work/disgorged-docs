@@ -112,7 +112,7 @@ The following, example, will build a *hello-world* snap within :ref:`LXD <build-
    + snapcraftctl prime
    You can now run `snap try /home/user/hello-world/prime`.
 
-The above snap can then be installed and tested with ```snap try`` <debug-snaps-with-snap-try-heading--snaptry_>`__ and the *prime* directory as its target:
+The above snap can then be installed and tested with `snap try <debug-snaps-with-snap-try-heading--snaptry_>`__ and the *prime* directory as its target:
 
 .. code:: bash
 

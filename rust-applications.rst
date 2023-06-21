@@ -95,7 +95,7 @@ The base keyword defines a special kind of snap that provides a run-time environ
 
    base: core18
 
-```core18`` <https://snapcraft.io/core18>`__ is the current standard base for snap building and is based on `Ubuntu 18.04 LTS <http://releases.ubuntu.com/18.04/>`__.
+`core18 <https://snapcraft.io/core18>`__ is the current standard base for snap building and is based on `Ubuntu 18.04 LTS <http://releases.ubuntu.com/18.04/>`__.
 
 Security model
 ~~~~~~~~~~~~~~

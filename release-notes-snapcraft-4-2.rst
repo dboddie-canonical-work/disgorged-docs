@@ -19,7 +19,7 @@ New Features
 ROS 2 Foxy Fitzroy extension and updated colcon plugin
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Snapcraft 4.2 includes experimental support for Robot Operating System (ROS 2) `Foxy Fitzroy LTS <https://index.ros.org/doc/ros2/Releases/Release-Foxy-Fitzroy>`__ with a new :ref:`extension <the-ros2-foxy-extension>` and colcon plugin when used with :ref:```core20`` <base-snaps>`.
+Snapcraft 4.2 includes experimental support for Robot Operating System (ROS 2) `Foxy Fitzroy LTS <https://index.ros.org/doc/ros2/Releases/Release-Foxy-Fitzroy>`__ with a new :ref:`extension <the-ros2-foxy-extension>` and colcon plugin when used with :ref:`core20 <base-snaps>`.
 
 For example, ROS 2 applications can now be built with a ``snapcraft.yaml`` as simple as:
 
@@ -55,7 +55,7 @@ For a walkthrough on how to work with the plugin and extension, see https://snap
 Ninja file generation with cmake
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-By default, the `cmake plugin <t/the-cmake-plugin/8621>`__ creates a Makefile when used with with :ref:```core20`` <base-snaps>` . This release adds the ``cmake-generator`` plugin property to optionally generate of a Ninja file:
+By default, the `cmake plugin <t/the-cmake-plugin/8621>`__ creates a Makefile when used with with :ref:`core20 <base-snaps>` . This release adds the ``cmake-generator`` plugin property to optionally generate of a Ninja file:
 
 .. code:: yaml
 

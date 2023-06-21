@@ -112,7 +112,7 @@ Typical value ``/var/snap/hello-world/27``
 
 This variable contains the *effective* user ID (euid) of the user running the snap instance. See also `SNAP_UID <environment-variables-heading--snap-uid_>`__.
 
-For this variable to be exposed by a snap, the snap developer will need to include the following ```assumes`` <snapcraft-top-level-metadata.md#environment-variables-heading--assumes>`__ value:
+For this variable to be exposed by a snap, the snap developer will need to include the following `assumes <snapcraft-top-level-metadata.md#environment-variables-heading--assumes>`__ value:
 
 .. code:: yaml
 
@@ -216,7 +216,7 @@ See `ubuntu-save <https://ubuntu.com/core/docs/storage-layout#environment-variab
 
 This variable contains the user ID (uid) of the user running this snap instance. See also `SNAP_EUID <environment-variables-heading--snap-euid_>`__.
 
-For this variable to be exposed by a snap, the snap developer will need to include the following ```assumes`` <snapcraft-top-level-metadata.md#environment-variables-heading--assumes>`__ value:
+For this variable to be exposed by a snap, the snap developer will need to include the following `assumes <snapcraft-top-level-metadata.md#environment-variables-heading--assumes>`__ value:
 
 .. code:: yaml
 
