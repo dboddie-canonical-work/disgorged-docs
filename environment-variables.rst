@@ -58,9 +58,8 @@ Alongside the many system-specific variables, this environment will include the 
 
 .. _environment-variables-snap:
 
-~~~~~~~~~~~~~
-
-   <pre>SNAP</pre>
+SNAP
+~~~~
 
 Directory where the snap is mounted. This is where all the files in your snap are visible in the filesystem. All of the data in the snap is read-only and cannot be changed.
 
@@ -69,9 +68,8 @@ Typical value: ``/snap/hello-world/27``
 
 .. _environment-variables-snap-arch:
 
-~~~~~~~~~~~~~
-
-   <PRE>SNAP_ARCH</PRE>
+SNAP_ARCH
+~~~~~~~~~
 
 CPU architecture of the running system.
 
@@ -82,9 +80,8 @@ Other values are: ``i386``, ``armhf``, ``arm64``.
 
 .. _environment-variables-snap-common:
 
-~~~~~~~~~~~~~
-
-   <pre>SNAP_COMMON</pre>
+SNAP_COMMON
+~~~~~~~~~~~
 
 Directory for system data that is common across revisions of a snap.
 
@@ -95,9 +92,8 @@ Typical value: ``/var/snap/hello-world/common``
 
 .. _environment-variables-snap-data:
 
-~~~~~~~~~~~~~
-
-   <pre>SNAP_DATA</pre>
+SNAP_DATA
+~~~~~~~~~
 
 Directory for system data of a snap.
 
@@ -108,9 +104,8 @@ Typical value ``/var/snap/hello-world/27``
 
 .. _environment-variables-snap-euid:
 
-~~~~~~~~~~~~~
-
-   <pre>SNAP_EUID</pre>
+SNAP_EUID
+~~~~~~~~~
 
 This variable contains the *effective* user ID (euid) of the user running the snap instance. See also `SNAP_UID <environment-variables-snap-uid_>`__.
 
@@ -125,9 +120,8 @@ Requires *snapd* 2.59+.
 
 .. _environment-variables-snap-instance-name:
 
-~~~~~~~~~~~~~
-
-   <pre>SNAP_INSTANCE_NAME</pre>
+SNAP_INSTANCE_NAME
+~~~~~~~~~~~~~~~~~~
 
 The name of snap instance, including instance key if one is set (snapd 2.36+).
 
@@ -138,9 +132,8 @@ Typical value: ``hello-world``
 
 .. _environment-variables-snap-instance-key:
 
-~~~~~~~~~~~~~
-
-   <pre>SNAP_INSTANCE_KEY</pre>
+SNAP_INSTANCE_KEY
+~~~~~~~~~~~~~~~~~
 
 Instance key if one was set during installation or empty (snapd 2.36+).
 
@@ -151,9 +144,8 @@ Typical value: none
 
 .. _environment-variables-snap-library-path:
 
-~~~~~~~~~~~~~
-
-   <pre>SNAP_LIBRARY_PATH</pre>
+SNAP_LIBRARY_PATH
+~~~~~~~~~~~~~~~~~
 
 Directory with additional system libraries. This variable is used internally by snapcraft.
 
@@ -164,9 +156,8 @@ The referenced directory is typically empty unless Nvidia proprietary drivers ar
 
 .. _environment-variables-snap-name:
 
-~~~~~~~~~~~~~
-
-   <pre>SNAP_NAME</pre>
+SNAP_NAME
+~~~~~~~~~
 
 The name of the snap as specified in the ``snapcraft.yaml`` file.
 
@@ -175,20 +166,19 @@ Typical value: ``hello-world``
 
 .. _environment-variables-snap-real-home:
 
-~~~~~~~~~~~~~
+SNAP_REAL_HOME
+~~~~~~~~~~~~~~
 
-   <pre>SNAP_REAL_HOME</pre>
-
-The vanilla ``HOME`` environment variable before snapd-induced remapping, refer `Any way to acquire the originally set ``HOME`` environment variable? - snapcraft - snapcraft.io <https://snapcraft.io/docs/any-way-to-acquire-the-originally-set-home-environment-variable>`__ for more info.
+The vanilla ``HOME`` environment variable before snapd-induced remapping, refer
+to `this forum thread <acquire original HOME variable_>`_ for more information.
 
 Available `since snapd 2.46 <https://github.com/snapcore/snapd/pull/9189/commits/37d0a229>`__.
 
 
 .. _environment-variables-snap-revision:
 
+SNAP_REVISION
 ~~~~~~~~~~~~~
-
-   <pre>SNAP_REVISION</pre>
 
 Revision of the snap, as allocated by the Snap Store on upload or as allocated by snapd for locally installed snaps.
 
@@ -199,9 +189,8 @@ Typical value: ``27`` or ``x1``
 
 .. _environment-variables-snap-save-data:
 
-~~~~~~~~~~~~~
-
-   <pre>SNAP_SAVE_DATA</pre>
+SNAP_SAVE_DATA
+~~~~~~~~~~~~~~
 
 This variable is only exposed on `Ubuntu Core <glossary.md#environment-variables-heading--ubuntu-core>`__ systems, and was introduced with snapd 2.57.
 
@@ -212,9 +201,8 @@ See `ubuntu-save <https://ubuntu.com/core/docs/storage-layout#environment-variab
 
 .. _environment-variables-snap-uid:
 
-~~~~~~~~~~~~~
-
-   <pre>SNAP_UID</pre>
+SNAP_UID
+~~~~~~~~
 
 This variable contains the user ID (uid) of the user running this snap instance. See also `SNAP_EUID <environment-variables-snap-euid_>`__.
 
@@ -229,9 +217,8 @@ Requires *snapd* 2.59+.
 
 .. _environment-variables-snap-user-common:
 
-~~~~~~~~~~~~~
-
-   <pre>SNAP_USER_COMMON</pre>
+SNAP_USER_COMMON
+~~~~~~~~~~~~~~~~
 
 Directory for user data that is common across revisions of a snap.
 
@@ -242,9 +229,8 @@ Typical value ``/home/zyga/snap/hello-world/common``
 
 .. _environment-variables-snap-user-data:
 
-~~~~~~~~~~~~~
-
-   <pre>SNAP_USER_DATA</pre>
+SNAP_USER_DATA
+~~~~~~~~~~~~~~
 
 Directory for user data.
 
@@ -257,9 +243,8 @@ The final number there is ``$SNAP_REVISION``.
 
 .. _environment-variables-snap-version:
 
-~~~~~~~~~~~~~
-
-   <pre>SNAP_VERSION</pre>
+SNAP_VERSION
+~~~~~~~~~~~~
 
 The version string as specified in the ``snapcraft.yaml``
 
@@ -271,22 +256,20 @@ Generic variables
 
 .. _environment-variables-home:
 
-~~~~~~~~~~~~~
-
-   <pre>HOME</pre>
+HOME
+~~~~
 
 For non-classic snaps, this environment variable is re-written to ``SNAP_USER_DATA`` by snapd so that each snap appears to have a dedicated home directory that is a subdirectory of the real home directory.
 
 For classic confinement snaps, the value remains unchanged.
 
-Typical value: ``/home/_user_name_/snap/_snap_name_/_snap_revision_`` (e.g. ``/home/zyga/snap/hello-world/27``)
+Typical value: ``/home/_user_name_/snap/_snap_name_/_snap_revision_`` (e.g. ``/home/zyga/snap/hello-world/27``)
 
 
 .. _environment-variables-path:
 
-~~~~~~~~~~~~~
-
-   <pre>PATH</pre>
+PATH
+~~~~
 
 This environment variable is re-written by snapd so that it is consistent with the view of the filesystem presented to snap applications.
 
@@ -299,3 +282,5 @@ The value is always:
       $SNAP/usr/sbin:$SNAP/usr/bin:$SNAP/sbin:$SNAP/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 
 -  For classic confinement snaps: ``/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games``
+
+.. _`acquire original HOME variable`: https://forum.snapcraft.io/t/19475
