@@ -21,7 +21,7 @@ name
 
 The identifying name of the snap.
 
-**Type:** `string`
+**Type:** ``string``
 
 Max length 40 characters. It must start with an ASCII character and can only contain letters in lower case, numbers, and hyphens, and it can’t start or end with a hyphen. The name must be unique if you want to :ref:`publish to the Snap Store <releasing-your-app>`. For help on choosing a name and registering it on the Snap Store, see :ref:`Registering your app name <registering-your-app-name>`.
 
@@ -33,7 +33,7 @@ title
 
 The canonical title of the application, displayed in the software centre graphical frontends.
 
-**Type:** `string`
+**Type:** ``string``
 
 Max length 40 characters.
 
@@ -55,7 +55,7 @@ build-base
 ----------
 *optional*
 
-Used to build a :ref:`base <base-snaps>` snap when the base is unavailable or has yet to be bootstrapped. See `Building a base snap <base-snaps.md#snapcraft-yaml-reference-heading--base-snap>`__ for details.
+Used to build a :ref:`base <base-snaps>` snap when the base is unavailable or has yet to be bootstrapped. See :ref:`Building a base snap <building-a-base-snap>` for details.
 
 **Examples:** ``'core20'``, ``'core22'``
 
@@ -77,11 +77,11 @@ version
 
 A user facing version to display.
 
-**Type**: :ref:``string``
+**Type**: ``string``
 
 Maximum length 32 chars.
 
-Needs to be wrapped with single-quotes when the value will be interpreted by the YAML parser as non-string. This field is mandatory unless version information is provided by ``adopt-info``. See `Using external metadata <using-external-metadata>` for details.
+Needs to be wrapped with single-quotes when the value will be interpreted by the YAML parser as non-string. This field is mandatory unless version information is provided by ``adopt-info``. See :ref:`using-external-metadata` for details.
 
 **Examples:** ``'1'``, ``'1.2'``, ``'1.2.3'``, ``git`` (will be replaced by a ``git describe`` based version string)
 
@@ -99,7 +99,9 @@ donation
 --------
 *optional*
 
-Donation information for the snap. **Type:** ``string|list[string]`` Links to provide donations for the publisher of the snap.
+Donation information for the snap.
+
+**Type:** ``string|list[string]`` Links to provide donations for the publisher of the snap.
 
 **Example:** ``https://patreon.com``
 
@@ -135,9 +137,9 @@ Publisher website for the snap.
 
 version-script
 --------------
-`deprecated <deprecation-notice-10>`
+:ref:`deprecated <deprecation-notice-10>`
 
-**Deprecated** Use ``snapcraftctl set-version`` `part scriptlet <using-external-metadata.md#meta-scriptlet>`__ instead. A command to determine the snap’s version string
+**Deprecated** Use ``snapcraftctl set-version`` :ref:`part scriptlet <meta-scriptlet>` instead. A command to determine the snap’s version string
 
 **Type**: ``string``
 
@@ -159,396 +161,720 @@ description
 -----------
 *mandatory*
 
-Multi-line description of the snap. **Type:** ``string`` A more in-depth look at what your snap does and who may find it most useful.
+Multi-line description of the snap.
+
+**Type:** ``string`` A more in-depth look at what your snap does and who may find it most useful.
 
 type
 ----
 *optional*
 
-The type of snap, implicitly set to :ref:``app`` if not set. **Type:** ``enum`` For more details, see: `gadget <gadget-snaps>`, :ref:`kernel <the-kernel-snap>` and :ref:`base <base-snaps>`
+The type of snap, implicitly set to ``app`` if not set.
+
+**Type:** ``enum`` For more details, see :ref:`gadget <gadget-snaps>`, :ref:`kernel <the-kernel-snap>` and :ref:`base <base-snaps>`
 
 confinement
 -----------
 *optional*
 
-Determines if the snap should be restricted in access or not. **Type:** :ref:``enum`` Possible values are ``strict`` (for no access outside of declared ``interfaces`` through ``plugs``), ``devmode`` (for unrestricted access) or ``classic``. For more information, refer to `Confinement <snap-confinement>` **Examples:** ``strict``, or ``devmode``
+Determines if the snap should be restricted in access or not.
+
+**Type:** ``enum`` Possible values are ``strict`` (for no access outside of declared ``interfaces`` through ``plugs``), ``devmode`` (for unrestricted access) or ``classic``. For more information, refer to :ref:`snap-confinement`.
+
+**Examples:** ``strict``, or ``devmode``
 
 icon
 ----
 *optional*
 
-Path to icon image that represents the snap in the snapcraft.io store pages and other graphical store fronts. *Note that the*\ `desktop menu <https://en.wikipedia.org/wiki/Start_menu>`__\ *does not use this icon. It uses the icon in the ``.desktop`` file of the application.* **Type:** ``string`` It is a relative path to a ``.png`` or ``.svg`` file from the source tree root. The `recommended <https://snapcraft.io/docs/restrictions-on-screenshots-and-videos-in-snap-listings24>`__ size is 256x256 pixels. Aspect ratio needs to be 1:1. Image size can vary from 40x40 to 512x512 px and the file size should not be larger than 256 KB. **Examples:** ``_package_name_.svg``, or ``snap/gui/logo.png``
+Path to icon image that represents the snap in the snapcraft.io store pages and other graphical store fronts. *Note that the* `desktop menu <https://en.wikipedia.org/wiki/Start_menu>`__ *does not use this icon. It uses the icon in the* ``.desktop`` *file of the application.*
+
+**Type:** ``string`` It is a relative path to a ``.png`` or ``.svg`` file from the source tree root. The `recommended <https://snapcraft.io/docs/restrictions-on-screenshots-and-videos-in-snap-listings24>`__ size is 256x256 pixels. Aspect ratio needs to be 1:1. Image size can vary from 40x40 to 512x512 px and the file size should not be larger than 256 KB.
+
+**Examples:** ``_package_name_.svg``, or ``snap/gui/logo.png``
 
 layout
 ------
 *optional*
 
-Modify the execution environment of a strictly-confined snap. **Type:** ``list[dict]`` Layouts are defined as a key-value map, mapping from a <target-path> to a layout declaration. See :ref:`Using layouts <snap-layouts>` for more details. **Examples:** ``/var/lib/foo: bind: $SNAP_DATA/var/lib/foo``
+Modify the execution environment of a strictly-confined snap.
+
+**Type:** ``list[dict]``
+
+Layouts are defined as a key-value map, mapping from a ``<target-path>`` to a layout declaration. See :ref:`Using layouts <snap-layouts>` for more details.
+
+**Examples:** ``/var/lib/foo: bind: $SNAP_DATA/var/lib/foo``
 
 license
 -------
 *optional*
 
-A license for the snap in the form of an `SPDX expression <https://spdx.org/licenses/>`__ for the license. In the legacy Snapcraft syntax (not using the base key), this key is only available :ref:`through the passthrough key <using-in-development-features-in-snapcraft-yaml>`. `Currently, only SPDX 2.1 expressions are supported <https://github.com/snapcore/snapd/blob/89b5855d44686008f855582bdfd7b2bf7b1a157c/spdx/validate.go#L24>`__, refer `snapd/licenses.go at master · snapcore/snapd <https://github.com/snapcore/snapd/blob/master/spdx/licenses.go>`__ for accepted expressions.\ **Type:** ``string``\ |br| **Examples:** ``GPL-3.0``, ``MIT``, ``Proprietary``
+A license for the snap in the form of an SPDX-expression_ for the license. In the legacy Snapcraft syntax (not using the ``base`` key), this key is only available :ref:`through the passthrough key <using-in-development-features-in-snapcraft-yaml>`.
+Currently, `only SPDX 2.1 expressions are supported <SPDX-2.1-support_>`_, refer to `snapd/licenses.go <snapd-licenses_>`_ for accepted expressions.
+
+**Type:** ``string``
+
+**Examples:** ``GPL-3.0``, ``MIT``, ``Proprietary``
 
 grade
 -----
 *optional*
 
-Defines the quality ``grade`` of the snap. **Type:** ``enum`` Can be either ``devel`` (i.e. a development version of the snap, so not to be published to the ``stable`` or ``candidate`` channels) or ``stable`` (i.e. a stable release or release candidate, which can be released to all channels) **Example:** ``[stable`` or ``devel``]
+Defines the quality ``grade`` of the snap.
+
+**Type:** ``enum`` Can be either ``devel`` (i.e. a development version of the snap, so not to be published to the ``stable`` or ``candidate`` channels) or ``stable`` (i.e. a stable release or release candidate, which can be released to all channels)
+
+**Example:** [``stable`` or ``devel``]
 
 adopt-info
 ----------
 *optional*
 
-Incorporate external metadata via the referenced part. Type: :ref:``string`` See `Using external metadata <using-external-metadata>` for more details.
+Incorporate external metadata via the referenced part.
+
+**Type:** ``string``
+
+See :ref:`Using external metadata <using-external-metadata>` for more details.
 
 architectures
 -------------
 *optional*
 
-List of build and run architectures. **Type:** :ref:``list[object]`` For more details, see `Architectures <architectures>`.
+List of build and run architectures.
+
+**Type:** ``list[object]``
+
+For more details, see :ref:`architectures`.
 
 epoch
 -----
 *optional*
 
-Controls when users receive a configuration-breaking application release. **Type:** :ref:``integer`` Incrementing the epoch in the new release stops old users automatically refreshing to the new version. See `Snap epochs <snap-epochs>` for further details.
+Controls when users receive a configuration-breaking application release.
+
+**Type:** ``integer``
+
+Incrementing the epoch in the new release stops old users automatically refreshing to the new version. See :ref:`snap-epochs` for further details.
 
 package-repositories
 --------------------
 *optional*
 
-Adds package repositories, including PPA-type and deb-type repositories. **Type:** :ref:``list[dict]`` See `Snapcraft package repositories <snapcraft-package-repositories>` for further information.
+Adds package repositories, including PPA-type and deb-type repositories.
+
+**Type:** ``list[dict]``
+
+See :ref:`snapcraft-package-repositories` for further information.
 
 assumes
 -------
 *optional*
 
-A list of features that must be supported by the core in order for this snap to install. For example, to make the snap only installable on certain recent version of snapd (like 2.38) you can specify: ``- snapd2.38``. See `Snapcraft top-level metadata <snapcraft-top-level-metadata.md#snapcraft-yaml-reference-heading--assumes>`__ for other potential values. **Type:** ``list[string]``
+A list of features that must be supported by the core in order for this snap to install. For example, to make the snap only installable on certain recent version of snapd (like 2.38) you can specify ``snapd2.38`` as an item in this list.
+
+See :ref:`snapcraft-top-level-metadata-assumes` for other potential values.
+
+**Type:** ``list[string]``
 
 hooks
 -----
 *optional*
 
-This top-level keyword to define a hook with a plug to access more privileges. See :ref:`Supported snap hooks <supported-snap-hooks>` for further details. **Type:** ``list[string]``
+This top-level keyword to define a hook with a plug to access more privileges. See :ref:`supported-snap-hooks` for further details.
+
+**Type:** ``list[string]``
 
 passthrough
 -----------
 *optional*
 
-Attributes to passthrough to :ref:``snap.yaml`` without validation from snapcraft. **Type:** ``type[object]`` See `Using development features in snapcraft <using-in-development-features-in-snapcraft-yaml>` for more details.
+Attributes to passthrough to ``snap.yaml`` without validation from snapcraft.
+
+**Type:** ``type[object]``
+
+See :ref:`using-in-development-features-in-snapcraft-yaml` for more details.
 
 apps
 ----
-A map of app-names representing entry points to run for the snap. **Type:** ``dict``
+A map of app-names representing entry points to run for the snap.
+
+**Type:** ``dict``
 
 apps.<app-name>
 ---------------
-The name exposed to run a program inside the snap. **Type:** ``dict`` If ``<app-name>`` is the same as ``name``, the program will be invoked as ``app-name``. However, if they differ, the program will be exposed as ``<snap-name>.<app-name>``.
+The name exposed to run a program inside the snap.
+
+**Type:** ``dict``
+
+If ``<app-name>`` is the same as ``name``, the program will be invoked as ``app-name``. However, if they differ, the program will be exposed as ``<snap-name>.<app-name>``.
 
 apps.<app-name>.adapter
 -----------------------
-Controls the creation of an env variable wrapper. **Type** ``enum`` Can be one of the following:- ``none``\ - ``full`` *(default)* Snapcraft normally creates a wrapper holding common environment variables. Disabling this could be useful for minimal base snaps without a shell, and for statically linked binaries with no use for an environment.
+Controls the creation of an env variable wrapper. **Type** ``enum`` Can be one of the following:
+
+- ``none``
+- ``full`` *(default)*
+
+Snapcraft normally creates a wrapper holding common environment variables. Disabling this could be useful for minimal base snaps without a shell, and for statically linked binaries with no use for an environment.
+
+.. _snapcraft-yaml-after:
 
 apps.<app-name>.after
 ---------------------
-Lists the applications a daemon is to be started after. **Type** :ref:``list[string]`` Requires *daemon* to be set in app metadata. See also ``before`` (below) and `Services and daemons <services-and-daemons>` for more details.
+Lists the applications a daemon is to be started after.
+
+**Type:** ``list[string]``
+
+Requires *daemon* to be set in app metadata. See also ``before`` (below) and :ref:`services-and-daemons` for more details.
 
 apps.<app-name>.autostart
 -------------------------
-The name of the autostart ``.desktop`` file. **Type:** ``string`` The desktop file is placed in :math:`SNAP_USER_DATA/.config/autostart, and the application is started using the app’s command wrapper. See :ref:`snapcraft-parts-metadata` for further details.
+The name of the autostart ``.desktop`` file.
+
+**Type:** ``string``
+
+The desktop file is placed in ``SNAP_USER_DATA/.config/autostart``, and the application is started using the app’s command wrapper. See :ref:`snapcraft-parts-metadata` for further details.
 
 apps.<app-name>.before
 ----------------------
-Lists the applications a daemon is to be started before. |br| **Type** `list[string]` |br| Requires _daemon_ to be set in app metadata. See also `after` (above) and :ref:`services-and-daemons` for more details.
+Lists the applications a daemon is to be started before.
+
+**Type** ``list[string]``
+
+Requires ``daemon`` to be set in app metadata. See also :ref:`snapcraft-yaml-after` and :ref:`services-and-daemons` for more details.
 
 apps.<app-name>.command
 -----------------------
-The command to run inside the snap when `<app-name>` is invoked. |br| **Type:** `string` |br| The command can be in either a snap runtime's command path, `$SNAP/usr/sbin:$SNAP/usr/bin:$SNAP/sbin:$SNAP/bin`, or an executable path relative to $SNAP.
+The command to run inside the snap when ``<app-name>`` is invoked.
+
+**Type:** ``string``
+
+The command can be in either a snap runtime's command path, ``$SNAP/usr/sbin:$SNAP/usr/bin:$SNAP/sbin:$SNAP/bin``, or an executable path relative to ``$SNAP``.
 
 If daemon is set, this will be the command to run the service.
 
-Only a snap with *classic* confinement can use a relative path because `PATH` isn't modified by a wrapper in classic confinement. See [Classic confinement](6233.md) for more details.
+Only a snap with *classic* confinement can use a relative path because the ``PATH`` environment variable isn't modified by a wrapper in classic confinement. See :ref:`classic-confinement` for more details.
 
-**Examples:** `app-launch` for an executable placed under `$SNAP/bin`. With `classic` confinement, `bin/app-launch` for an executable placed under `$SNAP/bin`.
+**Examples:** ``app-launch`` for an executable placed under ``$SNAP/bin``. With ``classic`` confinement, ``bin/app-launch`` for an executable placed under ``$SNAP/bin``.
 
 **Note:** The command must consist only of alphanumeric characters, spaces, and the following special characters: / . _ # : $ -.  If other characters are required, a wrapper script should be used for the command.
 
 apps.<app-name>.command-chain
 -----------------------------
-A list of commands to be executed prior to `apps.<app-name>.command`.
+A list of commands to be executed prior to ``apps.<app-name>.command``.
 
-Type:  `string`
+**Type:** ``string``
 
-The list is executed, in order, before running the `apps.<app-name>.command`.
+The list is executed, in order, before running the ``apps.<app-name>.command``.
 
-See [Proposal: support command-chain in apps and hooks](https://forum.snapcraft.io/t/6112) for more details.|br| To ensure that the Snapd distribution user running supports this feature, insert the `command-chain` value to the `assumes` property.
+See `Proposal: support command-chain in apps and hooks <proposal-support-command-chain_>`_ for more details.
+
+To ensure that the Snapd distribution user running supports this feature, insert the ``command-chain`` value to the ``assumes`` property.
 
 apps.<app-name>.common-id
 -------------------------
 An identifier to a desktop-id within an external appstream file.
 
-Type:  `string`
+**Type:** ``string``
 
 See :ref:`using-external-metadata` for more details.
 
 apps.<app-name>.daemon
 ----------------------
-Declares that `<app-name>` is a system daemon.
+Declares that ``<app-name>`` is a system daemon.
 
-**Type:** `enum`
+**Type:** ``enum``
 
 Can be one of the following:
 
-- `simple`: the command is the main process.
-- `oneshot`: the configured command will exit after completion
-- `forking`: the configured command calls `fork()` as part of its start-up. The parent process is then expected to exit when start-up is complete
-- `notify`: the command configured will send a signal to systemd to indicate that it's running.  See [Services and daemons](12601.md) for further details.
+- ``simple``: the command is the main process.
+- ``oneshot``: the configured command will exit after completion
+- ``forking``: the configured command calls ``fork()`` as part of its start-up. The parent process is then expected to exit when start-up is complete
+- ``notify``: the command configured will send a signal to systemd to indicate that it's running.  See :ref:`services-and-daemons` for further details.
 
 apps.<app-name>.desktop
 -----------------------
-Location of the *.desktop* file.
+Location of the ``.desktop`` file.
 
-**Type:** `string`
+**Type:** ``string``
 
 A path relative to the *prime* directory pointing to a desktop file, commonly used to add an application to the launch menu. Snapcraft will take care of the rest.
 
-**Examples:** `usr/share/applications/my-app.desktop` and `share/applications/my-app.desktop`
+**Examples:** ``usr/share/applications/my-app.desktop`` and ``share/applications/my-app.desktop``
 
 apps.<app-name>.environment
 ---------------------------
 A set of key-value pairs specifying the contents of environment variables.
 
-**Type:** `dict`
+**Type:** ``dict``
 
 Key is the environment variable name; Value is the contents of the environment variable.
 
-**Example:** `LANG: C.UTF-8`
+**Example:** ``LANG: C.UTF-8``
 
 apps.<app-name>.extensions
 --------------------------
-[Extensions](13486.md) to apply to this application.
+:ref:`snapcraft-extensions` apply to this application.
 
-**Type:** `list[string]` |br| **Example:** `[gnome-3-28]`
+**Type:** ``list[string]``
+
+**Example:** ``[gnome-3-28]``
 
 apps.<app-name>.install-mode
 ----------------------------
-Defines whether a freshly installed daemon is started automatically. |br| **Type:** `string` |br| Requires `daemon` to be set in _app_ metadata. Set to _disable_ to defer daemon startup to the snap,  which could then use [snapctl](15002.md) with a [hook](3795.md), for instance, or another management agent. Can be one of the following: |br| `enable` or `disable` (defaults to _enable_)
+Defines whether a freshly installed daemon is started automatically.
+
+**Type:** ``string``
+
+Requires ``daemon`` to be set in ``app`` metadata. Set to _disable_ to defer daemon startup to the snap,  which could then use :ref:`snapctl <using-the-snapctl-tool>` with a :ref:`hook <supported-snap-hooks>`, for instance, or another management agent. Can be one of the following:
+
+``enable`` or ``disable`` (defaults to ``enable``)
 
 apps.<app-name>.plugs
 ---------------------
-Plugs for [interfaces](6154.md) to connect to. |br| **Type:** `list[string]` |br| `<app-name>` will make these plug connections when running in `strict` `confinement` For interfaces that need *attributes*, see top-level [plugs](8334.md). |br| **Example:** `[home, removable-media, raw-usb`]
+Plugs for :ref:`interfaces <interface-management>` to connect to.
+
+**Type:** ``list[string]``
+
+``<app-name>`` will make these plug connections when running in *strict confinement*. For interfaces that need *attributes*, see top-level :ref:`snapcraft-top-level-metadata-plugs`.
+
+**Example:** ``[home, removable-media, raw-usb]``
 
 apps.<app-name>.post-stop-command
 ---------------------------------
-Runs a command from inside the snap after a service stops |br| **Type:** `string` |br| Requires `daemon` to be set in the _app_ metadata.
+Runs a command from inside the snap after a service stops.
+
+**Type:** ``string``
+
+Requires ``daemon`` to be set in the ``app`` metadata.
 
 apps.<app-name>.refresh-mode
 ----------------------------
-Controls whether the daemon should be restarted during a snap refresh. |br| **Type:** `string` |br| Requires `daemon` to be set in _app_ metadata. Can be one of the following: |br| `endure` or `restart` (defaults to _restart_)
+Controls whether the daemon should be restarted during a snap refresh.
+
+**Type:** ``string``
+
+Requires ``daemon`` to be set in ``app`` metadata. Can be one of the following:
+
+``endure`` or ``restart`` (defaults to ``restart``)
 
 apps.<app-name>.slots
 ---------------------
-Slots for [interfaces](t/interfaces/6154) to connect to. |br| **Type:** `list[string]` |br| `<app-name>` will make these slot connections when running in `strict` confinement only. For interfaces that need *attributes*, see top-level [slots](8334.md). |br| **Example:** `[home, removable-media, raw-usb`]
+Slots for :ref:`interfaces <interface-management>` to connect to.
+
+**Type:** ``list[string]``
+
+``<app-name>`` will make these slot connections when running in ``strict`` confinement only. For interfaces that need *attributes*, see top-level :ref:`snapcraft-top-level-metadata-slots`.
+
+**Example:** ``[home, removable-media, raw-usb]``
 
 apps.<app-name>.start-timeout
 -----------------------------
-The length of time to wait for a daemon to start. |br| **Type:** `string` |br| Time duration units can be `10ns`, `10us`, `10ms`, `10s`, `10m`. Termination is via `SIGTERM` (and `SIGKILL` if that doesn't work).  |br| Requires `daemon` to be set in the _app_ metadata.
+The length of time to wait for a daemon to start.
+
+**Type:** ``string``
+
+Time duration units can be ``10ns``, ``10us``, ``10ms``, ``10s``, ``10m``. Termination is via ``SIGTERM`` (and ``SIGKILL`` if that doesn't work). 
+
+Requires ``daemon`` to be set in the ``app`` metadata.
 
 apps.<app-name>.stop-command
 ----------------------------
-The path to a command inside the snap to run to stop the service. |br| **Type:** `string` |br| Requires `daemon` to be set in _app_ metadata.
+The path to a command inside the snap to run to stop the service.
+
+**Type:** ``string``
+
+Requires ``daemon`` to be set in ``app`` metadata.
 
 apps.<app-name>.stop-timeout
 ----------------------------
-The length of time to wait before terminating a service. |br| **Type:** `string` |br| Time duration units can be `10ns`, `10us`, `10ms`, `10s`, `10m`. Termination is via `SIGTERM` (and `SIGKILL` if that doesn't work).  |br| Requires `daemon` to be set in the _app_ metadata.
+The length of time to wait before terminating a service.
+
+**Type:** ``string``
+
+Time duration units can be ``10ns``, ``10us``, ``10ms``, ``10s``, ``10m``. Termination is via ``SIGTERM`` (and ``SIGKILL`` if that doesn't work).
+
+Requires ``daemon`` to be set in the ``app`` metadata.
 
 apps.<app-name>.timer
 ---------------------
-Schedules when, or how often, to run a service or command. |br| **Type:** `timer string` |br| See [Timer string format](https://forum.snapcraft.io/t/6562) for further details on the required syntax.  |br| Requires `daemon` to be set in the _app_ metadata.
+Schedules when, or how often, to run a service or command.
+
+**Type:** ``timer string``
+
+See _timer-string-format for further details on the required syntax.
+
+Requires ``daemon`` to be set in the ``app`` metadata.
 
 apps.<app-name>.restart-condition
 ---------------------------------
-Condition to restart the daemon under. |br| **Type:** `enum` |br| Defaults to `on-failure`. Other values are  `[on-failure|on-success|on-abnormal|on-abort|always|never]`. Refer to [systemd.service manual](https://www.freedesktop.org/software/systemd/man/systemd.service.html#Restart=) for details. |br|  Requires `daemon` to be set in the _app_ metadata.
+Condition to restart the daemon under.
+
+**Type:** ``enum``
+
+Defaults to ``on-failure``. Other values are  ``[on-failure|on-success|on-abnormal|on-abort|always|never]``. Refer to the `systemd.service manual`_ for details.
+
+Requires ``daemon`` to be set in the ``app`` metadata.
 
 apps.<app-name>.restart-delay
 -----------------------------
-The length of time to wait before daemon restarts. |br| **Type:** `string` |br| Time duration units can be `10ns`, `10us`, `10ms`, `10s`, `10m`.  Defaults to unset. |br| See the systemd.service manual on [RestartSec](https://www.freedesktop.org/software/systemd/man/systemd.service.html#RestartSec=) for details. Requires `daemon` to be set in the _app_ metadata.
+The length of time to wait before daemon restarts.
+
+**Type:** ``string``
+
+Time duration units can be ``10ns``, ``10us``, ``10ms``, ``10s``, ``10m``.  Defaults to unset.
+
+See the systemd.service manual on RestartSec_ for details. Requires ``daemon`` to be set in the ``app`` metadata.
 
 apps.<app-name>.sockets
 -----------------------
-Maps a daemon's sockets to services and activates them. |br| **Type:** `dict` |br| Requires an activated daemon socket. |br| Requires `apps.<app-name>.plugs` to declare the `network-bind` plug.
+Maps a daemon's sockets to services and activates them.
+
+**Type:** ``dict``
+
+Requires an activated daemon socket.
+
+Requires ``apps.<app-name>.plugs`` to declare the ``network-bind`` plug.
 
 apps.<app-name>.socket-mode
 ---------------------------
-The mode of a socket in *octal*. |br| **Type:** `integer`
+The mode of a socket in *octal*.
+
+**Type:** ``integer``
 
 apps.<app-name>.listen-stream
 -----------------------------
-The socket abstract name or socket path. |br| **Type:** `string` |br| Sockets should go to a map of \<socket-name\> to objects which specify the listen-stream and (optionally) the socket-mode. |br| TCP socket syntax: `\<port\>`, `[::]:\<port\>`, `[::1]:\<port\>` and `127.0.0.1:\<port\>` |br| UNIX socket syntax: `$SNAP_DATA/\<path\>`, `$SNAP_COMMON/<path>` and `@snap.\<snap name\>.<suffix>`
+The socket abstract name or socket path.
+
+**Type:** ``string``
+
+Sockets should go to a map of ``<socket-name>`` to objects which specify the listen-stream and (optionally) the socket-mode.
+
+TCP socket syntax: ``\<port\>``, ``[::]:\<port\>``, ``[::1]:\<port\>`` and ``127.0.0.1:\<port\>``
+
+UNIX socket syntax: ``$SNAP_DATA/\<path\>``, ``$SNAP_COMMON/<path>`` and ``@snap.\<snap name\>.<suffix>``
 
 apps.<app-name>.passthrough
 ---------------------------
-`<app-name>` attributes to pass through to `snap.yaml` without snapcraft validation. |br| **Type:** `type[object]` |br| See [Using in-development features](5766.md) for further details.
+``<app-name>`` attributes to pass through to ``snap.yaml`` without snapcraft validation.
+
+**Type:** ``type[object]``
+
+See :ref:`using-in-development-features-in-snapcraft-yaml` for further details.
 
 apps.<app-name>.watchdog-timeout
 --------------------------------
-This value declares the service watchdog timeout.|br| **Type:** `string` |br| Time duration units can be `10ns`, `10us`, `10ms`, `10s`, `10m`. For watchdog to work, the application requires access to the _systemd_ notification socket, which can be declared by listing a daemon-notify plug in the plugs section.  |br| Requires `daemon` to be set in the _app_ metadata.
+This value declares the service watchdog timeout.
+
+**Type:** ``string``
+
+Time duration units can be ``10ns``, ``10us``, ``10ms``, ``10s``, ``10m``. For watchdog to work, the application requires access to the _systemd_ notification socket, which can be declared by listing a daemon-notify plug in the plugs section.
+
+Requires ``daemon`` to be set in the ``app`` metadata.
 
 plugs
 -----
 *optional*
 
-A set of plugs that the snap asserts. |br| **Type:** `dict` |br| These plugs apply to all `apps` and differs from **apps.<app-name>.plugs** in that the type is in a `dict` rather than a `list` format, `:`(colon) must be postfixed to the interface name and shouldn't start with `-` (dash-space)
+A set of plugs that the snap asserts.
+
+**Type:** ``dict``
+
+These plugs apply to all ``apps`` and differs from ``apps.<app-name>.plugs`` in that the type is in a ``dict`` rather than a ``list`` format, ``:`` (colon) must be postfixed to the interface name and shouldn't start with ``-`` (dash-space)
 
 plugs.<plug-name>
 -----------------
 *optional*
 
-A set of attributes for a plug |br| **Type:** `dict` |br| **Example:** `read` attribute for the `home` interface
+A set of attributes for a plug
+
+**Type:** ``dict``
+
+**Example:** ``read`` attribute for the ``home`` interface
 
 plugs.<plug-name>.<attribute-name>
 ----------------------------------
 *optional*
 
-Value of the attribute |br| **Type:** `string` |br| **Example:** `all` for `read` attribute of the `home` interface
+Value of the attribute
+
+**Type:** ``string``
+
+**Example:** ``all`` for ``read`` attribute of the ``home`` interface
 
 slots
 -----
 *optional*
 
-A set of slots that the snap provides. |br| **Type:** `dict` |br| These slots apply to all the `apps`
+A set of slots that the snap provides.
+
+**Type:** ``dict``
+
+These slots apply to all the ``apps``
 
 slots.<slot-name>
 -----------------
 *optional*
 
-A set of attributes of the slot |br| **Type:** `dict`
+A set of attributes of the slot
+
+**Type:** ``dict``
 
 slots.<slot-name>.<attribute-name>
 ----------------------------------
 *optional*
 
-Value of the attribute |br| **Type:** `dict`
+Value of the attribute
+
+**Type:** ``dict``
 
 parts
 -----
-A set of independent building blocks. |br| **Type:** `dict` |br| These independent building blocks are known as *parts*, and consist of either code or pre-built packages.
+A set of independent building blocks.
+
+**Type:** ``dict``
+
+These independent building blocks are known as *parts*, and consist of either code or pre-built packages.
 
 parts.<part-name>
 -----------------
-The name of the part building block. |br| **Type:** `dict`|br| `<part-name`> represents the specific name of a building block which can be then referenced by the command line tool (i.e. `snapcraft`).
+The name of the part building block.
+
+**Type:** ``dict``
+
+``<part-name>`` represents the specific name of a building block which can be then referenced by the command line tool (i.e. ``snapcraft``).
 
 parts.<part-name>.plugin
 ------------------------
-The plugin to drive the build process. |br| **Type:** `string` |br| Every part drives its build through a plugin, this entry declares the plugin that will drive the build process for `<part-name>`. Refer to [snapcraft plugins](4284.md) for more information on the available plugins and the specific attributes they add to the `parts.<part-name>.` namespace.
+The plugin to drive the build process.
+
+**Type:** ``string``
+
+Every part drives its build through a plugin, this entry declares the plugin that will drive the build process for ``<part-name>``. Refer to :ref:`snapcraft-plugins` for more information on the available plugins and the specific attributes they add to the ``parts.<part-name>.`` namespace.
 
 parts.<part-name>.source
 ------------------------
-A URL or path to a source tree to build. |br| **Type:** `string` |br| This can be a local path or remote, and can refer to a directory tree, a compressed archive or a revision control repository. This entry supports additional syntax, for more information refer to :ref:`snapcraft-advanced-grammar`.
+A URL or path to a source tree to build.
+
+**Type:** ``string``
+
+This can be a local path or remote, and can refer to a directory tree, a compressed archive or a revision control repository. This entry supports additional syntax, for more information refer to :ref:`snapcraft-advanced-grammar`.
 
 parts.<part-name>.source-type
 -----------------------------
-Used when the type-of `source` entry cannot be detected.|br| **Type:** `enum` |br| Can be one of the following: `[bzr|deb|git|hg|local|mercurial|rpm|subversion|svn|tar|zip|7z]`
+Used when the type-of ``source`` entry cannot be detected.
+
+**Type:** ``enum``
+
+Can be one of the following: ``[bzr|deb|git|hg|local|mercurial|rpm|subversion|svn|tar|zip|7z]``
 
 parts.<part-name>.source-checksum
 ---------------------------------
-Used when `source` represents a file. |br| **Type:** `string` |br| Takes the syntax `<algorithm>/<digest>`, where `<algorithm>` can be any of: `md5`, `sha1`, `sha224`, `sha256`, `sha384`, `sha512`, `sha3_256`, `sha3_384` or `sha3_512`. When set, the source is cached for multiple uses in different snapcraft projects.
+Used when ``source`` represents a file.
+
+**Type:** ``string``
+
+Takes the syntax ``<algorithm>/<digest>``, where ``<algorithm>`` can be any of: ``md5``, ``sha1``, ``sha224``, ``sha256``, ``sha384``, ``sha512``, ``sha3_256``, ``sha3_384`` or ``sha3_512``. When set, the source is cached for multiple uses in different snapcraft projects.
 
 parts.<part-name>.source-depth
 ------------------------------
-Depth of history for sources using version control. |br| **Type:** `integer` |br| Source repositories under version control are cloned or checked out with full history. Specifying a depth will truncate the history to the specified number of commits.
+Depth of history for sources using version control.
+
+**Type:** ``integer``
+
+Source repositories under version control are cloned or checked out with full history. Specifying a depth will truncate the history to the specified number of commits.
 
 parts.<part-name>.source-branch
 -------------------------------
-Work on a specific branch for source repositories under version control. |br| **Type:** `string`
+Work on a specific branch for source repositories under version control.
+
+**Type:** ``string``
 
 parts.<part-name>.source-commit
 -------------------------------
-Work on a specific commit for source repositories under version control. |br| **Type:** `string`
+Work on a specific commit for source repositories under version control.
+
+**Type:** ``string``
 
 parts.<part-name>.source-tag
 ----------------------------
-Work on a specific tag for source repositories under version control. |br| **Type:** `string`
+Work on a specific tag for source repositories under version control.
+
+**Type:** ``string``
 
 parts.<part-name>.source-subdir
 -------------------------------
-A path within the `source` to set as the working directory when building. The build will _not_ be able to access files outside of this location, such as one level up.|br| **Type:** `string`
+A path within the ``source`` to set as the working directory when building. The build will *not* be able to access files outside of this location, such as one level up.
+
+**Type:** ``string``
 
 parts.<part-name>.source-submodules
 -----------------------------------
-Used to configure which submodules to fetch from the source tree.|br| **Type:** `dict` |br| When defined, only listed submodules are fetched. If empty, no submodules are fetched. If _submodules_ is not defined, all submodules are fetched by default.
+Used to configure which submodules to fetch from the source tree.
+
+**Type:** ``dict``
+
+When defined, only listed submodules are fetched. If empty, no submodules are fetched. If ``submodules`` is not defined, all submodules are fetched by default.
 
 parts.<part-name>.after
 -----------------------
-Ensures that all the `<part-name>`s listed in `after` are staged before this part begins its [lifecycle](12231.md#4276-heading--steps). |br| **Type:** `list[string]`
+Ensures that all the parts listed in ``after`` are staged before this part begins its :ref:`lifecycle <parts-lifecycle-steps>`.
+
+**Type:** ``list[string]``
 
 parts.<part-name>.build-environment
 -----------------------------------
-**Type:** `list[string]`|br|A list of environment variable assignments that is applied during the build step, it is exported in order which allows for later values to override (or modify) earlier values. This entry supports additional syntax, for more information refer to :ref:`snapcraft-advanced-grammar`.
+**Type:** ``list[string]``
+
+A list of environment variable assignments that is applied during the build step, it is exported in order which allows for later values to override (or modify) earlier values. This entry supports additional syntax, for more information refer to :ref:`snapcraft-advanced-grammar`.
 
 parts.<part-name>.build-snaps
 -----------------------------
-A list of snap names to install that are necessary to build `<part-name>`.  |br| **Type:** `list[string]` |br| If a specific channel is required, the syntax is of the form `<snap-name>/<channel>`. This entry supports additional syntax, for more information refer to :ref:`snapcraft-advanced-grammar`.
+A list of snap names to install that are necessary to build ``<part-name>``.
+
+**Type:** ``list[string]``
+
+If a specific channel is required, the syntax is of the form ``<snap-name>/<channel>``. This entry supports additional syntax, for more information refer to :ref:`snapcraft-advanced-grammar`.
 
 parts.<part-name>.build-packages
 --------------------------------
-A list of packages required to build a snap. |br| **Type:** `list[string]` |br| Packages are installed using the host's package manager, such as `apt` or `dnf`, and are required for `<part-name>` to build correctly. This entry supports additional syntax, for more information refer to :ref:`snapcraft-advanced-grammar`. |br| **Example:** `[ libssl-dev, libssh-dev, libncursesw5-dev]`
+A list of packages required to build a snap.
+
+**Type:** ``list[string]``
+
+Packages are installed using the host's package manager, such as ``apt`` or ``dnf``, and are required for ``<part-name>`` to build correctly. This entry supports additional syntax, for more information refer to :ref:`snapcraft-advanced-grammar`.
+
+**Example:** ``[libssl-dev, libssh-dev, libncursesw5-dev]``
 
 parts.<part-name>.stage-packages
 --------------------------------
-A list of packages required at runtime by a snap. |br| **Type:** `list[string]` |br| Packages are installed using the host's package manager, such as `apt` or `dnf`, and are required by `<part-name>` to run. This entry supports additional syntax, for more information refer to :ref:`snapcraft-advanced-grammar`. |br| **Example:** `[python-zope.interface, python-bcrypt]`
+A list of packages required at runtime by a snap.
+
+**Type:** ``list[string]``
+
+Packages are installed using the host's package manager, such as ``apt`` or ``dnf``, and are required by ``<part-name>`` to run. This entry supports additional syntax, for more information refer to :ref:`snapcraft-advanced-grammar`.
+
+**Example:** ``[python-zope.interface, python-bcrypt]``
 
 parts.<part-name>.stage-snaps
 -----------------------------
-A list of snaps required at runtime by a snap. |br| **Type:** `list[string]` |br| Snaps are required by \<part-name\> to run. They are fetched using `snap download`, and are unpacked into the snap being built. This entry supports additional syntax, for more information refer to :ref:`snapcraft-advanced-grammar`.  |br| **Example:** `[hello, black/latest/edge]`
+A list of snaps required at runtime by a snap.
+
+**Type:** ``list[string]``
+
+Snaps are required by ``<part-name>`` to run. They are fetched using ``snap download``, and are unpacked into the snap being built. This entry supports additional syntax, for more information refer to :ref:`snapcraft-advanced-grammar`.
+
+**Example:** ``[hello, black/latest/edge]``
 
 parts.<part-name>.organize
 --------------------------
-A map of files to rename. |br| **Type:** `dict` |br| In the key/value pair, the key represents the path of a file inside the part and the value represents how the file is going to be staged. |br| **Example:** ` bin/snapcraftctl: bin/scriptlet-bin/snapcraftctl`.
+A map of files to rename.
+
+**Type:** ``dict``
+
+In the key/value pair, the key represents the path of a file inside the part and the value represents how the file is going to be staged.
+
+**Example:** ``bin/snapcraftctl: bin/scriptlet-bin/snapcraftctl``
 
 parts.<part-name>.filesets
 --------------------------
-A key to represent a group of files, or a single file.  |br| See [Snapcraft filesets](8973.md) for further details.
+A key to represent a group of files, or a single file.
+
+See :ref:`snapcraft-filesets` for further details.
 
 .. _snapcraft-yaml-reference-stage:
 
 parts.<part-name>.stage
 -----------------------
-A list of files from `<part-name>` to stage. |br| **Type:** `list[string]` |br| Rules applying to the list here are the same as those of filesets. Referencing of fileset keys is done with a `$` prefixing the fileset key, which will expand with the value of such key.
+A list of files from ``<part-name>`` to stage.
+
+**Type:** ``list[string]``
+
+Rules applying to the list here are the same as those of filesets. Referencing of fileset keys is done with a ``$`` prefixing the fileset key, which will expand with the value of such key.
 
 parts.<part-name>.parse-info
 ----------------------------
-Defines the content to adopt when using external metadata. |br| Type:  `list[string]` |br| It is a relative path to a [supported metadata file](4642.md) from the part source, build or install directory ([SNAPCRAFT_PART_SRC, SNAPCRAFT_PART_BUILD, SNAPCRAFT_PART_INSTALL](12231.md#4276-heading--parts-directories)). |br| See [Using external metadata](4642.md) for more details.
+Defines the content to adopt when using external metadata.
+
+Type:  ``list[string]``
+
+It is a relative path to a :ref:`supported metadata file <using-external-metadata>` from the part source, build or install directory (:ref:`SNAPCRAFT_PART_SRC, SNAPCRAFT_PART_BUILD, SNAPCRAFT_PART_INSTALL <parts-lifecycle-parts-directories>`).
+
+See :ref:`using-external-metadata` for more details.
 
 .. _snapcraft-yaml-reference-prime:
 
 parts.<part-name>.prime
 -----------------------
-A list of files from `<part-name>` to [prime](12231.md#4276-heading--steps). |br| **Type**:`list[string]` |br| Rules applying to the list here are the same as those of filesets. Referencing of fileset keys is done with a `$` prefixing the fileset key, which will expand with the value of such key.
+A list of files from ``<part-name>`` to :ref:`prime <parts-lifecycle-steps>`.
+
+**Type**: ``list[string]``
+
+Rules applying to the list here are the same as those of filesets. Referencing of fileset keys is done with a ``$`` prefixing the fileset key, which will expand with the value of such key.
 
 parts.<part-name>.prepare
 -------------------------
 *deprecated*
-**The release of [Snapcraft 3.0](10704.md) made this key obsolete.|br|Use [`override-build`](#4276-heading--override-build) instead.** |br| Runs a script before the plugin's [build](12231.md#4276-heading--steps) step. |br| **Type:** `multiline string` |br| The script is run before the build step defined for `parts.<part-name>.plugin` starts. The working directory is the base build directory for the given part. The defined script is run with `/bin/sh` and `set -e`. |br| A set of [Environment Variables](7983.md) will be available to the script.
+
+**The release of** :ref:`Snapcraft 3.0 <release-notes-snapcraft-3-0>` **made this key obsolete.**
+
+**Use** :ref:`override-build <snapcraft-yaml-override-build>` **instead.**
+
+Runs a script before the plugin's :ref:`build step <parts-lifecycle-steps>`.
+
+**Type:** ``multiline string``
+
+The script is run before the build step defined for ``parts.<part-name>.plugin`` starts. The working directory is the base build directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``.
+
+A set of :ref:`environment variables <environment-variables>` will be available to the script.
+
+.. _snapcraft-yaml-override-build:
 
 parts.<part-name>.override-build
 --------------------------------
-Replaces a plugin's default build process with a script. |br| **Type:** `multiline string` |br| The shell script defined here replaces the [build](12231.md#4276-heading--steps) step of the plugin, defined in `parts.<part-name>.plugin`. The working directory is the base build directory for the given part. The defined script is run with `/bin/sh` and `set -e`.  A set of [Environment Variables](7983.md) will be available to the script.
+Replaces a plugin's default build process with a script.
+
+**Type:** ``multiline string``
+
+The shell script defined here replaces the :ref:`build step <parts-lifecycle-steps>` of the plugin, defined in `parts.<part-name>.plugin`. The working directory is the base build directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``.  A set of :ref:`environment variables <environment-variables>` will be available to the script.
 
 parts.<part-name>.override-prime
 --------------------------------
-Replaces a plugin's default prime process with a script. |br| **Type:** `multiline string` |br| The shell script defined here replaces the [prime](12231.md#4276-heading--steps) step of the plugin, defined in `parts.<part-name>.plugin`. The working directory is the base prime directory for the given part. The defined script is run with `/bin/sh` and `set -e`.  A set of [Environment Variables](7983.md) will be available to the script.
+Replaces a plugin's default prime process with a script.
+
+**Type:** ``multiline string``
+
+The shell script defined here replaces the :ref:`prime step <parts-lifecycle-steps>` of the plugin, defined in ``parts.<part-name>.plugin``. The working directory is the base prime directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``.  A set of :ref:`environment variables <environment-variables>` will be available to the script.
 
 parts.<part-name>.override-pull
 -------------------------------
-Replaces a plugin's default pull process with a script. |br| **Type:** `multiline string` |br| The shell script defined here replaces the [pull](12231.md#4276-heading--steps) step of the plugin, defined in `parts.<part-name>.plugin`. The working directory is the base pull directory for the given part. The defined script is run with `/bin/sh` and `set -e`.  A set of [Environment Variables](7983.md) will be available to the script.
+Replaces a plugin's default pull process with a script.
+
+**Type:** ``multiline string``
+
+The shell script defined here replaces the :ref:`pull step <parts-lifecycle-steps>` of the plugin, defined in ``parts.<part-name>.plugin``. The working directory is the base pull directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``. A set of :ref:`environment variables <environment-variables>` will be available to the script.
 
 parts.<part-name>.override-stage
 --------------------------------
-Replaces a plugin's default stage process with a script. |br| **Type:** `multiline string` |br| The shell script defined here replaces the [stage](12231.md#4276-heading--steps) step of the plugin, defined in `parts.<part-name>.plugin`. The working directory is the base stage directory for the given part. The defined script is run with `/bin/sh` and `set -e`.  A set of [Environment Variables](7983.md) will be available to the script.
+Replaces a plugin's default stage process with a script.
+
+**Type:** ``multiline string``
+
+The shell script defined here replaces the :ref:`stage step <parts-lifecycle-steps>` of the plugin, defined in ``parts.<part-name>.plugin``. The working directory is the base stage directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``.  A set of :ref:`environment variables <environment-variables>` will be available to the script.
 
 parts.<part-name>.build-attributes
 ----------------------------------
-A list of named attributes to modify the behaviour of plugins. |br| **Type:** `enum` |br| For more information, refer to [Snapcraft parts metadata](8336.md#4276-heading--build-attributes).
+A list of named attributes to modify the behaviour of plugins.
+
+**Type:** ``enum``
+
+For more information, refer to :ref:`snapcraft-parts-metadata`.
+
+
+.. _timer-string-format: https://forum.snapcraft.io/t/6562
+.. _`systemd.service manual`: https://www.freedesktop.org/software/systemd/man/systemd.service.html#Restart=
+.. _RestartSec: https://www.freedesktop.org/software/systemd/man/systemd.service.html#RestartSec=
+.. _SPDX-expression: https://spdx.org/licenses/
+.. _SPDX-2.1-support: https://github.com/snapcore/snapd/blob/89b5855d44686008f855582bdfd7b2bf7b1a157c/spdx/validate.go#L24
+.. _snapd-licenses: https://github.com/snapcore/snapd/blob/master/spdx/licenses.go
+.. _proposal-support-command-chain: https://forum.snapcraft.io/t/6112

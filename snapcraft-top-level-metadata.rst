@@ -372,6 +372,8 @@ Plugs and slots for an entire snap
 
 Plugs and slots for an :ref:`interface <supported-interfaces>` are usually configured per-app or per-daemon within *snapcraft.yaml*. See :ref:`Snapcraft app metadata <snapcraft-app-and-service-metadata>` for more details. However, ``snapcraft.yaml`` also enables global *plugs* and *slots* configuration for an entire snap:
 
+.. _snapcraft-top-level-metadata-plugs:
+
 plugs
 -----
 
@@ -394,6 +396,8 @@ plugs.<plug-name>.<attribute-name>
 Type: ``string`` *(optional)*
 
 Value of the attribute. Example: ``all`` for ``read`` attribute of the ``home`` interface.
+
+.. _snapcraft-top-level-metadata-slots:
 
 slots
 -----

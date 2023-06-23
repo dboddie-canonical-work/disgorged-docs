@@ -82,7 +82,7 @@ We *adopt* the above metadata into ``snapcraft.yaml`` with the following:
 
 ..
 
-   ⓘ The path in ``parse-info`` is a relative path from the part source, build or install directory (`SNAPCRAFT_PART_SRC, SNAPCRAFT_PART_BUILD, SNAPCRAFT_PART_INSTALL <parts-lifecycle.md#using-external-metadata-heading--parts-directories>`__).
+   ⓘ The path in ``parse-info`` is a relative path from the part source, build or install directory (:ref:`SNAPCRAFT_PART_SRC, SNAPCRAFT_PART_BUILD, SNAPCRAFT_PART_INSTALL <parts-lifecycle-parts-directories>`).
 
 The resulting snap will use the title, version, summary and description from the AppStream file.
 
@@ -116,7 +116,7 @@ Individual parts in your ``snapcraft.yaml`` can set the ``version`` and ``grade`
 See :ref:`Scriptlets <override-build-steps>` for more details on using scripting elements within *snapcraft.yaml*.
 
 
-.. _using-external-metadata-heading--setup-py:
+.. _using-external-metadata-setup-py:
 
 [not recommended] ``setup.py``\
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -161,7 +161,7 @@ You can *adopt* the relevant metadata in the above with the following snapcraft.
        parse-info: [setup.py]
 
 
-.. _using-external-metadata-heading--version:
+.. _using-external-metadata-version:
 
 Snapcraft versions and compatibility
 ------------------------------------

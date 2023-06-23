@@ -8,7 +8,7 @@ Base snaps
 A *base* snap is a special kind of snap that provides a run-time environment with a minimal set of libraries that are common to most applications. They’re transparent to users, but they need to be considered and specified when building a snap.
 
 
-.. _base-snaps-heading--supported:
+.. _base-snaps-supported:
 
 Supported base snaps
 --------------------
@@ -51,7 +51,7 @@ The base snap mounts itself as the root filesystem within your snap such that wh
 .. note::
           Compatibility mode and ESM Support
 
-          When building a snap with no specified base, :ref:`Snapcraft <snapcraft-overview>` will operate in compatibility mode. This is essentially a prior (2.43-era) version of Snapcraft and, consequently, *snapcraft* will lose the functionality of newer releases. See `Features incompatible with bases <release-notes-snapcraft-3-0.md#base-snaps-heading--base-exceptions>`__ for details.
+          When building a snap with no specified base, :ref:`Snapcraft <snapcraft-overview>` will operate in compatibility mode. This is essentially a prior (2.43-era) version of Snapcraft and, consequently, *snapcraft* will lose the functionality of newer releases. See :ref:`release-notes-snapcraft-3-0-base-exceptions` for details.
 
           This compatibility mode is no longer supported in Snapcraft 5.0. Snapcraft 4 can be installed from the 4.x track on the Snap Store (:ref:``snap install snapcraft --channel 4.x``). See `Snapcraft and Extended Security Maintenance <snapcraft-and-extended-security-maintenance>` for essential support details.
 
@@ -64,9 +64,11 @@ Choosing a base
 
 :ref:`Snapcraft extensions <snapcraft-extensions>` are a great way to easily bundle a set of common requirements into a snap, such as for running KDE Plasma or GNOME applications, but you need to select a base that’s supported by the extension you require. See :ref:`Supported extensions <supported-extensions>` for a list of which extensions support which bases.
 
-Base support was added with the release of :ref:`Snapcraft 3 <release-notes-snapcraft-3-0>`. As noted above, snaps created before this, and snaps not using the ``base:`` keyword, can still be built but they cannot use `specific new features <release-notes-snapcraft-3-0.md#base-snaps-heading--base-exceptions>`__. Instead, snaps built without bases inherit attributes from their respective build environments.
+Base support was added with the release of :ref:`Snapcraft 3 <release-notes-snapcraft-3-0>`. As noted above, snaps created before this, and snaps not using the ``base:`` keyword, can still be built but they cannot use :ref:`specific new features <release-notes-snapcraft-3-0-base-exceptions>`. Instead, snaps built without bases inherit attributes from their respective build environments.
 
 Snaps that don’t use bases can often migrate to one without too much difficulty. See :ref:`Upgrading snapcraft <upgrading-snapcraft>` for more details on potential differences.
+
+.. _building-a-base-snap:
 
 Building a base snap
 --------------------
@@ -80,7 +82,7 @@ While it is possible to build your own base snap, its publisher needs to take re
 Base snaps can be either bootable or non-bootable. The former needs to include *systemd* while the latter can be leaner.
 
 
-.. _base-snaps-heading--base-snap:
+.. _base-snaps-base-snap:
 
 build-base
 ----------

@@ -22,8 +22,8 @@ Snapcraft 3.0 also remains backwards compatible. This means you can omit the ``b
 
 The environment runs in a container, which means it’s isolated from the user during normal operation. However, the following commands enable you to step into this encapsulated environment:
 
--  ``--shell``: builds your snap to the `lifecycle step <parts-lifecycle.md#release-notes-snapcraft-3-0-heading--steps>`__ prior to that specified and opens a shell into the environment (e.g. running ``snapcraft prime --shell`` will run up to the ``stage`` step and open a shell).
--  ``--shell-after``: builds your snap to the `lifecycle step <parts-lifecycle.md#release-notes-snapcraft-3-0-heading--steps>`__ specified and opens a shell into the environment. (eg. running ``snapcraft prime --shell-after`` will run up to the ``prime`` step and then drop into a shell).
+-  ``--shell``: builds your snap to the :ref:`lifecycle step <parts-lifecycle-steps>` prior to that specified and opens a shell into the environment (e.g. running ``snapcraft prime --shell`` will run up to the ``stage`` step and open a shell).
+-  ``--shell-after``: builds your snap to the :ref:`lifecycle step <parts-lifecycle-steps>` specified and opens a shell into the environment. (eg. running ``snapcraft prime --shell-after`` will run up to the ``prime`` step and then drop into a shell).
 -  ``--debug``, opens a shell inside the environment after an error occur.
 
 The below video shows an example of how the system behaves with the new functionality in place:
@@ -35,10 +35,10 @@ macOS support
 
 With this release of Snapcraft 3.0, we are happy to announce support for macOS via `Homebrew <https://formulae.brew.sh/formula/snapcraft>`__. Moreover, the experience is transparent thanks to the use of build environments and its underlying technology.
 
-See `Install snapcraft on macOS <installing-snapcraft.md#release-notes-snapcraft-3-0-heading--macos>`__ for further details.
+See :ref:`installing-snapcraft-macos` for further details.
 
 
-.. _release-notes-snapcraft-3-0-heading--base-exceptions:
+.. _release-notes-snapcraft-3-0-base-exceptions:
 
 Features incompatible with bases
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -82,7 +82,7 @@ The recording below shows how the original ``command``, defined in ``snapcraft.y
 |image1|
 
 
-.. _release-notes-snapcraft-3-0-heading--extensions:
+.. _release-notes-snapcraft-3-0-extensions:
 
 Extensions
 ~~~~~~~~~~
