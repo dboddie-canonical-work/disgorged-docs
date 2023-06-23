@@ -33,28 +33,30 @@ Each snap runs in a custom environment specifically made for it. To get an overv
 
 Alongside the many system-specific variables, this environment will include the following:
 
-+---------------------------------------------------------------------------+-----------------------------------------------------------------------------+
-| `SNAP <environment-variables-heading--snap_>`__                           | `SNAP_ARCH <environment-variables-heading--snap-arch_>`__                   |
-+---------------------------------------------------------------------------+-----------------------------------------------------------------------------+
-| `SNAP_COMMON <environment-variables-heading--snap-common_>`__             | `SNAP_DATA <environment-variables-heading--snap-data_>`__                   |
-+---------------------------------------------------------------------------+-----------------------------------------------------------------------------+
-| `SNAP_EUID <environment-variables-heading--snap-euid_>`__                 | `SNAP_INSTANCE_NAME <environment-variables-heading--snap-instance-name_>`__ |
-+---------------------------------------------------------------------------+-----------------------------------------------------------------------------+
-| `SNAP_INSTANCE_KEY <environment-variables-heading--snap-instance-key_>`__ | `SNAP_LIBRARY_PATH <environment-variables-heading--snap-library-path_>`__   |
-+---------------------------------------------------------------------------+-----------------------------------------------------------------------------+
-| `SNAP_NAME <environment-variables-heading--name_>`__                      | `SNAP_REAL_HOME <environment-variables-heading--snap-real-home_>`__         |
-+---------------------------------------------------------------------------+-----------------------------------------------------------------------------+
-| `SNAP_REVISION <environment-variables-heading--snap-revision_>`__         | `SNAP_SAVE_DATA <environment-variables-heading--snap-save-data_>`__         |
-+---------------------------------------------------------------------------+-----------------------------------------------------------------------------+
-| `SNAP_UID <environment-variables-heading--snap-uid_>`__                   | `SNAP_USER_COMMON <environment-variables-heading--snap-user-common_>`__     |
-+---------------------------------------------------------------------------+-----------------------------------------------------------------------------+
-| `SNAP_USER_DATA <environment-variables-heading--snap-user-data_>`__       | `SNAP_VERSION <environment-variables-heading--snap-version_>`__             |
-+---------------------------------------------------------------------------+-----------------------------------------------------------------------------+
-| `HOME <environment-variables-heading--home_>`__                           | `PATH <environment-variables-heading--path_>`__                             |
-+---------------------------------------------------------------------------+-----------------------------------------------------------------------------+
+.. list-table::
+   :header-rows: 0
+
+   * - `SNAP <environment-variables-snap_>`__
+     - `SNAP_ARCH <environment-variables-snap-arch_>`__
+   * - `SNAP_COMMON <environment-variables-snap-common_>`__
+     - `SNAP_DATA <environment-variables-snap-data_>`__
+   * - `SNAP_EUID <environment-variables-snap-euid_>`__
+     - `SNAP_INSTANCE_NAME <environment-variables-snap-instance-name_>`__
+   * - `SNAP_INSTANCE_KEY <environment-variables-snap-instance-key_>`__
+     - `SNAP_LIBRARY_PATH <environment-variables-snap-library-path_>`__
+   * - `SNAP_NAME <environment-variables-snap-name_>`__
+     - `SNAP_REAL_HOME <environment-variables-snap-real-home_>`__
+   * - `SNAP_REVISION <environment-variables-snap-revision_>`__
+     - `SNAP_SAVE_DATA <environment-variables-snap-save-data_>`__
+   * - `SNAP_UID <environment-variables-snap-uid_>`__
+     - `SNAP_USER_COMMON <environment-variables-snap-user-common_>`__
+   * - `SNAP_USER_DATA <environment-variables-snap-user-data_>`__
+     - `SNAP_VERSION <environment-variables-snap-version_>`__
+   * - `HOME <environment-variables-home_>`__
+     - `PATH <environment-variables-path_>`__
 
 
-.. _environment-variables-heading--snap:
+.. _environment-variables-snap:
 
 ~~~~~~~~~~~~~
 
@@ -65,7 +67,7 @@ Directory where the snap is mounted. This is where all the files in your snap ar
 Typical value: ``/snap/hello-world/27``
 
 
-.. _environment-variables-heading--snap-arch:
+.. _environment-variables-snap-arch:
 
 ~~~~~~~~~~~~~
 
@@ -78,7 +80,7 @@ Typical value ``amd64``
 Other values are: ``i386``, ``armhf``, ``arm64``.
 
 
-.. _environment-variables-heading--snap-common:
+.. _environment-variables-snap-common:
 
 ~~~~~~~~~~~~~
 
@@ -91,7 +93,7 @@ This directory is owned and writable by ``root`` and is meant to be used by back
 Typical value: ``/var/snap/hello-world/common``
 
 
-.. _environment-variables-heading--snap-data:
+.. _environment-variables-snap-data:
 
 ~~~~~~~~~~~~~
 
@@ -104,15 +106,15 @@ This directory is owned and writable by ``root`` and is meant to be used by back
 Typical value ``/var/snap/hello-world/27``
 
 
-.. _environment-variables-heading--snap-euid:
+.. _environment-variables-snap-euid:
 
 ~~~~~~~~~~~~~
 
    <pre>SNAP_EUID</pre>
 
-This variable contains the *effective* user ID (euid) of the user running the snap instance. See also `SNAP_UID <environment-variables-heading--snap-uid_>`__.
+This variable contains the *effective* user ID (euid) of the user running the snap instance. See also `SNAP_UID <environment-variables-snap-uid_>`__.
 
-For this variable to be exposed by a snap, the snap developer will need to include the following `assumes <snapcraft-top-level-metadata.md#environment-variables-heading--assumes>`__ value:
+For this variable to be exposed by a snap, the snap developer will need to include the following :ref:`assumes <snapcraft-top-level-metadata-assumes>` value:
 
 .. code:: yaml
 
@@ -121,7 +123,7 @@ For this variable to be exposed by a snap, the snap developer will need to inclu
 Requires *snapd* 2.59+.
 
 
-.. _environment-variables-heading--snap-instance-name:
+.. _environment-variables-snap-instance-name:
 
 ~~~~~~~~~~~~~
 
@@ -134,7 +136,7 @@ For example snap ``hello-world`` with instance key ``foo`` has instance name equ
 Typical value: ``hello-world``
 
 
-.. _environment-variables-heading--snap-instance-key:
+.. _environment-variables-snap-instance-key:
 
 ~~~~~~~~~~~~~
 
@@ -147,7 +149,7 @@ For example instance ``hello-world_foo`` has an instance key ``foo``.
 Typical value: none
 
 
-.. _environment-variables-heading--snap-library-path:
+.. _environment-variables-snap-library-path:
 
 ~~~~~~~~~~~~~
 
@@ -160,7 +162,7 @@ The value is always ``/var/lib/snapd/lib/gl:`` Please note the colon at the end 
 The referenced directory is typically empty unless Nvidia proprietary drivers are in use.
 
 
-.. _environment-variables-heading--snap-name:
+.. _environment-variables-snap-name:
 
 ~~~~~~~~~~~~~
 
@@ -171,7 +173,7 @@ The name of the snap as specified in the ``snapcraft.yaml`` file.
 Typical value: ``hello-world``
 
 
-.. _environment-variables-heading--snap-real-home:
+.. _environment-variables-snap-real-home:
 
 ~~~~~~~~~~~~~
 
@@ -182,7 +184,7 @@ The vanilla ``HOME`` environment variable before snapd-induced remapping, refer 
 Available `since snapd 2.46 <https://github.com/snapcore/snapd/pull/9189/commits/37d0a229>`__.
 
 
-.. _environment-variables-heading--snap-revision:
+.. _environment-variables-snap-revision:
 
 ~~~~~~~~~~~~~
 
@@ -195,7 +197,7 @@ The Snap Store assigns monotonic revisions to each upload of a given snap. Snapd
 Typical value: ``27`` or ``x1``
 
 
-.. _environment-variables-heading--snap-save-data:
+.. _environment-variables-snap-save-data:
 
 ~~~~~~~~~~~~~
 
@@ -208,15 +210,15 @@ It points to a snap-specific location on the ubuntu-save partition where the sna
 See `ubuntu-save <https://ubuntu.com/core/docs/storage-layout#environment-variables-heading--save>`__ in the Ubuntu Core documentation for more details on storage layout with this specific partition.
 
 
-.. _environment-variables-heading--snap-uid:
+.. _environment-variables-snap-uid:
 
 ~~~~~~~~~~~~~
 
    <pre>SNAP_UID</pre>
 
-This variable contains the user ID (uid) of the user running this snap instance. See also `SNAP_EUID <environment-variables-heading--snap-euid_>`__.
+This variable contains the user ID (uid) of the user running this snap instance. See also `SNAP_EUID <environment-variables-snap-euid_>`__.
 
-For this variable to be exposed by a snap, the snap developer will need to include the following `assumes <snapcraft-top-level-metadata.md#environment-variables-heading--assumes>`__ value:
+For this variable to be exposed by a snap, the snap developer will need to include the following :ref:`assumes <snapcraft-top-level-metadata-assumes>` value:
 
 .. code:: yaml
 
@@ -225,7 +227,7 @@ For this variable to be exposed by a snap, the snap developer will need to inclu
 Requires *snapd* 2.59+.
 
 
-.. _environment-variables-heading--snap-user-common:
+.. _environment-variables-snap-user-common:
 
 ~~~~~~~~~~~~~
 
@@ -238,7 +240,7 @@ Unlike ``SNAP_DATA``, data present in this directory is not backed up or restore
 Typical value ``/home/zyga/snap/hello-world/common``
 
 
-.. _environment-variables-heading--snap-user-data:
+.. _environment-variables-snap-user-data:
 
 ~~~~~~~~~~~~~
 
@@ -253,7 +255,7 @@ Typical value: ``/home/zyga/snap/hello-world/27``
 The final number there is ``$SNAP_REVISION``.
 
 
-.. _environment-variables-heading--snap-version:
+.. _environment-variables-snap-version:
 
 ~~~~~~~~~~~~~
 
@@ -267,7 +269,7 @@ Generic variables
 -----------------
 
 
-.. _environment-variables-heading--home:
+.. _environment-variables-home:
 
 ~~~~~~~~~~~~~
 
@@ -280,7 +282,7 @@ For classic confinement snaps, the value remains unchanged.
 Typical value: ``/home/_user_name_/snap/_snap_name_/_snap_revision_`` (e.g. ``/home/zyga/snap/hello-world/27``)
 
 
-.. _environment-variables-heading--path:
+.. _environment-variables-path:
 
 ~~~~~~~~~~~~~
 

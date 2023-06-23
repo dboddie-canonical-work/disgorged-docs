@@ -13,12 +13,12 @@ This documentation explains how to add these desktop files to your snap so that 
 
 There are three methods to tell snapcraft which desktop entry files to use.
 
--  `Put the desktop entry file in the ``snap/gui`` directory. <desktop-files-for-menu-integration-heading--snap-gui_>`__
--  `Use the ``desktop`` key in the app definition <desktop-files-for-menu-integration-heading--desktop-key_>`__ to point to a desktop file in the prime directory.
+-  `Put the desktop entry file in the ``snap/gui`` directory. <desktop-files-snap-gui_>`__
+-  `Use the ``desktop`` key in the app definition <desktop-files-desktop-key_>`__ to point to a desktop file in the prime directory.
 -  `Use the desktop entry file from the AppStream metadata <using-external-metadata.md#desktop-files-for-menu-integration-heading--appstream>`__ of your application.
 
 
-.. _desktop-files-for-menu-integration-heading--snap-gui:
+.. _desktop-files-snap-gui:
 
 Desktop entry files in the ``snap/gui`` directory
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -44,7 +44,7 @@ The ``Icon=`` line specifies the absolute path of the icon of the application. T
 Since ``snapcraft`` copies all the contents of the ``snap/gui/`` folder to ``meta/gui``, the absolute path of the icon in the installed snap will be ``${SNAP}/meta/gui/snapname.png``.
 
 
-.. _desktop-files-for-menu-integration-heading--desktop-key:
+.. _desktop-files-desktop-key:
 
 Use the ``desktop`` key to point to the entry file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

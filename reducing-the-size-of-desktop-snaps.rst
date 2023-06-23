@@ -19,7 +19,7 @@ Snaps can provide content to other snaps using the :ref:`content interface <the-
 
 ..
 
-   ⚠ Updating an existing snap to use a content snap or extension will not automatically reduce the size of your snap. You also need to manually remove the relevant libraries from your snap by removing them from ``stage-packages``, for example. The `cleanup part <>`__ can help you do this automatically.
+   ⚠ Updating an existing snap to use a content snap or extension will not automatically reduce the size of your snap. You also need to manually remove the relevant libraries from your snap by removing them from ``stage-packages``, for example. The :ref:`cleanup part <reducing-size-cleanup-part>` can help you do this automatically.
 
 Avoid staging development files
 -------------------------------
@@ -29,14 +29,14 @@ The Ubuntu archives include many packages with development files whose name ends
 To avoid this, move all ``stage-packages`` which end in ``-dev`` to ``build-packages`` and add their regular counterpart to ``stage-packages``. See `Build and staging dependencies <https://snapcraft.io/docs/build-and-staging-dependencies>`__ for more information.
 
 
-.. _reducing-the-size-of-desktop-snaps-heading--cleanup-part:
+.. _reducing-size-cleanup-part:
 
 Using the cleanup part
 ----------------------
 
 Snaps often ship libraries that are already available in the base snap or connected content snaps. This is because ``stage-packages`` currently pulls in all the dependencies of the packages you list, even if those dependencies are already available from content snaps.
 
-You can remove those libraries manually by excluding them using the `stage <>`__ or `prime <>`__ keywords. This requires a lot of manual work, however, because you have to figure out which libraries are duplicated and exclude each one manually. An easier method is to use the following ``cleanup`` part, which automatically compares your snap with all the content snaps you specify and removes duplicate files.
+You can remove those libraries manually by excluding them using the :ref:`snapcraft-yaml-reference-stage` or :ref:`snapcraft-yaml-reference-prime` keywords. This requires a lot of manual work, however, because you have to figure out which libraries are duplicated and exclude each one manually. An easier method is to use the following ``cleanup`` part, which automatically compares your snap with all the content snaps you specify and removes duplicate files.
 
 1. Add the following part to your ``snapcraft.yaml`` in the ``parts`` section.
 
@@ -46,8 +46,6 @@ You can remove those libraries manually by excluding them using the `stage <>`__
       # connected content and base snaps. Since these files will be available
       # at runtime from the content and base snaps, they do not need to be
       # included in this snap itself.
-      #
-      # More info: reducing-the-size-of-desktop-snaps.md#reducing-the-size-of-desktop-snaps-heading--cleanup-part
       #
       cleanup:
         after:  # Make this part run last; list all your other parts here

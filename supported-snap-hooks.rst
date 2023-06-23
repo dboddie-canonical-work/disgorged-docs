@@ -17,7 +17,7 @@ A hook is defined as an executable within a snap’s :ref:``meta/hooks/`` direct
 
 The filename of the executable is based on the name of the hook. If this file exists, *snapd* will execute the file when required by that hook’s action.
 
-The following hooks are currently implemented: - `configure hook <supported-snap-hooks-heading--the-configure-hook_>`__ - `default-configure hook <supported-snap-hooks-heading--default-configure_>`__ - `full-disk-encryption hook <supported-snap-hooks-heading--fde_>`__ - `gate-auto-refresh <supported-snap-hooks-heading--gate-auto-refresh_>`__ - `install hook <supported-snap-hooks-heading--install_>`__ - `install-device hook <supported-snap-hooks-heading--install-device_>`__ - `interface hooks <supported-snap-hooks-heading--interface_>`__ - `prepare-device hook <supported-snap-hooks-heading--prepare-device_>`__ - `pre-refresh hook <supported-snap-hooks-heading--pre-refresh_>`__ - `post-refresh hook <supported-snap-hooks-heading--post-refresh_>`__ - `remove hook <supported-snap-hooks-heading--remove_>`__
+The following hooks are currently implemented: - `configure hook <supported-snap-hooks-the-configure-hook_>`__ - `default-configure hook <supported-snap-hooks-default-configure_>`__ - `full-disk-encryption hook <supported-snap-hooks-fde_>`__ - `gate-auto-refresh <supported-snap-hooks-gate-auto-refresh_>`__ - `install hook <supported-snap-hooks-install_>`__ - `install-device hook <supported-snap-hooks-install-device_>`__ - `interface hooks <supported-snap-hooks-interface_>`__ - `prepare-device hook <supported-snap-hooks-prepare-device_>`__ - `pre-refresh hook <supported-snap-hooks-pre-refresh_>`__ - `post-refresh hook <supported-snap-hooks-post-refresh_>`__ - `remove hook <supported-snap-hooks-remove_>`__
 
    ⓘ **Default shell environment**: A hook script can only assume a POSIX-compliant shell environment for its execution. If your script needs a specific shell, such as *Bash* or *Zsh*, it needs to be explicitly declared within the script’s *hashbang* header (``#!/bin/bash``, for example). Your snap also needs to ensure your chosen shell is available.
 
@@ -46,7 +46,7 @@ A hook is executed as a single transaction, where a transaction object holds all
 --------------
 
 
-.. _supported-snap-hooks-heading--the-configure-hook:
+.. _supported-snap-hooks-the-configure-hook:
 
 The configure hook
 ------------------
@@ -94,12 +94,12 @@ The same hook can also modify the configuration of a snap within the context of 
    ⓘ Note that configuration options do not need to be defined anywhere. ``snapctl set`` and ``snap set`` will accept any (valid) option name.
 
 
-.. _supported-snap-hooks-heading--default-configure:
+.. _supported-snap-hooks-default-configure:
 
 The default-configure hook
 --------------------------
 
-The default-configure-hook is an optional extension to the `configure hook <supported-snap-hooks.md#supported-snap-hooks-heading--the-configure-hook>`__ that executes only on snap installation and *before* services are started to provide access to the default configuration values stored in a device’s :ref:`gadget snap <gadget-snaps>`.
+The default-configure-hook is an optional extension to the `configure hook <supported-snap-hooks.md#supported-snap-hooks-the-configure-hook>`__ that executes only on snap installation and *before* services are started to provide access to the default configuration values stored in a device’s :ref:`gadget snap <gadget-snaps>`.
 
 The default-configure hook should be located within ‘meta/hooks’ and requires a configure hook to be present. A missing configure hook will result in an error.
 
@@ -124,7 +124,7 @@ Example default-configure hook:
 For more information see `Adding Snap configuration <https://snapcraft.io/docs/adding-snap-configuration>`__ and `Using the snapctl tool <https://snapcraft.io/docs/using-the-snapctl-tool>`__.
 
 
-.. _supported-snap-hooks-heading--fde:
+.. _supported-snap-hooks-fde:
 
 The full-disk-encryption hook
 -----------------------------
@@ -136,7 +136,7 @@ Creating a verifiable boot process on a non-standard (non-UEFI+TPM platform) FDE
 See `UC20 full-disk-encryption hook interface <https://snapcraft.io/docs/uc20-uc22-full-disk-encryption-hook-interface>`__ for details on how this hook is implemented.
 
 
-.. _supported-snap-hooks-heading--gate-auto-refresh:
+.. _supported-snap-hooks-gate-auto-refresh:
 
 The gate-auto-refresh hook
 --------------------------
@@ -148,7 +148,7 @@ This hook is capable of executing the snapctl refresh command with 3 specific ar
 This feature is currently considered experimental. See `Refresh control <https://snapcraft.io/docs/refresh-control>`__ for more details.
 
 
-.. _supported-snap-hooks-heading--install:
+.. _supported-snap-hooks-install:
 
 The install hook
 ----------------
@@ -158,7 +158,7 @@ The ``install`` hook is called upon initial install only, i.e. it’s not calle
 The hook is executed before starting snap services (if it has any) and before the ``configure`` hook. The install hook is the place for one-time actions, such as an early initialisation of a resource when installed for the first time.
 
 
-.. _supported-snap-hooks-heading--install-device:
+.. _supported-snap-hooks-install-device:
 
 The install-device hook
 -----------------------
@@ -168,7 +168,7 @@ This hook is supported in Ubuntu Core 20 and subsequent releases.
 See `Installation process <https://ubuntu.com/core/docs/uc20/installation-process#supported-snap-hooks-heading--install-device>`__ in the Ubuntu Core documentation for more details.
 
 
-.. _supported-snap-hooks-heading--interface:
+.. _supported-snap-hooks-interface:
 
 The interface hooks
 -------------------
@@ -180,7 +180,7 @@ They can be used to read or write attributes from a connection and, for example,
 For further details, see :ref:`Interface hooks <interface-hooks>`.
 
 
-.. _supported-snap-hooks-heading--prepare-device:
+.. _supported-snap-hooks-prepare-device:
 
 The prepare-device hook
 -----------------------
@@ -190,7 +190,7 @@ This hook is only supported in gadget snaps.
 See :ref:`The gadget snap <gadget-snaps>` documentation for more details.
 
 
-.. _supported-snap-hooks-heading--pre-refresh:
+.. _supported-snap-hooks-pre-refresh:
 
 The pre-refresh hook
 --------------------
@@ -202,7 +202,7 @@ This hook is executed for the already installed revision of the snap with its se
 This hook is a good place for any maintenance or cleanup actions that prepare the snap for switching to the new revision. It’s also a good place to test whether a refresh will succeed, because if the test causes the hook to fail, the refresh will not proceed.
 
 
-.. _supported-snap-hooks-heading--post-refresh:
+.. _supported-snap-hooks-post-refresh:
 
 The post-refresh hook
 ---------------------
@@ -212,7 +212,7 @@ The ``post-refresh`` hook is similar to ``pre-refresh`` (above) in that it is ca
 This hook is executed for the newly installed snap, before starting new services (if applicable). This hook is a good place for any extra actions that need to be performed for the new revision of the snap. It’s also a good place to test whether a refresh has succeeded, because if the test causes the hook to fail, the refresh will be rolled-back and the original state of the snap restored.
 
 
-.. _supported-snap-hooks-heading--remove:
+.. _supported-snap-hooks-remove:
 
 The remove hook
 ---------------

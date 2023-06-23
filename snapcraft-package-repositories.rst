@@ -11,47 +11,15 @@ For a default :ref:`Snapcraft <snapcraft-overview>` installation running `Multip
 
 However, it’s also possible to add your own *apt* repositories as sources for ``build-packages`` and ``stage-packages``, including those hosted on a PPA, the Personal Package Archive, which serves personally hosted non-standard packages.
 
---------------
 
--  `Adding repositories <snapcraft-package-repositories-heading--adding_>`__
-
-   -  `PPA-type properties <snapcraft-package-repositories-heading--ppa-properties_>`__
-
-      -  `type <snapcraft-package-repositories-heading--type_>`__
-      -  `ppa <snapcraft-package-repositories-heading--ppa_>`__
-      -  `priority <snapcraft-package-repositories-heading--priority_>`__
-
-   -  `deb-type properties <snapcraft-package-repositories-heading--deb-properties_>`__
-
-      -  `architectures <snapcraft-package-repositories-heading--architectures_>`__
-      -  `components <snapcraft-package-repositories-heading--components_>`__
-      -  `formats <snapcraft-package-repositories-heading--formats_>`__
-      -  `key-id <snapcraft-package-repositories-heading--keyid_>`__
-      -  `key-server <snapcraft-package-repositories-heading--keyserver_>`__
-      -  `path <snapcraft-package-repositories-heading--path_>`__
-      -  `priority <snapcraft-package-repositories-heading--priority_>`__
-      -  `suites <snapcraft-package-repositories-heading--suites_>`__
-      -  `type <snapcraft-package-repositories-heading--debtype_>`__
-      -  `url <snapcraft-package-repositories-heading--url_>`__
-
--  `Examples <snapcraft-package-repositories-heading--examples_>`__
-
-   -  `PPA repository using “ppa” property <snapcraft-package-repositories-heading--example-pparepo_>`__
-   -  `Typical apt repository with components and suites <snapcraft-package-repositories-heading--example-aptsuites_>`__
-   -  `Apt repository enabling deb sources <snapcraft-package-repositories-heading--example-aptdeb_>`__
-   -  `Absolute path repository with implied root path “/” <snapcraft-package-repositories-heading--example-aptabspath_>`__
-   -  `Absolute path repository with explicit path and formats <snapcraft-package-repositories-heading--example-aptabspathexp_>`__
-   -  `Preferring packages from a PPA <snapcraft-package-repositories-heading--example-priority_>`__
-
-
-.. _snapcraft-package-repositories-heading--adding:
+.. _snapcraft-package-repositories-adding:
 
 Adding repositories
 -------------------
 
 Third-party *apt* repositories can be added to a snap’s :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>` by using the top-level ``package-repositories`` keyword with either a PPA-type repository, or a deb-type repository:
 
-`PPA-type repository <snapcraft-package-repositories-heading--ppa-properties_>`__\ **:**
+`PPA-type repository <snapcraft-package-repositories-ppa-properties_>`__\ **:**
 
 .. code:: yaml
 
@@ -59,7 +27,7 @@ Third-party *apt* repositories can be added to a snap’s :ref:`snapcraft.yaml <
     - type: apt
       ppa: snappy-dev/snapcraft-daily
 
-`deb-type repository <snapcraft-package-repositories-heading--deb-properties_>`__\ **:**
+`deb-type repository <snapcraft-package-repositories-deb-properties_>`__\ **:**
 
 .. code:: yaml
 
@@ -72,8 +40,8 @@ Third-party *apt* repositories can be added to a snap’s :ref:`snapcraft.yaml <
 
 As shown above, PPA-type repositories and traditional deb-type each require a different set of properties:
 
--  `PPA-type properties <snapcraft-package-repositories-heading--ppa-properties_>`__
--  `deb-type properties <snapcraft-package-repositories-heading--deb-properties_>`__
+-  `PPA-type properties <snapcraft-package-repositories-ppa-properties_>`__
+-  `deb-type properties <snapcraft-package-repositories-deb-properties_>`__
 
 Once configured, packages provided by these repositories will become available via ``stage-packages`` and ``build-packages``.
 
@@ -82,15 +50,15 @@ The properties for both PPA-type and deb-type repositories are outlined below.
 --------------
 
 
-.. _snapcraft-package-repositories-heading--ppa-properties:
+.. _snapcraft-package-repositories-ppa-properties:
 
 PPA properties
 ~~~~~~~~~~~~~~
 
-The following properties are supported for PPA-type repositories: - `type <snapcraft-package-repositories-heading--type_>`__ **(required)**: The type of package-repository, only apt is currently supported. - `ppa <snapcraft-package-repositories-heading--ppa_>`__ **(required)**: PPA identifier string. — -
+The following properties are supported for PPA-type repositories: - `type <snapcraft-package-repositories-type_>`__ **(required)**: The type of package-repository, only apt is currently supported. - :ref:`ppa <snapcraft-package-repositories-ppa-properties>` **(required)**: PPA identifier string. — -
 
 
-.. _snapcraft-package-repositories-heading--type:
+.. _snapcraft-package-repositories-type:
 
 type
 ^^^^
@@ -105,7 +73,7 @@ type
 
    .. raw:: html
 
-      <h4 id="snapcraft-package-repositories-heading--ppa">
+      <h4 id="snapcraft-package-repositories-ppa">
 
    ppa
 
@@ -124,234 +92,197 @@ type
 --------------
 
 
-.. _snapcraft-package-repositories-heading--deb-properties:
+.. _snapcraft-package-repositories-deb-properties:
 
 Deb properties
 ~~~~~~~~~~~~~~
 
 The following properties are supported for Deb-type repositories:
 
--  `architectures <snapcraft-package-repositories-heading--architectures_>`__: List of architectures to enable, or restrict to, for this repository.
--  `components <snapcraft-package-repositories-heading--components_>`__ **(required if using suites)**: List of *apt* repository components to enable, e.g. ``main`` , ``multiverse`` , ``unstable``.
--  `formats <snapcraft-package-repositories-heading--formats_>`__: List of *deb* types to enable (``deb`` and/or ``deb-src``).
--  `key-id <snapcraft-package-repositories-heading--keyid_>`__ **(required)**: 40-character GPG key identifier / thumbprint.
--  `key-server <snapcraft-package-repositories-heading--keyserver_>`__: Key-server to request key from.
--  `path <snapcraft-package-repositories-heading--path_>`__ **(required if not using suites & components)**: Exact path to repository, relative to URL.
--  `suites <snapcraft-package-repositories-heading--suites_>`__ **(required if not using path)**: List of *apt* suites to enable, e.g. ``bionic``, ``focal``.
--  `type <snapcraft-package-repositories-heading--debtype_>`__ **(required)**: type of package-repository. Only ``apt`` is currently supported.
--  `url <snapcraft-package-repositories-heading--url_>`__ **(required)**: apt repository URL.
+-  `architectures <snapcraft-package-repositories-architectures_>`__: List of architectures to enable, or restrict to, for this repository.
+-  `components <snapcraft-package-repositories-components_>`__ **(required if using suites)**: List of *apt* repository components to enable, e.g. ``main`` , ``multiverse`` , ``unstable``.
+-  `formats <snapcraft-package-repositories-formats_>`__: List of *deb* types to enable (``deb`` and/or ``deb-src``).
+-  `key-id <snapcraft-package-repositories-keyid_>`__ **(required)**: 40-character GPG key identifier / thumbprint.
+-  `key-server <snapcraft-package-repositories-keyserver_>`__: Key-server to request key from.
+-  `path <snapcraft-package-repositories-path_>`__ **(required if not using suites & components)**: Exact path to repository, relative to URL.
+-  `suites <snapcraft-package-repositories-suites_>`__ **(required if not using path)**: List of *apt* suites to enable, e.g. ``bionic``, ``focal``.
+-  `type <snapcraft-package-repositories-debtype_>`__ **(required)**: type of package-repository. Only ``apt`` is currently supported.
+-  `url <snapcraft-package-repositories-url_>`__ **(required)**: apt repository URL.
 
 --------------
 
--  
+.. _snapcraft-package-repositories-architectures:
 
-   .. raw:: html
+architectures
+^^^^^^^^^^^^^
 
-      <h4 id="snapcraft-package-repositories-heading--architectures">
+**Type:** list[string]
 
-   architectures
+**Description:** Architectures to enable, or restrict to, for this repository
 
-   .. raw:: html
+**Default:** If unspecified, architectures is assumed to match the host’s architecture
 
-      </h4>
+**Examples:**
 
-   -  **Type:** list[string]
-   -  **Description:** Architectures to enable, or restrict to, for this repository
-   -  **Default:** If unspecified, architectures is assumed to match the host’s architecture
-   -  **Examples:**
+-  ``architectures: [i386]``
+-  ``architectures: [i386, amd64]``
 
-      -  ``architectures: [i386]``
-      -  ``architectures: [i386, amd64]``
+.. _snapcraft-package-repositories-components:
 
--  
+components
+^^^^^^^^^^
 
-   .. raw:: html
+**Type:** list[string]
 
-      <h4 id="snapcraft-package-repositories-heading--components">
+**Description:** Apt repository components to enable: e.g. ``main`` , ``multiverse`` , ``unstable``
 
-   components
+**Examples:**
 
-   .. raw:: html
+-  ``components: [main]``
+-  ``components: [main, multiverse, universe, restricted]``
 
-      </h4>
+.. _snapcraft-package-repositories-formats:
 
-   -  **Type:** list[string]
-   -  **Description:** Apt repository components to enable: e.g. ``main`` , ``multiverse`` , ``unstable``
-   -  **Examples:**
+formats
+^^^^^^^
 
-      -  ``components: [main]``
-      -  ``components: [main, multiverse, universe, restricted]``
+**Type:** list[string]
 
--  
+**Description:** List of deb types to enable
 
-   .. raw:: html
+**Default:** If unspecified, format is assumed to be ``deb`` , i.e. ``[deb]``
 
-      <h4 id="snapcraft-package-repositories-heading--formats">
+**Examples:**
 
-   formats
+-  ``formats: [deb]``
+-  ``formats: [deb, deb-src]``
 
-   .. raw:: html
+.. _snapcraft-package-repositories-keyid:
 
-      </h4>
+key-id
+^^^^^^
 
-   -  **Type:** list[string]
-   -  **Description:** List of deb types to enable
-   -  **Default:** If unspecified, format is assumed to be ``deb`` , i.e. ``[deb]``
-   -  **Examples:**
+**Type:** string
 
-      -  ``formats: [deb]``
-      -  ``formats: [deb, deb-src]``
+**Description:** 40 character GPG key identifier (” long-form thumbprint” or “fingerprint”) If not using a key-server, Snapcraft will look for the corresponding key at: ``<project>/snap/keys/<key-id[-8:]>.asc`` . To determine a key-id from a given key file with *gpg*, type the following: ``gpg --import-options show-only --import <file>``
 
--  
+**Format:** alphanumeric, dash ``-`` , and underscores ``_`` permitted.
 
-   .. raw:: html
+**Examples:**
 
-      <h4 id="snapcraft-package-repositories-heading--keyid">
+-  ``key-id: 590CA3D8E4826565BE3200526A634116E00F4C82``\  Snapcraft will install a corresponding key at ``<project>/snap/keys/E00F4C82.asc``
 
-   key-id
+.. _snapcraft-package-repositories-keyserver:
 
-   .. raw:: html
+key-server
+^^^^^^^^^^
 
-      </h4>
+**Type:** string
 
-   -  **Type:** string
-   -  **Description:** 40 character GPG key identifier (” long-form thumbprint” or “fingerprint”) If not using a key-server, Snapcraft will look for the corresponding key at: ``<project>/snap/keys/<key-id[-8:]>.asc`` . To determine a key-id from a given key file with *gpg*, type the following: ``gpg --import-options show-only --import <file>``
-   -  **Format:** alphanumeric, dash ``-`` , and underscores ``_`` permitted.
-   -  **Examples:**
+**Description:** Key server to fetch key ``<key-id>`` from
 
-      -  ``key-id: 590CA3D8E4826565BE3200526A634116E00F4C82``\  Snapcraft will install a corresponding key at ``<project>/snap/keys/E00F4C82.asc``
+**Default:** If unspecified, Snapcraft will attempt to fetch a specified key from `keyserver.ubuntu.com <http://keyserver.ubuntu.com/>`__
 
--  
+**Format:** Key server URL supported by ``gpg --keyserver``
 
-   .. raw:: html
+**Examples:**
 
-      <h4 id="snapcraft-package-repositories-heading--keyserver">
+-  ``key-server: keyserver.ubuntu.com``
+-  ``key-server: hkp://keyserver.ubuntu.com:80``
 
-   key-server
+.. _snapcraft-package-repositories-path:
 
-   .. raw:: html
+path
+^^^^
 
-      </h4>
+**Type:** string
 
-   -  **Type:** string
-   -  **Description:** Key server to fetch key ``<key-id>`` from
-   -  **Default:** If unspecified, Snapcraft will attempt to fetch a specified key from `keyserver.ubuntu.com <http://keyserver.ubuntu.com/>`__
-   -  **Format:** Key server URL supported by ``gpg --keyserver``
-   -  **Examples:**
+**Description:** Absolute path to repository (from ``url`` ). Cannot be used with ``suites`` and ``components``
 
-      -  ``key-server: keyserver.ubuntu.com``
-      -  ``key-server: hkp://keyserver.ubuntu.com:80``
+**Format:** Path starting with ``/``
 
--  
+**Examples:**
 
-   .. raw:: html
+-  ``path: /``
+-  ``path: /my-repo``
 
-      <h4 id="snapcraft-package-repositories-heading--path">
+.. _snapcraft-package-repositories-priority:
 
-   path
+priority
+^^^^^^^^
 
-   .. raw:: html
+*Requires Snapcraft 7.4*
 
-      </h4>
+**Type:** enum[string] or int
 
-   -  **Type:** string
-   -  **Description:** Absolute path to repository (from ``url`` ). Cannot be used with ``suites`` and ``components``
-   -  **Format:** Path starting with ``/``
-   -  **Examples:**
+**Description:** Overrides the default behavior when picking the source for a particular package
 
-      -  ``path: /``
-      -  ``path: /my-repo``
+**Format:** ``always``, ``prefer`` or ``defer``. Alternatively an int other than 0
 
--  
+**Notes:** string equivalencies are ``always``: 1000; ``prefer``: 990; ``defer``: 100
 
-   .. raw:: html
+**Examples:**
 
-      <h4 id="snapcraft-package-repositories-heading--priority">
+-  ``priority: always``
+-  ``priority: 1000``
 
-   priority
+.. _snapcraft-package-repositories-suites:
 
-   .. raw:: html
+suites
+^^^^^^
 
-      </h4>
+**Type:** string
 
-   -  *Requires Snapcraft 7.4*
-   -  **Type:** enum[string] or int
-   -  **Description:** Overrides the default behavior when picking the source for a particular package
-   -  **Format:** ``always``, ``prefer`` or ``defer``. Alternatively an int other than 0
-   -  **Notes:** string equivalencies are ``always``: 1000; ``prefer``: 990; ``defer``: 100
-   -  **Examples:**
+**Description:** Repository suites to enable
 
-      -  ``priority: always``
-      -  ``priority: 1000``
+**Notes:** If your deb URL does not look like it has a suite defined, it is likely that the repository uses an absolute URL. Consider using ``path``
 
--  
+**Examples:**
 
-   .. raw:: html
+-  ``suites: [xenial]``
+-  ``suites: [xenial, xenial-updates]``
 
-      <h4 id="snapcraft-package-repositories-heading--suites">
+.. _snapcraft-package-repositories-debtype:
 
-   suites
+type
+^^^^
 
-   .. raw:: html
+**Type:** enum[string]
 
-      </h4>
+**Description:** Specifies type of package-repository
 
-   -  **Type:** string
-   -  **Description:** Repository suites to enable
-   -  **Notes:** If your deb URL does not look like it has a suite defined, it is likely that the repository uses an absolute URL. Consider using ``path``
-   -  **Examples:**
+**Notes:** Must be ``apt``
 
-      -  ``suites: [xenial]``
-      -  ``suites: [xenial, xenial-updates]``
+**Examples:**
+
+-  ``type: apt``
 
 -  
 
-   .. raw:: html
+.. _snapcraft-package-repositories-url:
 
-      <h4 id="snapcraft-package-repositories-heading--debtype">
+url
+^^^
 
-   type
+**Type:** string
 
-   .. raw:: html
+**Description:** Repository URL.
 
-      </h4>
+**Examples:**
 
-   -  **Type:** enum[string]
-   -  **Description:** Specifies type of package-repository
-   -  **Notes:** Must be ``apt``
-   -  **Examples:**
-
-      -  ``type: apt``
-
--  
-
-   .. raw:: html
-
-      <h4 id="snapcraft-package-repositories-heading--url">
-
-   url
-
-   .. raw:: html
-
-      </h4>
-
-   -  **Type:** string
-   -  **Description:** Repository URL.
-   -  **Examples:**
-
-      -  ``url: http://archive.canonical.com/ubuntu``
-      -  ``url: https://apt-repo.com/stuff``
+-  ``url: http://archive.canonical.com/ubuntu``
+-  ``url: https://apt-repo.com/stuff``
 
 --------------
 
 
-.. _snapcraft-package-repositories-heading--examples:
+.. _snapcraft-package-repositories-examples:
 
 Examples
 --------
 
 
-.. _snapcraft-package-repositories-heading--example-pparepo:
+.. _snapcraft-package-repositories-example-pparepo:
 
 PPA repository using “ppa” property
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -363,7 +294,7 @@ PPA repository using “ppa” property
        ppa: snappy-dev/snapcraft-daily
 
 
-.. _snapcraft-package-repositories-heading--example-aptsuites:
+.. _snapcraft-package-repositories-example-aptsuites:
 
 Typical apt repository with components and suites
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -378,7 +309,7 @@ Typical apt repository with components and suites
        url: http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu
 
 
-.. _snapcraft-package-repositories-heading--example-aptdeb:
+.. _snapcraft-package-repositories-example-aptdeb:
 
 Apt repository enabling deb sources
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -394,7 +325,7 @@ Apt repository enabling deb sources
        url: http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu
 
 
-.. _snapcraft-package-repositories-heading--example-aptabspath:
+.. _snapcraft-package-repositories-example-aptabspath:
 
 Absolute path repository with implied root path “/”
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -407,7 +338,7 @@ Absolute path repository with implied root path “/”
        url: https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64`
 
 
-.. _snapcraft-package-repositories-heading--example-aptabspathexp:
+.. _snapcraft-package-repositories-example-aptabspathexp:
 
 Absolute path repository with explicit path and formats
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -422,7 +353,7 @@ Absolute path repository with explicit path and formats
        url: https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64`
 
 
-.. _snapcraft-package-repositories-heading--example-priority:
+.. _snapcraft-package-repositories-example-priority:
 
 Preferring packages from a PPA
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -44,21 +44,20 @@ To get a quick hands-on synopsis of the snapcraft build process for your platfor
 .. toctree::
    :hidden:
 
-   python-apps.rst
-   go-applications.rst
    c-c-applications.rst
-   gtk4-applications.rst
-   qt5-and-kde-frameworks-applications.rst
-   flutter-applications.rst
    electron-apps.rst
+   flutter-applications.rst
+   go-applications.rst
+   gtk2-applications.rst
+   gtk3-applications.rst
+   gtk4-applications.rst
+   java-applications.rst
    moos-applications.rst
    net-apps.rst
-   ros-deployment-with-snaps.rst
-   ros-2-deployment-with-snaps.rst
-   gtk3-applications.rst
-   gtk2-applications.rst
    node-apps.rst
+   python-apps.rst
+   qt5-and-kde-frameworks-applications.rst
+   ros-2-deployment-with-snaps.rst
+   ros-deployment-with-snaps.rst
    ruby-applications.rst
-   java-applications.rst
    rust-applications.rst
-   java-applications.rst

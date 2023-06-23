@@ -7,10 +7,11 @@ Architectures
 
 By default, :ref:`Snapcraft <snapcraft-overview>` builds a snap to run on the same architecture as the build environment. This behaviour can be modified with an optional root :ref:``architectures`` keyword in the snap’s `snapcraft.yaml <the-snapcraft-yaml-schema>`.
 
-Architecture features and syntax are dependent on which :ref:`base <base-snaps>` is being used, as outlined below: - `base: core22 <architectures-heading--core22_>`__ - `base: core20 \| core18 \| core <architectures-heading--core20-core18_>`__
+Architecture features and syntax are dependent on which :ref:`base <base-snaps>` is being used, as outlined below in :ref:`architectures-core22` and
+:ref:`architectures-core20-core18`.
 
 
-.. _architectures-heading-core22:
+.. _architectures-core22:
 
 base: core22
 ------------
@@ -114,7 +115,7 @@ Example 6 - Architecture independent
 -  building on ``amd64`` will produce 1 snap that can run on any architecture
 
 
-.. _architectures-heading-core20-core18:
+.. _architectures-core20-core18:
 
 base: core20 \| core18 \| core
 ------------------------------

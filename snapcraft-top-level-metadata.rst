@@ -30,7 +30,7 @@ List of build and run architectures.
 For more details, see :ref:`Architectures <architectures>`.
 
 
-.. _snapcraft-top-level-metadata-heading--assumes:
+.. _snapcraft-top-level-metadata-assumes:
 
 assumes
 ~~~~~~~
@@ -44,10 +44,10 @@ A list of features that must be supported by the core in order for this snap to 
    assumes:
    - snapd2.38
 
-Other potential values for *assumes* include: - ``common-data-dir``: support for common data directory across revisions of a snap - ``snap-env``: support for the “Environment:” feature in snap.yaml - ``command-chain``: support for the “command-chain” feature for apps and hooks in snap.yaml - ``kernel-assets``: support for kernel assets in `gadget.yaml <gadget-snaps.md#snapcraft-top-level-metadata-heading--specification>`__, such as to include volume content in the style ``$kernel:ref``
+Other potential values for *assumes* include: - ``common-data-dir``: support for common data directory across revisions of a snap - ``snap-env``: support for the “Environment:” feature in snap.yaml - ``command-chain``: support for the “command-chain” feature for apps and hooks in snap.yaml - ``kernel-assets``: support for kernel assets in :ref:`gadget.yaml <gadget-snaps-specification>`, such as to include volume content in the style ``$kernel:ref``
 
 
-.. _snapcraft-top-level-metadata-heading--base:
+.. _snapcraft-top-level-metadata-base:
 
 base
 ~~~~
@@ -56,10 +56,24 @@ Type: ``string`` (*optional*)
 
 A snap of type :ref:``base`` to be used as the execution environment for this snap. See `Base snaps <base-snaps>` for further details.
 
-Values: \| \| \| \|–|–\| \| ``bare``\ \| Empty base snap, useful for fully statically linked snaps and testing \| \| ``core`` \| Ubuntu Core 16 \| \| ``core18`` \| Ubuntu Core 18 \| \| ``core20`` \| Ubuntu Core 20 \| \| ``core22`` \| Ubuntu Core 22 \|
+.. list-table:: Values
+   :header-rows: 1
+
+   * - **Name**
+     - **Description**
+   * - ``bare``
+     - Empty base snap, useful for fully statically linked snaps and testing
+   * - ``core``
+     - Ubuntu Core 16
+   * - ``core18``
+     - Ubuntu Core 18
+   * - ``core20``
+     - Ubuntu Core 20
+   * - ``core22``
+     - Ubuntu Core 22
 
 
-.. _snapcraft-top-level-metadata-heading--compression:
+.. _snapcraft-top-level-metadata-compression:
 
 compression
 ~~~~~~~~~~~
@@ -130,7 +144,7 @@ Type: ``list[string] | string`` (Introduced: Snapcraft 5.0 *optional*)
 A link or list of links to receive donations for the snap.
 
 
-.. _snapcraft-top-level-metadata-heading--epoch:
+.. _snapcraft-top-level-metadata-epoch:
 
 epoch
 ~~~~~
@@ -144,7 +158,7 @@ Applications and their data formats are constantly evolving, and this requires a
 See :ref:`Snap epochs <snap-epochs>` for further details.
 
 
-.. _snapcraft-top-level-metadata-heading--grade:
+.. _snapcraft-top-level-metadata-grade:
 
 grade
 ~~~~~
@@ -160,7 +174,7 @@ A snap of ``type`` ``app`` (default) cannot be set to ``stable`` if the ``base``
 Example: ``[stable`` or ``devel``]
 
 
-.. _snapcraft-top-level-metadata-heading--hooks:
+.. _snapcraft-top-level-metadata-hooks:
 
 hooks
 ~~~~~
@@ -187,7 +201,7 @@ Type: ``list[string] | string`` (Introduced: Snapcraft 5.0 *optional*)
 A link or list of links to report issues for the snap.
 
 
-.. _snapcraft-top-level-metadata-heading--icon:
+.. _snapcraft-top-level-metadata-icon:
 
 icon
 ~~~~
@@ -203,7 +217,7 @@ It is a relative path to a ``.png``/``.svg`` file from the source tree root. The
 Examples: ``_package_name_.svg``, or ``snap/gui/logo.png``
 
 
-.. _snapcraft-top-level-metadata-heading--layout:
+.. _snapcraft-top-level-metadata-layout:
 
 layout
 ~~~~~~
@@ -229,7 +243,7 @@ Example:
        bind-file: $SNAP_DATA/etc/foo.conf
 
 
-.. _snapcraft-top-level-metadata-heading--license:
+.. _snapcraft-top-level-metadata-license:
 
 license
 ~~~~~~~
@@ -351,7 +365,7 @@ Max len. 32 chars. Needs to be wrapped with single-quotes when the value will be
 Examples: ``'1'``, ``'1.2'``, ``'1.2.3'``, ``git`` (will be replaced by a ``git describe`` based version string)
 
 
-.. _snapcraft-top-level-metadata-heading--plugs-and-slots-for-an-entire-snap:
+.. _snapcraft-top-level-metadata-plugs-and-slots-for-an-entire-snap:
 
 Plugs and slots for an entire snap
 ----------------------------------

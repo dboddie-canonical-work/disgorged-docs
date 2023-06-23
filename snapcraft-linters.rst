@@ -9,16 +9,10 @@ A *linter* is an analysis tool that checks for common errors or compatibility is
 
 Snapcraft (from version 7.2 onwards) includes its own linter functionality when working with snaps using the :ref:``core22`` `base <base-snaps>`.
 
-Snapcraft linters run automatically when a snap is packed unless otherwise `disabled <snapcraft-linters-heading--disabled_>`__.
-
--  `Available linters <snapcraft-linters-heading--linters_>`__
--  `Disabling linters <snapcraft-linters-heading--disable_>`__
-
-   -  .. rubric:: `Ignore specific files <snapcraft-linters-heading--disable-files_>`__
-         :name: ignore-specific-files
+Snapcraft linters run automatically when a snap is packed unless otherwise :ref:`disabled <snapcraft-linters-disable>`.
 
 
-.. _snapcraft-linters-heading--linters:
+.. _snapcraft-linters-linters:
 
 Available linters
 -----------------
@@ -29,7 +23,7 @@ Snapcraft currently offers the following linters:
 -  :ref:`library <library-linter>`: verifies that no ELF file dependencies, such as libraries, are missing and that no extra libraries are included in the snap package
 
 
-.. _snapcraft-linters-heading--disable:
+.. _snapcraft-linters-disable:
 
 Disabling linters
 -----------------
@@ -43,10 +37,10 @@ Snapcraft linters run automatically when a snap is packed but specific linters c
        - classic
        - library
 
-The ``ignore`` entry must include one or more `linter names <snapcraft-linters-heading--linters_>`__ for those linters to be disabled.
+The ``ignore`` entry must include one or more `linter names <snapcraft-linters-linters_>`__ for those linters to be disabled.
 
 
-.. _snapcraft-linters-heading--disable-files:
+.. _snapcraft-linters-disable-files:
 
 Ignore specific files
 ~~~~~~~~~~~~~~~~~~~~~

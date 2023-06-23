@@ -40,7 +40,23 @@ See :ref:`Parts lifecycle <parts-lifecycle>` and `Parts directories <parts-lifec
 core \| core18 \| core20
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Snapcraft exposes the following directory related environment variables when building a part with bases ``core``, ``core18``, or ``core20``. These can help when moving or locating files: \| \| \| \|–|–\| \| ``SNAPCRAFT_PART_SRC`` \| absolute path to where a part’s sources are pulled. It’s also the part’s working directory for the *pull* step \| \| ``SNAPCRAFT_PART_BUILD`` \| absolute path to the sources used for the part’s *build* step. It is also the working directory of the *build* step. \| \| ``SNAPCRAFT_PART_INSTALL`` \| absolute path to the results of the part’s *build* step. It also contains the staged packages of that part. \| \| ``SNAPCRAFT_PRIME`` \| absolute path to where files are primed \| \|\ ``SNAPCRAFT_PROJECT_DIR``\ \| absolute path to the root of the snapcraft project \| \| ``SNAPCRAFT_STAGE`` \| absolute path to where files are staged \|
+Snapcraft exposes the following directory related environment variables when building a part with bases ``core``, ``core18``, or ``core20``. These can help when moving or locating files:
+
+.. list-table::
+   :header-rows: 0
+
+   * - ``SNAPCRAFT_PART_SRC``
+     - absolute path to where a part’s sources are pulled. It’s also the part’s working directory for the *pull* step
+   * - ``SNAPCRAFT_PART_BUILD``
+     - absolute path to the sources used for the part’s *build* step. It is also the working directory of the *build* step.
+   * - ``SNAPCRAFT_PART_INSTALL``
+     - absolute path to the results of the part’s *build* step. It also contains the staged packages of that part.
+   * - ``SNAPCRAFT_PRIME``
+     - absolute path to where files are primed
+   * - ``SNAPCRAFT_PROJECT_DIR``
+     - absolute path to the root of the snapcraft project
+   * - ``SNAPCRAFT_STAGE``
+     - absolute path to where files are staged
 
 
 .. _parts-environment-variables-heading--locating-directories-core22:

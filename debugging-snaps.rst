@@ -187,7 +187,7 @@ If there are no seccomp violations, seccomp isn’t blocking the snap.
 
 If you notice ``compat=1`` in the seccomp denial, then specify the correct compatibility architecture to ``scmp_sys_resolver`` with ``-a <arch>``. For example, when on an amd64 system, use ``scmp_sys_resolver -a x86 191`` (use ``-a arm`` on arm64 systems).
 
-The seccomp filter profile in expected to be located in /var/lib/snapd/seccomp/bpf/*.src (formerly /var/lib/snapd/seccomp/profiles).
+The seccomp filter profile in expected to be located in ``/var/lib/snapd/seccomp/bpf/*.src`` (formerly ``/var/lib/snapd/seccomp/profiles``).
 
 The seccomp profile source (the ``*.src`` file in the profile directory) needs to be recompiled into the profile binary (``*.bin`` in the profile directory) as follows:
 

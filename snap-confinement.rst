@@ -5,7 +5,7 @@
 Snap confinement
 ================
 
-A snap’s confinement level is the degree of isolation it has from your system. There are three levels of snap confinement: - **Strict** Used by the majority of snaps. Strictly confined snaps run in complete isolation, up to a minimal access level that’s deemed always safe. Consequently, strictly confined snaps can not access your files, network, processes or any other system resource without requesting specific access via an interface (`see below <interfaces_>`__). - **Classic** Allows access to your system’s resources in much the same way traditional packages do. To safeguard against abuse, publishing a classic snap requires :ref:`manual approval <process-for-reviewing-classic-confinement-snaps>`, and installation requires the ``--classic`` command line argument. - **Devmode** A special mode for snap creators and developers. A *devmode* snap runs as a strictly confined snap with full access to system resources, and produces debug output to identify unspecified interfaces. Installation requires the ``--devmode`` command line argument. Devmode snaps cannot be released to the stable channel, do not appear in search results, and do not automatically refresh.
+A snap’s confinement level is the degree of isolation it has from your system. There are three levels of snap confinement: - **Strict** Used by the majority of snaps. Strictly confined snaps run in complete isolation, up to a minimal access level that’s deemed always safe. Consequently, strictly confined snaps can not access your files, network, processes or any other system resource without requesting specific access via an interface (:ref:`see below <interfaces-and-confinement>`). - **Classic** Allows access to your system’s resources in much the same way traditional packages do. To safeguard against abuse, publishing a classic snap requires :ref:`manual approval <process-for-reviewing-classic-confinement-snaps>`, and installation requires the ``--classic`` command line argument. - **Devmode** A special mode for snap creators and developers. A *devmode* snap runs as a strictly confined snap with full access to system resources, and produces debug output to identify unspecified interfaces. Installation requires the ``--devmode`` command line argument. Devmode snaps cannot be released to the stable channel, do not appear in search results, and do not automatically refresh.
 
 Strict confinement uses security features of the Linux kernel, including AppArmor, seccomp and namespaces, to prevent applications and services accessing the wider system.
 
@@ -28,6 +28,8 @@ To see which installed snaps are using classic confinement, look for *classic* u
    vlc       3.0.6     770   stable    videolan✓       -
    code      0dd516dd  5     stable    vscode✓         classic
    wormhole  0.11.2    112   stable    snapcrafters    -
+
+.. _interfaces-and-confinement:
 
 Interfaces and confinement
 --------------------------

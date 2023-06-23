@@ -245,12 +245,11 @@ You can download the example repository with the following command:
 
    $ git clone https://github.com/snapcraft-docs/ros2-talker-listener-core20
 
-.. _metadata-1:
 
 Metadata
 ~~~~~~~~
 
-The *snapcraft.yaml* file starts with a small amount of human-readable metadata, which usually can be lifted from the GitHub description or project README.md. This data is used in the presentation of your app in the Snap Store (see e.g. `the PlotJuggler front page <https://snapcraft.io/plotjuggler>`__).
+The *snapcraft.yaml* file starts with a small amount of human-readable metadata, which usually can be adapted from the GitHub description or project ``README.md`` file. This data is used in the presentation of your app in the Snap Store (see e.g. `the PlotJuggler front page <https://snapcraft.io/plotjuggler>`__).
 
 .. code:: yaml
 
@@ -268,7 +267,6 @@ The ``summary`` can not exceed 79 characters. You can use a chevron ‘>’ in t
 
 For more information about top level metadata, see, `top-level-metadata <https://snapcraft.io/docs/snapcraft-top-level-metadata>`__.
 
-.. _base-1:
 
 Base
 ~~~~
@@ -281,7 +279,6 @@ The ``base`` keyword defines a special kind of snap that provides a run-time env
 
 `core20 <https://snapcraft.io/core20>`__ is the current standard base for snap building and is based on\ `Ubuntu 20.04 LTS <http://releases.ubuntu.com/20.04/>`__. It is therefore the base for ROS Noetic and ROS 2 Foxy snaps.
 
-.. _security-model-1:
 
 Security model
 ~~~~~~~~~~~~~~
@@ -294,7 +291,6 @@ To get started, we won’t confine this application. Unconfined applications, sp
 
 For more information about security model, see, `choosing-a-security-model <https://snapcraft.io/docs/choosing-a-security-model>`__.
 
-.. _parts-1:
 
 Parts
 ~~~~~
@@ -319,7 +315,6 @@ The packages you’re building must have install rules, or else snapcraft won’
 
 For more details on colcon-specific metadata, see `the colcon plugin documentation <https://snapcraft.io/docs/the-colcon-plugin#ros-2-deployment-with-snaps-heading--core20>`__. For more information about general parts metadata, see `parts-metadata <https://snapcraft.io/docs/snapcraft-parts-metadata>`__.
 
-.. _apps-1:
 
 Apps
 ~~~~
@@ -339,7 +334,6 @@ For more details about the ros2-foxy extension, see `ros2-foxy extension <https:
 
 In snap, an application is usually prefixed by the snap name so that the application ``my-app`` from the snap ``my-snap`` can be executed calling ``my-snap.my-app``. However, if both the snap and the app are called the same, as is the case in our ROS 2 example, the execution command collapses to avoid the tediousness of writing twice the same words. The command ``ros2-talker-listener.ros2-talker-listener`` simply becomes ``ros2-talker-listener``.
 
-.. _building-the-snap-1:
 
 Building the snap
 ~~~~~~~~~~~~~~~~~
@@ -386,11 +380,6 @@ Once done developing your snap, you can easily clean up the build environment:
 .. code:: bash
 
    $ snapcraft clean
-
-.. _details-1:
-
-
-----------
 
 
 .. _ros-2-deployment-with-snaps-heading--core22:

@@ -15,25 +15,25 @@ Among its many updates, fixes and additions, the following are what we consider 
 
 For general details, including installation instructions, see `Snapcraft overview <https://snapcraft.io/docs/snapcraft-overview>`__, or take a look at `Snapcraft release notes <https://snapcraft.io/docs/snapcraft-release-notes>`__ for other *Snapcraft* releases.
 
--  `Git sources <release-notes-snapcraft-6-1-heading--git_>`__
+-  `Git sources <release-notes-snapcraft-6-1-git_>`__
 
--  `Plugins <release-notes-snapcraft-6-1-heading--plugins_>`__
+-  `Plugins <release-notes-snapcraft-6-1-plugins_>`__
 
--  `Extensions <release-notes-snapcraft-6-1-heading--extensions_>`__
+-  `Extensions <release-notes-snapcraft-6-1-extensions_>`__
 
--  `Command line interface <release-notes-snapcraft-6-1-heading--cli_>`__
+-  `Command line interface <release-notes-snapcraft-6-1-cli_>`__
 
--  `core22 parts lifecycle opt-in for core20 <release-notes-snapcraft-6-1-heading--core22_>`__
+-  `core22 parts lifecycle opt-in for core20 <release-notes-snapcraft-6-1-core22_>`__
 
--  `Schema <release-notes-snapcraft-6-1-heading--schema_>`__
+-  `Schema <release-notes-snapcraft-6-1-schema_>`__
 
--  `Other fixes <release-notes-snapcraft-6-1-heading-other_>`__
+-  `Other fixes <release-notes-snapcraft-6-1-other_>`__
 
--  .. rubric:: `New contributors <release-notes-snapcraft-6-1-heading--contribs_>`__
+-  .. rubric:: `New contributors <release-notes-snapcraft-6-1-contribs_>`__
       :name: new-contributors
 
 
-.. _release-notes-snapcraft-6-1-heading--git:
+.. _release-notes-snapcraft-6-1-git:
 
 Git Sources
 -----------
@@ -69,7 +69,7 @@ More fine grained source fetching, three new scenarios are supported:
 1. not defined (the default), all submodules are fetched
 
 
-.. _release-notes-snapcraft-6-1-heading--plugins:
+.. _release-notes-snapcraft-6-1-plugins:
 
 Plugins
 -------
@@ -97,7 +97,7 @@ ROS
 -  colcon v2: forward cmake args by `@artivis <https://github.com/artivis>`__ in `#3638 <https://github.com/snapcore/snapcraft/pull/3638>`__
 
 
-.. _release-notes-snapcraft-6-1-heading--extensions:
+.. _release-notes-snapcraft-6-1-extensions:
 
 Extensions
 ----------
@@ -110,7 +110,7 @@ KDE
 -  kde extension: new content snap for core20 by `@jriddell <https://github.com/jriddell>`__ in `#3658 <https://github.com/snapcore/snapcraft/pull/3658>`__
 
 
-.. _release-notes-snapcraft-6-1-heading--cli:
+.. _release-notes-snapcraft-6-1-cli:
 
 Command Line Interface
 ----------------------
@@ -123,7 +123,7 @@ Since the ``/usr`` merge with ``/`` the potentially missing stage-packages to ad
 The two command line client commands that were previously hidden, ``promote`` and ``remote-build``, are now displayed as part of the general help.
 
 
-.. _release-notes-snapcraft-6-1-heading--core22:
+.. _release-notes-snapcraft-6-1-core22:
 
 core22 parts lifecycle opt-in for core20
 ----------------------------------------
@@ -142,7 +142,7 @@ To make use of this feature, something like this is needed
            build-attributes: [core22-step-dependencies]
 
 
-.. _release-notes-snapcraft-6-1-heading--schema:
+.. _release-notes-snapcraft-6-1-schema:
 
 Schema
 ------
@@ -150,7 +150,7 @@ Schema
 -  schema: add support for activates-on app property to schema by `@jhenstridge <https://github.com/jhenstridge>`__ in `#3425 <https://github.com/snapcore/snapcraft/pull/3425>`__
 
 
-.. _release-notes-snapcraft-6-1-heading--other:
+.. _release-notes-snapcraft-6-1-other:
 
 Other fixes
 -----------
@@ -162,7 +162,7 @@ Other fixes
 -  build(deps): bump pyyaml from 5.3 to 5.4 by `@dependabot <https://github.com/dependabot>`__ in `#3490 <https://github.com/snapcore/snapcraft/pull/3490>`__
 
 
-.. _release-notes-snapcraft-6-1-heading--contribs:
+.. _release-notes-snapcraft-6-1-contribs:
 
 New Contributors
 ----------------

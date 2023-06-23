@@ -13,18 +13,18 @@ An interface is most commonly used to enable a snap to access OpenGL acceleratio
 
 See :ref:`Supported interfaces <supported-interfaces>` for a comprehensive list of interfaces and what kind of access they permit.
 
--  `Using a GUI <interface-management-heading--snap-store_>`__
--  `Listing interfaces <interface-management-heading--listing_>`__
--  `Listing connections <interface-management-heading--listing-connections_>`__
--  `Slots and plugs <interface-management-heading--slots-plugs_>`__
--  `Automatic connections <interface-management-heading--auto-connections_>`__
--  `Manual connections <interface-management-heading--manual-connections_>`__
--  `Disconnect interfaces <interface-management-heading--disconnect_>`__
+-  `Using a GUI <interface-management-snap-store_>`__
+-  `Listing interfaces <interface-management-listing_>`__
+-  `Listing connections <interface-management-listing-connections_>`__
+-  `Slots and plugs <interface-management-slots-plugs_>`__
+-  `Automatic connections <interface-management-auto-connections_>`__
+-  `Manual connections <interface-management-manual-connections_>`__
+-  `Disconnect interfaces <interface-management-disconnect_>`__
 
 --------------
 
 
-.. _interface-management-heading--snap-store:
+.. _interface-management-snap-store:
 
 Using a GUI
 -----------
@@ -46,7 +46,7 @@ To access the interface management functions, either search for an installed sna
 Each interface can now be connected or disconnected by selecting the toggle switch to the right of its description, and you may be prompted for your password.
 
 
-.. _interface-management-heading--listing:
+.. _interface-management-listing:
 
 Listing interfaces
 ------------------
@@ -67,7 +67,7 @@ The ``snap connections`` command lists which interfaces are connected and being 
    [...]
 
 
-.. _interface-management-heading--listing-connections:
+.. _interface-management-listing-connections:
 
 Listing connections
 -------------------
@@ -115,7 +115,7 @@ Adding ``--all`` to the *snap connections* command will list all interfaces, inc
    (...)
 
 
-.. _interface-management-heading--slots-plugs:
+.. _interface-management-slots-plugs:
 
 Slots and plugs
 ---------------
@@ -149,7 +149,7 @@ You can see which other snaps are using an interface with the ``interface`` comm
 In the above output, you can see that Chromium, VLC and the Zoom snaps are connected to *snapd’s* audio-playback slot, which is synonymous with *Core* and *system*.
 
 
-.. _interface-management-heading--auto-connections:
+.. _interface-management-auto-connections:
 
 Auto-connections
 ----------------
@@ -169,7 +169,7 @@ For more technical details on how interface auto-connections are processed, see 
    ⓘ See the *Auto-connect* column in the :ref:`Supported interfaces <supported-interfaces>` table for which interfaces are connected automatically.
 
 
-.. _interface-management-heading--manual-connections:
+.. _interface-management-manual-connections:
 
 Manual connections
 ------------------
@@ -202,7 +202,7 @@ Add the ``--no-wait`` option to *snap connect* or *snap disconnect* to run the p
           A successful connection grants any necessary permissions that may be required by the interface to function.
 
 
-.. _interface-management-heading--disconnect:
+.. _interface-management-disconnect:
 
 Disconnect interfaces
 ---------------------
@@ -219,4 +219,4 @@ Following our previous example, you would disconnect *vlc:audio-record* with the
 
    sudo snap disconnect vlc:audio-record
 
-When an automatic connection (`see above <interface-management-heading--auto-connections_>`__) is manually disconnected, its disconnected state is retained after a `snap refresh <https://snapcraft.io/docs/managing-updates>`__. The ``--forget`` flag can be added to the disconnect command to reset this behaviour, and consequently, re-enable the automatic re-connection after a snap refresh.
+When an automatic connection (`see above <interface-management-auto-connections_>`__) is manually disconnected, its disconnected state is retained after a `snap refresh <https://snapcraft.io/docs/managing-updates>`__. The ``--forget`` flag can be added to the disconnect command to reset this behaviour, and consequently, re-enable the automatic re-connection after a snap refresh.

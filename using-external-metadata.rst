@@ -33,7 +33,7 @@ An external metadata source can be one of the following:
 See below for details on incorporating each of the above into your *snapcraft.yaml*.
 
 
-.. _using-external-metadata-heading--appstream:
+.. _meta-appstream:
 
 AppStream
 ~~~~~~~~~
@@ -93,7 +93,7 @@ You can also link each app in your snap to specific AppStream metadata by pointi
 *Note: The process to get the ``.desktop`` file entry from the AppStream metadata goes as follows. First, Snapcraft searches for a parsed AppStream file with the same*\ component id\* as the app’s ``common-id`` and extracts the `Desktop File ID <https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html#desktop-file-id>`__ (``desktop-id``) from that component. If that component doesn’t specify a ``desktop-id``, Snapcraft will use the *component id* as the Desktop File ID. Snapcraft will then search for a desktop file matching the Desktop File ID in the ``usr/local/share`` and ``usr/share`` directories relative to the part source, and by following the `Desktop File ID <https://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html#desktop-file-id>`__ rules.\*
 
 
-.. _using-external-metadata-heading--scriptlet:
+.. _meta-scriptlet:
 
 Part scriptlets
 ~~~~~~~~~~~~~~~
@@ -176,3 +176,5 @@ appstream support        ``2.39``
 snapcraftctl set-version ``2.41``
 snapcraftctl set-grade   ``2.41``
 ======================== =================
+
+.. _appstream: https://www.freedesktop.org/software/appstream/docs/

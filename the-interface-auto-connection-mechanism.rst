@@ -9,23 +9,13 @@ Interfaces allow (or deny) access to a resource outside of a snap’s confinemen
 
 Part of this convenience is whether an interface is permitted to be automatically connected when a snap installed, or whether a snap can request to include certain super-privileged interfaces to begin with.
 
---------------
 
--  `Auto-connections <the-interface-auto-connection-mechanism-heading--autoconnect_>`__
-
-   -  `Auto-connection process <the-interface-auto-connection-mechanism-heading--process_>`__
-   -  `Auto-connection constraints <the-interface-auto-connection-mechanism-heading--constraints_>`__
-   -  `Auto-connection with a default-provider <the-interface-auto-connection-mechanism-heading--default--provider_>`__
-
--  `Super-privileged interfaces <the-interface-auto-connection-mechanism-heading--super_>`__
-
-
-.. _the-interface-auto-connection-mechanism-heading--autoconnect:
+.. _the-interface-auto-connection-mechanism-autoconnect:
 
 Auto-connections
 ----------------
 
-The snapd `interface auto-connection <interface-management.md#the-interface-auto-connection-mechanism-heading--auto-connections>`__ mechanism has been designed to remove the need for a manual connection when:
+The snapd :ref:`interface auto-connection <interface-management-auto-connections>` mechanism has been designed to remove the need for a manual connection when:
 
 -  An interface is commonly required and has no or low security implications
 -  A snap provides, or accesses, libraries or other content vital to the operation of a snap
@@ -33,7 +23,7 @@ The snapd `interface auto-connection <interface-management.md#the-interface-auto
 -  Store-set policy applies to let a given snap use an interface that would not be generally auto-connected.
 
 
-.. _the-interface-auto-connection-mechanism-heading--process:
+.. _the-interface-auto-connection-mechanism-process:
 
 Auto-connection process
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -63,7 +53,7 @@ Built-in rules embody the general policy of whether and when an interface should
 A user can also issue “snap connect” and “snap disconnect” commands. In particular, a manual “snap disconnect” of an auto-connection will inhibit a subsequent refresh from re-establishing the auto-connection.
 
 
-.. _the-interface-auto-connection-mechanism-heading--constraints:
+.. _the-interface-auto-connection-mechanism-constraints:
 
 Auto-connection constraints
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -99,7 +89,7 @@ Further lists of constraints or values can be used in the rule language to expre
    ℹ The same language rules can be used to define rules other than interface auto-connections, including default policy for ordinary connections and installations, and to override policy for the more sensitive interfaces.
 
 
-.. _the-interface-auto-connection-mechanism-heading--default-provider:
+.. _the-interface-auto-connection-mechanism-default-provider:
 
 Auto-connection with a default-provider
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

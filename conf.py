@@ -65,6 +65,9 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '_sphinx', '*.md', '*.js
 
 rst_epilog = """
 .. include:: /reuse/links.txt
+.. |br| raw:: html
+
+   <br />
 """
 
 source_suffix = {

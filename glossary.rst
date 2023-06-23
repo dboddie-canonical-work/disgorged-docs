@@ -23,17 +23,17 @@ If you’re new to using snaps, take a look at `Getting started <https://snapcra
 Terms and definitions
 ---------------------
 
-.. _glossary-heading--appliance:
+.. _glossary-appliance:
 
 appliance
 ~~~~~~~~~
 
-An appliance is a pre-configured `Ubuntu Core <glossary-heading--ubuntu-core_>`__ bootable image that includes one or more snaps to provide a specific set of features. The `OpenHAB <https://ubuntu.com/appliance/openhab>`__ smart home system, the `Plex <https://ubuntu.com/appliance/plex>`__ media server, and the `Nextcloud Server <https://ubuntu.com/appliance/nextcloud>`__ platform, are all available as appliances, for example.
+An appliance is a pre-configured `Ubuntu Core <glossary-ubuntu-core_>`__ bootable image that includes one or more snaps to provide a specific set of features. The `OpenHAB <https://ubuntu.com/appliance/openhab>`__ smart home system, the `Plex <https://ubuntu.com/appliance/plex>`__ media server, and the `Nextcloud Server <https://ubuntu.com/appliance/nextcloud>`__ platform, are all available as appliances, for example.
 
 See `What is an Ubuntu Appliance <https://ubuntu.com/appliance/about>`__ for more details.
 
 
-.. _glossary-heading--assertion:
+.. _glossary-assertion:
 
 assertion
 ~~~~~~~~~
@@ -45,7 +45,7 @@ Snapcraft, snapd, Ubuntu Core and the Snap Store all use assertions to handle a 
 See `Assertions <https://snapcraft.io/docs/assertions>`__ for more details.
 
 
-.. _glossary-heading--base:
+.. _glossary-base:
 
 base
 ~~~~
@@ -55,7 +55,7 @@ A base is a special kind of snap that provides a run-time environment with a min
 See :ref:`Base snaps <base-snaps>` for more details.
 
 
-.. _glossary-heading--branch:
+.. _glossary-branch:
 
 branch
 ~~~~~~
@@ -65,15 +65,15 @@ A branch is an optional finer subdivision of a channel for a published snap that
 See `Branches <https://snapcraft.io/docs/channels#glossary-heading--branches>`__ for more details.
 
 
-.. _glossary-heading--brand-store:
+.. _glossary-brand-store:
 
 brand store
 ~~~~~~~~~~~
 
-See `dedicated Snap Store <glossary-heading--dedicated_>`__
+See `dedicated Snap Store <glossary-dedicated_>`__
 
 
-.. _glossary-heading--channels:
+.. _glossary-channels:
 
 channel
 ~~~~~~~
@@ -83,7 +83,7 @@ Channels define which release of a snap is installed and tracked for updates. Th
 See `Channels <https://snapcraft.io/docs/channels>`__ for more details.
 
 
-.. _glossary-heading--classic:
+.. _glossary-classic:
 
 classic
 ~~~~~~~
@@ -93,7 +93,7 @@ classic
 See :ref:`Snap confinement <snap-confinement>` for more details.
 
 
-.. _glossary-heading--confinement:
+.. _glossary-confinement:
 
 confinement
 ~~~~~~~~~~~
@@ -103,7 +103,7 @@ A snap’s confinement level is the degree of isolation it has from your system.
 See :ref:`Snap confinement <snap-confinement>` for more details.
 
 
-.. _glossary-heading--core:
+.. _glossary-core:
 
 core
 ~~~~
@@ -113,7 +113,7 @@ core
 See :ref:`Base snaps <base-snaps>` for more details.
 
 
-.. _glossary-heading--core16:
+.. _glossary-core16:
 
 core16
 ~~~~~~
@@ -123,17 +123,17 @@ core16
 See :ref:`Base snaps <base-snaps>` for more details.
 
 
-.. _glossary-heading--core18:
+.. _glossary-core18:
 
 core18
 ~~~~~~
 
-*core18* is a base snap built from `Ubuntu 18.04 LTS <http://releases.ubuntu.com/18.04/>`__. It’s the current standard base for snap building and is the recommended base for the majority of snaps. It’s what the `snapcraft init <snapcraft-overview.md#glossary-heading--creating-snapcraft>`__ command includes when generating a new project’s template *snapcraft.yaml* .
+*core18* is a base snap built from `Ubuntu 18.04 LTS <http://releases.ubuntu.com/18.04/>`__. It’s the current standard base for snap building and is the recommended base for the majority of snaps. It’s what the `snapcraft init <snapcraft-overview.md#glossary-creating-snapcraft>`__ command includes when generating a new project’s template *snapcraft.yaml* .
 
 See :ref:`Base snaps <base-snaps>` for more details.
 
 
-.. _glossary-heading--core20:
+.. _glossary-core20:
 
 core20
 ~~~~~~
@@ -143,7 +143,7 @@ core20
 See :ref:`Base snaps <base-snaps>` for more details on base snaps.
 
 
-.. _glossary-heading--dedicated:
+.. _glossary-dedicated:
 
 Dedicated Snap Store
 ~~~~~~~~~~~~~~~~~~~~
@@ -155,7 +155,7 @@ It can inherit selected packages from other snap stores, and host a set of snaps
 See `Store overview <https://core.docs.ubuntu.com/en/build-store/#brand-stores>`__ in our Ubuntu Core documentation for more details.
 
 
-.. _glossary-heading--devel:
+.. _glossary-devel:
 
 devmode
 ~~~~~~~
@@ -165,7 +165,7 @@ devmode
 See :ref:`Snap confinement <snap-confinement>` for more details.
 
 
-.. _glossary-heading--epoch:
+.. _glossary-epoch:
 
 epoch
 ~~~~~
@@ -177,7 +177,7 @@ When a new release breaks data compatibility with an older version, incrementing
 See :ref:`Epochs <snap-epochs>` for more details.
 
 
-.. _glossary-heading--extension:
+.. _glossary-extension:
 
 extension
 ~~~~~~~~~
@@ -187,7 +187,7 @@ Snapcraft extensions enable snap developers to easily incorporate a set of commo
 See :ref:`Snapcraft extensions <snapcraft-extensions>` for more details.
 
 
-.. _glossary-heading--gadget:
+.. _glossary-gadget:
 
 gadget
 ~~~~~~
@@ -197,7 +197,7 @@ A gadget is a device or other deployment running Ubuntu Core alongside a vendor-
 See :ref:`The gadget snap <gadget-snaps>` for more details.
 
 
-.. _glossary-heading--hook:
+.. _glossary-hook:
 
 hook
 ~~~~
@@ -207,7 +207,7 @@ A hook is an executable that runs within a snap’s confined environment when a 
 For more details, see :ref:`Supported snap hooks <supported-snap-hooks>`.
 
 
-.. _glossary-heading--interfaces:
+.. _glossary-interfaces:
 
 interface
 ~~~~~~~~~
@@ -219,7 +219,7 @@ For a snap to use an interface, its developer needs to have first defined its co
 See :ref:`Interface management <interface-management>` for more details.
 
 
-.. _glossary-heading--layout:
+.. _glossary-launchpad:
 
 Launchpad
 ~~~~~~~~~
@@ -231,7 +231,7 @@ Launchpad provides the ability to build your snap for multiple architectures - x
 See :ref:`Remote build <remote-build>` for more details.
 
 
-.. _glossary-heading--layout:
+.. _glossary-layout:
 
 layout
 ~~~~~~
@@ -243,7 +243,7 @@ They cannot be used to expose elements to non-permitted locations on the host en
 See :ref:`Snap layouts <snap-layouts>` for more details.
 
 
-.. _glossary-heading--lxd:
+.. _glossary-lxd:
 
 LXD
 ~~~
@@ -253,7 +253,7 @@ LXD
 See :ref:`Building with LXD <build-providers>` for details.
 
 
-.. _glossary-heading--model:
+.. _glossary-model:
 
 Model
 ~~~~~
@@ -263,7 +263,7 @@ Snaps are a containerised application format which is designed for desktops and 
 Each machine where snaps are installed has its own sense of type - a model. This comes from the IoT world, where a box which is acting as a security camera recorder would be expected to have a very different software load than a box which is acting as an elevator control system. The manufacturer of the box specifies the model. Based on that model, snaps will follow specific rules about software installation. For example, on an elevator control system, the model might dictate that certain snaps must be installed, and other snaps may not be installed.
 
 
-.. _glossary-heading--multipass:
+.. _glossary-multipass:
 
 Multipass
 ~~~~~~~~~
@@ -272,10 +272,10 @@ Multipass
 
 By default, the *snapcraft* command uses Multipass to isolate the build process from the host system.
 
-See `Building your snap <snapcraft-overview.md#glossary-heading--building-your-snap>`__ for further details.
+See :ref:`snapcraft-overview-building-your-snap` for further details.
 
 
-.. _glossary-heading--parallel-installs:
+.. _glossary-parallel-installs:
 
 parallel installs
 ~~~~~~~~~~~~~~~~~
@@ -285,7 +285,7 @@ Parallel installs enable you to run multiple instances of the same snap on the s
 See `Parallel installs <https://snapcraft.io/docs/parallel-installs>`__ for more information.
 
 
-.. _glossary-heading--part:
+.. _glossary-part:
 
 part
 ~~~~
@@ -295,7 +295,7 @@ A snap may seem like a single application but it can often include code from man
 Part definitions can be shared and reused, to enable many different snaps to get the component without re-specifying in detail how to build it.
 
 
-.. _glossary-heading--platform-snap:
+.. _glossary-platform-snap:
 
 platform snap
 ~~~~~~~~~~~~~
@@ -304,10 +304,10 @@ A platform snap contains the parts, packages, interface connections and environm
 
 Examples include kde-frameworks to provide KDE Plasma compatibility, and WINE to help snaps more easily run Microsoft Windows executables.
 
-A platform snap cannot be installed directly by users. They are instead invoked by snap developers as the `default-provider <the-content-interface.md#glossary-heading--default>`__ in a `content interface </t/the-content-interface>`__.
+A platform snap cannot be installed directly by users. They are instead invoked by snap developers as the :ref:`default-provider <the-content-interface-default>` in a :ref:`content interface <the-content-interface>`.
 
 
-.. _glossary-heading--preseeding:
+.. _glossary-preseeding:
 
 preseeding
 ~~~~~~~~~~
@@ -319,7 +319,7 @@ When Ubuntu Core boots for the first time, a seeding process installs an initial
 See `Preseeding <https://ubuntu.com/core/docs/preseeding>`__ for more details.
 
 
-.. _glossary-heading--refresh:
+.. _glossary-refresh:
 
 refresh
 ~~~~~~~
@@ -331,7 +331,7 @@ When, and how often, these updates occur can be modified with the snap command. 
 See `Managing updates <https://snapcraft.io/docs/managing-updates>`__ for further details.
 
 
-.. _glossary-heading--remote-build:
+.. _glossary-remote-build:
 
 remote build
 ~~~~~~~~~~~~
@@ -341,12 +341,12 @@ Remote build is a feature in `Snapcraft <https://snapcraft.io/docs/snapcraft-ove
 See :ref:`Remote build <remote-build>` for further details.
 
 
-.. _glossary-heading--revision:
+.. _glossary-revision:
 
 revision
 ~~~~~~~~
 
-A snap’s *revision* is a number assigned by the `Snap Store <glossary-heading--snap-store_>`__ automatically to give each snap a unique identity within and across its channels.
+A snap’s *revision* is a number assigned by the `Snap Store <glossary-snap-store_>`__ automatically to give each snap a unique identity within and across its channels.
 
 It’s important to note that there is no real concept of higher or lower snap revisions and the current revision of the snap is simply the one that is released onto a channel.
 
@@ -370,7 +370,7 @@ However, neither the revision number (nor its version) enforce an order of relea
 See :ref:`Revisions <revisions>` for further details.
 
 
-.. _glossary-heading--seeding:
+.. _glossary-seeding:
 
 seeding
 ~~~~~~~
@@ -382,7 +382,7 @@ Each installed snap needs to be verified and have their respective AppArmor and 
 The seeding process runs quicker with `preseeding <https://ubuntu.com/core/docs/preseeding>`__.
 
 
-.. _glossary-heading--series:
+.. _glossary-series:
 
 series
 ~~~~~~
@@ -405,7 +405,7 @@ The above output shows that the installed package is compatible with other ``ser
 A snap series **is not correlated** to an Ubuntu series, such as *18* for Ubuntu 18.04, or *20* for Ubuntu 20.04, despite the numbers being the same or similar. This similarity is due to initial design considerations that have not yet been developed further, and the vast majority of snap series definitions simply take the value of *16*.
 
 
-.. _glossary-heading--snap:
+.. _glossary-snap:
 
 snap
 ~~~~
@@ -415,7 +415,7 @@ Snaps are app packages for desktop, cloud and IoT that are easy to install, secu
 See `Getting started <https://snapcraft.io/docs/quickstart-guide>`__ for more details.
 
 
-.. _glossary-heading--snapcraft:
+.. _glossary-snapcraft:
 
 snapcraft
 ~~~~~~~~~
@@ -425,7 +425,7 @@ Snapcraft is both the command and the framework used to build your own snaps. Th
 See :ref:`Snapcraft overview <snapcraft-overview>` for more details.
 
 
-.. _glossary-heading--snapd:
+.. _glossary-snapd:
 
 snapd
 ~~~~~
@@ -437,17 +437,17 @@ Alongside its various service and management functions, snapd provides the *snap
 See `Snap documentation <https://snapcraft.io/docs>`__ for more details.
 
 
-.. _glossary-heading--snappy:
+.. _glossary-snappy:
 
 snappy
 ~~~~~~
 
-Snappy was the predecessor to `Ubuntu Core <glossary-heading--ubuntu-core_>`__. The term is still occasionally used informally to refer to various aspects of the snap ecosystem, such as the command, the package format, the Snap Store and Ubuntu Core. It’s best to avoid using this term; use *Snap* or *the Snap ecosystem* instead.
+Snappy was the predecessor to `Ubuntu Core <glossary-ubuntu-core_>`__. The term is still occasionally used informally to refer to various aspects of the snap ecosystem, such as the command, the package format, the Snap Store and Ubuntu Core. It’s best to avoid using this term; use *Snap* or *the Snap ecosystem* instead.
 
 See `Snap documentation <https://snapcraft.io/docs>`__ for general details about the snap ecosystem.
 
 
-.. _glossary-heading--snapshot:
+.. _glossary-snapshot:
 
 snapshot
 ~~~~~~~~
@@ -459,7 +459,7 @@ Snapshots are generated manually with the ``snap save`` command and automaticall
 See `Snapshots <https://snapcraft.io/docs/snapshots>`__ for further details.
 
 
-.. _glossary-heading--snap-store:
+.. _glossary-snap-store:
 
 Snap Store
 ~~~~~~~~~~
@@ -469,7 +469,7 @@ Snap Store
 See `snapcraft.io/store <https://snapcraft.io/store>`__ for more details.
 
 
-.. _glossary-heading--spread:
+.. _glossary-spread:
 
 spread
 ~~~~~~
@@ -479,7 +479,7 @@ Spread is our open source testing utility that enables multiple shell scripts to
 See https://github.com/snapcore/spread for the project’s code repository.
 
 
-.. _glossary-heading--strict:
+.. _glossary-strict:
 
 strict
 ~~~~~~
@@ -489,7 +489,7 @@ strict
 See :ref:`Snap confinement <snap-confinement>` for more details.
 
 
-.. _glossary-heading--tracks:
+.. _glossary-tracks:
 
 tracks
 ~~~~~~
@@ -499,7 +499,7 @@ Tracks enable snap developers to publish multiple supported releases of their ap
 See `Tracks <https://snapcraft.io/docs/channels#glossary-heading--tracks>`__ for more details.
 
 
-.. _glossary-heading--transitional-interfaces:
+.. _glossary-transitional-interfaces:
 
 Transitional interface
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -507,7 +507,7 @@ Transitional interface
 A *transitional interface* is an :ref:`interface <interface-management>` that can be used by a trusted snap to access traditional Linux desktop environments that were not designed to integrate with :ref:`snap confinement <snap-confinement>`. These interfaces will become deprecated as replacement or modified technologies that enforce strong application isolation become available.
 
 
-.. _glossary-heading--ubuntu-core:
+.. _glossary-ubuntu-core:
 
 Ubuntu Core
 ~~~~~~~~~~~
@@ -517,7 +517,7 @@ Ubuntu Core is Ubuntu for embedded devices and built using snaps. The operating 
 See our `Ubuntu Core <https://ubuntu.com/core/docs>`__ documentation for more details.
 
 
-.. _glossary-heading--version:
+.. _glossary-version:
 
 Version
 ~~~~~~~

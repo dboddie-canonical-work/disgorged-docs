@@ -136,19 +136,16 @@ The ``dotnet`` plugin can be used in .NET projects to install dependencies via t
 -  ``dotnet-build-configuration``: The .NET build configuration to use. Defaults to Release.
 -  ``dotnet-self-contained-runtime-identifier``: Optional parameter to specify the runtime identifier to use when building a self-contained application. Setting this parameter will automatically trigger a self-contained build (with the ``--self-contained`` flag on the ``dotnet publish`` command).
 
-.. note::
+For single file publishing, the output of the deployment should contain the executable file along with all the necessary DLLs and dependencies necessary to run it. If you want to deploy your application as a single-file executable, you should set the following parameter inside the ``.csproj`` file of your project:
 
+.. code:: xml
 
-          The output of the deployment should contain the executable file along with all the necessary DLLs and dependencies necessary to run it. If you want to deploy your application as a single-file executable, you should set the following parameter inside the ``.csproj`` file of your project:
+   <PropertyGroup>
+   …
+   <PublishSingleFile>true</PublishSingleFile>
+   </PropertyGroup>
 
-          .. code:: xml
-
-          <PropertyGroup>
-          …
-          <PublishSingleFile>true</PublishSingleFile>
-          </PropertyGroup>
-
-          By doing this, the parameter ``dotnet-self-contained-runtime-identifier`` becomes required, since a runtime identifier is required to build a single-file .NET executable.
+By doing this, the parameter ``dotnet-self-contained-runtime-identifier`` becomes required, since a runtime identifier is required to build a single-file .NET executable.
 
 The ``source`` should point to the root of your .NET project. In our case, it points to the local directory as it’s where the source tree is located. It can also point to a URL if the source code is available as a compressed archive or a revision control repository.
 

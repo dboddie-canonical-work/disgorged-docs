@@ -247,7 +247,6 @@ You can download the example repository with the following command:
 
    $ git clone https://github.com/snapcraft-docs/ros-talker-listener-core20
 
-.. _metadata-1:
 
 Metadata
 ~~~~~~~~
@@ -278,7 +277,6 @@ The base keyword defines a special kind of snap that provides a run-time environ
 
 `core20 <https://snapcraft.io/core20>`__ is the current standard base for snap building and is based on\ `Ubuntu 20.04 LTS <http://releases.ubuntu.com/20.04/>`__. It is therefore the base for ROS Noetic and ROS 2 Foxy snaps.
 
-.. _security-model-1:
 
 Security model
 ~~~~~~~~~~~~~~
@@ -291,7 +289,6 @@ To get started, we won’t confine this application. Unconfined applications, sp
 
 For more information about security model, see, `choosing-a-security-model <https://snapcraft.io/docs/choosing-a-security-model>`__.
 
-.. _parts-1:
 
 Parts
 ~~~~~
@@ -315,7 +312,6 @@ Snapcraft relies on well known and well established ROS tools such as, in this e
 
 For more details on catkin-specific metadata, see\ `The catkin plugin <https://snapcraft.io/docs/catkin-plugin>`__ and for more information about general parts metadata, see, `parts-metadata <https://snapcraft.io/docs/snapcraft-parts-metadata>`__.
 
-.. _apps-1:
 
 Apps
 ~~~~
@@ -333,7 +329,6 @@ The command specifies the path to the binary to be run. This is resolved relativ
 
 In snap, an application is usually prefixed by the snap name so that the application ``my-app`` from the snap ``my-snap`` can be executed calling ``my-snap.my-app``. However, if both the snap and the app are called the same, as is the case in our ROS example, the execution command collapses to avoid the tediousness of writing twice the same words. The command ``ros-talker-listener.ros-talker-listener`` simply becomes ``ros-talker-listener``.
 
-.. _building-the-snap-1:
 
 Building the snap
 ~~~~~~~~~~~~~~~~~

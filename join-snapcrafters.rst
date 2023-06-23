@@ -26,6 +26,6 @@ The snaps in the Snapcrafters GitHub also serve as reference.
 How do I join Snapcrafters?
 ---------------------------
 
-Fork the `Snapcrafters template <https://github.com/snapcrafters/fork-and-rename-me>`__ repository to your own GitHub account and complete the tick boxes in `README.md <>`__. When you’ve got a snap you’d like adding the Snapcrafters just post a request in this forum and tag @evan @popey and @Wimpress (the Snap Advocacy team) and we’ll assist.
+Fork the `Snapcrafters template <https://github.com/snapcrafters/fork-and-rename-me>`__ repository to your own GitHub account and complete the tick boxes in ``README.md``. When you have a snap you would like to add to the collection just post a request in `the Snapcraft forum`_.
 
-If you have any questions, post in this forum.
+If you have any questions, post in `the Snapcraft forum`_.
