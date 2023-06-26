@@ -36,7 +36,7 @@ With an example snap application called *app* installed, the following command w
 .. note::
 
 
-          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
+          See :ref:`interface-management` and :ref:`supported-interfaces` for further details on how interfaces are used.
 
 --------------
 
@@ -46,9 +46,12 @@ With an example snap application called *app* installed, the following command w
 Developer details
 -----------------
 
-**Auto-connect**: no **Attributes**: \* ``channel`` (slot): PWM device channel number to export and expose to consuming snaps \* ``chip-number`` (slot): chip base number to export
+**Auto-connect**: no **Attributes**:
 
-To use a PWM device, the snap developer must add :ref:``plugs:[pwm]`` to a snap’s\ `snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific pwm device with an\ `interface connection <interface-management.md#the-pwm-interface-heading--manual-connections>`__.
+* ``channel`` (slot): PWM device channel number to export and expose to consuming snaps
+* ``chip-number`` (slot): chip base number to export
+
+To use a PWM device, the snap developer must add ``plugs:[pwm]`` to a snap’s\ :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific pwm device with an :ref:`interface connection <interface-management-manual-connections>`.
 
 Unless the snap is expected to actually use a set of PWM channels that is not predefined, it is recommended to define distinct plugs for each used pwm channel, like:
 
@@ -60,7 +63,7 @@ Unless the snap is expected to actually use a set of PWM channels that is not pr
      warning-led:
        interface: pwm
 
-This has the advantage of being self-documenting and 1-1 connections like these are easier to track and setup with\ :ref:`auto-connections <the-interface-auto-connection-mechanism>`, if the latter is needed.
+This has the advantage of being self-documenting and 1-1 connections like these are easier to track and setup with :ref:`auto-connections <the-interface-auto-connection-mechanism>`, if the latter is needed.
 
 When the interface is connected, ``"echo (channel number) > /sys/class/pwm/pwmchipN/export"`` is run internally to enable access to the PWM channel.
 

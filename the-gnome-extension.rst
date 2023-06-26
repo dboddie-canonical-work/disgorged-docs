@@ -29,7 +29,7 @@ This extension provides many of the components needed for general desktop applic
 How to use it
 -------------
 
-This extension currently only works with the :ref:``core22`` base snap (see `Base snaps <base-snaps>` for details). To use it, add :ref:``extensions: [gnome]`` to the application definition in your `snapcraft.yaml <creating-snapcraft-yaml>` file.
+This extension currently only works with the ``core22`` base snap (see :ref:`Base snaps <base-snaps>` for details). To use it, add ``extensions: [gnome]`` to the application definition in your :ref:`snapcraft.yaml <creating-snapcraft-yaml>` file.
 
 For instance:
 

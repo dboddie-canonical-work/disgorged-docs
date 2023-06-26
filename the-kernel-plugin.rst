@@ -5,7 +5,7 @@
 The kernel plugin
 =================
 
-The :ref:``kernel`` plugin adds to the configuration options provided by the generic `kbuild <the-kbuild-plugin>` plugin to help build kernel snaps.
+The ``kernel`` plugin adds to the configuration options provided by the generic :ref:`kbuild <the-kbuild-plugin>` plugin to help build kernel snaps.
 
 **Warning:** The API for this plugin is currently is unstable, and cross-compiling support is consequently classed as *experimental*.
 

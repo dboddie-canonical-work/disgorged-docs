@@ -50,7 +50,7 @@ Type: Array of ``string``
 
 A list of applications to be started after ``<app-name>``. Applications must be part of the same snap. The order of the applications in the list has no effect on their launch order.
 
-Requires :ref:``daemon`` to be set in the *app* metadata. See `Services and daemons <services-and-daemons>` for details.
+Requires ``daemon`` to be set in the *app* metadata. See :ref:`Services and daemons <services-and-daemons>` for details.
 
 See also `before <snapcraft-app-and-service-metadata-heading--before_>`__.
 
@@ -80,7 +80,7 @@ Type: Array of ``string``
 
 An ordered list of applications to be started before ``<app-name>`` . Applications must be part of the same snap.
 
-Requires :ref:``daemon`` to be set in the *app* metadata. See `Services and daemons <services-and-daemons>` for details.
+Requires ``daemon`` to be set in the *app* metadata. See :ref:`Services and daemons <services-and-daemons>` for details.
 
 See also `after <snapcraft-app-and-service-metadata-heading--after_>`__.
 
@@ -93,7 +93,7 @@ The command to run inside the snap when ``<app-name>`` is invoked.
 
 The command can be in either a snap runtime’s command path, ``$SNAP/usr/sbin:$SNAP/usr/bin:$SNAP/sbin:$SNAP/bin``, or an executable path relative to $SNAP.
 
-If daemon is set, this will be the command to run the service. Only a snap with *classic* confinement can use a relative path because :ref:``PATH`` isn’t modified by a wrapper in classic confinement. See `Classic confinement <snap-confinement>` for more details.
+If daemon is set, this will be the command to run the service. Only a snap with *classic* confinement can use a relative path because ``PATH`` isn’t modified by a wrapper in classic confinement. See :ref:`Classic confinement <snap-confinement>` for more details.
 
 Examples: ``app-launch`` for an excecutable placed under ``$SNAP/bin``. With ``classic`` confinement, ``bin/app-launch`` for an executable placed under ``$SNAP/bin``.
 
@@ -186,7 +186,7 @@ Can be either of the following:
 
 Defaults to ``enable``.
 
-Requires :ref:``daemon`` to be set in the *app* metadata. See `Services and daemons <services-and-daemons>` for details.
+Requires ``daemon`` to be set in the *app* metadata. See :ref:`Services and daemons <services-and-daemons>` for details.
 
 listen-stream
 ~~~~~~~~~~~~~
@@ -223,7 +223,7 @@ Type: ``list[string]``
 
 Plugs for :ref:`interfaces <interface-management>` to connect to.
 
-``<app-name>:ref:`` will make these plug connections when running in ``strict`` ``confinement`` For interfaces that need *attributes*, see top-level `plugs <snapcraft-top-level-metadata>`.
+``<app-name>`` will make these plug connections when running in ``strict`` ``confinement`` For interfaces that need *attributes*, see top-level :ref:`plugs <snapcraft-top-level-metadata>`.
 
 Example: ``[home, removable-media, raw-usb``]
 
@@ -234,7 +234,7 @@ Type: ``string``
 
 Runs a command from inside the snap after a service stops.
 
-Requires :ref:``daemon`` to be set in the *app* metadata. See `Services and daemons <services-and-daemons>` for details.
+Requires ``daemon`` to be set in the *app* metadata. See :ref:`Services and daemons <services-and-daemons>` for details.
 
 refresh-mode
 ~~~~~~~~~~~~
@@ -251,7 +251,7 @@ Can be either of the following:
 
 Defaults to ``restart``.
 
-Requires :ref:``daemon`` to be set in the *app* metadata. See `Services and daemons <services-and-daemons>` for details.
+Requires ``daemon`` to be set in the *app* metadata. See :ref:`Services and daemons <services-and-daemons>` for details.
 
 restart-condition
 ~~~~~~~~~~~~~~~~~
@@ -262,7 +262,7 @@ Condition to restart the daemon under.
 
 Defaults to ``on-failure``. Other values are ``[on-failure|on-success|on-abnormal|on-abort|always|never]``. Refer to `systemd.service manual <https://www.freedesktop.org/software/systemd/man/systemd.service.html#Restart=>`__ for details.
 
-Requires :ref:``daemon`` to be set in the *app* metadata. See `Services and daemons <services-and-daemons>` for details.
+Requires ``daemon`` to be set in the *app* metadata. See :ref:`Services and daemons <services-and-daemons>` for details.
 
 slots
 ~~~~~
@@ -271,7 +271,7 @@ Type: ``list[string]``
 
 Slots for `interfaces <t/interfaces/6154>`__ to connect to.
 
-``<app-name>:ref:`` will make these slot connections when running in ``strict`` confinement only. For interfaces that need *attributes*, see top-level `slots <snapcraft-top-level-metadata>`.
+``<app-name>`` will make these slot connections when running in ``strict`` confinement only. For interfaces that need *attributes*, see top-level :ref:`slots <snapcraft-top-level-metadata>`.
 
 Example: ``[home, removable-media, raw-usb``]
 
@@ -300,7 +300,7 @@ Type: ``string``
 
 The path to a command inside the snap to run to stop the service.
 
-Requires :ref:``daemon`` to be set in the *app* metadata. See `Services and daemons <services-and-daemons>` for details.
+Requires ``daemon`` to be set in the *app* metadata. See :ref:`Services and daemons <services-and-daemons>` for details.
 
 stop-timeout
 ~~~~~~~~~~~~
@@ -320,4 +320,4 @@ Schedules when, or how often, to run a service or command.
 
 See `Timer string format <https://snapcraft.io/docs/timer-string-format>`__ for further details on the required syntax.
 
-Requires :ref:``daemon`` to be set in the *app* metadata. See `Services and daemons <services-and-daemons>` for details.
+Requires ``daemon`` to be set in the *app* metadata. See :ref:`Services and daemons <services-and-daemons>` for details.

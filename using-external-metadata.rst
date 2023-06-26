@@ -5,7 +5,7 @@
 Using external metadata
 =======================
 
-To help avoid unnecessary duplication, and for convenience, Snapcraft can process and incorporate external metadata from within *snapcraft.yaml* by using :ref:``parse-info`` within a `part <adding-parts>` and a corresponding ``adopt-info`` key.
+To help avoid unnecessary duplication, and for convenience, Snapcraft can process and incorporate external metadata from within *snapcraft.yaml* by using ``parse-info`` within a :ref:`part <adding-parts>` and a corresponding ``adopt-info`` key.
 
 For example, the following ``snapcraft.yaml`` will parse a file called ``metadata-file``. Snapcraft will attempt to extract ``version``, ``summary`` and ``description`` metadata for the snap, all of which are mandatory:
 
@@ -38,7 +38,7 @@ See below for details on incorporating each of the above into your *snapcraft.ya
 AppStream
 ~~~~~~~~~
 
-`AppStream <https://www.freedesktop.org/software/appstream/docs/>`__ is a metadata standard used to describe a common set software components. It can be parsed by *snapcraft* to provide the :ref:``title``, ``version``, ``summary``, ``description`` and ``icon`` for a snap, along with the location of an app’s `desktop <desktop-files-for-menu-integration>` file.
+`AppStream <https://www.freedesktop.org/software/appstream/docs/>`__ is a metadata standard used to describe a common set software components. It can be parsed by *snapcraft* to provide the ``title``, ``version``, ``summary``, ``description`` and ``icon`` for a snap, along with the location of an app’s :ref:`desktop <desktop-files-for-menu-integration>` file.
 
 The following is a typical example from an upstream project. It’s an *AppStream* file called ``sampleapp.metainfo.xml``:
 

@@ -9,7 +9,7 @@ On the 30th April 2021, `Ubuntu 16.04 LTS (Xenial Xerus) <https://releases.ubunt
 
 The former default :ref:`base snap <base-snaps>` when building snaps with :ref:`Snapcraft <snapcraft-overview>` was ``core``, which uses Ubuntu 16.04 LTS as its build and runtime environment. This has since been superseded by ``core18`` and ``core20``, based on Ubuntu 18.04 LTS and Ubuntu 20.04 LTS respectively, which are now the default and recommended build and runtime environments for new snaps.
 
-However, there are still some snaps built using Ubuntu 16.04 LTS, either explicitly by including :ref:``core`` in their `snapcraft.yaml <the-snapcraft-yaml-schema>`, or implicitly by not defining any base at all.
+However, there are still some snaps built using Ubuntu 16.04 LTS, either explicitly by including ``core`` in their :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>`, or implicitly by not defining any base at all.
 
 To remain secure and supported, these snaps will need to either:
 
@@ -64,7 +64,7 @@ Visit `ubuntu.com/advantage <https://ubuntu.com/advantage>`__ to create an accou
 Using the Ubuntu Advantage token
 --------------------------------
 
-The :ref:``--ua-token`` argument is used with the `snapcraft <snapcraft-overview>` command to specify an Ubuntu Advantage token when building a snap (requires :ref:`Snapcraft 4.7+ <release-notes-snapcraft-4-7>`):
+The ``--ua-token`` argument is used with the :ref:`snapcraft <snapcraft-overview>` command to specify an Ubuntu Advantage token when building a snap (requires :ref:`Snapcraft 4.7+ <release-notes-snapcraft-4-7>`):
 
 .. code:: bash
 

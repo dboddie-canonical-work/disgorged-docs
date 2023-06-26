@@ -91,7 +91,7 @@ Using snapcraft try
 
 When developing a snap with :ref:`snapcraft <snapcraft-overview>`, the ``snapcraft try`` command can be used in combination with ``snap try`` to quickly test a snap and fix issues.
 
-The :ref:``snapcraft try`` command runs through the build process to the completion of the *prime* stage (see `Parts lifecycle <parts-lifecycle>` for further details). It then exposes the resultant *prime* directory to the snapcraft directory, even from within a virtual machine or container.
+The ``snapcraft try`` command runs through the build process to the completion of the *prime* stage (see :ref:`Parts lifecycle <parts-lifecycle>` for further details). It then exposes the resultant *prime* directory to the snapcraft directory, even from within a virtual machine or container.
 
 This *prime* directory includes all the staged components of a snap, which can then be installed and tested with the ``snap try <prime directory>`` command.
 

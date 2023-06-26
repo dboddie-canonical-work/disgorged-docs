@@ -20,7 +20,7 @@ The `Firefox <https://snapcraft.io/firefox>`__, `Chromium <https://snapcraft.io/
 .. note::
 
 
-          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
+          See :ref:`interface-management` and :ref:`supported-interfaces` for further details on how interfaces are used.
 
 --------------
 
@@ -30,14 +30,23 @@ The `Firefox <https://snapcraft.io/firefox>`__, `Chromium <https://snapcraft.io/
 Developer details
 -----------------
 
-`Auto-connect <interface-management.md#the-system-files-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes **Transitional**: no **Attributes**: \* ``read`` (plug): list of files and/or directories for read-only access (eg, ‘``read: [ /etc/file-read, /etc/dir-read ]``’ \* ``write`` (plug): list of files and/or directories for read/write access (eg, ‘``write: [ /etc/file-write, /etc/dir-write ]``’
+`Auto-connect <interface-management.md#the-system-files-interface-heading--auto-connections>`__: no
+
+:ref:`Super-privileged <super-privileged-interfaces>`: yes
+
+**Transitional**: no
+
+**Attributes**:
+
+* ``read`` (plug): list of files and/or directories for read-only access (eg, ‘``read: [ /etc/file-read, /etc/dir-read ]``’
+* ``write`` (plug): list of files and/or directories for read/write access (eg, ‘``write: [ /etc/file-write, /etc/dir-write ]``’
 
 Requires snapd version *2.37+*.
 
-Consumers of this interface require a `snap declaration <https://snapcraft.io/docs/process-for-aliases-auto-connections-and-tracks>`__ for distribution via the `Snap Store <https://snapcraft.io/store>`__ and acceptance in the store requires that the interface is not be used to access: - system files where the snap is not the clear owner (eg, /dev, /proc, /sys, /usr, etc). - paths in :ref:``/dev``, such as ``/dev/sda1`` Access to ``/dev`` device nodes requires both AppArmor policy and device control group inclusion, but the *system-files* interface does not have enough information to generate the necessary policy to enable these use cases. As such, purpose-specific interfaces should be used instead, such as `block-devices <the-block-devices-interface>` or :ref:`raw-volume <the-raw-volume-interface>`.
+Consumers of this interface require a `snap declaration <https://snapcraft.io/docs/process-for-aliases-auto-connections-and-tracks>`__ for distribution via the `Snap Store <https://snapcraft.io/store>`__ and acceptance in the store requires that the interface is not be used to access: - system files where the snap is not the clear owner (eg, /dev, /proc, /sys, /usr, etc). - paths in ``/dev``, such as ``/dev/sda1`` Access to ``/dev`` device nodes requires both AppArmor policy and device control group inclusion, but the *system-files* interface does not have enough information to generate the necessary policy to enable these use cases. As such, purpose-specific interfaces should be used instead, such as :ref:`block-devices <the-block-devices-interface>` or :ref:`raw-volume <the-raw-volume-interface>`.
 
 .. note::
-          Do not share data between snaps. While :ref:``system-files`` can be used to share data with another snap, such as within a configuration file, this behaviour is not recommended. The `content interface <the-content-interface>` should be used instead.
+          Do not share data between snaps. While ``system-files`` can be used to share data with another snap, such as within a configuration file, this behaviour is not recommended. The :ref:`content interface <the-content-interface>` should be used instead.
 
 
 

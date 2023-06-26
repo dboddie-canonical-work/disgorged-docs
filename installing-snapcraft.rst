@@ -21,7 +21,7 @@ On Linux distributions `with snap support <https://snapcraft.io/docs/installing-
 
    $ sudo snap install snapcraft --classic
 
-The :ref:``--classic`` argument is required because snapcraft uses `classic confinement <snap-confinement>`.
+The ``--classic`` argument is required because snapcraft uses :ref:`classic confinement <snap-confinement>`.
 
    ⓘ If you’re using an **apt** installed version of snapcraft, such as the package for `Ubuntu 18.04 LTS <http://releases.ubuntu.com/18.04/>`__, you need to remove this (``sudo apt remove snapcraft``) and install snapcraft from its snap to access the latest features.
 

@@ -7,7 +7,7 @@ Supported plugins
 
 The following plugins are currently supported by Snapcraft. See :ref:`Snapcraft plugins <snapcraft-plugins>` for more details in how they’re used, and to create your own, see :ref:`Writing local plugins <writing-local-plugins>`.
 
-   ⓘ From Snapcraft 4.0 onwards, if the working directory contains a Snapcraft project, the default behaviour is to show only the plugins available for either its specified base or the latest available supported base (currently :ref:``core22`` ). See `Base snaps <base-snaps>` for more details.
+   ⓘ From Snapcraft 4.0 onwards, if the working directory contains a Snapcraft project, the default behaviour is to show only the plugins available for either its specified base or the latest available supported base (currently ``core22`` ). See :ref:`Base snaps <base-snaps>` for more details.
 
 Programming languages
 ---------------------

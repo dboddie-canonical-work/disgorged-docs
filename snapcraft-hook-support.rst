@@ -24,7 +24,7 @@ The hook executable can be placed in a directory called ``snap/hooks`` relative 
        │   └── configure
        └── snapcraft.yaml
 
-Hook executables in :ref:``snap/hooks`` are automatically copied into the snap during Snapcraft’s ``prime`` step (see `Parts lifecycle <12230>` for details).
+Hook executables in ``snap/hooks`` are automatically copied into the snap during Snapcraft’s ``prime`` step (see :ref:`Parts lifecycle <parts-lifecycle>` for details).
 
 2. From within snapcraft.yaml
 -----------------------------

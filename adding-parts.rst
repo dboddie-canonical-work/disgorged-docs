@@ -27,7 +27,7 @@ The ``snapcraft init`` command creates the following *part* template in *snapcra
        # See 'snapcraft plugins'
        plugin: nil
 
-A part starts with an arbitrary name, such as :ref:``my-part``, which is followed by enough `Snapcraft parts metadata <snapcraft-parts-metadata>` to build the functionality you require.
+A part starts with an arbitrary name, such as ``my-part``, which is followed by enough :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>` to build the functionality you require.
 
 The core of a typical part will commonly consist of the following metadata:
 

@@ -61,4 +61,4 @@ The example below shows two missing libraries (``libcaca`` and ``libslang``) and
 Addressing issues
 -----------------
 
-To address library linter issues, packages containing any missing libraries need to be added to the list of :ref:``stage-packages``. Unused libraries can be removed from ``stage-packages``. See `Build and staging dependencies <build-and-staging-dependencies>` for further details.
+To address library linter issues, packages containing any missing libraries need to be added to the list of ``stage-packages``. Unused libraries can be removed from ``stage-packages``. See :ref:`Build and staging dependencies <build-and-staging-dependencies>` for further details.

@@ -15,7 +15,7 @@ When :ref:`creating a snap <creating-a-snap>`, the extent of a snap’s containm
 
    confinement: strict
 
-Confinement can be one of the following: - :ref:``devmode``: enables system access and logging only while creating a snap - ``strict``: denies all system access other than through a snap’s `interfaces <interface-management>` - ``classic``: permits full system-level access, analogous to a *deb* or *rpm* installation.
+Confinement can be one of the following: - ``devmode``: enables system access and logging only while creating a snap - ``strict``: denies all system access other than through a snap’s :ref:`interfaces <interface-management>` - ``classic``: permits full system-level access, analogous to a *deb* or *rpm* installation.
 
 The vast majority of snaps should be able to attain *strict* confinement, but there are three specific requirements that can typically only be resolved with *classic* confinement: 1. access to arbitrary filesystem paths outside of ``$HOME`` and /media 1. run other programs that cannot be determined at build time 1. perform privileged tasks not yet covered by interfaces (see below)
 
@@ -61,6 +61,6 @@ See :ref:`releasing your app <releasing-your-app>` for details on how to publish
 Debugging
 ~~~~~~~~~
 
-If your app has failed to start or behaves incorrectly, you may be missing some interfaces. Check :ref:``journalctl -xe`` for a possible explanation, then refer to the interfaces in the `reference documentation <supported-interfaces>`. Add any missing interfaces to your ``plugs`` definition, rebuild your snap, and test again.
+If your app has failed to start or behaves incorrectly, you may be missing some interfaces. Check ``journalctl -xe`` for a possible explanation, then refer to the interfaces in the :ref:`reference documentation <supported-interfaces>`. Add any missing interfaces to your ``plugs`` definition, rebuild your snap, and test again.
 
 If no explanation can be found, ask for assistance on the `Snapcraft Forum <https://forum.snapcraft.io/c/snap>`__. Be sure to include any relevant details, such as the contents of log files and any error messages printed on the terminal.

@@ -21,7 +21,7 @@ On Linux distributions `with snap support <https://snapcraft.io/docs/installing-
 
    sudo snap install snapcraft --classic
 
-The :ref:``--classic`` argument is required because snapcraft uses `classic confinement <snap-confinement>`.
+The ``--classic`` argument is required because snapcraft uses :ref:`classic confinement <snap-confinement>`.
 
 
 .. _snapcraft-installation-and-setup-heading--respository:

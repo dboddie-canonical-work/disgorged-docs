@@ -9,7 +9,7 @@ A *base* snap is a special kind of snap that provides a run-time environment wit
 
 See :ref:`Base snaps <base-snaps>` for details on how use and specify them.
 
-Each base snap is built from a `corresponding Ubuntu LTS <base-snaps.md#migrating-between-bases-heading--supported>`__ release and migrating a snap from one base to the next gives the snap access to newer packages, extended support, and the latest :ref:`Snapcraft <snapcraft-overview>` features, including :ref:`plugins <supported-plugins>` and :ref:`extensions <snapcraft-extensions>`.
+Each base snap is built from a :ref:`corresponding Ubuntu LTS <base-snaps-supported>` release and migrating a snap from one base to the next gives the snap access to newer packages, extended support, and the latest :ref:`Snapcraft <snapcraft-overview>` features, including :ref:`plugins <supported-plugins>` and :ref:`extensions <snapcraft-extensions>`.
 
 The complexity of the migration process is directly linked to both dependencies in the snap’s :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>` and the base snap versions being migrated between.
 
@@ -67,7 +67,7 @@ Compatibility mode is essentially a prior (2.43-era) version of Snapcraft, and w
 Package names
 -------------
 
-The :ref:``build-packages`` and ``stage-packages`` sections in a snap’s `snapcraft.yaml <the-snapcraft-yaml-schema>` specify which packages need to be incorporated during the build and stage parts of the :ref:`Parts lifecycle <parts-lifecycle>`, and described in :ref:`Build and staging dependencies <build-and-staging-dependencies>`.
+The ``build-packages`` and ``stage-packages`` sections in a snap’s :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>` specify which packages need to be incorporated during the build and stage parts of the :ref:`Parts lifecycle <parts-lifecycle>`, and described in :ref:`Build and staging dependencies <build-and-staging-dependencies>`.
 
 When no base or *core* is specified, packages from the Ubuntu 16.04 LTS archive are used at build and stage time. The ``core18`` base will use packages from the Ubuntu 18.04 LTS archive, whereas the ``core20`` base will consume packages from the Ubuntu 20.04 LTS archive, and package names can change between releases.
 
@@ -155,7 +155,7 @@ Example of pasted remote part: `Mr Rescue <https://github.com/snapcrafters/mrres
    +      stage-packages:
    +        - libglib2.0-bin
 
-Alternatively for some desktop applications it may be appropriate to switch to using an extension, which simplifies the :ref:``snapcraft.yaml`` further. This is covered in `Snapcraft Extensions <snapcraft-extensions>`.
+Alternatively for some desktop applications it may be appropriate to switch to using an extension, which simplifies the ``snapcraft.yaml`` further. This is covered in :ref:`Snapcraft Extensions <snapcraft-extensions>`.
 
 Example migration to an Extension: `Xonotic <https://github.com/snapcrafters/xonotic/pull/6>`__
 
@@ -176,7 +176,7 @@ In the above example, we remove the reference to a remote part ``desktop-glib-on
 Extension naming
 ----------------
 
-Not all extensions work on all bases. For example, on :ref:``core18`` , use the ``gnome-3-34`` extension and on ``core20`` use ``gnome-3-38``. See `Supported extensions <supported-extensions>` for further details.
+Not all extensions work on all bases. For example, on ``core18`` , use the ``gnome-3-34`` extension and on ``core20`` use ``gnome-3-38``. See :ref:`Supported extensions <supported-extensions>` for further details.
 
 Example showing ``core20``-only Gnome extension: `Dwarf Fortress <https://github.com/ultraviolet-1986/df/pull/3>`__
 
@@ -197,7 +197,7 @@ Example showing ``core20``-only Gnome extension: `Dwarf Fortress <https://github
 Audio interfaces
 ----------------
 
-For applications which play or record audio, the :ref:`interface <interface-management>` names have changed. Previously the :ref:`pulseaudio <the-pulseaudio-interface>` interface was used for both playback and recording of audio. This has been replaced by :ref:`audio-playback <the-audio-playback-interface>` and `audio-record <t/the-audio-record-interface/13090>`__:
+For applications which play or record audio, the :ref:`interface <interface-management>` names have changed. Previously the :ref:`pulseaudio <the-pulseaudio-interface>` interface was used for both playback and recording of audio. This has been replaced by :ref:`audio-playback <the-audio-playback-interface>` and :ref:`audio-record <the-audio-record-interface>`:
 
 Example audio interface update: `Xonotic <https://github.com/snapcrafters/xonotic/pull/6>`__
 
@@ -219,7 +219,7 @@ Application publishers who believe ``audio-record`` *should* be automatically co
 Version scripts
 ---------------
 
-The top level :ref:``version-script`` option has been `deprecated <deprecation-notice-10>` in favour of ``adopt-info``. This requires that you specify ``adopt-info`` with a reference to the part in which the version data (and some other metadata) may be set.
+The top level ``version-script`` option has been :ref:`deprecated <deprecation-notice-10>` in favour of ``adopt-info``. This requires that you specify ``adopt-info`` with a reference to the part in which the version data (and some other metadata) may be set.
 
 Within the ``parts`` section, use ``snapcraftctl set-version`` to define the snapcraft project version number used at build time.
 

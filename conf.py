@@ -25,7 +25,7 @@ html_favicon = "_sphinx/_static/favicon.png"
 html_context = {
     # Change to the discourse instance you want to be able to link to
     # (use an empty value if you don't want to link)
-    "discourse": "https://discourse.ubuntu.com",
+    "discourse": "https://forum.snapcraft.io",
     # Change to the GitHub info for your project
     "github_url": "https://github.com/dboddie-canonical-work/disgorged-docs",
     # Change to the branch for this version of the documentation

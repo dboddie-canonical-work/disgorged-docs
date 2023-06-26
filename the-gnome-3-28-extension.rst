@@ -10,7 +10,7 @@ This extension helps you snap desktop applications that use GTK 3, GNOME 3.28 an
 How to use it
 -------------
 
-Add :ref:``extensions: [ gnome-3-28 ]`` to the application definition in your ``snapcraft.yaml`` file. See `GTK3 applications <gtk3-applications>` for a complete tutorial on how to use this extension.
+Add ``extensions: [ gnome-3-28 ]`` to the application definition in your ``snapcraft.yaml`` file. See :ref:`GTK3 applications <gtk3-applications>` for a complete tutorial on how to use this extension.
 
 .. code:: yaml
 

@@ -5,7 +5,7 @@
 The gnome-3-34 extension
 ========================
 
-The *gnome-3-34* extension helps with the creation of snaps that use GTK 3, GNOME 3.34, and/or GLib. It’s an updated version of the :ref:`gnome-3-28 extension <the-gnome-3-28-extension>` and depends on the :ref:``core18`` `base snap <base-snaps>`, built from `Ubuntu 18.04 LTS <http://releases.ubuntu.com/18.04/>`__. The more recent :ref:`gnome-3-38 extension <the-gnome-3-38-extension>` is built only for ``core20``.
+The *gnome-3-34* extension helps with the creation of snaps that use GTK 3, GNOME 3.34, and/or GLib. It’s an updated version of the :ref:`gnome-3-28 extension <the-gnome-3-28-extension>` and depends on the ``core18`` :ref:`base snap <base-snaps>`, built from `Ubuntu 18.04 LTS <http://releases.ubuntu.com/18.04/>`__. The more recent :ref:`gnome-3-38 extension <the-gnome-3-38-extension>` is built only for ``core20``.
 
 This extension provides many of the components needed for general desktop applications making it useful for a broader set of applications outside of those tailored for the GNOME desktop.
 
@@ -25,7 +25,7 @@ This extension provides many of the components needed for general desktop applic
 How to use it
 -------------
 
-This extension currently only works with the :ref:``core18`` base snap (see `Base snaps <base-snaps>` for details). To use it, add :ref:``extensions: [gnome-3-34]`` to the application definition in your `snapcraft.yaml <creating-snapcraft-yaml>` file. For instance:
+This extension currently only works with the ``core18`` base snap (see :ref:`Base snaps <base-snaps>` for details). To use it, add ``extensions: [gnome-3-34]`` to the application definition in your :ref:`snapcraft.yaml <creating-snapcraft-yaml>` file. For instance:
 
 .. code:: yaml
 

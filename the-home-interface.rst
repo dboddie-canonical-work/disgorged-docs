@@ -5,7 +5,7 @@
 The home interface
 ==================
 
-The :ref:``home`` `interface <interface-management>` allows access to non-hidden files owned by the user in the user’s home ($HOME) directory where a user normally stores their personal files and documents.
+The ``home`` :ref:`interface <interface-management>` allows access to non-hidden files owned by the user in the user’s home ($HOME) directory where a user normally stores their personal files and documents.
 
 The majority of snaps use :ref:`strict confinement <snap-confinement>` and do not have arbitrary access a system’s resources, including file and directories in the */home* directory. Without this access, *home* will not be visible in file requesters, or as a destination from within the snap application.
 

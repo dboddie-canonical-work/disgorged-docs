@@ -23,7 +23,7 @@ Once connected, the consuming snap can use the device via the path specified by 
 .. note::
 
 
-          See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
+          See :ref:`interface-management` and :ref:`supported-interfaces` for further details on how interfaces are used.
 
 --------------
 
@@ -33,7 +33,12 @@ Once connected, the consuming snap can use the device via the path specified by 
 Developer details
 -----------------
 
-**Auto-Connect**: no **Attributes**: - Should specify a single path attribute: \* ``path`` (slot): path to serial device node e.g. ``/dev/ttyS1``
+**Auto-Connect**: no
+
+**Attributes**:
+
+- Should specify a single path attribute:
+   * ``path`` (slot): path to serial device node e.g. ``/dev/ttyS1``
 
 -  Or three attributes:
 
@@ -43,7 +48,7 @@ Developer details
 
 :ref:`Hardware IO interfaces <hardware-io-interfaces>` covers some general considerations common to these kinds of devices.
 
-To use a serial-port device, the snap developer must add :ref:``plugs: [ serial-port ]`` to a snap’s `snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific serial-port device with an `interface connection <interface-management.md#the-serial-port-interface-heading--manual-connections>`__.
+To use a serial-port device, the snap developer must add ``plugs: [ serial-port ]`` to a snap’s :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific serial-port device with an `interface connection <interface-management.md#the-serial-port-interface-heading--manual-connections>`__.
 
 
 .. _the-serial-port-interface-heading--code-examples:

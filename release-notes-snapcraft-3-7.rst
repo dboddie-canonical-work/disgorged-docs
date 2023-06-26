@@ -127,7 +127,7 @@ The `Ant <https://ant.apache.org/>`__ publisher has released an `Ant snap <https
 
 The following new keywords are now accepted by the plugin:
 
--  **:ref:``ant-channel``** (string) If not using the Ant tarball from the Ant archive (see `ant-version and ant-version-checksum <the-ant-plugin>`, this keyword specifies the channel to use for *ant* in the Snap Store. Default: ``latest/stable``
+-  **ant-channel** (string) If not using the Ant tarball from the Ant archive (see :ref:`ant-version and ant-version-checksum <the-ant-plugin>`, this keyword specifies the channel to use for *ant* in the Snap Store. Default: ``latest/stable``
 
 colcon
 ~~~~~~

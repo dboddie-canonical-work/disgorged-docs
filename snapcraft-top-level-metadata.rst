@@ -54,7 +54,7 @@ base
 
 Type: ``string`` (*optional*)
 
-A snap of type :ref:``base`` to be used as the execution environment for this snap. See `Base snaps <base-snaps>` for further details.
+A snap of type ``base`` to be used as the execution environment for this snap. See :ref:`Base snaps <base-snaps>` for further details.
 
 .. list-table:: Values
    :header-rows: 1
@@ -116,7 +116,7 @@ Type: ``enum`` (*optional*)
 
 Determines if the snap should be restricted in access or not.
 
-Possible values are :ref:``strict`` (for no access outside of declared ``interfaces`` through ``plugs``), ``devmode`` (for unrestricted access) or ``classic``. For more information, refer to `Confinement <snap-confinement>`.
+Possible values are ``strict`` (for no access outside of declared ``interfaces`` through ``plugs``), ``devmode`` (for unrestricted access) or ``classic``. For more information, refer to :ref:`Confinement <snap-confinement>`.
 
 Examples: ``strict``, or ``devmode``
 
@@ -252,7 +252,7 @@ Type: ``string`` (*optional*)
 
 A license for the snap in the form of an `SPDX expression <https://spdx.org/licenses/>`__ for the license.
 
-In the legacy Snapcraft syntax (not using the :ref:``base`` key), this key is only available `through the ``passthrough`` key <using-in-development-features-in-snapcraft-yaml>`.
+In the legacy Snapcraft syntax (not using the ``base`` key), this key is only available :ref:`through the passthrough key <using-in-development-features-in-snapcraft-yaml>`.
 
 Currently, only `SPDX 2.1 expressions <https://spdx.org/spdx-specification-21-web-version>`__ are supported. A list of supported values are also available at `snapd/licenses.go at master · snapcore/snapd <https://github.com/snapcore/snapd/blob/master/spdx/licenses.go>`__.
 
@@ -325,7 +325,7 @@ system-usernames
 
 Type: ``dict`` (*optional*)
 
-Common example is ``snap_daemon: shared:ref:`` to use a daemon user, see `sytem-usernames <system-usernames>` for more details.
+Common example is ``snap_daemon: shared`` to use a daemon user, see :ref:`system-usernames` for more details.
 
 title
 -----
@@ -336,7 +336,7 @@ The canonical title of the application, displayed in the software centre graphic
 
 Max length 40 characters.
 
-In the legacy Snapcraft syntax (not using the :ref:``base`` key), this key is only available `through the ``passthrough`` key <using-in-development-features-in-snapcraft-yaml>`.
+In the legacy Snapcraft syntax (not using the ``base`` key), this key is only available :ref:`through the passthrough key <using-in-development-features-in-snapcraft-yaml>`.
 
 Example: ``My Awesome Application``
 
@@ -358,7 +358,7 @@ Type: ``string`` (*mandatory*, unless using ``adopt-info``)
 
 A user facing version to display.
 
-This field is mandatory unless version information is provided by :ref:``adopt-info`` . See `Using external metadata <using-external-metadata>` for details.
+This field is mandatory unless version information is provided by ``adopt-info`` . See :ref:`Using external metadata <using-external-metadata>` for details.
 
 Max len. 32 chars. Needs to be wrapped with single-quotes when the value will be interpreted by the YAML parser as non-string.
 

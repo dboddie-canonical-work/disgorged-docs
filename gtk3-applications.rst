@@ -137,7 +137,7 @@ Parts
 
 Parts define how to build your app. Parts can be anything: programs, libraries, or other assets needed to create and run your application. In this case we have one: the Foliate source release tarball. In other cases these can point to local directories, remote git repositories or other revision control systems.
 
-Before building the part, the dependencies listed as :ref:``build-packages`` are installed. `The Meson plugin <the-meson-plugin>` then uses ``meson``, ``ninja build`` and ``ninja install`` to build the part.
+Before building the part, the dependencies listed as ``build-packages`` are installed. :ref:`The Meson plugin <the-meson-plugin>` then uses ``meson``, ``ninja build`` and ``ninja install`` to build the part.
 
 .. code:: yaml
 

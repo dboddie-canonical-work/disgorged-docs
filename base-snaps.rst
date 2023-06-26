@@ -24,7 +24,7 @@ In most Ubuntu bases (except ``core``), *snapd* and its associated tools are pro
 Defining a base
 ---------------
 
-Bases are defined by adding the :ref:``base:`` keyword to a snap’s `snapcraft.yaml <the-snapcraft-yaml-schema>` followed by the base name.
+Bases are defined by adding the ``base:`` keyword to a snap’s :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>` followed by the base name.
 
 For example, to specify core 18, use the following:
 
@@ -53,7 +53,7 @@ The base snap mounts itself as the root filesystem within your snap such that wh
 
           When building a snap with no specified base, :ref:`Snapcraft <snapcraft-overview>` will operate in compatibility mode. This is essentially a prior (2.43-era) version of Snapcraft and, consequently, *snapcraft* will lose the functionality of newer releases. See :ref:`release-notes-snapcraft-3-0-base-exceptions` for details.
 
-          This compatibility mode is no longer supported in Snapcraft 5.0. Snapcraft 4 can be installed from the 4.x track on the Snap Store (:ref:``snap install snapcraft --channel 4.x``). See `Snapcraft and Extended Security Maintenance <snapcraft-and-extended-security-maintenance>` for essential support details.
+          This compatibility mode is no longer supported in Snapcraft 5.0. Snapcraft 4 can be installed from the 4.x track on the Snap Store (``snap install snapcraft --channel 4.x``). See :ref:`Snapcraft and Extended Security Maintenance <snapcraft-and-extended-security-maintenance>` for essential support details.
 
 
 
@@ -62,7 +62,7 @@ Choosing a base
 
 ``core22`` is the currently recommended base for the majority of snaps. But much like choosing a distribution base for a project or server, the best base for an application is dependent on an application’s requirements and which plugins or extensions a base supports. If there are specific dependencies that cannot be easily met with ``core22`` then ``core20`` is a valid and supported alternative, as is the older ``core18``.
 
-:ref:`Snapcraft extensions <snapcraft-extensions>` are a great way to easily bundle a set of common requirements into a snap, such as for running KDE Plasma or GNOME applications, but you need to select a base that’s supported by the extension you require. See :ref:`Supported extensions <supported-extensions>` for a list of which extensions support which bases.
+:ref:`Snapcraft extensions <snapcraft-extensions>` are used to bundle a set of common requirements into a snap, such as for running KDE Plasma or GNOME applications, but you need to select a base that’s supported by the extension you require. See :ref:`Supported extensions <supported-extensions>` for a list of which extensions support which bases.
 
 Base support was added with the release of :ref:`Snapcraft 3 <release-notes-snapcraft-3-0>`. As noted above, snaps created before this, and snaps not using the ``base:`` keyword, can still be built but they cannot use :ref:`specific new features <release-notes-snapcraft-3-0-base-exceptions>`. Instead, snaps built without bases inherit attributes from their respective build environments.
 

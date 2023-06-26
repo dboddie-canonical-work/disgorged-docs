@@ -66,7 +66,7 @@ As part of their security design, by default, snaps cannot see the root filesyst
 
 The :ref:`base keyword <base-snaps>` specifies a special kind of snap that provides a minimal set of libraries common to most applications. It is mounted and used as the root filesystem for the applications inside the snap. In essence, this means the snaps behave as though they were running on a system that matches the base declaration.
 
-Several bases are available, including core18, core20, core22, etc. These bases match the Ubuntu LTS releases, e.g.: core20 library set is equivalent to Ubuntu 20.04. For most practical purposes, the use of either :ref:``core20`` or ``core22`` is recommended, depending on the `Supported plugins <supported-plugins>` you wish to use.
+Several bases are available, including core18, core20, core22, etc. These bases match the Ubuntu LTS releases, e.g.: core20 library set is equivalent to Ubuntu 20.04. For most practical purposes, the use of either ``core20`` or ``core22`` is recommended, depending on the :ref:`Supported plugins <supported-plugins>` you wish to use.
 
 .. code:: yaml
 

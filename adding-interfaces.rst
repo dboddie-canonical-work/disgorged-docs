@@ -9,9 +9,9 @@ After :ref:`Defining a command <defining-a-command>`, *interfaces* are the means
 
 Many interfaces are automatically connected when a snap is installed, but this ability is dependent on the permissiveness of each particular interface. See `Auto-connections <interface-management.md#adding-interfaces-heading--auto-connections>`__ for more details.
 
-Other interfaces require the user to make a manual connection, such as `camera <t/the-camera-interface/7776>`__ and :ref:`removable-media <the-removable-media-interface>`. Manual connections enable the user to have a complete control over what kind of access they allow.
+Other interfaces require the user to make a manual connection, such as :ref:`camera <the-camera-interface>` and :ref:`removable-media <the-removable-media-interface>`. Manual connections enable the user to have a complete control over what kind of access they allow.
 
-Once published in the `Snap Store <https://snapcraft.io/store>`__, automatic connections may be requested for manual interfaces on a case-by-case basis. For example, it may be reasonable for a photo-booth application to expect an automatic connection to the :ref:``camera`` interface. Those requests are submitted and processed in the open on the Snapcraft forum. For more details on this process, see `Permission requests <permission-requests>` .
+Once published in the `Snap Store <https://snapcraft.io/store>`__, automatic connections may be requested for manual interfaces on a case-by-case basis. For example, it may be reasonable for a photo-booth application to expect an automatic connection to the ``camera`` interface. Those requests are submitted and processed in the open on the Snapcraft forum. For more details on this process, see :ref:`Permission requests <permission-requests>` .
 
 Plugs and slots
 ---------------

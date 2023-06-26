@@ -7,7 +7,7 @@ The nodejs plugin
 
 The ``nodejs`` plugin is useful when working with `Node.js <https://nodejs.org/en/>`__ and `npm <https://www.npmjs.com/>`__ JavaScript based parts.
 
-This plugin can only be used with a :ref:`base <base-snaps>` of either :ref:``core18`` and ``core``. For ``core20`` and ``core22``, use the `npm <the-npm-plugin>` plugin instead.
+This plugin can only be used with a :ref:`base <base-snaps>` of either ``core18`` and ``core``. For ``core20`` and ``core22``, use the :ref:`npm <the-npm-plugin>` plugin instead.
 
 Additional features and syntax are dependent on which :ref:`base <base-snaps>` is being used, as outlined below:
 

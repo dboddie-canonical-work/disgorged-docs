@@ -11,7 +11,7 @@ The system-backup interface
 
 Requires snapd version *2.43+*.
 
-By design, snaps using :ref:``strict`` and ``devmode`` `confinement <snap-confinement>` run with a different root filesystem than the host. Snaps that implement a backup function, however, need access to the host’s snap-related files outside of this confinement, and this is where the ``system-backup`` interface can help.
+By design, snaps using ``strict`` and ``devmode`` :ref:`confinement <snap-confinement>` run with a different root filesystem than the host. Snaps that implement a backup function, however, need access to the host’s snap-related files outside of this confinement, and this is where the ``system-backup`` interface can help.
 
 The system-backup interface provides read-only access to files under the following location:
 
@@ -21,4 +21,4 @@ With the following exceptions: - ``/var/lib/snapd/hostfs/dev`` - ``/var/lib/snap
 
 Importantly, neither snapd nor this interface provide any mechanisms to ensure the system is in a ready state for backups. Reliable backup strategies with snaps utilising this interface will need to account for this themselves.
 
-   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`interface-management` and :ref:`supported-interfaces` for further details on how interfaces are used.

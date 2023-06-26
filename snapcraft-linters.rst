@@ -7,7 +7,7 @@ Snapcraft linters
 
 A *linter* is an analysis tool that checks for common errors or compatibility issues, usually automatically, or as part of some other process.
 
-Snapcraft (from version 7.2 onwards) includes its own linter functionality when working with snaps using the :ref:``core22`` `base <base-snaps>`.
+Snapcraft (from version 7.2 onwards) includes its own linter functionality when working with snaps using the ``core22`` :ref:`base <base-snaps>`.
 
 Snapcraft linters run automatically when a snap is packed unless otherwise :ref:`disabled <snapcraft-linters-disable>`.
 

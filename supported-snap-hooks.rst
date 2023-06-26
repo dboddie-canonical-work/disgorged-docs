@@ -13,7 +13,7 @@ Common examples of actions requiring hooks include:
 
 -  **notifying a snap that a specific operation is in progress** Example: A snap may need to know when a specific interface connects or disconnects.
 
-A hook is defined as an executable within a snap’s :ref:``meta/hooks/`` directory, and consequently, also within ``snap/hooks/`` when building with *snapcraft*. See `Snapcraft hook support <snapcraft-hook-support>` for more information.
+A hook is defined as an executable within a snap’s ``meta/hooks/`` directory, and consequently, also within ``snap/hooks/`` when building with *snapcraft*. See :ref:`Snapcraft hook support <snapcraft-hook-support>` for more information.
 
 The filename of the executable is based on the name of the hook. If this file exists, *snapd* will execute the file when required by that hook’s action.
 

@@ -7,7 +7,7 @@ The npm plugin
 
 The npm plugin is useful when working with `Node.js <https://nodejs.org/en/>`__ and `npm <https://www.npmjs.com/>`__ JavaScript based parts.
 
-This plugin can only be used with a :ref:`base <base-snaps>` of :ref:``core22`` and ``core20``. For ``core18`` and ``core``, use the `nodejs <the-nodejs-plugin>` plugin instead.
+This plugin can only be used with a :ref:`base <base-snaps>` of ``core22`` and ``core20``. For ``core18`` and ``core``, use the :ref:`nodejs <the-nodejs-plugin>` plugin instead.
 
 The plugin uses *node* to install dependencies from ``package.json``. It also sets up binaries defined in ``package.json`` by adding them to ``PATH``.
 

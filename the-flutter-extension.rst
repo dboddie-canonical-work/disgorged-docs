@@ -14,7 +14,7 @@ There are currently four Flutter extensions. They each track a different `Flutte
 
 ..
 
-   ⓘ The Flutter extension does not currently support :ref:`core22 <base-snaps>`. Snaps using :ref:``core22`` should instead use the `flutter <the-flutter-plugin>` plugin with the :ref:`gnome <the-gnome-extension>` extension.
+   ⓘ The Flutter extension does not currently support :ref:`core22 <base-snaps>`. Snaps using ``core22`` should instead use the :ref:`flutter <the-flutter-plugin>` plugin with the :ref:`gnome <the-gnome-extension>` extension.
 
 Each Flutter extension uses the :ref:`gnome-3-28 extension <the-gnome-3-28-extension>` to provide many of the components needed to build Flutter desktop applications.
 
@@ -33,7 +33,7 @@ Use of the :ref:`flutter plugin <the-flutter-plugin>` is optional. The plugin dr
 Using the extensions
 --------------------
 
-Each Flutter extension works with the :ref:``core18`` base snap (see `Base snaps <base-snaps>` for details). To use either extension, add :ref:``extensions: [flutter-master]`` or ``extensions: [flutter-dev]`` to the application definition in your `snapcraft.yaml <creating-snapcraft-yaml>` file. For instance:
+Each Flutter extension works with the ``core18`` base snap (see :ref:`Base snaps <base-snaps>` for details). To use either extension, add ``extensions: [flutter-master]`` or ``extensions: [flutter-dev]`` to the application definition in your :ref:`snapcraft.yaml <creating-snapcraft-yaml>` file. For instance:
 
 .. code:: yaml
 

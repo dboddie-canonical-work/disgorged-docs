@@ -22,7 +22,7 @@ New Features
 Command Line
 ~~~~~~~~~~~~
 
-Custom CA certificates can now be added to the build environments created by Snapcraft by using :ref:``--add-ca-certificates`` with the `lifecycle <parts-lifecycle>` related commands.
+Custom CA certificates can now be added to the build environments created by Snapcraft by using ``--add-ca-certificates`` with the :ref:`lifecycle <parts-lifecycle>` related commands.
 
 Extensions
 ~~~~~~~~~~

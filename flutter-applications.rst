@@ -137,7 +137,7 @@ If the names differ, then apps are prefixed with the snap ``name`` (``flutter-ga
 
 If you don’t want your command prefixed you can request an alias for it on the `Snapcraft forum <https://snapcraft.io/docs/process-for-aliases-auto-connections-and-tracks>`__. These are set up automatically when your snap is installed from the Snap Store.
 
-The :ref:``extensions`` keyword is used to easily incorporate Flutter’s common set of requirements. See `Snapcraft extensions <snapcraft-extensions>` for further details.
+The ``extensions`` keyword is used to easily incorporate Flutter’s common set of requirements. See :ref:`Snapcraft extensions <snapcraft-extensions>` for further details.
 
 If your application is intended to run as a service you simply add the line ``daemon: simple`` after the command keyword. This will automatically keep the service running on install, update, and reboot.
 

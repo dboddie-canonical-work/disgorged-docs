@@ -46,7 +46,7 @@ The path value must match one of the following regular expressions: - For GPIO d
 
 The :ref:`gpio interface <the-gpio-interface>` provides another option for accessing GPIO devices.
 
-To use a boolean file, the snap developer must add :ref:``plugs: [ bool-file ]`` to a snap’s `snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific boolean file with an `interface connection <interface-management.md#the-bool-file-interface-heading--manual-connections>`__.
+To use a boolean file, the snap developer must add ``plugs: [ bool-file ]`` to a snap’s :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific boolean file with an `interface connection <interface-management.md#the-bool-file-interface-heading--manual-connections>`__.
 
 Unless a snap specifically expects a set of boolean files that cannot be predefined, the recommended approach is to define distinct plugs for each boolean file the snap wishes to use:
 

@@ -5,7 +5,7 @@
 The desktop-launch interface
 ============================
 
-The :ref:``desktop-launch`` interface allows `strictly confined <snap-confinement>` snaps to identify and launch desktop applications in (or from) other snaps.
+The ``desktop-launch`` interface allows :ref:`strictly confined <snap-confinement>` snaps to identify and launch desktop applications in (or from) other snaps.
 
 .. note::
 

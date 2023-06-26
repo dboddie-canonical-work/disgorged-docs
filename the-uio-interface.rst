@@ -9,11 +9,15 @@ The uio interface
 
 The slot is intended to be implemented by a gadget snap and is not provided by the core system snap.
 
-**Auto-Connect**: no **Attributes**: \* ``path`` (slot): path to uio device. e.g. ``/dev/uio1``
+**Auto-Connect**: no
+
+**Attributes**:
+
+* ``path`` (slot): path to uio device. e.g. ``/dev/uio1``
 
 Requires snapd version *2.44+*.
 
-To use the uio device, the snap developer must add :ref:``plugs: [ uio ]`` to a snap’s `snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific disk partition with an `interface connection <interface-management.md#the-uio-interface-heading--manual-connections>`__.
+To use the uio device, the snap developer must add ``plugs: [ uio ]`` to a snap’s :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific disk partition with an `interface connection <interface-management.md#the-uio-interface-heading--manual-connections>`__.
 
 Use ``snap interface uio`` to see which disk partitions are available on the system for snaps to use:
 
@@ -28,4 +32,4 @@ Use ``snap interface uio`` to see which disk partitions are available on the sys
 
 Once connected, the consuming snap can use the device via the path specified by the connected slot.
 
-   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`interface-management` and :ref:`supported-interfaces` for further details on how interfaces are used.

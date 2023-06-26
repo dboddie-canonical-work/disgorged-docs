@@ -18,7 +18,7 @@ Using layouts
 
 Layouts are transparently supported by :ref:`Snapcraft <snapcraft-overview>` when using a :ref:`base snap <base-snaps>` (e.g. ``base: core18``).
 
-   ⓘ When not using a base snap, layout options within :ref:``snapcraft.yaml`` must be made within the scope of a top-level `passthrough <using-in-development-features-in-snapcraft-yaml>` field.
+   ⓘ When not using a base snap, layout options within ``snapcraft.yaml`` must be made within the scope of a top-level :ref:`passthrough <using-in-development-features-in-snapcraft-yaml>` field.
 
 As a simple example, consider an application you want to snap that:
 

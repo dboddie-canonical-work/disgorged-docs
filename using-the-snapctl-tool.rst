@@ -13,32 +13,32 @@ For details on using *snapctl* to add user options to a snap, see `Adding snap c
 
 From within a snap, *snapctl* can do the following:
 
--  `Configure options <heading--configuration-options_>`__: retrieve, remove and set options
+-  `Configure options <snapctl-tool-configuration-options_>`__: retrieve, remove and set options
 
--  `Health state <heading--health-state_>`__: define the operational state of the snap
+-  `Health state <snapctl-tool-health-state_>`__: define the operational state of the snap
 
--  `Interface connections <heading--interface-connections_>`__: query a connection state
+-  `Interface connections <snapctl-tool-interface-connections_>`__: query a connection state
 
--  `Model information <heading--model_>`__: retrieve the model assertion for the current device
+-  `Model information <snapctl-tool-model_>`__: retrieve the model assertion for the current device
 
--  `Mount control <heading--mount-control_>`__: create and unmount both persistent and transient mount points
+-  `Mount control <snapctl-tool-mount-control_>`__: create and unmount both persistent and transient mount points
 
--  `Reboot control <heading--reboot_>`__: controls reboot behaviour from ``install-device`` hook
+-  `Reboot control <snapctl-tool-reboot_>`__: controls reboot behaviour from ``install-device`` hook
 
--  `Refresh control <heading--refresh_>`__: manages when snaps will be refreshed
+-  `Refresh control <snapctl-tool-refresh_>`__: manages when snaps will be refreshed
 
--  `Services <heading--services_>`__: start, stop and restart services and daemons
+-  `Services <snapctl-tool-services_>`__: start, stop and restart services and daemons
 
--  .. rubric:: `System mode <heading--system-mode_>`__: returns various values about the system state
+-  .. rubric:: `System mode <snapctl-tool-system-mode_>`__: returns various values about the system state
       :name: system-mode-returns-various-values-about-the-system-state
 
 
-.. _heading--configuration-options:
+.. _snapctl-tool-configuration-options:
 
 Configuration options
 ---------------------
 
-A snap’s configuration options can be queried and altered with the ``snapctl get``, ``snapctl set`` and ``snapctl unset`` commands. These work very similar to the analogous `snap get/set/.. commands </t/managing-snap-configuration/510>`__ outside the snap. The main difference is that using these commands from within a snap will *not* trigger `the ``configure`` hook </t/supported-snap-hooks/3795#heading--the-configure-hook>`__.
+A snap’s configuration options can be queried and altered with the ``snapctl get``, ``snapctl set`` and ``snapctl unset`` commands. These work very similar to the analogous `snap get/set/.. commands </t/managing-snap-configuration/510>`__ outside the snap. The main difference is that using these commands from within a snap will *not* trigger :ref:`the configure hook <supported-snap-hooks-the-configure-hook>`.
 
 The ``snapctl`` command uses the same get, set and unset syntax as the snap command:
 
@@ -76,10 +76,10 @@ By using a dot in the key of an option, you create a nested configuration. You c
 
 To see this in action, look at the `NextCloud snap <https://github.com/nextcloud/nextcloud-snap>`__. It uses ``snapctl`` within its `various hooks <https://github.com/nextcloud/nextcloud-snap/blob/master/src/hooks/utilities/configuration-utilities>`__ to set configuration options such as ``snapctl get private.mode`` and ``snapctl set private.mode="$1"``.
 
-For more information, see `Adding snap configuration </t/adding-snap-configuration/15246>`__ and `The ``configure`` hook </t/supported-snap-hooks/3795#heading--the-configure-hook>`__.
+For more information, see :ref:`Adding snap configuration <adding-snap-configuration>` and :ref:`The configure hook <supported-snap-hooks-the-configure-hook>`.
 
 
-.. _heading--health-state:
+.. _snapctl-tool-health-state:
 
 Health state
 ------------
@@ -118,7 +118,7 @@ Outside the snap, health status in included as a note in the output to ``snap li
 For more comprehensive information on using ``snapctl set-health``, see `Health checks <https://forum.snapcraft.io/t/health-checks/10605>`__.
 
 
-.. _heading--interface-connections:
+.. _snapctl-tool-interface-connections:
 
 Interface connections
 ---------------------
@@ -161,7 +161,7 @@ Snaps can only query their own plugs and slots because the snap name is implicit
 See `Snapcraft interfaces </t/snapcraft-interfaces/13123>`__ for more details on manipulating interfaces from a snap.
 
 
-.. _heading--model:
+.. _snapctl-tool-model:
 
 Model information
 -----------------
@@ -203,7 +203,7 @@ This can be changed to JSON with the ``--json`` flag:
 The raw assertion can also be requested with the ``--assertion`` flag.
 
 
-.. _heading--mount-control:
+.. _snapctl-tool-mount-control:
 
 Mount control
 -------------
@@ -229,7 +229,7 @@ A corresponding *umount* command can be used to remove a mount point:
 See `mount-control interface </t/the-mount-control-interface/28953>`__ for further details on permitted filesystems and mount options.
 
 
-.. _heading--reboot:
+.. _snapctl-tool-reboot:
 
 Reboot control (from the UC20+ install-device hook)
 ---------------------------------------------------
@@ -239,7 +239,7 @@ The ``snapctl reboot`` command can be used to control reboot behaviour from the 
 See the `UC20+ installation process <https://ubuntu.com/core/docs/uc20/installation-process#heading--install-device>`__ documentation for further details.
 
 
-.. _heading--refresh:
+.. _snapctl-tool-refresh:
 
 Refresh control (from the UC20+ gate-auto-refresh hook)
 -------------------------------------------------------
@@ -251,7 +251,7 @@ This hook is capable of executing the *snapctl refresh* command with 3 specific 
 This feature is currently considered experimental. See `Refresh control </t/refresh-control/27213>`__ for further details.
 
 
-.. _heading--refresh-hold:
+.. _snapctl-tool-refresh-hold:
 
 snapctl refresh –hold
 ~~~~~~~~~~~~~~~~~~~~~
@@ -259,7 +259,7 @@ snapctl refresh –hold
 Requests that snapd does not refresh the calling snap, nor the snaps it depends upon, during the current automatic refresh. A snap can hold its own refresh for up to 90 days and other snaps for up to 48 hours. The command prints an error and returns a non-zero exit status if these deadlines are reached and the refresh can no longer be held.
 
 
-.. _heading--refresh-proceed:
+.. _snapctl-tool-refresh-proceed:
 
 snapctl refresh –proceed
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -267,7 +267,7 @@ snapctl refresh –proceed
 Signals to snapd that a refresh can proceed for both the calling snap and the snaps it depends upon. This does not necessarily mean the update will happen, because they may be held by other snaps, and snapd only proceeds with auto-refresh after consulting gate-auto-refresh hooks of all potentially affected snaps.
 
 
-.. _heading--refresh-pending:
+.. _snapctl-tool-refresh-pending:
 
 snapctl refresh –pending
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -286,7 +286,7 @@ The output from ``snapctl refresh --pending`` includes the following details:
 The pending output value is set to “none” if there is no pending refresh for the snap and the value is “ready” if there is a pending refresh. A pending value of “inhibited” indicates that the next refresh is inhibited because one or more of the snap’s applications are running. This currently requires the experimental refresh app awareness feature to be enabled (see below).
 
 
-.. _heading--refresh-control-interface:
+.. _snapctl-tool-refresh-control-interface:
 
 The snap-refresh-control interface
 ----------------------------------
@@ -300,7 +300,7 @@ If the gate-auto-refresh hook doesn’t invoke “snapctl refresh –proceed” 
 If the hook fails with an error, snapd assumes “hold” as long as the maximum deadline hasn’t been reached.
 
 
-.. _heading--services:
+.. _snapctl-tool-services:
 
 Services
 --------
@@ -334,7 +334,7 @@ Services can be enabled and disabled by adding the ``--enable`` argument to *sna
 Snaps can only query their own services.
 
 
-.. _heading--system-mode:
+.. _snapctl-tool-system-mode:
 
 System mode
 -----------
@@ -357,7 +357,7 @@ The following keys and values can potentially be returned:
    -  ``recover``: the system is in *recovery mode*
    -  ``run``: indicates the system has booted normally.This is the only reported system mode on UC16/UC18 system.
 
-   See `Recovery modes </t/recovery-modes/24096#heading--recover>`__ for more details on each mode.
+   See `Recovery modes <https://ubuntu.com/core/docs/recovery-modes>`__ for more details on each mode.
 
 -  **seed-loaded**: ``true`` Set when the installation of seeded snaps for the model has finished.
 

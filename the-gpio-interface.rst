@@ -49,7 +49,7 @@ Developer details
 
 :ref:`Hardware IO interfaces <hardware-io-interfaces>` covers some general considerations common to these kinds of devices.
 
-To use a gpio device, the snap developer must add :ref:``plugs: [ gpio ]`` to a snap’s `snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific gpio device with an `interface connection <interface-management.md#the-gpio-interface-heading--manual-connections>`__.
+To use a gpio device, the snap developer must add ``plugs: [ gpio ]`` to a snap’s :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific gpio device with an `interface connection <interface-management.md#the-gpio-interface-heading--manual-connections>`__.
 
 Unless the snap is expected to actually use a set of gpio pins that is not predefined, it is recommended to define distinct plugs for each used gpio pin, like:
 

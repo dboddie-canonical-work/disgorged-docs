@@ -10,7 +10,7 @@ Build on Docker
 However, Docker can still be used, and is particularly useful when you’re already using Docker within your build and test infrastructure. All you need is a working *snapcraft.yaml* (see :ref:`Creating a snap <creating-a-snap>` for more details).
 
 .. note::
-          ℹ Electron apps are built slightly differently, and do not use a :ref:``snapcraft.yaml`` file. `Follow this guide <electron-apps>` to build a snap of an Electron app using electron-builder.
+          ℹ Electron apps are built slightly differently, and do not use a ``snapcraft.yaml`` file. :ref:`Follow this guide <electron-apps>` to build a snap of an Electron app using electron-builder.
 
 To create a snap with Docker, first make sure you have `Docker installed <https://docs.docker.com/install/>`__. You can test that Docker is correctly set up with:
 
@@ -28,9 +28,9 @@ If you don’t see the “Hello from Docker!” message, consult the `Docker doc
 Snaps using bases
 -----------------
 
-When using a :ref:`base snaps <base-snaps>` other than :ref:``core``, a custom Docker image will need to be built. For details, see `Creating docker images for snapcraft <creating-docker-images-for-snapcraft>`.
+When using a :ref:`base snaps <base-snaps>` other than ``core``, a custom Docker image will need to be built. For details, see :ref:`Creating docker images for snapcraft <creating-docker-images-for-snapcraft>`.
 
-The process for building a :ref:``core18`` compatible image, the default for `Snapcraft 3.x <release-notes-snapcraft-3-0>`, is outlined below.
+The process for building a ``core18`` compatible image, the default for :ref:`Snapcraft 3.x <release-notes-snapcraft-3-0>`, is outlined below.
 
 Docker images are built from a `Dockerfile <https://docs.docker.com/engine/reference/builder/>`__. This is a script that Docker interprets to assemble whatever is required to generate the image.
 
@@ -146,4 +146,4 @@ When the snap build completes successfully, you will find a ``.snap`` file in th
 Next steps
 ~~~~~~~~~~
 
-After creating a snap, you should upload it to the `Snap Store <https://snapcraft.io/store>`__, from where it can reach a potential audience of millions. See :ref:`Releasing your app <releasing-your-app>` for further details.
+After creating a snap, you should upload it to the `Snap Store <https://snapcraft.io/store>`__. See :ref:`Releasing your app <releasing-your-app>` for further details.

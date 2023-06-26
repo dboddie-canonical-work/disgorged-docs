@@ -51,7 +51,7 @@ If *architectures* is not defined within snapcraft.yaml, target architectures ca
 
    snapcraft remote-build --build-on=amd64,arm64
 
-If no architecture is specified, remote build will default to :ref:``amd64``. For more details on how snaps handle build and run architectures, see `Architectures <architectures>`.
+If no architecture is specified, remote build will default to ``amd64``. For more details on how snaps handle build and run architectures, see :ref:`Architectures <architectures>`.
 
 
 .. _remote-build-heading--using:

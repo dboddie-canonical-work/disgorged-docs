@@ -29,7 +29,7 @@ Recommended global metadata
 
 Global metadata is a mixture of mandatory and optional values.
 
-You can generate a buildable template of both required and recommended values with the :ref:``snapcraft init`` command in a new project folder (see `Snapcraft overview <snapcraft-overview>` for more details).
+You can generate a buildable template of both required and recommended values with the `snapcraft init` command in a new project folder (see :ref:`Snapcraft overview <snapcraft-overview>` for more details).
 
 The following attributes are mandatory:
 
@@ -69,4 +69,4 @@ The following attributes should also be included:
 
 For convenience, and to help avoid duplicating sources, external metadata such as `AppStream <https://snapcraft.io/docs/using-external-metadata#adding-global-metadata-heading--appstream>`__ can be imported into *snapcraft.yaml*. See :ref:`Using external metadata <using-external-metadata>` for further details.
 
-Two further global attribites are :ref:``apps:`` and ``parts:``. These expand into separate sections that deal with how your snap is built and where its various resources are located. See `Adding parts <adding-parts>` for the next logical step in snap building.
+Two further global attribites are ``apps:`` and ``parts:``. These expand into separate sections that deal with how your snap is built and where its various resources are located. See :ref:`Adding parts <adding-parts>` for the next logical step in snap building.

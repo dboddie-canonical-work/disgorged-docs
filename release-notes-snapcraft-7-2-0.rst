@@ -18,7 +18,7 @@ For general details, including installation instructions, see `Snapcraft overvie
 Snapcraft linting
 -----------------
 
-Snapcraft now includes its own linter functionality when working with snaps using the :ref:``core22`` `base <base-snaps>`. Snapcraft linters run automatically when a snap is packed, and will report any detected errors unless otherwise `disabled <snapcraft-linters.md#release-notes-snapcraft-7-2-0-heading--disabled>`__.
+Snapcraft now includes its own linter functionality when working with snaps using the ``core22`` `base <base-snaps>`. Snapcraft linters run automatically when a snap is packed, and will report any detected errors unless otherwise :ref:`disabled <snapcraft-linters-disable>`.
 
 The following two linters are currently supported:
 

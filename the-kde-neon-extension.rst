@@ -10,7 +10,7 @@ This extension helps you snap desktop applications that use Qt5 and/or `KDE Fram
 How to use it
 -------------
 
-Add :ref:``extensions: [ kde-neon ]`` to the application definition in your ``snapcraft.yaml`` file. See `QT5 and KDE Frameworks applications <qt5-and-kde-frameworks-applications>` for a complete tutorial on how to use this extension.
+Add ``extensions: [ kde-neon ]`` to the application definition in your ``snapcraft.yaml`` file. See :ref:`QT5 and KDE Frameworks applications <qt5-and-kde-frameworks-applications>` for a complete tutorial on how to use this extension.
 
 .. code:: yaml
 

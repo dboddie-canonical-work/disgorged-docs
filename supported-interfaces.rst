@@ -19,7 +19,7 @@ The following column names are used:
 
 -  **Categories** are used to split interfaces into broad types, and also to indicate what kind of access they permit. Video, graphics and audio are typical desktop requirements, for example, while VM, Container, Kernel and Developer imply more specific roles. The Ubuntu Core category is used to denote when an interface is intended for `Ubuntu Core <glossary.md#supported-interfaces-heading--ubuntu-core>`__, and *Super privileged* is used when an interface requires extra security scrutiny. See :ref:`Super-privileged interfaces <super-privileged-interfaces>` for more information.
 
--  **Auto-connect** indicates that the interface will be connected by default when the snap is first installed, requiring no further user action. If :ref:``Auto-connect=no``, an interface can still be automatically connected if the snap developer has requested, and been granted, explicit permission. See `Interface connection mechanism <the-interface-auto-connection-mechanism>` for details.
+-  **Auto-connect** indicates that the interface will be connected by default when the snap is first installed, requiring no further user action. If ``Auto-connect=no``, an interface can still be automatically connected if the snap developer has requested, and been granted, explicit permission. See :ref:`Interface connection mechanism <the-interface-auto-connection-mechanism>` for details.
 
 **Important:** if a snap is installed prior to an interface being granted auto-connect permission, and permission is subsequently granted and the snap updated, when the installed snap updates, the interface will be auto-connected.
 

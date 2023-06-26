@@ -89,7 +89,7 @@ The ``snapcraft.yaml`` file starts with a small amount of human-readable metadat
 
 The ``name`` must be unique in the Snap Store. Valid snap names consist of lower-case alphanumeric characters and hyphens. They cannot be all numbers and they also cannot start or end with a hyphen.
 
-You can also fill in ``title``, ``version``, ``summary``, ``description`` and ``icon``. However, Text Editor already has this metadata defined using an `AppStream <https://www.freedesktop.org/wiki/Distributions/AppStream/>`__ metadata file :ref:``org.gnome.TextEditor.appdata.xml``, so we don’t want to duplicate this data. We instead use `adopt-info <using-external-metadata>` to tell Snapcraft to get the metadata from the ``gnome-text-editor`` part further on in the yaml. More on this later.
+You can also fill in ``title``, ``version``, ``summary``, ``description`` and ``icon``. However, Text Editor already has this metadata defined using an `AppStream <https://www.freedesktop.org/wiki/Distributions/AppStream/>`__ metadata file ``org.gnome.TextEditor.appdata.xml``, so we don’t want to duplicate this data. We instead use :ref:`adopt-info <using-external-metadata>` to tell Snapcraft to get the metadata from the ``gnome-text-editor`` part further on in the yaml. More on this later.
 
 Base
 ^^^^
@@ -136,7 +136,7 @@ This application uses the :ref:`gnome extension <the-gnome-extension>`. This wil
 
 The ``common-id`` property is used to link this application to the AppStream metadata specified further down below. This will cause this ``app`` to use the ``.desktop`` launcher specified in the AppStream file.
 
-Snaps use interfaces to access resources outside of their confinement and an interface consists of a connection between a slot and a plug. The slot is the provider of the interface while the plug is the consumer. With the :ref:``plugs:`` section, Text Editor is requesting access to the `gsettings <the-gsettings-interface>` and `cups <i/t/the-cups-interface/26453>`__ interfaces to enable access to GNOME’s configuration and any configured printers.
+Snaps use interfaces to access resources outside of their confinement and an interface consists of a connection between a slot and a plug. The slot is the provider of the interface while the plug is the consumer. With the ``plugs:`` section, Text Editor is requesting access to the :ref:`gsettings <the-gsettings-interface>` and :ref:`cups <the-cups-interface>` interfaces to enable access to GNOME’s configuration and any configured printers.
 
 Parts
 ^^^^^

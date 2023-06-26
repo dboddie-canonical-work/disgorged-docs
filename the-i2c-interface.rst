@@ -11,7 +11,7 @@ The i2c interface
 
 :ref:`Hardware IO interfaces <hardware-io-interfaces>` covers some general considerations common to these kinds of devices.
 
-To use a i2c device, the snap developer must add :ref:``plugs: [ i2c ]`` to a snap’s `snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific i2c device with an `interface connection <interface-management.md#the-i2c-interface-heading--manual-connections>`__.
+To use a i2c device, the snap developer must add ``plugs: [ i2c ]`` to a snap’s :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific i2c device with an `interface connection <interface-management.md#the-i2c-interface-heading--manual-connections>`__.
 
 Use ``snap interface i2c`` to see which i2c devices are available on the system:
 

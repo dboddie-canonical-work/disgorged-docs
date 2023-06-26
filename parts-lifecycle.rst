@@ -24,7 +24,7 @@ The steps a part goes through are as follows:
 3. **stage**: copies the built components into the staging area. This is the first time all the different parts that make up the snap are actually placed in the same directory. If multiple parts provide the same file with differing contents, you will get a conflict. You can avoid these conflicts by using the `stage keyword <snapcraft-parts-metadata-stage>`__ to enable or block files coming from the part. You can also use this keyword to filter out files that are not required in the snap itself, for example build files specific to a single part.
 4. **prime**: copies the staged components into the priming area, to their final locations for the resulting snap. This is very similar to the stage step, but files go into the priming area instead of the staging area. The ``prime`` step exists because the staging area might still contain files that are required for the build but not for the snap. For example, if you have a part that downloads and installs a compiler, then you stage this part so other parts can use the compiler during building. You can then use the ``prime`` filter keyword to make sure that it doesn’t get copied to the priming area, so it’s not taking up space in the snap. Some extra checks are also run during this step to ensure that all dependencies are satisfied for a proper run time. If confinement was set to ``classic``, then files will be scanned and, if needed, patched to work with this confinement mode.
 
-Finally, **snap** takes the entire contents of the :ref:``prime`` directory and packs it into `a snap <the-snap-format>`.
+Finally, **snap** takes the entire contents of the ``prime`` directory and packs it into :ref:`a snap <the-snap-format>`.
 
 Each of these lifecycle steps can be run from the command line, and the command can be part specific or apply to all parts in a project.
 
@@ -36,7 +36,7 @@ Each of these lifecycle steps can be run from the command line, and the command 
 
 Note that each command also executes the previous lifecycle steps, so ``snapcraft`` executes all the lifecycle steps chained together.
 
-To access the part environment at any stage, add the :ref:``--shell`` argument. For example, ``snapcraft prime --shell`` will run up to the *prime* step and open a shell. See `Iterating over a build <iterating-over-a-build>` for more details.
+To access the part environment at any stage, add the ``--shell`` argument. For example, ``snapcraft prime --shell`` will run up to the *prime* step and open a shell. See :ref:`Iterating over a build <iterating-over-a-build>` for more details.
 
 
 .. _parts-lifecycle-step-dependencies:
@@ -64,7 +64,7 @@ Overriding a step
 
 Each plugin defines the default actions that happen during a step. This behavior can be changed in two ways.
 
--  By using ``override-<step-name>:ref:`` in ``snapcraft.yaml``. See `Overriding steps <override-build-steps>` for more details.
+-  By using ``override-<step-name>`` in ``snapcraft.yaml``. See :ref:`Overriding steps <override-build-steps>` for more details.
 -  By using a local plugin. This can inherit the parent plugin or scaffolding from the original. See :ref:`Local plugins <writing-local-plugins>` for more details.
 
 See :ref:`Parts environment variables <parts-environment-variables>` for a list of part-specific environment variables that can be accessed to help build a part.

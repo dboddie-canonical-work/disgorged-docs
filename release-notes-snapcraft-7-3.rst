@@ -18,7 +18,7 @@ Extensions
 ----------
 
 -  Removed experimental flag `#3988 <https://github.com/snapcore/snapcraft/pull/3988>`__
--  New :ref:``core22`` extension for `kde-neon <the-kde-neon-extension>` , with new content :ref:`kde-neon <the-kde-neon-extension>` and KDE Frameworks (kf5 5.98 and qt 5.15.6) content snaps `#3991 <https://github.com/snapcore/snapcraft/pull/3991>`__
+-  New ``core22`` extension for :ref:`kde-neon <the-kde-neon-extension>` , with new content :ref:`kde-neon <the-kde-neon-extension>` and KDE Frameworks (kf5 5.98 and qt 5.15.6) content snaps `#3991 <https://github.com/snapcore/snapcraft/pull/3991>`__
 -  Minimum necessary build packages are now being used for the :ref:`ROS2 Foxy extension <the-ros2-foxy-extension>` (core20) `#4019 <https://github.com/snapcore/snapcraft/pull/4019>`__
 
 Build Providers
@@ -30,9 +30,9 @@ Build Providers
 Parts
 -----
 
--  Added :ref:``core22`` support to the `SCons <the-scons-plugin>` plugin
--  Added :ref:``core22`` support to the `Ant plugin <the-ant-plugin>`
--  Added ``core22`` support to the `Maven plugin <t/the-maven-plugin/4282>`__
+-  Added ``core22`` support to the :ref:`SCons <the-scons-plugin>` plugin
+-  Added ``core22`` support to the :ref:`Ant plugin <the-ant-plugin>`
+-  Added ``core22`` support to the :ref:`Maven plugin <the-maven-plugin>`
 -  Fixed lifecycle work directory cleaning
 -  Made stage package tracking optional
 -  Improved missing local source error message

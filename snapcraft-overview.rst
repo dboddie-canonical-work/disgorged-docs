@@ -13,7 +13,7 @@ On Linux distributions `with snap support <https://snapcraft.io/docs/installing-
 
    sudo snap install snapcraft --classic
 
-The :ref:``--classic`` argument is required because snapcraft uses `classic confinement <snap-confinement>`.
+The ``--classic`` argument is required because snapcraft uses :ref:`classic confinement <snap-confinement>`.
 
 Snapcraft can also be installed and run on Apple’s macOS. See `Install snapcraft on macOS <installing-snapcraft.md#snapcraft-overview-heading--macos>`__ for details.
 

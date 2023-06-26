@@ -46,7 +46,7 @@ Make sure the above script is executable by running the following command on the
 
    $ chmod +x os-release.sh
 
-The :ref:``os-release.sh`` executable is brought into the snap via ``part-os-release``, which is a `part <adding-parts>` using the :ref:`dump plugin <the-dump-plugin>`. It then uses :ref:``organize`` to copy the *os-release.sh* file into the snap’s ``bin/`` directory before the top-level `apps <snapcraft-app-and-service-metadata>` section exposes the ``bin/os-release.sh`` executable to the host system
+The ``os-release.sh`` executable is brought into the snap via ``part-os-release``, which is a :ref:`part <adding-parts>` using the :ref:`dump plugin <the-dump-plugin>`. It then uses ``organize`` to copy the ``os-release.sh`` file into the snap’s ``bin/`` directory before the top-level :ref:`apps <snapcraft-app-and-service-metadata>` section exposes the ``bin/os-release.sh`` executable to the host system
 
 Services can be managed with a set of additional commands. See :ref:`Services and daemons <services-and-daemons>` for more information and for further details on other metadata, see :ref:`Snapcraft app and service metadata <snapcraft-app-and-service-metadata>`.
 
@@ -54,4 +54,4 @@ If you need to add user configurable options to your service or daemon, such as 
 
 See `Tab completion <https://snapcraft.io/docs/tab-completion-for-snaps>`__ if you wish to add command line tab completion to your snap.
 
-   ℹ **Interfaces** enable an app to access system resources. Interfaces that are required for normal operation are specified at snap build-time within the above :ref:``app`` metadata of a snap’s snapcraft.yaml. See `Adding Interfaces <adding-interfaces>` for more details.
+   ℹ **Interfaces** enable an app to access system resources. Interfaces that are required for normal operation are specified at snap build-time within the above ``app`` metadata of a snap’s snapcraft.yaml. See :ref:`Adding Interfaces <adding-interfaces>` for more details.

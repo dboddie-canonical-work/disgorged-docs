@@ -111,7 +111,7 @@ The Python plugin can be used by either Python 2 or Python 3 based parts using a
 -  a requirements.txt file used to import Python modules
 -  packages installed directly from pip
 
-Our example project uses neither of the above but they can be added to your own project with the :ref:``python-requirement`` and ``python-packages`` keywords, as described in our `Python plugin documentation <the-python-plugin>`.
+Our example project uses neither of the above but they can be added to your own project with the ``python-requirement`` and ``python-packages`` keywords, as described in our :ref:`Python plugin documentation <the-python-plugin>`.
 
 The ``source`` keyword points to the root of your Python project and can be a local directory or remote Git repository. Note that **your Python project should be using setuptools** and you should be able to run ``python setup.py bdist_wheel`` without errors. If either of these are not true, please consult the `setuptools documentation <https://setuptools.readthedocs.io/en/latest/>`__.
 

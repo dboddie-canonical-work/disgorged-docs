@@ -21,7 +21,7 @@ From version 2.41 onwards, snapd supports the creation of a ``snap_daemon`` user
 
    ℹ Future releases of snapd will support more users and groups.
 
-To create the ``snap_daemon:ref:`` user/group inside a snap, add the following ``system-usernames`` section to the snap’s `snapcraft.yaml <snapcraft-yaml-reference>` (or ``snap.yaml``):
+To create the ``snap_daemon`` user/group inside a snap, add the following ``system-usernames`` section to the snap’s :ref:`snapcraft.yaml <snapcraft-yaml-reference>` (or ``snap.yaml``):
 
 .. code:: yaml
 

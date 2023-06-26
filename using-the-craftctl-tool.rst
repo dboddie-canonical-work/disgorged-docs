@@ -5,9 +5,9 @@
 Using the craftctl tool
 =======================
 
-The :ref:``craftctl`` tool is bundled with *snapcraft* to help get and set metadata, and to run default actions, from scripts that `override a build step <override-build-steps>`.
+The ``craftctl`` tool is bundled with *snapcraft* to help get and set metadata, and to run default actions, from scripts that :ref:`override a build step <override-build-steps>`.
 
-It is only available when building snaps with a :ref:``core22`` `base snap <base-snaps>` or higher.
+It is only available when building snaps with a ``core22`` :ref:`base snap <base-snaps>` or higher.
 
 From within an override script, *craftctl* can do the following:
 

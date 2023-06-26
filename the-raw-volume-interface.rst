@@ -9,11 +9,13 @@ The raw-volume interface
 
 The slot is intended to be implemented by a gadget snap and is not provided by the core system snap.
 
-**Auto-Connect**: no **Attributes**: \* ``path`` (slot): path to device partition e.g. ``/dev/mmcblk0p1``
+**Auto-Connect**: no **Attributes**:
+
+* ``path`` (slot): path to device partition e.g. ``/dev/mmcblk0p1``
 
 Requires snapd version *2.43+*.
 
-To use a disk partition, the snap developer must add :ref:``plugs: [ raw-volume ]`` to a snap’s `snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific disk partition with an `interface connection <interface-management.md#the-raw-volume-interface-heading--manual-connections>`__.
+To use a disk partition, the snap developer must add ``plugs: [ raw-volume ]`` to a snap’s :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific disk partition with an `interface connection <interface-management.md#the-raw-volume-interface-heading--manual-connections>`__.
 
 Use ``snap interface raw-volume`` to see which disk partitions are available on the system for snaps to use:
 
@@ -28,4 +30,4 @@ Use ``snap interface raw-volume`` to see which disk partitions are available on 
 
 Once connected, the consuming snap can use the device via the path specified by the connected slot.
 
-   ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
+   ⓘ This is a snap interface. See :ref:`interface-management` and :ref:`supported-interfaces` for further details on how interfaces are used.

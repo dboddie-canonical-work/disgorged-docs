@@ -134,7 +134,7 @@ Parts
 
 Parts define how to build your app. Parts can be anything: programs, libraries, or other assets needed to create and run your application. In this case we have two: the KCalc source release tarball and a number of runtime dependencies of KCalc. In other cases these can point to local directories, remote git repositories or other revision control systems.
 
-Before building the part, the build dependencies listed as :ref:``build-packages`` and ``build-snaps`` are installed. `The CMake plugin <the-cmake-plugin>` then uses ``cmake`` to build the part. The ``kde-frameworks-5-core18-sdk`` snap contains most build dependencies to build Qt5 and KDE applications. However, this snap also requires some tools from the ``kde-frameworks-5-core18`` runtime itself.
+Before building the part, the build dependencies listed as ``build-packages`` and ``build-snaps`` are installed. :ref:`The CMake plugin <the-cmake-plugin>` then uses ``cmake`` to build the part. The ``kde-frameworks-5-core18-sdk`` snap contains most build dependencies to build Qt5 and KDE applications. However, this snap also requires some tools from the ``kde-frameworks-5-core18`` runtime itself.
 
 .. code:: yaml
 
@@ -190,7 +190,7 @@ If you don’t want your command prefixed you can request an alias for it on the
 
 You can see we use the :ref:`kde-neon extension <the-kde-neon-extension>`. This extension will make Qt5 and KDE libraries available to the snap at run time and it will configure the run time environment of the application so that all desktop functionality is correctly initialised.
 
-The :ref:``common-id`` field is used to link the AppStream metadata to this application. As a result, we don’t need to `manually specify the ``.desktop`` entry file <desktop-files-for-menu-integration>` because it’s already defined in AppStream. See `Using AppStream metadata <using-external-metadata.md#qt5-and-kde-frameworks-applications-heading--appstream>`__ for more information.
+The ``common-id`` field is used to link the AppStream metadata to this application. As a result, we don’t need to :ref:`manually specify the desktop entry file <desktop-files-for-menu-integration>` because it’s already defined in AppStream. See `Using AppStream metadata <using-external-metadata.md#qt5-and-kde-frameworks-applications-heading--appstream>`__ for more information.
 
 Building the snap
 ~~~~~~~~~~~~~~~~~

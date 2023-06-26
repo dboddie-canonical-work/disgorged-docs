@@ -8,7 +8,7 @@ Snapcraft filesets
 A *fileset* is used within :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>` to represent a group of files, or a single file, when :ref:`creating a snap <snapcraft-overview>`.
 
 .. note::
-          Filesets do not currently work when building snaps with :ref:``core22`` `base snaps <base-snaps>` and Snapcraft 7.x .
+          Filesets do not currently work when building snaps with ``core22`` :ref:`base snaps <base-snaps>` and Snapcraft 7.x .
 
 They’re useful when moving files into the *stage* and *prime* areas of the build process (see :ref:`Snapcraft lifecycle <parts-lifecycle>` for more details) as they can be referenced individually, rather than always having to construct a list of filenames.
 

@@ -12,7 +12,7 @@ For general details, including installation instructions, see `Snapcraft overvie
 Login mechanism
 ---------------
 
-A new option, :ref:``--experimental-login`` can now be used when using ``snapcraft login`` or ``snapcraft export-login`` and when signing assertions (see `Create a developer account <create-a-developer-account>`).
+A new option, ``--experimental-login`` can now be used when using ``snapcraft login`` or ``snapcraft export-login`` and when signing assertions (see :ref:`Create a developer account <create-a-developer-account>`).
 
 Using this option will trigger a web based authentication flow. To go back to the previous login method you must first ``snapcraft logout``.
 

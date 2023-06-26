@@ -13,7 +13,7 @@ This document contains a list of *snapcraft* deprecation notices and recommendat
 -  :ref:`DN4 <deprecation-notice-4>`: The ``history`` command has been renamed to ``list-revisions``
 -  :ref:`DN5 <deprecation-notice-5>`: Aliases are now handled by the Snap Store, and shouldn’t be placed in the snap
 -  :ref:`DN6 <deprecation-notice-6>`: Use of the ``snap`` command with a directory has been deprecated in favour of the ``pack`` command
--  :ref:`DN7 <deprecation-notice-7>`: The :ref:``prepare`` keyword has been replaced by ``override-build`` (or `override-pull <override-build-steps>`)
+-  :ref:`DN7 <deprecation-notice-7>`: The ``prepare`` keyword has been replaced by ``override-build`` (or :ref:`override-pull <override-build-steps>`)
 -  :ref:`DN8 <deprecation-notice-8>`: The ``build`` keyword has been replaced by ``override-build``
 -  :ref:`DN9 <deprecation-notice-9>`: The ``install`` keyword has been replaced by ``override-build``
 -  :ref:`DN10 <deprecation-notice-10>`: The ``version-script`` keyword has been replaced by ``snapcraftctl set-version``
