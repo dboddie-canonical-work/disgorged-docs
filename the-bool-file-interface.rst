@@ -7,7 +7,7 @@ The bool-file interface
 
 The ``bool-file`` interface allows access to a specific class of file that contains boolean semantics, typically used to toggle or represent the state of binary hardware values.
 
-This interface is primarily intended to be used with `Ubuntu Core <glossary.md#the-bool-file-interface-heading--ubuntu-core>`__ devices, it’s also restricted because it provides privileged access to hardware.
+This interface is primarily intended to be used with :ref:`glossary-ubuntu-core` devices, it’s also restricted because it provides privileged access to hardware.
 
 These kinds of file are located within specific directories inside the `sysfs <https://man7.org/linux/man-pages/man5/sysfs.5.html>`__ filesystem (``/sys``) and this interface allows a file to be *read*, to obtaining a current value, or *written to*, setting a new value.
 
@@ -33,12 +33,12 @@ Use the ``snap interface bool-file`` command to see which boolean files are avai
 --------------
 
 
-.. _the-bool-file-interface-heading--dev-details:
+.. _the-bool-file-interface-dev-details:
 
 Developer details
 -----------------
 
-`Auto-connect <interface-management.md#the-bool-file-interface-heading--auto-connections>`__: no
+:ref:`Auto-connect <interface-management-auto-connections>`: no
 
 **Attributes**: \* ``path`` (slot): path to the file in *sysfs*\  Example: ``/sys/class/leds/green/brightness``\ 
 
@@ -46,7 +46,7 @@ The path value must match one of the following regular expressions: - For GPIO d
 
 The :ref:`gpio interface <the-gpio-interface>` provides another option for accessing GPIO devices.
 
-To use a boolean file, the snap developer must add ``plugs: [ bool-file ]`` to a snap’s :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific boolean file with an `interface connection <interface-management.md#the-bool-file-interface-heading--manual-connections>`__.
+To use a boolean file, the snap developer must add ``plugs: [ bool-file ]`` to a snap’s :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific boolean file with an :ref:`interface connection <interface-management-manual-connections>`.
 
 Unless a snap specifically expects a set of boolean files that cannot be predefined, the recommended approach is to define distinct plugs for each boolean file the snap wishes to use:
 

@@ -19,23 +19,32 @@ Requires snapd version *2.54+*.
 --------------
 
 
-.. _`the-mount-control-interface-heading--dev-details`:
+.. _`the-mount-control-interface-dev-details`:
 
 Developer details
 -----------------
 
-`Auto-connect <interface-management.md#the-mount-control-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
+:ref:`Auto-connect <interface-management-auto-connections>`: no
 
-**Attributes**: \* ``persistent`` (plug): defines whether the mount can be persistent or not. Either ``true`` or ``false``. Defaults to ``false``. \* ``type`` (plug): lists one or more `acceptable filesystems <the-mount-control-interface-heading--filesystems_>`__ for this mount. Example: ``[ext2, ext3, ext4]`` \* ``what`` (plug): absolute path of what to mount using a matching wildcard. Example: ``/dev/sd*`` \* ``where`` (plug): either an absolute destination path for the mount, or a starting reference to ``$SNAP_COMMON`` or ``$SNAP_DATA`` optionally followed by a path. Wildcards are also supported. Example: ``/media/$USER/**`` \* ``options`` (plug, required): a list of one or more `permitted options <the-mount-control-interface-heading--options_>`__. Example: ``[rw, sync]``\  \* ``namespace`` (plug): either ``snap``, for locations within the snap, ``host``, for locations outside the snap, or ``auto`` to set the namespace according to the *where* pattern. Defaults to ``auto``.
+:ref:`Super-privileged <super-privileged-interfaces>`: yes
+
+**Attributes**:
+
+* ``persistent`` (plug): defines whether the mount can be persistent or not. Either ``true`` or ``false``. Defaults to ``false``.
+* ``type`` (plug): lists one or more `acceptable filesystems <the-mount-control-interface-filesystems_>`__ for this mount. Example: ``[ext2, ext3, ext4]``
+* ``what`` (plug): absolute path of what to mount using a matching wildcard. Example: ``/dev/sd*``
+* ``where`` (plug): either an absolute destination path for the mount, or a starting reference to ``$SNAP_COMMON`` or ``$SNAP_DATA`` optionally followed by a path. Wildcards are also supported. Example: ``/media/$USER/**``
+* ``options`` (plug, required): a list of one or more `permitted options <the-mount-control-interface-options_>`__. Example: ``[rw, sync]``
+* ``namespace`` (plug): either ``snap``, for locations within the snap, ``host``, for locations outside the snap, or ``auto`` to set the namespace according to the *where* pattern. Defaults to ``auto``.
 
 See `AppArmor globbing syntax <https://gitlab.com/apparmor/apparmor/-/wikis/AppArmor_Core_Policy_Reference#apparmor-globbing-syntax>`__ for details on how the pattern matching and wildcards work.
 
-It’s the responsibility of the snapped application or service to create and maintain a mount point, using either of the following: - the `mount <https://man7.org/linux/man-pages/man8/mount.8.html>`__ command - the `mount() <https://man7.org/linux/man-pages/man2/mount.2.html>`__ system call - an accompanying `snapctl mount <https://snapcraft.io/docs/using-the-snapctl-tool#the-mount-control-interface-heading--mount>`__
+It’s the responsibility of the snapped application or service to create and maintain a mount point, using either of the following: - the `mount <https://man7.org/linux/man-pages/man8/mount.8.html>`__ command - the `mount() <https://man7.org/linux/man-pages/man2/mount.2.html>`__ system call - an accompanying :ref:`snapctl mount <snapctl-tool-mount-control>`
 
 The ``snapctl mount`` command is the only option for creating a persistent mount point via its ``--persistent`` mount option.
 
 
-.. _the-mount-control-interface-heading--filesystems:
+.. _the-mount-control-interface-filesystems:
 
 Accepted filesystems
 ~~~~~~~~~~~~~~~~~~~~
@@ -53,7 +62,7 @@ While other filesystems are accepted, the following filesystems are supported al
 **Note:** If only ``tmpfs`` is specified, ``what`` must be ``none``.
 
 
-.. _the-mount-control-interface-heading--options:
+.. _the-mount-control-interface-options:
 
 Permitted mount options
 ~~~~~~~~~~~~~~~~~~~~~~~

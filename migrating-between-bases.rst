@@ -22,35 +22,35 @@ At its simplest, migrating from one base snap to another requires only that the 
 
 But further changes will most likely be needed, and what these are will depend on the original base and the packages that are bundled alongside the application. The most common required changes are described below:
 
--  `No base, or old bases <migrating-between-bases-heading--oldbase_>`__
+-  `No base, or old bases <migrating-between-bases-oldbase_>`__
 
--  `Package names <migrating-between-bases-heading--names_>`__
+-  `Package names <migrating-between-bases-names_>`__
 
--  `Architectures <migrating-between-bases-heading--arch_>`__
+-  `Architectures <migrating-between-bases-arch_>`__
 
--  `Environment variables <migrating-between-bases-heading--environment_>`__
+-  `Environment variables <migrating-between-bases-environment_>`__
 
--  `Remote parts and extensions <migrating-between-bases-heading--remote_>`__
+-  `Remote parts and extensions <migrating-between-bases-remote_>`__
 
--  `Audio interfaces <migrating-between-bases-heading--audio_>`__
+-  `Audio interfaces <migrating-between-bases-audio_>`__
 
--  `Version scripts <migrating-between-bases-heading--version_>`__
+-  `Version scripts <migrating-between-bases-version_>`__
 
 -  Plugins
 
-   -  `name changes <migrating-between-bases-heading--names_>`__: nodejs to npm
-   -  `modified syntax <migrating-between-bases-heading--syntax_>`__: npm, autotools, go,
+   -  `name changes <migrating-between-bases-names_>`__: nodejs to npm
+   -  `modified syntax <migrating-between-bases-syntax_>`__: npm, autotools, go,
 
--  `Application definitions <migrating-between-bases-heading--definitions_>`__
+-  `Application definitions <migrating-between-bases-definitions_>`__
 
-   -  `paths <migrating-between-bases-heading--paths_>`__
-   -  `command-chain <migrating-between-bases-heading--command-chain_>`__
+   -  `paths <migrating-between-bases-paths_>`__
+   -  `command-chain <migrating-between-bases-command-chain_>`__
 
--  .. rubric:: `Migrated snap examples <migrating-between-bases-heading--examples_>`__
+-  .. rubric:: `Migrated snap examples <migrating-between-bases-examples_>`__
       :name: migrated-snap-examples
 
 
-.. _migrating-between-bases-heading--oldbase:
+.. _migrating-between-bases-oldbase:
 
 Updating from no or old bases
 -----------------------------
@@ -59,10 +59,10 @@ Migrating a snap from having no base, or ``base: core``, to ``core18`` or ``core
 
 This is because when building a snap with an old base, Snapcraft will operate in compatibility mode.
 
-Compatibility mode is essentially a prior (2.43-era) version of Snapcraft, and will lose the functionality of newer releases. See `Features incompatible with bases <release-notes-snapcraft-3-0.md#migrating-between-bases-heading--base-exceptions>`__ for details.
+Compatibility mode is essentially a prior (2.43-era) version of Snapcraft, and will lose the functionality of newer releases. See :ref:`Features incompatible with bases <release-notes-snapcraft-3-0-base-exceptions>` for details.
 
 
-.. _migrating-between-bases-heading--names:
+.. _migrating-between-bases-names:
 
 Package names
 -------------
@@ -82,7 +82,7 @@ Package name example: `Irssi <https://github.com/snapcrafters/irssi/pull/9>`__
 In the above example, the name of the Perl library package changed due to a version bump. The best way to resolve these issues is to first build your snap on the destination base system, either via *snapcraft* or a virtual machine/LXD container, and update each unresolved package in turn with the new equivalents.
 
 
-.. _migrating-between-bases-heading--arch:
+.. _migrating-between-bases-arch:
 
 Architectures
 -------------
@@ -111,7 +111,7 @@ Publishers who want to move to ‘base: core20’ must drop builds for the i386 
 For potential approaches to maintain an i386 build of a snap, see `How best to handle i386 when moving to core20 <https://forum.snapcraft.io/t/17680>`.
 
 
-.. _migrating-between-bases-heading--environment:
+.. _migrating-between-bases-environment:
 
 Environment variables
 ---------------------
@@ -129,7 +129,7 @@ Environment variables example: `Irssi <https://github.com/snapcrafters/irssi/pul
 When a package name changes or is updated, it’s worth checking to make sure no environment variables are dependent on a path related to an older name, as with the above path.
 
 
-.. _migrating-between-bases-heading--remote:
+.. _migrating-between-bases-remote:
 
 Remote parts and Extensions
 ---------------------------
@@ -192,7 +192,7 @@ Example showing ``core20``-only Gnome extension: `Dwarf Fortress <https://github
    +    command: wrapper.sh
 
 
-.. _migrating-between-bases-heading--audio:
+.. _migrating-between-bases-audio:
 
 Audio interfaces
 ----------------
@@ -214,7 +214,7 @@ Note that to ensure privacy, ``audio-playback`` is automatically connected but `
 Application publishers who believe ``audio-record`` *should* be automatically connected on install (such as for an audio recording application) should start a thread in the `store-requests <https://forum.snapcraft.io/c/store-requests/19>`__ category on the Snapcraft forum asking for it.
 
 
-.. _migrating-between-bases-heading--version:
+.. _migrating-between-bases-version:
 
 Version scripts
 ---------------
@@ -238,7 +238,7 @@ Example replacing *version-script* with *adopt-info*: `Cointop <https://github.c
 See :ref:`Using external metadata <using-external-metadata>` for further details.
 
 
-.. _#migrating-between-bases-heading--name:
+.. _#migrating-between-bases-name:
 
 Plugin name changes
 -------------------
@@ -260,7 +260,7 @@ e.g. `wethr <https://github.com/snapcrafters/wethr/commit/678ac026fb03d42925eb5
    +    plugin: npm
 
 
-.. _migrating-between-bases-heading--syntax:
+.. _migrating-between-bases-syntax:
 
 Plugin syntax
 -------------
@@ -316,7 +316,7 @@ Example Autotools plugin syntax changes: `Inadyn <https://github.com/snapcrafter
 go
 --
 
-The `go plugin <t/the-go-plugin/8505>`__ no longer requires the ``go-importpath`` to be specified. A ``go-channel`` should be specified.
+The :ref:`go plugin <the-go-plugin>` no longer requires the ``go-importpath`` to be specified. A ``go-channel`` should be specified.
 
 Example Go plugin syntax changes: `slack-term <https://github.com/snapcrafters/slack-term/commit/bca6333f64297a1c117b8fc9560eb92b427e0ea7>`__
 
@@ -329,13 +329,13 @@ Example Go plugin syntax changes: `slack-term <https://github.com/snapcrafters/s
    +      go-channel: latest/stable
 
 
-.. _migrating-between-bases-heading--definitions:
+.. _migrating-between-bases-definitions:
 
 Application definitions
 -----------------------
 
 
-.. _migrating-between-bases-heading--paths:
+.. _migrating-between-bases-paths:
 
 Paths
 ~~~~~
@@ -352,12 +352,12 @@ Example update adding explicit paths: `wethr <https://github.com/snapcrafters/we
    +    command: bin/wethr
 
 
-.. _migrating-between-bases-heading--command-chain:
+.. _migrating-between-bases-command-chain:
 
 command-chain
 ~~~~~~~~~~~~~
 
-Rather than specify ``command`` followed by a long list of space-separated executables, they can now be listed with the `command-chain <snapcraft-app-and-service-metadata.md#migrating-between-bases-heading--command-chain>`__ option:
+Rather than specify ``command`` followed by a long list of space-separated executables, they can now be listed with the :ref:`command-chain <snapcraft-app-and-service-metadata-command-chain>` option:
 
 Example of command being replaced by command-chain: `Atom <https://github.com/snapcrafters/atom/pull/64>`__
 
@@ -371,7 +371,7 @@ Example of command being replaced by command-chain: `Atom <https://github.com/sn
    +    command: usr/share/atom/atom
 
 
-.. _migrating-between-bases-heading--examples:
+.. _migrating-between-bases-examples:
 
 Examples summary
 ----------------

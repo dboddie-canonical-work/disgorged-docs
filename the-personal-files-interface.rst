@@ -7,7 +7,16 @@ The personal-files interface
 
 The ``personal-files`` interface provides access to the specified files in the user’s home. This interface gives privileged access to the user’s data.
 
-`Auto-connect <interface-management.md#the-personal-files-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes **Transitional**: no **Attributes**: \* ``read`` (plug): list of files and/or directories for read-only access (eg, ‘``read: [ $HOME/.file-read, $HOME/.dir-read ]``’ \* ``write`` (plug): list of files and/or directories for read/write access (eg, ‘``write: [ $HOME/.file-write, $HOME/.dir-write ]``’
+:ref:`Auto-connect <interface-management-auto-connections>`: no
+
+:ref:`Super-privileged <super-privileged-interfaces>`: yes
+
+**Transitional**: no
+
+**Attributes**:
+
+* ``read`` (plug): list of files and/or directories for read-only access (eg, ‘``read: [ $HOME/.file-read, $HOME/.dir-read ]``’
+* ``write`` (plug): list of files and/or directories for read/write access (eg, ‘``write: [ $HOME/.file-write, $HOME/.dir-write ]``’
 
 Specifying a directory in ``read`` and ``write`` allows access to the directory and all files under it.
 

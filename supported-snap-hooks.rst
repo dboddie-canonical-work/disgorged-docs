@@ -24,7 +24,7 @@ The following hooks are currently implemented: - `configure hook <supported-snap
 Accessing resources
 -------------------
 
-If a hook requires access to system resources outside of a snap’s confined environment, it will need to use `slots and plugs <interface-management.md#slots-plugs>`__ via the :ref:`interface <interface-management>` mechanism to access those resources.
+If a hook requires access to system resources outside of a snap’s confined environment, it will need to use :ref:`slots and plugs <interface-management-slots-plugs>` via the :ref:`interface <interface-management>` mechanism to access those resources.
 
 When using *Snapcraft* to build the snap, the interface definition will go inside :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>`, and the *snapcraft* command create a :ref:`snap.yaml <the-snap-format>` within the snap to hold the required metadata.
 
@@ -99,7 +99,7 @@ The same hook can also modify the configuration of a snap within the context of 
 The default-configure hook
 --------------------------
 
-The default-configure-hook is an optional extension to the `configure hook <supported-snap-hooks.md#supported-snap-hooks-the-configure-hook>`__ that executes only on snap installation and *before* services are started to provide access to the default configuration values stored in a device’s :ref:`gadget snap <gadget-snaps>`.
+The default-configure-hook is an optional extension to the :ref:`configure hook <supported-snap-hooks-the-configure-hook>` that executes only on snap installation and *before* services are started to provide access to the default configuration values stored in a device’s :ref:`gadget snap <gadget-snaps>`.
 
 The default-configure hook should be located within ‘meta/hooks’ and requires a configure hook to be present. A missing configure hook will result in an error.
 

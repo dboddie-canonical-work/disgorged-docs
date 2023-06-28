@@ -41,7 +41,7 @@ Type: ``enum`` Can be one of the following:
 Snapcraft normally creates a wrapper holding common environment variables. Disabling this could be useful for minimal base snaps without a shell, and for statically linked binaries with no use for an environment.
 
 
-.. _snapcraft-app-and-service-metadata-heading--after:
+.. _snapcraft-app-and-service-metadata-after:
 
 after
 ~~~~~
@@ -52,10 +52,10 @@ A list of applications to be started after ``<app-name>``. Applications must be 
 
 Requires ``daemon`` to be set in the *app* metadata. See :ref:`Services and daemons <services-and-daemons>` for details.
 
-See also `before <snapcraft-app-and-service-metadata-heading--before_>`__.
+See also `before <snapcraft-app-and-service-metadata-before_>`__.
 
 
-.. _snapcraft-app-and-service-metadata-heading--autostart:
+.. _snapcraft-app-and-service-metadata-autostart:
 
 autostart
 ~~~~~~~~~
@@ -68,10 +68,10 @@ The desktop file is placed in ``$SNAP_USER_DATA/.config/autostart``, and the app
 
 Example: ``autostart: my-chat.desktop``
 
-See `Autostart desktop files <the-snap-format.md#snapcraft-app-and-service-metadata-heading--autostart>`__ for an example of both the desktop file and the *Exec* file entry.
+See :ref:`Autostart desktop files <the-snap-format-autostart>` for an example of both the desktop file and the *Exec* file entry.
 
 
-.. _snapcraft-app-and-service-metadata-heading--before:
+.. _snapcraft-app-and-service-metadata-before:
 
 before
 ~~~~~~
@@ -82,7 +82,7 @@ An ordered list of applications to be started before ``<app-name>`` . Applicatio
 
 Requires ``daemon`` to be set in the *app* metadata. See :ref:`Services and daemons <services-and-daemons>` for details.
 
-See also `after <snapcraft-app-and-service-metadata-heading--after_>`__.
+See also `after <snapcraft-app-and-service-metadata-after_>`__.
 
 command
 ~~~~~~~
@@ -98,7 +98,7 @@ If daemon is set, this will be the command to run the service. Only a snap with 
 Examples: ``app-launch`` for an excecutable placed under ``$SNAP/bin``. With ``classic`` confinement, ``bin/app-launch`` for an executable placed under ``$SNAP/bin``.
 
 
-.. _snapcraft-app-and-service-metadata-heading--command-chain:
+.. _snapcraft-app-and-service-metadata-command-chain:
 
 command-chain
 ~~~~~~~~~~~~~
@@ -152,7 +152,7 @@ Key is the environment variable name; Value is the contents of the environment v
 Example: ``LANG: C.UTF-8``
 
 
-.. _snapcraft-app-and-service-metadata-heading--extension:
+.. _snapcraft-app-and-service-metadata-extension:
 
 extensions
 ~~~~~~~~~~
@@ -166,7 +166,7 @@ For further details, see :ref:`Snapcraft extensions <snapcraft-extensions>`, and
 Example: ``[gnome-3-38]``
 
 
-.. _snapcraft-app-and-service-metadata-heading--install-mode:
+.. _snapcraft-app-and-service-metadata-install-mode:
 
 install-mode
 ~~~~~~~~~~~~
@@ -269,7 +269,7 @@ slots
 
 Type: ``list[string]``
 
-Slots for `interfaces <t/interfaces/6154>`__ to connect to.
+Slots for :ref:`interfaces <interface-management>` to connect to.
 
 ``<app-name>`` will make these slot connections when running in ``strict`` confinement only. For interfaces that need *attributes*, see top-level :ref:`slots <snapcraft-top-level-metadata>`.
 

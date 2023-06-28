@@ -13,6 +13,6 @@ The ``version-script`` keyword could be used to define a command to run from the
 
 This functionality has been replaced by the ``snapcraftctl set-version`` part scriptlet.
 
-For more details, see `Part scriptlets <using-external-metadata.md#meta-scriptlet>`__.
+For more details, see :ref:`Part scriptlets <using-external-metadata-meta-scriptlet>`.
 
 See :ref:`Deprecation notices <deprecation-notices>` for further announcements.

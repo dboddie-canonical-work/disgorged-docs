@@ -11,9 +11,9 @@ To accomplish this, the store assigns an anonymous identifier, the device-serial
 
 Systems running snapd will periodically make a refresh request to the store, checking the for the most recent release of each installed snap. At that moment, they inform the store of their device-serial along with a list of the currently installed snaps. The store simply infers the list of active applications from the clients’ requests in a given period.
 
-To access the Snap Store, simply go to https://snapcraft.io/store and login with your developer account credentials. See `Using the Snap Store </t/using-the-snap-store/12379>`__ if you don’t yet have an account, and have yet to publish snaps to the store.
+To access the Snap Store, simply go to https://snapcraft.io/store and login with your developer account credentials. See :ref:`using-the-snap-store` if you don’t yet have an account, and have yet to publish snaps to the store.
 
-Snap Store metrics can also be retrieved with `snapcraft metrics </t/snapcraft-metrics/25732>`__ command.
+Snap Store metrics can also be retrieved with :ref:`snapcraft metrics <snapcraft-metrics>` command.
 
 My published snaps
 ------------------
@@ -44,7 +44,7 @@ The default breakdown of active devices is by *version*, illustrated by the colo
 As with the count interval, the breakdown can be switched from *By version* to either *By OS* or *By channel* from its drop-down menu:
 
 -  **By OS**: view the number of active users on each Linux distribution over your selected time-frame. This can help you target integration issues that may be specific to popular distributions.
--  **By channel**: view how many installations are tracking each `channel </t/channels/551>`__ of your snap. Depending on how a snap uses channels, this can be useful to ascertain stability vs. cutting edge features for a snap’s user base.
+-  **By channel**: view how many installations are tracking each `channel <snap-channels_>`_ of your snap. Depending on how a snap uses channels, this can be useful to ascertain stability vs. cutting edge features for a snap’s user base.
 
 .. figure:: https://assets.ubuntu.com/v1/e2a6f31e-snap-weekly-devices.png
    :alt: Screenshot_20190731_155049|690x374

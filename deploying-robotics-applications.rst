@@ -67,7 +67,7 @@ Get started now
    * - :ref:`ROS architectures with snaps <ros-architectures-with-snaps>`
      - Presentation of the different snap architectures that developers can
        adopt for their ROS applications
-   * - `ROS FAQ & troubleshooting <ros-faq-troubleshooting>`__
+   * - :ref:`ROS FAQ & troubleshooting <ros-faq-troubleshooting>`
      - FAQ & troubleshooting about snap and ROS integration
    * - :ref:`ROS snap with GitHub Actions <build-and-publish-a-ros-snap-with-github-actions>`
      - Build and Publish a ROS Snap with GitHub Actions

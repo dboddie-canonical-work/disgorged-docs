@@ -30,7 +30,7 @@ The `Firefox <https://snapcraft.io/firefox>`__, `Chromium <https://snapcraft.io/
 Developer details
 -----------------
 
-`Auto-connect <interface-management.md#the-system-files-interface-heading--auto-connections>`__: no
+:ref:`Auto-connect <interface-management-auto-connections>`: no
 
 :ref:`Super-privileged <super-privileged-interfaces>`: yes
 

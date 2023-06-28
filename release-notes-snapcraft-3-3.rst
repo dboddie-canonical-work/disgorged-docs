@@ -17,7 +17,7 @@ base: core
 
 Support for ``base: core`` has been added.
 
-This enables you to take advantage of the many new Snapcraft 3 features while using 16.04 as a `base <snapcraft-overview.md#base-snap>`__. Previously, you needed to use the 18.04 base.
+This enables you to take advantage of the many new Snapcraft 3 features while using 16.04 as a :ref:`base <base-snaps>`. Previously, you needed to use the 18.04 base.
 
 Alternate directory for *snapcraft.yaml*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

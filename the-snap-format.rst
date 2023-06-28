@@ -32,7 +32,7 @@ The following files control the behaviour of a snap:
 -  ``meta/gui/*.desktop``: Desktop files for the snap (see below)
 
 
-.. _the-snap-format-heading--snapyaml:
+.. _the-snap-format-snapyaml:
 
 snap.yaml
 ~~~~~~~~~
@@ -291,7 +291,7 @@ For example, assuming this content in ``snap.yaml``:
    Exec=http.get %U
 
 
-.. _the-snap-format-heading--autostart:
+.. _the-snap-format-autostart:
 
 Autostart desktop files
 ~~~~~~~~~~~~~~~~~~~~~~~

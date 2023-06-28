@@ -11,7 +11,7 @@ This interface enables the management of the ``extrausers`` table in the Name Se
 
 The interface **does not** allow the management of users and groups for the system NSS databases in */etc*.
 
-Due to the privileged nature of access enabled by this interface, its use is reserved exclusively for “management snaps” from `brand stores <glossary.md#the-account-control-interface-heading--brand-store>`__.
+Due to the privileged nature of access enabled by this interface, its use is reserved exclusively for “management snaps” from :ref:`brand stores <glossary-brand-store>`.
 
 .. note::
 
@@ -21,7 +21,7 @@ Due to the privileged nature of access enabled by this interface, its use is res
 --------------
 
 
-.. _the-account-control-interface-heading--dev-details:
+.. _the-account-control-interface-dev-details:
 
 Developer details
 -----------------
@@ -29,7 +29,7 @@ Developer details
 **Auto-connect**: no
 
 
-.. _the-account-control-interface-heading-code:
+.. _the-account-control-interface-code:
 
 Code examples
 ~~~~~~~~~~~~~

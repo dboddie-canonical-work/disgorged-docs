@@ -33,7 +33,7 @@ We will look at each section of the code separately and learn what it does:
        source: https://github.com/yt-dlp/yt-dlp.git
 
 
-.. _basic-snapcraft-yaml-example-heading--metadata:
+.. _basic-snapcraft-yaml-example-metadata:
 
 Metadata
 --------
@@ -57,7 +57,7 @@ Field           Definition  Type   Length Note
 When the application is built with snapcraft, this metadata will be made available to users. It can also be used to pre-populate certain fields in the snap’s Snap Store page during upload.
 
 
-.. _basic-snapcraft-yaml-example-heading--base:
+.. _basic-snapcraft-yaml-example-base:
 
 Base
 ----
@@ -73,7 +73,7 @@ Several bases are available, including core18, core20, core22, etc. These bases 
    base: core22
 
 
-.. _basic-snapcraft-yaml-example-heading--confinement:
+.. _basic-snapcraft-yaml-example-confinement:
 
 Confinement
 -----------
@@ -109,7 +109,7 @@ The xsv snap has its confinement level set as strict:
    confinement: strict
 
 
-.. _basic-snapcraft-yaml-example-heading--interfaces:
+.. _basic-snapcraft-yaml-example-interfaces:
 
 Interfaces
 ----------
@@ -136,7 +136,7 @@ An interface consists of a connection between a slot and a plug. The slot is the
 Interfaces can be automatically or manually connected. Some interfaces will be auto-connected. Others may not, especially if they have access to sensitive resources (like network control, for instance). Users have the option to manually control interfaces – connect and disconnect them.
 
 
-.. _basic-snapcraft-yaml-example-heading--build:
+.. _basic-snapcraft-yaml-example-build:
 
 Build definition
 ~~~~~~~~~~~~~~~~
@@ -145,6 +145,8 @@ The build definition stanza comprises the apps and parts section of the snapcraf
 
 -  The :ref:`parts <adding-parts>` section defines all the sources that will be used to build the applications inside the snaps.
 -  The :ref:`apps <snapcraft-app-and-service-metadata>` section defines the command path for each application (how it will be run), optional parameters, as well as the list of permissions (plugs to interfaces) that will be granted to the application at runtime.
+
+.. _basic-snapcraft-yaml-example-parts:
 
 The parts definition
 --------------------
@@ -163,6 +165,8 @@ The yt-dlp snap only has one part. It is built using the Python plugin, which is
 -  plugin: This block defines the use of the Snapcraft Python plugin that will perform various language-specific commands in the background. The :ref:`python plugin <the-python-plugin>` handles Python building and its dependencies automatically. The plugin declaration has only one sub-section:
 
    -  source: defines the URL or a path of the application code that needs to be downloaded for the build. It can be a local or remote path, and can refer to a directory tree, a compressed archive or a revision control repository. In this particular case, the application is built the project’s upstream GitHub repository.
+
+.. _basic-snapcraft-yaml-example-apps:
 
 The apps definition
 -------------------

@@ -5,7 +5,7 @@
 Revisions
 =========
 
-A snap’s *revision* is a number assigned automatically by the `Snap Store <glossary.md#revisions-heading--snap-store>`__ with each snap upload, giving each snap binary a unique identity within, and across, its `channels <https://snapcraft.io/docs/channels>`__.
+A snap’s *revision* is a number assigned automatically by the :ref:`glossary-snap-store` with each snap upload, giving each snap binary a unique identity within, and across, its `channels <https://snapcraft.io/docs/channels>`__.
 
 The revision number increments with each new upload. But this number is arbitrary, and only used to differentiate between uploads.
 
@@ -52,7 +52,7 @@ The ``snap list`` command includes a column for each installed snap’s revision
 Revision package management
 ---------------------------
 
-The `Snap Store <glossary.md#revisions-heading--snap-store>`__ caches several older revisions of every snap, as does the local system. By default, 2 revisions are stored locally, while `Ubuntu Core <glossary.md#revisions-heading--ubuntu-core>`__ systems store 3. These defaults can be changed with the `refresh-retain <https://snapcraft.io/docs/managing-updates#revisions-heading--refresh-retain>`__ system option.
+The :ref:`glossary-snap-store` caches several older revisions of every snap, as does the local system. By default, 2 revisions are stored locally, while :ref:`glossary-ubuntu-core` systems store 3. These defaults can be changed with the `refresh-retain <https://snapcraft.io/docs/managing-updates#revisions-heading--refresh-retain>`__ system option.
 
 The snap ``install``, ``refresh`` and ``download`` commands can operate on these available revisions with an optional ``--revision`` argument.
 

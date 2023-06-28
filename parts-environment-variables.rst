@@ -7,18 +7,18 @@ Parts environment variables
 
 When building a part to construct a snap, :ref:`Snapcraft <snapcraft-overview>` creates the following sets of environment variables that can optionally be used by a part’s build mechanism:
 
--  `Locating directories <parts-environment-variables-heading--locating-directories_>`__
+-  `Locating directories <parts-environment-variables-locating-directories_>`__
 
-   -  `core \| core18 \| core20 <parts-environment-variables-heading--locating-directories-core18-core20_>`__
-   -  `core22 <parts-environment-variables-heading--locating-directories-core22_>`__
+   -  `core \| core18 \| core20 <parts-environment-variables-locating-directories-core18-core20_>`__
+   -  `core22 <parts-environment-variables-locating-directories-core22_>`__
 
--  `Snapcraft configuration <parts-environment-variables-heading--snapcraft-configuration_>`__
+-  `Snapcraft configuration <parts-environment-variables-snapcraft-configuration_>`__
 
-   -  `core \| core18 \| core20 <parts-environment-variables-heading--snapcraft-configuration-core18-core-20_>`__
-   -  `core22 <parts-environment-variables-heading--snapcraft-configuration-core22_>`__
+   -  `core \| core18 \| core20 <parts-environment-variables-snapcraft-configuration-core18-core-20_>`__
+   -  `core22 <parts-environment-variables-snapcraft-configuration-core22_>`__
 
--  `Build flags <parts-environment-variables-heading--build-flags_>`__
--  `Plugin variables <parts-environment-variables-heading--plugin-variables_>`__
+-  `Build flags <parts-environment-variables-build-flags_>`__
+-  `Plugin variables <parts-environment-variables-plugin-variables_>`__
 
 Environment variables can be accessed via the :ref:`override- <snapcraft-parts-metadata>` keywords with shell commands and :ref:`Scriptlets <override-build-steps>`, or more generally within your project’s build infrastructure.
 
@@ -27,15 +27,15 @@ See :ref:`Adding parts <adding-parts>` for a general overview of what parts are 
    ⓘ For the various environment variables available to running snap applications, see :ref:`Environment variables <environment-variables>`.
 
 
-.. _parts-environment-variables-heading--locating-directories:
+.. _parts-environment-variables-locating-directories:
 
 Locating directories
 ~~~~~~~~~~~~~~~~~~~~
 
-See :ref:`Parts lifecycle <parts-lifecycle>` and `Parts directories <parts-lifecycle.md#parts-environment-variables-heading--parts-directories>`__ for details on which directories are created and used when building a part.
+See :ref:`Parts lifecycle <parts-lifecycle>` and :ref:`Parts directories <parts-lifecycle-parts-directories>` for details on which directories are created and used when building a part.
 
 
-.. _parts-environment-variables-heading--locating-directories-core18-core20:
+.. _parts-environment-variables-locating-directories-core18-core20:
 
 core \| core18 \| core20
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -59,7 +59,7 @@ Snapcraft exposes the following directory related environment variables when bui
      - absolute path to where files are staged
 
 
-.. _parts-environment-variables-heading--locating-directories-core22:
+.. _parts-environment-variables-locating-directories-core22:
 
 core22
 ^^^^^^
@@ -87,13 +87,13 @@ Snapcraft exposes the following directory related environment variables when bui
 +---------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
 
 
-.. _parts-environment-variables-heading--snapcraft-configuration:
+.. _parts-environment-variables-snapcraft-configuration:
 
 Snapcraft configuration
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 
-.. _parts-environment-variables-heading--snapcraft-configuration-core18-core-20:
+.. _parts-environment-variables-snapcraft-configuration-core18-core-20:
 
 core \| core18 \| core20
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -115,7 +115,7 @@ When building a part with bases ``core``, ``core18``, or ``core20``, the followi
 +------------------------------------+-------------------------------------------------------------------------------------------+
 
 
-.. _parts-environment-variables-heading--snapcraft-configuration-core22:
+.. _parts-environment-variables-snapcraft-configuration-core22:
 
 core22
 ^^^^^^
@@ -141,7 +141,7 @@ When building a part with base ``core22``, the following *snapcraft* environment
 +-------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
 
 
-.. _parts-environment-variables-heading--build-flags:
+.. _parts-environment-variables-build-flags:
 
 Build flags
 ~~~~~~~~~~~
@@ -161,7 +161,7 @@ The following specific *build flags* are also set:
 +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-.. _parts-environment-variables-heading--plugin-variables:
+.. _parts-environment-variables-plugin-variables:
 
 Plugin variables
 ~~~~~~~~~~~~~~~~

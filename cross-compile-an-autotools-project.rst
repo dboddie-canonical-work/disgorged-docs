@@ -5,7 +5,7 @@
 Cross-compile an autotools project
 ==================================
 
-Projects built using the `autotools plugin </t/8616>`__ can be cross-compiled, allowing software to be developed on one architecture and built for a number of target architectures.
+Projects built using the :ref:`autotools plugin <the-autotools-plugin>` can be cross-compiled, allowing software to be developed on one architecture and built for a number of target architectures.
 
 This guide shows how to cross-compile a snap built on the ``core22`` base with the autotools plugin. The example project used in this guide can be found in `this repository <https://github.com/snapcraft-docs/autotools-cross-comple-example>`__.
 
@@ -24,7 +24,7 @@ It is useful to begin with a reminder of the syntax used to specify architecture
 The architectures keyword
 -------------------------
 
-The `architectures </t/4972>`__ keyword is normally used to specify which architectures should be used when building a snap. For example, in the following case the build architecture is the same as the target architecture:
+The :ref:`architectures <architectures>` keyword is normally used to specify which architectures should be used when building a snap. For example, in the following case the build architecture is the same as the target architecture:
 
 .. code:: yaml
 
@@ -49,7 +49,7 @@ In this example, Snapcraft will only build the project on the ``amd64`` architec
 Adjust the autotools configuration
 ----------------------------------
 
-When building for a particular architecture, Snapcraft will initialise the ``SNAPCRAFT_ARCH_TRIPLET`` `environment variable </t/12271>`__ in the build environment. This variable describes the platform and architecture that autotools uses to configure cross-compilation.
+When building for a particular architecture, Snapcraft will initialise the ``SNAPCRAFT_ARCH_TRIPLET`` :ref:`environment variable <environment-variables>` in the build environment. This variable describes the platform and architecture that autotools uses to configure cross-compilation.
 
 A project that uses the autotools plugin can adjust the options passed to the ``configure`` script for a given part by using the ``autotools-configure-parameters`` keyword that the plugin provides. In this case, the ``cross-compilation-part`` is configured in this way:
 
@@ -75,7 +75,7 @@ It is also necessary to specify which packages will supply the toolchain and lib
            - libc6-dev-armhf-cross
            - libc6-armhf-cross
 
-`Advanced grammar </t/8349>`__ is used in the ``build-packages`` definition to specify the packages containing the cross-compiler, C library and header files when building on ``amd64`` for ``armhf`` platforms.
+:ref:`Advanced grammar <snapcraft-advanced-grammar>` is used in the ``build-packages`` definition to specify the packages containing the cross-compiler, C library and header files when building on ``amd64`` for ``armhf`` platforms.
 
 Build the snap
 --------------

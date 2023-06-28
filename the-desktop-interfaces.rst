@@ -42,7 +42,7 @@ Many other optional interfaces exist depending on what the app needs:
 -  :ref:`removable-media <the-removable-media-interface>`: access files on removable media
 -  :ref:`screen-inhibit-control <the-screen-inhibit-control-interface>`: prevent screen sleep/lock
 
-While developers might choose to use any of the above interfaces as needed, it should be noted that many are so-called ‘transitional’ interfaces. For example, ``gsettings`` allows read/write access to all settings and ``home`` allows read/write access to all non-hidden user data. Like with the common services in ``desktop-legacy``, as these other services are made safe or new ones designed to replace them, they will be added to the ``desktop`` interface. `XDG desktop portals </t/xdg-desktop-portals/17331/t/xdg-desktop-portals/17331>`__, for example provide safe APIs for opening files and printing.
+While developers might choose to use any of the above interfaces as needed, it should be noted that many are so-called ‘transitional’ interfaces. For example, ``gsettings`` allows read/write access to all settings and ``home`` allows read/write access to all non-hidden user data. Like with the common services in ``desktop-legacy``, as these other services are made safe or new ones designed to replace them, they will be added to the ``desktop`` interface. :ref:`xdg-desktop-portals`, for example provide safe APIs for opening files and printing.
 
 Example usage for common desktop interfaces
 -------------------------------------------

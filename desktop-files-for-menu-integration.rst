@@ -7,7 +7,7 @@ Desktop files for menu integration
 
 `Desktop entry files <https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html#introduction>`__ are used to add an application to the `desktop menu <https://en.wikipedia.org/wiki/Start_menu>`__. These files specify the name and icon of your application, the `categories <https://specifications.freedesktop.org/menu-spec/latest/apa.html>`__ it belongs to, related search keywords and more. These files have the extension ``.desktop`` and follow the XDG Desktop Entry Specification version 1.1.
 
-   ⓘ **Note:** The application icon specified in the desktop entry will be used in the desktop menu and the dock, but *not* in the snap store and other graphical store frontends. The snap store uses the icon specified in `the ``icon:`` field in ``snapcraft.yaml`` <snapcraft-top-level-metadata.md#desktop-files-for-menu-integration-heading--icon>`__
+   ⓘ **Note:** The application icon specified in the desktop entry will be used in the desktop menu and the dock, but *not* in the snap store and other graphical store frontends. The snap store uses the icon specified in `the ``icon:`` field in ``snapcraft.yaml`` <snapcraft-top-level-metadata-icon>`__
 
 This documentation explains how to add these desktop files to your snap so that your application is automatically added to the desktop menu during installation.
 
@@ -15,7 +15,7 @@ There are three methods to tell snapcraft which desktop entry files to use.
 
 -  `Put the desktop entry file in the ``snap/gui`` directory. <desktop-files-snap-gui_>`__
 -  `Use the ``desktop`` key in the app definition <desktop-files-desktop-key_>`__ to point to a desktop file in the prime directory.
--  `Use the desktop entry file from the AppStream metadata <using-external-metadata.md#desktop-files-for-menu-integration-heading--appstream>`__ of your application.
+-  :ref:`Use the desktop entry file from the AppStream metadata <meta-appstream>` of your application.
 
 
 .. _desktop-files-snap-gui:
@@ -49,7 +49,7 @@ Since ``snapcraft`` copies all the contents of the ``snap/gui/`` folder to ``met
 Use the ``desktop`` key to point to the entry file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Some applications already generate ``desktop`` files as part of the build process. In that case, it might be easier to use the ``desktop`` key of the application because this takes a path relative to `the ``prime`` directory <parts-lifecycle.md#desktop-files-for-menu-integration-heading--parts-directories>`__, so you can insert a path to the generated desktop entry file.
+Some applications already generate ``desktop`` files as part of the build process. In that case, it might be easier to use the ``desktop`` key of the application because this takes a path relative to `the ``prime`` directory <parts-lifecycle-parts-directories>`__, so you can insert a path to the generated desktop entry file.
 
 Using this method, the desktop entry file can have any name. During a build, ``snapcraft`` will properly rename the desktop launcher, based on which app definition the ``desktop`` key is part of.
 

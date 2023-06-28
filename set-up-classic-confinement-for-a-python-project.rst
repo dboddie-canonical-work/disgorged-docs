@@ -7,7 +7,7 @@ Set up classic confinement for a Python project
 
 Some snaps need to have access to system resources outside the scope allowed by strict confinement, and they are unable to do this via the available interfaces. These snaps are configured to use classic confinement and will :ref:`need to be reviewed <process-for-reviewing-classic-confinement-snaps>` before publication in the Snap Store.
 
-This guide shows how to enable classic confinement for a snap built with the `python plugin </t/the-python-plugin>`__. The example project used in this guide can be found in the `example repository <https://github.com/snapcraft-docs/python-ctypes-example>`__.
+This guide shows how to enable classic confinement for a snap built with the :ref:`python plugin <the-python-plugin>`. The example project used in this guide can be found in the `example repository <https://github.com/snapcraft-docs/python-ctypes-example>`__.
 
 Change the confinement to classic
 ---------------------------------
@@ -23,7 +23,7 @@ This will cause the snap to be built in a way that gives it access to system res
 Patch ctypes to load system libraries
 -------------------------------------
 
-If your application uses `ctypes <https://docs.python.org/3/library/ctypes.html>`__ to access system libraries it will need to be bundled with a patched version of the module. To bundle ``ctypes``, include the relevant packages in the ``stage-packages`` list of packages. For the `core22 base </t/base-snaps>`__, the packages will be the following:
+If your application uses `ctypes <https://docs.python.org/3/library/ctypes.html>`__ to access system libraries it will need to be bundled with a patched version of the module. To bundle ``ctypes``, include the relevant packages in the ``stage-packages`` list of packages. For the :ref:`core22 base <base-snaps>`, the packages will be the following:
 
 .. code:: yaml
 

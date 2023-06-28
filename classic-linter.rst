@@ -9,30 +9,30 @@ The *classic* linter is a :ref:`Snapcraft linter <snapcraft-linters>` that is us
 
 The classic linter is only invoked when snap confinement is set to ``classic``, or if *libc* is staged.
 
--  `How the classic linter helps <classic-linter-heading--help_>`__
--  `Linter warnings <classic-linter-heading--warnings_>`__
--  `Addressing linter issues <classic-linter-heading--issues_>`__
+-  `How the classic linter helps <classic-linter-help_>`__
+-  `Linter warnings <classic-linter-warnings_>`__
+-  `Addressing linter issues <classic-linter-issues_>`__
 
-   -  `at build time <classic-linter-heading--issues-build_>`__
-   -  `binary patching <classic-linter-heading--issues-binary_>`__
-   -  `automatic ELF patching <classic-linter-heading--issues-auto_>`__
+   -  `at build time <classic-linter-issues-build_>`__
+   -  `binary patching <classic-linter-issues-binary_>`__
+   -  `automatic ELF patching <classic-linter-issues-auto_>`__
 
-See `Disabling linters <snapcraft-linters.md#classic-linter-heading--disable>`__ for details on how to stop this linter running.
+See :ref:`Disabling linters <snapcraft-linters-disable>` for details on how to stop this linter running.
 
 --------------
 
 
-.. _classic-linter-heading--help:
+.. _classic-linter-help:
 
 How the linter helps
 --------------------
 
-Unlike un-snapped applications, snaps using classic confinement require dynamic executables to load shared libraries from the appropriate `base snap <t/base-snaps/11198>`__ rather from than the host’s root filesystem.
+Unlike un-snapped applications, snaps using classic confinement require dynamic executables to load shared libraries from the appropriate :ref:`base snap <base-snaps>` rather from than the host’s root filesystem.
 
 To prevent version and platform incompatibly issues, snap-based binaries need to be either built with appropriate linker parameters, or patched to allow loading shared libraries from their base snap. The classic linter helps with this by warning about libraries that need to be patched.
 
 
-.. _classic-linter-heading--warnings:
+.. _classic-linter-warnings:
 
 Linter warnings
 ---------------
@@ -64,7 +64,7 @@ The classic linter will issue a warning if the ELF binary it is testing:
 
 
 
-.. _classic-linter-heading--issues:
+.. _classic-linter-issues:
 
 Addressing issues
 -----------------
@@ -72,7 +72,7 @@ Addressing issues
 To address classic linter issues, the appropriate *rpath* can be set during build time, or existing binaries can be patched to have their rpath changed.
 
 
-.. _classic-linter-heading--issues-build:
+.. _classic-linter-issues-build:
 
 At build time
 ~~~~~~~~~~~~~
@@ -101,7 +101,7 @@ A similar strategy can be used to set rpath in a `cgo <https://pkg.go.dev/cmd/cg
 Linker argument ``-Wl,-dynamic-linker=...`` can be used to set the ELF interpreter.
 
 
-.. _classic-linter-heading--issues-binary:
+.. _classic-linter-issues-binary:
 
 Binary patching
 ~~~~~~~~~~~~~~~
@@ -121,7 +121,7 @@ Or, to set the ELF interpreter, the following command can be used:
    patchelf --set-interpreter /snap/core22/current/lib64/ld-linux-x86-64.so.2 foo
 
 
-.. _classic-linter-heading--issues-auto:
+.. _classic-linter-issues-auto:
 
 Automatic ELF file patching
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~

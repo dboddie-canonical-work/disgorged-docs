@@ -9,7 +9,9 @@ The packagekit-control interface
 
 This interface is intended to work in tandem with :ref:`the AppStream interface <the-appstream-metadata-interface>`. Snaps distributed via the public `Snap store <https://snapcraft.io/store>`__ are not typically granted auto-connection for this interface.
 
-`Auto-connect <interface-management.md#the-packagekit-control-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
+:ref:`Auto-connect <interface-management-auto-connections>`: no
+
+:ref:`Super-privileged <super-privileged-interfaces>`: yes
 
 Requires snapd version *2.41+*.\`
 

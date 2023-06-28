@@ -20,7 +20,9 @@ The ``snap-themes-control`` interface permits the use of snapd’s theme install
 Developer details
 -----------------
 
-`Auto-connect <interface-management.md#the-snap-themes-control-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
+:ref:`Auto-connect <interface-management-auto-connections>`: no
+
+:ref:`Super-privileged <super-privileged-interfaces>`: yes
 
 Code examples
 -------------

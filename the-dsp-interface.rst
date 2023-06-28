@@ -15,7 +15,7 @@ The ``dsp`` interface allows for the control of digital signal processors (DSPs)
 --------------
 
 
-.. _the-dsp-interface-heading--dev-details:
+.. _the-dsp-interface-dev-details:
 
 Developer details
 -----------------
@@ -27,7 +27,7 @@ This interface allows privileged access to hardware and kernel drivers related t
 Requires snapd version *2.51+*.
 
 
-.. _the-dsp-interface-heading-code:
+.. _the-dsp-interface-code:
 
 Code examples
 ~~~~~~~~~~~~~

@@ -12,7 +12,7 @@ For general details, including installation instructions, see :ref:`Snapcraft ov
 Build environments
 ------------------
 
-When using the `base <snapcraft-overview.md#base-snap>`__ keyword, it is once again possible to clean parts:
+When using the :ref:`base <base-snaps>` keyword, it is once again possible to clean parts:
 
 .. code:: bash
 

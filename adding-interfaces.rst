@@ -7,7 +7,7 @@ Adding interfaces
 
 After :ref:`Defining a command <defining-a-command>`, *interfaces* are the means by which an installed snap gets access to system resources. Interfaces that are required for normal operation are specified at snap build-time within the :ref:`app and service metadata <snapcraft-app-and-service-metadata>` of a snap’s :ref:`snapcraft.yaml <creating-snapcraft-yaml>`.
 
-Many interfaces are automatically connected when a snap is installed, but this ability is dependent on the permissiveness of each particular interface. See `Auto-connections <interface-management.md#adding-interfaces-heading--auto-connections>`__ for more details.
+Many interfaces are automatically connected when a snap is installed, but this ability is dependent on the permissiveness of each particular interface. See :ref:`Auto-connections <interface-management-auto-connections>` for more details.
 
 Other interfaces require the user to make a manual connection, such as :ref:`camera <the-camera-interface>` and :ref:`removable-media <the-removable-media-interface>`. Manual connections enable the user to have a complete control over what kind of access they allow.
 
@@ -56,7 +56,7 @@ In a simplified example, a snap which contains both a server, which connects to 
 Common interfaces
 -----------------
 
-When building a snap, its interfaces will be as unique as its application requirements. You can use the `snappy-debug <debugging-building-snaps.md#adding-interfaces-heading--identifying-missing-interfaces>`__ tool to figure out which interfaces a snap needs.
+When building a snap, its interfaces will be as unique as its application requirements. You can use the :ref:`snappy-debug <debugging-building-snaps-identifying-missing-interfaces>` tool to figure out which interfaces a snap needs.
 
 The `FFmpeg <https://snapcraft.io/ffmpeg>`__ multimedia framework, for example, needs interfaces for audio, USB cameras, network access and the desktop, `among many others <https://github.com/snapcrafters/ffmpeg/blob/master/snap/snapcraft.yaml>`__. The game `Spelunky <https://snapcraft.io/spelunky>`__ needs to `access <https://github.com/snapcrafters/spelunky/blob/master/snap/snapcraft.yaml>`__ OpenGL, the desktop environment and any connected joystick.
 

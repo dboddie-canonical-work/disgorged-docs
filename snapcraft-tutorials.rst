@@ -2,8 +2,8 @@
 
 .. _snapcraft-tutorials:
 
-Snapcraft Tutorials
-===================
+Tutorials
+=========
 
 .. note::
           **NOTE TO EDITORS**

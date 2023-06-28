@@ -15,7 +15,7 @@ The slot is intended to be implemented by a gadget snap and is not provided by t
 
 Requires snapd version *2.43+*.
 
-To use a disk partition, the snap developer must add ``plugs: [ raw-volume ]`` to a snap’s :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific disk partition with an `interface connection <interface-management.md#the-raw-volume-interface-heading--manual-connections>`__.
+To use a disk partition, the snap developer must add ``plugs: [ raw-volume ]`` to a snap’s :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific disk partition with an :ref:`interface connection <interface-management-manual-connections>`.
 
 Use ``snap interface raw-volume`` to see which disk partitions are available on the system for snaps to use:
 

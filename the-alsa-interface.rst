@@ -17,7 +17,7 @@ However, raw access to ALSA devices using this interface can provide a slight pe
 Example
 -------
 
-The musical notation and composition application, `MuseScore <https://snapcraft.io/musescore>`__, is a good example of a snap that uses the ALSA interface.
+The musical notation and composition application, MuseScore_, is a good example of a snap that uses the ALSA interface.
 
 To connect a snap to the ALSA interface, run the following command:
 
@@ -53,3 +53,5 @@ Code examples
 The *snapcraft.yaml* for MuseScore includes an ALSA interface definition: `https://github.com/pachulo/musescore-snap/blob/master/snap/snapcraft.yaml <https://github.com/pachulo/musescore-snap/blob/9d328cb48679542180b257e32131bbf23ea8cba0/snap/snapcraft.yaml#L32>`__
 
 The source code for this interface is in the *snapd* repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/alsa.go
+
+.. _MuseScore: https://snapcraft.io/musescore

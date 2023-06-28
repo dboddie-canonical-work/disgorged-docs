@@ -34,9 +34,9 @@ Refining
 --------
 
 -  :ref:`Reduce the size of your snap <reducing-the-size-of-desktop-snaps>`. This will also speed up how quickly your snap starts!
--  `Switch the compression to ``lzo`` <snapcraft-top-level-metadata.md#desktop-applications-heading--compression>`__ to make your application start up even quicker.
--  Make sure your application has a `logo in the snap store <https://snapcraft.io/docs/store-listing-and-branding#desktop-applications-heading--logo-icon>`__ and `screenshots <https://snapcraft.io/docs/store-listing-and-branding#desktop-applications-heading--screenshots>`__.
--  Include a link to your contact page or bugtracker in the `store metadata <https://snapcraft.io/docs/store-listing-and-branding#desktop-applications-heading--metadata>`__.
+-  `Switch the compression to ``lzo`` <snapcraft-top-level-metadata-compression>`__ to make your application start up even quicker.
+-  Make sure your application has a :ref:`logo in the snap store <store-listing-and-branding-logo-icon>` and :ref:`screenshots <store-listing-and-branding-screenshots>`.
+-  Include a link to your contact page or bugtracker in the :ref:`store metadata <store-listing-and-branding-metadata>`.
 
 Further Information
 -------------------

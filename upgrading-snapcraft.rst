@@ -5,7 +5,7 @@
 Upgrading snapcraft
 ===================
 
-`Snapcraft 3 <https://docs.snapcraft.io/snapcraft-release-notes>`__ contains fundamental improvements to the way snaps are built.
+:ref:`Snapcraft 3 <snapcraft-release-notes>` contains fundamental improvements to the way snaps are built.
 
 In particular, snaps are now built within an isolated build environments that’s tuned for a desired target. This provides API and ABI compatibility for every binary built within the environment, and ensures a build isn’t affected by outside dependencies and system configuration.
 
@@ -30,10 +30,10 @@ Features no longer available with bases
 When the ``base`` keyword is used within ``snapcraft.yaml`` the following, long-deprecated, features are no longer available:
 
 -  *wiki* parts and their corner case quirks, such as allowing ``/`` (forward slash) in parts.
--  ``cleanbuild`` and triggering builds using LXD from certain environment variables. See `Build on LXD </t/build-on-lxd>`__ for more details.
+-  ``cleanbuild`` and triggering builds using LXD from certain environment variables. See :ref:`Build on LXD <build-providers>` for more details.
 -  ``prepare``, ``build`` and ``install`` keywords, used in parts, have been replaced by ``override-build`` and ``snapcraftctl``. This means you can use ``override-`` for ``pull``, ``stage`` and ``prime`` stages too.
 -  the ``snap`` keyword has been superseded by the ``prime`` keyword.
--  when calling build commands through snapcraft, ``--disable-parallel-build`` is no longer available. It can be setup per-part using the `build-attributes <snapcraft-parts-metadata.md#upgrading-snapcraft-heading--build-attributes>`__ property.
+-  when calling build commands through snapcraft, ``--disable-parallel-build`` is no longer available. It can be setup per-part using the :ref:`build-attributes <snapcraft-parts-metadata-build-attributes>` property.
 -  similarly, when calling build commands through snapcraft, ``--use-geoip`` (which affected ``stage-packages``) is no longer available.
 
 Migrating from *deb* to *snap*

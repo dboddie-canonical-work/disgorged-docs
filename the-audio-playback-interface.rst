@@ -15,7 +15,7 @@ Audio recording is enabled with the companion :ref:`audio-record <the-audio-reco
 Example
 -------
 
-The `VLC snap <https://snapcraft.io/vlc>`__ is a good example of an application using the audio-playback interface:
+The `VLC snap`_ is a good example of an application using the audio-playback interface:
 
 .. code:: bash
 
@@ -57,6 +57,9 @@ Developer details
 Code examples
 ~~~~~~~~~~~~~
 
-The snapcraft.yaml for `VLC <https://github.com/videolan/vlc>`__ includes audio-playback configuration: `https://github.com/videolan/vlc/blob/master/extras/package/snap/snapcraft.yaml <https://github.com/videolan/vlc/blob/75bca603749d8bfb7048a84ea811cbdb19447596/extras/package/snap/snapcraft.yaml#L36>`__
+The snapcraft.yaml for VLC_ includes audio-playback configuration: `https://github.com/videolan/vlc/blob/master/extras/package/snap/snapcraft.yaml <https://github.com/videolan/vlc/blob/75bca603749d8bfb7048a84ea811cbdb19447596/extras/package/snap/snapcraft.yaml#L36>`__
 
 The source code for this interface is in the *snapd* repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/audio_playback.go
+
+.. _`VLC snap`: https://snapcraft.io/vlc
+.. _VLC: https://github.com/videolan/vlc

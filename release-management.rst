@@ -5,11 +5,11 @@
 Release management
 ==================
 
-After a snap has been `created </t/creating-a-snap/6799>`__ and `released </t/releasing-your-app/6795>`__ to the `Snap Store <https://snapcraft.io/store>`__, its published revisions can be moved between `channels </t/channels/551>`__ from both the command line and from the `Snap Store web UI </t/using-the-snap-store/12379>`__.
+After a snap has been :ref:`created <creating-a-snap>` and :ref:`released <releasing-your-app>` to the `Snap Store <https://snapcraft.io/store>`__, its published revisions can be moved between `channels <snap-channels_>`_ from both the command line and from the :ref:`Snap Store web UI <using-the-snap-store>`.
 
 Moving a snap between channels helps to manage a user’s expectations in any trade-off between stability in the *stable* channel, and cutting edge features in the *edge* channel (as an arbitrary example). But its also a useful technique for beta testing, or for when a snap needs to revert to a previous revision.
 
-See `Releasing your app </t/releasing-your-app/6795>`__ for details on how to upload and publish a snap if you haven’t done so already.
+See :ref:`Releasing your app <releasing-your-app>` for details on how to upload and publish a snap if you haven’t done so already.
 
 .. _release-management-1:
 
@@ -18,7 +18,7 @@ Release management
 
 The web UI’s release management functionality is equivalent to using ``snapcraft release`` on the command line, and both require that you first login to the store.
 
-To access the Snap Store web UI, go to https://snapcraft.io/store and either `Create a developer account </t/creating-your-developer-account/6760>`__ or login with your developer account credentials.
+To access the Snap Store web UI, go to https://snapcraft.io/store and either :ref:`Create a developer account <create-a-developer-account>` or login with your developer account credentials.
 
 After logging in to the Snap Store and selecting a published snap, click the ‘Releases’ tab to access the release management functions.
 
@@ -74,7 +74,7 @@ You can also move earlier revisions back into a channel:
 
    $ snapcraft release mysnap 5 beta
 
-See `Channels </t/channels/551>`__ for more details on how channels, tracks and branches can be used, or `Publish to a branch </t/publish-to-a-branch/29544>`__ for details on how snap developers can use branches to publish temporary snap releases.
+See `Channels <snap-channels_>`_ for more details on how channels, tracks and branches can be used, or :ref:`Publish to a branch <publish-to-a-branch>` for details on how snap developers can use branches to publish temporary snap releases.
 
 
 .. _heading--distribution:
@@ -97,3 +97,5 @@ The *Distribution* options set whether a snap can be installed in all territorie
 
 
 Activating either of the *Selected territories* fields will open a drop-down list of territories from which to choose from. More than one territory can be added.
+
+_snap-channels: https://snapcraft.io/docs/channels

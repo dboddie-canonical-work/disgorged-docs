@@ -22,7 +22,9 @@ Only the Steam snap may establish this interface. See `Introducing early access 
 Developer details
 -----------------
 
-`Auto-connect <interface-management.md#the-steam-support-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
+:ref:`Auto-connect <interface-management-auto-connections>`: no
+
+:ref:`Super-privileged <super-privileged-interfaces>`: yes
 
 Code examples
 -------------

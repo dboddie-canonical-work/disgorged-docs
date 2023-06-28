@@ -5,12 +5,12 @@
 The crystal plugin
 ==================
 
-The ``crystal`` plugin is useful for parts using the `Crystal <https://crystal-lang.org/>`__ programming language with the `Crystal snap <https://snapcraft.io/crystal>`__. This plugin uses the common plugin keywords as well as those for `sources <snapcraft-parts-metadata.md#the-crystal-plugin-heading--source>`__. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
+The ``crystal`` plugin is useful for parts using the `Crystal <https://crystal-lang.org/>`__ programming language with the `Crystal snap <https://snapcraft.io/crystal>`__. This plugin uses the common plugin keywords as well as those for :ref:`sources <snapcraft-parts-metadata-source>`. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
 
 Plugin-specific features and syntax are dependent on which :ref:`base <base-snaps>` is being used, as outlined below:
 
--  `base: core20 <the-crystal-plugin-heading--core20_>`__
--  `base: core18 \| core <the-crystal-plugin-heading--core18_>`__
+-  `base: core20 <the-crystal-plugin-core20_>`__
+-  `base: core18 \| core <the-crystal-plugin-core18_>`__
 
 For examples, search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+crystal%22&type=Code>`__ for projects already using the plugin.
 
@@ -19,7 +19,7 @@ Brian J. Cardiff, one of Crystal’s developers, attended the 2019 Snapcraft Sum
    ⓘ This is a *snapcraft* plugin. See :ref:`Snapcraft plugins <snapcraft-plugins>` and :ref:`Supported plugins <supported-plugins>` for further details on how plugins are used.
 
 
-.. _the-crystal-plugin-heading--core20:
+.. _the-crystal-plugin-core20:
 
 base: core20
 ~~~~~~~~~~~~
@@ -31,7 +31,7 @@ This plugin uses the following plugin-specific keywords: - **``crystal-channel``
 Requires Snapcraft version *7.0+*.
 
 
-.. _the-crystal-plugin-heading--core18:
+.. _the-crystal-plugin-core18:
 
 base: core18 \| core
 ~~~~~~~~~~~~~~~~~~~~

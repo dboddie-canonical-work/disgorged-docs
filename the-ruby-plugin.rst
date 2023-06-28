@@ -5,7 +5,7 @@
 The ruby plugin
 ===============
 
-The ``ruby`` plugin is useful for `Ruby <https://www.ruby-lang.org/en/>`__-based parts. This plugin uses the common plugin keywords as well as those for `sources <snapcraft-parts-metadata.md#the-ruby-plugin-heading--source>`__. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
+The ``ruby`` plugin is useful for `Ruby <https://www.ruby-lang.org/en/>`__-based parts. This plugin uses the common plugin keywords as well as those for :ref:`sources <snapcraft-parts-metadata-source>`. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
 
    ⓘ This plugin is only available to *core* and *core18* based snaps. See :ref:`Base snaps <base-snaps>` for details.
 

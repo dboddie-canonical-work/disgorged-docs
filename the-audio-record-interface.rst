@@ -15,7 +15,7 @@ This interface is a companion interface to the :ref:`audio-playback <the-audio-p
 Example
 -------
 
-The brilliant `OBS Studio <https://snapcraft.io/obs-studio>`__ is a good example of an application that needs access to your microphone/audio recording hardware.
+`OBS Studio`_ is a good example of an application that needs access to your microphone/audio recording hardware.
 
 .. code:: bash
 
@@ -49,3 +49,5 @@ Code examples
 Mumble is a voice chat platform and a good example of an application using audio-record. Its snapcraft.yaml can be found here: `https://github.com/snapcrafters/mumble/blob/master/snap/snapcraft.yaml <https://github.com/snapcrafters/mumble/blob/b5f1644a72a14cacd17b862cd0265d21d8ce604a/snap/snapcraft.yaml#L21>`__
 
 The source code for this interface is in the *snapd* repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/audio_record.go
+
+.. _`OBS Studio`: https://snapcraft.io/obs-studio

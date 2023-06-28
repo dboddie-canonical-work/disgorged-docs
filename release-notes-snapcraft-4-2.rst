@@ -55,7 +55,7 @@ For a walkthrough on how to work with the plugin and extension, see https://snap
 Ninja file generation with cmake
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-By default, the `cmake plugin <t/the-cmake-plugin/8621>`__ creates a Makefile when used with with :ref:`core20 <base-snaps>` . This release adds the ``cmake-generator`` plugin property to optionally generate of a Ninja file:
+By default, the :ref:`cmake plugin <the-cmake-plugin>` creates a Makefile when used with with :ref:`core20 <base-snaps>` . This release adds the ``cmake-generator`` plugin property to optionally generate of a Ninja file:
 
 .. code:: yaml
 

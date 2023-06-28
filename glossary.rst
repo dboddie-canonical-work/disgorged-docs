@@ -128,7 +128,7 @@ See :ref:`Base snaps <base-snaps>` for more details.
 core18
 ~~~~~~
 
-*core18* is a base snap built from `Ubuntu 18.04 LTS <http://releases.ubuntu.com/18.04/>`__. It’s the current standard base for snap building and is the recommended base for the majority of snaps. It’s what the `snapcraft init <snapcraft-overview.md#glossary-creating-snapcraft>`__ command includes when generating a new project’s template *snapcraft.yaml* .
+*core18* is a base snap built from `Ubuntu 18.04 LTS <http://releases.ubuntu.com/18.04/>`__. It’s the current standard base for snap building and is the recommended base for the majority of snaps. It’s what the :ref:`snapcraft init <snapcraft-overview-creating-snapcraft>` command includes when generating a new project’s template *snapcraft.yaml* .
 
 See :ref:`Base snaps <base-snaps>` for more details.
 
@@ -336,7 +336,7 @@ See `Managing updates <https://snapcraft.io/docs/managing-updates>`__ for furthe
 remote build
 ~~~~~~~~~~~~
 
-Remote build is a feature in `Snapcraft <https://snapcraft.io/docs/snapcraft-overview>`__ (from `Snapcraft 3.9+ </t/snapcraft-release-notes>`__ onwards) that enables anyone to run a multi-architecture snap build process on remote servers using `Launchpad <https://launchpad.net/>`__. With remote build, you can build snaps for hardware you don’t have access to and free up your local machine for other tasks.
+Remote build is a feature in `Snapcraft <https://snapcraft.io/docs/snapcraft-overview>`__ (from :ref:`Snapcraft 3.9+ <snapcraft-release-notes>` onwards) that enables anyone to run a multi-architecture snap build process on remote servers using `Launchpad <https://launchpad.net/>`__. With remote build, you can build snaps for hardware you don’t have access to and free up your local machine for other tasks.
 
 See :ref:`Remote build <remote-build>` for further details.
 
@@ -534,4 +534,4 @@ The version string typically reflects the general release version of a snap’s 
 
 The version string for the `Nextcloud snap <https://snapcraft.io/nextcloud>`__ in its latest/stable channel, for example, tracks the version of the latest stable release, such as ``20.0.7``. The version string for Nextcloud in its latest/edge channel represents its source code branch and build date, such as ``master-2021-03-09``.
 
-See `Getting started <https://snapcraft.io/docs/quickstart-guide>`__ for more details.
+See :ref:`Getting started <snapcraft-quickstart>` for more details.

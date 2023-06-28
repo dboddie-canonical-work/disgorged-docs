@@ -8,7 +8,7 @@ Build and publishing example
 After creating the :ref:`Intermediate snapcraft.yaml example <intermediate-snapcraft-yaml-example>`, the snap is ready to be built. The following is based on the `wethr snap <https://github.com/snapcrafters/wethr/blob/master/snap/snapcraft.yaml>`__.
 
 
-.. _build-and-publishing-example-heading--build:
+.. _build-and-publishing-example-build:
 
 Snap build process
 ------------------
@@ -28,7 +28,7 @@ The virtual machine or container will not be deleted, and will be reused for any
 
 
 
-.. _build-and-publishing-example-heading--publish:
+.. _build-and-publishing-example-publish:
 
 Snap publication process
 ------------------------
@@ -51,7 +51,7 @@ Once the first two steps are complete, the developer can upload the snap to the 
    snapcraft upload --release=<channel> <file>.snap
 
 
-.. _build-and-publishing-example-heading--channels:
+.. _build-and-publishing-example-channels:
 
 Snap Store channels
 -------------------
@@ -90,7 +90,7 @@ Branches are optional. They allow the creation of short-lived sequences of snaps
 Branch names convey their purpose, such as fix-for-bug123, but the name isn’t exposed in the Snap Store. Instead, they can be tracked by developers and users who know the exact name. After 30 days with no further updates, a branch will be closed automatically.
 
 
-.. _build-and-publishing-example-heading--next:
+.. _build-and-publishing-example-next:
 
 Next steps
 ----------

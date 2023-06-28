@@ -2,8 +2,8 @@
 
 .. _snapcraft-reference:
 
-Snapcraft Reference
-===================
+Reference
+=========
 
 .. note::
           **NOTE TO EDITORS**
@@ -53,6 +53,7 @@ Finally, for a better understanding of how Snapcraft works, and how it can be us
    snapcraft-advanced-grammar
    snapcraft-and-extended-security-maintenance
    snapcraft-app-and-service-metadata
+   snapcraft-authentication-options
    snapcraft-linters
    snapcraft-parts-metadata
    snapcraft-plugins

@@ -7,7 +7,7 @@ Create a developer account
 
 To upload your snap to the `Snap Store <https://snapcraft.io/store>`__ and access its management web interface, you will need a developer account. If you don’t already have one, creating one is easy.
 
-.. _create-a-developer-account-heading--details:
+.. _create-a-developer-account-details:
 
 Ubuntu One setup
 ----------------
@@ -30,7 +30,7 @@ Finally, you will be asked to review the terms of the developer programme. If yo
 Once you have accepted the terms, your developer account is immediately ready to start publishing snaps. The details of your account can be reviewed at any time from the menu on the top right.
 
 
-.. _create-a-developer-account-heading--developer-id:
+.. _create-a-developer-account-developer-id:
 
 Developer account ID
 --------------------
@@ -82,7 +82,7 @@ Following a successful login, the ``snapcraft whoami`` command reveals your *dev
 In the example output above, the developer-id is ``xSfWKGdLoQBoQx88vIM1MpbFNMq53t1f``.
 
 
-.. _create-a-developer-account-heading--ssh-keys:
+.. _create-a-developer-account-ssh-keys:
 
 Adding SSH keys to your account
 -------------------------------

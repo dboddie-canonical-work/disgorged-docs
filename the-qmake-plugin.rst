@@ -9,19 +9,19 @@ The ``qmake`` plugin is useful when building `qmake <http://doc.qt.io/qt-5/qmake
 
 Qmake-based projects typically use `Qt <https://www.qt.io/>`__, although not always, and are built using *.pro* files.
 
-This plugin uses the common plugin keywords as well as those for `sources <snapcraft-parts-metadata.md#the-qmake-plugin-heading--source>`__. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
+This plugin uses the common plugin keywords as well as those for :ref:`sources <snapcraft-parts-metadata-source>`. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
 
 Additional features and syntax are dependent on which :ref:`base <base-snaps>` is being used, as outlined below:
 
--  `base: core20 <the-qmake-plugin-heading--core20_>`__
--  `base: core18 \| core <the-qmake-plugin-heading--core18_>`__
+-  `base: core20 <the-qmake-plugin-core20_>`__
+-  `base: core18 \| core <the-qmake-plugin-core18_>`__
 
 For examples, search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+qmake%22&type=Code>`__ for projects already using the plugin.
 
    ⓘ This is a *snapcraft* plugin. See :ref:`Snapcraft plugins <snapcraft-plugins>` and :ref:`Supported plugins <supported-plugins>` for further details on how plugins are used.
 
 
-.. _the-qmake-plugin-heading--core20:
+.. _the-qmake-plugin-core20:
 
 base: core20
 ~~~~~~~~~~~~
@@ -32,7 +32,7 @@ This plugin uses the following plugin-specific keywords:
 -  **``qmake-project-file``** (string) the qmake project file to use. This is usually only needed if qmake can not determine what project file to use on its own.
 
 
-.. _the-qmake-plugin-heading--core18:
+.. _the-qmake-plugin-core18:
 
 base: core18 \| core
 ~~~~~~~~~~~~~~~~~~~~

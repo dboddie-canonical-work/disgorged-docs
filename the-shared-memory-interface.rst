@@ -17,7 +17,7 @@ Requires snapd version *2.54+* .
 --------------
 
 
-.. _the-shared-memory-interface-heading--dev-details:
+.. _the-shared-memory-interface-dev-details:
 
 Developer details
 -----------------
@@ -25,7 +25,7 @@ Developer details
 +--------------------------------------------------------------------------------------------------+-----------------------+----------------------------------------------------------------------------+
 | Permissions                                                                                      |                       |                                                                            |
 +==================================================================================================+=======================+============================================================================+
-| `Auto-connect <interface-management.md#the-shared-memory-interface-heading--auto-connections>`__ | **no** by default     | **yes** when ``private`` is enabled, or with snaps from the same publisher |
+| :ref:`Auto-connect <interface-management-auto-connections>`                                      | **no** by default     | **yes** when ``private`` is enabled, or with snaps from the same publisher |
 +--------------------------------------------------------------------------------------------------+-----------------------+----------------------------------------------------------------------------+
 | :ref:`Super-privileged <super-privileged-interfaces>`                                            | **no** for plugs      | **yes** for slots                                                          |
 +--------------------------------------------------------------------------------------------------+-----------------------+----------------------------------------------------------------------------+

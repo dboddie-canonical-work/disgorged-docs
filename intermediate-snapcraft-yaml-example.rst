@@ -63,7 +63,7 @@ The metadata, base, and confinement declarations are rather similar to our basic
 -  The wethr snap uses strict confinement instead of devmode.
 
 
-.. _intermediate-snapcraft-yaml-example-heading--adopt:
+.. _intermediate-snapcraft-yaml-example-adopt:
 
 adopt-info
 ----------
@@ -89,7 +89,7 @@ In this example, the wethr snap application version is obtained from the Git rep
 Alternatively, in this particular example, the version field could also be manually defined, e.g.: version: ‘1.5’.
 
 
-.. _intermediate-snapcraft-yaml-example-heading--grade:
+.. _intermediate-snapcraft-yaml-example-grade:
 
 grade
 -----
@@ -101,7 +101,7 @@ The optional grade keyword defines the quality level of the snap. Two levels are
    grade: stable
 
 
-.. _intermediate-snapcraft-yaml-example-heading--architectures:
+.. _intermediate-snapcraft-yaml-example-architectures:
 
 Architectures
 -------------
@@ -116,7 +116,7 @@ This section defines the target :ref:`architectures <architectures>` for which t
    - build-on: arm64
 
 
-.. _intermediate-snapcraft-yaml-example-heading--build:
+.. _intermediate-snapcraft-yaml-example-build:
 
 Build definition
 ----------------
@@ -124,7 +124,7 @@ Build definition
 While largely similar to the yt-dlp example, the wethr application does introduce some notable differences in the build definition section. We will discuss the parts section first.
 
 
-.. _intermediate-snapcraft-yaml-example-heading--parts:
+.. _intermediate-snapcraft-yaml-example-parts:
 
 The parts definition
 ~~~~~~~~~~~~~~~~~~~~
@@ -167,7 +167,7 @@ The wethr snap also only has one part. However, here, it is built using the npm 
 -  **build-packages**: defines the list of tools and libraries that are required to successfully build or compile the part. The build packages are obtained from the repository archives that match the snap base, and need to be written in the syntax that can be correctly interpreted by the apt package manager. For instance, a foo build package from the Ubuntu 20.04 archive would be installed (apt install foo) in the snap build environment during the build lifecycle. In this case, the snap needs the git tool to retrieve the sources from the Git repository (GitHub) and the sed tool to perform the string search and replace action on the commit tag.
 
 
-.. _intermediate-snapcraft-yaml-example-heading--apps:
+.. _intermediate-snapcraft-yaml-example-apps:
 
 The apps definition
 ~~~~~~~~~~~~~~~~~~~

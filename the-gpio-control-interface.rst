@@ -9,7 +9,9 @@ The gpio-control interface
 
 This interface can potentially impact the system and other snaps, and allows privileged access to hardware. See :ref:`The gpio interface <the-gpio-interface>` to access a specific pin.
 
-`Auto-connect <interface-management.md#the-gpio-control-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
+:ref:`Auto-connect <interface-management-auto-connections>`: no
+
+:ref:`Super-privileged <super-privileged-interfaces>`: yes
 
 Requires snapd version *2.41+*.
 

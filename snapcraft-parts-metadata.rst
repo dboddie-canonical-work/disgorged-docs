@@ -37,7 +37,7 @@ after
 
 Type: ``list[string]``
 
-Ensures that all the <part-names> listed in ``after`` are staged before this part begins its `lifecycle <parts-lifecycle-steps>`__.
+Ensures that all the <part-names> listed in ``after`` are staged before this part begins its :ref:`lifecycle <parts-lifecycle-steps>`.
 
 
 .. _snapcraft-parts-metadata-build-attributes:
@@ -144,7 +144,7 @@ Type: ``multiline string``
 
 Replaces a plugin’s default *build* process with a script.
 
-The shell script defined here replaces the `build <parts-lifecycle-steps>`__ step of the plugin, defined in ``parts.<part-name>.plugin``. The working directory is the base build directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``. A set of :ref:`Environment Variables <environment-variables>` will be available to the script.
+The shell script defined here replaces the :ref:`build <parts-lifecycle-steps>` step of the plugin, defined in ``parts.<part-name>.plugin``. The working directory is the base build directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``. A set of :ref:`Environment Variables <environment-variables>` will be available to the script.
 
 To run Snapcraft’s original build implementation from within *override-build*, run ``snapcraftctl build``. This can be run before or after any custom script or omitted entirely.
 
@@ -158,7 +158,7 @@ Type: ``multiline string``
 
 Replaces a plugin’s default *prime* process with a script.
 
-The shell script defined here replaces the `prime <parts-lifecycle-steps>`__ step of the plugin, defined in ``parts.<part-name>.plugin``. The working directory is the base prime directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``. A set of :ref:`Environment Variables <environment-variables>` will be available to the script.
+The shell script defined here replaces the :ref:`prime <parts-lifecycle-steps>` step of the plugin, defined in ``parts.<part-name>.plugin``. The working directory is the base prime directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``. A set of :ref:`Environment Variables <environment-variables>` will be available to the script.
 
 To run Snapcraft’s original prime step implementation from within *override-prime*, run ``snapcraftctl prime``. This can be run before or after any custom script or omitted entirely.
 
@@ -172,7 +172,7 @@ Type: ``multiline string``
 
 Replaces a plugin’s default *pull* process with a script.
 
-The shell script defined here replaces the `pull <parts-lifecycle-steps>`__ step of the plugin, defined in ``parts.<part-name>.plugin``. The working directory is the base pull directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``. A set of :ref:`Environment Variables <environment-variables>` will be available to the script.
+The shell script defined here replaces the :ref:`pull <parts-lifecycle-steps>` step of the plugin, defined in ``parts.<part-name>.plugin``. The working directory is the base pull directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``. A set of :ref:`Environment Variables <environment-variables>` will be available to the script.
 
 To run Snapcraft’s original pull stage implementation from within *override-pull*, run ``snapcraftctl pull``. This can be run before or after any custom script or omitted entirely.
 
@@ -186,7 +186,7 @@ Type: ``multiline string``
 
 Replaces a plugin’s default *stage* process with a script.
 
-The shell script defined here replaces the `stage <parts-lifecycle-steps>`__ step of the plugin, defined in ``parts.<part-name>.plugin``. The working directory is the base stage directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``. A set of :ref:`Environment Variables <environment-variables>` will be available to the script.
+The shell script defined here replaces the :ref:`stage <parts-lifecycle-steps>` step of the plugin, defined in ``parts.<part-name>.plugin``. The working directory is the base stage directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``. A set of :ref:`Environment Variables <environment-variables>` will be available to the script.
 
 To run Snapcraft’s original stage implementation from within *override-stage*, run ``snapcraftctl stage``. This can be run before or after any custom script or omitted entirely.
 
@@ -197,7 +197,7 @@ Type: ``list[string]``
 
 Defines content to adopt when using external metadata.
 
-Each entry is a relative path to a :ref:`supported metadata file <using-external-metadata>` from the part source, build or install directory (`SNAPCRAFT_PART_SRC, SNAPCRAFT_PART_BUILD, SNAPCRAFT_PART_INSTALL <parts-lifec-parts-directories>`__).
+Each entry is a relative path to a :ref:`supported metadata file <using-external-metadata>` from the part source, build or install directory (:ref:`SNAPCRAFT_PART_SRC, SNAPCRAFT_PART_BUILD, SNAPCRAFT_PART_INSTALL <parts-lifecycle-parts-directories>`).
 
 See :ref:`Using external metadata <using-external-metadata>` for more details.
 
@@ -215,7 +215,7 @@ prepare (deprecated)
 
 Type: ``multiline string``
 
-Runs a script before the plugin’s `build <parts-lifecycle-steps>`__ step.
+Runs a script before the plugin’s :ref:`build <parts-lifecycle-steps>` step.
 
 The script is run before the build step defined for ``parts.<part-name>.plugin`` starts. The working directory is the base build directory for the given part. The defined script is run with ``/bin/sh`` and ``set -e``. A set of :ref:`Environment Variables <environment-variables>` will be available to the script.
 
@@ -226,7 +226,7 @@ prime
 
 Type: ``list[string]``
 
-A list of files from <part-name> to `prime <parts-lifecycle-steps>`__.
+A list of files from <part-name> to :ref:`prime <parts-lifecycle-steps>`.
 
 Rules applying to the list here are the same as those of filesets. Referencing of fileset keys is done with a ``$`` prefixing the fileset key, which will expand with the value of such key.
 

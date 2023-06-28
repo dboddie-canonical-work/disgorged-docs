@@ -28,7 +28,7 @@ These changes are now applicable when switching to ``core22``:
    -  ``craftctl set version=<value>`` replaces ``snapcraftctl set-version <value>``
 
 -  ``CRAFT_*`` environment variables are defined during step execution, replacing ``SNAPCRAFT_*`` variables.
--  ``try`` has been removed from `advanced grammar <t/snapcraft-advanced-grammar/8349>`__. This enables a more predictable planning phase without requiring an execution environment to attest what is tried. Grammar has now been generalised enough to allow for it to be added seamlessly to all snapcraft supported keywords.
+-  ``try`` has been removed from :ref:`advanced grammar <snapcraft-advanced-grammar>`. This enables a more predictable planning phase without requiring an execution environment to attest what is tried. Grammar has now been generalised enough to allow for it to be added seamlessly to all snapcraft supported keywords.
 -  An error is now generated when duplicate keys are used in snapcraft.yaml.
 -  Snapcraft now makes use of the global environment keyword instead of command-chain (which allows for easy overriding)
 

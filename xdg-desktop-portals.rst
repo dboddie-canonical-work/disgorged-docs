@@ -16,14 +16,14 @@ Portals provide a range of common features to applications, including:
 -  Showing notifications
 -  Taking screenshots and screencasts
 
-See the `Portal API reference <https://flatpak.github.io/xdg-desktop-portal/portal-docs.html>`__ for all supported portals.
+See the `Portal API reference`_ for all supported portals.
 
-   ⓘ Portals originated from the `Flatpak <https://flatpak.github.io/>`__ project, but are now a common Linux desktop standard with support from GNOME, KDE and Snapcraft. They are even used outside of sandboxes to provide a standardised API to common desktop features such as `screenshots and screen casts on wayland <https://github.com/emersion/xdg-desktop-portal-wlr/wiki/FAQ>`__.
+   ⓘ Portals originated from the `Flatpak`_ project, but are now a common Linux desktop standard with support from GNOME, KDE and Snapcraft. They are even used outside of sandboxes to provide a standardised API to common desktop features such as `screenshots and screen casts on wayland <https://github.com/emersion/xdg-desktop-portal-wlr/wiki/FAQ>`__.
 
 How to use portals in your snap
 -------------------------------
 
-1. **Use the Portal API’s in your application** Unlike regular :ref:`Snapcraft interfaces <supported-interfaces>`, *portals require applications to use a new API* in order to access resources. Toolkits like GTK 3 and Qt5, however, provide transparent support for portals. See `Portal support in GTK 3 <https://docs.flatpak.org/en/latest/portals-gtk.html>`__ or `Portal support in Qt5 and KDE <https://docs.flatpak.org/en/latest/portals-qt.html>`__ for detailed information. If your application is not using one of those toolkits, you will need to use the Portals API directly. See `the Portals API documentation <https://flatpak.github.io/xdg-desktop-portal/portal-docs.html>`__ for more information.
+1. **Use the Portal API’s in your application** Unlike regular :ref:`Snapcraft interfaces <supported-interfaces>`, *portals require applications to use a new API* in order to access resources. Toolkits like GTK 3 and Qt5, however, provide transparent support for portals. See `Portal support in GTK 3`_ or `Portal support in Qt5 and KDE`_ for detailed information. If your application is not using one of those toolkits, you will need to use the Portals API directly. See the `Portals API documentation`_ for more information.
 
 2. **Add the ``desktop`` interface to your snap** This interface gives your snap access to the portals.
 
@@ -37,7 +37,7 @@ How to use portals in your snap
 
 ..
 
-   ⓘ Both the `gnome-3-34 extension <https://snapcraft.io/docs/gnome-3-34-extension>`__ and the `kde-neon extension <https://snapcraft.io/docs/kde-neon-extension>`__ automatically enable portal support for GTK 3 and Qt applications on GTK-based desktops. If your snap uses either extension, you only need to do step 1.
+   ⓘ Both the :ref:`gnome-3-34 extension <the-gnome-3-34-extension>` and the :ref:`kde-neon extension <the-kde-neon-extension>` automatically enable portal support for GTK 3 and Qt applications on GTK-based desktops. If your snap uses either extension, you only need to do step 1.
 
 
 .. _xdg-desktop-portals-heading--portal-vs-home:
@@ -70,3 +70,9 @@ Known Limitations
 ..
 
    ⓘ See :ref:`Desktop applications <desktop-applications>` for more information on how to snap a desktop application.
+
+.. _`Portal support in GTK 3`: https://docs.flatpak.org/en/latest/portals-gtk.html
+.. _`Portal support in Qt5 and KDE`: https://docs.flatpak.org/en/latest/portals-qt.html
+.. _`Portal API reference`: https://flatpak.github.io/xdg-desktop-portal/portal-docs.html
+.. _`Flatpak`: https://flatpak.github.io/
+.. _`Portals API documentation`: https://flatpak.github.io/xdg-desktop-portal/portal-docs.html

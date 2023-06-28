@@ -21,12 +21,14 @@ Virtual machines rely on KVM for virtualisation acceleration and the vhost frame
 --------------
 
 
-.. _the-microstack-support-interface-heading--dev-details:
+.. _the-microstack-support-interface-dev-details:
 
 Developer details
 -----------------
 
-`Auto-connect <interface-management.md#the-microstack-support-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
+:ref:`Auto-connect <interface-management-auto-connections>`: no
+
+:ref:`Super-privileged <super-privileged-interfaces>`: yes
 
 This interface allows MicroStack to operate by allowing the necessary system calls to be used by the following services: - libvirt - qemu - qemu-img - Nova - Neutron - Keystone - Glance - Cinder
 

@@ -74,7 +74,7 @@ After installing the snap and running GDB, the symbols will be located and the s
    [Inferior 1 (process 153259) exited normally]
    (gdb) quit
 
-See `Collecting debug symbols <https://snapcraft.io/docs/collecting-debug-symbols>`__ for the forum discussion related to how snaps might bundle debug symbols.
+See `Collecting debug symbols <https://forum.snapcraft.io/t/collecting-debug-symbols/7017>`__ for the forum discussion related to how snaps might bundle debug symbols.
 
 
 .. _using-gdb-and-gdbserver-heading--gdbserver:
@@ -157,7 +157,7 @@ Remote debugging with VS Code
 
 Most IDEs can be used to visually debug snaps running *gdbserver* with either ``gdb`` or ``gdb-multiarch`` packages. An IDE needs to be configured to access the target host gdbserver session rather than use its default debug routine, and optionally, to automatically the execution of the snap with gdbserver before the debugger starts.
 
-To create a configuration for Microsoft’s `Visual Studio Code (VS Code) <https://code.visualstudio.com/>`__ , for example, you will need a workspace with local access to the same source code as the snap, and the executable, along with the VS Code *GDB Debug* extension. The executable can be extracted form the snap package with the ``unsquashfs <snap name>`` command.
+To create a configuration for Microsoft’s `Visual Studio Code (VS Code) <vscode_>`_ , for example, you will need a workspace with local access to the same source code as the snap, and the executable, along with the VS Code *GDB Debug* extension. The executable can be extracted form the snap package with the ``unsquashfs <snap name>`` command.
 
 In VS Code, open your workspace and select *Run and Debug* from the primary side bar and click ``create a launch.json file``, then select *GDB* from the list of debuggers:
 
@@ -204,4 +204,3 @@ Press the small *play* icon to connect to an already running snap gdbserver. You
 
 .. figure:: https://assets.ubuntu.com/v1/430a49e2-vscode_03.png
    :alt: VS Code debugging a snap
-

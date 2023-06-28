@@ -158,7 +158,7 @@ Parts define how to build your app. Parts can be anything: programs, libraries, 
          - --buildtype=release
        parse-info: [usr/share/metainfo/org.gnome.TextEditor.appdata.xml]
 
-``parse-info`` points to the AppStream metadata file. Since we used ``adopt-info: gnome-text-editor`` in the top-level metadata, the AppStream file of the ``gnome-text-editor`` part will be used to fill in the ``summary``, ``description`` and ``icon`` of this snap. See `Using AppStream metadata <using-external-metadata.md#gtk4-applications-heading--appstream>`__ for more information.
+``parse-info`` points to the AppStream metadata file. Since we used ``adopt-info: gnome-text-editor`` in the top-level metadata, the AppStream file of the ``gnome-text-editor`` part will be used to fill in the ``summary``, ``description`` and ``icon`` of this snap. See :ref:`Using AppStream metadata <meta-appstream>` for more information.
 
 Slots
 ~~~~~

@@ -15,7 +15,7 @@ On Linux distributions `with snap support <https://snapcraft.io/docs/installing-
 
 The ``--classic`` argument is required because snapcraft uses :ref:`classic confinement <snap-confinement>`.
 
-Snapcraft can also be installed and run on Apple’s macOS. See `Install snapcraft on macOS <installing-snapcraft.md#snapcraft-overview-heading--macos>`__ for details.
+Snapcraft can also be installed and run on Apple’s macOS. See :ref:`installing-snapcraft-macos` for details.
 
 See below for a general overview of Snapcraft’s capabilities, and see :ref:`Creating a snap <creating-a-snap>` for a more detailed look at the process, alongside a selection of self-contained examples for some popular languages and frameworks, including :ref:`Go <go-applications>`, :ref:`Python <python-apps>` and :ref:`C/C++ <c-c-applications>`.
 
@@ -28,7 +28,7 @@ At the heart of the snapcraft build process is a file called :ref:`snapcraft.yam
 
 :ref:`Snapcraft 3.0 <snapcraft-release-notes>`, and later releases, are designed to use *bases* (see :ref:`Base snaps <base-snaps>`) and `LXD <https://linuxcontainers.org/lxd/introduction/>`__ or `Multipass <https://multipass.run/>`__ to both simplify the build process and to confine the build environment within a virtual machine. Confining the build in this way isolates potentially conflicting libraries and other files from your host system, and vice-versa.
 
-Snapcraft offers a variety of options when using LXD and Multipass. See :ref:`Build options <build-options>` for details on build options and `build providers <t/build-on-lxd/4157>`__ for details on interacting with LXD and Multipass.
+Snapcraft offers a variety of options when using LXD and Multipass. See :ref:`Build options <build-options>` for details on build options and :ref:`build providers <build-providers>` for details on interacting with LXD and Multipass.
 
 
 .. _snapcraft-overview-creating-snapcraft:

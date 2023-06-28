@@ -5,7 +5,7 @@
 The snap-refresh-control interface
 ==================================
 
-The ``snap-refresh-control`` interface allows extended control, via `snapctl <https://snapcraft.io/docs/using-the-snapctl-tool>`__, of refreshes targeting the snap.
+The ``snap-refresh-control`` interface allows extended control, via :ref:`snapctl <using-the-snapctl-tool>`, of refreshes targeting the snap.
 
 **This interface and the full set of features it requires to function are currently under development.**
 
@@ -17,12 +17,14 @@ The ``snap-refresh-control`` interface allows extended control, via `snapctl <ht
 --------------
 
 
-.. _the-snap-refresh-control-interface-heading--dev-details:
+.. _the-snap-refresh-control-interface-dev-details:
 
 Developer details
 -----------------
 
-`Auto-connect <interface-management.md#the-snap-refresh-control-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
+:ref:`Auto-connect <interface-management-auto-connections>`: no
+
+:ref:`Super-privileged <super-privileged-interfaces>`: yes
 
 ``snap-refresh-control`` is a marker interface (with no associated AppArmor or Seccomp rules).
 

@@ -5,25 +5,25 @@
 Store listing and branding
 ==========================
 
-The store listing page of your application is an important tool to increase its visibility and discoverability. This listing is shown in the online `Snap Store <https://snapcraft.io/store>`__, the `desktop app <https://snapcraft.io/snap-store>`__ and in various other graphical store frontends such as GNOME Software and KDE Discover.
+The store listing page of your application is an important tool to increase its visibility and discoverability. This listing is shown in the online `Snap Store`_, the `Snap Store desktop app`_ and in various other graphical store frontends such as GNOME Software and KDE Discover.
 
--  `Metadata <heading--metadata_>`__ such as a description and contact information helps users understand what your application has to offer and helps direct feedback to the right channels.
--  `Media <heading--media_>`__, including screenshots, a video and an icon, show off application functionality, design and brand.
--  Create a `banner <heading--banner_>`__ to help your application get featured in the store.
--  For larger projects and ISVs, it might be useful to `Create a brand account <https://snapcraft.io/docs/t/creating-snap-store-brand-accounts/6271>`__ in the name of the project or company.
+-  `Metadata <store-listing-and-branding-metadata_>`__ such as a description and contact information helps users understand what your application has to offer and helps direct feedback to the right channels.
+-  `Media <store-listing-and-branding-media_>`__, including screenshots, a video and an icon, show off application functionality, design and brand.
+-  Create a `banner <store-listing-and-branding-banner_>`__ to help your application get featured in the store.
+-  For larger projects and ISVs, it might be useful to `Create a brand account`_ in the name of the project or company.
 
 
-.. _heading--metadata:
+.. _store-listing-and-branding-metadata:
 
 Metadata
 --------
 
-A snap’s most important descriptive metadata, initially taken from its `snapcraft.yaml </t/the-snapcraft-format/8337>`__, can be conveniently edited from the Snap Store’s web UI. The following fields are vitally important to help users find what they’re looking for:
+A snap’s most important descriptive metadata, initially taken from its :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>`, can be conveniently edited from the Snap Store’s web UI. The following fields are vitally important to help users find what they’re looking for:
 
 -  ensure the **Title** is accurate and uses the correct case and spacing
 -  write a 79 character **Summary** to pitch the application to people browsing the store.
 -  Select up to two store **Categories** where your application will be featured.
--  Use `Markdown <https://commonmark.org/help/>`__ to format the **Description** to accurately describe the application and highlight it’s most important features. The following syntax is supported:
+-  Use `Markdown`_ to format the **Description** to accurately describe the application and highlight it’s most important features. The following syntax is supported:
 
    -  Bold: ``**Foo**``
    -  URLs: ``https://foo.bar``
@@ -38,7 +38,7 @@ Under **Website and contact links**, include a link to the application website o
 The Snap Advocacy team love accurate and detailed metadata because they can create effective social campaigns and blog posts to highlight an application. Similarly, it can help to provide a brief functional overview in the *Description* and provide links for further detailed documentation.
 
 
-.. _heading--media:
+.. _store-listing-and-branding-media:
 
 Media
 -----
@@ -46,7 +46,7 @@ Media
 Second only in importance to the quality of a snap’s metadata is the addition screenshots and other media to allow prospective users to preview the application.
 
 
-.. _heading--logo-icon:
+.. _store-listing-and-branding-logo-icon:
 
 Logo and icon
 ~~~~~~~~~~~~~
@@ -61,10 +61,10 @@ Icon/logo requirements:
 
 ..
 
-   ℹ this icon will only be used in graphical stores frontends, *not* the desktop menu and dock. Those use the icon specified in the desktop entry files: `Desktop files for menu integration <https://snapcraft.io/docs/desktop-menu-icon-support>`__.
+   ℹ this icon will only be used in graphical stores frontends, *not* the desktop menu and dock. Those use the icon specified in the desktop entry files: :ref:`desktop-files-for-menu-integration`.
 
 
-.. _heading--screenshots:
+.. _store-listing-and-branding-screenshots:
 
 Screenshots
 ~~~~~~~~~~~
@@ -87,7 +87,7 @@ Screenshot requirements:
    ℹ PNG-formatted icons, logos and screenshots look better than JPEG.
 
 
-.. _heading--banner:
+.. _store-listing-and-branding-banner:
 
 Banner and banner icon
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -103,7 +103,7 @@ Each week, the Snap Advocacy team will choose an application as the No.1 feature
 Banner requirements:
 
 -  image formats: JPEG & PNG files
--  min resolution: 720 x 240 pixels For best results on `the store <https://snapcraft.io/store>`__ we recommend a resolution of 1920 x 640 pixels or greater
+-  min resolution: 720 x 240 pixels For best results on the `Snap Store`_ we recommend a resolution of 1920 x 640 pixels or greater
 -  max resolution: 4320 x 1440 pixels
 -  aspect ratio: 3:1
 -  file size limit: 2MB

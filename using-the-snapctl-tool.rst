@@ -7,9 +7,9 @@ Using the snapctl tool
 
 The ``snapctl`` tool is bundled with *snapd* to provide specific environmental feedback and a limited set of controls from **within the context** of a snap’s execution environment in relation to snapd. It can be used, for example, to retrieve and set snap configuration options, check the status of a running snap, and reboot an Ubuntu Core 20 environment.
 
-``snapctl`` is typically run from a script *within a snap*, rather than on the host system. These scripts are used by snap developers to implement `hooks </t/supported-snap-hooks/3795>`__, or from within `snapcraft.yaml </t/creating-snapcraft-yaml/11666>`__, to augment a snap’s execution environment.
+``snapctl`` is typically run from a script *within a snap*, rather than on the host system. These scripts are used by snap developers to implement :ref:`hooks <supported-snap-hooks>`, or from within :ref:`snapcraft.yaml <creating-snapcraft-yaml>`, to augment a snap’s execution environment.
 
-For details on using *snapctl* to add user options to a snap, see `Adding snap configuration </t/adding-snap-configuration/15246>`__ and see `Creating a snap </t/creating-a-snap/6799>`__ for an overview of the snap development process.
+For details on using *snapctl* to add user options to a snap, see :ref:`Adding snap configuration <adding-snap-configuration>` and see :ref:`creating-a-snap` for an overview of the snap development process.
 
 From within a snap, *snapctl* can do the following:
 
@@ -38,7 +38,7 @@ From within a snap, *snapctl* can do the following:
 Configuration options
 ---------------------
 
-A snap’s configuration options can be queried and altered with the ``snapctl get``, ``snapctl set`` and ``snapctl unset`` commands. These work very similar to the analogous `snap get/set/.. commands </t/managing-snap-configuration/510>`__ outside the snap. The main difference is that using these commands from within a snap will *not* trigger :ref:`the configure hook <supported-snap-hooks-the-configure-hook>`.
+A snap’s configuration options can be queried and altered with the ``snapctl get``, ``snapctl set`` and ``snapctl unset`` commands. These work very similar to the analogous `snap get/set/.. commands <managing-snap-configuration_>`__ outside the snap. The main difference is that using these commands from within a snap will *not* trigger :ref:`the configure hook <supported-snap-hooks-the-configure-hook>`.
 
 The ``snapctl`` command uses the same get, set and unset syntax as the snap command:
 
@@ -158,7 +158,7 @@ This behaviour can be easily used within a hook, for example:
 
 Snaps can only query their own plugs and slots because the snap name is implicit and implied by the snapctl execution context.
 
-See `Snapcraft interfaces </t/snapcraft-interfaces/13123>`__ for more details on manipulating interfaces from a snap.
+See :ref:`adding-interfaces` for more details on manipulating interfaces from a snap.
 
 
 .. _snapctl-tool-model:
@@ -168,7 +168,7 @@ Model information
 
 (from *snapd 2.56+* onwards)
 
-A `model assertion <https://ubuntu.com/core/docs/reference/assertions/model>`__ contains the fundamental definition of a snap-based device, such as a device running `Ubuntu Core <https://ubuntu.com/core/>`__.
+A `model assertion <https://ubuntu.com/core/docs/reference/assertions/model>`__ contains the fundamental definition of a snap-based device, such as a device running `Ubuntu Core`_.
 
 The *snap model* command can be used to return to the active model identification for the device, and ``snapctl model`` returns the equivalent to ``snap model --verbose`` from within a snap.
 
@@ -208,7 +208,7 @@ The raw assertion can also be requested with the ``--assertion`` flag.
 Mount control
 -------------
 
-When the `mount-control interface </t/the-mount-control-interface/28953/6>`__ is connected, a snapped application or service can use the *mount* command to mount transient (non-persistent) and persistent filesystem mount points:
+When the :ref:`mount-control interface <the-mount-control-interface>` is connected, a snapped application or service can use the *mount* command to mount transient (non-persistent) and persistent filesystem mount points:
 
 .. code:: bash
 
@@ -226,7 +226,7 @@ A corresponding *umount* command can be used to remove a mount point:
 
    snapctl umount </path/to/mount/point>
 
-See `mount-control interface </t/the-mount-control-interface/28953>`__ for further details on permitted filesystems and mount options.
+See :ref:`mount-control interface <the-mount-control-interface>` for further details on permitted filesystems and mount options.
 
 
 .. _snapctl-tool-reboot:
@@ -248,7 +248,7 @@ The gate-auto-refresh hook is executed by snapd for every snap that will be upda
 
 This hook is capable of executing the *snapctl refresh* command with 3 specific arguments, ``hold``, ``proceed`` and ``pending``:
 
-This feature is currently considered experimental. See `Refresh control </t/refresh-control/27213>`__ for further details.
+This feature is currently considered experimental. See `Refresh control <refresh-control_>`_ for further details.
 
 
 .. _snapctl-tool-refresh-hold:
@@ -305,7 +305,7 @@ If the hook fails with an error, snapd assumes “hold” as long as the maximum
 Services
 --------
 
-As with configuration options (see above), snapctl sub-commands for managing services are the same as those used by the snap command. See `Services and daemons </t/services-and-daemons/12601>`__ for further details.
+As with configuration options (see above), snapctl sub-commands for managing services are the same as those used by the snap command. See :ref:`services-and-daemons` for further details.
 
 To query the startup and running state of a service, for example, use ``snapctl services <service-name>``:
 
@@ -362,3 +362,6 @@ The following keys and values can potentially be returned:
 -  **seed-loaded**: ``true`` Set when the installation of seeded snaps for the model has finished.
 
 -  **factory**: ``true``\  Only possible on a `UC20+ <https://ubuntu.com/core/docs/uc20>`__ system in install mode (``system-mode: install``) with the factory image hint set. This value can be used to govern whether factory-only resources may be available. See `Factory image hint <https://ubuntu.com/core/docs/uc20/installation-process#heading--factory>`__ for more details.
+
+.. _managing-snap-configuration: https://snapcraft.io/docs/configuration-in-snaps
+.. _refresh-control: https://forum.snapcraft.io/t/refresh-control/27213

@@ -26,7 +26,7 @@ You can use a pipe on the first line to declare a multi-line script:
          <shell script>
 
 
-.. _override-build-steps-heading--overriding-the-pull-step:
+.. _override-build-steps-overriding-the-pull-step:
 
 Overriding the pull step
 ------------------------
@@ -49,7 +49,7 @@ Let’s say you want to patch the source code of the part you’re pulling:
          patch -p1 < $SNAPCRAFT_STAGE/my.patch
 
 
-.. _override-build-steps-heading--overriding-the-build-step:
+.. _override-build-steps-overriding-the-build-step:
 
 Overriding the build step
 -------------------------
@@ -74,7 +74,7 @@ Let’s say the default build/install process ends up installing files with abso
          sed -i 's|/usr/bin|$SNAP/usr/bin|g' $SNAPCRAFT_PART_INSTALL/my-bin-artifact.sh
 
 
-.. _override-build-steps-heading--overriding-the-stage-step:
+.. _override-build-steps-overriding-the-stage-step:
 
 Overriding the stage step
 -------------------------
@@ -100,7 +100,7 @@ Let’s say you wanted to tweak a file installed by another part:
          sed -i 's|/usr/bin|$SNAP/usr/bin|g' other/parts/file
 
 
-.. _override-build-steps-heading--overriding-the-prime-step:
+.. _override-build-steps-overriding-the-prime-step:
 
 Overriding the prime step
 -------------------------

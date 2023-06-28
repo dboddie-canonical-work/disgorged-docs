@@ -5,7 +5,7 @@
 Hardware IO interfaces
 ======================
 
-Hardware IO (input/output) interfaces, including the :ref:`serial-port <the-serial-port-interface>`, :ref:`gpio <the-gpio-interface>` and :ref:`i2c <the-i2c-interface>` interfaces, are designed to be used on devices running `Ubuntu Core <glossary-ubuntu-core>`__. These interfaces are driven from a device’s :ref:`gadget snap <gadget-snaps>` which is used to define and configure a device’s system properties.
+Hardware IO (input/output) interfaces, including the :ref:`serial-port <the-serial-port-interface>`, :ref:`gpio <the-gpio-interface>` and :ref:`i2c <the-i2c-interface>` interfaces, are designed to be used on devices running :ref:`glossary-ubuntu-core`. These interfaces are driven from a device’s :ref:`gadget snap <gadget-snaps>` which is used to define and configure a device’s system properties.
 
 This approach is more robust because it allows the gadget snap providing the slot to centralise and arbitrate the connection conditions. These conditions include which other snaps, identified by their snap ID, can connect to the slots the gadget offers and, consequently, gain privileged access to the hardware. For the application snap, usually no change is required other than to declare and use an appropriately-configured plug.
 
@@ -19,14 +19,14 @@ The extent of access an interface has is granted through both *connection permis
 
 1. **Connection permissions**: :ref:`auto-connect <the-interface-auto-connection-mechanism>` \| :ref:`privileged <interface-management>` \| :ref:`super-privileged <super-privileged-interfaces>` Connection requirements are dependent on which store a developer is using.
 
-   -  `Global Snap Store <glossary-snap-store>`__: privileged and super-privileged interfaces require store approval because of the level of trust and permissiveness these interfaces have, which is also why certain interfaces need certain oversight. See :ref:`Permission requests <permission-requests>` for further details.
-   -  `Dedicated Snap Store <glossary-dedicated>`__: trust and permissiveness are now the responsibility of the store owner, and many privileged interface connections can be self-served and defined within the dedicated snap store and the device context.
+   -  :ref:`Global Snap Store <glossary-snap-store>`: privileged and super-privileged interfaces require store approval because of the level of trust and permissiveness these interfaces have, which is also why certain interfaces need certain oversight. See :ref:`Permission requests <permission-requests>` for further details.
+   -  :ref:`Dedicated Snap Store <glossary-dedicated>`: trust and permissiveness are now the responsibility of the store owner, and many privileged interface connections can be self-served and defined within the dedicated snap store and the device context.
 
 2. **Interface connections**: hardware IO interfaces \| app-provided interfaces \| other interfaces
 
-   -  **Hardware IO interfaces**: These require either a `slot <interface-management-slots-plugs>`__ to be defined by a device’s *gadget snap* or an interface with `Hotplug support <https://snapcraft.io/docs/hotplug-support>`__, in which case the slot appears from the system snap.
+   -  **Hardware IO interfaces**: These require either a :ref:`slot <interface-management-slots-plugs>` to be defined by a device’s *gadget snap* or an interface with `Hotplug support <https://snapcraft.io/docs/hotplug-support>`__, in which case the slot appears from the system snap.
 
-      -  An unconstrained `auto-connection <the-interface-auto-connection-mechanism-autoconnect>`__ cannot be used because there may be *many slots of a given interface*, resulting in ambiguity that requires an extensive set of store rules to manage and maintain.
+      -  An unconstrained :ref:`auto-connection <the-interface-auto-connection-mechanism-autoconnect>` cannot be used because there may be *many slots of a given interface*, resulting in ambiguity that requires an extensive set of store rules to manage and maintain.
       -  Each plug should therefore be connected to a slot, for example:
 
          -  green led plug on app => green led slot on gadget

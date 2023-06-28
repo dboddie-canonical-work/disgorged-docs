@@ -8,7 +8,7 @@ Debugging building snaps
 Building snaps can be a new experience for many developers. Here’s some tips which can help you successfully, reliably build snaps for publication in the Snap Store. This is a wiki post so feel free to add more tips to this page, to help build successful snaps!
 
 
-.. _debugging-building-snaps-heading--build-environment:
+.. _debugging-building-snaps-build-environment:
 
 Build Environment
 -----------------
@@ -16,7 +16,7 @@ Build Environment
 Snaps are built to run on top of a :ref:`base snap <base-snaps>` runtime. This base is provided by an automatically-installed snap. Currently the most widely used core image is based on Ubuntu 22.04 LTS.
 
 
-.. _debugging-building-snaps-heading--missing-libraries:
+.. _debugging-building-snaps-missing-libraries:
 
 Missing libraries
 -----------------
@@ -26,7 +26,7 @@ Most applications will need additional libraries added to the snap in order to f
 Sometimes when a snap is initially built, libraries are missing because they were not explicitly specified by the developer. There’s a couple of ways to bundle required libraries in a snap, both of which are covered below, but more details can be found in :ref:`Build and staging dependencies <build-and-staging-dependencies>`.
 
 
-.. _debugging-building-snaps-heading--staging-packages:
+.. _debugging-building-snaps-staging-packages:
 
 Staging Packages
 ~~~~~~~~~~~~~~~~
@@ -36,7 +36,7 @@ It’s common to bundle required libraries in snaps using ``stage-packages`` in 
 Don’t include ``glibc``/``libc6`` in your list of staged packages. Doing so is unnecessary as the base snap contains those libraries already, and bundling them into your snap can cause unexpected behaviour.
 
 
-.. _debugging-building-snaps-heading--staging-individual-libraries:
+.. _debugging-building-snaps-staging-individual-libraries:
 
 Staging individual libraries
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -44,7 +44,7 @@ Staging individual libraries
 Some application developers already have ‘vendored’ libraries which they’ve well tested with their application. If that’s the case, those libraries can be bundled in the snap in a similar fashion. Place the libraries in the ``/lib`` folder when constructing the snap. This folder is added to the ``LD_LIBRARY_PATH`` and as such should be found successfully by your application when the resulting snap is installed on an end-user computer
 
 
-.. _debugging-building-snaps-heading--interfaces:
+.. _debugging-building-snaps-interfaces:
 
 Interfaces
 ----------
@@ -52,7 +52,7 @@ Interfaces
 When applications are confined in a snap, they have a restricted view of the world, with access to resources governed by standard Linux security features apparmor and seccomp. Interfaces enable the developer to choose specify what access is required by the application to resources such as the network, camera, joystick and X11 display.
 
 
-.. _debugging-building-snaps-heading--identifying-missing-interfaces:
+.. _debugging-building-snaps-identifying-missing-interfaces:
 
 Identifying missing interfaces
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -69,7 +69,7 @@ The Snap security team have provided a tool to debug these situations. Install t
 Typically the output will report on failed attempts to access system resources, and suggest additional interfaces which should be specified. If so, add the interface(s) listed and rebuild the snap.
 
 
-.. _debugging-building-snaps-heading--iterating-without-rebuilding:
+.. _debugging-building-snaps-iterating-without-rebuilding:
 
 Iterating without rebuilding
 ----------------------------

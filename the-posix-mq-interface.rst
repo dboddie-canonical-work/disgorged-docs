@@ -15,7 +15,7 @@ The ``posix-mq`` interface enables inter-process communication (IPC) messages to
 --------------
 
 
-.. _the-posix-mq-interface-heading--dev-details:
+.. _the-posix-mq-interface-dev-details:
 
 Developer details
 -----------------
@@ -23,7 +23,7 @@ Developer details
 +---------------------------------------------------------------------------------------------+-----------------------+--------------------------------------------+
 | Permissions                                                                                 |                       |                                            |
 +=============================================================================================+=======================+============================================+
-| `Auto-connect <interface-management.md#the-posix-mq-interface-heading--auto-connections>`__ | **no** by default     | **yes** with snaps from the same publisher |
+| :ref:`Auto-connect <interface-management-auto-connections>`                                 | **no** by default     | **yes** with snaps from the same publisher |
 +---------------------------------------------------------------------------------------------+-----------------------+--------------------------------------------+
 | :ref:`Super-privileged <super-privileged-interfaces>`                                       | **no** for plugs      | **yes** for slots                          |
 +---------------------------------------------------------------------------------------------+-----------------------+--------------------------------------------+

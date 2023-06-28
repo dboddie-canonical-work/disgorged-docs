@@ -39,14 +39,21 @@ Requires snapd version *2.33+*.
 --------------
 
 
-.. _the-home-interface-heading--dev:
+.. _the-home-interface-dev:
 
 Developer details
 -----------------
 
-`Auto-Connect <the-interface-auto-connection-mechanism.md#the-home-interface-heading--autoconnect>`__: - **yes** on traditional distributions - **no** on all other systems, including `Ubuntu Core <glossary.md#the-home-interface-heading--ubuntu-core>`__
+:ref:`Auto-Connect <the-interface-auto-connection-mechanism-autoconnect>`:
 
-**Transitional**: yes **Attributes**: \* ``read`` (plug): optional, when set to ‘all’, also allows reading non-hidden files in the home directories of all users as traditional file permissions allow. *When set to ‘all’ this plug becomes non-autoconnect.*
+- **yes** on traditional distributions
+- **no** on all other systems, including :ref:`glossary-ubuntu-core`
+
+**Transitional**: yes
+
+**Attributes**:
+
+* ``read`` (plug): optional, when set to ‘all’, also allows reading non-hidden files in the home directories of all users as traditional file permissions allow. *When set to ‘all’ this plug becomes non-autoconnect.*
 
 Example snaps
 -------------

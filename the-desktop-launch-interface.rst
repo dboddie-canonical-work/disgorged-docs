@@ -15,17 +15,19 @@ The ``desktop-launch`` interface allows :ref:`strictly confined <snap-confinemen
 --------------
 
 
-.. _the-desktop-launch-interface-heading--dev-details:
+.. _the-desktop-launch-interface-dev-details:
 
 Developer details
 -----------------
 
-`Auto-connect <interface-management.md#the-desktop-launch-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
+:ref:`Auto-connect <interface-management-auto-connections>`: no
+
+:ref:`Super-privileged <super-privileged-interfaces>`: yes
 
 Requires snapd version *2.52+*.
 
 
-.. _the-desktop-launch-interface-heading-code:
+.. _the-desktop-launch-interface-code:
 
 Code examples
 ~~~~~~~~~~~~~

@@ -5,27 +5,27 @@
 The go plugin
 =============
 
-The Go plugin integrates projects written in `Go <https://golang.org/>`__. This plugin uses the common plugin keywords as well as those for `sources <snapcraft-parts-metadata.md#the-go-plugin-heading--source>`__. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
+The Go plugin integrates projects written in `Go <https://golang.org/>`__. This plugin uses the common plugin keywords as well as those for :ref:`sources <snapcraft-parts-metadata-source>`. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
 
 Plugin-specific features and syntax are dependent on which :ref:`base <base-snaps>` is being used, as outlined below:
 
--  `base: core22 <the-go-plugin-heading--core22_>`__
--  `base: core20 <the-go-plugin-heading--core20_>`__
--  `base: core18 \| core <the-go-plugin-heading--core18_>`__
+-  `base: core22 <the-go-plugin-core22_>`__
+-  `base: core20 <the-go-plugin-core20_>`__
+-  `base: core18 \| core <the-go-plugin-core18_>`__
 
 See :ref:`Go applications <go-applications>` for a simple example, or search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+go%22&type=Code>`__ for projects already using the plugin.
 
    ⓘ This is a *snapcraft* plugin. See :ref:`Snapcraft plugins <snapcraft-plugins>` and :ref:`Supported plugins <supported-plugins>` for further details on how plugins are used.
 
 
-.. _the-go-plugin-heading--core22:
+.. _the-go-plugin-core22:
 
 base: core22
 ~~~~~~~~~~~~
 
 The ``go`` plugin in ``core22`` exclusively requires the use of `go.mod <https://golang.org/ref/mod>`__.
 
-Additionally, the build environment does not include ``go`` by default. To install the latest version, add ``go`` to a `build-snaps <build-and-staging-dependencies.md#the-go-plugin-heading--package>`__ section for the part:
+Additionally, the build environment does not include ``go`` by default. To install the latest version, add ``go`` to a :ref:`build-snaps <build-and-staging-dependencies-package>` section for the part:
 
 .. code:: yaml
 
@@ -39,7 +39,7 @@ This plugin uses the following plugin-specific keywords:
 Requires Snapcraft version *7.0+*.
 
 
-.. _the-go-plugin-heading--core20:
+.. _the-go-plugin-core20:
 
 base: core20
 ~~~~~~~~~~~~
@@ -55,7 +55,7 @@ This plugin uses the following plugin-specific keywords:
 Requires Snapcraft version *4.0+*.
 
 
-.. _the-go-plugin-heading--core18:
+.. _the-go-plugin-core18:
 
 base: core18 \| core
 ~~~~~~~~~~~~~~~~~~~~

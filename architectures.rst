@@ -138,7 +138,7 @@ The ``architectures`` keyword defines a list of build and run architecture sets 
 
 -  valid architectures include ``arm64``, ``armhf``, ``amd64``, ``i386``, ``ppc64el``, and ``s390x``
 -  snaps using a base of ``core`` and ``core18`` can additionally support ``i386``
--  support for ``i386`` was removed in ``core20`` (see `Migrating bases <migrating-between-bases.md#architectures-heading--arch>`__ for details)
+-  support for ``i386`` was removed in ``core20`` (see :ref:`Migrating bases <migrating-between-bases-arch>` for details)
 -  the default value for ``run-on`` is the value of ``build-on``
 -  ``run-on:`` supports a value of ``all`` to denote a snap that can run everywhere (e.g. a snap that is only shell scripts or python)
 -  if the value list is a single item, it can be simplified to a scalar (e.g. ``build-on: amd64``)

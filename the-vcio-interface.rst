@@ -7,7 +7,7 @@ The vcio interface
 
 The ``vcio`` interface permits input and output access to a Raspberry Pi’s *VideoCore* multimedia processor, typically used to improve graphics performance and to accelerate the encoding or decoding of media codecs.
 
-This interface is primarily intended to be used with `Ubuntu Core <glossary.md#the-vcio-interface-heading--ubuntu-core>`__.
+This interface is primarily intended to be used with :ref:`glossary-ubuntu-core`.
 
 .. note::
 

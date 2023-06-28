@@ -2,8 +2,8 @@
 
 .. _snapcraft-how-to-guides:
 
-Snapcraft How-to guides
-=======================
+How-to guides
+=============
 
 .. note::
           **NOTE TO EDITORS**

@@ -79,14 +79,14 @@ The :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>` schema has been extended t
 Faster LXD build iterations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When using `Snapcraft with LXD <t/build-on-lxd/4157>`__ and :ref:`iterating over a build <iterating-over-a-build>`, a significant reduction in network overhead has resulted in much faster build times.
+When using :ref:`Snapcraft with LXD <build-providers>` and :ref:`iterating over a build <iterating-over-a-build>`, a significant reduction in network overhead has resulted in much faster build times.
 
 This is thanks to *snapd 2.39* supporting API snap retrieval, and is used to avoid a root requirement when adding snaps to the build environment. It means snap don’t need to be re-downloaded as frequently.
 
 Improved missing file experience
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-After the `prime stage <t/snapcraft-lifecycle/5123>`__ has completed, and missing dependencies are detected, Snapcraft now lists these as *stage-packages*, rather than as a simple list, for inclusion in *snapcraft.yaml* to hopefully build a functioning snap.
+After the :ref:`prime stage <parts-lifecycle>` has completed, and missing dependencies are detected, Snapcraft now lists these as *stage-packages*, rather than as a simple list, for inclusion in *snapcraft.yaml* to hopefully build a functioning snap.
 
 This will be extended in upcoming versions of Snapcraft to take into account plugs using the ``content`` interface.
 

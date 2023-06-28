@@ -10,7 +10,7 @@ Snapcraft installation and setup
 Snapcraft can be installed and used on any supported system, including various Linux distributions as well as the macOS and Windows operating systems.
 
 
-.. _snapcraft-installation-and-setup-heading--store:
+.. _snapcraft-installation-and-setup-store:
 
 Installation from the Snap Store
 --------------------------------
@@ -24,7 +24,7 @@ On Linux distributions `with snap support <https://snapcraft.io/docs/installing-
 The ``--classic`` argument is required because snapcraft uses :ref:`classic confinement <snap-confinement>`.
 
 
-.. _snapcraft-installation-and-setup-heading--respository:
+.. _snapcraft-installation-and-setup-repository:
 
 Repository version or snap
 --------------------------
@@ -43,7 +43,7 @@ The ``which`` command can be used to check which version of snapcraft is run by 
    /snap/bin/snapcraft
 
 
-.. _snapcraft-installation-and-setup-heading--backend:
+.. _snapcraft-installation-and-setup-backend:
 
 Snapcraft backend
 -----------------

@@ -13,56 +13,56 @@ The `Nextcloud snap <https://snapcraft.io/nextcloud>`__, for example, allows use
 
    sudo snap set nextcloud ports.http=81
 
-This page describes how a snap developer can add configuration options, such as the above, to an already working `snapcraft.yaml </t/creating-snapcraft-yaml/11666>`__:
+This page describes how a snap developer can add configuration options, such as the above, to an already working :ref:`snapcraft.yaml <creating-snapcraft-yaml>`:
 
--  `Interpreting options <heading--interpreting_>`__
--  `Default values <heading--default_>`__
--  `Nested values <heading--nested_>`__
--  `Example implementation <heading--example_>`__
+-  `Interpreting options <adding-snap-config-interpreting_>`__
+-  `Default values <adding-snap-config-default_>`__
+-  `Nested values <adding-snap-config-nested_>`__
+-  `Example implementation <adding-snap-config-example_>`__
 
-   -  `Management script <heading--management_>`__
-   -  `Default-configure script <heading--default-configure_>`__
-   -  `Configure hook script <heading--configure_>`__
-   -  `Wrapper script <heading--wrapper_>`__
-   -  `Snapcraft.yaml <heading--snapcraft_>`__
+   -  `Management script <adding-snap-config-management_>`__
+   -  `Default-configure script <adding-snap-config-default-configure_>`__
+   -  `Configure hook script <adding-snap-config-configure_>`__
+   -  `Wrapper script <adding-snap-config-wrapper_>`__
+   -  `Snapcraft.yaml <adding-snap-config-snapcraft_>`__
 
 .. note::
-          ℹ For more information on how to change a snap’s configuration, rather than adding the functionality to a snap, see `Managing snap configuration </t/managing-snap-configuration/510>`__.
+          ℹ For more information on how to change a snap’s configuration, rather than adding the functionality to a snap, see `Managing snap configuration <managing-snap-configuration_>`_.
 
 --------------
 
 
-.. _heading--interpreting:
+.. _adding-snap-config-interpreting:
 
 Interpreting options
 --------------------
 
-Internally, snaps view and change their configuration using the `snapctl tool </t/using-the-snapctl-tool/15002>`__ and its ``get``, ``set`` and ``unset`` arguments.
+Internally, snaps view and change their configuration using the :ref:`snapctl tool <using-the-snapctl-tool>` and its ``get``, ``set`` and ``unset`` arguments.
 
 Configuration options are not defined when a snap is created because any (valid) option name is accepted. Instead, any set values need to be interpreted and converted into an action by the snap developer.
 
-A snap developer is free to implement this process however they prefer, however it’s most commonly accomplished with a purpose built script or function for each option, as defined by a snap’s `snapcraft.yaml </t/creating-snapcraft-yaml/11666>`__ and its associated scripts and `hooks </t/supported-snap-hooks/3795>`__.
+A snap developer is free to implement this process however they prefer, however it’s most commonly accomplished with a purpose built script or function for each option, as defined by a snap’s :ref:`snapcraft.yaml <creating-snapcraft-yaml>` and its associated scripts and :ref:`hooks <supported-snap-hooks>`.
 
 Permitted values should then be documented in the snap description so that users know which values are supported.
 
 
-.. _heading--default:
+.. _adding-snap-config-default:
 
 Default values
 --------------
 
-The snap daemon has no concept of *default values* for configuration options. Actions for these values need to be implemented by the snap developer using the `configure hook </t/supported-snap-hooks/3795#heading--the-configure-hook>`__.
+The snap daemon has no concept of *default values* for configuration options. Actions for these values need to be implemented by the snap developer using the :ref:`configure hook <supported-snap-hooks-the-configure-hook>`.
 
 When a user resets a configuration option with ``snap unset``, or installs a snap, the *configure hook* is run and the snap developer can therefore use this hook to check when these values are unset and, if so, use ``snapctl set`` to restore that option to its default value.
 
 Setting these values explicitly is preferred over using implicit defaults in the snap, because this way, users can easily discover which configuration options your snap supports.
 
-On Ubuntu Core, a device’s `gadget snap </t/gadget-snaps/696>`__ can share default configuration options with the snaps listed in its ``gadget.yaml``. These options are shared when a snap is first installed using either the `default-configure hook </t/supported-snap-hooks/3795#heading--default-configure>`__, which is run before services are started, or with the `configure hook </t/supported-snap-hooks/3795#heading--the-configure-hook>`__, which runs after services are started.
+On Ubuntu Core, a device’s :ref:`gadget snap <gadget-snaps>` can share default configuration options with the snaps listed in its ``gadget.yaml``. These options are shared when a snap is first installed using either the :ref:`default-configure hook <supported-snap-hooks-default-configure>`, which is run before services are started, or with the :ref:`configure hook <supported-snap-hooks-the-configure-hook>`, which runs after services are started.
 
 The example implementation below includes managing a default value.
 
 
-.. _heading--nested:
+.. _adding-snap-config-nested:
 
 Nested values
 -------------
@@ -84,7 +84,7 @@ Each configuration option can be retrieved by using the same dotted path, or you
    }
 
 
-.. _heading--example:
+.. _adding-snap-config-example:
 
 Implementation
 --------------
@@ -100,14 +100,14 @@ This kind of implementation can be split into 3 scripts:
 
 The above scripts will also need to be linked to a snap’s **snapcraft.yaml**.
 
-When a user changes the configuration of a snap, the `configure hook script </t/supported-snap-hooks/3795#heading--the-configure-hook>`__ is always executed. Through functions in the management script, this hook will typically validate the configuration and, for example, update environment variables or write to the necessary configuration files.
+When a user changes the configuration of a snap, the :ref:`configure hook script <supported-snap-hooks-the-configure-hook>` is always executed. Through functions in the management script, this hook will typically validate the configuration and, for example, update environment variables or write to the necessary configuration files.
 
    ⚠ Snaps that use configuration options need to have a ``configure`` hook defined. Otherwise, users will not be able to change the configuration.
 
 The following example scripts show how to set and manage a port setting for a snap running an executable called ``example-server``.
 
 
-.. _heading--management:
+.. _adding-snap-config-management:
 
 Example management script
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -143,12 +143,12 @@ In the following example, we simply define a default HTTP port and two functions
 The above script should be expanded to manage the running process and also to check whether the new port value is any different from the old, avoiding a potentially unnecessary service restart.
 
 
-.. _heading--default-configure:
+.. _adding-snap-config-default-configure:
 
 Example default-configure hook script
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The default-configure-hook is an optional extension to the `configure hook <heading--configure_>`__ (see below) that executes only on snap installation and before services are started.
+The default-configure-hook is an optional extension to the `configure hook <adding-snap-config-configure_>`__ (see below) that executes only on snap installation and before services are started.
 
 The following example attempts to retrieve a default configuration option from a gadget and either writes this to a file, or writes a fallback value if the gadget option doesn’t exist:
 
@@ -171,7 +171,7 @@ The ``snapctl get|set|unset`` command, used in the management script works anywh
 However, when you change configuration during a hook, if the hook exits with a non-zero status code the configuration will *not* be applied. This is because the hook context is transactional - either every change is applied, or none are.
 
 
-.. _heading--configure:
+.. _adding-snap-config-configure:
 
 Example configure hook script
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -210,7 +210,7 @@ The ``snapctl get|set|unset`` command used in the management script works anywhe
 However, when you change configuration during a hook, if the hook exits with a non-zero status code the configuration will *not* be applied. This is because the hook context is transactional - either every change is applied, or none are.
 
 
-.. _heading--wrapper:
+.. _adding-snap-config-wrapper:
 
 Example wrapper script
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -231,15 +231,15 @@ The wrapper script is used to retrieve whatever options have been set, and in ou
 
 Rather than using set options as environment variables for an executable, they could just as easily be written to a configuration file.
 
-For more details on the environment variables accessible from within a snap, such as ``$SNAP`` used above, see `Environment variables </t/environment-variables/7983>`__.
+For more details on the environment variables accessible from within a snap, such as ``$SNAP`` used above, see :ref:`environment-variables`.
 
 
-.. _heading--snapcraft:
+.. _adding-snap-config-snapcraft:
 
 Example snapcraft.yaml
 ^^^^^^^^^^^^^^^^^^^^^^
 
-To incorporate options, hooks and scripts into a pre-existing `snapcraft.yaml </t/the-snapcraft-format/8337>`__ the executable needs to be replaced with the wrapper script, and both the hook and management scripts need to be brought into the snap from external ``src/hooks/bin`` and ``src/utilities/bin`` directories respectively:
+To incorporate options, hooks and scripts into a pre-existing :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>` the executable needs to be replaced with the wrapper script, and both the hook and management scripts need to be brought into the snap from external ``src/hooks/bin`` and ``src/utilities/bin`` directories respectively:
 
 .. code:: yaml
 
@@ -273,3 +273,5 @@ A setting can be verified with the *get* command:
    8090
 
 For a complete options and configuration hook example, take a look at the `Nextcloud snap <https://github.com/nextcloud/nextcloud-snap>`__.
+
+.. _managing-snap-configuration: https://snapcraft.io/docs/configuration-in-snaps

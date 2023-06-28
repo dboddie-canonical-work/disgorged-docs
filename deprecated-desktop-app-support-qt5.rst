@@ -62,7 +62,7 @@ If you’re using the ``full`` adapter, insert the ``bin/desktop-launch`` launch
 
 ..
 
-   **NOTE:** If your application requires recent Qt or KDE libraries that aren’t available from Ubuntu LTS, the ``kde-frameworks`` content and SDK snaps might be useful. Please take a look at `KDE Snap Guide <https://community.kde.org/Guidelines_and_HOWTOs/Snap>`__ to see how to use this SDK. This SDK only supports the AMD64 processor architecture.
+   **NOTE:** If your application requires recent Qt or KDE libraries that aren’t available from Ubuntu LTS, the ``kde-frameworks`` content and SDK snaps might be useful. Please take a look at `KDE Snap Guide`_ to see how to use this SDK. This SDK only supports the AMD64 processor architecture.
 
 3. [optional] Add GTK theme integration
 ---------------------------------------
@@ -120,3 +120,5 @@ References
 ----------
 
 -  https://snapcraft.io/docs/qt-apps-and-gtk-themes-an-investigation-with-partial-success15
+
+.. _`KDE Snap Guide`: https://community.kde.org/Guidelines_and_HOWTOs/Snap

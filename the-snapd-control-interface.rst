@@ -19,14 +19,18 @@ Consequently, consumers of this interface require `approval <https://snapcraft.i
 --------------
 
 
-.. _the-snapd-control-interface-heading--dev-details:
+.. _the-snapd-control-interface-dev-details:
 
 Developer details
 -----------------
 
-`Auto-connect <interface-management.md#the-snapd-control-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
+:ref:`Auto-connect <interface-management-auto-connections>`: no
 
-**Attributes** : \* ``refresh-schedule`` (plug): can be set to ``managed`` to signal an intention to permit only manual refreshes for the snap:
+:ref:`Super-privileged <super-privileged-interfaces>`: yes
+
+**Attributes**:
+
+* ``refresh-schedule`` (plug): can be set to ``managed`` to signal an intention to permit only manual refreshes for the snap:
 
 .. code:: yaml
 

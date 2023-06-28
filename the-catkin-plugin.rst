@@ -5,7 +5,7 @@
 The catkin plugin
 =================
 
-The ``catkin`` plugin is useful when building `ROS 1 <http://www.ros.org/>`__ parts.
+The ``catkin`` plugin is useful when building `ROS 1 <ROS_>`_ parts.
 
 Plugin-specific features and syntax are dependent on which :ref:`base <base-snaps>` is being used, as outlined below:
 

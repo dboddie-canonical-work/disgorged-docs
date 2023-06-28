@@ -159,13 +159,13 @@ Before building the part, the dependencies listed as ``build-packages`` are inst
          snap/foliate/current/usr: usr
        parse-info: [usr/share/metainfo/com.github.johnfactotum.Foliate.appdata.xml]
 
-``override-pull`` isn’t often needed but it replaces the default `pull lifecycle step <parts-lifecycle.md#gtk3-applications-heading--steps>`__ with our own actions. We’re using it to augment the default *snapcraftctl pull* step with a *sed* command to replace the GJS path embedded within the launch file with the path to *gjs* after it’s installed as a *stage-package* within the snap.
+``override-pull`` isn’t often needed but it replaces the default :ref:`pull lifecycle step <parts-lifecycle-steps>` with our own actions. We’re using it to augment the default *snapcraftctl pull* step with a *sed* command to replace the GJS path embedded within the launch file with the path to *gjs* after it’s installed as a *stage-package* within the snap.
 
 ``built-packages`` are the packages needed for a project to successfully build. This will be listed in a project’s documentation, or known by the development team.
 
 ``stage-packages`` are required by Foliate to run, and mirror the same packages required by the binary on a standard distribution installation. We only need to install the *gjs* package, as mentioned earlier.
 
-``parse-info`` points to the AppStream metadata file. Since we used ``adopt-info: foliate`` in the top-level metadata, the AppStream file of the ``foliate`` part will be used to fill in the ``summary``, ``description`` and ``icon`` of this snap. See `Using AppStream metadata <using-external-metadata.md#gtk3-applications-heading--appstream>`__ for more information.
+``parse-info`` points to the AppStream metadata file. Since we used ``adopt-info: foliate`` in the top-level metadata, the AppStream file of the ``foliate`` part will be used to fill in the ``summary``, ``description`` and ``icon`` of this snap. See :ref:`Using AppStream metadata <meta-appstream>` for more information.
 
 Slots
 ~~~~~

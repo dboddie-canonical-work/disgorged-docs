@@ -16,25 +16,25 @@ Each snap runs inside its own :ref:`confined environment <snap-confinement>`, al
 
 -  Use :ref:`snap try <debug-snaps-with-snap-try>` to quickly test changes without rebuilding your snap.
 
--  Use `snap run --shell <debugging-snaps-heading--shell_>`__ to inspect and test the confined environment.
+-  Use `snap run --shell <debugging-snaps-shell_>`__ to inspect and test the confined environment.
 
--  Use `developer mode <debugging-snaps-heading--developer_>`__ to try your snap without confinement.
+-  Use `developer mode <debugging-snaps-developer_>`__ to try your snap without confinement.
 
 -  Investigating policy violation logs.
 
-   -  Use `snappy-debug <debugging-snaps-heading--snappy-debug_>`__ to investigate violation logs and receive suggestions.
-   -  `Manually search the raw logs <debugging-snaps-heading--manual-log_>`__.
-   -  `Understanding AppArmor <debugging-snaps-heading--apparmor_>`__ violations.
-   -  `Understanding seccomp <debugging-snaps-heading--seccomp_>`__ violations.
+   -  Use `snappy-debug <debugging-snaps-snappy-debug_>`__ to investigate violation logs and receive suggestions.
+   -  `Manually search the raw logs <debugging-snaps-manual-log_>`__.
+   -  `Understanding AppArmor <debugging-snaps-apparmor_>`__ violations.
+   -  `Understanding seccomp <debugging-snaps-seccomp_>`__ violations.
 
--  Investigate `file permissions and cgroup device access <debugging-snaps-heading--permissions_>`__ violations.
+-  Investigate `file permissions and cgroup device access <debugging-snaps-permissions_>`__ violations.
 
 -  Use :ref:`GDB and gdbserver from within a snap’s environment <using-gdb-and-gdbserver>` to isolate and identify potential issues.
 
 For more details on how AppArmor, seccomp and device permission security policies are implemented, see `Security policy and sandboxing <https://snapcraft.io/docs/security-policy-and-sandboxing>`__.
 
 
-.. _debugging-snaps-heading--shell:
+.. _debugging-snaps-shell:
 
 Run a shell in the confined environment
 ---------------------------------------
@@ -47,14 +47,14 @@ To investigate and test the confined environment of a snap, you can open a ``bas
    To run a command as administrator (user "root"), use "sudo <command>".
    See "man sudo_root" for details.
 
-This will create the confined environment of the Snap, execute the `command-chain <snapcraft-app-and-service-metadata.md#debugging-snaps-heading--command-chain>`__ and then run ``bash`` inside that environment.
+This will create the confined environment of the Snap, execute the :ref:`command-chain <snapcraft-app-and-service-metadata-command-chain>` and then run ``bash`` inside that environment.
 
 You can then investigate which files your snap has access to by running commands such as ``ls`` and ``cat``.
 
    ⓘ It’s important to put ``--shell`` *before* the name of the snap. Otherwise it will be interpreted as an argument to the application instead of an argument to ``snap run``.
 
 
-.. _debugging-snaps-heading--developer:
+.. _debugging-snaps-developer:
 
 Developer mode
 --------------
@@ -70,13 +70,13 @@ To install a snap in developer mode, use the ``--devmode`` argument:
 When a snap is installed with developer mode, violations against a snap’s security policy are permitted to proceed but logged via journald.
 
 
-.. _debugging-snaps-heading--debugging:
+.. _debugging-snaps-debugging:
 
 Debugging policy violation logs
 -------------------------------
 
 
-.. _debugging-snaps-heading--snappy-debug:
+.. _debugging-snaps-snappy-debug:
 
 Using snappy-debug to show violations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -114,7 +114,7 @@ See ``snappy-debug --help`` for more information about this tool.
 If you believe there is a bug in a security policy or want to request and/or contribute a new interface, please `file a bug <https://bugs.launchpad.net/snappy/+filebug>`__, adding the ``snapd-interface`` tag, and feel free to discuss policy issues `on the forum <https://forum.snapcraft.io/c/snapd>`__.
 
 
-.. _debugging-snaps-heading--manual-log:
+.. _debugging-snaps-manual-log:
 
 Manually extracting violation logs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -140,7 +140,7 @@ A handy debugging technique is to tail/follow journalctl output while exercising
 As shown above, kernel log rate limiting can be disabled manually with: ``bash $ sudo sysctl -w kernel.printk_ratelimit=0``
 
 
-.. _debugging-snaps-heading--apparmor:
+.. _debugging-snaps-apparmor:
 
 Understanding AppArmor violations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -159,13 +159,13 @@ For example:
 
 1. build the snap
 2. copy the snap to the target device and install it (or use :ref:`snap try <debug-snaps-with-snap-try>`)
-3. use the snap (perhaps using `snap run --shell <name>.<command> <debugging-snaps-heading--shell_>`__), monitoring via journalctl for denials
+3. use the snap (perhaps using `snap run --shell <name>.<command> <debugging-snaps-shell_>`__), monitoring via journalctl for denials
 4. modifying ``/var/lib/snapd/apparmor/profiles/snap.<name>.<command>`` as needed (eg, adding rules before the final ``'}'``)and running ``sudo apparmor_parser -r /var/lib/snapd/apparmor/profiles/snap.<name>.<command>`` to compile and load the policy into the kernel
 5. use ``sudo service snap.<name>.<command> stop/start/etc`` as needed for daemons
 6. repeat until AppArmor policy issues are resolved
 
 
-.. _debugging-snaps-heading--seccomp:
+.. _debugging-snaps-seccomp:
 
 Understanding seccomp violations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -200,7 +200,7 @@ The ``snap-confine`` command will load the bpf in the ``.bin`` file for the comm
 When done, copy any changes you make to ``/var/lib/snapd/apparmor/profiles/snap.<name>.<command>`` or ``/var/lib/snapd/seccomp/bpf/snap.<name>.<command>.src`` to your interface code.
 
 
-.. _debugging-snaps-heading--snapseccomp:
+.. _debugging-snaps-snapseccomp:
 
 snap-seccomp versions and paths
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -230,7 +230,7 @@ Without re-execution, the snapd process is using a binary located in the host fi
 Correspondingly, ``snap-seccomp`` will be called using its full path ``/usr/lib/snapd/snapd``.
 
 
-.. _debugging-snaps-heading--permissions:
+.. _debugging-snaps-permissions:
 
 File permissions
 ----------------
@@ -279,7 +279,7 @@ If you believe there is a bug in the security policy or want to request and/or c
 
 .. raw:: html
 
-   <h2 id="debugging-snaps-heading--further">
+   <h2 id="debugging-snaps-further">
 
 Further reading
 

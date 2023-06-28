@@ -7,7 +7,9 @@ The unity8 interface
 
 ``unity8`` provides access to data from Unity 8 desktop applications. This interface is in active development and should not yet be used in production. Its use is therefore restricted.
 
-`Auto-connect <interface-management.md#the-unity8-interface-heading--auto-connections>`__: no :ref:`Super-privileged <super-privileged-interfaces>`: yes
+:ref:`Auto-connect <interface-management-auto-connections>`: no
+
+:ref:`Super-privileged <super-privileged-interfaces>`: yes
 
 Requires snapd version *2.22+*.
 

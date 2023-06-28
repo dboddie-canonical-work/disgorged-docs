@@ -21,7 +21,7 @@ Use ``snap interface gpio`` to see which gpio devices are available on the syste
    [...]
 
 
-.. _the-gpio-interface-heading--example:
+.. _the-gpio-interface-example:
 
 Example
 -------
@@ -40,7 +40,7 @@ The `pi-fancontrol <https://snapcraft.io/pi-fancontrol>`__ snap provides simple 
 --------------
 
 
-.. _the-gpio-interface-heading--dev-details:
+.. _the-gpio-interface-dev-details:
 
 Developer details
 -----------------
@@ -49,7 +49,7 @@ Developer details
 
 :ref:`Hardware IO interfaces <hardware-io-interfaces>` covers some general considerations common to these kinds of devices.
 
-To use a gpio device, the snap developer must add ``plugs: [ gpio ]`` to a snap’s :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific gpio device with an `interface connection <interface-management.md#the-gpio-interface-heading--manual-connections>`__.
+To use a gpio device, the snap developer must add ``plugs: [ gpio ]`` to a snap’s :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>`. The snap user can then access a specific gpio device with an :ref:`interface connection <interface-management-manual-connections>`.
 
 Unless the snap is expected to actually use a set of gpio pins that is not predefined, it is recommended to define distinct plugs for each used gpio pin, like:
 

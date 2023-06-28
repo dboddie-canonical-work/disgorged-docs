@@ -29,48 +29,48 @@ Step-by-step guide
 
 1. :ref:`Snapcraft installation and setup <snapcraft-installation-and-setup>`
 
-   -  `Installation from the Snap Store <snapcraft-installation-and-setup.md#snapcraft-quickstart-heading--store>`__
-   -  `Repository version or snap <snapcraft-installation-and-setup.md#snapcraft-quickstart-heading--repository>`__
-   -  `Snapcraft LXD and Multipass backends <snapcraft-installation-and-setup.md#snapcraft-quickstart-heading--backend>`__
+   -  :ref:`Installation from the Snap Store <snapcraft-installation-and-setup-store>`
+   -  :ref:`Repository version or snap <snapcraft-installation-and-setup-repository>`
+   -  :ref:`Snapcraft LXD and Multipass backends <snapcraft-installation-and-setup-backend>`
 
 2. :ref:`How Snapcraft builds a snap <how-snapcraft-builds-snaps>`
 
-   -  `snapcraft.yaml <how-snapcraft-builds-snaps.md#snapcraft-quickstart-heading--snapcraft>`__
+   -  :ref:`snapcraft.yaml <how-snapcraft-builds-snaps-snapcraft>`
 
-      -  `Main definitions inside snapcraft.yaml <how-snapcraft-builds-snaps.md#snapcraft-quickstart-heading--definitions>`__
+      -  :ref:`Main definitions inside snapcraft.yaml <how-snapcraft-builds-snaps-definitions>`
 
-   -  `Snapcraft build lifecycle <how-snapcraft-builds-snaps.md#snapcraft-quickstart-heading--build>`__
-   -  `Snapcraft build output <how-snapcraft-builds-snaps.md#snapcraft-quickstart-heading--output>`__
+   -  :ref:`Snapcraft build lifecycle <how-snapcraft-builds-snaps-build>`
+   -  :ref:`Snapcraft build output <how-snapcraft-builds-snaps-output>`
 
 3. :ref:`Basic snapcraft.yaml example <basic-snapcraft-yaml-example>`
 
-   -  `Metadata <basic-snapcraft-yaml-example.md#snapcraft-quickstart-heading--metadata>`__
-   -  `Base <basic-snapcraft-yaml-example.md#snapcraft-quickstart-heading--base>`__
-   -  `Confinement <basic-snapcraft-yaml-example.md#snapcraft-quickstart-heading--confinement>`__
+   -  :ref:`Metadata <basic-snapcraft-yaml-example-metadata>`
+   -  :ref:`Base <basic-snapcraft-yaml-example-base>`
+   -  :ref:`Confinement <basic-snapcraft-yaml-example-confinement>`
 
-      -  `Interfaces <basic-snapcraft-yaml-example.md#snapcraft-quickstart-heading--interfaces>`__
+      -  :ref:`Interfaces <basic-snapcraft-yaml-example-interfaces>`
 
-   -  `Build definition <basic-snapcraft-yaml-example.md#snapcraft-quickstart-heading--build>`__
+   -  :ref:`Build definition <basic-snapcraft-yaml-example-build>`
 
-      -  `The parts definition <basic-snapcraft-yaml-example.md#snapcraft-quickstart-heading--parts>`__
-      -  `The apps definition <basic-snapcraft-yaml-example.md#snapcraft-quickstart-heading--apps>`__
+      -  :ref:`The parts definition <basic-snapcraft-yaml-example-parts>`
+      -  :ref:`The apps definition <basic-snapcraft-yaml-example-apps>`
 
 4. :ref:`Intermediate snapcraft.yaml example <intermediate-snapcraft-yaml-example>`
 
-   -  `adopt-info <intermediate-snapcraft-yaml-example.md#snapcraft-quickstart-heading--adopt>`__
-   -  `grade <intermediate-snapcraft-yaml-example.md#snapcraft-quickstart-heading--grade>`__
-   -  `architectures <intermediate-snapcraft-yaml-example.md#snapcraft-quickstart-heading--architectures>`__
-   -  `Build definition <intermediate-snapcraft-yaml-example.md#snapcraft-quickstart-heading--build>`__
+   -  :ref:`adopt-info <intermediate-snapcraft-yaml-example-adopt>`
+   -  :ref:`grade <intermediate-snapcraft-yaml-example-grade>`
+   -  :ref:`architectures <intermediate-snapcraft-yaml-example-architectures>`
+   -  :ref:`Build definition <intermediate-snapcraft-yaml-example-build>`
 
-      -  `The parts definition <intermediate-snapcraft-yaml-example.md#snapcraft-quickstart-heading--parts>`__
-      -  `The apps definition <intermediate-snapcraft-yaml-example.md#snapcraft-quickstart-heading--apps>`__
+      -  :ref:`The parts definition <intermediate-snapcraft-yaml-example-parts>`
+      -  :ref:`The apps definition <intermediate-snapcraft-yaml-example-apps>`
 
 5. :ref:`Build and publishing example <build-and-publishing-example>`
 
-   -  `Snap build process <build-and-publishing-example.md#snapcraft-quickstart-heading--build>`__
-   -  `Snap publication process <build-and-publishing-example.md#snapcraft-quickstart-heading--publish>`__
-   -  `Snap Store channels <build-and-publishing-example.md#snapcraft-quickstart-heading--channels>`__
-   -  `Next steps <build-and-publishing-example.md#snapcraft-quickstart-heading--next>`__
+   -  :ref:`Snap build process <build-and-publishing-example-build>`
+   -  :ref:`Snap publication process <build-and-publishing-example-publish>`
+   -  :ref:`Snap Store channels <build-and-publishing-example-channels>`
+   -  :ref:`Next steps <build-and-publishing-example-next>`
 
 .. toctree::
    :hidden:

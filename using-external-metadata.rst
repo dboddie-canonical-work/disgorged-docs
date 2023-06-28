@@ -33,12 +33,13 @@ An external metadata source can be one of the following:
 See below for details on incorporating each of the above into your *snapcraft.yaml*.
 
 
+.. _using-external-metadata-meta-appstream:
 .. _meta-appstream:
 
 AppStream
 ~~~~~~~~~
 
-`AppStream <https://www.freedesktop.org/software/appstream/docs/>`__ is a metadata standard used to describe a common set software components. It can be parsed by *snapcraft* to provide the ``title``, ``version``, ``summary``, ``description`` and ``icon`` for a snap, along with the location of an app’s :ref:`desktop <desktop-files-for-menu-integration>` file.
+`AppStream`_ is a metadata standard used to describe a common set software components. It can be parsed by *snapcraft* to provide the ``title``, ``version``, ``summary``, ``description`` and ``icon`` for a snap, along with the location of an app’s :ref:`desktop <desktop-files-for-menu-integration>` file.
 
 The following is a typical example from an upstream project. It’s an *AppStream* file called ``sampleapp.metainfo.xml``:
 
@@ -93,6 +94,7 @@ You can also link each app in your snap to specific AppStream metadata by pointi
 *Note: The process to get the ``.desktop`` file entry from the AppStream metadata goes as follows. First, Snapcraft searches for a parsed AppStream file with the same*\ component id\* as the app’s ``common-id`` and extracts the `Desktop File ID <https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html#desktop-file-id>`__ (``desktop-id``) from that component. If that component doesn’t specify a ``desktop-id``, Snapcraft will use the *component id* as the Desktop File ID. Snapcraft will then search for a desktop file matching the Desktop File ID in the ``usr/local/share`` and ``usr/share`` directories relative to the part source, and by following the `Desktop File ID <https://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html#desktop-file-id>`__ rules.\*
 
 
+.. _using-external-metadata-meta-scriptlet:
 .. _meta-scriptlet:
 
 Part scriptlets
@@ -125,7 +127,7 @@ See :ref:`Scriptlets <override-build-steps>` for more details on using scripting
 
    ⚠ Using ``parse-info`` with ``setup.py`` is currently discouraged because it has many issues. For example, it incorrectly `uses the project’s summary as the snap’s description <https://bugs.launchpad.net/snapcraft/+bug/1813364>`__ and it `might crash the snap build <https://github.com/snapcore/snapcraft/pull/2756#issuecomment-544284814>`__.
 
-A `setup.py <https://docs.python.org/3/distutils/setupscript.html>`__ file is used by many Python projects to help with package installation. If your *setup.py* uses `setuptools <https://setuptools.readthedocs.io/en/latest/>`__ and defines ``version`` and ``description``, these can be extracted from ``setup.py`` and used as the ``version`` and ``description`` metadata in the resulting snap.
+A `setup.py <https://docs.python.org/3/distutils/setupscript.html>`__ file is used by many Python projects to help with package installation. If your *setup.py* uses `setuptools`_ and defines ``version`` and ``description``, these can be extracted from ``setup.py`` and used as the ``version`` and ``description`` metadata in the resulting snap.
 
 The following is an example ``setup.py`` in the root of a hypothetical git tree:
 

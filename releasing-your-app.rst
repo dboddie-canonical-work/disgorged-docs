@@ -7,9 +7,9 @@ Releasing your app
 
 After :ref:`creating a snap <creating-a-snap>`, you should upload it to the `Snap Store <https://snapcraft.io/store>`__, from where it can reach a potential audience of millions, or remain *private* if registered as such.
 
-You will need the following: - a free Snapcraft :ref:`developer account <create-a-developer-account>` account - your own built and tested snap working with `strict <snap-confinement.md#strict>`__ or `classic <snap-confinement.md#classic>`__ confinement
+You will need the following: - a free Snapcraft :ref:`developer account <create-a-developer-account>` account - your own built and tested snap working with strict or classic :ref:`confinement <snap-confinement>`.
 
-   ⓘ If your snap requires `classic confinement <snap-confinement.md#classic>`__, your snap will need manual approval before being released. See :ref:`Classic confinement review process <process-for-reviewing-classic-confinement-snaps>` for further details.
+   ⓘ If your snap requires :ref:`classic confinement <classic-confinement>`, your snap will need manual approval before being released. See :ref:`Classic confinement review process <process-for-reviewing-classic-confinement-snaps>` for further details.
 
 Publishing process
 ------------------

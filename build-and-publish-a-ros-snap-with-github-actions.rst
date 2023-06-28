@@ -5,7 +5,7 @@
 Build and Publish a ROS Snap with GitHub Actions
 ================================================
 
-When deploying a `robotics application with snap </t/robotics-applications/29187>`__, keeping the deployment synchronised with development progress is a high priority. It’s best accomplished with a CI/CD pipeline that will automatically deploy your latest developments to your devices.
+When deploying a :ref:`robotics application with snap <deploying-robotics-applications>`, keeping the deployment synchronised with development progress is a high priority. It’s best accomplished with a CI/CD pipeline that will automatically deploy your latest developments to your devices.
 
 In this post, we will explore how to automatically build and publish your ROS snap using `GitHub Actions <https://docs.github.com/en/actions>`__, so that your snap always stays up-to-date on the `snapstore <https://snapcraft.io/store>`__.
 

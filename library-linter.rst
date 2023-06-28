@@ -7,19 +7,19 @@ Library linter
 
 The *library* linter is a :ref:`Snapcraft linter <snapcraft-linters>` that is used to verify whether any ELF file dependencies, typically libraries, are missing from a snap. It also verifies if any libraries are included in a snap but are not used.
 
--  `How the library linter helps <library-linter-heading--help_>`__
--  `Linter warnings <library-linter-heading--warnings_>`__
+-  `How the library linter helps <library-linter-help_>`__
+-  `Linter warnings <library-linter-warnings_>`__
 
-   -  `Example <library-linter-heading--warnings-example_>`__
+   -  `Example <library-linter-warnings-example_>`__
 
--  `Addressing linter issues <library-linter-heading--issues_>`__
+-  `Addressing linter issues <library-linter-issues_>`__
 
-See `Disabling linters <snapcraft-linters.md#library-linter-heading--disable>`__ for details on how to stop this linter running.
+See :ref:`Disabling linters <snapcraft-linters-disable>` for details on how to stop this linter running.
 
 --------------
 
 
-.. _library-linter-heading--help:
+.. _library-linter-help:
 
 How the linter helps
 --------------------
@@ -29,7 +29,7 @@ If a snapped application depends on libraries neither provided by the :ref:`base
 Snap package size can be reduced by removing extra libraries that are not used by the applications in the snap. The library linter issues a warning if unused libraries are detected.
 
 
-.. _library-linter-heading--warnings:
+.. _library-linter-warnings:
 
 Linter warnings
 ---------------
@@ -40,7 +40,7 @@ The library linter will issue a warning if:
 -  Libraries not used by an ELF file in the snap package are detected.
 
 
-.. _library-linter-heading--warnings-example:
+.. _library-linter-warnings-example:
 
 Example
 ~~~~~~~
@@ -56,7 +56,7 @@ The example below shows two missing libraries (``libcaca`` and ``libslang``) and
    - library: libpng16.so.16: unused library 'usr/lib/x86_64-linux-gnu/libpng16.so.16.37.0'.
 
 
-.. _library-linter-heading--issues:
+.. _library-linter-issues:
 
 Addressing issues
 -----------------

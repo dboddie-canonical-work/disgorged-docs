@@ -23,7 +23,7 @@ Developer details
 
 **Auto-connect**: no
 
-As NETLINK_CONNECTOR is not finely mediated and app-specific, use of this interface allows communications via all Netlink connectors. See `Kernel connector <https://www.kernel.org/doc/Documentation/connector/connector.txt>`__ (on kernel.org) for further details.
+As NETLINK_CONNECTOR is not finely mediated and app-specific, use of this interface allows communications via all Netlink connectors. See `Kernel connector`_ (on kernel.org) for further details.
 
 Requires snapd version *2.26+*.
 

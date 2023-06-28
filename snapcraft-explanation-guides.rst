@@ -2,8 +2,8 @@
 
 .. _snapcraft-explanation-guides:
 
-Snapcraft Explanation guides
-============================
+Explanation
+===========
 
 .. note::
           **NOTE TO EDITORS**

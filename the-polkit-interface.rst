@@ -15,12 +15,12 @@ The ``polkit`` interface provides daemons with the permission to use the `polkit
 --------------
 
 
-.. _the-polkit-interface-heading--dev-details:
+.. _the-polkit-interface-dev-details:
 
 Developer details
 -----------------
 
-`Auto-connect <interface-management.md#the-polkit-interface-heading--auto-connections>`__: no
+:ref:`Auto-connect <interface-management-auto-connections>`: no
 
 **Attributes**:
 

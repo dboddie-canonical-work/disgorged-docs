@@ -15,12 +15,12 @@ The ``scsi-generic`` interface allows read and write access to `SCSI Generic dri
 --------------
 
 
-.. _the-scsi-generic-interface-heading--dev-details:
+.. _the-scsi-generic-interface-dev-details:
 
 Developer details
 -----------------
 
-`Auto-connect <interface-management.md#the-scsi-generic-interface-heading--auto-connections>`__: no
+:ref:`Auto-connect <interface-management-auto-connections>`: no
 
 -  ``shared-memory`` (slot and plug):
 

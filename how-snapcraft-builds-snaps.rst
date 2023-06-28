@@ -26,7 +26,7 @@ The list of available global options and commands can be checked with:
    snapcraft help
 
 
-.. _how-snapcraft-builds-snaps-heading--snapcraft:
+.. _how-snapcraft-builds-snaps-snapcraft:
 
 snapcraft.yaml
 --------------
@@ -50,7 +50,7 @@ A minimal valid snapcraft.yaml file that can be built into a working snap requir
 -  Build definition.
 
 
-.. _how-snapcraft-builds-snaps-heading--definitions:
+.. _how-snapcraft-builds-snaps-definitions:
 
 Main definitions inside snapcraft.yaml
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -74,7 +74,7 @@ It is important to note several additional details:
 The parts section may also include a list of :ref:`stage packages <build-and-staging-dependencies>` (stage-packages) that will be used by the snap’s applications at runtime, e.g.: python-bcrypt. These will be obtained from the repository archives in the build instance.
 
 
-.. _how-snapcraft-builds-snaps-heading--build:
+.. _how-snapcraft-builds-snaps-build:
 
 Snapcraft build lifecycle
 -------------------------
@@ -88,7 +88,7 @@ Snaps are :ref:`built <parts-lifecycle>` in several steps, collectively known as
 -  **Pack** - Snapcraft packs the assembled components in the prime directory into a single archive.
 
 
-.. _how-snapcraft-builds-snaps-heading--output:
+.. _how-snapcraft-builds-snaps-output:
 
 Snapcraft build output
 ----------------------
