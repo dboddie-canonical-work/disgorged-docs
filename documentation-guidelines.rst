@@ -22,11 +22,27 @@ Style and language
 
 One of our biggest challenges is accommodating an audience with a huge variation in experience, from beginners exploring the *snap* command, through snap creators experimenting with *snapcraft.yaml*, to experts harnessing the API and deploying snaps across thousands of IoT devices.
 
-Consequently, we try to: - pitch the writing and editing appropriately for the subject - write inclusively and assume very little prior knowledge of the reader - link or explain phrases, acronyms and concepts that may be unfamiliar, and if unsure, err on the side of caution
+Consequently, we try to:
 
-Some general tips: - use a spell checker - resist being overly formal - resist being overly verbose - verify links and examples
+- pitch the writing and editing appropriately for the subject
+- write inclusively and assume very little prior knowledge of the reader
+- link or explain phrases, acronyms and concepts that may be unfamiliar, and if unsure, err on the side of caution
 
-We (mostly) adhere to the `Ubuntu style guide <https://docs.ubuntu.com/styleguide/en>`__. In particular: - we use British English (en-GB), for example: - the *ise* suffix in preference to *ize* (*capitalise* rather than *capitalize*) - *our* instead of *or* (as in *colour* and *color*) - license as a verb, licence as a noun - catalogue rather than catalog - dates take the format *1 January 2013*, *1-2 January 2013* and *1 January - 2 February 2013*
+Some general tips:
+
+- use a spell checker
+- resist being overly formal
+- resist being overly verbose
+- verify links and examples
+
+We (mostly) adhere to the `Ubuntu style guide <https://docs.ubuntu.com/styleguide/en>`__. In particular:
+
+- we use British English (en-GB), for example:
+- the *ise* suffix in preference to *ize* (*capitalise* rather than *capitalize*)
+- *our* instead of *or* (as in *colour* and *color*)
+- license as a verb, licence as a noun
+- catalogue rather than catalog
+- dates take the format *1 January 2013*, *1-2 January 2013* and *1 January - 2 February 2013*
 
 .. _documentation-guidelines-diataxis:
 

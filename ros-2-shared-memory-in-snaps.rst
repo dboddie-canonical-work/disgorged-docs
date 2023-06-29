@@ -23,7 +23,7 @@ Note that everything discussed hereafter is exemplified on `GitHub <https://gith
 Public shared memory interface for ROS 2
 ----------------------------------------
 
-Snap is providing an interface called `shared-memory <https://snapcraft.io/docs/shared-memory-interface>`__. This interface allows different snaps to have access (read and/or write) to a specified path. This is meant to share resources in ``/dev/shm`` across snaps. To do so, we have to declare both a `slot as well as ``plug`` <https://snapcraft.io/docs/interface-management>`__. Before running the snap, we will have to manually connect these slot & plug, possibly connecting several other snaps to the same slot.
+Snap is providing an interface called `shared-memory <https://snapcraft.io/docs/shared-memory-interface>`__. This interface allows different snaps to have access (read and/or write) to a specified path. This is meant to share resources in ``/dev/shm`` across snaps. To do so, we have to declare both a :ref:`slot as well as a plug <interface-management>`. Before running the snap, we will have to manually connect theseplug, possibly connecting several other snaps to the same slot.
 
 The slot is the one defining the shared memory paths to be accessed. With ROS 2, we actually need access to everything within the ``/dev/shm`` directory (due to the semaphore temporary files). An example of the slot and plug is as follows:
 

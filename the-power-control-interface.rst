@@ -24,7 +24,11 @@ Developer details
 
 **Auto-connect**: no
 
-This interface enables: - reading of all power settings: ``/sys/devices/**/power/`` - setting wake-up events for supported devices: ``/sys/devices/**/power/wakeup`` - configuring power management for supported devices at runtime: ``/sys/devices/**/power/control``
+This interface enables:
+
+- reading of all power settings: ``/sys/devices/**/power/``
+- setting wake-up events for supported devices: ``/sys/devices/**/power/wakeup``
+- configuring power management for supported devices at runtime: ``/sys/devices/**/power/control``
 
 Code examples
 -------------

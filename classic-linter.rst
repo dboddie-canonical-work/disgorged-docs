@@ -9,17 +9,7 @@ The *classic* linter is a :ref:`Snapcraft linter <snapcraft-linters>` that is us
 
 The classic linter is only invoked when snap confinement is set to ``classic``, or if *libc* is staged.
 
--  `How the classic linter helps <classic-linter-help_>`__
--  `Linter warnings <classic-linter-warnings_>`__
--  `Addressing linter issues <classic-linter-issues_>`__
-
-   -  `at build time <classic-linter-issues-build_>`__
-   -  `binary patching <classic-linter-issues-binary_>`__
-   -  `automatic ELF patching <classic-linter-issues-auto_>`__
-
 See :ref:`Disabling linters <snapcraft-linters-disable>` for details on how to stop this linter running.
-
---------------
 
 
 .. _classic-linter-help:

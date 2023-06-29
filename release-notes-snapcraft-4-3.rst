@@ -7,7 +7,12 @@ Release notes: Snapcraft 4.3
 
 The team behind Snapcraft is pleased to announce the release of `Snapcraft 4.3 <https://github.com/snapcore/snapcraft/releases/tag/4.3>`__.
 
-Highlights for this release include: \* a new ROS 1 extension for ``core20`` \* new v2 versions of the catkin and catkin-tools plugins \* the ability to set a default track for a snap \* a new ``--enable-experimental-extensions`` option for expand-extensions
+Highlights for this release include:
+
+* a new ROS 1 extension for ``core20``
+* new v2 versions of the catkin and catkin-tools plugins
+* the ability to set a default track for a snap
+* a new ``--enable-experimental-extensions`` option for expand-extensions
 
 For general details, including installation instructions, see :ref:`Snapcraft overview <snapcraft-overview>`, or take a look at :ref:`Snapcraft release notes <snapcraft-release-notes>` for other *Snapcraft* releases.
 

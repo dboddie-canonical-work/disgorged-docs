@@ -18,14 +18,6 @@ To remain secure and supported, these snaps will need to either:
 
 See :ref:`Migrating between bases <migrating-between-bases>` for help switching to a newer base, and see below for details on Snapcraft changes and using ESM when building core-based snaps.
 
--  `Changes to Snapcraft <snapcraft-and-extended-security-maintenance-heading--changes_>`__
--  `Extended Security Maintenance <snapcraft-and-extended-security-maintenance-heading--esm_>`__
--  `Using the Ubuntu Advantage token <snapcraft-and-extended-security-maintenance-heading--using_>`__
--  `Remote build and Snapcraft build service <snapcraft-and-extended-security-maintenance-heading--launchpad_>`__
--  `Github Actions <snapcraft-and-extended-security-maintenance-heading--github_>`__
-
---------------
-
 
 .. _snapcraft-and-extended-security-maintenance-heading--changes:
 
@@ -36,7 +28,15 @@ Changes to Snapcraft
 
 There will be no immediate impact to either Snapcraft developers or snap users. Snaps will continue to work and your users will be able to continue running them. ESM only becomes relevant as packages need to be updated and patched.
 
-If you’re building snaps locally or through your own CI/CD system: \* Snapcraft now has two `tracks <https://snapcraft.io/docs/channels#snapcraft-and-extended-security-maintenance-heading--tracks>`__: ``4.x`` and ``latest`` Both tracks will be maintained in parallel until the release of Snapcraft 5, after which ``4.x`` will be maintained for ESM compatibility. \* cores will be relabelled: - ``core`` becomes *ESM base* - ``core18`` and ``core20`` become *LTS bases*. \* Snap developers and publishers using the ESM base **will not** be able to use Snapcraft 5 or later. A notification will inform developers to use the ``4.x`` track.
+If you’re building snaps locally or through your own CI/CD system:
+
+* Snapcraft now has two `tracks <https://snapcraft.io/docs/channels#snapcraft-and-extended-security-maintenance-heading--tracks>`__: ``4.x`` and ``latest`` Both tracks will be maintained in parallel until the release of Snapcraft 5, after which ``4.x`` will be maintained for ESM compatibility.
+* cores will be relabelled:
+
+- ``core`` becomes *ESM base*
+- ``core18`` and ``core20`` become *LTS bases*.
+
+  * Snap developers and publishers using the ESM base **will not** be able to use Snapcraft 5 or later. A notification will inform developers to use the ``4.x`` track.
 
 
 .. _snapcraft-and-extended-security-maintenance-heading--esm:

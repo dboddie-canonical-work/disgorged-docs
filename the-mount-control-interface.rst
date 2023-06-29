@@ -39,7 +39,11 @@ Developer details
 
 See `AppArmor globbing syntax <https://gitlab.com/apparmor/apparmor/-/wikis/AppArmor_Core_Policy_Reference#apparmor-globbing-syntax>`__ for details on how the pattern matching and wildcards work.
 
-It’s the responsibility of the snapped application or service to create and maintain a mount point, using either of the following: - the `mount <https://man7.org/linux/man-pages/man8/mount.8.html>`__ command - the `mount() <https://man7.org/linux/man-pages/man2/mount.2.html>`__ system call - an accompanying :ref:`snapctl mount <snapctl-tool-mount-control>`
+It’s the responsibility of the snapped application or service to create and maintain a mount point, using either of the following:
+
+- the `mount <https://man7.org/linux/man-pages/man8/mount.8.html>`__ command
+- the `mount() <https://man7.org/linux/man-pages/man2/mount.2.html>`__ system call
+- an accompanying :ref:`snapctl mount <snapctl-tool-mount-control>`
 
 The ``snapctl mount`` command is the only option for creating a persistent mount point via its ``--persistent`` mount option.
 

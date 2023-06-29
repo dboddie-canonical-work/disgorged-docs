@@ -26,7 +26,9 @@ Developer details
 
 :ref:`Super-privileged <super-privileged-interfaces>`: yes
 
-The device is expected in the following location: - ``/dev/ion``
+The device is expected in the following location:
+
+- ``/dev/ion``
 
 Code examples
 -------------

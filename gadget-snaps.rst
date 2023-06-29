@@ -7,13 +7,26 @@ Gadget snaps
 
 The gadget snap is responsible for defining and configuring system properties specific to one or more devices.
 
-The gadget metadata and content defines: - The layout of the volumes that comprise the device storage and image - Configuration for the bootloader to use. The gadget also ships the bootloader itself and other boot assets. - Default configuration options to use when snaps are installed. - Interface connections configured in the ``connections:`` section are executed on the device’s first boot only. Later changes to this section – that is, changes added to the device at run time through gadget refreshes – are not applied. - Optional hooks that are invoked to control and customise the behaviour over the device lifecycle, e.g. installation, initialisation and establishing device identity, factory reset.
+The gadget metadata and content defines:
+
+- The layout of the volumes that comprise the device storage and image
+- Configuration for the bootloader to use. The gadget also ships the bootloader itself and other boot assets.
+- Default configuration options to use when snaps are installed.
+- Interface connections configured in the ``connections:`` section are executed on the device’s first boot only. Later changes to this section – that is, changes added to the device at run time through gadget refreshes – are not applied.
+- Optional hooks that are invoked to control and customise the behaviour over the device lifecycle, e.g. installation, initialisation and establishing device identity, factory reset.
 
 See `Building a gadget snap <https://ubuntu.com/core/docs/gadget-building>`__ for details on how a gadget snap can be built. For store deployment, gadget snaps must be produced by the device :ref:`brand <glossary>`, as defined in the `model assertion <https://ubuntu.com/core/docs/reference/assertions/model>`__, or a reference gadget must be used. It is perfectly possible for different models to share a gadget snap.
 
 --------------
 
-A typical gadget snap will consist of the following: - `Setup files <gadget-snaps-setup_>`__ - `Gadget.yaml <gadget-snaps-gadget_>`__ - `Volumes <gadget-snaps-volumes_>`__ - `Specification <gadget-snaps-specification_>`__ - `Raspberry Pi example <gadget-snaps-piexample_>`__ - `Prepare-device hook <gadget-snaps-prepare_>`__ - `Example script <gadget-snaps-example-prepare_>`__
+A typical gadget snap will consist of the following:
+
+- `Setup files <gadget-snaps-setup_>`__
+- `Gadget.yaml <gadget-snaps-gadget_>`__
+- `Volumes <gadget-snaps-volumes_>`__
+- `Specification <gadget-snaps-specification_>`__
+- `Raspberry Pi example <gadget-snaps-piexample_>`__
+- `Prepare-device hook <gadget-snaps-prepare_>`__ - `Example script <gadget-snaps-example-prepare_>`__
 
 
 .. _gadget-snaps-setup:
@@ -29,7 +42,10 @@ In addition to traditional snap metadata, the gadget snap also holds some setup 
 -  **u-boot.conf**: required U-Boot configuration when using this bootloader.
 -  **cloud.conf**: optional `cloud-init <https://cloudinit.readthedocs.io/en/latest/>`__ configuration; cloud-init is disabled if missing.
 
-Sample configuration files may be found in the current reference gadget snaps: - `Raspberry Pi (2B, 3B, 3A+, 3B+, 4B, Compute Module 3, and Compute Module 3+) <https://github.com/snapcore/pi-gadget>`__ - `amd64 <https://github.com/snapcore/pc-amd64-gadget>`__ - `i386 <https://github.com/snapcore/pc-i386-gadget>`__
+Sample configuration files may be found in the current reference gadget snaps:
+
+- `Raspberry Pi (2B, 3B, 3A+, 3B+, 4B, Compute Module 3, and Compute Module 3+) <https://github.com/snapcore/pi-gadget>`__
+- `amd64 <https://github.com/snapcore/pc-amd64-gadget>`__ - `i386 <https://github.com/snapcore/pc-i386-gadget>`__
 
 In the near future, we expect to add a RISC-V reference gadget snap to this list.
 
@@ -58,7 +74,12 @@ Two YAML keys are used to describe your target device:
 The volumes mapping sub-section
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Each volume entry is described by: - a name as defined by the entry key - a partition structure (required) - a bootloader definition (``grub``, ``u-boot``) - a partitioning schema eg. ``mbr``. Defaults to ``gpt`` if unspecified.
+Each volume entry is described by:
+
+- a name as defined by the entry key
+- a partition structure (required)
+- a bootloader definition (``grub``, ``u-boot``)
+- a partitioning schema eg. ``mbr``. Defaults to ``gpt`` if unspecified.
 
 Volumes define the structure and content of the images to be written into one or more block devices of the gadget device. Each volume in the mapping represents a different image for a “disk” in the device.
 

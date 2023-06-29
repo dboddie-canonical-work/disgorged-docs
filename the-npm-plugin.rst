@@ -30,9 +30,9 @@ base: core22
 
 This plugin uses the following plugin-specific keyword:
 
--  **``npm-include-node``** (bool, default: *false*) If true, download and include the *node* binary and its dependencies. If ``npm-include-node`` is true, then ``npm-node-version`` must be defined.
+-  **npm-include-node** (bool, default: *false*) If true, download and include the *node* binary and its dependencies. If ``npm-include-node`` is true, then ``npm-node-version`` must be defined.
 
--  **``npm-node-version``** (string) The version of *node.js* you want the snap to run on and includes *npm*, as would be downloaded from (https://nodejs.org).
+-  **npm-node-version** (string) The version of *node.js* you want the snap to run on and includes *npm*, as would be downloaded from (https://nodejs.org).
 
 Requires Snapcraft version *7.0+*.
 
@@ -44,6 +44,6 @@ base: core20
 
 This plugin uses the following plugin-specific keyword:
 
--  **``npm-node-version``** (string) The version of *node.js* you want the snap to run on and includes *npm*, as would be downloaded from (https://nodejs.org).
+-  **npm-node-version** (string) The version of *node.js* you want the snap to run on and includes *npm*, as would be downloaded from (https://nodejs.org).
 
 Requires Snapcraft version *4.0+*.

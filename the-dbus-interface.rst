@@ -7,7 +7,14 @@ The dbus interface
 
 ``dbus`` allows owning a specifc name on DBus.
 
-**Auto-connect**: no **Attributes**: \* ``name`` (slot): well-known DBus connection name for the service (eg, ``org.foo.bar``) \* ``bus`` (slot): DBus bus to use (ie, ``session`` or ``system``) \* ``name`` (plug): well-known DBus connection name of the service from the providing snap \* ``bus`` (plug): DBus bus to use for providing snap
+**Auto-connect**: no
+
+**Attributes**:
+
+* ``name`` (slot): well-known DBus connection name for the service (eg, ``org.foo.bar``)
+* ``bus`` (slot): DBus bus to use (ie, ``session`` or ``system``)
+* ``name`` (plug): well-known DBus connection name of the service from the providing snap
+* ``bus`` (plug): DBus bus to use for providing snap
 
 Snaps that want to communicate via a well-known DBus connection name need to have matching ``bus`` and ``name`` attributes and then be connected via ``snap connect``. Snaps specifying ``bus: system`` will have a default DBus bus policy that allows ``root`` to own the name and anyone to send to a destination that matches the well-known name (eg, ``org.foo.bar``). Once connected, the consuming snap may communicate with the providing snap via:
 

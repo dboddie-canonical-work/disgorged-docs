@@ -91,7 +91,11 @@ The architecture and framework has been cemented into the ``snapcraft`` tool to 
 
 Extensions have the unique property of being applied to ``snapcraft.yaml`` itself, where they can be expanded upon and, potentially, used in lieu of the extension itself. This would allow for project-specific modifications of the extension.
 
-You can interact with extensions using the following new commands: - ``list-extensions``, to view the available extensions. - ``extension``, to show information about the extension. - ``expand-extensions``, to display how the ``snapcraft.yaml`` will look like with the extensions applied.
+You can interact with extensions using the following new commands:
+
+- ``list-extensions``, to view the available extensions.
+- ``extension``, to show information about the extension.
+- ``expand-extensions``, to display how the ``snapcraft.yaml`` will look like with the extensions applied.
 
 Lifecycle cleaning
 ~~~~~~~~~~~~~~~~~~

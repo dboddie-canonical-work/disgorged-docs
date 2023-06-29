@@ -17,7 +17,19 @@ A hook is defined as an executable within a snap’s ``meta/hooks/`` directory, 
 
 The filename of the executable is based on the name of the hook. If this file exists, *snapd* will execute the file when required by that hook’s action.
 
-The following hooks are currently implemented: - `configure hook <supported-snap-hooks-the-configure-hook_>`__ - `default-configure hook <supported-snap-hooks-default-configure_>`__ - `full-disk-encryption hook <supported-snap-hooks-fde_>`__ - `gate-auto-refresh <supported-snap-hooks-gate-auto-refresh_>`__ - `install hook <supported-snap-hooks-install_>`__ - `install-device hook <supported-snap-hooks-install-device_>`__ - `interface hooks <supported-snap-hooks-interface_>`__ - `prepare-device hook <supported-snap-hooks-prepare-device_>`__ - `pre-refresh hook <supported-snap-hooks-pre-refresh_>`__ - `post-refresh hook <supported-snap-hooks-post-refresh_>`__ - `remove hook <supported-snap-hooks-remove_>`__
+The following hooks are currently implemented:
+
+- `configure hook <supported-snap-hooks-the-configure-hook_>`__
+- `default-configure hook <supported-snap-hooks-default-configure_>`__
+- `full-disk-encryption hook <supported-snap-hooks-fde_>`__
+- `gate-auto-refresh <supported-snap-hooks-gate-auto-refresh_>`__
+- `install hook <supported-snap-hooks-install_>`__
+- `install-device hook <supported-snap-hooks-install-device_>`__
+- `interface hooks <supported-snap-hooks-interface_>`__
+- `prepare-device hook <supported-snap-hooks-prepare-device_>`__
+- `pre-refresh hook <supported-snap-hooks-pre-refresh_>`__
+- `post-refresh hook <supported-snap-hooks-post-refresh_>`__
+- `remove hook <supported-snap-hooks-remove_>`__
 
    ⓘ **Default shell environment**: A hook script can only assume a POSIX-compliant shell environment for its execution. If your script needs a specific shell, such as *Bash* or *Zsh*, it needs to be explicitly declared within the script’s *hashbang* header (``#!/bin/bash``, for example). Your snap also needs to ensure your chosen shell is available.
 

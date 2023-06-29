@@ -20,7 +20,9 @@ The ``fpga`` interface allows access to the `FPGA subsystem <https://www.kernel.
 Developer details
 -----------------
 
-**Auto-connect**: no **Allow-installation**: yes
+**Auto-connect**: no
+
+**Allow-installation**: yes
 
 Devices: ``/dev/fpga[0-9]* rw,``
 

@@ -56,7 +56,18 @@ The *snapcraft metrics* command takes the following arguments:
 Supported metrics
 ~~~~~~~~~~~~~~~~~
 
-The following metrics (``<metric-name>``) are supported: \* **daily_device_change**: contains the 3 series representing the number of **new**, **continued** and **lost** devices with the given snap installed compared to the previous day. \* **installed_base_by_channel**: contains one series per channel representing the number of devices with the given snap installed, channels with no data across the entire interval are omitted. \* **installed_base_by_country**: contains one series per country representing the number of devices with the given snap installed. \* **installed_base_by_operating_system**: contains one series per operating_system representing the number of devices with the given snap installed. \* **installed_base_by_version**: contains one series per version representing the number of devices with the given snap installed. \* **weekly_device_change**: similar to the ‘daily_device_change’ metric but operates on a 7 day window. i.e. **new** contains the number of devices that were seen during the last 7 days but not in the previous 7 day and so on for **continued** and **lost**. \* **weekly_installed_base_by_channel**: similar to the **installed_base_by_channel** metric but operates in a 7 day window. \* **weekly_installed_base_by_country**: similar to the **installed_base_by_country** metric but operates in a 7 day window. \* **weekly_installed_base_by_operating_system**: similar to the **installed_base_by_operating_system** metric but operates in a 7 day window. \* **weekly_installed_base_by_version**: similar to the **installed_base_by_version** metric but operates in a 7 day window.
+The following metrics (``<metric-name>``) are supported:
+
+* **daily_device_change**: contains the 3 series representing the number of **new**, **continued** and **lost** devices with the given snap installed compared to the previous day.
+* **installed_base_by_channel**: contains one series per channel representing the number of devices with the given snap installed, channels with no data across the entire interval are omitted.
+* **installed_base_by_country**: contains one series per country representing the number of devices with the given snap installed.
+* **installed_base_by_operating_system**: contains one series per operating_system representing the number of devices with the given snap installed.
+* **installed_base_by_version**: contains one series per version representing the number of devices with the given snap installed.
+* **weekly_device_change**: similar to the ‘daily_device_change’ metric but operates on a 7 day window. i.e. **new** contains the number of devices that were seen during the last 7 days but not in the previous 7 day and so on for **continued** and **lost**.
+* **weekly_installed_base_by_channel**: similar to the **installed_base_by_channel** metric but operates in a 7 day window.
+* **weekly_installed_base_by_country**: similar to the **installed_base_by_country** metric but operates in a 7 day window.
+* **weekly_installed_base_by_operating_system**: similar to the **installed_base_by_operating_system** metric but operates in a 7 day window.
+* **weekly_installed_base_by_version**: similar to the **installed_base_by_version** metric but operates in a 7 day window.
 
 Each metric has a query that includes a start and end date. The returned data, if available, will include all the days in-between. Weekly installed numbers still generated daily with the provided numbers being the averages for the 7 day window ending on the specified day.
 

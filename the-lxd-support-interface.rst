@@ -9,6 +9,8 @@ The lxd-support interface
 
 :ref:`Auto-connect <interface-management-auto-connections>`: no
 
-:ref:`Super-privileged <super-privileged-interfaces>`: yes **Transitional**: yes
+:ref:`Super-privileged <super-privileged-interfaces>`: yes
+
+**Transitional**: yes
 
    ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

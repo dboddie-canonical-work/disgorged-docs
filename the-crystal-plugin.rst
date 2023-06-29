@@ -24,9 +24,10 @@ Brian J. Cardiff, one of Crystal’s developers, attended the 2019 Snapcraft Sum
 base: core20
 ~~~~~~~~~~~~
 
-This plugin uses the following plugin-specific keywords: - **``crystal-channel``**: (string, default: *latest/stable*) The Snap Store channel to install Crystal from.
+This plugin uses the following plugin-specific keywords:
 
--  **``crystal-build-options``**: (list) Command line options to pass to ``shards build``. (e.g. ``[--release, --static]``)
+- **crystal-channel**: (string, default: *latest/stable*) The Snap Store channel to install Crystal from.
+-  **crystal-build-options**: (list) Command line options to pass to ``shards build``. (e.g. ``[--release, --static]``)
 
 Requires Snapcraft version *7.0+*.
 
@@ -36,6 +37,8 @@ Requires Snapcraft version *7.0+*.
 base: core18 \| core
 ~~~~~~~~~~~~~~~~~~~~
 
-The following keyword is currently accepted by the plugin: - **``crystal-channel``**: (string, default: *latest/stable*) The Snap Store channel to install Crystal from.
+The following keyword is currently accepted by the plugin:
+
+- **crystal-channel**: (string, default: *latest/stable*) The Snap Store channel to install Crystal from.
 
 Requires Snapcraft version *3.7+*.

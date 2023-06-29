@@ -44,7 +44,12 @@ A list of features that must be supported by the core in order for this snap to 
    assumes:
    - snapd2.38
 
-Other potential values for *assumes* include: - ``common-data-dir``: support for common data directory across revisions of a snap - ``snap-env``: support for the “Environment:” feature in snap.yaml - ``command-chain``: support for the “command-chain” feature for apps and hooks in snap.yaml - ``kernel-assets``: support for kernel assets in :ref:`gadget.yaml <gadget-snaps-specification>`, such as to include volume content in the style ``$kernel:ref``
+Other potential values for *assumes* include:
+
+- ``common-data-dir``: support for common data directory across revisions of a snap
+- ``snap-env``: support for the “Environment:” feature in snap.yaml
+- ``command-chain``: support for the “command-chain” feature for apps and hooks in snap.yaml
+- ``kernel-assets``: support for kernel assets in :ref:`gadget.yaml <gadget-snaps-specification>`, such as to include volume content in the style ``$kernel:ref``
 
 
 .. _snapcraft-top-level-metadata-base:
@@ -379,7 +384,7 @@ plugs
 
 Type: ``dict`` *(optional)*
 
-These plugs apply to all ``apps`` and differs from **``apps.<app-name>.plugs``** in that the type is in a ``dict`` rather than a ``list`` format, ``:``\ (colon) must be postfixed to the interface name and shouldn’t start with ``-``\ (dash-space).
+These plugs apply to all ``apps`` and differs from **apps.<app-name>.plugs** in that the type is in a ``dict`` rather than a ``list`` format, ``:``\ (colon) must be postfixed to the interface name and shouldn’t start with ``-``\ (dash-space).
 
 plugs.<plug-name>
 -----------------

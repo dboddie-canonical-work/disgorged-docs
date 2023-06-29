@@ -27,8 +27,8 @@ For a simple example, see :ref:`MOOS applications <moos-applications>`, or searc
 base: core22
 ~~~~~~~~~~~~
 
--  **``cmake-generator``** (string, default: *Unix Makefiles*) Determine what native build system is to be used. Can be either ``Ninja`` or ``Unix Makefiles`` (default).
--  **``cmake-parameters``** (list of strings) Configure flags to pass to the build using the common *cmake* semantics.
+-  **cmake-generator** (string, default: *Unix Makefiles*) Determine what native build system is to be used. Can be either ``Ninja`` or ``Unix Makefiles`` (default).
+-  **cmake-parameters** (list of strings) Configure flags to pass to the build using the common *cmake* semantics.
 
 Note that Snapcraft does not specify cmake parameters by default. A common parameter for parts using the cmake plugin is ``CMAKE_INSTALL_PREFIX=/usr`` - this prevents installation to the default directory of ``/usr/local``. For example:
 
@@ -49,8 +49,8 @@ Requires Snapcraft version *7.0+*.
 base: core20
 ~~~~~~~~~~~~
 
--  **``cmake-generator``** (string, default: *Unix Makefiles*) Determine what native build system is to be used. Can be either ``Ninja`` or ``Unix Makefiles`` (default).
--  **``cmake-parameters``** (list of strings) Configure flags to pass to the build using the common *cmake* semantics.
+-  **cmake-generator** (string, default: *Unix Makefiles*) Determine what native build system is to be used. Can be either ``Ninja`` or ``Unix Makefiles`` (default).
+-  **cmake-parameters** (list of strings) Configure flags to pass to the build using the common *cmake* semantics.
 
 Note that Snapcraft does not specify cmake parameters by default. A common parameter for parts using the cmake plugin is ``CMAKE_INSTALL_PREFIX=/usr`` - this prevents installation to the default directory of ``/usr/local``. For example:
 
@@ -71,6 +71,6 @@ Requires Snapcraft version *4.0+*.
 base: core18 \| core
 ~~~~~~~~~~~~~~~~~~~~
 
--  **``configflags``** (list of strings) Configure flags to pass to the build using the common *cmake* semantics.
+-  **configflags** (list of strings) Configure flags to pass to the build using the common *cmake* semantics.
 
 Requires Snapcraft version *3.0+*.

@@ -23,8 +23,8 @@ See :ref:`Rust applications <rust-applications>` for a simple example, or search
 base: core22
 ~~~~~~~~~~~~
 
--  **``rust-features``** (list of strings) Features used to build optional dependencies
--  **``rust-path``** (list of strings) Defaults to the current working directory. Can be set to the relative path for the crate to build when using workspaces. Only one item is currently supported.
+-  **rust-features** (list of strings) Features used to build optional dependencies
+-  **rust-path** (list of strings) Defaults to the current working directory. Can be set to the relative path for the crate to build when using workspaces. Only one item is currently supported.
 
 Requires Snapcraft version *7.0+*.
 
@@ -34,8 +34,8 @@ Requires Snapcraft version *7.0+*.
 base: core20
 ~~~~~~~~~~~~
 
--  **``rust-features``** (list of strings) Features used to build optional dependencies
--  **``rust-path``** (list of strings) Defaults to the current working directory. Can be set to the relative path for the crate to build when using workspaces. Only one item is currently supported.
+-  **rust-features** (list of strings) Features used to build optional dependencies
+-  **rust-path** (list of strings) Defaults to the current working directory. Can be set to the relative path for the crate to build when using workspaces. Only one item is currently supported.
 
 Requires Snapcraft version *4.0+*.
 
@@ -45,9 +45,9 @@ Requires Snapcraft version *4.0+*.
 base: core18 \| core
 ~~~~~~~~~~~~~~~~~~~~
 
--  **``rust-channel``** (string) Used to select which *rust* channel (stable, beta, nightly)
--  **``rust-features``** (list of strings) Features used to build optional dependencies
--  **``rust-revision``** (string) Used to select which *rust* version
+-  **rust-channel** (string) Used to select which *rust* channel (stable, beta, nightly)
+-  **rust-features** (list of strings) Features used to build optional dependencies
+-  **rust-revision** (string) Used to select which *rust* version
 
 If a `rust-toolchain <https://rust-lang.github.io/rustup/overrides.html#the-toolchain-file>`__ file is detected, the toolchain it specifies will be used by default. However, if ``rust-channel`` or ``rust-revision`` are set, the rust-toolchain file will be overridden.
 

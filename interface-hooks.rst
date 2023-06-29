@@ -31,17 +31,27 @@ If an interface connection fails, all changes are undone and an *undo* hook is r
 
 Interface hooks can read the attributes of the affected plug and slot by using the *snapctl* command, as defined by the snap’s :ref:`snap.yaml <the-snap-format>`.
 
-When executed by slot hooks: - ``snapctl get :<slotname> <attribute name>`` to read attributes of the local slot - ``snapctl get --plug :<slotname> <attribute name>`` to read attributes of the plug
+When executed by slot hooks:
 
-When executed by plug hooks: - ``snapctl get :<plugname> <attribute name>`` to read attributes of local plug - ``snapctl get --slot :<plugname> <attribute name>`` to read attributes of the slot
+- ``snapctl get :<slotname> <attribute name>`` to read attributes of the local slot
+- ``snapctl get --plug :<slotname> <attribute name>`` to read attributes of the plug
+
+When executed by plug hooks:
+
+- ``snapctl get :<plugname> <attribute name>`` to read attributes of local plug
+- ``snapctl get --slot :<plugname> <attribute name>`` to read attributes of the slot
 
 The plug and slot hooks do not know the corresponding slot and plug names on the other end of the connection. For this reason, the above syntax uses ``:<slotname>`` in the slot hooks and ``:<plugname>`` in the plug hooks. It’s the ``--plug`` or ``--slot`` flag that tells *snapctl* which end of the connection to read attributes from.
 
 In addition to the plug and slot attributes defined in *snap.yaml*, ``prepare-plug-`` and ``prepare-slot-`` hooks can create attributes dynamically with the *snapctl* command:
 
-In the *prepare-slot-<slotname>* hook: - ``snapctl set :<slotname> slotattribute=value`` to create an attribute for the slot side
+In the *prepare-slot-<slotname>* hook:
 
-In the *prepare-plug-<plugname>* hook: - ``snapctl set :<plugname> plugattribute=value`` to create an attribute for the plug side
+- ``snapctl set :<slotname> slotattribute=value`` to create an attribute for the slot side
+
+In the *prepare-plug-<plugname>* hook:
+
+- ``snapctl set :<plugname> plugattribute=value`` to create an attribute for the plug side
 
 Attributes can only be created in *prepare-* hooks, and only as long as their names do not clash with attributes already defined statically in snap.yaml for the given plug/slot. This means overwriting or overloading statically defined attributes is not allowed.
 

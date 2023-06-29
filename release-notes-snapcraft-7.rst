@@ -32,7 +32,12 @@ These changes are now applicable when switching to ``core22``:
 -  An error is now generated when duplicate keys are used in snapcraft.yaml.
 -  Snapcraft now makes use of the global environment keyword instead of command-chain (which allows for easy overriding)
 
-The following are not currently supported with ``core22`` : - Automatic classic snap building support (ORIGIN paths and linker loader setup) - Plugins: crystal, qmake - Some source handlers: 7zip, mercurial, bazaar, deb, rpm - Support for user-defined plugins.
+The following are not currently supported with ``core22`` :
+
+- Automatic classic snap building support (ORIGIN paths and linker loader setup)
+- Plugins: crystal, qmake
+- Some source handlers: 7zip, mercurial, bazaar, deb, rpm
+- Support for user-defined plugins.
 
 Missing features will be ported and added to upcoming 7.x releases. If your snap relies on any of these features, please wait for the next releases to port them to use ``base: core22``.
 

@@ -100,7 +100,7 @@ crystal (new plugin)
 
 The following keyword is currently accepted by the plugin:
 
--  **``crystal-channel``**: (string) The Snap Store channel to install Crystal from. Default: ``latest/stable``
+-  **crystal-channel**: (string) The Snap Store channel to install Crystal from. Default: ``latest/stable``
 
 Brian J. Cardiff, one of Crystal’s developers, attended the 2019 Snapcraft Summit Montréal and wrote an excellent overview of how to use the plugin as part of an event write-up. See `Snapcraft Summit Montréal <https://crystal-lang.org/2019/06/19/snapcraft-summit-montreal.html>`__ for the post.
 
@@ -109,7 +109,11 @@ conda (new plugin)
 
 `Conda <https://docs.conda.io>`__ is an open source package management system and environment management system that runs on Windows, macOS and Linux. This plugin was developed during the 2019 Snapcraft Summit Montréal with the `Anaconda <https://www.anaconda.com/>`__ developers.
 
-This plugin uses the following plugin-specific keywords: - **``conda-packages``** (list of strings) List of *conda* packages to install. - **``conda-python-version``** (string) The Python version to use for the *conda* packages. Defaults to the latest supported by `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`__. - **``conda-miniconda-version``** (string) The version of `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`__ to bootstrap. Defaults to the latest release.
+This plugin uses the following plugin-specific keywords:
+
+- **conda-packages** (list of strings) List of *conda* packages to install.
+- **conda-python-version** (string) The Python version to use for the *conda* packages. Defaults to the latest supported by `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`__.
+- **conda-miniconda-version** (string) The version of `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`__ to bootstrap. Defaults to the latest release.
 
 rust
 ~~~~
@@ -137,7 +141,12 @@ Support for `ROS 2 Dashing Diademata <https://index.ros.org//doc/ros2/Releases/R
 Bug fixes
 ---------
 
-There have been many bugs fixed in this release. Some of the most significant are as follows: - improved error handling - additional AppStream icon extraction scenarios that are now taken into account - modified handling of in-snap symlinks, specifically to better accommodate the merged ``/usr`` directory scheme - ``click.prompt`` and ``click.confirm`` expanded to query the existence of tty for stdin.
+There have been many bugs fixed in this release. Some of the most significant are as follows:
+
+- improved error handling
+- additional AppStream icon extraction scenarios that are now taken into account
+- modified handling of in-snap symlinks, specifically to better accommodate the merged ``/usr`` directory scheme
+- ``click.prompt`` and ``click.confirm`` expanded to query the existence of tty for stdin.
 
 Full list of changes
 --------------------

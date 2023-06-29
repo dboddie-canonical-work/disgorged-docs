@@ -71,7 +71,7 @@ Both ``SNAP_USER_COMMON`` and ``SNAP_USER_DATA`` only become available after a s
 Ubuntu Core
 -----------
 
-On Ubuntu Core, the **``SNAP_SAVE_DATA``** environment variable within a snap’s environment points to a snap-specific location on the `ubuntu-save <https://ubuntu.com/core/docs/uc20/inside#data-locations-heading--layouts>`__ volume. This is used to store data that can be accessed during recovery or after re-installation of Ubuntu Core.
+On Ubuntu Core, the **SNAP_SAVE_DATA** environment variable within a snap’s environment points to a snap-specific location on the `ubuntu-save <https://ubuntu.com/core/docs/uc20/inside#data-locations-heading--layouts>`__ volume. This is used to store data that can be accessed during recovery or after re-installation of Ubuntu Core.
 
 For example, in the reference Ubuntu Core 22 image, from within the *hello-world* snap, ``SNAP_SAVE_DATA`` has the following value:
 
@@ -94,9 +94,9 @@ Other locations
 
 There are several other directories you should be aware of:
 
--  **``/var/lib/snapd/cache``** This is the working cache and is used to minimise download size and speed-up refreshes.
--  **``/var/lib/snapd/snaps``** Contains all the versions of snaps installed on your system.
--  **``/var/lib/snapd/snapshots/``** Contains both the manually generated and automatically generated `snapshots <https://snapcraft.io/docs/snapshots>`__.
+-  **/var/lib/snapd/cache** This is the working cache and is used to minimise download size and speed-up refreshes.
+-  **/var/lib/snapd/snaps** Contains all the versions of snaps installed on your system.
+-  **/var/lib/snapd/snapshots/** Contains both the manually generated and automatically generated `snapshots <https://snapcraft.io/docs/snapshots>`__.
 
 
 .. _data-locations-delete:

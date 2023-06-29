@@ -13,7 +13,7 @@ This plugin uses the common plugin keywords as well as those for “sources”. 
 
 Additionally, this plugin uses the following plugin-specific keywords:
 
--  **``version``** (string) The ROS2 version required by this system. This relates to the ros2 tags. Defaults to ``release-beta3``.
+-  **version** (string) The ROS2 version required by this system. This relates to the ros2 tags. Defaults to ``release-beta3``.
 
 For examples, search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+ament%22&type=Code>`__ for projects already using the plugin.
 

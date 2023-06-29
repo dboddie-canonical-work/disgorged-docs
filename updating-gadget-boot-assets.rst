@@ -90,7 +90,10 @@ Specific entries can be retained during the update by listing each individual it
                - b.env
                - dir/keep
 
-In the above example, the boot assets update process will: - deploy the ``a.data`` file into the root (``/``) - copy the contents of ``some-assets/`` to \`dir/
+In the above example, the boot assets update process will:
+
+- deploy the ``a.data`` file into the root (``/``)
+- copy the contents of ``some-assets/`` to \`dir/
 
 Should any of the entries listed in the ``preserve`` section exist beforehand, they will be preserved intact.
 
@@ -126,6 +129,17 @@ Use of ``preserve`` to retain specific files inside non-filesystem structures is
 Caveats
 -------
 
-Currently, boot asset updates have the following limitations: - the gadget snap can have only one defined volume - the updated gadget snap must use the same structure-level layout - once all of changed boot assets have been updated, the original files and images will not be restored from the backup, even if a later step of the installation fails - a device will still reboot when an update is applied, even when no boot assets are effectively changed - there must be enough space on the ``writable`` partition to hold a backup copy of all modified boot assets
+Currently, boot asset updates have the following limitations:
 
-The following are also unsupported: - encrypted or otherwise nested structures, such as LVM volumes - using ``preserve`` inside non-filesystem structures - updating unnamed and unlabelled filesystem structures - updating devices not described inside ``gadget.yaml``, such as the *BOOT1/2* regions of SD cards
+- the gadget snap can have only one defined volume
+- the updated gadget snap must use the same structure-level layout
+- once all of changed boot assets have been updated, the original files and images will not be restored from the backup, even if a later step of the installation fails
+- a device will still reboot when an update is applied, even when no boot assets are effectively changed
+- there must be enough space on the ``writable`` partition to hold a backup copy of all modified boot assets
+
+The following are also unsupported:
+
+- encrypted or otherwise nested structures, such as LVM volumes
+- using ``preserve`` inside non-filesystem structures
+- updating unnamed and unlabelled filesystem structures
+- updating devices not described inside ``gadget.yaml``, such as the *BOOT1/2* regions of SD cards

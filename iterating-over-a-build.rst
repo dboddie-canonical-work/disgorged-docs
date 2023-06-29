@@ -11,7 +11,11 @@ When building a snap with :ref:`Snapcraft <snapcraft-overview>`, and using the :
 
 To help speed up testing, it’s possible to open a shell within this environment to check the state of a build, view logs, probe the value of environment variables, locate missing binaries and install missing dependencies.
 
-The following commands enable you to step into this encapsulated environment: - ``--shell``: builds your snap to the :ref:`lifecycle step <parts-lifecycle-steps>` prior to that specified and opens a shell into the environment (e.g. running ``snapcraft prime --shell`` will run up to the ``stage`` step and open a shell). - ``--shell-after``: builds your snap to the :ref:`lifecycle step <parts-lifecycle-steps>` specified and opens a shell into the environment. (eg. running ``snapcraft prime --shell-after`` will run up to the ``prime`` step and then drop into a shell). - ``--debug``, opens a shell inside the environment after an error occurs.
+The following commands enable you to step into this encapsulated environment:
+
+- ``--shell``: builds your snap to the :ref:`lifecycle step <parts-lifecycle-steps>` prior to that specified and opens a shell into the environment (e.g. running ``snapcraft prime --shell`` will run up to the ``stage`` step and open a shell).
+- ``--shell-after``: builds your snap to the :ref:`lifecycle step <parts-lifecycle-steps>` specified and opens a shell into the environment. (eg. running ``snapcraft prime --shell-after`` will run up to the ``prime`` step and then drop into a shell).
+- ``--debug``, opens a shell inside the environment after an error occurs.
 
 For example, to open a shell just before the *prime* phase, use the following command:
 

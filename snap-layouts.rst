@@ -72,7 +72,21 @@ Some applications, however, might treat symlinks differently than regular files 
 
 ``<source-path>`` must refer to either ``$SNAP``, ``$SNAP_DATA`` or ``$SNAP_COMMON``.
 
-``<target-path>`` can include nearly any path except for: - ``/boot`` - ``/dev`` - ``/home`` - ``/lib/firmware``, ``/usr/lib/firmware`` - ``/lib/modules``, ``/usr/lib/modules`` - ``/lost+found`` - ``/media`` - ``/proc`` - ``/run``, ``/var/run`` - ``/sys`` - ``/tmp`` - ``/var/lib/snapd`` - ``/var/snap``
+``<target-path>`` can include nearly any path except for:
+
+- ``/boot``
+- ``/dev``
+- ``/home``
+- ``/lib/firmware``, ``/usr/lib/firmware``
+- ``/lib/modules``, ``/usr/lib/modules``
+- ``/lost+found``
+- ``/media``
+- ``/proc``
+- ``/run``, ``/var/run``
+- ``/sys``
+- ``/tmp``
+- ``/var/lib/snapd``
+- ``/var/snap``
 
 As ``/lib`` and ``/run`` are symbolic links to ``/usr/lib`` and ``/var/run`` respectively, they require separate exceptions to ensure certain locations, such as ``/lib/firmware``, can’t be worked around. See below for further limitations.
 

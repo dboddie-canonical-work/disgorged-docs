@@ -5,7 +5,12 @@
 Release notes: Snapcraft 4.6
 ============================
 
-Snapcraft 4.6 is a feature-packed release, including: - new extensions - *core20* support for additional extensions and plugins - a new login mechanism. - plenty of bug fixes and smaller updates
+Snapcraft 4.6 is a feature-packed release, including:
+
+- new extensions
+- *core20* support for additional extensions and plugins
+- a new login mechanism.
+- plenty of bug fixes and smaller updates
 
 For general details, including installation instructions, see `Snapcraft overview <https://snapcraft.io/docs/snapcraft-overview>`__, or take a look at `Snapcraft release notes <https://snapcraft.io/docs/snapcraft-release-notes>`__ for other *Snapcraft* releases.
 
@@ -21,9 +26,9 @@ Conda plugin
 
 The :ref:`conda <the-conda-plugin>` plugin has been ported to :ref:`core20 <base-snaps>`. These are the available plugin options:
 
--  **``conda-packages``** (list of strings) List of *conda* packages to install.
--  **``conda-python-version``** (string) The Python version to use for the *conda* packages. Python version major and minor version (e.g. 3.8).
--  **``conda-miniconda-version``** (string) The version of `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`__ to bootstrap. Defaults to the latest release.
+-  **conda-packages** (list of strings) List of *conda* packages to install.
+-  **conda-python-version** (string) The Python version to use for the *conda* packages. Python version major and minor version (e.g. 3.8).
+-  **conda-miniconda-version** (string) The version of `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`__ to bootstrap. Defaults to the latest release.
 
 Package Repositories
 --------------------

@@ -28,8 +28,8 @@ base: core20
 
 This plugin uses the following plugin-specific keywords:
 
--  **``qmake-parameters``** (list of strings) additional options to pass to the qmake invocation.
--  **``qmake-project-file``** (string) the qmake project file to use. This is usually only needed if qmake can not determine what project file to use on its own.
+-  **qmake-parameters** (list of strings) additional options to pass to the qmake invocation.
+-  **qmake-project-file** (string) the qmake project file to use. This is usually only needed if qmake can not determine what project file to use on its own.
 
 
 .. _the-qmake-plugin-core18:
@@ -39,6 +39,6 @@ base: core18 \| core
 
 This plugin uses the following plugin-specific keywords:
 
--  **``options``** (list of strings) additional options to pass to the qmake invocation.
--  **``qt-version``** (string; default: qt5) Version of Qt to use with qmake. Valid options are: ``qt4`` and ``qt5``.
--  **``project-files``** (list of strings) list of .pro files to pass to the qmake invocation.
+-  **options** (list of strings) additional options to pass to the qmake invocation.
+-  **qt-version** (string; default: qt5) Version of Qt to use with qmake. Valid options are: ``qt4`` and ``qt5``.
+-  **project-files** (list of strings) list of .pro files to pass to the qmake invocation.

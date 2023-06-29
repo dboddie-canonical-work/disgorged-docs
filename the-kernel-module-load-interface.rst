@@ -23,7 +23,15 @@ Developer details
 
 :ref:`Super-privileged <super-privileged-interfaces>`: yes
 
-**Attributes**: \* ``name`` (plug, required): provides the name of the kernel module to be loaded (eg, ‘``name: pcspkr``’) \* ``load`` (plug): string to declare when, or whether, to load this module. Values can be one of the following: - ``on-boot`` (default): loads the kernel module at boot time (eg. ``load: on-boot``) - ``denied``: prevents the module from being loaded at all (eg. ``load: denied``). Also known as *denylisting* in the Linux kernel. \* ``options`` (plug): string of options to use when loading the module (eg, ``options: p1=3 p2=true p3``)
+**Attributes**:
+
+* ``name`` (plug, required): provides the name of the kernel module to be loaded (eg, ‘``name: pcspkr``’)
+* ``load`` (plug): string to declare when, or whether, to load this module. Values can be one of the following:
+
+  - ``on-boot`` (default): loads the kernel module at boot time (eg. ``load: on-boot``)
+  - ``denied``: prevents the module from being loaded at all (eg. ``load: denied``). Also known as *denylisting* in the Linux kernel.
+
+* ``options`` (plug): string of options to use when loading the module (eg, ``options: p1=3 p2=true p3``)
 
 **In addition to the ``name`` attribute being required, either ``options`` or ``load`` must also be specified.**
 

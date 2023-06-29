@@ -55,7 +55,10 @@ The properties for both PPA-type and deb-type repositories are outlined below.
 PPA properties
 ~~~~~~~~~~~~~~
 
-The following properties are supported for PPA-type repositories: - `type <snapcraft-package-repositories-type_>`__ **(required)**: The type of package-repository, only apt is currently supported. - :ref:`ppa <snapcraft-package-repositories-ppa-properties>` **(required)**: PPA identifier string. — -
+The following properties are supported for PPA-type repositories:
+
+- `type <snapcraft-package-repositories-type_>`__ **(required)**: The type of package-repository, only apt is currently supported.
+- :ref:`ppa <snapcraft-package-repositories-ppa-properties>` **(required)**: PPA identifier string.
 
 
 .. _snapcraft-package-repositories-type:

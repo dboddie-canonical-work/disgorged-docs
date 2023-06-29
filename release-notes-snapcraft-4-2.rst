@@ -7,7 +7,11 @@ Release notes: Snapcraft 4.2
 
 The team behind Snapcraft is pleased to announce the release of `Snapcraft 4.2 <https://github.com/snapcore/snapcraft/releases/tag/4.2>`__.
 
-Highlights for this release include: \* new ROS 2 (Foxy Fitzroy) support \* cmake Ninja generator with ``core20`` \* improved track and channel listing
+Highlights for this release include:
+
+* new ROS 2 (Foxy Fitzroy) support
+* cmake Ninja generator with ``core20``
+* improved track and channel listing
 
 For general details, including installation instructions, see :ref:`Snapcraft overview <snapcraft-overview>`, or take a look at :ref:`Snapcraft release notes <snapcraft-release-notes>` for other *Snapcraft* releases.
 
@@ -78,7 +82,12 @@ The command output shows a list of tracks together with their status, creation d
    Name    Status    Creation-Date    Version-Pattern
    latest  default   -                -
 
-*Status* can be one of the following: \* default (implicit active) \* active \* hidden \* closed
+*Status* can be one of the following:
+
+* default (implicit active)
+* active
+* hidden
+* closed
 
 Bug Fixes
 ---------

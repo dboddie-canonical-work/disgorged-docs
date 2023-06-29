@@ -12,11 +12,15 @@ One or more validation sets can be used to ensure only specific snaps are instal
 Prerequisites
 -------------
 
-Validation set functionality is currently under active development and there are several considerations that need to be made before using it: - A developer account is also required, along with your developer id. (*see* :ref:`Create a developer account <create-a-developer-account-developer-id>` *for further details*) - Snapd version 2.50 and :ref:`Snapcraft <snapcraft-overview>` version :ref:`4.7 <release-notes-snapcraft-4-7>`, or newer, are required. - **Currently, in order to enforce a validation set, the following is also required:** - a :ref:`brand store <glossary-brand-store>` account - the validation set’s ``name``, ``account-id`` and listed snaps, need to be added to an allowlist in the store backends (this is done by filing a brand store support ticket). - Snapd version 2.54
+Validation set functionality is currently under active development and there are several considerations that need to be made before using it:
 
-See below for further details on the following: - `Creating a validation set <validation-sets-creating_>`__ - `Listing a validation set <validation-sets-listing_>`__ - `Monitoring assertion validity <validation-sets-using_>`__ - `Enforcing assertion validity <validation-sets-enforcing_>`__
+- A developer account is also required, along with your developer id. (*see* :ref:`Create a developer account <create-a-developer-account-developer-id>` *for further details*)
+- Snapd version 2.50 and :ref:`Snapcraft <snapcraft-overview>` version :ref:`4.7 <release-notes-snapcraft-4-7>`, or newer, are required.
+- **Currently, in order to enforce a validation set, the following is also required:**
 
---------------
+  - a :ref:`brand store <glossary-brand-store>` account
+  - the validation set’s ``name``, ``account-id`` and listed snaps, need to be added to an allowlist in the store backends (this is done by filing a brand store support ticket).
+  - Snapd version 2.54
 
 
 .. _validation-sets-creating:
@@ -58,10 +62,10 @@ A text editor will open containing a template for a validation set assertion tha
 
 The template validation set assertion needs to be populated with the details of the snaps you wish to include in the set. These are listed beneath the ``snaps:`` section, and each snap can use the following fields:
 
--  **``name``** (*required*): The name of the snap, as you find on the store or in *snap search*.
--  **``id``** (*optional*): The unique snap-id of the snap (see *snap info <snap name>* ). Defaults to the snap-id of the named snap.
--  **``presence``** (*optional*): Can be either ``required``, ``optional`` or ``invalid``. ``required`` snaps need to be installed, ``optional`` snaps are permitted to be installed and ``invalid`` snaps explicitly must not be installed. Defaults to *required*.
--  **``revision``** (*optional*): Specifies which :ref:`revision <glossary-revision>` of the snap needs to be installed.
+-  **name** (*required*): The name of the snap, as you find on the store or in *snap search*.
+-  **id** (*optional*): The unique snap-id of the snap (see *snap info <snap name>* ). Defaults to the snap-id of the named snap.
+-  **presence** (*optional*): Can be either ``required``, ``optional`` or ``invalid``. ``required`` snaps need to be installed, ``optional`` snaps are permitted to be installed and ``invalid`` snaps explicitly must not be installed. Defaults to *required*.
+-  **revision** (*optional*): Specifies which :ref:`revision <glossary-revision>` of the snap needs to be installed.
 
 The following is a populated example of a validation set assertion:
 
@@ -187,7 +191,10 @@ Every snap required by a validation set needs to be installed before enforcing i
 
 After enforcement is enabled, snapd ensures the consistency of the enforced validation sets, and the snaps they reference, during install, refresh and remove operations.
 
-During auto-refreshes, or manual refreshes, enforced validation set assertions on the system may be refreshed to newer revisions if the assertion is: - present in the store - not pinned to a specific sequence
+During auto-refreshes, or manual refreshes, enforced validation set assertions on the system may be refreshed to newer revisions if the assertion is:
+
+- present in the store
+- not pinned to a specific sequence
 
 An assertion will move to the latest sequence if present in the store and if the installed snaps, including any newer revisions in the store, still satisfy their respective validation set assertions.
 

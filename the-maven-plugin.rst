@@ -19,7 +19,7 @@ base: core22 and base: core18
 
 This plugin uses the following plugin-specific keywords:
 
--  **``maven-options``**: An array of maven command line options.
+-  **maven-options**: An array of maven command line options.
 
    Example:
 

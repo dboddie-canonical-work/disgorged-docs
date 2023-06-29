@@ -45,7 +45,11 @@ The `pi-fancontrol <https://snapcraft.io/pi-fancontrol>`__ snap provides simple 
 Developer details
 -----------------
 
-**Auto-connect**: no **Attributes**: \* ``number`` (slot): GPIO pin number to export and expose to consuming snaps
+**Auto-connect**: no
+
+**Attributes**:
+
+* ``number`` (slot): GPIO pin number to export and expose to consuming snaps
 
 :ref:`Hardware IO interfaces <hardware-io-interfaces>` covers some general considerations common to these kinds of devices.
 

@@ -15,7 +15,7 @@ This plugin uses the common plugin keywords as well as those for “sources”. 
 
 Additionally, this plugin uses the following plugin-specific keywords:
 
--  **``scons-options``** (list of strings) flags to pass to the build using the scons semantics for parameters.
+-  **scons-options** (list of strings) flags to pass to the build using the scons semantics for parameters.
 
 For examples, search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+scons%22&type=Code>`__ for projects already using the plugin.
 

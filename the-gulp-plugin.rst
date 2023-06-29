@@ -15,8 +15,8 @@ This plugin uses the common plugin keywords as well as those for “sources”. 
 
 Additionally, this plugin uses the following plugin-specific keywords:
 
--  **``gulp-tasks``** (list) A list of gulp tasks to run.
--  **``node-engine``** (string) The version of *node.js* to use for the build.
+-  **gulp-tasks** (list) A list of gulp tasks to run.
+-  **node-engine** (string) The version of *node.js* to use for the build.
 
 For examples, search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+gulp%22&type=Code>`__ for projects already using the plugin.
 

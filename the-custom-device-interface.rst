@@ -59,7 +59,18 @@ Developer details
 
 :ref:`Super-privileged <super-privileged-interfaces>`: yes
 
-**Attributes**: \* ``custom-device`` (plug, slot): label for the custom device. Needs to be identical across the plug and slot connections. \* ``devices`` (slot): path to device node. Example: ``devices: [/dev/input/event[0-9], /dev/input/mice]`` \* ``files`` (slot): \* ``read`` (slot): list of files and/or directories for read-only access by the device. Example: ``read: [ /dev/input/by-id/* ]`` \* ``write`` (slot): list of files and/or directories for read/write access by the device. Example: ``write: [ /etc/file-write, /etc/dir-write ]`` \* ``udev-tagging`` (optional): used to tailor the generated udev rules. Can be one of the following: \* ``kernel``: (mandatory): maps to the string used as the udev ``KERNEL==`` filter rule. \* ``subsystem``: corresponds to the ``SUBSYSTEM==`` filters in a udev rule. \* ``environment``: a map of expected environment variables for the udev rule to match with ``ENV{...}=="..."`` \* ``attributes``: a map of attributes used with ``ATTR{...}=="..."``
+**Attributes**:
+
+* ``custom-device`` (plug, slot): label for the custom device. Needs to be identical across the plug and slot connections.
+* ``devices`` (slot): path to device node. Example: ``devices: [/dev/input/event[0-9], /dev/input/mice]``
+* ``files`` (slot):
+* ``read`` (slot): list of files and/or directories for read-only access by the device. Example: ``read: [ /dev/input/by-id/* ]``
+* ``write`` (slot): list of files and/or directories for read/write access by the device. Example: ``write: [ /etc/file-write, /etc/dir-write ]``
+* ``udev-tagging`` (optional): used to tailor the generated udev rules. Can be one of the following:
+* ``kernel``: (mandatory): maps to the string used as the udev ``KERNEL==`` filter rule.
+* ``subsystem``: corresponds to the ``SUBSYSTEM==`` filters in a udev rule.
+* ``environment``: a map of expected environment variables for the udev rule to match with ``ENV{...}=="..."``
+* ``attributes``: a map of attributes used with ``ATTR{...}=="..."``
 
 Code examples
 -------------

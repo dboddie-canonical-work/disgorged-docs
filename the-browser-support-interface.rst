@@ -7,7 +7,9 @@ The browser-support interface
 
 ``browser-support`` allows access to various APIs needed by modern web browsers.
 
-**Auto-connect**: no when ``allow-sandbox: true``, yes otherwise **Attributes**: \* ``allow-sandbox: true|false`` (defaults to ``false``)
+**Auto-connect**: no when ``allow-sandbox: true``, yes otherwise **Attributes**:
+
+* ``allow-sandbox: true|false`` (defaults to ``false``)
 
 This interface is intended to be used when using an embedded Chromium Content API or using the sandboxes in major browsers from vendors like Google and Mozilla. The ``allow-sandbox`` attribute may be used to give the necessary access to use the browser’s sandbox functionality.
 

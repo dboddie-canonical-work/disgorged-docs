@@ -60,7 +60,7 @@ In a similar way, in snapcraft you will select the core20 base for the Snap as f
 
 In Docker there are all sorts of images, even ones with ROS already installed. However, base snaps have the goal of guaranteeing a minimal, stable, maintained and secure environment . ROS is thus installed on top of this in the parts as we will see hereafter.
 
-Visit the\ `base snaps documentation <https://snapcraft.io/docs/base-snaps>`__ for more information.
+Visit the :ref:`base snaps documentation <base-snaps>` for more information.
 
 Building the application
 ------------------------

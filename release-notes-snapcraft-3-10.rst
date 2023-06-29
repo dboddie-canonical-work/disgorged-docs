@@ -135,7 +135,10 @@ Several AppStream fixes arrive with this release. These include a fix related to
 Full list of changes
 --------------------
 
-The issues and features worked on for Snapcraft 3.10 are reflected in the following change list: Adam Collard: ————-
+The issues and features worked on for Snapcraft 3.10 are reflected in the following change list:
+
+Adam Collard:
+-------------
 
 -  snap: add license to snapcraft.yaml
 

@@ -15,7 +15,6 @@ Virtual machines rely on KVM for virtualisation acceleration and the vhost frame
 
 .. note::
 
-
           See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.
 
 --------------
@@ -30,7 +29,16 @@ Developer details
 
 :ref:`Super-privileged <super-privileged-interfaces>`: yes
 
-This interface allows MicroStack to operate by allowing the necessary system calls to be used by the following services: - libvirt - qemu - qemu-img - Nova - Neutron - Keystone - Glance - Cinder
+This interface allows MicroStack to operate by allowing the necessary system calls to be used by the following services:
+
+- libvirt
+- qemu
+- qemu-img
+- Nova
+- Neutron
+- Keystone
+- Glance
+- Cinder
 
 Code examples
 -------------

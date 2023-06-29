@@ -32,9 +32,15 @@ Developer details
 
 **Auto-connect**: no, unless connecting to snaps from the same publisher.
 
-**Attributes**: \* **source (slot)**: allows multiple directories to be exposed separately rather than grouped together \* **read (slot)**: *read-only* paths to be exposed to a consuming snap \* **write (slot)**: *read and write* paths to be exposed to a consuming snap \* **target (plug)**: path in consuming snap to find producer snap’s files \* **default-provider (plug)**: name of preferred producer snap (``<SNAP>``) \* **content (slot and plug)**: an arbitrary identifier for content type. Defaults to either local slot name or local plug name for slot/plug definitions respectively. \* **interface (slot and plug)**: snapd interface name (must be ``interface: content``)
+**Attributes**:
 
-**See below for more details on the following:** - `Sharing content <the-content-interface-sharing-content_>`__: how to share filesystem locations, and how they appear to a plug - `Using the source keyword <the-content-interface-using-source_>`__: share one or more sub-directories beneath a target path - `Read-only content sharing <the-content-interface-read-only_>`__: ideal for executables and global graphical themes - `Content identifier obligations <the-content-interface-identifier_>`__: how the content identifier represents a compatibility contract between the producer and consumer snaps - `Default provider <the-content-interface-default_>`__: define and potentially install a snap with a corresponding slot - `Writable data <the-content-interface-writable_>`__: share data files and sockets between one or more snaps - `Implementation details <the-content-interface-details_>`__: how AppArmor and bind mounts help implement the interface - `Code examples <the-content-interface-code_>`__
+* **source (slot)**: allows multiple directories to be exposed separately rather than grouped together
+* **read (slot)**: *read-only* paths to be exposed to a consuming snap
+* **write (slot)**: *read and write* paths to be exposed to a consuming snap
+* **target (plug)**: path in consuming snap to find producer snap’s files
+* **default-provider (plug)**: name of preferred producer snap (``<SNAP>``)
+* **content (slot and plug)**: an arbitrary identifier for content type. Defaults to either local slot name or local plug name for slot/plug definitions respectively.
+* **interface (slot and plug)**: snapd interface name (must be ``interface: content``)
 
 
 .. _the-content-interface-sharing-content:
@@ -52,7 +58,10 @@ At a very basic level, the content interface enables one directory, file or sock
 
 Each example below involve two snaps: the first provides some content (using a content *slot*) while the second consumes that content (using a content *plug*).
 
-In all of the cases we see a small set of attributes defined on the particular interface: - the producer declares which path can be read, using either the ``read`` attribute for read-only, or the ``write`` attribute for both read and write permissions - the consumer uses the ``target`` attribute to define where the content should become available at runtime. - both the producer and consumer use an arbitrary ``content`` attribute to describe the content. This attribute must match on both sides for the connection to happen.
+In all of the cases we see a small set of attributes defined on the particular interface:
+
+- the producer declares which path can be read, using either the ``read`` attribute for read-only, or the ``write`` attribute for both read and write permissions
+- the consumer uses the ``target`` attribute to define where the content should become available at runtime. - both the producer and consumer use an arbitrary ``content`` attribute to describe the content. This attribute must match on both sides for the connection to happen.
 
 
 .. _the-content-interface-using-source:
@@ -168,7 +177,10 @@ After :ref:`connecting the interface <interface-management>`, the *consumer* sna
 
 The value of the ``content`` attribute can be anything, but it is good practice to follow the form ``nameAPI-BUILDENV`` to remind slot consumers of the API level and build tools used. This naming convention is also *required* when sharing content between snap publishers.
 
-In the above example: - ``0`` indicates API level 0 - ``1604`` denotes Ubuntu 16.04 LTS toolchain and libraries were used within the build environment
+In the above example:
+
+- ``0`` indicates API level 0
+- ``1604`` denotes Ubuntu 16.04 LTS toolchain and libraries were used within the build environment
 
 API and BUILDENV can be anything that is meaningful to the provider and consumers. For example, the GNOME content snap uses ``gnome-3-26-1604`` to denote the full GNOME 3.26 platform libraries and supporting files built on Ubuntu 16.04 LTS.
 

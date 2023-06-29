@@ -40,9 +40,16 @@ Developer details
 
 :ref:`Auto-connect <interface-management-auto-connections>`: no
 
-**Attributes**: \* ``path`` (slot): path to the file in *sysfs*\  Example: ``/sys/class/leds/green/brightness``\ 
+**Attributes**:
 
-The path value must match one of the following regular expressions: - For GPIO devices: ``^/sys/class/gpio/gpio[0-9]+/value$``\  - For LED devices: ``^/sys/class/leds/[^/]+/brightness$``
+* ``path`` (slot): path to the file in *sysfs*
+
+Example: ``/sys/class/leds/green/brightness``
+
+The path value must match one of the following regular expressions:
+
+- For GPIO devices: ``^/sys/class/gpio/gpio[0-9]+/value$``
+- For LED devices: ``^/sys/class/leds/[^/]+/brightness$``
 
 The :ref:`gpio interface <the-gpio-interface>` provides another option for accessing GPIO devices.
 

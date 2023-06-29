@@ -12,7 +12,12 @@ These attributes ensure a snap can be built and, via a 3-point checklist outline
 Prerequisites
 -------------
 
-There are currently a few types of project that are unsuitable for snaps: - libraries - media content providers (except themes) - applications built specifically for ARMv6 - applications that need a binary in ``/snap/core18/current/{bin,usr/bin}/*``
+There are currently a few types of project that are unsuitable for snaps:
+
+- libraries
+- media content providers (except themes)
+- applications built specifically for ARMv6
+- applications that need a binary in ``/snap/core18/current/{bin,usr/bin}/*``
 
    Due to Snapcraft’s flexibility, there are exceptions to the above. These include :ref:`FFmpeg <the-ffmpeg-sdk-stage-snaps>` and :ref:`wxWidget <the-wxwidgets-sdk-stage-snaps>` stage snaps, and the :ref:`Hunspell dictionaries <the-hunspell-dictionaries-content-snaps>` snap.
 

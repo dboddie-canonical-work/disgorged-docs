@@ -17,13 +17,13 @@ If both *kdefconfig* and **kconfigfile** are provided, the above *kconfigfile* p
 
 This plugin is built on :ref:`snapcraft.BasePlugin <snapcraft-plugin-api>` and inherits the same properties, with the following additional kBuild-specific options:
 
--  **``kdefconfig``** (list of kdefconfigs) Defconfig target to use as the base configuration. Default: “defconfig”
+-  **kdefconfig** (list of kdefconfigs) Defconfig target to use as the base configuration. Default: “defconfig”
 
--  **``kconfigfile``** (filepath) Path to file to use as base configuration. If provided this option wins over everything else. Default: None
+-  **kconfigfile** (filepath) Path to file to use as base configuration. If provided this option wins over everything else. Default: None
 
--  **``kconfigflavour``** (string) Ubuntu config flavour to use as base configuration. If provided this option wins over *kdefconfig*. Default: None
+-  **kconfigflavour** (string) Ubuntu config flavour to use as base configuration. If provided this option wins over *kdefconfig*. Default: None
 
--  **``kconfig``** (list of strings) Explicit list of configs to force; this will override the configs that were set as base through *kdefconfig* and *kconfigfile* and dependent configs will be fixed using the defaults encoded in the *kbuild* config definitions. If you don’t want default for one or more implicit configs coming out of these, just add them to this list as well.
+-  **kconfig** (list of strings) Explicit list of configs to force; this will override the configs that were set as base through *kdefconfig* and *kconfigfile* and dependent configs will be fixed using the defaults encoded in the *kbuild* config definitions. If you don’t want default for one or more implicit configs coming out of these, just add them to this list as well.
 
 See :ref:`The kernel plugin <the-kernel-plugin>` for additional options related to building a kernel snap.
 

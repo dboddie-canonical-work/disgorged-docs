@@ -33,7 +33,7 @@ All of these additional YAML entries can be revealed from your snapcraft.yaml fi
 
 With this in mind, let us see how you can replicate what the extension is doing for other ROS distributions.
 
-   ℹ Core18 does not support Snapcraft Extensions. If you are developing a ROS snap based on ROS Melodic distro, then all the extensions entries are handled by the `catkin plugin <https://snapcraft.io/docs/catkin-plugin#heading--core18>`__. To check an example see the core18 example `here <https://snapcraft.io/docs/ros-applications>`__.
+   ℹ Core18 does not support Snapcraft Extensions. If you are developing a ROS snap based on ROS Melodic distro, then all the extensions entries are handled by the :ref:`catkin plugin <the-catkin-plugin-core18>`. To check an example see the core18 example :ref:`here <ros-deployment-with-snaps>`.
 
 Writing the snap
 ----------------
@@ -52,7 +52,7 @@ ROS installation requires the following steps:
 
 Let’s see how to achieve each step with Snaps.
 
-Adding the required package repository and setting up the keys is done by using the Snapcraft `package repository keyword <https://snapcraft.io/docs/package-repositories>`__ as follows:
+Adding the required package repository and setting up the keys is done by using the Snapcraft :ref:`package repository keyword <snapcraft-package-repositories>` as follows:
 
 .. code:: yaml
 

@@ -39,7 +39,7 @@ There are currently three supported bases for ROS 2, core18, core20 and core22.
 Let us explore the differences between the different bases.
 
 
-.. _ros-2-deployment-with-snaps-heading--core18:
+.. _ros-2-deployment-with-snaps-core18:
 
 core18
 ~~~~~~
@@ -95,7 +95,7 @@ Versions carry no semantic meaning in snaps and this version is arbitrary. It’
 
 The ``summary`` can not exceed 79 characters. You can use a chevron ‘>’ in the ``description`` key to declare a multi-line description.
 
-For more information about top level metadata, see, `top-level-metadata <https://snapcraft.io/docs/snapcraft-top-level-metadata>`__.
+For more information about top level metadata, see, :ref:`top-level-metadata <snapcraft-top-level-metadata>`.
 
 Base
 ~~~~
@@ -111,13 +111,13 @@ The base keyword defines a special kind of snap that provides a run-time environ
 Security model
 ~~~~~~~~~~~~~~
 
-To get started we won’t confine this application. Unconfined applications, specified with ``devmode``, can only be released to the hidden `“edge” channel <https://snapcraft.io/docs/channels#ros-2-deployment-with-snaps-heading--risk-levels>`__.
+To get started we won’t confine this application. Unconfined applications, specified with ``devmode``, can only be released to the hidden `“edge” channel <https://snapcraft.io/docs/channels#ros-2-deployment-with-snaps-risk-levels>`__.
 
 .. code:: yaml
 
    confinement: devmode
 
-For more information about security model, see, `choosing-a-security-model <https://snapcraft.io/docs/choosing-a-security-model>`__.
+For more information about security model, see, :ref:`choosing-a-security-model <choosing-a-security-model>`.
 
 Parts
 ~~~~~
@@ -141,7 +141,7 @@ The packages you’re building must have install rules, or else ``snapcraft`` wo
        colcon-source-space: demo_nodes_cpp
        stage-packages: [ros-dashing-ros2launch]
 
-For more details on colcon-specific metadata, see `the colcon plugin documentation <https://snapcraft.io/docs/the-colcon-plugin#ros-2-deployment-with-snaps-heading--core18>`__. For more information about general parts metadata, see `parts-metadata <https://snapcraft.io/docs/snapcraft-parts-metadata>`__.
+For more details on colcon-specific metadata, see :ref:`the colcon plugin documentation <the-colcon-plugin>`. For more information about general parts metadata, see :ref:`parts-metadata <snapcraft-parts-metadata>`.
 
 Apps
 ~~~~
@@ -171,7 +171,9 @@ After you’ve created the *snapcraft.yaml*, you can build the snap by simply ex
    [...]
    Snapped ros2-talker-listener_0.1_amd64.snap
 
-[note type=“caution” status=“Warning”] The warnings regarding missing libraries that you might see when building your snap are false positive. These libraries are build time dependencies only. [/note] The resulting snap can be installed locally. This requires the ``--dangerous`` flag because the snap is not signed by the Snap Store. The ``--devmode`` flag acknowledges that you are installing an unconfined application:
+.. warning::
+
+   The warnings regarding missing libraries that you might see when building your snap are false positive. These libraries are build time dependencies only. [/note] The resulting snap can be installed locally. This requires the ``--dangerous`` flag because the snap is not signed by the Snap Store. The ``--devmode`` flag acknowledges that you are installing an unconfined application:
 
 .. code:: bash
 
@@ -208,7 +210,7 @@ Once done developing your snap, you can easily clean up the build environment:
 ----------
 
 
-.. _ros-2-deployment-with-snaps-heading--core20:
+.. _ros-2-deployment-with-snaps-core20:
 
 core20
 ~~~~~~
@@ -265,7 +267,7 @@ This is a declarative version of the packaged software and is not linked to the 
 
 The ``summary`` can not exceed 79 characters. You can use a chevron ‘>’ in the ``description`` key to declare a multi-line description.
 
-For more information about top level metadata, see, `top-level-metadata <https://snapcraft.io/docs/snapcraft-top-level-metadata>`__.
+For more information about top level metadata, see, :ref:`top-level-metadata <snapcraft-top-level-metadata>`.
 
 
 Base
@@ -283,13 +285,13 @@ The ``base`` keyword defines a special kind of snap that provides a run-time env
 Security model
 ~~~~~~~~~~~~~~
 
-To get started, we won’t confine this application. Unconfined applications, specified with ``devmode``, can only be released to the `“edge” channel <https://snapcraft.io/docs/channels#ros-2-deployment-with-snaps-heading--risk-levels>`__.
+To get started, we won’t confine this application. Unconfined applications, specified with ``devmode``, can only be released to the `“edge” channel <https://snapcraft.io/docs/channels#ros-2-deployment-with-snaps-risk-levels>`__.
 
 .. code:: yaml
 
    confinement: devmode
 
-For more information about security model, see, `choosing-a-security-model <https://snapcraft.io/docs/choosing-a-security-model>`__.
+For more information about security model, see, :ref:`choosing-a-security-model <choosing-a-security-model>`.
 
 
 Parts
@@ -313,7 +315,7 @@ The packages you’re building must have install rules, or else snapcraft won’
       source-subdir: demo_nodes_cpp
       stage-packages: [ros-foxy-ros2launch]
 
-For more details on colcon-specific metadata, see `the colcon plugin documentation <https://snapcraft.io/docs/the-colcon-plugin#ros-2-deployment-with-snaps-heading--core20>`__. For more information about general parts metadata, see `parts-metadata <https://snapcraft.io/docs/snapcraft-parts-metadata>`__.
+For more details on colcon-specific metadata, see :ref:`the colcon plugin documentation <the-colcon-plugin-core20>`. For more information about general parts metadata, see :ref:`parts-metadata <snapcraft-parts-metadata>`.
 
 
 Apps
@@ -330,7 +332,7 @@ The command specifies the path to the binary to be run. This is resolved relativ
       command: opt/ros/foxy/bin/ros2 launch demo_nodes_cpp talker_listener.launch.py
       extensions: [ros2-foxy]
 
-For more details about the ros2-foxy extension, see `ros2-foxy extension <https://snapcraft.io/docs/ros2-extension>`__.
+For more details about the ros2-foxy extension, see :ref:`ros2-foxy extension <the-ros2-foxy-extension>`.
 
 In snap, an application is usually prefixed by the snap name so that the application ``my-app`` from the snap ``my-snap`` can be executed calling ``my-snap.my-app``. However, if both the snap and the app are called the same, as is the case in our ROS 2 example, the execution command collapses to avoid the tediousness of writing twice the same words. The command ``ros2-talker-listener.ros2-talker-listener`` simply becomes ``ros2-talker-listener``.
 
@@ -382,7 +384,7 @@ Once done developing your snap, you can easily clean up the build environment:
    $ snapcraft clean
 
 
-.. _ros-2-deployment-with-snaps-heading--core22:
+.. _ros-2-deployment-with-snaps-core22:
 
 core22
 ~~~~~~
@@ -440,7 +442,7 @@ This is a declarative version of the packaged software and is not linked to the 
 
 The ``summary`` can not exceed 79 characters. You can use a chevron ‘>’ in the ``description`` key to declare a multi-line description.
 
-For more information about top level metadata, see, `top-level-metadata <https://snapcraft.io/docs/snapcraft-top-level-metadata>`__.
+For more information about top level metadata, see, :ref:`top-level-metadata <snapcraft-top-level-metadata>`.
 
 .. _base-2:
 
@@ -460,13 +462,13 @@ The ``base`` keyword defines a special kind of snap that provides a run-time env
 Security model
 ~~~~~~~~~~~~~~
 
-To get started, we won’t confine this application. Unconfined applications, specified with ``devmode``, can only be released to the `“edge” channel <https://snapcraft.io/docs/channels#ros-2-deployment-with-snaps-heading--risk-levels>`__.
+To get started, we won’t confine this application. Unconfined applications, specified with ``devmode``, can only be released to the `“edge” channel <https://snapcraft.io/docs/channels#ros-2-deployment-with-snaps-risk-levels>`__.
 
 .. code:: yaml
 
    confinement: devmode
 
-For more information about security model, see, `choosing-a-security-model <https://snapcraft.io/docs/choosing-a-security-model>`__.
+For more information about security model, see, :ref:`choosing-a-security-model <choosing-a-security-model>`.
 
 .. _parts-2:
 
@@ -491,7 +493,7 @@ The packages you’re building must have install rules, or else snapcraft won’
       colcon-packages: [demo_nodes_cpp]
       stage-packages: [ros-humble-ros2launch]
 
-For more details on colcon-specific metadata, see `the colcon plugin <https://snapcraft.io/docs/the-colcon-plugin#ros-2-deployment-with-snaps-heading--core22>`__ documentation. For more information about general parts metadata, see, `parts-metadata <https://snapcraft.io/docs/snapcraft-parts-metadata>`__.
+For more details on colcon-specific metadata, see :ref:`the colcon plugin <the-colcon-plugin-core22>` documentation. For more information about general parts metadata, see, :ref:`parts-metadata <snapcraft-parts-metadata>`.
 
 .. _apps-2:
 
@@ -509,7 +511,7 @@ The command specifies the path to the binary to be run. This is resolved relativ
       command: opt/ros/humble/bin/ros2 launch demo_nodes_cpp talker_listener.launch.py
       extensions: [ros2-humble]
 
-For more details about the ‘ros2-humble’ extension, have a look at its `documentation <https://snapcraft.io/docs/ros2-humble-extension>`__.
+For more details about the ‘ros2-humble’ extension, have a look at its :ref:`documentation <the-ros-2-humble-extension>`.
 
 In snap, an application is usually prefixed by the snap name so that the application ``my-app`` from the snap ``my-snap`` can be executed calling ``my-snap.my-app``. However, if both the snap and the app are called the same, as is the case in our ROS 2 example, the execution command collapses to avoid the tediousness of writing twice the same words. The command ``ros2-talker-listener.ros2-talker-listener`` simply becomes ``ros2-talker-listener``.
 

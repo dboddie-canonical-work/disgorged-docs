@@ -15,17 +15,17 @@ This plugin uses the common plugin keywords as well as those for “sources”. 
 
 The following kernel specific options are provided by this plugin:
 
--  **``kernel-image-target``** (yaml object, string or null for default target) The default target is *bzImage* and can be set to any specific target. For more complex cases where one would want to use the same *snapcraft.yaml* to target multiple architectures, a *yaml* object can be used. This yaml object would be a map of Debian architecture and kernel image build targets.
+-  **kernel-image-target** (yaml object, string or null for default target) The default target is *bzImage* and can be set to any specific target. For more complex cases where one would want to use the same *snapcraft.yaml* to target multiple architectures, a *yaml* object can be used. This yaml object would be a map of Debian architecture and kernel image build targets.
 
--  **``kernel-initrd-modules``** (array of string) List of modules to include in *initrd*. **Note**: kernel snaps do not provide the core boot logic which comes from Ubuntu Core OS snap. Include all modules you need for mounting *rootfs* here.
+-  **kernel-initrd-modules** (array of string) List of modules to include in *initrd*. **Note**: kernel snaps do not provide the core boot logic which comes from Ubuntu Core OS snap. Include all modules you need for mounting *rootfs* here.
 
--  **``kernel-with-firmware``** (boolean; default: True) Use this flag to disable shipping binary firmwares.
+-  **kernel-with-firmware** (boolean; default: True) Use this flag to disable shipping binary firmwares.
 
--  **``kernel-initrd-firmware``** (array of string) List of firmware files to include in the *initrd*; these need to be relative paths to ``.installdir``. This option does not work if you disable building firmware.
+-  **kernel-initrd-firmware** (array of string) List of firmware files to include in the *initrd*; these need to be relative paths to ``.installdir``. This option does not work if you disable building firmware.
 
--  **``kernel-initrd-compression``** (string; default: gz) Initrd compression to use. The only supported value is now ``gz``.
+-  **kernel-initrd-compression** (string; default: gz) Initrd compression to use. The only supported value is now ``gz``.
 
--  **``kernel-device-trees``** (array of string) List of device trees to build. The format is ``<device-tree-name>``.
+-  **kernel-device-trees** (array of string) List of device trees to build. The format is ``<device-tree-name>``.
 
 For examples, search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+kernel%22&type=Code>`__ for projects already using the plugin.
 

@@ -11,12 +11,6 @@ The revision number increments with each new upload. But this number is arbitrar
 
 Neither the revision number (nor its version) enforce an order of release. The local system will attempt to install whatever snap is recommended by the publisher in the channel being tracked.
 
---------------
-
--  `Viewing revision numbers <revisions-heading--viewing_>`__
--  `Revision package management <revisions-heading--package_>`__
--  `Data management <revisions-heading--data-management_>`__
-
 
 .. _revisions-heading--viewing:
 

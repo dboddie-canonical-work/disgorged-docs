@@ -23,7 +23,11 @@ To use LXD, the snapcraft lifecycle commands, *pull*, *build*, *stage* and *prim
 
    $ snapcraft --use-lxd
 
-With LXD, you can perform many of the same operations you can when working with Multipass, such as: \* ``--shell`` \* ``--shell-after`` \* ``--debug``
+With LXD, you can perform many of the same operations you can when working with Multipass, such as:
+
+* ``--shell``
+* ``--shell-after``
+* ``--debug``
 
    LXD support is currently under-construction. Future *snapcraft* releases by break storage setups, default profiles and LXD-based projects.
 

@@ -15,9 +15,17 @@ When :ref:`creating a snap <creating-a-snap>`, the extent of a snap’s containm
 
    confinement: strict
 
-Confinement can be one of the following: - ``devmode``: enables system access and logging only while creating a snap - ``strict``: denies all system access other than through a snap’s :ref:`interfaces <interface-management>` - ``classic``: permits full system-level access, analogous to a *deb* or *rpm* installation.
+Confinement can be one of the following:
 
-The vast majority of snaps should be able to attain *strict* confinement, but there are three specific requirements that can typically only be resolved with *classic* confinement: 1. access to arbitrary filesystem paths outside of ``$HOME`` and /media 1. run other programs that cannot be determined at build time 1. perform privileged tasks not yet covered by interfaces (see below)
+- ``devmode``: enables system access and logging only while creating a snap
+- ``strict``: denies all system access other than through a snap’s :ref:`interfaces <interface-management>`
+- ``classic``: permits full system-level access, analogous to a *deb* or *rpm* installation.
+
+The vast majority of snaps should be able to attain *strict* confinement, but there are three specific requirements that can typically only be resolved with *classic* confinement:
+
+#. access to arbitrary filesystem paths outside of ``$HOME`` and /media
+#. run other programs that cannot be determined at build time
+#. perform privileged tasks not yet covered by interfaces (see below)
 
 As a a result of these requirements, publishing a classic snap requires a :ref:`review and approval process <process-for-reviewing-classic-confinement-snaps>`, alongside the manual addition of ``--classic`` to the *snap* command when the snap is installed.
 

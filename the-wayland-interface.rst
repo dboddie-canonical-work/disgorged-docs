@@ -7,7 +7,9 @@ The wayland interface
 
 ``wayland`` allows access to compositors supporting Wayland protocol.
 
-**Auto-connect**: yes **Transitional**: yes
+**Auto-connect**: yes
+
+**Transitional**: yes
 
 See :ref:`The desktop interfaces <the-desktop-interfaces>` for further details.
 

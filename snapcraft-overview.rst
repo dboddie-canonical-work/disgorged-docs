@@ -5,7 +5,13 @@
 Snapcraft overview
 ==================
 
-`Snapcraft <https://snapcraft.io/snapcraft>`__ is a powerful and easy to use command line tool for building `snaps <https://snapcraft.io/docs/quickstart-guide>`__. It helps you to: - build and then publish your snaps on the `Snap store <https://snapcraft.io/store>`__ - use `channels, tracks and branches <https://snapcraft.io/docs/channels>`__ to finely control updates and releases - build and debug snaps within a confined environment - update and iterate over new builds without rebuilding the environment - test and share your snaps locally
+`Snapcraft <https://snapcraft.io/snapcraft>`__ is a powerful and easy to use command line tool for building `snaps <https://snapcraft.io/docs/quickstart-guide>`__. It helps you to:
+
+- build and then publish your snaps on the `Snap store <https://snapcraft.io/store>`__
+- use `channels, tracks and branches <https://snapcraft.io/docs/channels>`__ to finely control updates and releases
+- build and debug snaps within a confined environment
+- update and iterate over new builds without rebuilding the environment
+- test and share your snaps locally
 
 On Linux distributions `with snap support <https://snapcraft.io/docs/installing-snapd>`__, the easiest way to install *snapcraft* is via its snap:
 
@@ -44,7 +50,11 @@ The typical snap build process centres on iterating over the configuration of *p
 -  :ref:`plugins <snapcraft-plugins>` are used within parts to better integrate projects using languages and framework.
 -  :ref:`interfaces <interface-management>` enable resources from one snap to be shared with another, and with the host system.
 
-The following lists how you might want to approach building a new snap for your application with :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>`: 1. describe your application with :ref:`top-level metadata <snapcraft-top-level-metadata>` 1. use :ref:`parts metadata <snapcraft-parts-metadata>` to import and build your application and its dependencies - incorporate *plugins* within parts to easily integrate applications using specific languages and frameworks, or work with binary files directly. You can also :ref:`write your own <writing-local-plugins>` plugin. - use :ref:`plugin metadata <supported-plugins>` to locate your project, or sync with a remote repository - set build dependencies, if required, and any run-time dependencies 1. add :ref:`interface metadata <snapcraft-app-and-service-metadata>` to connect external system resources to your application
+The following lists how you might want to approach building a new snap for your application with :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>`:
+
+#. describe your application with :ref:`top-level metadata <snapcraft-top-level-metadata>`
+#. use :ref:`parts metadata <snapcraft-parts-metadata>` to import and build your application and its dependencies - incorporate *plugins* within parts to easily integrate applications using specific languages and frameworks, or work with binary files directly. You can also :ref:`write your own <writing-local-plugins>` plugin. - use :ref:`plugin metadata <supported-plugins>` to locate your project, or sync with a remote repository - set build dependencies, if required, and any run-time dependencies
+#. add :ref:`interface metadata <snapcraft-app-and-service-metadata>` to connect external system resources to your application
 
 
 .. _snapcraft-overview-building-your-snap:

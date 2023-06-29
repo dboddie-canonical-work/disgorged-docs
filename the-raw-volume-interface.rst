@@ -9,7 +9,9 @@ The raw-volume interface
 
 The slot is intended to be implemented by a gadget snap and is not provided by the core system snap.
 
-**Auto-Connect**: no **Attributes**:
+**Auto-Connect**: no
+
+**Attributes**:
 
 * ``path`` (slot): path to device partition e.g. ``/dev/mmcblk0p1``
 

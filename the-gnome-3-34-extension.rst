@@ -87,9 +87,98 @@ It is common for GNOME applications to release a gnome-3-34 branch of their proj
 
 The *platform snap* takes the build snap and makes all of those libraries available to your snap at build time without needing to include the pieces of the build snap that are unnecessary at runtime (like compilers) in your final snap.
 
-The libraries built in the gnome-3-34-1804-sdk build snap are: - libtool - libffi - glib (2.62) - pixman (0.38.4) - cairo (1.16.0) - gobject-introspection (gnome-3-34 branch) - vala (0.46) - gee (0.20.2) - atk (gnome-3-34 branch) - at-spi2-core (2.34.0) - at-spi2-atk (2.34.1) - fribidi (1.0.7) - harfbuzz (2.6.2) - pango (1.44.6-2) - librsvg (2.44) - gdk-pixbuf (2.38) - epoxy (1.5.3) - json-glib (1.4) - libpsl (0.21.0) - libsoup (2.68.2) - librest (0.7) - gtk (3.24.10) - gtk-locales - mm-common (1.0.0) - glibmm (2.62.0) - cairomm (1.12.2) - pangomm (2.42.0) - atkmm (2.28.0) - gtkmm (3.24.2) - gtksourceview (4.4.0) - libdazzle (3.34) - libcanberra - gsettings-desktop-schemas (gnome-3-34 branch) - gnome-desktop (gnome-3-34 branch) - cogl (1.22) - clutter - clutter-gtk (1.8.4) - libpeas (1.22.0) - pycairo (1.18.1) - pygobject (3.34) - libhandy (libhandy-0-0 branch) 
+The libraries built in the gnome-3-34-1804-sdk build snap are:
 
-There are also several packages included from the Ubuntu 18.04 apt repository: - gcc - pkg-config - libpcre3-dev - zlib1g-dev - libmount-dev - libxml2-dev - libsqlite3-dev - libbrotli-dev - libthai-dev - libfontconfig1-dev - libxrender-dev - libxft-dev - libxcb-shm0-dev - libxcb-render0-dev - libxext-dev - libxi-dev - libxrandr-dev - libxcursor-dev - libxcomposite-dev - libxdamage-dev - libxinerama-dev - libwayland-dev - wayland-protocols - libxkbcommon-dev - libgl1-mesa-dev - libegl1-mesa-dev - libdbus-1-dev - libxtst-dev - gettext - shared-mime-info - libwebkit2gtk-4.0-dev - libgcr-3-dev - libnotify-dev - libsecret-1-dev - itstool - libudev-dev - libseccomp-dev - libjpeg-dev - liblcms2-dev - libgspell-1-dev - python3-minimal - libxml2-utils - libgtksourceview-3.0-dev - libtdb1 - libvorbisfile3 - libegl-mesa0 
+- libtool
+- libffi
+- glib (2.62)
+- pixman (0.38.4)
+- cairo (1.16.0)
+- gobject-introspection (gnome-3-34 branch)
+- vala (0.46)
+- gee (0.20.2)
+- atk (gnome-3-34 branch)
+- at-spi2-core (2.34.0)
+- at-spi2-atk (2.34.1)
+- fribidi (1.0.7)
+- harfbuzz (2.6.2)
+- pango (1.44.6-2)
+- librsvg (2.44)
+- gdk-pixbuf (2.38)
+- epoxy (1.5.3)
+- json-glib (1.4)
+- libpsl (0.21.0)
+- libsoup (2.68.2)
+- librest (0.7)
+- gtk (3.24.10)
+- gtk-locales
+- mm-common (1.0.0)
+- glibmm (2.62.0)
+- cairomm (1.12.2)
+- pangomm (2.42.0)
+- atkmm (2.28.0)
+- gtkmm (3.24.2)
+- gtksourceview (4.4.0)
+- libdazzle (3.34)
+- libcanberra
+- gsettings-desktop-schemas (gnome-3-34 branch)
+- gnome-desktop (gnome-3-34 branch)
+- cogl (1.22)
+- clutter
+- clutter-gtk (1.8.4)
+- libpeas (1.22.0)
+- pycairo (1.18.1)
+- pygobject (3.34)
+- libhandy (libhandy-0-0 branch) 
+
+There are also several packages included from the Ubuntu 18.04 apt repository:
+
+- gcc
+- pkg-config
+- libpcre3-dev
+- zlib1g-dev
+- libmount-dev
+- libxml2-dev
+- libsqlite3-dev
+- libbrotli-dev
+- libthai-dev
+- libfontconfig1-dev
+- libxrender-dev
+- libxft-dev
+- libxcb-shm0-dev
+- libxcb-render0-dev
+- libxext-dev
+- libxi-dev
+- libxrandr-dev
+- libxcursor-dev
+- libxcomposite-dev
+- libxdamage-dev
+- libxinerama-dev
+- libwayland-dev
+- wayland-protocols
+- libxkbcommon-dev
+- libgl1-mesa-dev
+- libegl1-mesa-dev
+- libdbus-1-dev
+- libxtst-dev
+- gettext
+- shared-mime-info
+- libwebkit2gtk-4.0-dev
+- libgcr-3-dev
+- libnotify-dev
+- libsecret-1-dev
+- itstool
+- libudev-dev
+- libseccomp-dev
+- libjpeg-dev
+- liblcms2-dev
+- libgspell-1-dev
+- python3-minimal
+- libxml2-utils
+- libgtksourceview-3.0-dev
+- libtdb1
+- libvorbisfile3
+- libegl-mesa0 
 
 
 .. _the-gnome-3-34-extension-heading--environment:

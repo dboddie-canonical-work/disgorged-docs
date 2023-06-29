@@ -35,7 +35,7 @@ base: core22
 
 This plugin uses the following plugin-specific keywords:
 
--  **``meson-parameters``** (list of strings) List of parameters to pass to the *meson* command.
+-  **meson-parameters** (list of strings) List of parameters to pass to the *meson* command.
 
 Requires Snapcraft version *7.0+*.
 
@@ -47,9 +47,9 @@ base: core20
 
 This plugin uses the following plugin-specific keywords:
 
--  **``meson-parameters``** (list of strings) List of parameters to pass to the *meson* command.
+-  **meson-parameters** (list of strings) List of parameters to pass to the *meson* command.
 
--  **``meson-version``** (string) Version of *meson* to download from `PyPI <https://pypi.org/project/meson/>`__ (e.g. 0.62.1).
+-  **meson-version** (string) Version of *meson* to download from `PyPI <https://pypi.org/project/meson/>`__ (e.g. 0.62.1).
 
 Requires Snapcraft version *4.0+*.
 
@@ -61,6 +61,6 @@ base: core18 \| core
 
 This plugin uses the following plugin-specific keywords:
 
--  **``meson-parameters``** (list of strings) List of parameters to pass to the *meson* command.
+-  **meson-parameters** (list of strings) List of parameters to pass to the *meson* command.
 
--  **``meson-version``** (string) Version of *meson* to download from `PyPI <https://pypi.org/project/meson/>`__ (e.g. 0.62.1).
+-  **meson-version** (string) Version of *meson* to download from `PyPI <https://pypi.org/project/meson/>`__ (e.g. 0.62.1).

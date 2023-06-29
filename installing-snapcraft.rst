@@ -35,7 +35,10 @@ Snapcraft can also be installed and run on Apple’s macOS. See `Install snapcra
 
 On Apple macOS Yosemite (or later), Snapcraft can be installed via `Homebrew <https://formulae.brew.sh/formula/snapcraft>`__ and used to build snaps within the macOS environment.
 
-Prerequisites: - Make sure you have the `Homebrew package manager <https://brew.sh/#install>`__ installed - Download and run the `Multipass installer <https://discourse.ubuntu.com/t/installing-multipass-on-macos/8329>`__ to install Multipass
+Prerequisites:
+
+- Make sure you have the `Homebrew package manager <https://brew.sh/#install>`__ installed
+- Download and run the `Multipass installer <https://discourse.ubuntu.com/t/installing-multipass-on-macos/8329>`__ to install Multipass
 
 To install *snapcraft*, open ’Terminal\` and enter the following:
 

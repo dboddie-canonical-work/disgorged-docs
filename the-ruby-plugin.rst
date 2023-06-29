@@ -17,6 +17,6 @@ See `Ruby applications <https://snapcraft.io/docs/ruby-applications>`__ for a si
 
 This plugin uses the following plugin-specific keywords:
 
--  **``gems``** (list) A list of gems to install.
--  **``use-bundler``** (boolean) Use bundler to install gems from a Gemfile (defaults to ‘false’).
--  **``ruby-version``** (string) The version of ruby you want this snap to run.
+-  **gems** (list) A list of gems to install.
+-  **use-bundler** (boolean) Use bundler to install gems from a Gemfile (defaults to ‘false’).
+-  **ruby-version** (string) The version of ruby you want this snap to run.

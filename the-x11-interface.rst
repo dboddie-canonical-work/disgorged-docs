@@ -7,7 +7,9 @@ The x11 interface
 
 ``x11`` allows interacting with or running as an X11 server.
 
-**Auto-connect**: yes **Transitional**: yes
+**Auto-connect**: yes
+
+**Transitional**: yes
 
 See :ref:`The desktop interfaces <the-desktop-interfaces>` for further details.
 

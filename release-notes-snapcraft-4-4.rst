@@ -65,7 +65,10 @@ Refer to the `specification <https://github.com/snapcore/snapcraft/blob/master/s
 Full list of changes
 --------------------
 
-The issues and features worked on for Snapcraft 4.4 are reflected in the following change list: New Features ————
+The issues and features worked on for Snapcraft 4.4 are reflected in the following change list:
+
+New Features
+~~~~~~~~~~~~
 
 -  cli: remove spaces from progressive metrics `@sergiusens <https://github.com/sergiusens>`__ (`#3335 <https://github.com/snapcore/snapcraft/pull/3335>`__)
 -  storeapi: add releases endpoint `@sergiusens <https://github.com/sergiusens>`__ (`#3311 <https://github.com/snapcore/snapcraft/pull/3311>`__)
@@ -83,7 +86,7 @@ The issues and features worked on for Snapcraft 4.4 are reflected in the followi
 -  spread tests: move package-repositories test snaps into own dir `@cjp256 <https://github.com/cjp256>`__ (`#3331 <https://github.com/snapcore/snapcraft/pull/3331>`__)
 
 Maintenance
------------
+~~~~~~~~~~~
 
 -  cli: update revisions to use releases API `@sergiusens <https://github.com/sergiusens>`__ (`#3329 <https://github.com/snapcore/snapcraft/pull/3329>`__)
 -  storeapi: remove bindings for history `@sergiusens <https://github.com/sergiusens>`__ (`#3332 <https://github.com/snapcore/snapcraft/pull/3332>`__)
@@ -101,7 +104,7 @@ Maintenance
 -  lxd unit tests: simplify command checking pattern `@cjp256 <https://github.com/cjp256>`__ (`#3326 <https://github.com/snapcore/snapcraft/pull/3326>`__)
 
 Bug Fixes
----------
+~~~~~~~~~
 
 -  package repositories: fix case where formats is empty `@cjp256 <https://github.com/cjp256>`__ (`#3330 <https://github.com/snapcore/snapcraft/pull/3330>`__)
 -  meta: add error check for “command not found” `@cjp256 <https://github.com/cjp256>`__ (`#3321 <https://github.com/snapcore/snapcraft/pull/3321>`__)
@@ -117,7 +120,7 @@ Bug Fixes
 -  setup.py: assert with helpful error when unable to determine version `@cjp256 <https://github.com/cjp256>`__ (`#3307 <https://github.com/snapcore/snapcraft/pull/3307>`__)
 
 Specifications and Documentation
---------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  specifications: v1 history to v2 releases `@sergiusens <https://github.com/sergiusens>`__ (`#3304 <https://github.com/snapcore/snapcraft/pull/3304>`__)
 -  specification: desktop extension font hook `@sergiusens <https://github.com/sergiusens>`__ (`#3295 <https://github.com/snapcore/snapcraft/pull/3295>`__)

@@ -11,6 +11,10 @@ This interface is most commonly used to pass media key control through to a medi
 
 Consuming snaps can access media players implementing mpris via the providing snap’s well-known DBus name.
 
-**Auto-Connect**: no **Attributes**: \* ``name`` (slot): optional, media player name to use for DBus well-known name (ie, ``org.mpris.MediaPlayer2.$name``). If omitted, use the snap’s name.
+**Auto-Connect**: no
+
+**Attributes**:
+
+* ``name`` (slot): optional, media player name to use for DBus well-known name (ie, ``org.mpris.MediaPlayer2.$name``). If omitted, use the snap’s name.
 
    ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

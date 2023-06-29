@@ -91,8 +91,8 @@ There’s also a fix to enforce parallel building hints from snapcraft.
 
 Alongside colcon (above), the catkin plugin also includes a fix to enforce parallel building hints from snapcraft.
 
-### :ref:`rust <the-rust-plugin>`
----------------------------------
+:ref:`rust <the-rust-plugin>`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Support for properly building on s390x (natively) has been added.
 

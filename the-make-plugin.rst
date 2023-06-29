@@ -31,7 +31,7 @@ base: core22
 
 This plugin uses the following plugin-specific keywords:
 
--  **``make-parameters``** (list of strings) Parameters to pass to the make command.
+-  **make-parameters** (list of strings) Parameters to pass to the make command.
 
 Use Snapcraft’s :ref:`override-build <snapcraft-parts-metadata-override-build>` functionality to implement the equivalent ``makefile``, ``artifacts`` and ``make-install-var`` functionality available to *core18* and *core* snaps.
 
@@ -45,7 +45,7 @@ base: core20
 
 This plugin uses the following plugin-specific keywords:
 
--  **``make-parameters``** (list of strings) Parameters to pass to the make command.
+-  **make-parameters** (list of strings) Parameters to pass to the make command.
 
 Use Snapcraft’s :ref:`override-build <snapcraft-parts-metadata-override-build>` functionality to implement the equivalent ``makefile``, ``artifacts`` and ``make-install-var`` functionality available to *core18* and *core* snaps.
 
@@ -59,12 +59,12 @@ base: core18 \| core
 
 This plugin uses the following plugin-specific keywords:
 
--  **``artifacts``** (list) Link/copy the given files from the *make* output to the snap installation directory. If specified, the ``make install`` step will be skipped.
+-  **artifacts** (list) Link/copy the given files from the *make* output to the snap installation directory. If specified, the ``make install`` step will be skipped.
 
--  **``makefile``** (string) Use the given file as the *makefile*.
+-  **makefile** (string) Use the given file as the *makefile*.
 
--  **``make-parameters``** (list of strings) Parameters to pass to the make command.
+-  **make-parameters** (list of strings) Parameters to pass to the make command.
 
--  **``make-install-var``** (string; default: DESTDIR) Use this variable to redirect the installation into the snap.
+-  **make-install-var** (string; default: DESTDIR) Use this variable to redirect the installation into the snap.
 
 Requires Snapcraft version *3.x*.

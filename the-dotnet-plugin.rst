@@ -26,9 +26,9 @@ base: core22
 
 This plugin uses the following plugin-specific keywords:
 
--  **``dotnet-build-configuration``** (string, default: *Release*) The dotnet build configuration to use.
+-  **dotnet-build-configuration** (string, default: *Release*) The dotnet build configuration to use.
 
--  **``dotnet-self-contained-runtime-identifier``** (string) Runtime identifier to use when building a self-contained application (e.g. *linux-x64*).
+-  **dotnet-self-contained-runtime-identifier** (string) Runtime identifier to use when building a self-contained application (e.g. *linux-x64*).
 
 Requires Snapcraft version *7.0+*.
 
@@ -40,6 +40,6 @@ base: core18 \| core
 
 This plugin uses the following plugin-specific keywords:
 
--  **``debug``**: builds using a Debug configuration.
+-  **debug**: builds using a Debug configuration.
 
 Requires Snapcraft version *3.x+*.

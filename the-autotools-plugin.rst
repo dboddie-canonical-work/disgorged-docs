@@ -30,7 +30,7 @@ base: core22
 1. the *autotools* plugin first attempts to build the project using ``./configure``
 2. if the *configure* script does not yet exist, it will attempt to run ``./autoconf --install``.
 
--  **``autotools-configure-parameters``** (list of strings) Configure flags to pass to the build such as those shown by running ``./configure --help``
+-  **autotools-configure-parameters** (list of strings) Configure flags to pass to the build such as those shown by running ``./configure --help``
 
 Requires Snapcraft version *7.0+*.
 
@@ -45,7 +45,7 @@ base: core20
 
 In addition, this plugin uses the following plugin-specific keywords:
 
--  **``autotools-configure-parameters``** (previously *configflags*) (list of strings) Configure flags to pass to the build such as those shown by running ``./configure --help``
+-  **autotools-configure-parameters** (previously *configflags*) (list of strings) Configure flags to pass to the build such as those shown by running ``./configure --help``
 
 Requires Snapcraft version *4.0+*.
 
@@ -61,7 +61,7 @@ base: core18 \| core
 
 In addition, this plugin uses the following plugin-specific keywords:
 
--  **``configflags``** (list of strings) Configure flags to pass to the build such as those shown by running ``./configure --help``
--  **``install-via``** (enum, ‘destdir’ or ‘prefix’) Whether to install via DESTDIR or by using –prefix (default is ‘destdir’)
+-  **configflags** (list of strings) Configure flags to pass to the build such as those shown by running ``./configure --help``
+-  **install-via** (enum, ‘destdir’ or ‘prefix’) Whether to install via DESTDIR or by using –prefix (default is ‘destdir’)
 
 Requires Snapcraft version *3.x*.

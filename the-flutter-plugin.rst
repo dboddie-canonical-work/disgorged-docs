@@ -24,8 +24,8 @@ Further examples can also be found in the `Ubuntu Flutter Community <https://git
 base: core22
 ~~~~~~~~~~~~
 
--  **``flutter-channel``** (enum: [stable, master, beta], default: *stable*) The default flutter channel to use for the build.
--  **``flutter-target``** (string, default: *lib/main.dart*) The flutter target to build.
+-  **flutter-channel** (enum: [stable, master, beta], default: *stable*) The default flutter channel to use for the build.
+-  **flutter-target** (string, default: *lib/main.dart*) The flutter target to build.
 
 Requires Snapcraft version *7.3+*.
 
@@ -37,7 +37,7 @@ base: core18
 
 This plugin uses the following plugin-specific keywords:
 
--  **``flutter-revision``** (string) Defines which Flutter revision to use for the build. This must be a valid revision from the `Flutter repository <https://github.com/flutter/flutter>`__.
--  **``flutter-target``** (string, default: *lib/main.dart*) The main entry-point file of the application.
+-  **flutter-revision** (string) Defines which Flutter revision to use for the build. This must be a valid revision from the `Flutter repository <https://github.com/flutter/flutter>`__.
+-  **flutter-target** (string, default: *lib/main.dart*) The main entry-point file of the application.
 
 Requires Snapcraft version *4.1.1+*.

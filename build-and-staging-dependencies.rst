@@ -30,9 +30,15 @@ Package types
 
 Build and staging dependencies are added to a snap’s :ref:`snapcraft.yaml <the-snapcraft-yaml-schema>` within a part definition. They can be added as standard packages for the chosen build environment, such as *deb* packages for Ubuntu, or as a cross-platform snap using the following *snapcraft.yaml* keywords:
 
-For packages: - ``build-packages``: packages required for the part to build - ``stage-packages``: packages required to run the part
+For packages:
 
-For snaps: - ``build-snaps``: snaps required for the part to build. - ``stage-snaps``: snaps required to run the part
+- ``build-packages``: packages required for the part to build
+- ``stage-packages``: packages required to run the part
+
+For snaps:
+
+- ``build-snaps``: snaps required for the part to build.
+- ``stage-snaps``: snaps required to run the part
 
 The following is a typical example of a part’s *build-* and *stage-* sections for a command tool line that interacts with *git*:
 
@@ -55,10 +61,7 @@ For staged snaps, the ``meta`` and ``snap`` directories from the snap will be av
 
 .. note::
 
-
           See :ref:`Snapcraft package repositories <snapcraft-package-repositories>` for details on how to add *apt* repositories as sources for ``build-packages`` and ``stage-packages``, including those hosted on a PPA.
-
-
 
 
 .. _build-and-staging-dependencies-package-names:
@@ -90,7 +93,7 @@ Working out your project’s dependencies can be an iterative process, much like
 Building
 ~~~~~~~~
 
-1. when you have a workable framework *snapcraft.yaml* for your snap, run ``snapcraft --debug`` until you hit an error
+1. When you have a workable framework *snapcraft.yaml* for your snap, run ``snapcraft --debug`` until you hit an error
 2. If that error is a build dependency, use the *debug* interactive shell to work out which package is required
 3. add the package to your *snapcraft.yaml* and type *snapcraft* within the build environment to see if you have the same error
 

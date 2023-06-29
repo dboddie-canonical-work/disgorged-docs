@@ -17,7 +17,15 @@ But developing this infrastructure can be difficult and distract you from your b
 Snaps are a tailored solution for robotics software management
 --------------------------------------------------------------
 
-`Snaps <https://snapcraft.io/docs>`__ are the perfect solution for all of these challenges. Snaps are containers that bundle an application and all its dependencies, offering roboticists: \* **Containerised solution**: A containerised solution: Snaps bundle all your dependencies and assets in one package, making your application installable on dozens of Linux distributions and across distro versions. You won’t even have to install anything else on your robots’ operating system, no dependencies, not even `ROS <https://ubuntu.com/robotics/what-is-ros>`__ if you are using it. \* **Strict confinement**: Snaps are designed to be `secure and isolated <https://snapcraft.io/docs/snap-confinement>`__ from the underlying system and other applications, with `dedicated interfaces <https://snapcraft.io/docs/supported-interfaces>`__ to access the host machine. \* **CI/CD integration**: The creation of snaps can be integrated into your CI pipeline, making the updates effortless. \* **OTA and delta updates**: Snaps can update `automatically and transactionally <https://snapcraft.io/docs/keeping-snaps-up-to-date>`__, making sure the device is never broken. \* **Multi-architecture**: Snaps come with a `multi-architecture feature <https://snapcraft.io/docs/architectures>`__, allowing you to build your snap package for multiple architectures. \* **Managing updates**: Snaps can be `updated automatically or you can control the update <https://snapcraft.io/docs/keeping-snaps-up-to-date>`__ options (update hours, update holds, update history). It also comes with `multiple release channels <https://snapcraft.io/docs/channels>`__ for role-based access controls and application versioning. \* **Reduce boot time**: You can configure a snap application as a daemon, so it starts automatically at boot.
+`Snaps <https://snapcraft.io/docs>`__ are the perfect solution for all of these challenges. Snaps are containers that bundle an application and all its dependencies, offering roboticists:
+
+* **Containerised solution**: A containerised solution: Snaps bundle all your dependencies and assets in one package, making your application installable on dozens of Linux distributions and across distro versions. You won’t even have to install anything else on your robots’ operating system, no dependencies, not even `ROS <https://ubuntu.com/robotics/what-is-ros>`__ if you are using it.
+* **Strict confinement**: Snaps are designed to be `secure and isolated <https://snapcraft.io/docs/snap-confinement>`__ from the underlying system and other applications, with `dedicated interfaces <https://snapcraft.io/docs/supported-interfaces>`__ to access the host machine.
+* **CI/CD integration**: The creation of snaps can be integrated into your CI pipeline, making the updates effortless.
+* **OTA and delta updates**: Snaps can update `automatically and transactionally <https://snapcraft.io/docs/keeping-snaps-up-to-date>`__, making sure the device is never broken.
+* **Multi-architecture**: Snaps come with a `multi-architecture feature <https://snapcraft.io/docs/architectures>`__, allowing you to build your snap package for multiple architectures.
+* **Managing updates**: Snaps can be `updated automatically or you can control the update <https://snapcraft.io/docs/keeping-snaps-up-to-date>`__ options (update hours, update holds, update history). It also comes with `multiple release channels <https://snapcraft.io/docs/channels>`__ for role-based access controls and application versioning.
+* **Reduce boot time**: You can configure a snap application as a daemon, so it starts automatically at boot.
 
 ROS deployment solution
 -----------------------
@@ -71,14 +79,3 @@ Get started now
      - FAQ & troubleshooting about snap and ROS integration
    * - :ref:`ROS snap with GitHub Actions <build-and-publish-a-ros-snap-with-github-actions>`
      - Build and Publish a ROS Snap with GitHub Actions
-
-.. toctree::
-   :hidden:
-
-   ros-deployment-with-snaps
-   ros-2-deployment-with-snaps
-   docker-to-snap
-   build-and-publish-a-ros-snap-with-github-actions
-   ros-2-shared-memory-in-snaps
-   ros-distributions-with-no-extensions
-   cross-compile-an-autotools-project

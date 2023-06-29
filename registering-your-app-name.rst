@@ -23,7 +23,10 @@ Make sure that the name you wish to register is the same as the ``name`` field i
 
 If you are working with an Electron app, you will not have a snapcraft.yaml file. If your snap name differs from the ``name`` property in your package.json file, set the ``executableName`` property, `under the top-level linux key <https://www.electron.build/configuration/linux>`__, to your snap name.
 
-You also have a choice over whether a snap is *public* or *private*: - **Public**: the snap will appear in local ``snap find`` searches, in the Snap Store, and other application installers that access the store - **Private**: the snap is hidden from search results, and can only be installed from your account and from accounts linked to your account
+You also have a choice over whether a snap is *public* or *private*:
+
+- **Public**: the snap will appear in local ``snap find`` searches, in the Snap Store, and other application installers that access the store
+- **Private**: the snap is hidden from search results, and can only be installed from your account and from accounts linked to your account
 
 To change a snap’s visibility after registering, see `Release management <https://snapcraft.io/docs/release-management#registering-your-app-name-heading--private-snaps>`__.
 

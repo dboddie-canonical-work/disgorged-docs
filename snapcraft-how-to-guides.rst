@@ -49,8 +49,8 @@ Finally, for a better understanding of how Snapcraft works, and how it can be us
    build-on-docker
    create-a-developer-account
    creating-docker-images-for-snapcraft
+   cross-compile-an-autotools-project
    debug-snaps-with-snap-try
-   deploying-robotics-applications
    desktop-applications
    how-to-create-a-snap
    how-to-snap-publishing
@@ -63,6 +63,7 @@ Finally, for a better understanding of how Snapcraft works, and how it can be us
    reducing-the-size-of-desktop-snaps
    registering-your-app-name
    remote-reusable-parts
+   how-to-robotics
    stracing-snap-commands
    system-usernames
    the-ffmpeg-sdk-stage-snaps

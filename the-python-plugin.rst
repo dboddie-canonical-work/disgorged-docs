@@ -30,9 +30,9 @@ base: core22
 
 This plugin uses the following plugin-specific keywords:
 
--  **``python-requirements``** (list) List of paths to requirements.txt file(s)
--  **``python-constraints``** (list) List of paths to constraint files.
--  **``python-packages``** (list, default: *[pip, setuptools, wheel]*) A list of dependencies to install using ``pip``. This supports the same syntax as the ``pip install`` command.
+-  **python-requirements** (list) List of paths to requirements.txt file(s)
+-  **python-constraints** (list) List of paths to constraint files.
+-  **python-packages** (list, default: *[pip, setuptools, wheel]*) A list of dependencies to install using ``pip``. This supports the same syntax as the ``pip install`` command.
 
 This plugin also interprets these specific build-environment entries:
 
@@ -56,9 +56,9 @@ base: core20
 
 This plugin uses the following plugin-specific keywords:
 
--  **``requirements``** (array) List of paths to requirements.txt file(s)
--  **``constraints``** (string) Path to a constraints file.
--  **``python-packages``** (list) A list of dependencies to install using ``pip``. This supports the same syntax as the ``pip install`` command.
+-  **requirements** (array) List of paths to requirements.txt file(s)
+-  **constraints** (string) Path to a constraints file.
+-  **python-packages** (list) A list of dependencies to install using ``pip``. This supports the same syntax as the ``pip install`` command.
 
 This plugin also interprets these specific build-environment entries:
 
@@ -82,13 +82,13 @@ base: core18 \| core
 
 This plugin uses the following plugin-specific keywords:
 
--  **``requirements``** (array) List of paths to requirements.txt file(s)
+-  **requirements** (array) List of paths to requirements.txt file(s)
 
--  **``constraints``** (string) Path to a constraints file
+-  **constraints** (string) Path to a constraints file
 
--  **``process-dependency-links``** (bool; default: false) Enable the processing of dependency links in pip, which allow one project to provide places to look for another project
+-  **process-dependency-links** (bool; default: false) Enable the processing of dependency links in pip, which allow one project to provide places to look for another project
 
--  **``python-packages``** (list) A list of dependencies to install using ``pip``. This supports the same syntax as the ``pip install`` command. For example:
+-  **python-packages** (list) A list of dependencies to install using ``pip``. This supports the same syntax as the ``pip install`` command. For example:
 
    .. code:: yaml
 
@@ -99,6 +99,6 @@ This plugin uses the following plugin-specific keywords:
 
    See the `pip install docs <https://pip.pypa.io/en/stable/reference/pip_install/#pip-install>`__ for more information.
 
--  **``python-version``** (string; default: ``python3``) The python version to use. Valid options are ``python2`` and ``python3``
+-  **python-version** (string; default: ``python3``) The python version to use. Valid options are ``python2`` and ``python3``
 
 The ``python`` plugin also searches ``<stage-dir>/usr/bin/<python-interpreter>`` for a Python interpreter with a basename matching ``python-version`` in the ``<stage>`` directory. If detected, this takes preference and ``stage-packages`` will not use its own interpreter.

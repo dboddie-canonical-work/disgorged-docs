@@ -20,8 +20,6 @@ Plugin-specific features and syntax are dependent on which :ref:`base <base-snap
 
 This plugin uses the common plugin keywords as well as those for “sources”. For more information, see :ref:`Snapcraft parts metadata <snapcraft-parts-metadata>`.
 
-##
-
 
 .. _the-catkin-tools-plugin-heading--core20:
 
@@ -32,11 +30,9 @@ For core20, this plugin is designed to work with the :ref:`ROS 1 Noetic Extensio
 
 This plugin enables the following plugin-specific keywords on core20:
 
--  **``catkin-tools-packages``** (list of strings) List of catkin packages to build. If not specified, all packages in the workspace will be built. If set to an empty list (``[]``), no packages will be built, which could be useful if you only want ROS debs in the snap.
+-  **catkin-tools-packages** (list of strings) List of catkin packages to build. If not specified, all packages in the workspace will be built. If set to an empty list (``[]``), no packages will be built, which could be useful if you only want ROS debs in the snap.
 
--  **``catkin-tools-cmake-args``** (list of strings) Arguments to pass to cmake projects.
-
-##
+-  **catkin-tools-cmake-args** (list of strings) Arguments to pass to cmake projects.
 
 
 .. _the-catkin-tools-plugin-heading--core18:

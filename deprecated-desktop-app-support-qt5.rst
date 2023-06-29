@@ -16,7 +16,7 @@ The `Snapcraft Desktop Helpers project <https://github.com/ubuntu/snapcraft-desk
 1. Add qt5 dependencies to your snap
 ------------------------------------
 
-Copy the definition of the ``desktop-qt5`` part from the `Snapcraft Desktop Helpers ``snapcraft.yaml`` <https://github.com/ubuntu/snapcraft-desktop-helpers/blob/master/snapcraft.yaml>`__ into your Snapcraft recipe, in the ``parts`` section. Change the ``source`` property of this part to ``https://github.com/ubuntu/snapcraft-desktop-helpers.git``.
+Copy the definition of the ``desktop-qt5`` part from the `Snapcraft Desktop Helpers <https://github.com/ubuntu/snapcraft-desktop-helpers/blob/master/snapcraft.yaml>`__ ``snapcraft.yaml`` into your Snapcraft recipe, in the ``parts`` section. Change the ``source`` property of this part to ``https://github.com/ubuntu/snapcraft-desktop-helpers.git``.
 
 .. code:: yaml
 
@@ -114,7 +114,7 @@ Now your applications will use the icon theme, cursor theme and open/save file d
 Examples
 --------
 
-You can take a look at the `snapcraft.yaml file of ``keepassxc`` <https://github.com/keepassxreboot/keepassxc/blob/develop/snap/snapcraft.yaml>`__ for a complete example of a qt5 snap.
+You can take a look at the `snapcraft.yaml file of keepassxc <https://github.com/keepassxreboot/keepassxc/blob/develop/snap/snapcraft.yaml>`__ for a complete example of a qt5 snap.
 
 References
 ----------

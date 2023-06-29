@@ -46,7 +46,9 @@ With an example snap application called *app* installed, the following command w
 Developer details
 -----------------
 
-**Auto-connect**: no **Attributes**:
+**Auto-connect**: no
+
+**Attributes**:
 
 * ``channel`` (slot): PWM device channel number to export and expose to consuming snaps
 * ``chip-number`` (slot): chip base number to export
@@ -65,11 +67,23 @@ Unless the snap is expected to actually use a set of PWM channels that is not pr
 
 This has the advantage of being self-documenting and 1-1 connections like these are easier to track and setup with :ref:`auto-connections <the-interface-auto-connection-mechanism>`, if the latter is needed.
 
-When the interface is connected, ``"echo (channel number) > /sys/class/pwm/pwmchipN/export"`` is run internally to enable access to the PWM channel.
+When the interface is connected,
+
+.. code:: bash
+
+   echo (channel number) > /sys/class/pwm/pwmchipN/export
+
+is run internally to enable access to the PWM channel.
 
 Once connected, the consuming snap can use the device via ``/sys/class/pwm/pwmchipN/pwmX`` where *N* is the base of the PWM chip and *X* is channel number specified by the connected slot.
 
-Finally, when the interface is disconnected, \`“echo (channel number) > /sys/class/pwmchipN/unexport” is run internally to disable access to the PWM channel.
+Finally, when the interface is disconnected,
+
+.. code:: bash
+
+   echo (channel number) > /sys/class/pwmchipN/unexport
+
+is run internally to disable access to the PWM channel.
 
 Code examples
 -------------

@@ -30,9 +30,9 @@ Developer details
 
 **Attributes**:
 
--  **``posix-mq``** (slot and plug) An optional identifier for a message queue. Helps to identify which plugs should connect to which slots. A consumer snap must use the same identifier as the provider snap in order to access the message queue. It defaults to the slot or plug name respectively if not specified.
+-  **posix-mq** (slot and plug) An optional identifier for a message queue. Helps to identify which plugs should connect to which slots. A consumer snap must use the same identifier as the provider snap in order to access the message queue. It defaults to the slot or plug name respectively if not specified.
 
--  **``path``** (slot) Messages are shared across one or more paths, depending on the requirements of the snapped applications. The path attribute can either be a string, or an array of strings.
+-  **path** (slot) Messages are shared across one or more paths, depending on the requirements of the snapped applications. The path attribute can either be a string, or an array of strings.
 
    Each path must adhere to the POSIX message queue naming scheme, outlined on the ``mq_overview`` `man page <https://man7.org/linux/man-pages/man7/mq_overview.7.html>`__:
 
@@ -40,7 +40,7 @@ Developer details
 
    An array of paths should be used when the listed queues are meant to be used together, as corresponding plugs will get access to all of them.
 
--  **``permissions``** (slot) Defines how the messages on the queue can be accessed. Can be either ``read``, ``write``, ``create`` or ``delete``. Defaults to ``read`` and ``write``. Permissions are defined on the slot side but apply to the consumer plugs, while the slot side has always all the permissions.
+-  **permissions** (slot) Defines how the messages on the queue can be accessed. Can be either ``read``, ``write``, ``create`` or ``delete``. Defaults to ``read`` and ``write``. Permissions are defined on the slot side but apply to the consumer plugs, while the slot side has always all the permissions.
 
    Any permission allows usage of the ``mq_open`` and ``mq_getsetattr`` syscalls, while ``read`` allows ``mq_timedreceive`` and ``mq_notify``, ``write`` allows ``mq_timedsend``, and ``delete`` allows ``mq_unlink``.
 

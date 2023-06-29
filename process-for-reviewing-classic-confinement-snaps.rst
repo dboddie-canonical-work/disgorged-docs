@@ -81,7 +81,11 @@ Unsupported
 Criteria
 ^^^^^^^^
 
-This lists some criteria that might require classic (non-exhaustive): \* access to files on the host outside the snap’s runtime (eg, /usr) \* running arbitrary command (esp if user-configurable such as a developer tool to organize dev environments) \* access to resources not yet supported by snapd and where the requirement is clearly understood to be supportable by snapd. This may result in temporarily granting classic until snapd supports the use case in strict mode
+This lists some criteria that might require classic (non-exhaustive):
+
+* access to files on the host outside the snap’s runtime (eg, /usr)
+* running arbitrary command (esp if user-configurable such as a developer tool to organize dev environments)
+* access to resources not yet supported by snapd and where the requirement is clearly understood to be supportable by snapd. This may result in temporarily granting classic until snapd supports the use case in strict mode
 
 NOTE: while something may be known to require classic, that alone may not justify granting classic confinement.
 

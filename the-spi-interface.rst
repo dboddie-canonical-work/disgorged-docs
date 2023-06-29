@@ -7,7 +7,11 @@ The spi interface
 
 ``spi`` allows access to a specific Serial Peripheral Interface (SPI) controller. This snap interface is restricted because it provides privileged access to SPI hardware.
 
-**Auto-Connect**: no **Attributes**: \* ``path`` (slot): path to the specific SPI device node e.g. ``/dev/spidev0.0``
+**Auto-Connect**: no
+
+**Attributes**:
+
+* ``path`` (slot): path to the specific SPI device node e.g. ``/dev/spidev0.0``
 
 Snaps that want to consume an SPI device simply use ``plugs: [ spi ]``. The SPI device to connect to is specified during the interface connection.
 

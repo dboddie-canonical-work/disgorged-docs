@@ -127,7 +127,12 @@ Type: ``enum``
 
 Declares that ``<app-name>`` is a system daemon.
 
-Can be one of the following: - ``simple``: the command is the main process. - ``oneshot``: the configured command will exit after completion - ``forking``: the configured command calls ``fork()`` as part of its start-up. The parent process is then expected to exit when start-up is complete - ``notify``: the command configured will send a signal to systemd to indicate that it’s running.
+Can be one of the following:
+
+- ``simple``: the command is the main process.
+- ``oneshot``: the configured command will exit after completion
+- ``forking``: the configured command calls ``fork()`` as part of its start-up. The parent process is then expected to exit when start-up is complete
+- ``notify``: the command configured will send a signal to systemd to indicate that it’s running.
 
 desktop
 ~~~~~~~

@@ -7,16 +7,7 @@ Library linter
 
 The *library* linter is a :ref:`Snapcraft linter <snapcraft-linters>` that is used to verify whether any ELF file dependencies, typically libraries, are missing from a snap. It also verifies if any libraries are included in a snap but are not used.
 
--  `How the library linter helps <library-linter-help_>`__
--  `Linter warnings <library-linter-warnings_>`__
-
-   -  `Example <library-linter-warnings-example_>`__
-
--  `Addressing linter issues <library-linter-issues_>`__
-
 See :ref:`Disabling linters <snapcraft-linters-disable>` for details on how to stop this linter running.
-
---------------
 
 
 .. _library-linter-help:

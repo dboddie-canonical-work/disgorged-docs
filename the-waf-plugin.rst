@@ -15,7 +15,7 @@ This plugin uses the common plugin keywords as well as those for “sources”. 
 
 In addition, this plugin uses the following plugin-specific keywords:
 
--  **``configflags``** (list of strings) Configure flags to pass to the build such as those shown by running ./waf –help
+-  **configflags** (list of strings) Configure flags to pass to the build such as those shown by running ./waf –help
 
 For examples, search `GitHub <https://github.com/search?q=path%3Asnapcraft.yaml+%22plugin%3A+waf%22&type=Code>`__ for projects already using the plugin.
 

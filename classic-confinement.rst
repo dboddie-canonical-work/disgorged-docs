@@ -92,7 +92,7 @@ When a classic snap is executed on the host system, the snap daemon, *snapd*, wi
 +-------------------------+-----------------------+--------------------------------+
 | **Seccomp**             | Strict filtering      | No filtering                   |
 +-------------------------+-----------------------+--------------------------------+
-| **``LD_LIBRARY_PATH``** | Depends               | Empty                          |
+| **LD_LIBRARY_PATH**     | Depends               | Empty                          |
 +-------------------------+-----------------------+--------------------------------+
 | **Library loading**     | Staged packagesBase   | Staged packagesBaseHost system |
 +-------------------------+-----------------------+--------------------------------+
@@ -159,7 +159,7 @@ To prevent incompatibilities, binaries in classic snaps must be built with appro
 There are multiple ways dynamic linking parameters can be manipulated:
 
 -  **Runtime library paths**\  The dynamic section of an ELF file contains the RPATH entry, which lists the runtime paths to shared libraries to be searched before the paths set in the LD_LIBRARY_PATH environment variable. Multiple paths separated by a colon can be specified.
--  **``$ORIGIN`` path**\  The special value ``$ORIGIN`` represents the path where the binary is located, thus allowing the runtime library path to be set relative to that location (e.g.: ``$ORIGIN/../lib`` for an executable installed under ``bin/`` with libraries in ``lib/``).
+-  **$ORIGIN path**\  The special value ``$ORIGIN`` represents the path where the binary is located, thus allowing the runtime library path to be set relative to that location (e.g.: ``$ORIGIN/../lib`` for an executable installed under ``bin/`` with libraries in ``lib/``).
 -  **File interpreter** The special ELF section *.interp* holds the path to the program interpreter. If used, it must be set to the path of the appropriate dynamic linker - the dynamic linker from the snap package being created If libc is staged, or the dynamic linker provided by the base snap otherwise. Usually, the program interpreter is provided by the base, but it can also be provided by the snap. This happens before any library resolution takes place.
 
 To execute as expected, binaries in a classic snap application must be configured to look for shared libraries provided by the base snap or bundled as part of the application snap. This is achieved by setting the runtime path to shared libraries in all ELF binaries (except relocatable object files) that are present in the package payload.
