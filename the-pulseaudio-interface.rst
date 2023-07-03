@@ -11,6 +11,6 @@ The pulseaudio interface
 
 **Auto-connect**: no
 
-*Note: The*\ :ref:`audio-playback <the-audio-playback-interface>`\ *interface is auto-connected.*
+*Note: The* :ref:`audio-playback <the-audio-playback-interface>` *interface is auto-connected.*
 
    ⓘ This is a snap interface. See :ref:`Interface management <interface-management>` and :ref:`Supported interfaces <supported-interfaces>` for further details on how interfaces are used.

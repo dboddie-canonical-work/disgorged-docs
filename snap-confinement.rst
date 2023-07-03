@@ -5,15 +5,25 @@
 Snap confinement
 ================
 
-A snap’s confinement level is the degree of isolation it has from your system. There are three levels of snap confinement:
+One of the main motivations behind snaps is to *confine* applications, limiting their ability to access system resources. This is done to ensure that individual pieces of software do not impact the robustness of the user’s system or cause issues with other applications. As a result, when the user runs a snap, the software it provides is isolated from the system to some degree, with a default that limits access to a strict minimum of features.
 
-- **Strict** Used by the majority of snaps. Strictly confined snaps run in complete isolation, up to a minimal access level that’s deemed always safe. Consequently, strictly confined snaps can not access your files, network, processes or any other system resource without requesting specific access via an interface (:ref:`see below <interfaces-and-confinement>`).
-- **Classic** Allows access to your system’s resources in much the same way traditional packages do. To safeguard against abuse, publishing a classic snap requires :ref:`manual approval <process-for-reviewing-classic-confinement-snaps>`, and installation requires the ``--classic`` command line argument.
+Confinement levels
+------------------
+
+A snap’s confinement level is the degree of isolation it has from the user’s system. At a high level, knowing the confinement level enables users to understand the level of access an application has to their system. Application developers or packagers can adjust the confinement level to specify in broad terms how much access to system resources an application needs, either for normal use or during development.
+
+There are three levels of snap confinement:
+
+- **Strict** Used by the majority of snaps. Strictly confined snaps run in complete isolation, up to a minimal access level that’s deemed always safe. Consequently, strictly confined snaps can not access files, network, processes or any other system resource without requesting specific access via an interface (:ref:`see below <interfaces-and-confinement>`).
+- **Classic** Allows access to the system’s resources in much the same way traditional packages do. To safeguard against abuse, publishing a classic snap requires :ref:`manual approval <process-for-reviewing-classic-confinement-snaps>`, and installation requires the ``--classic`` command line argument.
 - **Devmode** A special mode for snap creators and developers. A *devmode* snap runs as a strictly confined snap with full access to system resources, and produces debug output to identify unspecified interfaces. Installation requires the ``--devmode`` command line argument. Devmode snaps cannot be released to the stable channel, do not appear in search results, and do not automatically refresh.
 
 Strict confinement uses security features of the Linux kernel, including AppArmor, seccomp and namespaces, to prevent applications and services accessing the wider system.
 
-You can discover the confinement mode for any snap using the ``snap info --verbose`` command:
+Getting the confinement level
+-----------------------------
+
+You can discover the confinement level for any snap using the ``snap`` command:
 
 .. code:: bash
 
@@ -40,9 +50,9 @@ Interfaces and confinement
 
 Each snap’s interface is carefully selected by a snap’s creator to provide specific access to a resource, according to a snap’s requirements. Common interfaces provide :ref:`network access <the-network-interface>`, :ref:`desktop access <the-desktop-interfaces>` and :ref:`sound <the-pulseaudio-interface>` for example.
 
-An interface needs to be connected to be active, and connections are made either automatically (at install time) or manually, depending on their function. The desktop interface is connected automatically, for instance, whereas the camera interface is not. See the *Auto-connect* column in :ref:`Supported interfaces <supported-interfaces>` table for details on whether an interface automatically connects or not.
+An interface needs to be connected to be active, and connections are made either automatically (at install time) or manually, depending on their function. The desktop interface is connected automatically, for instance, whereas the camera interface is not. See the *Auto-connect* column in :ref:`supported-interfaces` table for details on whether an interface automatically connects or not.
 
-As with classic confinement, a snap’s publisher can request an *assertion* to automatically connect an otherwise non-auto-connecting interface. For example, the *guvcview* snap `requested <https://snapcraft.io/docs/auto-connect-request-for-the-guvcview-brlin-snap>`__ the camera interface be automatically-connected when the snap is installed.
+As with classic confinement, a snap’s publisher can request an *assertion* to automatically connect an otherwise non-auto-connecting interface. For example, the *guvcview* snap `requested <https://forum.snapcraft.io/t/auto-connect-request-for-the-guvcview-brlin-snap/6042>`__ the camera interface be automatically-connected when the snap is installed.
 
 If a snap is upgraded and includes a new assertion, the user will still need to connect the interface manually. Similarly, if an installed classic snap is upgraded to use strict confinement, its interfaces won’t be automatically configured.
 
