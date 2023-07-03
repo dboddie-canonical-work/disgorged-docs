@@ -5,7 +5,7 @@
 Deprecation notice: 3
 =====================
 
-**Assets in ``setup/gui`` should now be placed in ``snap/gui``.**
+**Assets in setup/gui should now be placed in snap/gui.**
 
 *introduced in snapcraft 2.26*
 

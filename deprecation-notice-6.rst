@@ -5,7 +5,7 @@
 Deprecation notice: 6
 =====================
 
-**Use of the ``snap`` command with a directory has been deprecated in favour of the ``pack`` command.**
+**Use of the snap command with a directory has been deprecated in favour of the pack command.**
 
 *introduced in snapcraft 2.35*
 

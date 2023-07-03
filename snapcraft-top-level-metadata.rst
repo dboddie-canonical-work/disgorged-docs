@@ -215,7 +215,7 @@ Type: ``string`` (*optional*)
 
 Path to icon image that represents the snap in the snapcraft.io store pages and other graphical store fronts.
 
-*Note that the*\ `desktop menu <https://en.wikipedia.org/wiki/Start_menu>`__\ *does not use this icon. It uses the icon in the ``.desktop`` file of the application.*
+*Note that the* `desktop menu <https://en.wikipedia.org/wiki/Start_menu>`__ *does not use this icon. It uses the icon in the* ``.desktop`` *file of the application.*
 
 It is a relative path to a ``.png``/``.svg`` file from the source tree root. The `recommended <https://snapcraft.io/docs/restrictions-on-screenshots-and-videos-in-snap-listings24>`__ size is 256x256 pixels. Aspect ratio needs to be 1:1. Image size can vary from 40x40 to 512x512 px and the file size should not be larger than 256 KB.
 

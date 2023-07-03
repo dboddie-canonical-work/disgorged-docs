@@ -5,7 +5,7 @@
 Deprecation notice: 9
 =====================
 
-**The ‘install’ keyword has been replaced by ‘override-build’**
+**The install keyword has been replaced by override-build**
 
 *introduced in snapcraft 2.41*
 

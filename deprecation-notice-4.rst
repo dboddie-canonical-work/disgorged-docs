@@ -5,7 +5,7 @@
 Deprecation notice: 4
 =====================
 
-**The ``history`` command has been renamed to ``list-revisions``**
+**The history command has been renamed to list-revisions**
 
 *introduced in snapcraft 2.28*
 

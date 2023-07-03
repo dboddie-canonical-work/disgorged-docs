@@ -5,7 +5,7 @@
 Deprecation notice: 10
 ======================
 
-**The ‘version-script’ keyword has been replaced by \`snapcraftctl set-version’**
+**The version-script keyword has been replaced by snapcraftctl set-version**
 
 *introduced in snapcraft 2.41*
 

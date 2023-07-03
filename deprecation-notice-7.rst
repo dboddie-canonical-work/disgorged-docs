@@ -5,7 +5,7 @@
 Deprecation notice: 7
 =====================
 
-**The ‘prepare’ keyword has been replaced by ‘override-build’**
+**The prepare keyword has been replaced by override-build**
 
 *introduced in snapcraft 2.41*
 
